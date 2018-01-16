@@ -1,10 +1,8 @@
 ---
 title: 자바스크립트 ES6 Spread operator, 펼침 연산자
 date: 2017-06-29
-categories : 
-  - javascript
-tags:
-  - javascript
+tags: javascript
+category: javascript
 ---
 
 

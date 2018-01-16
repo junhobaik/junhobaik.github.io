@@ -1,10 +1,8 @@
 ---
 title: 자바스크립트에서 세미콜론(;)을 안써도 될까?
 date: 2017-10-17
-categories:
-  - javascript
-tags:
-  - javascript
+tags: javascript
+category: javascript
 ---
 
 

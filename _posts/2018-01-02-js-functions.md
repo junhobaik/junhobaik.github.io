@@ -1,10 +1,8 @@
 ---
 title: Javascript 함수선언문과 함수표현식
 date: 2018-01-02
-tags: 
-  - javascript
-categories:
-  - javascript
+tags: javascript
+category: javascript
 ---
 
 자바스크립트에서 함수선언문과 함수표현식의 차이점을 인식해두는 것은 중요한 점이다.
