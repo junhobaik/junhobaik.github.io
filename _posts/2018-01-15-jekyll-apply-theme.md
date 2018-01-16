@@ -1,6 +1,9 @@
 ---
 title: Jekyll 블로그 테마 적용하기 (minimal-mistakes)
 date: 2018-01-15 05:34:12 +0900
+tags:
+  - blog
+  - jekyll
 ---
 
 jekyll 블로그를 시작하기 위한 준비를 저번 포스트에서 끝냈다.  
@@ -161,9 +164,34 @@ defaults:
       author_profile: true
       read_time: false # 해당 포스트를 읽은 시간이 표시되는데 기본값은 true이다.
       comments: # true
-      share: false # 포스트 공유 기능을 활성화 할 것인지 정한다. 기본값은 true이다.
+      share: true # 포스트 공유 기능을 활성화 할 것인지 정한다. 기본값은 true이다.
       related: true
 ```
+### 댓글 설정
+disqus를 적용해 보기 위해 우선 disqus에서 사이트를 하나 추가하고 `short-name`을 알아둔다
+
+아래 코드를 보고 `_config.yml`의 설정을 수정한다
+
+```yml
+comments:
+  provider               : "disqus"
+  disqus:
+    shortname            : dev-hundred-blog # Short-name
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: false
+      comments: true # 댓글 활성화
+      share: true
+      related: true
+```
+
 
 ## Navigation 설정
 헤더 부분에 표시될 네비게이션 메뉴 설정을 하겠다.  
@@ -279,3 +307,15 @@ author_profile: true
 {% endfor %}
 ```
 {% endraw %}
+
+---
+
+이제 어느정도 블로그를 운영할 수 있게 된 것 같다.  
+허나 아직 세부적으로 코드 수정을 통해 커스터마이징 할 것들이 보인다.  
+
+이번 포스팅은 여기까지 하고 차후에 SEO 관련 포스팅을 할 생각이다.
+
+---
+
+### References
+- [Minimal Mistakes Quick-Start Guide](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/)
