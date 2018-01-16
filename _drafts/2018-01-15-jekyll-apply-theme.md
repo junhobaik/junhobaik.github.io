@@ -142,7 +142,7 @@ author:
   location         : "Seoul,Korea"
   email            : "a@b.c"
   uri              : # 웹사이트, 보통 지금 블로그 말고 링크해두고 싶은 사이트를 적는다.
-  # 이 아래는 본인이 보이고 싶은 소셜 서비스에 대해 적는다.
+  # 이 아래 쇼셜 리스트에 해당되는 것에 아이디를 적는다
   github : "username" # 주소 전체를 적는 것이 아닌 자신의 정보만 적는다.
 ```
 
@@ -164,3 +164,119 @@ defaults:
       share: false # 포스트 공유 기능을 활성화 할 것인지 정한다. 기본값은 true이다.
       related: true
 ```
+
+## Navigation 설정
+헤더 부분에 표시될 네비게이션 메뉴 설정을 하겠다.  
+주로 많이 사용하는 메뉴들로 기본 설정을 해보겠다.  
+- Archive
+- Tag
+- Category
+
+기본적으로 `_data/navigation.yml`에서 네비게이션 설정을 할 수 있다.  
+예로 Archive라는 메뉴 하나가 네비게이션에 있다고 하면 아래와 같다.
+
+```yml
+main:
+  - title: "Archive"
+    url: /year-archive/
+```
+
+url은 `_pages`폴더안에 있는 페이지의 permalink와 연결된다.
+
+`_pages/year-archive.html`
+```yml
+---
+layout: archive
+permalink: /year-archive/
+title: "Posts by Year"
+author_profile: true
+---
+# ... Code Here ...
+```
+
+이제 실제로 적용을 해보도록 하자.
+기본적인 양식은 [minimal mistakes의 github의 예제](https://github.com/mmistakes/minimal-mistakes/tree/master/docs) 양식을 가져왔다.
+
+`_data/navigation.yml`
+```yml
+main:
+  - title: "Archive"
+    url: /year-archive/
+  - title: "tag"
+    url: /tags/
+  - title: "Category"
+    url: /categories/
+```
+
+`_pages/year-archive.html`
+{% raw %}
+```liquid
+---
+layout: archive
+permalink: /year-archive/
+title: "Posts by Year"
+author_profile: true
+---
+{% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'"  %}
+{% for year in postsByYear %}
+  <h2 id="{{ year.name | slugify }}" class="archive__subtitle">{{ year.name }}</h2>
+  {% for post in year.items %}
+    {% include archive-single.html %}
+  {% endfor %}
+{% endfor %}
+```
+{% endraw %}
+
+`_pages/tag-archive.html`  
+
+태그 부분은 기본 양식에서 살짝 수정했다.
+{% raw %}
+```liquid
+---
+layout: archive
+permalink: /tags/
+title: "Posts by Tag"
+author_profile: true
+---
+{% include group-by-array collection=site.posts field="tags" %}
+<ul>
+  {% for tag in site.tags %}
+    <span>
+      <a href="#{{ tag | first }}">
+        {{ tag | first }}
+      </a> &nbsp;&nbsp;&nbsp;
+    </span>
+  {% endfor %}
+</ul>
+<br/>
+<br/>
+{% for tag in group_names %}
+  {% assign posts = group_items[forloop.index0] %}
+  <h2 id="{{ tag | slugify }}" class="archive__subtitle">{{ tag }}</h2>
+  {% for post in posts %}
+    {% include archive-single.html %}
+  {% endfor %}
+{% endfor %}
+
+```
+{% endraw %}
+
+`_pages/category-archive.html`
+{% raw %}
+```liquid
+---
+layout: archive
+permalink: /categories/
+title: "Posts by Category"
+author_profile: true
+---
+{% include group-by-array collection=site.posts field="categories" %}
+{% for category in group_names %}
+  {% assign posts = group_items[forloop.index0] %}
+  <h2 id="{{ category | slugify }}" class="archive__subtitle">{{ category }}</h2>
+  {% for post in posts %}
+    {% include archive-single.html %}
+  {% endfor %}
+{% endfor %}
+```
+{% endraw %}
