@@ -1,0 +1,203 @@
+# SCOPE
+
+스코프 = 현재 접근 할 수 있는 변수들의 범위  
+
+예제 1
+```html
+<button id="btn0">버튼 1</button>
+<button id="btn1">버튼 2</button>
+<button id="btn2">버튼 3</button>
+
+<script>
+  var i, len = 3;
+  for (i = 0; i < len; i++) {
+    document.getElementById('btn'+i).addEventListener("click", function () {
+      console.log("Click btn", i);
+    });
+  }
+</script>
+```
+버튼 3개를 각각 클릭했을때 결과값은 모두 "Click btn3"가 나온다.  
+이벤트 핸들러의 콜백 함수가 작성되어 있는데 그 콜백 함수는 콜백함수 밖에 있는 변수들에 접근 할 수 있는 스코프를 가지게 된다.  
+for 반복문을 통해서 각각 div 순서대로 클릭 이벤트 핸들러가 부여될 때 변수 i가 0부터 3까지 증가한 뒤 이후에 for 반복문이 끝나도 계속해서 유지된다.  
+따라서 나중에 출력문이 호출될때 변수 i의 값은 이미 for반복문이 끝난 값인 3으로 출력되는 것이다.  
+
+for문을 돌때는 별도의 스코프가 생성되지 않고 i는 글로벌 스코프에 존재한다.  
+그러다가 **이벤트리스너의 콜백함수를 설정할때 익명 함수가 선언되면서 이때 스코프가 생성**되어 스코프 체인을 만들게 된다.
+
+이러한 현상은 **자바스크립트에서 스코프가 함수로 인해 생성되고 함수가 호출될 때도 계속 지속되어 변수들을 참조하는 특성**때문에 일어난다.  
+
+-----------
+
+스코프의 생성  
+
+for문의 스코프 생성 여부를 알아보기 위한 예제  
+0부터 9까지 더하여 총합이 16이 넘는 숫자를 구하는 코드  
+```html
+<script>
+  for(var i = 0; i < 10; i++){
+    var total = (total || 0) + 1;
+    var last = i;
+    if(total > 16){
+      break;
+    }
+  }
+  console.log("typeof total !== 'undifined'",typeof total !== "undifined");
+  console.log("typeof last !== 'undifined'",typeof last !== "undifined");
+  console.log("typeof i !== 'undifined'",typeof i !== "undifined");
+  console.log("total ==="+total+", last ==="+last);
+</script>
+```
+Console
+```
+typeof total !== 'undifined' true
+typeof last !== 'undifined' true
+typeof i !== 'undifined' true
+total ===10, last ===9
+```
+for문 안에서 생성된 변수 total,last,i가 정의되지 않은 것이 아니며, 값에 접근 할 수 있는 것을 알 수 있다.  
+
+다른 프로그래밍 언어에서는 for문 안에서 선언한 변수를 for문 밖에서 접근하게 되면 에러가 발생하지만  자바스크립트에서는 모든 값에 접근 할 수 있다.  
+이처럼 자바스크립트는 다른 언어와는 달리 일반적인 블록 스코프를 따르지 않는다.  
+**자바스크립트의 스코프는 특정 구문이 실행될 때 새로 생성하여 스코프 체인을 생성하게 된다.**   
+이렇게 스코프를 생성하는 구문들은 다음과 같다.  
+
+- function
+- with
+- catch  
+
+자바스크립트에서 이들의 사용법은 각각 다르지만, 중요한건 이런 구문들이 사용될 때문 스코프가 생성되고, **다른 프로그래밍 언어처럼 {}를 이용해 블록을 생성한다고 해서 스코프가 생성되는 것이 아니라는 점**이다.
+
+----------
+
+function 구문의 스코프 생성  
+
+```js
+function foo(){
+  var b = "Can you access me?";
+}
+console.log(typeof b === "undefined");
+```
+console
+```
+true
+```
+function foo안의 b값에 접근하지 못하는 것을 알 수 있다.    
+**function 구문을 통해서 스코프가 생성된 것을 알 수 있다.**  
+
+----------
+
+catch 구문의 스코프 생성  
+
+catch 구문도 스코프를 생성하기는 하지만 function과는 다른 동작을 보인다.  
+괄호 안에 인자로 받는 변수들만 새로운 내부 스코프에 포함되어 그 다음으로 오는 블록 안에서만 접근 할 수 있다.  
+반면 블록 안에서 새로 정의한 변수들은 for-loop와 비슷하게 블록 외부에서도 접근 할 수 있다.  
+```js
+try {
+  throw new exception("fake exception");
+} catch (error) {
+  var test = "can you see me?";
+  console.log(error instanceof ReferenceError === true);
+}
+console.log(test === "can you see me?");
+console.log(typeof error === undefined);
+```
+console
+```
+true
+true
+false
+```
+첫번째 출력문에서는 error라는 인자로 받은 변수가 해당 블록 안에 있는 것을 알 수 있다.  
+두번째 출력문에서는 catch 구문에서 **새로 정의한 test 변수에 접근이 가능**하다는 것을 알 수 있다.  
+세번째 출력문에서는 catch 구문에서 **인자로 받은 변수에는 접근이 불가능** 하다는 것을 알 수 있다.  
+
+----------
+
+엄밀하게 따져보면 스코프가 생성되는 방식이 기존 언어와 다르지 않다.  
+하지만 스코프가 지속되는 것은 다른 언어와는 다른 자바스크립트만의 강점 중 하나이다.  
+이러한 스코프의 지속성이 필요한 이유는 새로운 스코프가 생성되고  
+**스코프 체인을 참조하는 함수를 변수에도 넣을 수 있고**,  
+**다른 함수의 인자로 넘겨줄 수도 있으며**,  
+**함수의 반환값으로 이용할 수도 있기 때문이다**.  
+즉, 지금 함수가 선언된 곳이 아닌 전혀 다른 곳에서 함수가 호출 될 수 있어서, 해당 함수가 현재 참조하는 스코프를 지속할 필요가 있는 것이다.
+
+----------
+
+함수를 이용한 문제 해결  
+
+이러한 지속성을 이해하기 위해 앞의 클릭 이벤트 핸들러 문제를 또 다른 방식으로 해결해보자.  
+
+```html
+<button id="btn0">버튼 1</button>
+<button id="btn1">버튼 2</button>
+<button id="btn2">버튼 3</button>
+<script>
+  var i, len = 3;
+
+  function setDiv(index) {
+    document.getElementById('btn' + index).addEventListener("click", function () {
+      console.log("Click btn", index);
+    });
+  }
+
+  for (i = 0; i < len; i++) {
+    setDiv(i);
+  }
+</script>
+```
+
+console
+
+```
+Click btn 0
+Click btn 1
+Click btn 2
+```
+
+이렇게 **함수로 분리하는 것은 비동기 처리를 많이 하는 자바스크립트의 특성에서는 중요하게 생각해야 하는 개발 방식**이다.  
+
+----------
+
+클로저를 이용한 문제 해결
+
+자바스크립트의 특징 중 하나인 클로저를 활용하여 이를 해결 할 수도 있다.
+
+```html
+  <button id="btn0">버튼 1</button>
+  <button id="btn1">버튼 2</button>
+  <button id="btn2">버튼 3</button>
+  <script>
+    var i, len = 3;
+    /* 처음의 해결 전 코드
+    for (i = 0; i < len; i++) {
+      document.getElementById('btn'+i).addEventListener("click", function () {
+        console.log("Click btn", i);
+      });
+    }
+    */
+    for (i = 0; i < len; i++) {
+      document.getElementById('btn'+i).addEventListener("click", (function(index) { //1
+        return function (){ //2
+          console.log("Click btn", index);
+        };
+      }(i)));//3
+    }
+  </script>
+```
+
+console
+
+```
+Click btn 0
+Click btn 1
+Click btn 2
+```
+
+이벤트 리스너 실행 전 즉시 호출 함수 실행, 즉시 호출 함수 안의 함수가 반환된 값이 이벤트 리스너 함수의 두번째 인자로 들어간다.  
+1, 3은 즉시 호출 함수를 나타냄, 그리고 바로 다음 2는 index변수를 상위 스코프 체인에 추가한 뒤 addEventListener() 함수의 2번째 인자로 들어간다.  
+이벤트 리스너가 실행되기 전 먼저 즉시 호출 함수가 값을 반환받아 그 값이 이벤트 리스너의 2번째 인자로 작동하는 것.  
+
+global scope // i=2, len=3 <- function(index) // index = 0 <- btn0.click // empty scope  
+global scope // i=2, len=3 <- function(index) // index = 1 <- btn1.click // empty scope  
+global scope // i=2, len=3 <- function(index) // index = 2 <- btn2.click // empty scope  
