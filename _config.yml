@@ -85,7 +85,7 @@ analytics:
 # Site Author
 author:
   name             : "Junho Baik"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/profile.png"
   bio              : "Junior Front-End Web Developer"
   location         : "Korea"
   email            : "junhobaik@gmail.com"
