@@ -250,6 +250,6 @@ defaults:
       layout: single
       author_profile: true
       read_time: false
-      comments: # true
+      comments: true # true
       share: true
       related: true
