@@ -1,6 +1,8 @@
 ---
 title: 자바스크립트 ES6 Arrow Function
 date: 2017-07-21
+tags: javascript
+category: javascript
 ---
 
 ES6 에 출현한 새로운 형태의 함수 표현 방법
