@@ -253,3 +253,5 @@ defaults:
       comments: true # true
       share: true
       related: true
+      category: "undefined"
+      toc: true
