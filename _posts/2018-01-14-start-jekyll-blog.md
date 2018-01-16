@@ -1,6 +1,6 @@
 ---
 title: Jekyll 블로그 시작하기 (MacOS, GitHub Page)
-date: 2017-01-14 11:00:00 +0900
+date: 2018-01-14 11:00:00 +0900
 tag:
     - jekyll
     - blog
