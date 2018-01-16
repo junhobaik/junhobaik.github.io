@@ -1,6 +1,7 @@
 ---
-title: Comment test
+title: Comment test 2
 date: 2018-01-16 11:00:00 +0900
 ---
 
-- 내용 수정
+- 내용 수정 : 코멘트 남음
+- 제목 수정 : 
