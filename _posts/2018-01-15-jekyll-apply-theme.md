@@ -150,8 +150,6 @@ author:
 ```
 
 ### Defaults
-포스트, 페이지 등 설정이 가능하다.
-
 ```yml
 # Defaults
 defaults:

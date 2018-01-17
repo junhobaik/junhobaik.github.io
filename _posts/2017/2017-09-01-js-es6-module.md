@@ -1,7 +1,13 @@
-# ES6 module (export & import)
+---
+title: 자바스크립트 ES6 module(export&import)
+date: 2017-09-01
+category: javascript
+tags: 
+  - javascript
+  - ES6
+---
 
-ES6에서 출현한 module 기능은 브라우저 호환성이 아직은 완전하지 않다.
-
+ES6에서 출현한 module 기능은 브라우저 호환성이 아직은 완전하지 않다.  
 devOps로 webpack, babel 등을 활용해 사용해 서비스 코드를 만드는 것이 좋다.
 
 

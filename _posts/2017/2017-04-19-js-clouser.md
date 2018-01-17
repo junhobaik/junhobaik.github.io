@@ -1,7 +1,13 @@
-# Closuer
+---
+title: 자바스크립트 클로저(Closure)
+date: 2017-04-19
+category: javascript
+tags: 
+  - javascript
+---
 
-- 함수, 함수가 선언될 때의 environment로 구성
-- 함수가 정의 될 때의 environment가 함께 closure로 결합되면서, 다양한 활용이 가능
+- 함수, 함수가 선언될 때의 environment로 구성  
+- 함수가 정의 될 때의 environment가 함께 closure로 결합되면서, 다양한 활용이 가능  
 
 ```js
 function makeCounterFunction(initVal){

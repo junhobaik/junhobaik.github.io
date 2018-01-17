@@ -1,11 +1,19 @@
-# Prototype
+---
+title: 자바스크립트 프로토타입(Prototype)
+date: 2017-04-18
+category: javascript
+tags: 
+  - javascript
+---
 
-자바스크립트에서 모든 객체는 자신의 부모 객체와 연결 되어있다.
+자바스크립트에서 모든 객체는 자신의 부모 객체와 연결 되어있다.  
 이것을 이용하여 객체지향에서 자식이 부모 객체의 요소를 가져다 쓸 수 있는 상속 개념을 사용할 수 있다.
 
 모든 객체는 자신을 생성한 생성자 함수의 prototype 프로퍼티가 가리키는 프로토타입 객체를 자신의 부모 객체로 설정하는 [[Prototype]] 프로퍼티로 연결한다. `[[Prototype]] Link`
 
 생성된 객체의 실제 부모 역활을 하는 건 생성자 자신이 아닌 생성자의 prototype 프로퍼티가 가리키는 프로토타입 객체이다.
+
+## Prototype?
 
 ```js
 function Person(name){
@@ -101,7 +109,7 @@ allTask.show();
 
 
 ---
-### reference
-- https://github.com/jsonko/dailyJavaScript/blob/171161c67ddcfb8dad369bb826e73cb5f4f93588/PrototypeChaining.md
-- https://github.com/KyusungDev/JSStudy/blob/5167fba10310d2b177aa26be43fb0d3b2b831f8b/docs/books/inside_javascript/02.md
-- https://github.com/Lutece/sundayJavascript/blob/85d633268926261307ec18a3d4dad8c644e0c60f/inside_javascript/ch03/chapter03-04.md
+## References
+- [https://github.com/jsonko/dailyJavaScript/blob/171161c67ddcfb8dad369bb826e73cb5f4f93588/PrototypeChaining.md](https://github.com/jsonko/dailyJavaScript/blob/171161c67ddcfb8dad369bb826e73cb5f4f93588/PrototypeChaining.md)
+- [https://github.com/KyusungDev/JSStudy/blob/5167fba10310d2b177aa26be43fb0d3b2b831f8b/docs/books/inside_javascript/02.md](https://github.com/KyusungDev/JSStudy/blob/5167fba10310d2b177aa26be43fb0d3b2b831f8b/docs/books/inside_javascript/02.md)
+- [https://github.com/Lutece/sundayJavascript/blob/85d633268926261307ec18a3d4dad8c644e0c60f/inside_javascript/ch03/chapter03-04.md](https://github.com/Lutece/sundayJavascript/blob/85d633268926261307ec18a3d4dad8c644e0c60f/inside_javascript/ch03/chapter03-04.md)

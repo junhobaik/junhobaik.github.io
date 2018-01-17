@@ -1,6 +1,11 @@
-# ES6 String Methods
-
-
+---
+title: 자바스크립트 ES6 String Methods
+date: 2017-06-29
+category: javascript
+tags: 
+  - javascript
+  - ES6
+---
 
 - [String.prototype.startsWith()][https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith]
   - 문자열이 특정 문자로 시작하는지 확인, 결과를 true, false로 반환.

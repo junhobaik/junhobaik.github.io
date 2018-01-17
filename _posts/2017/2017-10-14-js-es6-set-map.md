@@ -1,6 +1,11 @@
-# ES6 Set, WeakSet / Map, WeakMap
-
-
+---
+title: 자바스크립트 ES6 Set, WeakSet / Map, WeakMap
+date: 2017-10-14
+category: javascript
+tags: 
+  - javascript
+  - ES6
+---
 
 ## Set
 

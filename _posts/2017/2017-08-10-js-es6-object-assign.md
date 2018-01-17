@@ -1,4 +1,11 @@
-# ES6 Object assign
+---
+title: 자바스크립트 ES6 Object.assign
+date: 2017-08-10
+category: javascript
+tags: 
+  - javascript
+  - ES6
+---
 
 아래 코드는 Object create를 사용한 코드이다.
 

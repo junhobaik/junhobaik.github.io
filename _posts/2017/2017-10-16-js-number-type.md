@@ -1,6 +1,12 @@
-# Javascript Number type
+---
+title: 자바스크립트의 숫자 타입(Number Type)
+date: 2017-10-16
+category: javascript
+tags: 
+  - javascript
+---
 
-Javascript는 Java와 달리 int, double 같은 숫자 타입이 나눠져있지 않다.
+Javascript는 Java와 달리 int, double 같은 숫자 타입이 나눠져있지 않다.  
 number 하나로 정수(Integer)와 부동 소수점 수를 모두 표현한다.
 
 

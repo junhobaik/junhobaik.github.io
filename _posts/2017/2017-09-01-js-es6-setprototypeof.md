@@ -1,11 +1,14 @@
-# ES6 Object setPrototypeOf
+---
+title: 자바스크립트 ES6 Object setPrototypeOf
+date: 2017-09-01
+category: javascript
+tags: 
+  - javascript
+  - ES6
+---
 
-setPrototypeOf 로 프로토타입 객체를 추가 할 수 있다.
-
-
-
-`Object.setPrototypeOf(obj, prototype)`
-
+setPrototypeOf 로 프로토타입 객체를 추가 할 수 있다.  
+`Object.setPrototypeOf(obj, prototype)`  
 object에 prototype을 추가한다.
 
 

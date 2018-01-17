@@ -1,11 +1,14 @@
-# ES6 const, let
+---
+title: 자바스크립트 ES6 const, let 
+date: 2017-06-28
+category: javascript
+tags: 
+  - javascript
+  - ES6
+---
 
-ES6 (ES2015) 에서는 새로운 선언 방법이 생겼는데,
-
-그것이 const와 let이다.
-
-
-
+ES6 (ES2015) 에서는 새로운 선언 방법이 생겼는데,  
+그것이 const와 let이다.  
 기존에 다른 프로그래밍 언어를 사용하고 왔다면 처음 var 를 접할때 당황스러운 점을 느껴본 적이 있을 것이다. var의 관대함 때문이다. 그런 것을 비교하며 살펴보겠다.
 
 ```javascript
@@ -167,6 +170,5 @@ console.log(newlist === newlist2);
 
 ---
 
-### reference
-
+## References
 - http://blog.nekoromancer.kr/2016/01/26/es6-var-let-%EA%B7%B8%EB%A6%AC%EA%B3%A0-const/

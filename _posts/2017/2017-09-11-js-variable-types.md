@@ -1,5 +1,12 @@
-# Javascript Variable Types
+---
+title: 자바스크립트의 타입들
+date: 2017-09-11
+category: javascript
+tags: 
+  - javascript
+---
 
+## Javascript Variable Types
 
 
 자바스크립트의 변수는 모든 데이터 타입을 수용할 수 있도록 되어있다.
@@ -16,7 +23,7 @@
 
   ​
 
-#### Standard defines seven data types
+### Standard defines seven data types
 
 1. Six data types that are primitives
   1. Boolean
@@ -36,7 +43,7 @@
 
 
 
-#### typeof results
+### typeof results
 
 
 | Type             | 'typeof' Result |
@@ -73,7 +80,7 @@ toString.call([1,2,3]) 을 사용하면 [object Array]의 반환값을 얻어 �
 
 
 
-#### undefined
+### undefined
 
 ```javascript
 var a;
