@@ -1,13 +1,14 @@
 ---
 layout: archive
-permalink: /year-archive/
-title: "Posts by Year"
+permalink: /archive/
+title: "Posts by Month"
 author_profile: true
 ---
-{% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'"  %}
-{% for year in postsByYear %}
-  <h2 id="{{ year.name | slugify }}" class="archive__subtitle">{{ year.name }}</h2>
-  {% for post in year.items %}
-    {% include archive-single-year.html %}
+{% assign postsByMonth = site.posts | group_by_exp:"post", "post.date | date: '%b %Y'" %}
+
+{% for month in postsByMonth %}
+  <h2 id="{{ month.name | slugify }}" class="archive__subtitle">{{ month.name }}</h2>
+  {% for post in month.items %} 
+    {% include archive-single-custom.html %}
   {% endfor %}
 {% endfor %}

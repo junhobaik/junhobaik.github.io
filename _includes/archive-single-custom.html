@@ -10,6 +10,10 @@
   {% assign title = post.title %}
 {% endif %}
 
+{% if post.date %}
+  {% assign date = post.date | date: '%d' %}
+{% endif %}
+
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
     {% if include.type == "grid" and teaser %}
@@ -27,7 +31,7 @@
       {% if post.link %}
         <a href="{{ post.link }}">{{ title }}</a> <a href="{{ post.url | absolute_url }}" rel="permalink"><i class="fas fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
       {% else %}
-        <a href="{{ post.url | absolute_url }}" rel="permalink">{{ title }}</a>
+        <span class="archive-date">{{ date }}</span><a href="{{ post.url | absolute_url }}" rel="permalink">{{ title }}</a>
       {% endif %}
     </div>
     
