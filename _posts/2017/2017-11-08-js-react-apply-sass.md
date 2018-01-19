@@ -1,6 +1,10 @@
 ---
 title: React 프로젝트에 SASS 적용하기
 date: 2017-11-08
+tags:
+  - react
+  - javascript
+  - sass
 ---
 
 # React 프로젝트에 SASS 적용하기
