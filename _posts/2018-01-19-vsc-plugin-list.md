@@ -5,9 +5,11 @@ tags:
   - VSCode
 ---
 
-### 계속해서 업데이트 중
+Atom, Brakets를 거쳐 현재는 VSCode와 WebStorm을 병행해서 사용하는 중이다.  
+아무래도 React 사용 빈도가 높은데 VSCode의 확장을 깔아 WebStorm 만큼 편하게 사용하지는 못하겠다.  
+React 관련 플러그인을 더 찾아봐야겠는데 그 전에 사용하고 있는 플러그인들을 정리해보았다.
 
-## List
+## List (업데이트 중)
 
 ### Active File In StatusBar
 현재 작업중인 파일의 전체 경로를 아래 상태표시줄에 표시해준다
