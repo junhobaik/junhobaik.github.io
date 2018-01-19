@@ -7,8 +7,6 @@ tags:
   - sass
 ---
 
-# React 프로젝트에 SASS 적용하기
-
 ## 환경
 
 - Create-react-app (CRA)

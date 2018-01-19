@@ -5,8 +5,6 @@ tags:
   - php
 ---
 
-## PHP - Cookie, Session
-
 ### Cookie
 
 클라이언트(브라우저)에 데이터를 저장한다.  
