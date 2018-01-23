@@ -253,17 +253,5 @@ defaults:
       comments: true # true
       share: true
       related: true
-      category: undefined
-      toc: true
-  - scope:
-      path: "2017"
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: false
-      comments: true # true
-      share: true
-      related: true
-      category: undefined
+      # category: undefined
       toc: true
