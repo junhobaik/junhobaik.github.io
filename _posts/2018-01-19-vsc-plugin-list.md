@@ -42,3 +42,12 @@ Blank line at end of file
 
 ~~Git Lens~~  
 : 깃 정보를 여러 방법으로 표시해주는 확장 플러그인.
+
+
+## Theme
+
+FlatUI
+: Color Theme
+
+Marterial Icon Theme
+: Icon Theme
