@@ -29,7 +29,7 @@ $ npm -v
 ```
 
 ## yarn 설치
-yarn 설치시 위에서 Node는 설치하였으니 node를 빼고 설치하도록 한다.
+yarn 설치시 위에서 Node는 설치하였으니 node를 빼고 설치하도록 합니다.
 ```
 $ brew install yarn --without-node
 ```
