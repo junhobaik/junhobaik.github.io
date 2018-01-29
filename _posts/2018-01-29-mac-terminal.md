@@ -3,7 +3,7 @@ title: Mac Terminal 설정 (OhMyZsh, iTerm)
 date: 2018-01-29
 ---
 
-**OSX 재설치 후 설치 겸 정리해보는 Mac 터미널 세팅 과정**
+MacOS 재설치 후 기본적인 설정을 하면서 **간단히** 정리해본 Mac 터미널 세팅 과정
 
 ## zsh, Oh My Zsh
 우선 기본 Terminal에서 zsh와 Oh My Zsh를 설치합니다. 
@@ -41,3 +41,6 @@ $ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools
 이제 기본 터미널을 대체해서 사용할 iTerm을 설치합니다.
 
 [다운로드 페이지](https://www.iterm2.com/downloads.html){: .btn .btn--info}
+
+\+ 원래는 테마 변경을 해서 썼지만 이번에는 기본 테마에 색상만 가독성 좋은 색상 스키마로 변경하여 사용해 볼 예정이다.
+{: .notice}
