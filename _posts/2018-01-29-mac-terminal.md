@@ -1,6 +1,6 @@
 ---
 title: Mac Terminal 설정 (OhMyZsh, iTerm)
-date: 2018-01-29
+date: 2018-01-29 23:00:00 +0900
 ---
 
 MacOS 재설치 후 기본적인 설정을 하면서 **간단히** 정리해본 Mac 터미널 세팅 과정
