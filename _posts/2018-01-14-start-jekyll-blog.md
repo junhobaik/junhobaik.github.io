@@ -17,6 +17,9 @@ Hexo를 사용하려던 이유는 Node.js 기반의 코드로 아는 분야이�
 
 ## Ruby 설정
 
+Ruby 설정 전에 `$ sudo gem install jekyll bundler` 명령어로 jekyll 설치가 정상적으로 진행되었다면 Ruby 설정은 넘어가도 된다
+{: .notice--info}
+
 우선 사용해보지 않은 Ruby를 사용하기 위해 설정에 들어갔다.
 
 MacOS에서는 기본적으로 Ruby를 지원하지만, 그냥 사용하여 Jeklly를 설치하려했더니 권한 문제등 에러가 많아 Ruby 버전 매니저인 RVM을 통해 새로운 Ruby 설치 및 설정을 해보았다.
