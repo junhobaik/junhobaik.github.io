@@ -55,6 +55,9 @@ React 관련 플러그인을 더 찾아봐야겠는데 그 전에 사용하고 �
 - Debugger for Chrome
 : 크롬 디버깅 환경 사용을 위한 확장.
 
+- Reactjs code snippets
+: 리액트 코드 자동완성 스니펫 추가를 위한 확장.
+
 ## Theme
 
 \- Color
