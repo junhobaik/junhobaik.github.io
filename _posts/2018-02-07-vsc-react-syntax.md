@@ -2,6 +2,8 @@
 title: VSCode(Visual Studio Code)에서 React JSX 자동완성 기능 활성화하기
 date: 2018-02-07 15:40:00 +0900
 toc: false
+tags:
+    - VSCode
 ---
 
 WebStorm을 쓰다가 Visual Studio Code를 사용하니 React를 쓰기에 불편함이 한두가지가 아니다.

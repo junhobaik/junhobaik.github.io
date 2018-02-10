@@ -1,6 +1,8 @@
 ---
 title: Visual Studio Code 설정 기기 간 동기화하기
 date: 2018-02-08 21:08:00 +0900
+tags:
+  - VSCode
 ---
 
 Visual Studio Code를 쓰기 시작하면서 데스크탑과 랩탑간 설정 동기화가 필요해 방법을 찾다가  
