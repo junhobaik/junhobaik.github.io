@@ -46,7 +46,7 @@ React 관련 플러그인을 더 찾아봐야겠는데 그 전에 사용하고 �
 - ~~Trailing Semiconlon~~
 : cmd+; 으로 코드 라인 중간에서도 맨 끝에 세미콜론을 삽입해준다.
 
-- Smart Semicolon
+- ~~Smart Semicolon~~
 : 코드 라인 중간에서 세미콜론을 입력해도 자동으로 맨 끝에 입력되도록 해주는 확장 플러그인.
 
 - Beautify
