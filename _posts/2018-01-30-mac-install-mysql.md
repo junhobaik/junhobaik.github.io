@@ -39,7 +39,7 @@ $ mysql_secure_installation
 5. test DB 삭제 (n)
 6. 수정할 것이 있는가? (y or n)
 
-아래는 출력 순서에 따른 내용입니다.
+아래는 위에 나타낸 과정의 자세한 내용입니다.
 
 ```
 Securing the MySQL server deployment.
@@ -53,7 +53,8 @@ secure enough. Would you like to setup VALIDATE PASSWORD plugin?
 
 Press y|Y for Yes, any other key for No:
 ```
-위의 과정은 복잡한 비밀번호 설정을 위한 과정을 거치겠냐고 묻는 과정이며 저는 No로 스킵하였습니다.
+위의 과정은 복잡한 비밀번호 설정을 위한 과정을 거치겠냐고 묻는 과정이며,  
+**No**로 스킵하였습니다.
 
 ```
 Please set the password for root here.
@@ -62,7 +63,8 @@ New password:
 
 Re-enter new password:
 ```
-위의 과정은 루트 비밀번호를 입력하는 과정입니다.
+위의 과정은 루트 비밀번호를 입력하는 과정입니다.  
+비밀번호와 비밀번호 확인란을 입력하게 됩니다.
 
 ```
 By default, a MySQL installation has an anonymous user,
@@ -74,7 +76,8 @@ environment.
 
 Remove anonymous users? (Press y|Y for Yes, any other key for No) : y
 ```
-익명 사용자를 삭제할 것인지 묻습니다. 저는 y를 입력하였습니다.
+익명 사용자를 삭제할 것인지 묻습니다.  
+**y**를 입력하였습니다.
 
 ```
 Normally, root should only be allowed to connect from
@@ -83,7 +86,8 @@ the root password from the network.
 
 Disallow root login remotely? (Press y|Y for Yes, any other key for No) : y
 ```
-원격 접속을 허용할 것인지 묻습니다, 저는 로컬에서만 개발 예정이기에 y를 입력했습니다.
+원격 접속을 허용할 것인지 묻습니다,  
+로컬에서만 개발 예정이기에 **y**를 입력했습니다.
 
 ```
 By default, MySQL comes with a database named 'test' that
@@ -93,12 +97,14 @@ environment.
 
 Remove test database and access to it? (Press y|Y for Yes, any other key for No) :
 ```
-test 데이터베이스 삭제를 묻고 있습니다. 저는 No를 입력하였습니다.
+test 데이터베이스 삭제를 묻고 있습니다.  
+**No**를 입력하였습니다.
 
 ```
 Reload privilege tables now? (Press y|Y for Yes, any other key for No) :
 ```
-수정할 것이 있다면 위의 설정 과정을 다시 거칠 수 있습니다. No를 입력하였습니다.
+수정할 것이 있다면 위의 설정 과정을 다시 거칠 수 있습니다.  
+**No**를 입력하였습니다.
 
 ```
 All done!
