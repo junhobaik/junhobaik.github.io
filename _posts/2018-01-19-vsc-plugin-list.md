@@ -58,11 +58,15 @@ React 관련 플러그인을 더 찾아봐야겠는데 그 전에 사용하고 �
 - Reactjs code snippets
 : 리액트 코드 자동완성 스니펫 추가를 위한 확장.
 
+- TODO Highlight
+: TODO: FIXME: 구문 하이라이트.
+
 ## Theme
 
 \- Color
 : ~~FlatUI~~
-: 1337
+: ~~1337~~
+: Material Theme Kit
 
 \- Icon
 : Marterial Icon Theme
