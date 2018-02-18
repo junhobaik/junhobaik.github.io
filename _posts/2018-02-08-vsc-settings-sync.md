@@ -24,7 +24,7 @@ https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync
 **Settings > Developer settings > Personal access tokens > Generate New Token**
 
 나타나는 메뉴에서 **gist**에 체크 후 토큰을 생성한다.  
-이후 이 토큰을 이용하여 설정 업로드, 다운로드가 이뤄진다.
+생성 후 화면에 보이는 토큰 문자열을 이용하여 설정 업로드, 다운로드가 이뤄진다.
 
 ## 3. 설정 업로드 / 다운로드
 
@@ -33,3 +33,4 @@ https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync
 2. Download Key : Shift + Alt + D
 
 단축키를 통해 나타나는 입력칸에 토큰을 입력하면 설정 업로드, 다운로드가 이뤄지게 된다.
+한번 입력과정을 거치면 다음부터는 단축키 한번으로 업로드 다운로드가 가능하다.

@@ -31,6 +31,9 @@ React 관련 플러그인을 더 찾아봐야겠는데 그 전에 사용하고 �
 - Auto Close Tag  
 : 태그를 자동으로 닫아준다.
 
+- highlight-matching-tag
+: tag를 클릭하면 해당 태그의 시작과 끝 부분을 강조해준다.
+
 - Rainbow Brackets  
 : 브라켓의 색상을 단계별로 다르게 표시해준다.
 
@@ -60,6 +63,7 @@ React 관련 플러그인을 더 찾아봐야겠는데 그 전에 사용하고 �
 
 - TODO Highlight
 : TODO: FIXME: 구문 하이라이트.
+
 
 ## Theme
 
