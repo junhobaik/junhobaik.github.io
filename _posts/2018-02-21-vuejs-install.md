@@ -1,6 +1,9 @@
 ---
 title: Vue.JS 및 Vue 개발 도구 설치하기
 date: 2018-02-21 23:59 +0900
+tags:
+  - vue
+  - javascript
 ---
 
 ## Vue.JS 설치
