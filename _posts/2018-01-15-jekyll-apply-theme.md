@@ -75,7 +75,7 @@ gem "minimal-mistakes-jekyll"
 
 아래 명령어를 수행한다.
 ```
-$ buldle
+$ bundle
 ```
 
 ### 테스트, 배포
