@@ -1,6 +1,11 @@
 ---
 title: 웹팩 대신 파셀(Parcel) 사용해보기 \[with React, Babel, SASS\]
 date: 2018-03-23 22:31 +0900
+tags:
+  - parcel
+  - react
+  - sass
+  - babel
 ---
 
 주로 CRA(create-react-app)을 이용한 리액트 개발을 주로 해왔고 그로 인해 웹팩(Webpack) 번들러를 통해 간단한 설정 변경 등을 해왔는데 이번에 새로운 번들러인 파셀(Parcel)을 알게되었다.
