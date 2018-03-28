@@ -11,13 +11,18 @@ React 관련 플러그인을 더 찾아봐야겠는데 그 전에 사용하고 �
 
 ~~취소선은 설치했으나 비활성화 중인 것~~
 
-## List (업데이트 중)
+## List
+
+Last Update : 2018-03-28
 
 - Active File In StatusBar  
 : 현재 작업중인 파일의 전체 경로를 아래 상태표시줄에 표시해준다
 
 - Path Intellisense  
 : 파일 경로를 자동 완성해주는 기능
+
+- npm
+: npm 보조 확장.
 
 - npn Intellisense  
 : node module을 import시에 자동 완성 기능
@@ -54,6 +59,9 @@ React 관련 플러그인을 더 찾아봐야겠는데 그 전에 사용하고 �
 
 - Beautify
 : 코드 자동 정렬 확장.
+
+- Prettier
+: 위의 Beautify가 react에서 잘 작동하지 않아 쓰게 된 확장.
 
 - Debugger for Chrome
 : 크롬 디버깅 환경 사용을 위한 확장.
