@@ -9,20 +9,27 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "ko"
-title                    : "Dev.Hundred"
+title                    : 
+# title                    : "Dev.Hundred"
 title_separator          : "-"
-name                     : "Junho Baik"
-description              : "A personal web for Junho Baik"
-url                      : "https://junhobaik.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+name                     : 
+# name                     : "Junho Baik"
+description              : 
+# description              : "A personal web for Junho Baik"
+url                      : 
+# url                      : "https://junhobaik.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "junhobaik/junhobaik.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : 
+# repository               : "junhobaik/junhobaik.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
+  provider               :  # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
+  # provider               : "disqus"
   disqus:
-    shortname            : dev-hundred-blog
+    shortname            : 
+    # shortname            : dev-hundred-blog
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -77,18 +84,24 @@ social:
 
 # Analytics
 analytics:
-  provider               : "google" # false (default), "google", "google-universal", "custom"
+  provider               :  # false (default), "google", "google-universal", "custom"
+  # provider               : "google"
   google:
-    tracking_id          : "UA-103592668-4"
+    tracking_id          : 
+    # tracking_id          : "UA-103592668-4"
 
 
 # Site Author
 author:
-  name             : "Junho Baik"
-  avatar           : "/assets/images/profile.png"
-  bio              : "Junior Front-End Web Developer"
+  name             : 
+  # name             : "Junho Baik"
+  avatar           : 
+  # avatar           : "/assets/images/profile.png"
+  bio              : 
+  # bio              : "Junior Front-End Web Developer"
   location         : "Korea"
-  email            : "junhobaik@gmail.com"
+  email            : 
+  # email            : "junhobaik@gmail.com"
   uri              :
   home             : "#" # null (default), "absolute or relative url to link to author home"
   bitbucket        :
@@ -97,7 +110,8 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "junhobaik"
+  github           : 
+  # github           : "junhobaik"
   gitlab           :
   google_plus      :
   keybase          :
