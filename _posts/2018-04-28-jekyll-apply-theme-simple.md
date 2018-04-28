@@ -8,7 +8,7 @@ tags:
 
 [Jekyll 블로그 테마 적용하기 (minimal-mistakes)](https://junhobaik.github.io/jekyll-apply-theme/)  
 위 포스트를 먼저보시기를 추천드립니다.  
-위 포스트를 보고 어렵거나 더 쉽게 적용하는 방법을 적은 포스팅입니다.
+위 포스트를 보고 어려움을 느끼거나 더 쉽게 적용하고 싶은 분들을 위한 방법을 적은 포스팅입니다.
 
 ---
 
