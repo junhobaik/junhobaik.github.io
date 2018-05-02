@@ -67,7 +67,7 @@ async / defer 속성을 사용하면 **HTML 파싱과 동시에 스크립트 로
 
 **defer**는 파싱이 완료 된 후 스크립트가 실행되므로 2가지 이유 전부에 적합하다.
 
---- 
+---
 
-- References
-  - [PoiemaWeb](http://poiemaweb.com/js-syntax-basics)
+## References
+- [PoiemaWeb](http://poiemaweb.com/js-syntax-basics)
