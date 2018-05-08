@@ -11,7 +11,7 @@ colors 모듈은 우리가 흔히 사용하는 `console.log`의 출력문에 색
 npm install --save colors
 ```
 
-### 사용하기
+## 사용하기
 
 ```javascript
 const colors = require("colors");
