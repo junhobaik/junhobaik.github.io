@@ -1,5 +1,5 @@
 ---
-title: HTML에서 script태그는 어디 위치해야 할까?
+title: HTML에서 script태그는 어디에 위치해야 할까?
 date: 2018-05-03 00:15:00 +0900
 tags:
   - javascript
