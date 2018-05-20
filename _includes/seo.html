@@ -1,7 +1,5 @@
 <!-- begin SEO -->
 
-<meta name="naver-site-verification" content="b82306681a7f295c96378798aef6849495be33fd"/>
-
 {% if site.url %}
   {% assign seo_url = site.url | append: site.baseurl %}
 {% endif %}
@@ -21,15 +19,12 @@
 
 <title>{{ seo_title | default: site.title }}{% if paginator %}{% unless paginator.page == 1 %} {{ site.title_separator }} {{ site.data.ui-text[site.locale].page | default: "Page" }} {{ paginator.page }}{% endunless %}{% endif %}</title>
 
-<meta property="og:type" content="website">
-
 {% assign seo_description = page.description | default: page.excerpt | default: site.description %}
 {% if seo_description %}
   {% assign seo_description = seo_description | markdownify | strip_html | strip_newlines | escape_once %}
 {% endif %}
 
 <meta name="description" content="{{ seo_description }}">
-<meta property="description" content="{{ seo_description }}">
 
 {% assign seo_author = page.author | default: page.author[0] | default: site.author.name %}
 {% if seo_author %}
@@ -47,6 +42,9 @@
 
 <meta name="author" content="{{ seo_author }}">
 
+<meta name="naver-site-verification" content="b82306681a7f295c96378798aef6849495be33fd"/>
+
+<meta property="og:type" content="website">
 <meta property="og:locale" content="{{ site.locale | replace: "-", "_" | default: "en_US" }}">
 <meta property="og:site_name" content="{{ site.title }}">
 <meta property="og:title" content="{{ page.title | default: site.title | markdownify | strip_html | strip_newlines | escape_once }}">
@@ -56,9 +54,7 @@
   <meta property="og:url" content="{{ page.url | prepend: seo_url | replace: "/index.html", "/" }}">
 {% endif %}
 
-{% if page.excerpt %}
-  <meta property="og:description" content="{{ seo_description }}">
-{% endif %}
+<meta property="og:description" content="{{ seo_description }}">
 
 {% assign page_large_image = page.header.og_image | default: page.header.overlay_image | default: page.header.image %}
 {% unless page_large_image contains '://' %}
