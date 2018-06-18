@@ -26,9 +26,6 @@ Last Update : 2018-05-28
 - ~~Auto Close Tag~~  
 : 태그를 자동으로 닫아준다.
 
-- Auto Rename Tag  
-: 태그를 변경할때 자동으로 앞뒤 태그를 같이 바꿔준다.
-
 - Blank line at end of file  
 : 저장할때 파일의 마지막에 빈줄이 없다면 자동으로 추가해준다.
 
@@ -38,7 +35,7 @@ Last Update : 2018-05-28
 - ESlint  
 : ECMAScript Linter
 
-- Git History
+- ~~Git History~~
 : 깃 히스토리를 보기 좋게 보여준다.
 
 - gitignore
@@ -50,7 +47,7 @@ Last Update : 2018-05-28
 - indent rainbow  
 : 들여쓰기 단계에 따른 들여쓰기 공간의 색상을 다르게 표시해준다.
 
-- IntelliSense for CSS class names  
+- IntelliSense for CSS class names in HTML 
 : 자동 CSS 클래스명 완성 기능
 
 - Markdown Navigation
@@ -101,7 +98,8 @@ Last Update : 2018-05-28
 \- Color
 : ~~FlatUI~~
 : ~~1337~~
-: Material Theme Kit
+: ~~Material Theme Kit~~
+: dracular official
 
 \- Icon
 : Marterial Icon Theme
