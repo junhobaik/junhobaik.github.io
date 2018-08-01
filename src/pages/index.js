@@ -1,7 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import PostLink from '../components/post-link'
-import Header from '../components/header'
 
 const IndexPage = ({
   data: {
@@ -14,7 +13,6 @@ const IndexPage = ({
 
   return (
     <div>
-      <Header />
       {Posts}
     </div>
   )
