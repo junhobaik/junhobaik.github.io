@@ -81,3 +81,7 @@ $RECYCLE.BIN/
 *.msm
 *.msp
 *.lnk
+
+## gatsby
+public
+.cache
