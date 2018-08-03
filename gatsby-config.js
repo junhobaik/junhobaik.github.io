@@ -1,6 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'devLog',
+    author: 'Junho Baik',
+    description: "Junho Baik's blog",
+    siteUrl: 'https://junhobaik.github.io',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
