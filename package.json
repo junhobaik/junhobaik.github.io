@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "bluebird": "^3.5.1",
     "gatsby": "next",
     "gatsby-plugin-react-helmet": "next",
     "gatsby-source-filesystem": "^1.5.39",

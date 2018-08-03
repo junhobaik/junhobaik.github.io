@@ -10,7 +10,9 @@ const IndexPage = ({
 }) => {
   const Posts = edges
     .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
-    .map(edge => <PostLink key={edge.node.id} post={edge.node} />)
+    .map(edge => {
+      return <PostLink key={edge.node.slug} post={edge.node} />
+    })
 
   return (
     <Layout>
@@ -29,14 +31,20 @@ export default IndexPage
 
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
-          id
-          excerpt(pruneLength: 250)
+          excerpt
+          fields {
+            slug
+          }
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            path
+            date(formatString: "DD MMMM, YYYY")
             title
           }
         }
