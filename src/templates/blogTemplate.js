@@ -4,9 +4,6 @@ import Layout from '../components/layout'
 import Helmet from 'react-helmet'
 
 export default class Template extends React.Component {
-  constructor(props) {
-    super(props)
-  }
   render() {
     const { data, location, pageContext } = this.props
     const { markdownRemark } = data
