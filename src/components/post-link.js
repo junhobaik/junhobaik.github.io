@@ -6,7 +6,7 @@ const PostLink = ({ post }) => {
   const title = get(post, 'frontmatter.title') || post.fields.slug
 
   return (
-    <div key={post.fields.slug}>
+    <div className="post-link" key={title}>
       <Link to={post.fields.slug}>
         {title} ({post.frontmatter.date})
       </Link>
