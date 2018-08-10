@@ -8,6 +8,10 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     {
+      resolve: `gatsby-plugin-sass`,
+      options: {},
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/_posts`,
