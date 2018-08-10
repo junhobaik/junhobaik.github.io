@@ -1,10 +1,7 @@
 ---
 title: Jekyll 블로그 시작하기 (MacOS, GitHub Page)
-date: 2018-01-14 11:00:00 +0900
-tags:
-    - jekyll
-    - blog
-    - ruby
+date: 2018-01-14 11:00:00
+tags: ['test']
 ---
 
 원래는 Hexo 블로그 프레임워크를 사용하여 블로그를 시작하려했었다.  

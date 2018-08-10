@@ -1,7 +1,7 @@
 ---
 title: Javascript 함수선언문과 함수표현식
 date: 2018-01-02
-tags: javascript
+tags: [javascript]
 category: javascript
 ---
 

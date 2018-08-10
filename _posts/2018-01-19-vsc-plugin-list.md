@@ -2,7 +2,8 @@
 title: 사용중인 VSCode(Visual Studio Code) 확장 플러그인 목록
 date: 2018-01-19 22:59 +0900
 tags:
-  - VSCode
+  - super
+  - test
 ---
 
 Atom, Brakets을 거쳐 WebStorm, VSCode를 병행해서 사용하였는데 무료인 VSCode로 이제 정착해 사용하고 있다.  
