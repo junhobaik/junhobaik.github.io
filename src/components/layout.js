@@ -5,6 +5,7 @@ import { StaticQuery, graphql } from 'gatsby'
 
 import Header from './header'
 import './layout.scss'
+import profileImg from './profile.png';
 
 const Layout = ({ children, data }) => (
   <StaticQuery
@@ -26,16 +27,27 @@ const Layout = ({ children, data }) => (
             { name: 'keywords', content: 'sample, something' },
           ]}
         />
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <div
-          style={{
-            margin: '0 auto',
-            maxWidth: 960,
-            padding: '0px 1.0875rem 1.45rem',
-            paddingTop: 0,
-          }}
-        >
-          {children}
+        {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
+        <div className="wrap">
+          <div className="menu">
+            <div className="bio">
+              <div className="profile-img">
+                <img src={profileImg} alt="profile_photo" />
+              </div>
+              <p className="profile-name">Junho Baik</p>
+              <div className="profile-msg">
+                <span>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum
+                  libero eveniet odio quaerat sit unde maxime excepturi, optio
+                  quam illum?
+                </span>
+              </div>
+            </div>
+
+            <div className="submenu" />
+          </div>
+
+          <div>{children}</div>
         </div>
       </>
     )}
