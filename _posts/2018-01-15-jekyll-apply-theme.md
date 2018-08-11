@@ -1,7 +1,9 @@
 ---
 title: Jekyll 블로그 테마 적용하기 (minimal-mistakes)
 date: 2018-01-15 05:34:12
-tags: ['blog', 'jekyll']
+tags:
+  - blog
+  - jekyll
 ---
 
 jekyll 블로그를 시작하기 위한 준비를 저번 포스트에서 끝냈다.  
