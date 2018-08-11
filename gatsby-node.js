@@ -58,21 +58,20 @@ exports.createPages = ({ graphql, actions }) => {
   })
 }
 
-exports.onCreateNode = ({ node, actions, getNode, boundActionCreators }) => {
-  // const { createNodeField } = actions
-  const { createNodeField } = boundActionCreators
+exports.onCreateNode = ({ node, actions, getNode }) => {
+  const { createNodeField } = actions
 
   if (node.internal.type === `MarkdownRemark`) {
     const slug = createFilePath({ node, getNode, basePath: `pages` })
     const dayRegExp = /^\/(19|20)\d{2}-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[0-1])-/
     const rewriteSlug = '/' + slug.replace(dayRegExp, '')
 
-    let rewriteNode = node;
-    if(rewriteNode.frontmatter.tags === undefined){
-      rewriteNode.frontmatter.tags = [];
+    let rewriteNode = node
+
+    if (rewriteNode.frontmatter.tags === undefined) {
+      rewriteNode.frontmatter.tags = []
     }
 
-    const value = createFilePath({ node, getNode })
     createNodeField({
       name: `slug`,
       node: rewriteNode,
