@@ -5,6 +5,7 @@ import Helmet from 'react-helmet'
 
 export default class Template extends React.Component {
   render() {
+    console.log(this.props);
     const { data, location, pageContext } = this.props
     const { markdownRemark } = data
     const { frontmatter, html } = markdownRemark
