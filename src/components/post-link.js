@@ -4,17 +4,27 @@ import get from 'lodash/get'
 import './post-link.scss'
 
 const PostLink = ({ post }) => {
-  const slug = post.fields.slug;
+  console.log(post)
+  const slug = post.fields.slug
   const title = get(post, 'frontmatter.title') || slug
-  const excerpt = post.excerpt;
+  const excerpt = post.excerpt
   // const date = post.frontmatter.date
+  const tags = post.frontmatter.tags
 
+  const tagsObj = tags.map(v => {
+    return (
+      <a href="#" className="tag" key={`tag-` + v}>
+        #{v}
+      </a>
+    )
+  })
   return (
     <div className="post-link" key={title}>
       <Link to={slug}>
         <h2 className="title">{title}</h2>
-        <span className="excerpt">{excerpt}</span>
       </Link>
+      <div className="tags-list">{tagsObj}</div>
+      <span className="excerpt">{excerpt}</span>
     </div>
   )
 }

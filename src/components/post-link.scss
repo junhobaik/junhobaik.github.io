@@ -16,6 +16,20 @@
     color: #555555;
     padding-bottom: 0.5rem;
   }
+
+  .tags-list {
+    display: flex;
+    flex-direction: row;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+    .tag {
+      margin-right: 1rem;
+      background-color: gray;
+      color: white;
+      padding: 3px 5px;
+      border-radius: 3px;
+    }
+  }
   .excerpt {
     display: inline-block;
     color: #555555;
