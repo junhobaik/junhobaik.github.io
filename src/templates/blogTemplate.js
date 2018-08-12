@@ -3,7 +3,7 @@ import { graphql, Link } from 'gatsby'
 import Layout from '../components/layout'
 import Helmet from 'react-helmet'
 
-export default class Template extends React.Component {
+export default class BlogTemplate extends React.Component {
   render() {
     console.log(this.props);
     const { data, location, pageContext } = this.props

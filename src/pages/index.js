@@ -1,7 +1,8 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import PostLink from '../components/PostLink'
 import Layout from '../components/layout'
+import PostList from '../components/PostList'
+
 import './index.scss'
 
 const IndexPage = ({
@@ -9,13 +10,10 @@ const IndexPage = ({
     allMarkdownRemark: { edges },
   },
 }) => {
-  const Posts = edges.filter(edge => !!edge.node.frontmatter.date).map(edge => {
-    return <PostLink key={edge.node.fields.slug} post={edge.node} />
-  })
-
+  console.log(edges);
   return (
     <Layout>
-      {Posts}
+      <PostList data={edges} />
     </Layout>
   )
 }

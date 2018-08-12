@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import get from 'lodash/get'
+import _ from "lodash";
 import './index.scss'
 
 const PostLink = ({ post }) => {
@@ -13,9 +14,9 @@ const PostLink = ({ post }) => {
 
   const tagsObj = tags.map(v => {
     return (
-      <a href="#" className="tag" key={`tag-` + v}>
+      <Link to={`/tags/${_.kebabCase(v)}`} className="tag" key={`tag-` + v}>
         #{v}
-      </a>
+      </Link>
     )
   })
   return (
