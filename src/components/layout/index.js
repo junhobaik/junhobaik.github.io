@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
-import './layout.scss'
+import './index.scss'
 import profileImg from './profile.png';
 
 const Layout = ({ children, data }) => (
