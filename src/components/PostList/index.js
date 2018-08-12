@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import PostLink from '../PostLink'
+import './index.scss'
 
-class index extends Component {
+class PostList extends Component {
   render() {
-    console.log('[PostList] render()');
-
     const edges = this.props.data
+    const listTitle = this.props.title || null
 
     const Posts = edges
       .filter(edge => !!edge.node.frontmatter.date)
@@ -13,8 +13,13 @@ class index extends Component {
         return <PostLink key={edge.node.fields.slug} post={edge.node} />
       })
 
-    return <div>{Posts}</div>
+    return (
+      <div id="PostList">
+        <h1 className="list-title">{listTitle}</h1>
+        {Posts}
+      </div>
+    )
   }
 }
 
-export default index
+export default PostList

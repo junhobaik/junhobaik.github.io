@@ -13,7 +13,7 @@ const IndexPage = ({
   console.log(edges);
   return (
     <Layout>
-      <PostList data={edges} />
+      <PostList data={edges} title="최근 포스트" />
     </Layout>
   )
 }

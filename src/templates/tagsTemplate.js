@@ -7,12 +7,13 @@ import PostList from '../components/PostList'
 class tagsTemplate extends Component {
 
   render() {
-    console.log(this.props.data.allMarkdownRemark);
+    console.log(this.props);
     const edges = this.props.data.allMarkdownRemark.edges;
+    const title = `${this.props.pageContext.tag}에 관한 ${this.props.data.allMarkdownRemark.totalCount}개의 포스트`
 
     return (
       <Layout>
-          <PostList data={edges}/>
+          <PostList data={edges} title={title}/>
       </Layout>
     )
   }
