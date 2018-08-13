@@ -10,7 +10,6 @@ const IndexPage = ({
     allMarkdownRemark: { edges },
   },
 }) => {
-  console.log(edges);
   return (
     <Layout>
       <PostList data={edges} title="최근 포스트" />
