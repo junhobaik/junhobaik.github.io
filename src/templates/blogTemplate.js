@@ -5,7 +5,7 @@ import Helmet from 'react-helmet'
 
 export default class BlogTemplate extends React.Component {
   render() {
-    console.log(this.props);
+    console.log(this.props)
     const { data, location, pageContext } = this.props
     const { markdownRemark } = data
     const { frontmatter, html } = markdownRemark
@@ -51,7 +51,7 @@ export default class BlogTemplate extends React.Component {
 }
 
 export const pageQuery = graphql`
-  query BlogPostBySlug($slug: String!) {
+  query BlogPostBySlug($slug: String) {
     site {
       siteMetadata {
         title
