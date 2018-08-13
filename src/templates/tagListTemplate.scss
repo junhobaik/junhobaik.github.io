@@ -1,0 +1,19 @@
+.tag-list {
+  display: flex;
+
+  .tag {
+    list-style: none;
+    background-color: gray;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    margin-right: 1rem;
+    border-radius: 3px;
+    .tag-name {
+      font-size: 1.2rem;
+      margin-right: 0.5rem;
+    }
+    .tag-count {
+      color: lightgray;
+    }
+  }
+}
