@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import { StaticQuery, graphql } from 'gatsby'
+import { StaticQuery, graphql, Link } from 'gatsby'
 
 import './index.scss'
 import profileImg from './profile.png';
@@ -43,7 +43,9 @@ const Layout = ({ children, data }) => (
               </div>
             </div>
 
-            <div className="submenu" />
+            <div className="submenu">
+              <Link to="/taglist">Tags</Link>
+            </div>
           </div>
 
           <div>{children}</div>
