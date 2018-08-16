@@ -15,7 +15,7 @@ const PostLink = ({ post }) => {
   const tagsObj = tags.map(v => {
     return (
       <Link to={`/tags/${_.kebabCase(v)}`} className="tag" key={`tag-` + v}>
-        #{v}
+        #<span className="tag-name">{v}</span>
       </Link>
     )
   })
