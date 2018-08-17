@@ -44,6 +44,7 @@ const Layout = ({ children, data }) => (
 
             <div className="submenu">
               <Link to="/taglist">Tags</Link>
+              <Link to="/archive">Archive</Link>
             </div>
           </div>
 

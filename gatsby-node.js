@@ -9,7 +9,8 @@ exports.createPages = ({ graphql, actions }) => {
   return new Promise((resolve, reject) => {
     const blogPost = path.resolve('./src/templates/blogTemplate.js')
     const tagsTemplate = path.resolve('./src/templates/tagsTemplate.js')
-    const tagListTemplate = path.resolve('./src/templates/tagListTemplate.js')
+    const tagListTemplate = path.resolve('./src/templates/tagListTemplate/index.js')
+    const archiveTemplate = path.resolve('./src/templates/archiveTemplate/index.js')
 
     resolve(
       graphql(
@@ -90,6 +91,11 @@ exports.createPages = ({ graphql, actions }) => {
             tags,
             result
           },
+        })
+
+        createPage({
+          path: `/archive`,
+          component: archiveTemplate
         })
       })
     )

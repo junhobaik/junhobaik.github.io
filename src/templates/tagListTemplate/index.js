@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { graphql } from 'gatsby'
-import Layout from '../components/layout'
-import PostList from '../components/PostList'
-import './tagListTemplate.scss'
+import Layout from '../../components/layout'
+import PostList from '../../components/PostList'
+import './index.scss'
 
 class tagListTemplate extends Component {
   constructor(props) {
