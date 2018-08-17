@@ -14,7 +14,9 @@
     "node-sass": "^4.9.3",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1"
   },
   "keywords": [
     "gatsby"
