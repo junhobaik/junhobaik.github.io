@@ -7,10 +7,10 @@ exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 
   return new Promise((resolve, reject) => {
-    const blogPost = path.resolve('./src/templates/blogTemplate.js')
-    const tagsTemplate = path.resolve('./src/templates/tagsTemplate.js')
-    const tagListTemplate = path.resolve('./src/templates/tagListTemplate/index.js')
-    const archiveTemplate = path.resolve('./src/templates/archiveTemplate/index.js')
+    const blogPostTemplate = path.resolve('./src/templates/blogPost/index.js')
+    const postListByTagTemplate = path.resolve('./src/templates/postListByTag/index.js')
+    const tagListTemplate = path.resolve('./src/templates/tagList/index.js')
+    const archiveTemplate = path.resolve('./src/templates/archive/index.js')
 
     resolve(
       graphql(
@@ -50,7 +50,7 @@ exports.createPages = ({ graphql, actions }) => {
 
           createPage({
             path: post.node.fields.slug,
-            component: blogPost,
+            component: blogPostTemplate,
             context: {
               slug: post.node.fields.slug,
               previous,
@@ -76,7 +76,7 @@ exports.createPages = ({ graphql, actions }) => {
 
           createPage({
             path: `/tags/${_.kebabCase(tag)}/`,
-            component: tagsTemplate,
+            component: postListByTagTemplate,
             context: {
               tag,
             },
