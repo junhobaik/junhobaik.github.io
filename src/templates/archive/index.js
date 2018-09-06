@@ -8,11 +8,11 @@ class Archive extends Component {
     const posts = this.props.data.allMarkdownRemark.edges
 
     const postList = posts.map((v, i) => {
-      let date = v.node.frontmatter.date.split('T', 1)
-
+      const date = v.node.frontmatter.date.split('T', 1)
+      const slug = v.node.fields.slug;
       return (
-        <div>
-          <Link to={v.node.fields.slug}>
+        <div key={slug}>
+          <Link to={slug}>
             <span>{date}</span>/ 
             <span>{v.node.frontmatter.title}</span>
           </Link>
