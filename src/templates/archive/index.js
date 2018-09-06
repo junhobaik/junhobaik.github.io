@@ -1,18 +1,44 @@
 import React, { Component } from 'react'
+import { graphql, Link } from 'gatsby'
 import Layout from '../../components/layout'
 import './index.scss'
 
 class Archive extends Component {
   render() {
-    console.log(this.props);
-    return (
-      <Layout>
+    const posts = this.props.data.allMarkdownRemark.edges
+
+    const postList = posts.map((v, i) => {
+      let date = v.node.frontmatter.date.split('T', 1)
+
+      return (
         <div>
-          archive
+          <Link to={v.node.fields.slug}>
+            <span>{date}</span>/ 
+            <span>{v.node.frontmatter.title}</span>
+          </Link>
         </div>
-      </Layout>
-    )
+      )
+    })
+    return <Layout>{postList}</Layout>
   }
 }
 
 export default Archive
+
+export const pageQuery = graphql`
+  query {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            date
+            title
+          }
+        }
+      }
+    }
+  }
+`
