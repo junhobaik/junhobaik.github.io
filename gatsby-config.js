@@ -73,6 +73,12 @@ module.exports = {
         queries,
         chunkSize: 10000, // default: 1000
       },
-    }
+    },
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+          include: /svg-icons/
+      }
+  }
   ],
 }
