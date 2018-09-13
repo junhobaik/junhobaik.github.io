@@ -30,6 +30,7 @@ const queries = [
 ]
 
 module.exports = {
+  pathPrefix: `/junhobaik.github.io`,
   siteMetadata: {
     title: 'devLog',
     author: 'Junho Baik',
