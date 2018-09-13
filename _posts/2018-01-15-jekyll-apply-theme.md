@@ -1,6 +1,6 @@
 ---
 title: Jekyll 블로그 테마 적용하기 (minimal-mistakes)
-date: 2018-01-15 05:34:12
+date: 2018-01-15 05:34:12 +0900
 tags:
   - blog
   - jekyll

@@ -8,7 +8,9 @@ exports.createPages = ({ graphql, actions }) => {
 
   return new Promise((resolve, reject) => {
     const blogPostTemplate = path.resolve('./src/templates/blogPost/index.js')
-    const postListByTagTemplate = path.resolve('./src/templates/postListByTag/index.js')
+    const postListByTagTemplate = path.resolve(
+      './src/templates/postListByTag/index.js'
+    )
     const tagListTemplate = path.resolve('./src/templates/tagList/index.js')
     const archiveTemplate = path.resolve('./src/templates/archive/index.js')
 
@@ -83,19 +85,18 @@ exports.createPages = ({ graphql, actions }) => {
           })
         })
 
-
         createPage({
           path: `/taglist`,
           component: tagListTemplate,
           context: {
             tags,
-            result
+            result,
           },
         })
 
         createPage({
           path: `/archive`,
-          component: archiveTemplate
+          component: archiveTemplate,
         })
       })
     )
@@ -126,8 +127,12 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
     const rewriteNode = node => {
       // 마크다운 파일 내 태그 필드가 비어있을 시 오류가 나지 않도록 하기 위함
-      if (node.frontmatter.tags === undefined) {
+      if (node.frontmatter.tags === undefined || node.frontmatter.tags === '') {
         node.frontmatter.tags = []
+      }
+      // 태그 필드가 배열이 아닌 문자열 하나일때 배열로 덮음
+      else if (typeof node.frontmatter.tags === 'string') {
+        node.frontmatter.tags = [node.frontmatter.tags]
       }
       return node
     }

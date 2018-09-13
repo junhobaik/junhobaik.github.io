@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-
+import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import Search from '../components/Search'
 
-import AlgoliaIcon from '!svg-react-loader!../images/svg-icons/search-by-algolia.svg?name=AlgoliaLogo'
+// import AlgoliaIcon from '../images/svg-icons/search-by-algolia.svg';
 
 class SearchPage extends React.Component {
   render() {
@@ -13,7 +13,7 @@ class SearchPage extends React.Component {
     return (
       <Layout>
         <div className="icon">
-          <AlgoliaIcon />
+          {/* <AlgoliaIcon /> */}
         </div>
         <Search algolia={algolia} />
       </Layout>
