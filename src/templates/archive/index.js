@@ -8,7 +8,7 @@ class Archive extends Component {
     const posts = this.props.data.allMarkdownRemark.edges
 
     const postList = posts.map((v, i) => {
-      const date = v.node.frontmatter.date.split('T', 1)
+      const date = v.node.frontmatter.date
       const slug = v.node.fields.slug;
       return (
         <div key={slug}>
@@ -34,7 +34,7 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-            date
+            date(formatString: "YYYY-MM-DD")
             title
           }
         }
