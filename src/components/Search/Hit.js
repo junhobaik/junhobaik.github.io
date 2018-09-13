@@ -34,7 +34,7 @@ const Hit = props => {
       <Link to={hit.slug}>{hit.title}</Link>
 
       {/* --- STYLES --- */}
-      <style jsx global>{`
+      <style>{`
         .ais-Hits-item {
           padding: 0.5em 0 0.5em 1em;
           position: relative;

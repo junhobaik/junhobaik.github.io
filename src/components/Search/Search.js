@@ -50,7 +50,7 @@ const Search = props => {
       </div>
 
       {/* --- STYLES --- */}
-      <style jsx global>{`
+      <style>{`
         .ais-SearchBox {
           width: 100%;
         }
