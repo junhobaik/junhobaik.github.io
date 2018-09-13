@@ -21,6 +21,7 @@
     flex-grow: 1;
   }
 }
+
 .menu {
   padding: 2rem 1rem;
   display: flex;
@@ -74,7 +75,7 @@
     flex-direction: column;
     margin-top: 1rem;
 
-    &>a {
+    & > a {
       padding: 0.2rem 0;
     }
 
@@ -87,9 +88,22 @@
       align-items: center;
       margin-right: 2rem;
 
-      &>a{
+      & > a {
         padding: 0 0.2rem;
       }
+    }
+  }
+}
+
+#Footer {
+  background-color: lightgray;
+  padding: 5px 3px;
+  display: flex;
+  .copyright {
+    margin: 0 auto;
+    color: #444444;
+    a {
+      color: #444444;
     }
   }
 }

@@ -4,7 +4,8 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql, Link } from 'gatsby'
 
 import './index.scss'
-import profileImg from './profile.png';
+import Footer from './Footer'
+import profileImg from './profile.png'
 
 const Layout = ({ children, data }) => (
   <StaticQuery
@@ -52,6 +53,7 @@ const Layout = ({ children, data }) => (
 
           <div>{children}</div>
         </div>
+        <Footer />
       </>
     )}
   />
