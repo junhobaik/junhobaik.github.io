@@ -1,4 +1,12 @@
+@import '../utils/variables.scss';
+
 body {
   padding: 0;
   margin: 0;
+  
+}
+
+a {
+  color: $font-basic-color;
+  text-decoration: none;
 }
