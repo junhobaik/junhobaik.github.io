@@ -1,5 +1,4 @@
-$break-small: 680px;
-$break-large: 1270px;
+@import '../../utils/variables.scss';
 
 .wrap {
   min-height: 100vh;
