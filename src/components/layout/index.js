@@ -26,7 +26,9 @@ const Layout = ({ children, data }) => (
             { name: 'description', content: 'Sample' },
             { name: 'keywords', content: 'sample, something' },
           ]}
-        />
+        >
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css"></link>
+        </Helmet>
         <div className="wrap">
           <div className="menu">
             <div className="bio">
