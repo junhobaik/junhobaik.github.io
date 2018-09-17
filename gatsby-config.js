@@ -59,7 +59,22 @@ module.exports = {
         name: 'markdown-pages',
       },
     },
-    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              classPrefix: 'language-',
+              inlineCodeMarker: null,
+              aliases: {},
+              showLineNumbers: false,
+            },
+          },
+        ],
+      },
+    },
     {
       resolve: `gatsby-plugin-algolia`,
       options: {
@@ -77,8 +92,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-react-svg',
       options: {
-          include: /svg-icons/
-      }
-  }
+        include: /svg-icons/,
+      },
+    },
   ],
 }

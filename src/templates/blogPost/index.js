@@ -4,6 +4,8 @@ import Layout from '../../components/layout'
 import Helmet from 'react-helmet'
 import { DiscussionEmbed } from "disqus-react";
 
+import './index.scss'
+
 export default class BlogTemplate extends React.Component {
   render() {
     console.log(this.props)
