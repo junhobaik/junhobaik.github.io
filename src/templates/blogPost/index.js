@@ -2,7 +2,7 @@ import React from 'react'
 import { graphql, Link } from 'gatsby'
 import Layout from '../../components/layout'
 import Helmet from 'react-helmet'
-import { DiscussionEmbed } from "disqus-react";
+import { DiscussionEmbed } from 'disqus-react'
 
 import './index.scss'
 
@@ -18,12 +18,12 @@ export default class BlogTemplate extends React.Component {
     const disqusShortname = 'dev-hundred-blog'
     const disqusConfig = {
       identifier: id,
-      title: siteTitle
+      title: siteTitle,
     }
 
     return (
       <Layout location={location}>
-        <Helmet title={`${frontmatter.title} | ${siteTitle}`} />
+        <Helmet title={siteTitle} />
         <div className="blog-post-container">
           <div className="blog-post">
             <h1>{frontmatter.title}</h1>

@@ -18,14 +18,14 @@ class tagListTemplate extends Component {
     })
   }
 
-  componentDidUpdate(){
+  componentDidUpdate() {
     console.log('[tagListTemplate] componentDidUpdate')
     const tags = document.querySelectorAll('#PostList a.tag')
-    for(let v of tags){
+    for (let v of tags) {
       const tagName = v.querySelector('.tag-name').innerText
       v.onclick = e => {
         e.preventDefault()
-        this.changeSelectedTag(tagName);
+        this.changeSelectedTag(tagName)
       }
     }
   }

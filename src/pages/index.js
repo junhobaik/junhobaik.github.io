@@ -1,12 +1,12 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import PostList from '../components/PostList'
 
 import './index.scss'
 
-export default class index extends React.Component {
-  render(){
+export default class index extends Component {
+  render() {
     const edges = this.props.data.allMarkdownRemark.edges
     return (
       <Layout>

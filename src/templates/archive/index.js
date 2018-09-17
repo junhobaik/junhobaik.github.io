@@ -9,12 +9,11 @@ class Archive extends Component {
 
     const postList = posts.map((v, i) => {
       const date = v.node.frontmatter.date
-      const slug = v.node.fields.slug;
+      const slug = v.node.fields.slug
       return (
         <div key={slug}>
           <Link to={slug}>
-            <span>{date}</span>/ 
-            <span>{v.node.frontmatter.title}</span>
+            <span>{date}</span>/<span>{v.node.frontmatter.title}</span>
           </Link>
         </div>
       )
