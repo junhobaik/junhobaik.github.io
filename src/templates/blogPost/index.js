@@ -2,15 +2,22 @@ import React from 'react'
 import { graphql, Link } from 'gatsby'
 import Layout from '../../components/layout'
 import Helmet from 'react-helmet'
+import { DiscussionEmbed } from "disqus-react";
 
 export default class BlogTemplate extends React.Component {
   render() {
     console.log(this.props)
     const { data, location, pageContext } = this.props
-    const { markdownRemark } = data
-    const { frontmatter, html } = markdownRemark
+    const { id, frontmatter, html } = data.markdownRemark
     const siteTitle = data.site.siteMetadata.siteTitle
     const { previous, next } = pageContext
+
+    //disqus
+    const disqusShortname = 'dev-hundred-blog'
+    const disqusConfig = {
+      identifier: id,
+      title: siteTitle
+    }
 
     return (
       <Layout location={location}>
@@ -44,6 +51,9 @@ export default class BlogTemplate extends React.Component {
               )}
             </ul>
           </div>
+        </div>
+        <div>
+          <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
         </div>
       </Layout>
     )
