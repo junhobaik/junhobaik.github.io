@@ -3,9 +3,15 @@
 #wrap {
   display: flex;
   flex-direction: column;
+  margin-top: 5rem;
 }
 
 #header {
+  position: fixed;
+  min-width: 100%;
+  top: 0;
+  height: 5rem;
+  box-sizing: border-box;
   display: flex;
   flex-direction: row;
   background-color: $dark-color;
