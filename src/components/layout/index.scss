@@ -5,6 +5,7 @@
   flex-direction: column;
   padding-top: 5rem;
   min-height: 100vh;
+  background-color: $white-color;
 }
 
 #header {
@@ -15,7 +16,7 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
-  background-color: $dark-color;
+  background-color: $header-color;
   color: $white-color;
   padding: 1rem 2rem;
 
@@ -67,7 +68,10 @@
 }
 
 #article {
-  background-color: #fdfffc;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  border: 1px dotted red;
 }
 /* 
 .wrap {
