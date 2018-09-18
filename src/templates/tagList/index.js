@@ -4,8 +4,6 @@ import Layout from '../../components/layout'
 import PostList from '../../components/PostList'
 import './index.scss'
 
-import { Grid } from 'semantic-ui-react'
-
 class tagListTemplate extends Component {
   constructor(props) {
     super(props)
