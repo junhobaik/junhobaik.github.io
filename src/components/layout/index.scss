@@ -9,6 +9,7 @@
 }
 
 #header {
+  z-index: 99;
   position: fixed;
   min-width: 100%;
   top: 0;
@@ -72,147 +73,8 @@
   max-width: 80%;
   margin: 0 auto;
   padding: 2rem;
-  border: 1px dotted red;
   
   @media screen and (orientation: portrait){
     min-width: 100%;  
   }
 }
-/* 
-.wrap {
-  min-height: 100vh;
-  min-width: 100wh;
-  display: flex;
-
-  @media screen and (max-width: $break-small) {
-    flex-direction: column;
-  }
-
-  & > :nth-child(1) {
-    width: 18em;
-    min-width: 18em;
-
-    @media screen and (max-width: $break-small) {
-      width: 100%;
-    }
-  }
-  & > :nth-child(2) {
-    flex-grow: 1;
-  }
-}
-
-.menu {
-  padding: 2rem 1rem;
-  display: flex;
-  flex-direction: column;
-  border-right: 1px solid gray;
-
-  a {
-    color: black;
-  }
-
-  @media screen and (max-width: $break-small) {
-    padding: 1rem 1rem 0.5rem 1rem;
-    border-right: 0;
-    border-bottom: 1px solid gray;
-    flex-direction: row;
-  }
-
-  & > .bio {
-    display: flex;
-    flex-direction: column;
-
-    @media screen and (max-width: $break-small) {
-      flex-direction: row;
-      flex-grow: 1;
-    }
-    .profile-img {
-      align-self: center;
-      img {
-        width: 5rem;
-        height: 5rem;
-        padding: 0.25rem;
-        border: 1px solid lightgray;
-        border-radius: 100%;
-
-        @media screen and (max-width: $break-small) {
-          width: 4rem;
-          height: 4rem;
-          padding: 0.2rem;
-        }
-      }
-    }
-    .profile-text {
-      display: flex;
-      flex-direction: column;
-
-      .profile-name {
-        font-size: 1.2rem;
-        align-self: center;
-        @media screen and (max-width: $break-small) {
-          align-self: flex-start;
-          margin-left: 1rem;
-        }
-      }
-
-      .profile-msg {
-        .short {
-          display: none;
-        }
-        @media screen and (max-width: $break-small) {
-          .short {
-            display: inline;
-          }
-          .long {
-            display: none;
-          }
-        }
-      }
-    }
-  }
-
-  & > .submenu {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    margin-top: 3rem;
-
-    & > div {
-      margin-bottom: 0.5rem;
-
-      .icon {
-        margin-right: 0.5rem;
-      }
-    }
-
-    @media screen and (max-width: $break-small) {
-      flex-grow: 0;
-      display: flex;
-      flex-direction: row;
-      align-content: center;
-      margin: 0;
-      align-items: center;
-
-      & > div {
-        margin-right: 1rem;
-        .icon {
-          margin-right: 0.25rem;
-        }
-      }
-    }
-  }
-}
-
-#Footer {
-  background-color: lightgray;
-  padding: 5px 3px;
-  display: flex;
-  .copyright {
-    margin: 0 auto;
-    color: #444444;
-    a {
-      color: #444444;
-    }
-  }
-}
-*/
