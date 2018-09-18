@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql, Link } from 'gatsby'
+import { Icon } from 'semantic-ui-react'
 
 import './index.scss'
 import Footer from './Footer'
@@ -27,7 +28,10 @@ const Layout = ({ children, data }) => (
             { name: 'keywords', content: 'sample, something' },
           ]}
         >
-        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css"></link>
+          <link
+            rel="stylesheet"
+            href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css"
+          />
         </Helmet>
         <div className="wrap">
           <div className="menu">
@@ -35,21 +39,40 @@ const Layout = ({ children, data }) => (
               <div className="profile-img">
                 <img src={profileImg} alt="profile_photo" />
               </div>
-              <p className="profile-name">Junho Baik</p>
-              <div className="profile-msg">
-                <span>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum
-                  libero eveniet odio quaerat sit unde maxime excepturi, optio
-                  quam illum?
-                </span>
+              <div className="profile-text">
+                <p className="profile-name">Junho Baik</p>
+                <div className="profile-msg">
+                  <span className="long">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Eum libero eveniet odio quaerat sit unde maxime excepturi,
+                    optio quam illum?
+                  </span>
+                  <span className="short">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consectetur, corrupti.
+                  </span>
+                </div>
               </div>
             </div>
 
             <div className="submenu">
-              <Link to="/">Home</Link>
-              <Link to="/taglist">Tags</Link>
+              <div className="home">
+                <Link to="/">
+                  <Icon name="home" />
+                  Home
+                </Link>
+              </div>
+              <div className="tags">
+                <Link to="/taglist">
+                  <Icon name="tags" />
+                  Tags
+                </Link>
+              </div>
+              <div className="search">
+                <Icon name="search" />
+                <Link to="/search">Search</Link>
+              </div>
               {/* <Link to="/archive">Archive</Link> */}
-              <Link to="/search">Search</Link>
             </div>
           </div>
 

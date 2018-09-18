@@ -27,6 +27,11 @@
   display: flex;
   flex-direction: column;
   border-right: 1px solid gray;
+
+  a {
+    color: black;
+  }
+
   @media screen and (max-width: $break-small) {
     padding: 1rem 1rem 0.5rem 1rem;
     border-right: 0;
@@ -37,18 +42,13 @@
   & > .bio {
     display: flex;
     flex-direction: column;
-    align-items: center;
+
     @media screen and (max-width: $break-small) {
       flex-direction: row;
       flex-grow: 1;
     }
-    .profile-name {
-      font-size: 1.2rem;
-      @media screen and (max-width: $break-small) {
-        margin-left: 1rem;
-      }
-    }
     .profile-img {
+      align-self: center;
       img {
         width: 5rem;
         height: 5rem;
@@ -63,20 +63,47 @@
         }
       }
     }
-    .profile-msg {
-      @media screen and (max-width: $break-small) {
-        display: none;
+    .profile-text {
+      display: flex;
+      flex-direction: column;
+
+      .profile-name {
+        font-size: 1.2rem;
+        align-self: center;
+        @media screen and (max-width: $break-small) {
+          align-self: flex-start;
+          margin-left: 1rem;
+        }
+      }
+
+      .profile-msg {
+        .short {
+          display: none;
+        }
+        @media screen and (max-width: $break-small) {
+          .short {
+            display: inline;
+          }
+          .long {
+            display: none;
+          }
+        }
       }
     }
   }
+
   & > .submenu {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    margin-top: 1rem;
+    margin-top: 3rem;
 
-    & > a {
-      padding: 0.2rem 0;
+    & > div {
+      margin-bottom: 0.5rem;
+
+      .icon {
+        margin-right: 0.5rem;
+      }
     }
 
     @media screen and (max-width: $break-small) {
@@ -86,10 +113,12 @@
       align-content: center;
       margin: 0;
       align-items: center;
-      margin-right: 2rem;
 
-      & > a {
-        padding: 0 0.2rem;
+      & > div {
+        margin-right: 1rem;
+        .icon {
+          margin-right: 0.25rem;
+        }
       }
     }
   }
