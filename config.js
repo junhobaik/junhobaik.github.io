@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'devLog',
+  title: `HUNDRED`,
   author: 'Junho Baik',
   description: "Junho Baik's blog",
   siteUrl: 'https://junhobaik.github.io',
