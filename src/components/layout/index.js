@@ -71,11 +71,10 @@ const Layout = ({ children, data }) => (
             </header>
 
             <article id="article">{children}</article>
-
-            <footer id="footer">
-              <Footer />
-            </footer>
           </div>
+          <footer id="footer">
+            <Footer />
+          </footer>
         </>
       )
     }}
