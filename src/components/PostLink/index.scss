@@ -1,3 +1,5 @@
+@import '../../utils/variables.scss';
+
 .post-link {
   a {
     color: black;
@@ -23,7 +25,7 @@
     margin-bottom: 0.5rem;
     .tag {
       margin-right: 1rem;
-      background-color: gray;
+      background-color: $tag-color;
       color: white;
       padding: 3px 5px;
       border-radius: 3px;

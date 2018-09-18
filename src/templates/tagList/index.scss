@@ -1,12 +1,15 @@
+@import '../../utils/variables.scss';
+
 .tag-list {
   display: flex;
-
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
   .tag {
     list-style: none;
-    background-color: gray;
+    background-color: $tag-color;
     color: white;
     padding: 0.25rem 0.5rem;
-    margin-right: 1rem;
+    margin: 0.5rem;
     border-radius: 3px;
     .tag-name {
       font-size: 1.2rem;

@@ -4,6 +4,8 @@ import Layout from '../../components/layout'
 import PostList from '../../components/PostList'
 import './index.scss'
 
+import { Grid } from 'semantic-ui-react'
+
 class tagListTemplate extends Component {
   constructor(props) {
     super(props)
@@ -34,16 +36,16 @@ class tagListTemplate extends Component {
     const tags = this.props.data.allMarkdownRemark.group
     const selectedTag = this.state.selectedTag
 
-    const tagList = tags.map(v => {
+    const tagList = tags.map((v, i) => {
       return (
-        <li
-          key={`tag-${v.fieldValue}`}
-          className="tag"
-          onClick={tagName => this.changeSelectedTag(v.fieldValue)}
-        >
-          <span className="tag-name">{v.fieldValue}</span>
-          <span className="tag-count">({v.totalCount})</span>
-        </li>
+          <li
+            key={`tag-${v.fieldValue}`}
+            className="tag"
+            onClick={tagName => this.changeSelectedTag(v.fieldValue)}
+          >
+            <span className="tag-name">{v.fieldValue}</span>
+            <span className="tag-count">({v.totalCount})</span>
+          </li>
       )
     })
 
