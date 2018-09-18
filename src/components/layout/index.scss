@@ -68,10 +68,15 @@
 }
 
 #article {
-  max-width: 1280px;
+  min-width: 70%;
+  max-width: 80%;
   margin: 0 auto;
   padding: 2rem;
   border: 1px dotted red;
+  
+  @media screen and (orientation: portrait){
+    min-width: 100%;  
+  }
 }
 /* 
 .wrap {
