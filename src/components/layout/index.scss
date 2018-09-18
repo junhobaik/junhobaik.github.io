@@ -1,5 +1,68 @@
 @import '../../utils/variables.scss';
 
+#wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+#header {
+  display: flex;
+  flex-direction: row;
+  background-color: $dark-color;
+  color: $white-color;
+  padding: 1rem 2rem;
+
+  a {
+    color: $white-color;
+  }
+
+  .title {
+    margin: 0;
+    & > a {
+      display: flex;
+      flex-direction: row;
+      border-bottom: 1px solid $white-color;
+      border-top: 1px solid $white-color;
+      padding: 0.2rem 0.2rem;
+
+      .profile-img {
+        align-self: center;
+        margin: 0.3rem 0.4rem 0 0;
+        img {
+          width: 2rem;
+          height: 2rem;
+          padding: 0.1rem;
+          border: 1px solid lightgray;
+          border-radius: 100%;
+        }
+      }
+
+      h1 {
+        align-self: center;
+        margin: 0;
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .menu {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    font-size: 1.2rem;
+    align-self: center;
+    justify-content: right;
+
+    & > div {
+      margin-left: 1.5rem;
+    }
+  }
+}
+
+#article {
+  background-color: #fdfffc;
+}
+/* 
 .wrap {
   min-height: 100vh;
   min-width: 100wh;
@@ -136,3 +199,4 @@
     }
   }
 }
+*/

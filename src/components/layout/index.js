@@ -34,6 +34,61 @@ const Layout = ({ children, data }) => (
               href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css"
             />
           </Helmet>
+
+          <div id="wrap">
+            <header id="header">
+              <div className="title">
+                <Link to="/">
+                  <div className="profile-img">
+                    <img src={config.profileImg()} alt="profile_photo" />
+                  </div>
+                  <h1>{config.title}</h1>
+                </Link>
+              </div>
+
+              <div className="menu">
+                <div className="home">
+                  <Link to="/">
+                    <Icon name="home" />
+                    Home
+                  </Link>
+                </div>
+
+                <div className="tags">
+                  <Link to="/taglist">
+                    <Icon name="tags" />
+                    Tags
+                  </Link>
+                </div>
+
+                <div className="search">
+                  <Link to="/search">
+                    <Icon name="search" />
+                    Search
+                  </Link>
+                </div>
+              </div>
+            </header>
+
+            <article id="article">{children}</article>
+
+            <footer id="footer">
+              <Footer />
+            </footer>
+          </div>
+        </>
+      )
+    }}
+  />
+)
+
+Layout.propTypes = {
+  children: PropTypes.node.isRequired,
+}
+
+export default Layout
+
+/*
           <div className="wrap">
             <div className="menu">
               <div className="bio">
@@ -65,21 +120,9 @@ const Layout = ({ children, data }) => (
                   <Icon name="search" />
                   <Link to="/search">Search</Link>
                 </div>
-                {/* <Link to="/archive">Archive</Link> */}
+                </div>
+                </div>
+    
+                <div>{children}</div>
               </div>
-            </div>
-
-            <div>{children}</div>
-          </div>
-          <Footer />
-        </>
-      )
-    }}
-  />
-)
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
-
-export default Layout
+*/
