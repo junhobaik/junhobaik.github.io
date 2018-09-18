@@ -1,5 +1,6 @@
 require('dotenv').config()
 const transformer = require('./src/utils/algolia')
+const config = require('./config')
 
 const query = `{
   allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/posts/*.*/"}}) {
@@ -30,12 +31,11 @@ const queries = [
 ]
 
 module.exports = {
-  pathPrefix: `/junhobaik.github.io`,
   siteMetadata: {
-    title: 'devLog',
-    author: 'Junho Baik',
-    description: "Junho Baik's blog",
-    siteUrl: 'https://junhobaik.github.io',
+    title: config.title,
+    author: config.author,
+    description: config.description,
+    siteUrl: config.siteUrl,
     algolia: {
       appId: process.env.ALGOLIA_APP_ID ? process.env.ALGOLIA_APP_ID : '',
       searchOnlyApiKey: process.env.ALGOLIA_SEARCH_ONLY_API_KEY
