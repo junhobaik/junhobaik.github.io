@@ -95,5 +95,7 @@ module.exports = {
         include: /svg-icons/,
       },
     },
+    'gatsby-plugin-robots-txt',
+    `gatsby-plugin-sitemap`,
   ],
 }
