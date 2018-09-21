@@ -37,10 +37,9 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "clean": "rm -rf .cache/ && rm -rf public/",
-    "deploy": "gatsby build && gh-pages -b master -d public",
-    "gh-page": "gh-pages -b master -d public",
-    "format": "prettier --write '**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "gh-pages": "gh-pages -b master -d public",
+    "deploy": "rm -rf .cache/ && rm -rf public/ && gatsby build && gh-pages -b master -d public",
+    "format": "prettier --write '**/*.js'"
   },
   "devDependencies": {
     "gh-pages": "^1.2.0",
