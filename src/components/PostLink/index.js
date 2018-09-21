@@ -14,11 +14,13 @@ class PostLink extends Component {
     const tags = post.frontmatter.tags
 
     const tagsObj = tags.map(v => {
-      return (
-        <Link to={`/tags/${_.kebabCase(v)}`} className="tag" key={`tag-` + v}>
-          #<span className="tag-name">{v}</span>
-        </Link>
-      )
+      if (v !== 'Empty Tag') {
+        return (
+          <Link to={`/tags/${_.kebabCase(v)}`} className="tag" key={`tag-` + v}>
+            #<span className="tag-name">{v}</span>
+          </Link>
+        )
+      } else return null
     })
 
     return (

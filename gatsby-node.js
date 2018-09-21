@@ -127,8 +127,8 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
     const rewriteNode = node => {
       // 마크다운 파일 내 태그 필드가 비어있을 시 오류가 나지 않도록 하기 위함
-      if (node.frontmatter.tags === undefined || node.frontmatter.tags === '') {
-        node.frontmatter.tags = []
+      if (!node.frontmatter.tags || node.frontmatter.tags === '') {
+        node.frontmatter.tags = ['Empty Tag']
       }
       // 태그 필드가 배열이 아닌 문자열 하나일때 배열로 덮음
       else if (typeof node.frontmatter.tags === 'string') {
@@ -139,7 +139,6 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       if (node.frontmatter.date.indexOf('+') !== -1) {
         node.frontmatter.date = new Date(node.frontmatter.date.split('+')[0])
       }
-
       return node
     }
 
