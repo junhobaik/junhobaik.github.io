@@ -137,8 +137,13 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
       // markdown 내 date의 timezone 제거
       if (node.frontmatter.date.indexOf('+') !== -1) {
-        node.frontmatter.date = new Date(node.frontmatter.date.split('+')[0])
+        date = new Date(node.frontmatter.date.split('+')[0])
+        node.frontmatter.date = date;
+      }else {
+        node.frontmatter.date = new Date(node.frontmatter.date);
       }
+
+      // console.log(node.frontmatter.date);
       return node
     }
 
