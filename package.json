@@ -35,7 +35,7 @@
   "license": "MIT",
   "scripts": {
     "start": "gatsby develop",
-    "build": "node ./create-env.js && gatsby build",
+    "build": "gatsby build",
     "clean": "rm -rf .cache/ && rm -rf public/",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "format": "prettier --write '**/*.js'",
