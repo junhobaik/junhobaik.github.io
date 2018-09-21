@@ -3,6 +3,7 @@ import { graphql, Link } from 'gatsby'
 import Layout from '../../components/layout'
 import Helmet from 'react-helmet'
 import { DiscussionEmbed } from 'disqus-react'
+import { Icon } from 'semantic-ui-react'
 
 import './index.scss'
 
@@ -26,8 +27,8 @@ export default class BlogTemplate extends React.Component {
         <Helmet title={siteTitle} />
         <div className="blog-post-container">
           <div className="blog-post">
-            <h1>{frontmatter.title}</h1>
-            <h2>{frontmatter.date}</h2>
+            <h1 className="title">{frontmatter.title}</h1>
+            <p className="date">{frontmatter.date}</p>
             <div
               className="blog-post-content"
               dangerouslySetInnerHTML={{ __html: html }}
@@ -35,26 +36,39 @@ export default class BlogTemplate extends React.Component {
           </div>
 
           <div className="blog-post-nav">
-            <ul>
-              {previous && (
-                <li>
+            {previous && (
+              <div className="prev">
+                <div className="nav-wrap">
+                  <div className="angle">
+                    <Icon name="angle left" />
+                  </div>
                   <Link to={previous.fields.slug} rel="prev">
-                    ← {previous.frontmatter.title}
+                    <div>
+                      <p>Previous Post</p>
+                      <span>{previous.frontmatter.title}</span>
+                    </div>
                   </Link>
-                </li>
-              )}
-
-              {next && (
-                <li>
+                </div>
+              </div>
+            )}
+            {next && (
+              <div className="next">
+                <div className="nav-wrap">
                   <Link to={next.fields.slug} rel="next">
-                    {next.frontmatter.title} →
+                    <div>
+                      <p>Next Post</p>
+                      <span>{next.frontmatter.title}</span>
+                    </div>
                   </Link>
-                </li>
-              )}
-            </ul>
+                  <div className="angle">
+                    <Icon name="angle right" />
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
         </div>
-        <div>
+        <div className="comments">
           <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
         </div>
       </Layout>
@@ -75,7 +89,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "YYYY-MM-DD")
       }
     }
   }
