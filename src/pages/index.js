@@ -8,8 +8,9 @@ import './index.scss'
 export default class index extends Component {
   render() {
     const edges = this.props.data.allMarkdownRemark.edges
+    const location = this.props.location
     return (
-      <Layout>
+      <Layout location={location}>
         <PostList data={edges} title="최근 포스트" />
       </Layout>
     )

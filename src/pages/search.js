@@ -11,9 +11,9 @@ import './search.scss'
 class SearchPage extends React.Component {
   render() {
     const algolia = this.props.data.site.siteMetadata.algolia
-
+    const location = this.props.location
     return (
-      <Layout>
+      <Layout location={location}>
         <div className="algolia-icon">
           <AlgoliaIcon />
         </div>

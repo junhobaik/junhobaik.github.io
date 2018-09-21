@@ -8,7 +8,9 @@ import './index.scss'
 import Footer from './Footer'
 import config from '../../../config'
 
-const Layout = ({ children, data }) => (
+import profileImg from './profile.png';
+
+const Layout = ({ children, data, location }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -24,9 +26,16 @@ const Layout = ({ children, data }) => (
         <>
           <Helmet
             title={data.site.siteMetadata.title}
+            link={[
+              {rel: 'canonical', content: location.href}
+            ]}
             meta={[
               { name: 'description', content: config.description },
-              { name: 'keywords', content: 'sample, something' },
+              { name: 'og:type', content: 'website'},
+              { name: 'og:title', content: config.title },
+              { name: 'og:description', content: config.description },
+              { name: 'og:image', content: profileImg },
+              { name: 'og:url', content: location.href },
             ]}
           >
             <link

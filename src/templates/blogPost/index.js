@@ -9,10 +9,11 @@ import './index.scss'
 
 export default class BlogTemplate extends React.Component {
   render() {
-    console.log(this.props)
+    // console.log(this.props)
     const { data, location, pageContext } = this.props
-    const { id, frontmatter, html } = data.markdownRemark
-    const siteTitle = data.site.siteMetadata.siteTitle
+    const { id, frontmatter, html, excerpt } = data.markdownRemark
+    const siteTitle = data.site.siteMetadata.title
+    const postTitle = frontmatter.title
     const { previous, next } = pageContext
 
     //disqus
@@ -21,13 +22,20 @@ export default class BlogTemplate extends React.Component {
       identifier: id,
       title: siteTitle,
     }
-
+    // console.log(location);
     return (
       <Layout location={location}>
-        <Helmet title={siteTitle} />
+        <Helmet
+          title={`${postTitle}`}
+          meta={[
+            { name: 'keywords', content: frontmatter.tags.toString() },
+            { name: 'og:title', content: postTitle },
+            { name: 'og:description', content: excerpt },
+          ]}
+        />
         <div className="blog-post-container">
           <div className="blog-post">
-            <h1 className="title">{frontmatter.title}</h1>
+            <h1 className="title">{`${postTitle}`}</h1>
             <p className="date">{frontmatter.date}</p>
             <div
               className="blog-post-content"
@@ -87,9 +95,11 @@ export const pageQuery = graphql`
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
       html
+      excerpt
       frontmatter {
         title
         date(formatString: "YYYY-MM-DD")
+        tags
       }
     }
   }

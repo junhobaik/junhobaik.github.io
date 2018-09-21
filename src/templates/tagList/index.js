@@ -31,6 +31,7 @@ class tagListTemplate extends Component {
   }
   render() {
     console.log('[tagListTemplate] this.props', this.props)
+    const location = this.props.location
     const tags = this.props.data.allMarkdownRemark.group
     const selectedTag = this.state.selectedTag
 
@@ -62,7 +63,7 @@ class tagListTemplate extends Component {
     }
 
     return (
-      <Layout>
+      <Layout location={location}>
         <div className="tag-list">{tagList}</div>
         {selectedTag ? postList(tags, selectedTag) : null}
       </Layout>
