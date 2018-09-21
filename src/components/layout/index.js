@@ -8,7 +8,7 @@ import './index.scss'
 import Footer from './Footer'
 import config from '../../../config'
 
-import profileImg from './profile.png';
+import profileImg from './profile.png'
 
 const Layout = ({ children, data, location }) => (
   <StaticQuery
@@ -22,20 +22,21 @@ const Layout = ({ children, data, location }) => (
       }
     `}
     render={data => {
+      let siteUrl
+      location ? (siteUrl = location.href) : (siteUrl = config.siteUrl)
+
       return (
         <>
           <Helmet
             title={data.site.siteMetadata.title}
-            link={[
-              {rel: 'canonical', content: location.href}
-            ]}
+            link={[{ rel: 'canonical', content: siteUrl }]}
             meta={[
               { name: 'description', content: config.description },
-              { name: 'og:type', content: 'website'},
+              { name: 'og:type', content: 'website' },
               { name: 'og:title', content: config.title },
               { name: 'og:description', content: config.description },
               { name: 'og:image', content: profileImg },
-              { name: 'og:url', content: location.href },
+              { name: 'og:url', content: siteUrl },
             ]}
           >
             <link
