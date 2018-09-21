@@ -29,7 +29,6 @@ const Layout = ({ children, data, location }) => (
         <>
           <Helmet
             title={data.site.siteMetadata.title}
-            link={[{ rel: 'canonical', content: siteUrl }]}
             meta={[
               { name: 'description', content: config.description },
               { name: 'og:type', content: 'website' },
@@ -39,6 +38,7 @@ const Layout = ({ children, data, location }) => (
               { name: 'og:url', content: siteUrl },
             ]}
           >
+            <link rel='canonical' content={siteUrl}/>
             <link
               rel="stylesheet"
               href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css"
