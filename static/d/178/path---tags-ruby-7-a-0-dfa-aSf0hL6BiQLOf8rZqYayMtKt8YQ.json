@@ -1,0 +1,1 @@
+{"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"excerpt":"원래는 Hexo 블로그 프레임워크를 사용하여 블로그를 시작하려했었다. Hexo를 사용하려던 이유는 Node.js…","fields":{"slug":"/start-jekyll-blog/"},"frontmatter":{"date":"14 January, 2018","title":"Jekyll 블로그 시작하기 (MacOS, GitHub Page)","tags":["jekyll","blog","ruby"]}}}]}},"pageContext":{"tag":"ruby"}}
