@@ -38,6 +38,7 @@
     "build": "gatsby build",
     "clean": "rm -rf .cache/ && rm -rf public/",
     "deploy": "gatsby build && gh-pages -b master -d public",
+    "gh-page": "gh-pages -b master -d public",
     "format": "prettier --write '**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
