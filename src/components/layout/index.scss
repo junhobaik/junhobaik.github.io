@@ -19,7 +19,11 @@
   flex-direction: row;
   background-color: $header-color;
   color: $white-color;
-  padding: 1rem 2rem;
+  padding: 1rem 10% 1rem 5%;
+
+  @media screen and (orientation: portrait){
+    padding: 1rem 2rem;
+  }
 
   a {
     color: $white-color;
@@ -60,7 +64,7 @@
     flex-direction: row;
     font-size: 1.2rem;
     align-self: center;
-    justify-content: right;
+    justify-content: flex-end;
 
     & > div {
       margin-left: 1.5rem;
