@@ -69,6 +69,7 @@
     & > div {
       margin-left: 1.5rem;
 
+      // FIXME: search 페이지에서 검색시, 키보드 노출과 함께 landscape의 해상도로 바뀌면서 아래 코드가 작동하지 않는 문제
       @media screen and (orientation: portrait){  
         span {
           display: none;
