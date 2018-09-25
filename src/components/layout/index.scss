@@ -68,6 +68,12 @@
 
     & > div {
       margin-left: 1.5rem;
+
+      @media screen and (orientation: portrait){  
+        span {
+          display: none;
+        }
+      }
     }
   }
 }

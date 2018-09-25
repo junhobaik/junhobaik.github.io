@@ -60,21 +60,21 @@ const Layout = ({ children, data, location }) => (
                 <div className="home">
                   <Link to="/">
                     <Icon name="home" />
-                    Home
+                    <span>Home</span>
                   </Link>
                 </div>
 
                 <div className="tags">
                   <Link to="/taglist">
                     <Icon name="tags" />
-                    Tags
+                    <span>Tags</span>
                   </Link>
                 </div>
 
                 <div className="search">
                   <Link to="/search">
                     <Icon name="search" />
-                    Search
+                    <span>Search</span>
                   </Link>
                 </div>
               </div>
