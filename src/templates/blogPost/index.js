@@ -9,7 +9,6 @@ import './index.scss'
 
 export default class BlogTemplate extends React.Component {
   render() {
-    // console.log(this.props)
     const { data, location, pageContext } = this.props
     const { id, frontmatter, html, excerpt } = data.markdownRemark
     const siteTitle = data.site.siteMetadata.title
@@ -22,7 +21,6 @@ export default class BlogTemplate extends React.Component {
       identifier: id,
       title: siteTitle,
     }
-    // console.log(location);
     return (
       <Layout location={location}>
         <Helmet
@@ -36,7 +34,10 @@ export default class BlogTemplate extends React.Component {
         <div className="blog-post-container">
           <div className="blog-post">
             <h1 className="title">{`${postTitle}`}</h1>
-            <p className="date">{frontmatter.date}</p>
+            <p className="date">
+              <Icon name="calendar alternate outline" />
+              {frontmatter.date}
+            </p>
             <div
               className="blog-post-content"
               dangerouslySetInnerHTML={{ __html: html }}

@@ -13,6 +13,16 @@
       margin-bottom: 2rem;
       border-bottom: 1px solid $header-color;
     }
+
+    .blog-post-content{
+      h1, h2 {
+        border-left: 0.2rem solid $dark-color;
+        padding-left: 0.5rem;
+      }
+      &>div, &>p, &>h3, &>h4{
+        padding-left: 0.7rem;
+      }
+    }
   }
   .blog-post-nav {
     display: flex;
@@ -30,6 +40,7 @@
           align-self: center;
         }
         & > a {
+          color: $font-lighter-color;
           flex-grow: 1;
           align-self: center;
           padding: 0.5rem 1rem;
