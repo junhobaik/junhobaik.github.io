@@ -38,7 +38,7 @@ const Layout = ({ children, data, location }) => (
               { name: 'og:url', content: siteUrl },
             ]}
           >
-            <link rel='canonical' content={siteUrl}/>
+            <link rel="canonical" content={siteUrl} />
             <link
               rel="stylesheet"
               href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css"
@@ -82,9 +82,7 @@ const Layout = ({ children, data, location }) => (
 
             <article id="article">{children}</article>
           </div>
-          <footer id="footer">
-            <Footer />
-          </footer>
+          <Footer />
         </>
       )
     }}

@@ -1,5 +1,8 @@
 @import '../../utils/variables.scss';
 
+$header-padding: 1rem 10% 1rem 5%;
+$header-padding-mobile: 1rem 2rem;
+
 #wrap {
   display: flex;
   flex-direction: column;
@@ -19,10 +22,10 @@
   flex-direction: row;
   background-color: $header-color;
   color: $white-color;
-  padding: 1rem 10% 1rem 5%;
+  padding: $header-padding;
 
-  @media screen and (orientation: portrait){
-    padding: 1rem 2rem;
+  @media screen and (orientation: portrait) {
+    padding: $header-padding-mobile;
   }
 
   a {
@@ -70,7 +73,7 @@
       margin-left: 1.5rem;
 
       // FIXME: search 페이지에서 검색시, 키보드 노출과 함께 landscape의 해상도로 바뀌면서 아래 코드가 작동하지 않는 문제, 안드로이드에서만 해당.
-      @media screen and (orientation: portrait){  
+      @media screen and (orientation: portrait) {
         span {
           display: none;
         }
@@ -84,8 +87,30 @@
   max-width: 80%;
   margin: 0 auto;
   padding: 2rem;
-  
-  @media screen and (orientation: portrait){
-    min-width: 100%;  
+
+  @media screen and (orientation: portrait) {
+    min-width: 100%;
+  }
+}
+
+#footer {
+  display: flex;
+  padding: 1rem 2rem;
+  height: 2rem;
+  padding: 0rem 2rem;
+  align-items: center;
+  background-color: $header-color;
+
+  @media screen and (orientation: portrait) {
+    padding: 0;
+  }
+
+  .copyright {
+    font-size: 1rem;
+    color: $white-color;
+    flex-grow: 1;
+    a {
+      color: $white-color;
+    }
   }
 }
