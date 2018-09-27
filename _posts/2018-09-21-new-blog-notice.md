@@ -3,7 +3,7 @@ title: 블로그 공사 중... (Jekyll -> Gatsby)
 date: 2018-09-21
 ---
 
-# 블로그 개편, use Gatsby
+## 블로그 개편, use Gatsby
 
 기존 Jekyll를 사용하던 블로그를 Gatsby를 이용한 블로그로 개편하고있습니다.
 
