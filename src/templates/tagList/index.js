@@ -37,14 +37,14 @@ class tagListTemplate extends Component {
 
     const tagList = tags.map((v, i) => {
       return (
-          <li
-            key={`tag-${v.fieldValue}`}
-            className="tag"
-            onClick={tagName => this.changeSelectedTag(v.fieldValue)}
-          >
-            <span className="tag-name">{v.fieldValue}</span>
-            <span className="tag-count">({v.totalCount})</span>
-          </li>
+        <li
+          key={`tag-${v.fieldValue}`}
+          className="tag"
+          onClick={tagName => this.changeSelectedTag(v.fieldValue)}
+        >
+          <span className="tag-name">{v.fieldValue}</span>
+          <span className="tag-count">({v.totalCount})</span>
+        </li>
       )
     })
 
@@ -64,6 +64,9 @@ class tagListTemplate extends Component {
 
     return (
       <Layout location={location}>
+        <div className="title">
+          <h1>태그 목록</h1>
+        </div>
         <div className="tag-list">{tagList}</div>
         {selectedTag ? postList(tags, selectedTag) : null}
       </Layout>
