@@ -1,6 +1,11 @@
 @import '../../utils/variables.scss';
 
 .blog-post-container {
+  font-size: 1.2rem;
+  @media screen and (orientation: portrait) {
+    font-size: 1.1rem;
+  }
+  
   .blog-post {
     .date {
       font-size: 1.2rem;
