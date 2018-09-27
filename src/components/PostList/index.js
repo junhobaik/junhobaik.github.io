@@ -16,7 +16,7 @@ class PostList extends Component {
     return (
       <div id="PostList">
         <h1 className="list-title">{listTitle}</h1>
-        {Posts}
+        <div className="list">{Posts}</div>
       </div>
     )
   }

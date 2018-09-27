@@ -3,6 +3,7 @@ import Link from 'gatsby-link'
 import get from 'lodash/get'
 import _ from 'lodash'
 import './index.scss'
+import { Icon } from 'semantic-ui-react'
 
 class PostLink extends Component {
   render() {
@@ -10,7 +11,7 @@ class PostLink extends Component {
     const slug = post.fields.slug
     const title = get(post, 'frontmatter.title') || slug
     const excerpt = post.excerpt
-    // const date = post.frontmatter.date
+    const date = post.frontmatter.date
     const tags = post.frontmatter.tags
 
     const tagsObj = tags.map(v => {
@@ -28,8 +29,16 @@ class PostLink extends Component {
         <Link to={slug}>
           <h2 className="title">{title}</h2>
         </Link>
-        <div className="tags-list">{tagsObj}</div>
+
         <span className="excerpt">{excerpt}</span>
+
+        <div className="sub">
+          <div className="date">
+            <Icon name="calendar alternate outline" />
+            {date}
+          </div>
+          <div className="tags-list">{tagsObj}</div>
+        </div>
       </div>
     )
   }
