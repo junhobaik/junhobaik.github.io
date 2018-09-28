@@ -33,11 +33,15 @@ export default class BlogTemplate extends React.Component {
         />
         <div className="blog-post-container">
           <div className="blog-post">
-            <h1 className="title">{`${postTitle}`}</h1>
-            <p className="date">
-              <Icon name="calendar alternate outline" />
-              {frontmatter.date}
-            </p>
+          
+            <div className="post-header">
+              <h1 className="title">{`${postTitle}`}</h1>
+              <p className="date">
+                <Icon name="calendar alternate outline" />
+                {frontmatter.date}
+              </p>
+            </div>
+
             <div
               className="blog-post-content"
               dangerouslySetInnerHTML={{ __html: html }}

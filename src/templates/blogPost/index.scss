@@ -2,24 +2,34 @@
 
 .blog-post-container {
   font-size: 1.2rem;
+  margin-top: 3rem;
   @media screen and (orientation: portrait) {
+    margin-top: 1rem;
     font-size: 1.1rem;
   }
-  
+
   .blog-post {
-    .date {
-      font-size: 1.2rem;
-      padding-bottom: 2rem;
-      margin-bottom: 2rem;
-      border-bottom: 1px solid $header-color;
+    .post-header {
+      text-align: center;
+      margin-bottom: 6rem;
+      .title {
+        color: $dark-color;
+      }
+      .date {
+        font-size: 1.2rem;
+      }
     }
 
-    .blog-post-content{
-      h1, h2 {
+    .blog-post-content {
+      h1,
+      h2 {
         border-left: 0.2rem solid $dark-color;
         padding-left: 0.5rem;
       }
-      &>div, &>p, &>h3, &>h4{
+      & > div,
+      & > p,
+      & > h3,
+      & > h4 {
         padding-left: 0.7rem;
       }
     }
