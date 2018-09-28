@@ -1,17 +1,14 @@
+@import '../../utils/variables.scss';
+
 #PostList {
+
+  .list-title {
+    margin: 0;
+    text-align: center;
+  }
+
   .list {
     display: flex;
     flex-direction: column;
-    // flex-wrap: wrap;
-    // justify-content: space-between;
-    
-    // .post-link {
-    //   margin: 1rem;
-    //   flex: 1 1 calc(33.333% - 2rem);
-    // }
-    // @media screen and (orientation: portrait) {
-    //   flex-wrap: nowrap;
-    //   flex-direction: column;
-    // }
   }
 }

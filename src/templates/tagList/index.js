@@ -19,7 +19,6 @@ class tagListTemplate extends Component {
   }
 
   componentDidUpdate() {
-    console.log('[tagListTemplate] componentDidUpdate')
     const tags = document.querySelectorAll('#PostList a.tag')
     for (let v of tags) {
       const tagName = v.querySelector('.tag-name').innerText
@@ -30,7 +29,6 @@ class tagListTemplate extends Component {
     }
   }
   render() {
-    console.log('[tagListTemplate] this.props', this.props)
     const location = this.props.location
     const tags = this.props.data.allMarkdownRemark.group
     const selectedTag = this.state.selectedTag
@@ -64,9 +62,9 @@ class tagListTemplate extends Component {
 
     return (
       <Layout location={location}>
-        <div className="title">
+        {/* <div className="title">
           <h1>태그 목록</h1>
-        </div>
+        </div> */}
         <div className="tag-list">{tagList}</div>
         {selectedTag ? postList(tags, selectedTag) : null}
       </Layout>

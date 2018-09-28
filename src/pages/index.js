@@ -11,7 +11,7 @@ export default class index extends Component {
     const location = this.props.location
     return (
       <Layout location={location}>
-        <PostList data={edges} title="최근 포스트" />
+        <PostList data={edges} />
       </Layout>
     )
   }
