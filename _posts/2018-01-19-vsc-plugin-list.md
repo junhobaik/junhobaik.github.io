@@ -108,4 +108,3 @@ Last Update : 2018-05-28
 
 **추가로 VSCode 사용에 도움이 될 만한 자료들**  
 \- [VS Code Tips and Tricks](https://github.com/Microsoft/vscode-tips-and-tricks?wt.mc_id=DX_881390#extension-recommendations)
-{: .notice--info}

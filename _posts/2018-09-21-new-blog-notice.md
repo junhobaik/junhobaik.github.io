@@ -1,6 +1,7 @@
 ---
 title: 블로그 공사 중... (Jekyll -> Gatsby)
 date: 2018-09-21
+tags: blog
 ---
 
 ## 블로그 개편, use Gatsby

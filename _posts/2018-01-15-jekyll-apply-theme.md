@@ -6,6 +6,11 @@ tags:
   - jekyll
 ---
 
+기존 Jekyll을 이용한 블로그는 현재(2018.09) Gatsby를 이용한 블로그로 개편되었습니다.  
+Jekyll의 minimal-mistakes테마를 이용한 블로그를 만들고 싶다면 아래 게시물은 아직 유효합니다.
+
+---
+
 jekyll 블로그를 시작하기 위한 준비를 저번 포스트에서 끝냈다.  
 이제 테마를 적용하고자 여러 테마를 찾던중 정말 괜찮은 테마를 발견했고 그것을 적용하는 과정을 포스팅하려고 한다.
 
@@ -239,7 +244,7 @@ main:
 ```
 
 `_pages/year-archive.html`
-{% raw %}
+
 ```liquid
 ---
 layout: archive
@@ -255,12 +260,12 @@ author_profile: true
   {% endfor %}
 {% endfor %}
 ```
-{% endraw %}
+
 
 `_pages/tag-archive.html`  
 
 태그 부분은 기본 양식에서 살짝 수정했다.
-{% raw %}
+
 ```liquid
 ---
 layout: archive
@@ -288,10 +293,9 @@ author_profile: true
   {% endfor %}
 {% endfor %}
 ```
-{% endraw %}
 
 `_pages/category-archive.html`
-{% raw %}
+
 ```liquid
 ---
 layout: archive
@@ -308,7 +312,6 @@ author_profile: true
   {% endfor %}
 {% endfor %}
 ```
-{% endraw %}
 
 ---
 
