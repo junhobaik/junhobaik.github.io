@@ -43,9 +43,6 @@ exports.createPages = ({ graphql, actions }) => {
         }
 
         const allPosts = result.data.allMarkdownRemark.edges
-
-        console.log('NODE_ENV = ', process.env.NODE_ENV)
-
         const posts = allPosts.filter(
           post => process.env.NODE_ENV === 'development' || post.node.frontmatter.published
         )
