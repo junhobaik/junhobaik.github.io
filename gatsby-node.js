@@ -50,10 +50,6 @@ exports.createPages = ({ graphql, actions }) => {
             post.node.frontmatter.published
         )
 
-        for (v of posts) {
-          console.log(v.node.frontmatter)
-        }
-
         _.each(posts, (post, index) => {
           const previous =
             index === posts.length - 1 ? null : posts[index + 1].node
@@ -155,7 +151,6 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
         node.frontmatter.date = new Date(node.frontmatter.date)
       }
 
-      // console.log(node.frontmatter.date);
       return node
     }
 
