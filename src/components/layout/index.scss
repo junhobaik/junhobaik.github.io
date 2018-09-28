@@ -2,6 +2,7 @@
 
 $header-padding: 1rem 10% 1rem 5%;
 $header-padding-mobile: 1rem 2rem;
+$article-font-color: $font-color-1;
 
 #wrap {
   display: flex;
@@ -83,6 +84,7 @@ $header-padding-mobile: 1rem 2rem;
 }
 
 #article {
+  color: $article-font-color;
   width: 70%;
   margin: 0 15%;
   padding: 2rem;

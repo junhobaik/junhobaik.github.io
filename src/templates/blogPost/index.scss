@@ -3,18 +3,18 @@
 .blog-post-container {
   font-size: 1.2rem;
   margin-top: 3rem;
+
   @media screen and (orientation: portrait) {
     margin-top: 1rem;
     font-size: 1.1rem;
   }
 
   .blog-post {
+
     .post-header {
       text-align: center;
       margin-bottom: 6rem;
-      .title {
-        color: $dark-color;
-      }
+
       .date {
         font-size: 1.2rem;
       }
@@ -40,8 +40,9 @@
 
     & > div {
       flex-grow: 1;
-      border: 1px solid gray;
+      border: 1px solid $font-color-1;
       border-radius: 3px;
+
       .nav-wrap {
         padding: 0.5rem 1rem;
         display: flex;
@@ -49,11 +50,13 @@
         .angle {
           align-self: center;
         }
+
         & > a {
-          color: $font-lighter-color;
+          color: $font-color-1;
           flex-grow: 1;
           align-self: center;
           padding: 0.5rem 1rem;
+          
           p {
             font-size: 1.2rem;
             margin: 0 0 0.5rem 0;
@@ -61,6 +64,7 @@
         }
       }
     }
+    
     .prev {
       text-align: left;
       margin-right: 0.5rem;
