@@ -13,6 +13,7 @@ export default class BlogTemplate extends React.Component {
     const { id, frontmatter, html, excerpt } = data.markdownRemark
     const siteTitle = data.site.siteMetadata.title
     const postTitle = frontmatter.title
+    const tags = frontmatter.tags
     const { previous, next } = pageContext
 
     //disqus
@@ -21,6 +22,15 @@ export default class BlogTemplate extends React.Component {
       identifier: id,
       title: siteTitle,
     }
+
+    // TODO: 차후에 이 태그를 클릭시 Postbylist를 출력할 것인지 고민
+    // TODO: Empty Tag에 대해서 출력 감추기
+    const tagList = tags.map((v,i) => {
+      return(
+        <span key={`tag-${i}`}>#{v}</span>
+      )
+    })
+
     return (
       <Layout location={location}>
         <Helmet
@@ -36,10 +46,13 @@ export default class BlogTemplate extends React.Component {
           
             <div className="post-header">
               <h1 className="title">{`${postTitle}`}</h1>
-              <p className="date">
+              <div className="date">
                 <Icon name="calendar alternate outline" />
                 {frontmatter.date}
-              </p>
+              </div>
+              <div className="tags">
+                {tagList}
+              </div>
             </div>
 
             <div

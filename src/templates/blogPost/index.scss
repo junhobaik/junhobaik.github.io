@@ -15,8 +15,19 @@
       text-align: center;
       margin-bottom: 6rem;
 
-      .date {
+      &>:nth-child(3){
+        border-left: 1px solid $font-color-2;
+      }
+      .date, .tags {
+        padding: 0 0.5rem;
+        color: $font-color-2;
+        display: inline-block;
         font-size: 1.2rem;
+      }
+      .tags {
+        span {
+          margin-right: 0.5rem;
+        }
       }
     }
 
