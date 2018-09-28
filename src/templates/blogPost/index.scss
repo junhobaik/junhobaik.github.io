@@ -36,12 +36,10 @@
   }
   .blog-post-nav {
     display: flex;
-    margin-top: 5rem;
+    margin: 10rem 0 2rem 0;
 
     & > div {
       flex-grow: 1;
-      border: 1px solid $font-color-1;
-      border-radius: 3px;
 
       .nav-wrap {
         padding: 0.5rem 1rem;
@@ -67,11 +65,12 @@
     
     .prev {
       text-align: left;
-      margin-right: 0.5rem;
     }
     .next {
       text-align: right;
-      margin-left: 0.5rem;
+    }
+    &>div:nth-child(2){
+      border-left: 1px solid lightgray;
     }
   }
 }
