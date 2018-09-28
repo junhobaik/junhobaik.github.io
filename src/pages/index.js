@@ -19,7 +19,10 @@ export default class index extends Component {
 
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      limit: 1000
+      ) {
       edges {
         node {
           excerpt
@@ -30,6 +33,7 @@ export const pageQuery = graphql`
             date(formatString: "YYYY년 MM월 DD일")
             title
             tags
+            published
           }
         }
       }

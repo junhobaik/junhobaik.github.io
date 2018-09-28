@@ -26,7 +26,9 @@ export default Archive
 
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      ) {
       edges {
         node {
           fields {
@@ -35,6 +37,7 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "YYYY-MM-DD")
             title
+            published
           }
         }
       }

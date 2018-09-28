@@ -30,6 +30,7 @@ exports.createPages = ({ graphql, actions }) => {
                   frontmatter {
                     title
                     tags
+                    published
                   }
                 }
               }
@@ -38,12 +39,20 @@ exports.createPages = ({ graphql, actions }) => {
         `
       ).then(result => {
         if (result.errors) {
-          console.log(result.errors)
           reject(result.errors)
         }
 
-        // Create blog posts pages.
-        const posts = result.data.allMarkdownRemark.edges
+        const allPosts = result.data.allMarkdownRemark.edges
+
+        const posts = allPosts.filter(
+          post =>
+            process.env.NODE_ENV === 'development' ||
+            post.node.frontmatter.published
+        )
+
+        for (v of posts) {
+          console.log(v.node.frontmatter)
+        }
 
         _.each(posts, (post, index) => {
           const previous =
@@ -74,8 +83,6 @@ exports.createPages = ({ graphql, actions }) => {
 
         // tagsTemplate
         tags.forEach(tag => {
-          // console.log('[tagTemplate] tag = ',tag);
-
           createPage({
             path: `/tags/${_.kebabCase(tag)}/`,
             component: postListByTagTemplate,
@@ -126,6 +133,11 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     }
 
     const rewriteNode = node => {
+      // 마크다운 파일 내 퍼블리쉬 필드가 비어있을 시 오류가 나지 않도록 하기 위함
+      if (node.frontmatter.published === undefined) {
+        node.frontmatter.published = true
+      }
+
       // 마크다운 파일 내 태그 필드가 비어있을 시 오류가 나지 않도록 하기 위함
       if (!node.frontmatter.tags || node.frontmatter.tags === '') {
         node.frontmatter.tags = ['Empty Tag']
@@ -138,9 +150,9 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       // markdown 내 date의 timezone 제거
       if (node.frontmatter.date.indexOf('+') !== -1) {
         date = new Date(node.frontmatter.date.split('+')[0])
-        node.frontmatter.date = date;
-      }else {
-        node.frontmatter.date = new Date(node.frontmatter.date);
+        node.frontmatter.date = date
+      } else {
+        node.frontmatter.date = new Date(node.frontmatter.date)
       }
 
       // console.log(node.frontmatter.date);
