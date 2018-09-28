@@ -44,10 +44,10 @@ exports.createPages = ({ graphql, actions }) => {
 
         const allPosts = result.data.allMarkdownRemark.edges
 
+        console.log('NODE_ENV = ', process.env.NODE_ENV)
+
         const posts = allPosts.filter(
-          post =>
-            process.env.NODE_ENV === 'development' ||
-            post.node.frontmatter.published
+          post => process.env.NODE_ENV === 'development' || post.node.frontmatter.published
         )
 
         _.each(posts, (post, index) => {
@@ -130,7 +130,8 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
     const rewriteNode = node => {
       // 마크다운 파일 내 퍼블리쉬 필드가 비어있을 시 오류가 나지 않도록 하기 위함
-      if (node.frontmatter.published === undefined) {
+      // development 환경일 시 published 필드가 모두 true이도록 하기 위함
+      if (node.frontmatter.published === undefined || process.env.NODE_ENV === 'development') {
         node.frontmatter.published = true
       }
 

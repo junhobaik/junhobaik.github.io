@@ -78,6 +78,7 @@ export const pageQuery = graphql`
   query {
     allMarkdownRemark(
       limit: 2000
+      filter: { frontmatter: { published: { ne: false } } }
       ) {
       group(field: frontmatter___tags) {
         fieldValue
