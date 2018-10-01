@@ -8,6 +8,8 @@ Gatsby 정적 페이지 제작 프레임워크를 사용해 제작한 블로그.
 
 - 차후 테마 형식으로 커스터마이징하여 사용할 수 있게 배포 예정입니다.
 
+## 개발 현황
+[Projects: Blog Development](https://github.com/junhobaik/junhobaik.github.io/projects/2)
 
 ## Built with:
 
