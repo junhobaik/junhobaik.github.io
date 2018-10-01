@@ -15,6 +15,7 @@ export default class BlogTemplate extends React.Component {
     const postTitle = frontmatter.title
     const tags = frontmatter.tags
     const { previous, next } = pageContext
+    const keywords = [...frontmatter.tags, ...frontmatter.keywords].toString()
 
     //disqus
     const disqusShortname = 'dev-hundred-blog'
@@ -25,10 +26,8 @@ export default class BlogTemplate extends React.Component {
 
     // TODO: 차후에 이 태그를 클릭시 Postbylist를 출력할 것인지 고민
     // TODO: Empty Tag에 대해서 출력 감추기
-    const tagList = tags.map((v,i) => {
-      return(
-        <span key={`tag-${i}`}>#{v}</span>
-      )
+    const tagList = tags.map((v, i) => {
+      return <span key={`tag-${i}`}>#{v}</span>
     })
 
     return (
@@ -36,23 +35,20 @@ export default class BlogTemplate extends React.Component {
         <Helmet
           title={`${postTitle}`}
           meta={[
-            { name: 'keywords', content: frontmatter.tags.toString() },
+            { name: 'keywords', content: keywords },
             { name: 'og:title', content: postTitle },
             { name: 'og:description', content: excerpt },
           ]}
         />
         <div className="blog-post-container">
           <div className="blog-post">
-          
             <div className="post-header">
               <h1 className="title">{`${postTitle}`}</h1>
               <div className="date">
                 <Icon name="calendar alternate outline" />
                 {frontmatter.date}
               </div>
-              <div className="tags">
-                {tagList}
-              </div>
+              <div className="tags">{tagList}</div>
             </div>
 
             <div
@@ -118,6 +114,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "YYYY-MM-DD")
         tags
+        keywords
       }
     }
   }
