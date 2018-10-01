@@ -3,7 +3,7 @@ module.exports = {
   author: 'Junho Baik',
   description: "Junho Baik's blog",
   siteUrl: 'https://junhobaik.github.io',
-  profileImg: ()=>{
-    return require('./src/components/layout/profile.png');
-  }
+  profileImg: () => {
+    return require('./src/images/profile.png')
+  },
 }

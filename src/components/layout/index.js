@@ -8,8 +8,6 @@ import './index.scss'
 import Footer from './Footer'
 import config from '../../../config'
 
-import profileImg from './profile.png'
-
 const Layout = ({ children, data, location }) => (
   <StaticQuery
     query={graphql`
@@ -34,7 +32,7 @@ const Layout = ({ children, data, location }) => (
               { name: 'og:type', content: 'website' },
               { name: 'og:title', content: config.title },
               { name: 'og:description', content: config.description },
-              { name: 'og:image', content: profileImg },
+              { name: 'og:image', content: config.profileImg() },
               { name: 'og:url', content: siteUrl },
             ]}
           >
