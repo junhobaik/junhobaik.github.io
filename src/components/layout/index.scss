@@ -49,8 +49,10 @@ a {
       align-items: center;
 
       .profile-img {
+        margin-top: 4px;
         margin-right: 0.2rem;
         img {
+          margin: 0;
           width: 1.5rem;
           height: 1.5rem;
           padding: 0.1rem;
