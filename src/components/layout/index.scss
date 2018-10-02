@@ -4,6 +4,10 @@ $header-padding: 1rem 10% 1rem 5%;
 $header-padding-mobile: 1rem 2rem;
 $article-font-color: $font-color-1;
 
+a {
+  text-decoration: none;
+}
+
 #wrap {
   display: flex;
   flex-direction: column;
@@ -17,13 +21,14 @@ $article-font-color: $font-color-1;
   position: fixed;
   min-width: 100%;
   top: 0;
-  height: 5rem;
+  min-height: 4rem;
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
   background-color: $header-color;
   color: $white-color;
   padding: $header-padding;
+  align-items: center;
 
   @media screen and (orientation: portrait) {
     padding: $header-padding-mobile;
@@ -41,13 +46,13 @@ $article-font-color: $font-color-1;
       border-bottom: 1px solid $white-color;
       border-top: 1px solid $white-color;
       padding: 0.2rem 0.2rem;
+      align-items: center;
 
       .profile-img {
-        align-self: center;
-        margin: 0.3rem 0.4rem 0 0;
+        margin-right: 0.2rem;
         img {
-          width: 2rem;
-          height: 2rem;
+          width: 1.5rem;
+          height: 1.5rem;
           padding: 0.1rem;
           border: 1px solid lightgray;
           border-radius: 100%;
@@ -55,7 +60,6 @@ $article-font-color: $font-color-1;
       }
 
       h1 {
-        align-self: center;
         margin: 0;
         font-size: 1.5rem;
       }
@@ -67,7 +71,6 @@ $article-font-color: $font-color-1;
     display: flex;
     flex-direction: row;
     font-size: 1.2rem;
-    align-self: center;
     justify-content: flex-end;
 
     & > div {
