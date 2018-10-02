@@ -11,10 +11,11 @@
     "gatsby": "^2.0.9",
     "gatsby-plugin-algolia": "^0.1.0",
     "gatsby-plugin-react-helmet": "^3.0.0",
-    "gatsby-plugin-react-svg": "^2.0.0-beta1",
+    "gatsby-plugin-react-svg": "^2.0.0",
     "gatsby-plugin-robots-txt": "^1.3.0",
     "gatsby-plugin-sass": "^2.0.0-beta.10",
     "gatsby-plugin-sitemap": "^2.0.1",
+    "gatsby-plugin-typography": "^2.2.0",
     "gatsby-remark-prismjs": "^2.0.5",
     "gatsby-source-filesystem": "^1.5.39",
     "gatsby-transformer-remark": "^1.7.44",
@@ -28,7 +29,9 @@
     "react-instantsearch": "^5.2.3",
     "react-instantsearch-dom": "^5.2.3",
     "react-router": "^4.3.1",
-    "react-router-dom": "^4.3.1"
+    "react-router-dom": "^4.3.1",
+    "react-typography": "^0.16.13",
+    "typography": "^0.16.17"
   },
   "keywords": [
     "gatsby"

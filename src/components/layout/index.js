@@ -6,6 +6,7 @@ import { StaticQuery, graphql, Link } from 'gatsby'
 import './index.scss'
 import Footer from './Footer'
 import config from '../../../config'
+import { googleFontString } from '../../utils/typography'
 
 const Layout = ({ children, data, location }) => (
   <StaticQuery
@@ -36,6 +37,7 @@ const Layout = ({ children, data, location }) => (
             ]}
           >
             <link rel="canonical" content={siteUrl} />
+            <link href={`https://fonts.googleapis.com/css?family=${googleFontString}`} rel="stylesheet"/> 
           </Helmet>
 
           <div id="wrap">

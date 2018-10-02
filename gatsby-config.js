@@ -97,5 +97,11 @@ module.exports = {
     },
     'gatsby-plugin-robots-txt',
     `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`
+      }
+    }
   ],
 }
