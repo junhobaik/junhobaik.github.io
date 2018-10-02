@@ -3,7 +3,6 @@ import { graphql, Link } from 'gatsby'
 import Layout from '../../components/layout'
 import Helmet from 'react-helmet'
 import { DiscussionEmbed } from 'disqus-react'
-import { Icon } from 'semantic-ui-react'
 
 import './index.scss'
 
@@ -44,10 +43,7 @@ export default class BlogTemplate extends React.Component {
           <div className="blog-post">
             <div className="post-header">
               <h1 className="title">{`${postTitle}`}</h1>
-              <div className="date">
-                <Icon name="calendar alternate outline" />
-                {frontmatter.date}
-              </div>
+              <div className="date">{frontmatter.date}</div>
               <div className="tags">{tagList}</div>
             </div>
 
@@ -61,9 +57,7 @@ export default class BlogTemplate extends React.Component {
             {previous && (
               <div className="prev">
                 <div className="nav-wrap">
-                  <div className="angle">
-                    <Icon name="angle left" />
-                  </div>
+                  <div className="angle">{`<`}</div>
                   <Link to={previous.fields.slug} rel="prev">
                     <div>
                       <p>Previous Post</p>
@@ -82,9 +76,7 @@ export default class BlogTemplate extends React.Component {
                       <span>{next.frontmatter.title}</span>
                     </div>
                   </Link>
-                  <div className="angle">
-                    <Icon name="angle right" />
-                  </div>
+                  <div className="angle">{`>`}</div>
                 </div>
               </div>
             )}
