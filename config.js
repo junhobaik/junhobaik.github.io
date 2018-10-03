@@ -6,4 +6,5 @@ module.exports = {
   profileImg: () => {
     return require('./src/images/profile.png')
   },
+  titleLogoShow: false
 }

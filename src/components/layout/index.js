@@ -25,6 +25,10 @@ const Layout = ({ children, data, location }) => (
       let siteUrl
       location ? (siteUrl = location.href) : (siteUrl = config.siteUrl)
 
+      const isTitleLogoShow = config.titleLogoShow
+        ? { display: 'inline-block' }
+        : { display: 'none' }
+
       return (
         <>
           <Helmet
@@ -49,7 +53,7 @@ const Layout = ({ children, data, location }) => (
             <header id="header">
               <div className="title">
                 <Link to="/">
-                  <div className="profile-img">
+                  <div className="profile-img" style={isTitleLogoShow}>
                     <img src={config.profileImg()} alt="profile_photo" />
                   </div>
                   <h1>{config.title}</h1>
@@ -59,33 +63,21 @@ const Layout = ({ children, data, location }) => (
               <div className="menu">
                 <div className="home">
                   <Link to="/">
-                    <Fa
-                      icon={faHome}
-                      fixedWidth
-                      transform="down-1"
-                    />
+                    <Fa icon={faHome} fixedWidth transform="down-1" />
                     <span>Home</span>
                   </Link>
                 </div>
 
                 <div className="tags">
                   <Link to="/taglist">
-                    <Fa
-                      icon={faTags}
-                      fixedWidth
-                      transform="down-1"
-                    />
+                    <Fa icon={faTags} fixedWidth transform="down-1" />
                     <span>Tags</span>
                   </Link>
                 </div>
 
                 <div className="search">
                   <Link to="/search">
-                    <Fa
-                      icon={faSearch}
-                      fixedWidth
-                      transform="down-1"
-                    />
+                    <Fa icon={faSearch} fixedWidth transform="down-1" />
                     <span>Search</span>
                   </Link>
                 </div>

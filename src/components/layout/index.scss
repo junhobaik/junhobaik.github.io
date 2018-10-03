@@ -45,12 +45,11 @@ html {
       flex-direction: row;
       border-bottom: 1px solid $white-color;
       border-top: 1px solid $white-color;
-      padding: 0.1rem 0.2rem;
+      padding: 0.1rem;
       align-items: center;
 
       .profile-img {
-        margin-top: 4px;
-        margin-right: 0.2rem;
+        margin: 4px 0.2rem 0 0;
         img {
           margin: 0;
           width: 1.5rem;
@@ -78,14 +77,14 @@ html {
     & > div {
       margin-left: 1.5rem;
 
-      span {
-        margin-left: 0.1rem;
-      }
-      
       @media screen and (max-width: $break-small) {
         span {
           display: none;
         }
+      }
+
+      span {
+        margin-left: 0.1rem;
       }
     }
   }
