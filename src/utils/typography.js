@@ -12,10 +12,10 @@ const googleFont = [
 ]
 
 const typography = new Typography({
-  baseFontSize: '14px',
+  baseFontSize: '16px',
   baseLineHeight: 1.666,
   headerFontFamily: [
-    'Nanum Gothic Coding'
+    'Nanum Gothic'
   ],
   bodyFontFamily: ['Nanum Gothic Coding'],
 })
