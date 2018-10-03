@@ -5,6 +5,7 @@ import Helmet from 'react-helmet'
 import { DiscussionEmbed } from 'disqus-react'
 import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome'
 import { faCalendarAlt } from '@fortawesome/free-regular-svg-icons'
+import { faCaretLeft as faLeft, faCaretRight as faRight} from '@fortawesome/free-solid-svg-icons'
 
 import './index.scss'
 
@@ -62,7 +63,9 @@ export default class BlogTemplate extends React.Component {
             {previous && (
               <div className="prev">
                 <div className="nav-wrap">
-                  <div className="angle">{`<`}</div>
+                  <div className="angle">
+                  <Fa icon={faLeft} fixedWidth/>
+                  </div>
                   <Link to={previous.fields.slug} rel="prev">
                     <div>
                       <p>Previous Post</p>
@@ -81,7 +84,9 @@ export default class BlogTemplate extends React.Component {
                       <span>{next.frontmatter.title}</span>
                     </div>
                   </Link>
-                  <div className="angle">{`>`}</div>
+                  <div className="angle">
+                  <Fa icon={faRight} fixedWidth/>
+                  </div>
                 </div>
               </div>
             )}
