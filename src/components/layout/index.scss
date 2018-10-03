@@ -8,6 +8,7 @@ $article-font-color: $font-color-1;
 // global style
 html {
   background-color: $header-color;
+  line-height: 1.666 !important;
   a {
     text-decoration: none;
   }
