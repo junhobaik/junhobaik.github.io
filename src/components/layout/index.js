@@ -38,7 +38,7 @@ const Layout = ({ children, data, location }) => (
               { name: 'og:type', content: 'website' },
               { name: 'og:title', content: config.title },
               { name: 'og:description', content: config.description },
-              { name: 'og:image', content: config.profileImg() },
+              { name: 'og:image', content: config.titleLogo() },
               { name: 'og:url', content: siteUrl },
             ]}
           >
@@ -53,8 +53,8 @@ const Layout = ({ children, data, location }) => (
             <header id="header">
               <div className="title">
                 <Link to="/">
-                  <div className="profile-img" style={isTitleLogoShow}>
-                    <img src={config.profileImg()} alt="profile_photo" />
+                  <div className="logo-img" style={isTitleLogoShow}>
+                    <img src={config.titleLogo()} alt="logo" />
                   </div>
                   <h1>{config.title}</h1>
                 </Link>
