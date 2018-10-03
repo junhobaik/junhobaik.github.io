@@ -43,7 +43,7 @@
   "license": "MIT",
   "scripts": {
     "start": "gatsby develop",
-    "build": "gatsby build",
+    "build": "rm -rf .cache/ && rm -rf public/ && gatsby build",
     "clean": "rm -rf .cache/ && rm -rf public/",
     "gh-pages": "gh-pages -b master -d public",
     "deploy": "rm -rf .cache/ && rm -rf public/ && gatsby build && gh-pages -b master -d public",
