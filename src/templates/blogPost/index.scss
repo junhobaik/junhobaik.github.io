@@ -1,7 +1,6 @@
 @import '../../utils/variables.scss';
 
 .blog-post-container {
-  font-size: 1.2rem;
   margin-top: 3rem;
 
   @media screen and (max-width: $break-medium) {
@@ -24,7 +23,6 @@
         display: inline-block;
         padding: 0 0.5rem;
         color: $font-color-2;
-        font-size: 1.2rem;
       }
       .tags {
         span {
@@ -73,7 +71,6 @@
           padding: 0.5rem 1rem;
 
           p {
-            font-size: 1.2rem;
             margin: 0 0 0.5rem 0;
           }
 
