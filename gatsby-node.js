@@ -126,6 +126,11 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     }
 
     const rewriteNode = node => {
+      // 마크다운 파일 내 keywords 필드가 비어있을 시 오류가 나지 않도록 하기 위함
+      if(!node.frontmatter.keywords){
+        node.frontmatter.keywords = []
+      }
+
       // 마크다운 파일 내 퍼블리쉬 필드가 비어있을 시 오류가 나지 않도록 하기 위함
       // development 환경일 시 published 필드가 모두 true이도록 하기 위함
       if (node.frontmatter.published === undefined || process.env.NODE_ENV === 'development') {
