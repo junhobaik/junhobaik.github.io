@@ -1,6 +1,6 @@
 @import '../../utils/variables.scss';
 
-$header-height: 4rem;
+$header-height: 3.5rem;
 $header-padding: 1rem 10% 1rem 5%;
 $header-padding-mobile: 1rem 2rem;
 $article-font-color: $font-color-1;
@@ -63,7 +63,7 @@ html {
 
       h1 {
         margin: 0;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
       }
     }
   }
@@ -72,7 +72,7 @@ html {
     display: flex;
     flex-grow: 1;
     flex-direction: row;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     justify-content: flex-end;
 
     & > div {
@@ -81,6 +81,7 @@ html {
       span {
         margin-left: 0.1rem;
       }
+      
       @media screen and (max-width: $break-small) {
         span {
           display: none;
