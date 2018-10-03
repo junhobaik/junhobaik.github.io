@@ -2,6 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql, Link } from 'gatsby'
+import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome'
+import { faHome, faTags, faSearch } from '@fortawesome/free-solid-svg-icons'
 
 import './index.scss'
 import Footer from './Footer'
@@ -37,7 +39,10 @@ const Layout = ({ children, data, location }) => (
             ]}
           >
             <link rel="canonical" content={siteUrl} />
-            <link href={`https://fonts.googleapis.com/css?family=${googleFontString}`} rel="stylesheet"/> 
+            <link
+              href={`https://fonts.googleapis.com/css?family=${googleFontString}`}
+              rel="stylesheet"
+            />
           </Helmet>
 
           <div id="wrap">
@@ -54,18 +59,31 @@ const Layout = ({ children, data, location }) => (
               <div className="menu">
                 <div className="home">
                   <Link to="/">
+                    <Fa
+                      icon={faHome}
+                      fixedWidth
+                      // transform="shrink-2 down-1"
+                    />
                     <span>Home</span>
                   </Link>
                 </div>
 
                 <div className="tags">
                   <Link to="/taglist">
+                    <Fa
+                      icon={faTags}
+                      fixedWidth
+                    />
                     <span>Tags</span>
                   </Link>
                 </div>
 
                 <div className="search">
                   <Link to="/search">
+                    <Fa
+                      icon={faSearch}
+                      fixedWidth
+                    />
                     <span>Search</span>
                   </Link>
                 </div>

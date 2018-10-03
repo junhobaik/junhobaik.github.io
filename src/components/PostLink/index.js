@@ -3,6 +3,8 @@ import Link from 'gatsby-link'
 import get from 'lodash/get'
 import _ from 'lodash'
 import './index.scss'
+import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome'
+import { faCalendarAlt } from '@fortawesome/free-regular-svg-icons'
 
 class PostLink extends Component {
   render() {
@@ -33,7 +35,8 @@ class PostLink extends Component {
 
         <div className="sub">
           <div className="date">
-            {date}
+            <Fa icon={faCalendarAlt} />
+            <span>{date}</span>
           </div>
           <div className="tags-list">{tagsObj}</div>
         </div>

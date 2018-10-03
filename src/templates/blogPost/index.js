@@ -3,6 +3,8 @@ import { graphql, Link } from 'gatsby'
 import Layout from '../../components/layout'
 import Helmet from 'react-helmet'
 import { DiscussionEmbed } from 'disqus-react'
+import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome'
+import { faCalendarAlt } from '@fortawesome/free-regular-svg-icons'
 
 import './index.scss'
 
@@ -43,7 +45,10 @@ export default class BlogTemplate extends React.Component {
           <div className="blog-post">
             <div className="post-header">
               <h1 className="title">{`${postTitle}`}</h1>
-              <div className="date">{frontmatter.date}</div>
+              <div className="date">
+                <Fa icon={faCalendarAlt} fixedWidth />
+                {frontmatter.date}
+              </div>
               <div className="tags">{tagList}</div>
             </div>
 
