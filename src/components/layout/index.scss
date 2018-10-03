@@ -7,6 +7,7 @@ $article-font-color: $font-color-1;
 
 // global style
 html {
+  background-color: $header-color;
   a {
     text-decoration: none;
   }
@@ -45,17 +46,17 @@ html {
       flex-direction: row;
       border-bottom: 1px solid $white-color;
       border-top: 1px solid $white-color;
-      padding: 0.1rem;
+      padding: 0.25rem 0.1rem;
       align-items: center;
 
       .profile-img {
-        margin: 4px 0.2rem 0 0;
+        max-width: 1.5rem;
+        max-height: 1.5rem;
+        margin-right: 0.2rem;
         img {
           margin: 0;
-          width: 1.5rem;
-          height: 1.5rem;
           padding: 0.1rem;
-          border: 1px solid lightgray;
+          border: 1px solid $white-color;
           border-radius: 100%;
         }
       }
@@ -113,7 +114,6 @@ html {
   height: 2rem;
   padding: 0 2rem;
   align-items: center;
-  background-color: $header-color;
 
   @media screen and (max-width: $break-small) {
     padding: 0 0.5rem;
