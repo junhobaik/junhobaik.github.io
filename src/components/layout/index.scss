@@ -78,7 +78,10 @@ html {
     & > div {
       margin-left: 1.5rem;
 
-      @media screen and (max-width: $break-medium) {
+      span {
+        margin-left: 0.1rem;
+      }
+      @media screen and (max-width: $break-small) {
         span {
           display: none;
         }
@@ -99,8 +102,8 @@ html {
     padding: 1.5rem;
   }
   @media screen and (max-width: $break-small) {
-    width: 100vw;
-    margin: 0;
+    width: 95vw;
+    margin: 0 2.5vw;
     padding: 1rem;
   }
 }
