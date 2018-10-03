@@ -5,13 +5,10 @@ $header-padding: 1rem 10% 1rem 5%;
 $header-padding-mobile: 1rem 2rem;
 $article-font-color: $font-color-1;
 
-a {
-  text-decoration: none;
-}
-
+// global style
 html {
-  @media screen and (orientation: portrait) {
-    font-size: 0.8rem;
+  a {
+    text-decoration: none;
   }
 }
 
@@ -24,22 +21,18 @@ html {
 }
 
 #header {
-  z-index: 99;
+  display: flex;
   position: fixed;
-  min-width: 100%;
   top: 0;
+  z-index: 99;
+  min-width: 100%;
   height: $header-height;
   box-sizing: border-box;
-  display: flex;
   flex-direction: row;
   background-color: $header-color;
   color: $white-color;
   padding: $header-padding;
   align-items: center;
-
-  @media screen and (orientation: portrait) {
-    padding: $header-padding-mobile;
-  }
 
   a {
     color: $white-color;
@@ -76,8 +69,8 @@ html {
   }
 
   .menu {
-    flex-grow: 1;
     display: flex;
+    flex-grow: 1;
     flex-direction: row;
     font-size: 1.2rem;
     justify-content: flex-end;
@@ -85,8 +78,7 @@ html {
     & > div {
       margin-left: 1.5rem;
 
-      // FIXME: search 페이지에서 검색시, 키보드 노출과 함께 landscape의 해상도로 바뀌면서 아래 코드가 작동하지 않는 문제, 안드로이드에서만 해당.
-      @media screen and (orientation: portrait) {
+      @media screen and (max-width: $break-medium) {
         span {
           display: none;
         }
@@ -97,28 +89,32 @@ html {
 
 #article {
   color: $article-font-color;
-  width: 70%;
-  margin: 0 15%;
+  width: 70vw;
+  margin: 0 15vw;
   padding: 2rem;
 
-  @media screen and (orientation: portrait) {
-    min-width: 100%;
+  @media screen and (max-width: $break-medium) {
+    width: 80vw;
+    margin: 0 10vw;
+    padding: 1.5rem;
+  }
+  @media screen and (max-width: $break-small) {
+    width: 100vw;
     margin: 0;
+    padding: 1rem;
   }
 }
 
 #footer {
   display: flex;
-  padding: 1rem 2rem;
   height: 2rem;
-  padding: 0rem 2rem;
+  padding: 0 2rem;
   align-items: center;
   background-color: $header-color;
 
-  @media screen and (orientation: portrait) {
-    padding: 0;
+  @media screen and (max-width: $break-small) {
+    padding: 0 0.5rem;
   }
-
   .copyright {
     font-size: 1rem;
     color: $white-color;

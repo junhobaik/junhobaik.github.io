@@ -12,7 +12,7 @@ const googleFont = [
 ]
 
 const typography = new Typography({
-  baseFontSize: '16px',
+  baseFontSize: '14px',
   baseLineHeight: 1.666,
   headerFontFamily: [
     'Nanum Gothic Coding'
