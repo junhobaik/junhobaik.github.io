@@ -21,7 +21,37 @@ Gatsby 정적 페이지 제작 프레임워크를 사용해 제작한 블로그.
 
 ---
 
-## Documents
+## Documents (미완성)
+
+### Basic Setting
+
+#### Create `.env`
+
+Algolia Search를 사용하기 위함으로 Algolia에 가입하여 키 발급이 필요합니다.
+
+```
+ALGOLIA_APP_ID=ABCDE
+ALGOLIA_SEARCH_ONLY_API_KEY=ABCDE
+ALGOLIA_ADMIN_API_KEY=ABCDE
+ALGOLIA_INDEX_NAME=ABCDE
+```
+
+#### Modify `config.js`
+
+required All value.
+
+```javascript
+module.exports = {
+  title: `SITE TITLE`,
+  author: 'NAME',
+  description: "site Description",
+  siteUrl: 'https://username.github.io',
+  titleLogo: () => {
+    return require('./src/images/profile.png') // logo Image path
+  },
+  titleLogoShow: true // header title logo display(false=none)
+}
+```
 
 ### Markdown YAML Front matter
 
@@ -49,7 +79,7 @@ contents here...
 | `keywords `  | **(선택)** SEO meta keywords에 해당하는 것으로 검색엔진의 검색 결과에 추가 반영 |
 | `published` | **(선택)** `default=ture` 배포 시 포스트 노출 여부를 결정 |
 
-\+ 모든 값은 '', ""로 감싸지 않습니다.
+\+ 모든 값은 `''`, `""`로 감싸지 않습니다.
 
 ```
 # date Examples
@@ -79,4 +109,50 @@ tags: [tag1, tag2]
 tags:
   - tag1
   - tag2
+```
+
+### Deploy
+
+`npm run deploy`
+
+gh-pages 모듈을 통해 배포됩니다.
+
+지금 작업하는 브랜치는 gatsby-dev 브랜치이며 master 브랜치에서는 작업하지 않습니다.
+
+master 브랜치는 빌드된 파일이 gh-pages를 통해 배포되는 브랜치로 쓰입니다.
+
+### Customize
+
+#### Modify `./src/utils/vatiavles.scss`
+
+// TODO:
+
+#### Modify `./src/utils/typography.js`
+
+구글 폰트를 이용할 수 있습니다.
+
+```javascript
+//...
+
+const googleFont = [
+  {
+    name: 'Nanum Gothic Coding',
+    bold: [400, 700]
+  },
+  {
+    name: 'Nanum Gothic',
+    bold: [400, 700]
+  }
+]
+
+const typography = new Typography({
+  baseFontSize: '16px',
+  baseLineHeight: 1.666,
+  headerFontFamily: [
+    'Nanum Gothic'
+  ],
+  bodyFontFamily: ['Nanum Gothic Coding'],
+})
+
+//...
 ```
