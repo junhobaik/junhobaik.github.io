@@ -62,7 +62,7 @@ const Layout = ({ children, data, location }) => (
                     <Fa
                       icon={faHome}
                       fixedWidth
-                      // transform="shrink-2 down-1"
+                      transform="down-1"
                     />
                     <span>Home</span>
                   </Link>
@@ -73,6 +73,7 @@ const Layout = ({ children, data, location }) => (
                     <Fa
                       icon={faTags}
                       fixedWidth
+                      transform="down-1"
                     />
                     <span>Tags</span>
                   </Link>
@@ -83,6 +84,7 @@ const Layout = ({ children, data, location }) => (
                     <Fa
                       icon={faSearch}
                       fixedWidth
+                      transform="down-1"
                     />
                     <span>Search</span>
                   </Link>
