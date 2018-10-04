@@ -6,5 +6,6 @@ module.exports = {
   titleLogo: () => {
     return require('./src/images/profile.png')
   },
-  titleLogoShow: true
+  titleLogoShow: true,
+  googleAnalyticsTrackingId: 'UA-103592668-4'
 }
