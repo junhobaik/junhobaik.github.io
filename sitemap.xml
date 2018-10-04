@@ -31,8 +31,8 @@
 <url> <loc>https://junhobaik.github.io/js-array/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://junhobaik.github.io/js-variable-types/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://junhobaik.github.io/js-es6-proxy/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://junhobaik.github.io/js-es6-module/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://junhobaik.github.io/js-es6-setprototypeof/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://junhobaik.github.io/js-es6-module/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://junhobaik.github.io/js-es6-class/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://junhobaik.github.io/js-es6-object-assign/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://junhobaik.github.io/js-es6-arrow-function/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -47,6 +47,7 @@
 <url> <loc>https://junhobaik.github.io/js-this/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://junhobaik.github.io/js-clouser/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://junhobaik.github.io/js-prototype/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://junhobaik.github.io/tags/gatsby/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://junhobaik.github.io/tags/blog/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://junhobaik.github.io/tags/mac/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://junhobaik.github.io/tags/angular/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
