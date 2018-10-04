@@ -1,8 +1,6 @@
 @import '../../utils/variables.scss';
 
 $header-height: 3.5rem;
-$header-padding: 1rem 10% 1rem 5%;
-$header-padding-mobile: 1rem 2rem;
 $article-font-color: $font-color-1;
 
 // global style
@@ -33,8 +31,15 @@ html {
   flex-direction: row;
   background-color: $header-color;
   color: $white-color;
-  padding: $header-padding;
+  padding: 1rem 10%;
   align-items: center;
+
+  @media screen and (max-width: $break-medium) {
+    padding: 1rem 5%;
+  }
+  @media screen and (max-width: $break-small) {
+    padding: 1rem;
+  }
 
   a {
     color: $white-color;
