@@ -8,8 +8,8 @@ class PostList extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      loadPostCnt: 5,
-      currentPostCnt: 5,
+      loadPostCnt: 7,
+      currentPostCnt: 7,
       isLoading: false,
       loadElPoint: 0,
     }
