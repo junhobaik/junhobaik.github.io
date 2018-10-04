@@ -15,7 +15,7 @@ class PostLink extends Component {
     const date = post.frontmatter.date
     const tags = post.frontmatter.tags
 
-    const tagsObj = tags.map(v => {
+    const tagsObj = tags.map((v, i) => {
       if (v !== 'Empty Tag') {
         return (
           <Link to={`/tags/${_.kebabCase(v)}`} className="tag" key={`tag-` + v}>
@@ -26,7 +26,15 @@ class PostLink extends Component {
     })
 
     return (
-      <div className="post-link" key={title}>
+      <div
+        className="post-link"
+        key={slug}
+        style={
+          this.props.showCnt - 1 >= this.props.index
+            ? { display: 'inline-block' }
+            : { display: 'none' }
+        }
+      >
         <Link to={slug}>
           <h2 className="title">{title}</h2>
         </Link>

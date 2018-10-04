@@ -1,7 +1,6 @@
 @import '../../utils/variables.scss';
 
 #PostList {
-
   .list-title {
     margin: 0;
     text-align: center;
@@ -10,5 +9,26 @@
   .list {
     display: flex;
     flex-direction: column;
+  }
+
+  .load {
+    .loading {
+      padding: 5rem 0;
+      text-align: center;
+    }
+    .load-point {
+      height: 1px;
+    }
+  }
+  .blink {
+    animation: blink-animation 0.5s infinite alternate;
+  }
+  @keyframes blink-animation {
+    from {
+      color: $font-color-0;
+    }
+    to {
+      color: $font-color-3;
+    }
   }
 }
