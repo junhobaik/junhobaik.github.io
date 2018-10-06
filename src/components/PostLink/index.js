@@ -38,7 +38,7 @@ class PostLink extends Component {
         }
       >
         <Link to={slug}>
-          <h2 className="title">{title}</h2>
+          <h2 className="title hover">{title}</h2>
         </Link>
 
         <span className="excerpt">{excerpt}</span>

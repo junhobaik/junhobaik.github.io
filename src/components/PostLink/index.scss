@@ -46,3 +46,10 @@
     margin: 2rem 0;
   }
 }
+
+.hover {
+  transition: 0.3s;
+}
+.hover:hover {
+  color: $font-color-0;
+}
