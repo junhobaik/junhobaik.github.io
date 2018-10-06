@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import get from 'lodash/get'
 import _ from 'lodash'
-import './index.scss'
 import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome'
 import { faCalendarAlt } from '@fortawesome/free-regular-svg-icons'
+
+import './index.scss'
 
 class PostLink extends Component {
   render() {
@@ -52,5 +54,10 @@ class PostLink extends Component {
     )
   }
 }
+
+PostLink.propTypes = {
+  post: PropTypes.object.isRequired,
+  title: PropTypes.string
+};
 
 export default PostLink

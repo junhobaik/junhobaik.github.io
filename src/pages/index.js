@@ -23,7 +23,7 @@ export const pageQuery = graphql`
       sort: { fields: [frontmatter___date], order: DESC }
       limit: 1000
       filter: { frontmatter: { published: { ne: false } } }
-      ) {
+    ) {
       edges {
         node {
           excerpt

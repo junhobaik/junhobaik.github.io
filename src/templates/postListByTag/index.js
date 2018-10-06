@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
+
 import Layout from '../../components/layout'
 import PostList from '../../components/PostList'
 
@@ -17,6 +19,12 @@ class tagsTemplate extends Component {
       </Layout>
     )
   }
+}
+
+tagsTemplate.propTypes = {
+  data: PropTypes.object.isRequired,
+  location: PropTypes.object.isRequired,
+  pageContext: PropTypes.object.isRequired
 }
 
 export default tagsTemplate

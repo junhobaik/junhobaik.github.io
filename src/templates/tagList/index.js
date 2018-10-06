@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
+
+import './index.scss'
 import Layout from '../../components/layout'
 import PostList from '../../components/PostList'
-import './index.scss'
 
 class tagListTemplate extends Component {
   constructor(props) {
@@ -71,7 +73,10 @@ class tagListTemplate extends Component {
     )
   }
 }
-
+tagListTemplate.propTypes = {
+  location: PropTypes.object.isRequired,
+  pageContext: PropTypes.object.isRequired
+}
 export default tagListTemplate
 
 export const pageQuery = graphql`

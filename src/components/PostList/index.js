@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
-import PostLink from '../PostLink'
-import './index.scss'
 import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome'
 import { faSpinner } from '@fortawesome/free-solid-svg-icons'
+
+import './index.scss'
+import PostLink from '../PostLink'
 
 class PostList extends Component {
   constructor(props) {
@@ -50,10 +51,9 @@ class PostList extends Component {
   }
 
   render() {
-    const edges = this.props.data
-    const listTitle = this.props.title || null
+    const { data, title } = this.props
 
-    const Posts = edges
+    const Posts = data
       .filter(edge => !!edge.node.frontmatter.date)
       .map((edge, index) => {
         return (
@@ -68,7 +68,7 @@ class PostList extends Component {
 
     return (
       <div id="PostList">
-        {listTitle ? <h1 className="list-title">{listTitle}</h1> : null}
+        {title ? <h1 className="list-title">{title}</h1> : null}
         <div className="list">{Posts}</div>
         <div className="load">
           <div className="loading">

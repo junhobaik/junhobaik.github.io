@@ -1,15 +1,19 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
-import Layout from '../../components/layout'
+import PropTypes from 'prop-types';
 import Helmet from 'react-helmet'
 import { DiscussionEmbed } from 'disqus-react'
 import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome'
 import { faCalendarAlt } from '@fortawesome/free-regular-svg-icons'
-import { faCaretLeft as faLeft, faCaretRight as faRight} from '@fortawesome/free-solid-svg-icons'
+import {
+  faCaretLeft as faLeft,
+  faCaretRight as faRight,
+} from '@fortawesome/free-solid-svg-icons'
 
 import './index.scss'
+import Layout from '../../components/layout'
 
-export default class BlogTemplate extends React.Component {
+class BlogTemplate extends React.Component {
   render() {
     const { data, location, pageContext } = this.props
     const { id, frontmatter, html, excerpt } = data.markdownRemark
@@ -64,7 +68,7 @@ export default class BlogTemplate extends React.Component {
               <div className="prev">
                 <div className="nav-wrap">
                   <div className="angle">
-                  <Fa icon={faLeft} fixedWidth/>
+                    <Fa icon={faLeft} fixedWidth />
                   </div>
                   <Link to={previous.fields.slug} rel="prev">
                     <div>
@@ -85,7 +89,7 @@ export default class BlogTemplate extends React.Component {
                     </div>
                   </Link>
                   <div className="angle">
-                  <Fa icon={faRight} fixedWidth/>
+                    <Fa icon={faRight} fixedWidth />
                   </div>
                 </div>
               </div>
@@ -99,6 +103,14 @@ export default class BlogTemplate extends React.Component {
     )
   }
 }
+
+BlogTemplate.propTypes = {
+  data: PropTypes.object.isRequired,
+  location: PropTypes.object.isRequired,
+  pageContext: PropTypes.object.isRequired
+}
+
+export default BlogTemplate
 
 export const pageQuery = graphql`
   query($slug: String) {
