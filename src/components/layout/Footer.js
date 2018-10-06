@@ -5,10 +5,12 @@ class Footer extends Component {
     return (
       <footer id="footer">
         <div className="copyright">
-          <span>© 2018 Junho Baik</span>
-          <a href="mailto:junhobaik@gmail.com">{`<junhobaik@gmail.com>`}</a>
+          <span>
+            © <a href="mailto:junhobaik@gmail.com">Junho Baik</a> 2018. All
+            rights reserved
+          </span>
         </div>
-        <div className="submenu"/>
+        <div className="submenu" />
       </footer>
     )
   }
