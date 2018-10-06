@@ -40,7 +40,7 @@ class PostList extends Component {
           isLoading: false,
         })
         this.setLoadElPoint()
-      }, 1000)
+      }, 200)
     }
   }
 
