@@ -42,7 +42,6 @@ const Layout = ({ children, data, location }) => (
               { name: 'og:url', content: siteUrl },
             ]}
           >
-            <link rel="canonical" content={siteUrl} />
             <link
               href={`https://fonts.googleapis.com/css?family=${googleFontString}`}
               rel="stylesheet"
