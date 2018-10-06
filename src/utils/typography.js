@@ -22,7 +22,12 @@ const typography = new Typography({
 
 
 const googleFontString = googleFont.map(v =>{
-  return `${v.name.replace(/ /gi, '+')}:${v.bold.toString()}`
+  if(v.bold){
+    return `${v.name.replace(/ /gi, '+')}:${v.bold.toString()}`
+  }else {
+    return `${v.name.replace(/ /gi, '+')}`
+  }
+  
 }).join('|').toString();
 const { rhythm, scale } = typography
 export { googleFontString, rhythm, scale, typography as default }
