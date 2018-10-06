@@ -1,8 +1,5 @@
 @import '../../utils/variables.scss';
 
-$header-height: 3.5rem;
-$article-font-color: $font-color-1;
-
 // global style
 html {
   background-color: $header-color;
@@ -30,9 +27,9 @@ html {
   box-sizing: border-box;
   flex-direction: row;
   background-color: $header-color;
-  color: $white-color;
   padding: 1rem 10%;
   align-items: center;
+  border-bottom: $header-border-bottom;
 
   @media screen and (max-width: $break-medium) {
     padding: 1rem 5%;
@@ -42,7 +39,7 @@ html {
   }
 
   a {
-    color: $white-color;
+    color: $header-font-color;
   }
 
   .title {
@@ -50,8 +47,8 @@ html {
     & > a {
       display: flex;
       flex-direction: row;
-      border-bottom: 1px solid $white-color;
-      border-top: 1px solid $white-color;
+      border-bottom: $header-title-border;
+      border-top: $header-title-border;
       padding: 0.25rem 0.1rem;
       align-items: center;
 
@@ -62,7 +59,7 @@ html {
         img {
           margin: 0;
           padding: 0.1rem;
-          border: 1px solid $white-color;
+          border: 1px solid $header-font-color;
           border-radius: 100%;
         }
       }
@@ -122,18 +119,19 @@ html {
 #footer {
   display: flex;
   height: 2rem;
-  padding: 0 2rem;
   align-items: center;
+  border-top: $header-border-bottom;
+  padding: 0 2rem;
 
   @media screen and (max-width: $break-small) {
     padding: 0 0.5rem;
   }
   .copyright {
     font-size: 1rem;
-    color: $white-color;
+    color: $header-font-color;
     flex-grow: 1;
     a {
-      color: $white-color;
+      color: $header-font-color;
     }
   }
 }

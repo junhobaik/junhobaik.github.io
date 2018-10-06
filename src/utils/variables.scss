@@ -1,15 +1,24 @@
 $break-small: 50em;
 $break-medium: 70em;
 
-$font-basic-color: black;
-$font-lighter-color: #474747;
-
 $font-color-0: black;
 $font-color-1: #4d5256;
-$font-color-2: gray;
+$font-color-2: #7a8288;
 $font-color-3: lightgray;
 
-$header-color: rgb(45, 48, 55);
-$dark-color: rgb(22, 25, 37);
+$header-height: 3.5rem;
+$article-font-color: $font-color-1;
 $white-color: #fdfffc;
 $tag-color: #767b91;
+
+// Basic theme color
+// $header-color: rgb(45, 48, 55);
+// $header-font-color: #fdfffc;
+// $header-border-bottom: 0;
+// $header-title-border: 1px solid $header-font-color;
+
+// white theme color
+$header-color: white;
+$header-font-color: $font-color-2;
+$header-border-bottom: 1px solid lightgray;
+$header-title-border: 0;
