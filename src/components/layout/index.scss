@@ -1,5 +1,9 @@
 @import '../../utils/variables.scss';
 
+$header-height: 5rem;
+$header-height-medium: 4.25rem;
+$header-height-small: 3rem;
+
 // global style
 html {
   background-color: $header-color;
@@ -33,9 +37,11 @@ html {
 
   @media screen and (max-width: $break-medium) {
     padding: 1rem 5%;
+    height: $header-height-medium;
   }
   @media screen and (max-width: $break-small) {
     padding: 1rem;
+    height: $header-height-small;
   }
 
   a {
@@ -43,52 +49,82 @@ html {
   }
 
   .title {
+    display: flex;
+    padding: 0;
     margin: 0;
-    & > a {
-      display: flex;
-      flex-direction: row;
-      border-bottom: $header-title-border;
-      border-top: $header-title-border;
-      padding: 0.25rem 0.1rem;
-      align-items: center;
+    min-height: 100%;
+    .title-wrap {
+      max-height: inherit;
+      height: inherit;
+      & > a {
+        display: flex;
+        height: inherit;
+        max-height: inherit;
+        min-height: 100%;
+        flex-grow: 1;
+        flex-direction: row;
+        border-bottom: $header-title-border;
+        border-top: $header-title-border;
+        padding: 0.25rem 0.1rem;
+        align-items: center;
 
-      .logo-img {
-        max-width: 1.5rem;
-        max-height: 1.5rem;
-        margin-right: 0.2rem;
-        img {
-          margin: 0;
+        .logo-img {
+          height: 3rem;
+          width: 3rem;
+          margin-right: 0.5rem;
           padding: 0.1rem;
-          border: 1px solid $header-font-color;
-          border-radius: 100%;
+          margin-bottom: 0.1rem;
+          @media screen and (max-width: $break-small) {
+            height: 1.5rem;
+            width: 1.5rem;
+            margin-right: 0.2rem;
+          }
+          img {
+            margin: 0;
+            padding: 0.1rem;
+            border: 1px solid $header-font-color;
+            border-radius: 100%;
+          }
         }
-      }
 
-      h1 {
-        margin: 0;
-        font-size: 1.2rem;
+        .bio {
+          @media screen and (max-width: $break-small) {
+            display: none;
+          }
+        }
+
+        & > div {
+          h1,
+          p {
+            margin: 0;
+          }
+          h1 {
+            font-size: 1.2rem;
+          }
+        }
       }
     }
   }
-
   .menu {
     display: flex;
     flex-grow: 1;
     flex-direction: row;
     font-size: 1.1rem;
     justify-content: flex-end;
-
+    min-height: 100%;
+    align-items: flex-end;
+    
     & > div {
       margin-left: 1.5rem;
       transition: all 0.1s ease-in-out;
-      &:hover {
-        transform: scale(1.1);
-      }
 
       @media screen and (max-width: $break-small) {
         span {
           display: none;
         }
+      }
+      &:hover {
+        transform: scale(1.1);
       }
 
       span {

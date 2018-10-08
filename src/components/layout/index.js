@@ -51,12 +51,17 @@ const Layout = ({ children, data, location }) => (
           <div id="wrap">
             <header id="header">
               <div className="title">
-                <Link to="/">
-                  <div className="logo-img" style={isTitleLogoShow}>
-                    <img src={config.titleLogo()} alt="logo" />
-                  </div>
-                  <h1>{config.title}</h1>
-                </Link>
+                <div className="title-wrap">
+                  <Link to="/">
+                    <div className="logo-img" style={isTitleLogoShow}>
+                      <img src={config.titleLogo()} alt="logo" />
+                    </div>
+                    <div>
+                      <h1>{config.title}</h1>
+                      <p className="bio">{config.bio}</p>
+                    </div>
+                  </Link>
+                </div>
               </div>
 
               <div className="menu">
@@ -94,7 +99,7 @@ const Layout = ({ children, data, location }) => (
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-  location: PropTypes.object.isRequired
+  location: PropTypes.object.isRequired,
 }
 
 export default Layout
