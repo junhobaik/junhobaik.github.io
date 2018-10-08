@@ -3,9 +3,15 @@ module.exports = {
   author: 'Junho Baik',
   description: "Junho Baik's blog",
   siteUrl: 'https://junhobaik.github.io',
+
+  // header config
   titleLogo: () => {
     return require('./src/images/profile.png')
   },
-  titleLogoShow: false,
+  titleLogoShow: true,
+  bio: "Jr. FRONT END DEVELOPER",
+  bioShow: true,
+
+  // addtional
   googleAnalyticsTrackingId: 'UA-103592668-4'
 }
