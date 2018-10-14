@@ -85,13 +85,18 @@ html {
             margin-bottom: 0;
           }
           img {
+            opacity: 0.7;
             margin: 0;
             padding: 2px;
             border: 1px solid $header-font-color;
             border-radius: 100%;
+            transition: 0.3s;
             @media screen and (max-width: $break-small) {
               padding: 1px;
             }
+          }
+          img:hover {
+            opacity: 1;
           }
         }
 
