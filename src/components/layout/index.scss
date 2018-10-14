@@ -1,7 +1,7 @@
 @import '../../utils/variables.scss';
 
 $header-height: 5rem;
-$header-height-medium: 4.25rem;
+$header-height-medium: 5rem;
 $header-height-small: 3rem;
 
 // global style
@@ -19,6 +19,12 @@ html {
   padding-top: $header-height;
   min-height: 100vh;
   background-color: $white-color;
+  @media screen and (max-width: $break-medium) {
+    padding-top: $header-height-medium;
+  }
+  @media screen and (max-width: $break-small) {
+    padding-top: $header-height-small;
+  }
 }
 
 #header {
@@ -31,16 +37,16 @@ html {
   box-sizing: border-box;
   flex-direction: row;
   background-color: $header-color;
-  padding: 1rem 10%;
+  padding: 0 10%;
   align-items: center;
   border-bottom: $header-border-bottom;
 
   @media screen and (max-width: $break-medium) {
-    padding: 1rem 5%;
+    padding: 0 5%;
     height: $header-height-medium;
   }
   @media screen and (max-width: $break-small) {
-    padding: 1rem;
+    padding: 0 1rem;
     height: $header-height-small;
   }
 
@@ -52,7 +58,6 @@ html {
     display: flex;
     padding: 0;
     margin: 0;
-    min-height: 100%;
     .title-wrap {
       max-height: inherit;
       height: inherit;
@@ -65,7 +70,6 @@ html {
         flex-direction: row;
         border-bottom: $header-title-border;
         border-top: $header-title-border;
-        padding: 0.25rem 0.1rem;
         align-items: center;
 
         .logo-img {
@@ -115,9 +119,10 @@ html {
     flex-direction: row;
     font-size: 1.1rem;
     justify-content: flex-end;
-    min-height: 100%;
-    align-items: flex-end;
-
+    margin-top: 1rem;
+    @media screen and (max-width: $break-small) {
+      margin-top: 0;
+    }
     & > div {
       margin-left: 1.5rem;
       transition: all 0.1s ease-in-out;
