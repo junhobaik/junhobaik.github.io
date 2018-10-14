@@ -25,9 +25,29 @@ const Layout = ({ children, data, location }) => (
       let siteUrl
       location ? (siteUrl = location.href) : (siteUrl = config.siteUrl)
 
-      const isTitleLogoShow = config.titleLogoShow
-        ? { display: 'inline-block' }
-        : { display: 'none' }
+      const setLogoStyle = (titleLogoShow, bioShow) => {
+        let logoStyle = {}
+        if (titleLogoShow) {
+          logoStyle = {
+            display: 'inline-block',
+          }
+        } else {
+          logoStyle = {
+            display: 'none',
+          }
+        }
+        if (!bioShow) {
+          logoStyle = {
+            ...logoStyle,
+            width: '1.5rem',
+            height: '1.5rem',
+            marginRight: '0.1rem'
+          }
+        }
+        return logoStyle
+      }
+      const logoStyle = setLogoStyle(config.titleLogoShow, config.bioShow)
+      const bioStyle = config.bioShow ? {} : { display: 'none' }
 
       return (
         <>
@@ -53,12 +73,12 @@ const Layout = ({ children, data, location }) => (
               <div className="title">
                 <div className="title-wrap">
                   <Link to="/">
-                    <div className="logo-img" style={isTitleLogoShow}>
+                    <div className="logo-img" style={logoStyle}>
                       <img src={config.titleLogo()} alt="logo" />
                     </div>
                     <div>
                       <h1>{config.title}</h1>
-                      <p className="bio">{config.bio}</p>
+                      <p className="bio" style={bioStyle}>{config.bio}</p>
                     </div>
                   </Link>
                 </div>
