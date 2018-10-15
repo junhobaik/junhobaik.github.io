@@ -41,7 +41,7 @@ const Layout = ({ children, data, location }) => (
             ...logoStyle,
             width: '1.5rem',
             height: '1.5rem',
-            marginRight: '0.1rem'
+            marginRight: '0.1rem',
           }
         }
         return logoStyle
@@ -66,6 +66,17 @@ const Layout = ({ children, data, location }) => (
               href={`https://fonts.googleapis.com/css?family=${googleFontString}`}
               rel="stylesheet"
             />
+            <script
+              async
+              src={`https://www.googletagmanager.com/gtag/js?id=${
+                config.googleAnalyticsTrackingId
+              }`}
+            />
+            <script>
+              window.dataLayer = window.dataLayer || []; function gtag()
+              {dataLayer.push(arguments)}
+              gtag('js', new Date()); gtag('config', 'GA_TRACKING_ID');
+            </script>
           </Helmet>
 
           <div id="wrap">
@@ -78,7 +89,9 @@ const Layout = ({ children, data, location }) => (
                     </div>
                     <div>
                       <h1>{config.title}</h1>
-                      <p className="bio" style={bioStyle}>{config.bio}</p>
+                      <p className="bio" style={bioStyle}>
+                        {config.bio}
+                      </p>
                     </div>
                   </Link>
                 </div>
