@@ -49,8 +49,6 @@ const Layout = ({ children, data, location }) => (
       const logoStyle = setLogoStyle(config.titleLogoShow, config.bioShow)
       const bioStyle = config.bioShow ? {} : { display: 'none' }
 
-      // window.dataLayer = window.dataLayer || []; function gtag()
-
       return (
         <>
           <Helmet
