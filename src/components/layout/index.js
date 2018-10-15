@@ -49,6 +49,8 @@ const Layout = ({ children, data, location }) => (
       const logoStyle = setLogoStyle(config.titleLogoShow, config.bioShow)
       const bioStyle = config.bioShow ? {} : { display: 'none' }
 
+      // window.dataLayer = window.dataLayer || []; function gtag()
+
       return (
         <>
           <Helmet
@@ -62,10 +64,12 @@ const Layout = ({ children, data, location }) => (
               { name: 'og:url', content: siteUrl },
             ]}
           >
+            {/* load google font */}
             <link
               href={`https://fonts.googleapis.com/css?family=${googleFontString}`}
               rel="stylesheet"
             />
+            {/* Global Site Tag (gtag.js) - Google Analytics */}
             <script
               async
               src={`https://www.googletagmanager.com/gtag/js?id=${
@@ -73,9 +77,12 @@ const Layout = ({ children, data, location }) => (
               }`}
             />
             <script>
-              window.dataLayer = window.dataLayer || []; function gtag()
-              {dataLayer.push(arguments)}
-              gtag('js', new Date()); gtag('config', 'GA_TRACKING_ID');
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', ${config.googleAnalyticsTrackingId});
+              `}
             </script>
           </Helmet>
 
