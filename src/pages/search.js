@@ -13,11 +13,15 @@ class SearchPage extends React.Component {
     super(props)
     this.state = {
       keyword: '',
+      type: 'all'
     }
   }
 
   handleKeyword = event => {
     this.setState({ keyword: event.target.value })
+  }
+  handleType = event => {
+    this.setState({ type: event.target.value })
   }
 
   render() {
@@ -33,12 +37,12 @@ class SearchPage extends React.Component {
               onChange={this.handleKeyword}
               placeholder="Search..."
             />
-            <select className="search-type">
+            <select className="search-type" value={this.state.type} onChange={this.handleType}>
               <option value="all">제목+내용</option>
               <option value="title">제목</option>
             </select>
           </div>
-          <ResultList data={this.props.data} keyword={this.state.keyword} />
+          <ResultList data={this.props.data} keyword={this.state.keyword} type={this.state.type}/>
         </div>
       </Layout>
     )

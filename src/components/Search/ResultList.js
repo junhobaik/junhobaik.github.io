@@ -5,20 +5,17 @@ import PropTypes from 'prop-types'
 import './ResultList.scss'
 
 class ResultList extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {}
-  }
-
   render() {
     const data = this.props.data.allMarkdownRemark.edges
-    const list = data.map((v, i) => {
+    const list = data.map((v) => {
       const { frontmatter, fields, rawMarkdownBody } = v.node
       const { title } = frontmatter
       const { slug } = fields
+      const keyword = this.props.keyword.toLowerCase();
+
       if (
-        rawMarkdownBody.indexOf(this.props.keyword) !== -1 ||
-        title.indexOf(this.props.keyword) !== -1
+        (this.props.type === 'all' && rawMarkdownBody.toLowerCase().indexOf(keyword) !== -1) ||
+        title.toLowerCase().indexOf(keyword) !== -1
       ) {
         return (
           <li key={slug}>
