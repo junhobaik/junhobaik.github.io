@@ -38,21 +38,6 @@ $ npm install
 
 ### Basic Setting
 
-#### Create `.env`
-
-root 경로에 `.env` 파일을 생성하고 아래 정보를 입력합니다.
-
-Algolia Search를 사용하기 위함으로 Algolia에 가입하여 키 발급이 필요합니다.
-
-```
-ALGOLIA_APP_ID=ZWAGJBAMCT
-ALGOLIA_SEARCH_ONLY_API_KEY=ebdfarwbawrbawrbawrb86eda59
-ALGOLIA_ADMIN_API_KEY=e524124acvd233d17aaabawr306c4037
-ALGOLIA_INDEX_NAME=gatsby_blog
-```
-
-위 코드는 예제 코드로 본인의 정보를 입력해주세요.
-
 #### Modify `config.js`
 
 root 경로에 위치한 config.js를 본인의 정보에 맞춰 수정해주세요, 모든 값은 필수 값입니다.
@@ -73,9 +58,9 @@ module.exports = {
   bioShow: true, // 부제목의 출력 유무, boolean, default=true
 
   // addtional
-  googleAnalyticsTrackingId: 'UA-111111111-1', // 구글 애널리틱스 추적ID
+  googleAnalyticsTrackingId: 'UA-111111111-1', // 구글 애널리틱스 추적ID, 비활성화: ''
+  disqusShortname: 'hundred-blog' // 댓글 기능을 위한 Disqus의 shortname, 비활성화: ''
 }
-
 ```
 
 ### Create Post
