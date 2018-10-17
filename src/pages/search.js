@@ -1,6 +1,8 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 import { graphql } from 'gatsby'
+import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome'
+import { faSearch } from '@fortawesome/free-solid-svg-icons'
 
 import Layout from '../components/layout'
 import ResultList from '../components/Search/ResultList'
@@ -27,8 +29,11 @@ class SearchPage extends React.Component {
     return (
       <Layout location={location}>
         <div>
-          <input id="searchInput" type="search" onChange={this.handleKeyword} />
-          <ResultList data={this.props.data} keyword={this.state.keyword}/>
+          <div className="search-bar">
+            <Fa className="search-icon" icon={faSearch} />
+            <input id="searchInput" type="search" onChange={this.handleKeyword} />
+          </div>
+          <ResultList data={this.props.data} keyword={this.state.keyword} />
         </div>
       </Layout>
     )
