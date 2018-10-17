@@ -104,4 +104,4 @@ Hello World!
 
 ## Documents
 
-// wiki 참고
+[Documents 바로가기](https://github.com/junhobaik/junhobaik.github.io/wiki/Documents)
