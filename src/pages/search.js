@@ -1,23 +1,35 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 import { graphql } from 'gatsby'
+
 import Layout from '../components/layout'
-import Search from '../components/Search'
-
-import AlgoliaIcon from '!svg-react-loader!../images/svg-icons/search-by-algolia.svg?name=AlgoliaLogo'
-
+import ResultList from '../components/Search/ResultList'
 import './search.scss'
 
 class SearchPage extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      keyword: '',
+    }
+  }
+
+  componentDidMount() {
+    console.log('[SearchPage] props', this.props)
+  }
+
+  handleKeyword = event => {
+    this.setState({ keyword: event.target.value })
+  }
+
   render() {
-    const algolia = this.props.data.site.siteMetadata.algolia
     const location = this.props.location
     return (
       <Layout location={location}>
-        <div className="algolia-icon">
-          <AlgoliaIcon />
+        <div>
+          <input id="searchInput" type="search" onChange={this.handleKeyword} />
+          <ResultList data={this.props.data} keyword={this.state.keyword}/>
         </div>
-        <Search algolia={algolia} />
       </Layout>
     )
   }
@@ -29,15 +41,22 @@ SearchPage.propTypes = {
 
 export default SearchPage
 
-export const query = graphql`
-  query SearchQuery {
-    site {
-      siteMetadata {
-        title
-        algolia {
-          appId
-          searchOnlyApiKey
-          indexName
+export const pageQuery = graphql`
+  query {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { frontmatter: { published: { ne: false } } }
+    ) {
+      edges {
+        node {
+          rawMarkdownBody
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            published
+          }
         }
       }
     }
