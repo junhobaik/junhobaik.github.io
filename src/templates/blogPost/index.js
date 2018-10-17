@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { DiscussionEmbed } from 'disqus-react'
 import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome'
@@ -12,6 +12,7 @@ import {
 
 import './index.scss'
 import Layout from '../../components/layout'
+import config from '../../../config'
 
 class BlogTemplate extends React.Component {
   render() {
@@ -24,7 +25,7 @@ class BlogTemplate extends React.Component {
     const keywords = [...frontmatter.tags, ...frontmatter.keywords].toString()
 
     //disqus
-    const disqusShortname = 'dev-hundred-blog'
+    const disqusShortname = config.disqusShortname
     const disqusConfig = {
       identifier: id,
       title: siteTitle,
@@ -96,9 +97,14 @@ class BlogTemplate extends React.Component {
             )}
           </div>
         </div>
-        <div className="comments">
-          <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
-        </div>
+        {config.disqusShortname ? (
+          <div className="comments">
+            <DiscussionEmbed
+              shortname={disqusShortname}
+              config={disqusConfig}
+            />
+          </div>
+        ) : null}
       </Layout>
     )
   }
@@ -107,7 +113,7 @@ class BlogTemplate extends React.Component {
 BlogTemplate.propTypes = {
   data: PropTypes.object.isRequired,
   location: PropTypes.object.isRequired,
-  pageContext: PropTypes.object.isRequired
+  pageContext: PropTypes.object.isRequired,
 }
 
 export default BlogTemplate
