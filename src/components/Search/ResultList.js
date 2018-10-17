@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 
+import './ResultList.scss'
+
 class ResultList extends Component {
   constructor(props) {
     super(props)
@@ -19,15 +21,15 @@ class ResultList extends Component {
         title.indexOf(this.props.keyword) !== -1
       ) {
         return (
-          <div key={slug}>
+          <li key={slug}>
             <Link to={slug}>{title}</Link>
-          </div>
+          </li>
         )
       }
       return null
     })
 
-    return <div id="ResultList">{list}</div>
+    return <ul id="ResultList">{list}</ul>
   }
 }
 

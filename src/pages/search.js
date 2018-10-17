@@ -16,10 +16,6 @@ class SearchPage extends React.Component {
     }
   }
 
-  componentDidMount() {
-    console.log('[SearchPage] props', this.props)
-  }
-
   handleKeyword = event => {
     this.setState({ keyword: event.target.value })
   }
@@ -28,10 +24,19 @@ class SearchPage extends React.Component {
     const location = this.props.location
     return (
       <Layout location={location}>
-        <div>
+        <div id="search">
           <div className="search-bar">
             <Fa className="search-icon" icon={faSearch} />
-            <input id="searchInput" type="search" onChange={this.handleKeyword} />
+            <input
+              id="searchInput"
+              type="search"
+              onChange={this.handleKeyword}
+              placeholder="Search..."
+            />
+            <select className="search-type">
+              <option value="all">제목+내용</option>
+              <option value="title">제목</option>
+            </select>
           </div>
           <ResultList data={this.props.data} keyword={this.state.keyword} />
         </div>
