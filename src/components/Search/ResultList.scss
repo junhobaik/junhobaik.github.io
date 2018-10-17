@@ -1,5 +1,39 @@
 @import '../../utils/variables.scss';
 
-a {
-  color: $font-color-1;
+.result {
+  a {
+    color: $font-color-1;
+    transition: 0.3s;
+  }
+  a:hover {
+    color: $font-color-0;
+  }
+}
+
+.no-result {
+  text-align: center;
+}
+
+.page-list {
+  margin: 0;
+  padding: 0 2rem;
+  border-top: 1px solid lightgrey;
+  .page-number {
+    color: $font-color-1;
+    border: 0;
+    background-color: transparent;
+    text-align: center;
+    display: inline-block;
+    width: 10%;
+    margin: 0 5%;
+    flex-grow: 1;
+    transition: 0.3s;
+  }
+  .page-number:focus {
+    outline: none;
+  }
+  .page-number:hover {
+    cursor: pointer;
+    color: $font-color-0;
+  }
 }
