@@ -1,41 +1,41 @@
-import React from 'react'
-import { graphql, Link } from 'gatsby'
-import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
-import { DiscussionEmbed } from 'disqus-react'
-import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome'
-import { faCalendarAlt } from '@fortawesome/free-regular-svg-icons'
+import React from 'react';
+import { graphql, Link } from 'gatsby';
+import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
+import { DiscussionEmbed } from 'disqus-react';
+import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome';
+import { faCalendarAlt } from '@fortawesome/free-regular-svg-icons';
 import {
   faCaretLeft as faLeft,
   faCaretRight as faRight,
-} from '@fortawesome/free-solid-svg-icons'
+} from '@fortawesome/free-solid-svg-icons';
 
-import './index.scss'
-import Layout from '../../components/layout'
-import config from '../../../config'
+import './index.scss';
+import Layout from '../../components/layout';
+import config from '../../../config';
 
 class BlogTemplate extends React.Component {
   render() {
-    const { data, location, pageContext } = this.props
-    const { id, frontmatter, html, excerpt } = data.markdownRemark
-    const siteTitle = data.site.siteMetadata.title
-    const postTitle = frontmatter.title
-    const tags = frontmatter.tags
-    const { previous, next } = pageContext
-    const keywords = [...frontmatter.tags, ...frontmatter.keywords].toString()
+    const { data, location, pageContext } = this.props;
+    const { id, frontmatter, html, excerpt } = data.markdownRemark;
+    const siteTitle = data.site.siteMetadata.title;
+    const postTitle = frontmatter.title;
+    const tags = frontmatter.tags;
+    const { previous, next } = pageContext;
+    const keywords = [...frontmatter.tags, ...frontmatter.keywords].toString();
 
     //disqus
-    const disqusShortname = config.disqusShortname
+    const disqusShortname = config.disqusShortname;
     const disqusConfig = {
       identifier: id,
       title: siteTitle,
-    }
+    };
 
     // TODO: 차후에 이 태그를 클릭시 Postbylist를 출력할 것인지 고민
     // TODO: Empty Tag에 대해서 출력 감추기
     const tagList = tags.map((v, i) => {
-      return <span key={`tag-${i}`}>#{v}</span>
-    })
+      return <span key={`tag-${i}`}>#{v}</span>;
+    });
 
     return (
       <Layout location={location}>
@@ -106,7 +106,7 @@ class BlogTemplate extends React.Component {
           </div>
         ) : null}
       </Layout>
-    )
+    );
   }
 }
 
@@ -114,9 +114,9 @@ BlogTemplate.propTypes = {
   data: PropTypes.object.isRequired,
   location: PropTypes.object.isRequired,
   pageContext: PropTypes.object.isRequired,
-}
+};
 
-export default BlogTemplate
+export default BlogTemplate;
 
 export const pageQuery = graphql`
   query($slug: String) {
@@ -138,4 +138,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

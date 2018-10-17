@@ -1,33 +1,33 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import { graphql } from 'gatsby';
 
-import Layout from '../../components/layout'
-import PostList from '../../components/PostList'
+import Layout from '../../components/layout';
+import PostList from '../../components/PostList';
 
 class tagsTemplate extends Component {
   render() {
-    const location = this.props.location
-    const edges = this.props.data.allMarkdownRemark.edges
+    const location = this.props.location;
+    const edges = this.props.data.allMarkdownRemark.edges;
     const title = `${this.props.pageContext.tag}에 관한 ${
       this.props.data.allMarkdownRemark.totalCount
-    }개의 포스트`
+    }개의 포스트`;
 
     return (
       <Layout location={location}>
         <PostList data={edges} title={title} />
       </Layout>
-    )
+    );
   }
 }
 
 tagsTemplate.propTypes = {
   data: PropTypes.object.isRequired,
   location: PropTypes.object.isRequired,
-  pageContext: PropTypes.object.isRequired
-}
+  pageContext: PropTypes.object.isRequired,
+};
 
-export default tagsTemplate
+export default tagsTemplate;
 
 export const pageQuery = graphql`
   query($tag: String!) {
@@ -52,4 +52,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

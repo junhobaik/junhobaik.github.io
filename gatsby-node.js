@@ -1,18 +1,18 @@
-const _ = require('lodash')
-const Promise = require('bluebird')
-const path = require('path')
-const { createFilePath } = require('gatsby-source-filesystem')
+const _ = require('lodash');
+const Promise = require('bluebird');
+const path = require('path');
+const { createFilePath } = require('gatsby-source-filesystem');
 
 exports.createPages = ({ graphql, actions }) => {
-  const { createPage } = actions
+  const { createPage } = actions;
 
   return new Promise((resolve, reject) => {
-    const blogPostTemplate = path.resolve('./src/templates/blogPost/index.js')
+    const blogPostTemplate = path.resolve('./src/templates/blogPost/index.js');
     const postListByTagTemplate = path.resolve(
       './src/templates/postListByTag/index.js'
-    )
-    const tagListTemplate = path.resolve('./src/templates/tagList/index.js')
-    const archiveTemplate = path.resolve('./src/templates/archive/index.js')
+    );
+    const tagListTemplate = path.resolve('./src/templates/tagList/index.js');
+    const archiveTemplate = path.resolve('./src/templates/archive/index.js');
 
     resolve(
       graphql(
@@ -39,18 +39,20 @@ exports.createPages = ({ graphql, actions }) => {
         `
       ).then(result => {
         if (result.errors) {
-          reject(result.errors)
+          reject(result.errors);
         }
 
-        const allPosts = result.data.allMarkdownRemark.edges
+        const allPosts = result.data.allMarkdownRemark.edges;
         const posts = allPosts.filter(
-          post => process.env.NODE_ENV === 'development' || post.node.frontmatter.published
-        )
+          post =>
+            process.env.NODE_ENV === 'development' ||
+            post.node.frontmatter.published
+        );
 
         _.each(posts, (post, index) => {
           const previous =
-            index === posts.length - 1 ? null : posts[index + 1].node
-          const next = index === 0 ? null : posts[index - 1].node
+            index === posts.length - 1 ? null : posts[index + 1].node;
+          const next = index === 0 ? null : posts[index - 1].node;
 
           createPage({
             path: post.node.fields.slug,
@@ -60,19 +62,19 @@ exports.createPages = ({ graphql, actions }) => {
               previous,
               next,
             },
-          })
-        })
+          });
+        });
 
         // Tag pages
-        let tags = []
+        let tags = [];
 
         _.each(posts, edge => {
           if (_.get(edge, 'node.frontmatter.tags')) {
-            tags = tags.concat(edge.node.frontmatter.tags)
+            tags = tags.concat(edge.node.frontmatter.tags);
           }
-        })
+        });
 
-        tags = _.uniq(tags)
+        tags = _.uniq(tags);
 
         // tagsTemplate
         tags.forEach(tag => {
@@ -82,8 +84,8 @@ exports.createPages = ({ graphql, actions }) => {
             context: {
               tag,
             },
-          })
-        })
+          });
+        });
 
         createPage({
           path: `/taglist`,
@@ -92,78 +94,81 @@ exports.createPages = ({ graphql, actions }) => {
             tags,
             result,
           },
-        })
+        });
 
         createPage({
           path: `/archive`,
           component: archiveTemplate,
-        })
+        });
       })
-    )
-  })
-}
+    );
+  });
+};
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
-  const { createNodeField } = actions
+  const { createNodeField } = actions;
 
   if (node.internal.type === `MarkdownRemark`) {
-    const slug = createFilePath({ node, getNode, basePath: `pages` })
+    const slug = createFilePath({ node, getNode, basePath: `pages` });
 
     const rewriteSlug = slug => {
       // 폴더 경로에 따라 url에 표시되는 것을 폴더 경로를 제거하고 파일명으로만 url을 지정되도록 하기 위함
       if (slug.match(/\//g).length > 2) {
-        let tempStr = slug.split('/')
-        slug = `/${tempStr[tempStr.length - 2]}/`
+        let tempStr = slug.split('/');
+        slug = `/${tempStr[tempStr.length - 2]}/`;
       }
 
       // jekyll 기준으로 파일명에 날짜를 포함시키던 것을 url에서 제거하기 위함
-      const dayRegExp = /\/(19|20)\d{2}-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[0-1])-/
+      const dayRegExp = /\/(19|20)\d{2}-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[0-1])-/;
       if (slug.match(dayRegExp)) {
-        slug = '/' + slug.replace(dayRegExp, '')
+        slug = '/' + slug.replace(dayRegExp, '');
       }
 
-      return slug
-    }
+      return slug;
+    };
 
     const rewriteNode = node => {
       // 마크다운 파일 내 keywords 필드가 비어있을 시 오류가 나지 않도록 하기 위함
-      if(!node.frontmatter.keywords){
-        node.frontmatter.keywords = []
+      if (!node.frontmatter.keywords) {
+        node.frontmatter.keywords = [];
       }
 
       // 마크다운 파일 내 퍼블리쉬 필드가 비어있을 시 오류가 나지 않도록 하기 위함
       // development 환경일 시 published 필드가 모두 true이도록 하기 위함
-      if (node.frontmatter.published === undefined || process.env.NODE_ENV === 'development') {
-        node.frontmatter.published = true
+      if (
+        node.frontmatter.published === undefined ||
+        process.env.NODE_ENV === 'development'
+      ) {
+        node.frontmatter.published = true;
       }
 
       // 마크다운 파일 내 태그 필드가 비어있을 시 오류가 나지 않도록 하기 위함
       if (!node.frontmatter.tags || node.frontmatter.tags === '') {
-        node.frontmatter.tags = ['Empty Tag']
+        node.frontmatter.tags = ['Empty Tag'];
       }
       // 태그 필드가 배열이 아닌 문자열 하나일때 배열로 덮음
       else if (typeof node.frontmatter.tags === 'string') {
-        node.frontmatter.tags = [node.frontmatter.tags]
+        node.frontmatter.tags = [node.frontmatter.tags];
       }
 
       // markdown 내 date의 timezone 제거
       if (node.frontmatter.date.indexOf('+') !== -1) {
-        date = new Date(node.frontmatter.date.split('+')[0])
-        node.frontmatter.date = date
+        date = new Date(node.frontmatter.date.split('+')[0]);
+        node.frontmatter.date = date;
       } else {
-        node.frontmatter.date = new Date(node.frontmatter.date)
+        node.frontmatter.date = new Date(node.frontmatter.date);
       }
 
-      return node
-    }
+      return node;
+    };
 
-    const newSlug = rewriteSlug(slug)
-    const newNode = rewriteNode(node)
+    const newSlug = rewriteSlug(slug);
+    const newNode = rewriteNode(node);
 
     createNodeField({
       name: `slug`,
       node: newNode,
       value: newSlug,
-    })
+    });
   }
-}
+};

@@ -1,28 +1,28 @@
-import React, { Component } from 'react'
-import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome'
-import { faSpinner } from '@fortawesome/free-solid-svg-icons'
+import React, { Component } from 'react';
+import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome';
+import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 
-import './index.scss'
-import PostLink from '../PostLink'
+import './index.scss';
+import PostLink from '../PostLink';
 
 class PostList extends Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       loadPostCnt: 7,
       currentPostCnt: 7,
       isLoading: false,
       loadElPoint: 0,
-    }
+    };
   }
 
   componentDidMount() {
-    this.setLoadElPoint()
-    window.addEventListener('scroll', this.onScroll, false)
+    this.setLoadElPoint();
+    window.addEventListener('scroll', this.onScroll, false);
   }
 
   componentWillUnmount() {
-    window.removeEventListener('scroll', this.onScroll, false)
+    window.removeEventListener('scroll', this.onScroll, false);
   }
 
   onScroll = () => {
@@ -33,25 +33,25 @@ class PostList extends Component {
     ) {
       this.setState({
         isLoading: true,
-      })
+      });
       setTimeout(() => {
         this.setState({
           currentPostCnt: this.state.currentPostCnt + this.state.loadPostCnt,
           isLoading: false,
-        })
-        this.setLoadElPoint()
-      }, 200)
+        });
+        this.setLoadElPoint();
+      }, 200);
     }
-  }
+  };
 
   setLoadElPoint = () => {
     this.setState({
       loadElPoint: document.querySelector('.load-point').offsetTop,
-    })
-  }
+    });
+  };
 
   render() {
-    const { data, title } = this.props
+    const { data, title } = this.props;
 
     const Posts = data
       .filter(edge => !!edge.node.frontmatter.date)
@@ -63,8 +63,8 @@ class PostList extends Component {
             index={index}
             showCnt={this.state.currentPostCnt}
           />
-        )
-      })
+        );
+      });
 
     return (
       <div id="PostList">
@@ -86,8 +86,8 @@ class PostList extends Component {
           <div className="load-point" />
         </div>
       </div>
-    )
+    );
   }
 }
 
-export default PostList
+export default PostList;

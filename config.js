@@ -6,7 +6,7 @@ module.exports = {
 
   // header config
   titleLogo: () => {
-    return require('./src/images/profile.png')
+    return require('./src/images/profile.png');
   },
   titleLogoShow: true, // boolean, default=false
   bio: 'Jr. FRONT END DEVELOPER',
@@ -14,5 +14,5 @@ module.exports = {
 
   // addtional
   googleAnalyticsTrackingId: 'UA-103592668-4',
-  disqusShortname: 'dev-hundred-blog'
-}
+  disqusShortname: 'dev-hundred-blog',
+};

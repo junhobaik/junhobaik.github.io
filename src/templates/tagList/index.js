@@ -1,39 +1,39 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import { graphql } from 'gatsby';
 
-import './index.scss'
-import Layout from '../../components/layout'
-import PostList from '../../components/PostList'
+import './index.scss';
+import Layout from '../../components/layout';
+import PostList from '../../components/PostList';
 
 class tagListTemplate extends Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       selectedTag: null,
-    }
+    };
   }
 
   changeSelectedTag = tagName => {
     this.setState({
       selectedTag: tagName,
-    })
-  }
+    });
+  };
 
   componentDidUpdate() {
-    const tags = document.querySelectorAll('#PostList a.tag')
+    const tags = document.querySelectorAll('#PostList a.tag');
     for (let v of tags) {
-      const tagName = v.querySelector('.tag-name').innerText
+      const tagName = v.querySelector('.tag-name').innerText;
       v.onclick = e => {
-        e.preventDefault()
-        this.changeSelectedTag(tagName)
-      }
+        e.preventDefault();
+        this.changeSelectedTag(tagName);
+      };
     }
   }
   render() {
-    const location = this.props.location
-    const tags = this.props.data.allMarkdownRemark.group
-    const selectedTag = this.state.selectedTag
+    const location = this.props.location;
+    const tags = this.props.data.allMarkdownRemark.group;
+    const selectedTag = this.state.selectedTag;
 
     const tagList = tags.map((v, i) => {
       return (
@@ -45,11 +45,11 @@ class tagListTemplate extends Component {
           <span className="tag-name">{v.fieldValue}</span>
           <span className="tag-count">({v.totalCount})</span>
         </li>
-      )
-    })
+      );
+    });
 
     const postList = (tags, targetTagName) => {
-      const tagsArray = Array.from(tags)
+      const tagsArray = Array.from(tags);
       for (let v of tagsArray) {
         if (v.fieldValue === targetTagName) {
           return (
@@ -57,10 +57,10 @@ class tagListTemplate extends Component {
               data={v.edges}
               title={`${v.fieldValue}에 관한 ${v.totalCount}개의 포스트`}
             />
-          )
+          );
         }
       }
-    }
+    };
 
     return (
       <Layout location={location}>
@@ -70,21 +70,21 @@ class tagListTemplate extends Component {
         <div className="tag-list">{tagList}</div>
         {selectedTag ? postList(tags, selectedTag) : null}
       </Layout>
-    )
+    );
   }
 }
 tagListTemplate.propTypes = {
   location: PropTypes.object.isRequired,
-  pageContext: PropTypes.object.isRequired
-}
-export default tagListTemplate
+  pageContext: PropTypes.object.isRequired,
+};
+export default tagListTemplate;
 
 export const pageQuery = graphql`
   query {
     allMarkdownRemark(
       limit: 2000
       filter: { frontmatter: { published: { ne: false } } }
-      ) {
+    ) {
       group(field: frontmatter___tags) {
         fieldValue
         totalCount
@@ -104,4 +104,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

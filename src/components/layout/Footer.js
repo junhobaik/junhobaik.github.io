@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 class Footer extends Component {
   render() {
@@ -12,8 +12,8 @@ class Footer extends Component {
         </div>
         <div className="submenu" />
       </footer>
-    )
+    );
   }
 }
 
-export default Footer
+export default Footer;

@@ -1,14 +1,14 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
-import { StaticQuery, graphql, Link } from 'gatsby'
-import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome'
-import { faHome, faTags, faSearch } from '@fortawesome/free-solid-svg-icons'
+import React from 'react';
+import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
+import { StaticQuery, graphql, Link } from 'gatsby';
+import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome';
+import { faHome, faTags, faSearch } from '@fortawesome/free-solid-svg-icons';
 
-import './index.scss'
-import Footer from './Footer'
-import config from '../../../config'
-import { googleFontString } from '../../utils/typography'
+import './index.scss';
+import Footer from './Footer';
+import config from '../../../config';
+import { googleFontString } from '../../utils/typography';
 
 const Layout = ({ children, data, location }) => (
   <StaticQuery
@@ -22,19 +22,19 @@ const Layout = ({ children, data, location }) => (
       }
     `}
     render={data => {
-      let siteUrl
-      location ? (siteUrl = location.href) : (siteUrl = config.siteUrl)
+      let siteUrl;
+      location ? (siteUrl = location.href) : (siteUrl = config.siteUrl);
 
       const setLogoStyle = (titleLogoShow, bioShow) => {
-        let logoStyle = {}
+        let logoStyle = {};
         if (titleLogoShow) {
           logoStyle = {
             display: 'inline-block',
-          }
+          };
         } else {
           logoStyle = {
             display: 'none',
-          }
+          };
         }
         if (!bioShow) {
           logoStyle = {
@@ -42,12 +42,12 @@ const Layout = ({ children, data, location }) => (
             width: '1.5rem',
             height: '1.5rem',
             marginRight: '0.1rem',
-          }
+          };
         }
-        return logoStyle
-      }
-      const logoStyle = setLogoStyle(config.titleLogoShow, config.bioShow)
-      const bioStyle = config.bioShow ? {} : { display: 'none' }
+        return logoStyle;
+      };
+      const logoStyle = setLogoStyle(config.titleLogoShow, config.bioShow);
+      const bioStyle = config.bioShow ? {} : { display: 'none' };
 
       return (
         <>
@@ -130,14 +130,14 @@ const Layout = ({ children, data, location }) => (
           </div>
           <Footer />
         </>
-      )
+      );
     }}
   />
-)
+);
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
   location: PropTypes.object.isRequired,
-}
+};
 
-export default Layout
+export default Layout;

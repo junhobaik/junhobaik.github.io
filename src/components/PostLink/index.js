@@ -1,21 +1,21 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
-import Link from 'gatsby-link'
-import get from 'lodash/get'
-import _ from 'lodash'
-import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome'
-import { faCalendarAlt } from '@fortawesome/free-regular-svg-icons'
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import Link from 'gatsby-link';
+import get from 'lodash/get';
+import _ from 'lodash';
+import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome';
+import { faCalendarAlt } from '@fortawesome/free-regular-svg-icons';
 
-import './index.scss'
+import './index.scss';
 
 class PostLink extends Component {
   render() {
-    const post = this.props.post
-    const slug = post.fields.slug
-    const title = get(post, 'frontmatter.title') || slug
-    const excerpt = post.excerpt
-    const date = post.frontmatter.date
-    const tags = post.frontmatter.tags
+    const post = this.props.post;
+    const slug = post.fields.slug;
+    const title = get(post, 'frontmatter.title') || slug;
+    const excerpt = post.excerpt;
+    const date = post.frontmatter.date;
+    const tags = post.frontmatter.tags;
 
     const tagsObj = tags.map((v, i) => {
       if (v !== 'Empty Tag') {
@@ -23,9 +23,9 @@ class PostLink extends Component {
           <Link to={`/tags/${_.kebabCase(v)}`} className="tag" key={`tag-` + v}>
             #<span className="tag-name">{v}</span>
           </Link>
-        )
-      } else return null
-    })
+        );
+      } else return null;
+    });
 
     return (
       <div
@@ -51,13 +51,13 @@ class PostLink extends Component {
           <div className="tags-list">{tagsObj}</div>
         </div>
       </div>
-    )
+    );
   }
 }
 
 PostLink.propTypes = {
   post: PropTypes.object.isRequired,
-  title: PropTypes.string
+  title: PropTypes.string,
 };
 
-export default PostLink
+export default PostLink;

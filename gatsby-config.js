@@ -1,5 +1,5 @@
-require('dotenv').config()
-const config = require('./config')
+require('dotenv').config();
+const config = require('./config');
 
 module.exports = {
   siteMetadata: {
@@ -48,14 +48,14 @@ module.exports = {
     {
       resolve: `gatsby-plugin-typography`,
       options: {
-        pathToConfigModule: `src/utils/typography`
-      }
+        pathToConfigModule: `src/utils/typography`,
+      },
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: config.googleAnalyticsTrackingId
+        trackingId: config.googleAnalyticsTrackingId,
       },
     },
   ],
-}
+};
