@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 
 class ResultList extends Component {
@@ -19,7 +20,7 @@ class ResultList extends Component {
       ) {
         return (
           <div key={slug}>
-            <a href={slug}>{title}</a>
+            <Link to={slug}>{title}</Link>
           </div>
         )
       }
