@@ -42,10 +42,18 @@
       & > h3,
       & > h4 {
         padding-left: 0.7rem;
+        @media screen and (max-width: $break-small) {
+          padding-left: 0;
+        }
       }
       hr {
-        border: 0.2px solid #00000020;
+        border-bottom: 1px solid $font-color-3;
         margin: 1rem 0;
+      }
+      pre {
+        a {
+          text-shadow: 0 0 1px white;
+        }
       }
     }
   }
@@ -98,4 +106,7 @@
 }
 .comments {
   margin-top: 3rem;
+  a {
+    color: $font-color-1;
+  }
 }
