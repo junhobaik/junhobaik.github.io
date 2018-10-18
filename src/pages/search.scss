@@ -1,30 +1,49 @@
 @import '../utils/variables.scss';
 
 #search {
-  input:focus, select:focus {
+  input:focus,
+  select:focus {
     outline: none;
   }
 
   .search-bar {
-    font-size: 1.5rem;
-    margin: 3rem 0;
-    width: 100%;
     display: flex;
+    max-width: 720px;
+    font-size: 1rem;
+    margin: 3rem auto;
     align-items: center;
+    border: 1px solid $font-color-3;
+    border-radius: 3px;
+    padding: 0 0.3rem;
 
+    svg {
+      color: $font-color-2;
+    }
     #searchInput {
       flex-grow: 1;
       border: 0;
-      border-bottom: 1px solid $font-color-3;
       margin: 0 1rem;
       text-align: center;
     }
+    .select-wrap {
+      padding: 0.1rem 0.2rem;
+      border-left: 1px solid $font-color-3;
+      height: 100%;
+      
+      svg {
+        margin-left: 0.1rem;
+      }
 
-    .search-type {
-      color: $font-color-1;
-      background-color: $white-color;
-      border: 0;
-      font-size: 1rem;
+      .search-type {
+        color: $font-color-2;
+        appearance: none;
+        background-color: $white-color;
+        border: 0;
+        font-size: 0.9rem;
+      }
+      .search-type:hover {
+        cursor: pointer;
+      }
     }
   }
 }

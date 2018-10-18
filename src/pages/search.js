@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { graphql } from 'gatsby';
 import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faSearch, faCaretDown } from '@fortawesome/free-solid-svg-icons';
 
 import Layout from '../components/layout';
 import ResultList from '../components/Search/ResultList';
@@ -37,14 +37,18 @@ class SearchPage extends React.Component {
               onChange={this.handleKeyword}
               placeholder="Search..."
             />
-            <select
-              className="search-type"
-              value={this.state.type}
-              onChange={this.handleType}
-            >
-              <option value="all">제목+내용</option>
-              <option value="title">제목</option>
-            </select>
+            <div className="select-wrap">
+              
+              <select
+                className="search-type"
+                value={this.state.type}
+                onChange={this.handleType}
+              >
+                <option value="all">제목+내용</option>
+                <option value="title">제목</option>
+              </select>
+              <Fa className="select-icon" icon={faCaretDown} />
+            </div>
           </div>
           <ResultList
             data={this.props.data}
