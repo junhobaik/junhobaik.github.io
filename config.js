@@ -1,4 +1,4 @@
-module.exports = {
+let config = {
   title: `HUNDRED`,
   author: 'Junho Baik',
   description: "Junho Baik's blog",
@@ -16,3 +16,12 @@ module.exports = {
   googleAnalyticsTrackingId: 'UA-103592668-4',
   disqusShortname: 'dev-hundred-blog',
 };
+
+/********************************************** */
+
+if (process.env.NODE_ENV === 'development') {
+  config.googleAnalyticsTrackingId = '';
+  config.disqusShortname = '';
+}
+
+module.exports = config;
