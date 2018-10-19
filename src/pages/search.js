@@ -36,6 +36,7 @@ class SearchPage extends React.Component {
                 id="searchInput"
                 type="search"
                 onChange={this.handleKeyword}
+                autoFocus
               />
             </div>
 
