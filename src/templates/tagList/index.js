@@ -32,6 +32,7 @@ class tagListTemplate extends Component {
   }
 
   componentDidMount() {
+    /* eslint-disable */
     const mobilecheck = function() {
       let isMobile = false;
       (function(a) {
@@ -47,6 +48,7 @@ class tagListTemplate extends Component {
       })(navigator.userAgent || navigator.vendor || window.opera);
       return isMobile;
     };
+    /* eslint-enable */
 
     if (mobilecheck()) {
       const tags = document.querySelectorAll('.tag');
