@@ -49,7 +49,7 @@ class SearchPage extends React.Component {
                   onChange={this.handleType}
                   checked={this.state.type === 'all'}
                 />
-                <label for="all">제목+내용</label>
+                <label htmlFor="all">제목+내용</label>
               </div>
               <div>
                 <input
@@ -59,7 +59,7 @@ class SearchPage extends React.Component {
                   onChange={this.handleType}
                   checked={this.state.type === 'title'}
                 />
-                <label for="title">제목</label>
+                <label htmlFor="title">제목</label>
               </div>
             </div>
           </div>
