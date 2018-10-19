@@ -52,12 +52,12 @@ class tagListTemplate extends Component {
 
     if (mobileDetect()) {
       const tags = document.querySelectorAll('.tag');
-      const scrollPoint = document
+      const tagListRect = document
         .querySelector('.tag-list')
-        .getBoundingClientRect().bottom;
+        .getBoundingClientRect();
+      const scrollPoint = tagListRect.bottom - window.innerHeight / 10;
       document.querySelector('#article').style.height =
         document.querySelector('#article').clientHeight * 2 + 'px';
-
       for (let v of tags) {
         v.addEventListener('click', () => {
           window.scroll(0, scrollPoint);
@@ -71,7 +71,7 @@ class tagListTemplate extends Component {
     const tags = this.props.data.allMarkdownRemark.group;
     const selectedTag = this.state.selectedTag;
 
-    const tagList = tags.map((v, i) => {
+    const tagList = tags.map(v => {
       return (
         <li
           key={`tag-${v.fieldValue}`}
@@ -100,11 +100,7 @@ class tagListTemplate extends Component {
 
     return (
       <Layout location={location}>
-        {/* <div className="title">
-          <h1>태그 목록</h1>
-        </div> */}
         <div className="tag-list">{tagList}</div>
-        <div className="scroll-point" />
         {selectedTag ? postList(tags, selectedTag) : null}
       </Layout>
     );
