@@ -33,7 +33,7 @@ class tagListTemplate extends Component {
 
   componentDidMount() {
     /* eslint-disable */
-    const mobilecheck = function() {
+    const mobileDetect = function() {
       let isMobile = false;
       (function(a) {
         if (
@@ -50,7 +50,7 @@ class tagListTemplate extends Component {
     };
     /* eslint-enable */
 
-    if (mobilecheck()) {
+    if (mobileDetect()) {
       const tags = document.querySelectorAll('.tag');
       const scrollPoint = document
         .querySelector('.tag-list')
