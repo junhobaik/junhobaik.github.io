@@ -91,7 +91,7 @@ class tagListTemplate extends Component {
           return (
             <PostList
               data={v.edges}
-              title={`${v.fieldValue}에 관한 ${v.totalCount}개의 포스트`}
+              title={`'${v.fieldValue}'에 관한 ${v.totalCount}개의 포스트`}
             />
           );
         }

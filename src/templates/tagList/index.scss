@@ -8,10 +8,9 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 2rem;
-  border: 1px dotted $tag-color;
-  border-radius: 3px;
+  border-bottom: 1px solid $font-color-3;
   padding: 1rem;
-  margin: 0 0 5rem 0;
+  margin-bottom: 3rem;
 
   .tag {
     list-style: none;
