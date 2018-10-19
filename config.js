@@ -8,9 +8,9 @@ module.exports = {
   titleLogo: () => {
     return require('./src/images/profile.png');
   },
-  titleLogoShow: true, // boolean, default=false
+  titleLogoShow: true,
   bio: 'Jr. FRONT END DEVELOPER',
-  bioShow: true, // boolean, default=true
+  bioShow: true,
 
   // addtional
   googleAnalyticsTrackingId: 'UA-103592668-4',
