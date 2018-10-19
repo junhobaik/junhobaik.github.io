@@ -4,6 +4,8 @@ date: 2018-05-03 00:15:00 +0900
 tags:
   - javascript
   - html
+keywords:
+  - html script 위치
 ---
 
 처음 html, javascript를 공부 할 때는 script 태그는 head 태그에 위치하게끔 하는 코드나,  

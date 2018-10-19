@@ -5,6 +5,13 @@ tags:
   - node
   - npm
   - yarn
+keywords:
+  - node 설치
+  - npm 설치
+  - yarn 설치
+  - mac yarn
+  - mac node
+  - mac npm
 ---
 
 MacOS 재설치 후 기본적인 설정을 하면서 **간단히** 정리해본 Node.js, npm, yarn 설치 과정

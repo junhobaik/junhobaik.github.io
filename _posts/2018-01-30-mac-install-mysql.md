@@ -3,6 +3,9 @@ title: 간단하게 MySQL 설치하기 (Mac, HomeBrew)
 date: 2018-01-30 00:30:00 +0900
 tags:
   - mysql
+keywords:
+  - mac mysql
+  - mac mysql 설치
 ---
 
 MacOS 재설치 후 기본적인 설정을 하면서 **간단히** 정리해본 MySQL 설치 과정

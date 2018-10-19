@@ -6,6 +6,9 @@ tags:
 keywords:
   - Visual Studio Code extensions
   - 비주얼스튜디오 확장
+  - vscode 확장 추천
+  - vscode 플러그인
+
 ---
 
 Atom, Brakets 을 거쳐 WebStorm, VSCode 를 병행해서 사용하였는데 무료인 VSCode 로 이제 정착해 사용하고 있다.  
