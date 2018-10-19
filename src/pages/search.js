@@ -21,7 +21,7 @@ class SearchPage extends React.Component {
     this.setState({ keyword: event.target.value });
   };
   handleType = event => {
-    this.setState({ type: event.target.value });
+    this.setState({ type: event.target.id });
   };
 
   render() {
@@ -29,27 +29,40 @@ class SearchPage extends React.Component {
     return (
       <Layout location={location}>
         <div id="search">
-          <div className="search-bar">
-            <Fa className="search-icon" icon={faSearch} />
-            <input
-              id="searchInput"
-              type="search"
-              onChange={this.handleKeyword}
-              placeholder="Search..."
-            />
-            <div className="select-wrap">
-              
-              <select
-                className="search-type"
-                value={this.state.type}
-                onChange={this.handleType}
-              >
-                <option value="all">제목+내용</option>
-                <option value="title">제목</option>
-              </select>
-              <Fa className="select-icon" icon={faCaretDown} />
+          <div className="search-bar-wrap">
+            <div className="search-bar">
+              <Fa className="search-icon" icon={faSearch} />
+              <input
+                id="searchInput"
+                type="search"
+                onChange={this.handleKeyword}
+              />
+            </div>
+
+            <div className="search-type">
+              <div>
+                <input
+                  type="radio"
+                  name="searchType"
+                  id="all"
+                  onChange={this.handleType}
+                  checked={this.state.type === 'all'}
+                />
+                <label for="all">제목+내용</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="searchType"
+                  id="title"
+                  onChange={this.handleType}
+                  checked={this.state.type === 'title'}
+                />
+                <label for="title">제목</label>
+              </div>
             </div>
           </div>
+
           <ResultList
             data={this.props.data}
             keyword={this.state.keyword}
