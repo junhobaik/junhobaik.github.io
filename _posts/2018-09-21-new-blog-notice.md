@@ -1,6 +1,6 @@
 ---
 title: 블로그 개편 (Jekyll -> Gatsby)
-date: 2018-10-04
+date: 2099-12-31
 tags:
   - gatsby
   - blog
