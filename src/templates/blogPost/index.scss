@@ -37,6 +37,10 @@
         border-left: 0.2rem solid $font-color-0;
         padding-left: 0.5rem;
       }
+      h3 {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+      }
       & > div,
       & > p,
       & > h3,
@@ -54,6 +58,9 @@
         a {
           text-shadow: 0 0 1px white;
         }
+      }
+      code {
+        padding: 0 0.2rem;
       }
     }
   }
