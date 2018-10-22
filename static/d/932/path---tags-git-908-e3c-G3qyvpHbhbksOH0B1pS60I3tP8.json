@@ -1,1 +1,0 @@
-{"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"excerpt":" 처럼 명령어를 입력하면 Log를 보기 좋게 출력할 수 있는데, 매번 이 명령어를 치기도 곤혹이다.  Linux의 alias…","fields":{"slug":"/git-alias/"},"frontmatter":{"date":"30 December, 2017","title":"Git, Alias(별칭)를 이용하여 편리하게 명령어 사용하기","tags":["git"]}}}]}},"pageContext":{"tag":"git"}}
