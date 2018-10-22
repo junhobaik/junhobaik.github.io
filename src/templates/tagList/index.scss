@@ -8,14 +8,14 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 2rem;
-  border-bottom: 1px solid $font-color-3;
+  border-bottom: 1px solid $line-color;
   padding: 1rem;
   margin-bottom: 3rem;
 
   .tag {
     list-style: none;
-    background-color: $tag-color;
-    color: white;
+    background-color: $tag-background-color;
+    color: $tag-font-color;
     padding: 0.25rem 0.5rem;
     margin-right: 1rem;
     margin-bottom: 1rem;

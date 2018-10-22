@@ -1,27 +1,48 @@
 /** theme (default: basic) */
-$theme: whiteTheme;
+$theme: white;
 /////////////////////////////
 
+// media query (max-width)
 $break-small: 50em;
 $break-medium: 70em;
 
+// global
 $font-color-0: black;
 $font-color-1: #4d5256;
 $font-color-2: #7a8288;
 $font-color-3: lightgray;
+$line-color: lightgray;
 
+// tag
+$tag-background-color: $font-color-2;
+$tag-font-color: white;
+
+// article(layout's children)
+$article-background-color: white;
 $article-font-color: $font-color-1;
-$white-color: #fdfffc;
-$tag-color: #767b91;
 
+// header
 $header-color: rgb(45, 48, 55);
 $header-font-color: #fdfffc;
 $header-border-bottom: 0;
-$header-title-border: 1px solid $header-font-color;
+$header-title-border: 0;
 
-@if $theme == whiteTheme {
+/** THEME */
+@if $theme == white {
   $header-color: white;
   $header-font-color: $font-color-2;
-  $header-border-bottom: 1px solid lightgray;
-  $header-title-border: 0;
+  $header-border-bottom: 1px solid $line-color;
+}
+
+@if $theme == ocean {
+  $header-color: #269ebf;
+  $header-font-color: white;
+  $article-background-color: #fff6ed;
+}
+
+@if $theme == modern {
+  $header-color: #11131e;
+  $font-color-0: #11131e;
+  $font-color-1: #242840;
+  $article-background-color: #edf2f4;
 }

@@ -14,7 +14,9 @@
     .post-header {
       text-align: center;
       margin-bottom: 6rem;
-
+      .title {
+        color: $font-color-1;
+      }
       & > :nth-child(3) {
         border-left: 1px solid $font-color-2;
       }
@@ -51,7 +53,7 @@
         }
       }
       hr {
-        border-bottom: 1px solid $font-color-3;
+        border-bottom: 1px solid $line-color;
         margin: 1rem 0;
       }
       pre {
@@ -107,7 +109,7 @@
       text-align: right;
     }
     & > div:nth-child(2) {
-      border-left: 1px solid lightgray;
+      border-left: 1px solid $line-color;
     }
   }
 }

@@ -1,7 +1,7 @@
 @import '../../utils/variables.scss';
 
 .post-link {
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid $line-color;
   padding: 4rem 0;
   @media screen and (max-width: $break-medium) {
     padding: 3rem 0;
@@ -38,8 +38,7 @@
     .tags-list {
       display: flex;
       flex-direction: row;
-      border-left: 1px solid gray;
-
+      border-left: 1px solid $line-color;
       .tag {
         margin: 0 0.5rem;
       }

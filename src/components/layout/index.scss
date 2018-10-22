@@ -18,7 +18,7 @@ html {
   flex-direction: column;
   padding-top: $header-height;
   min-height: 100vh;
-  background-color: $white-color;
+  background-color: $article-background-color;
   @media screen and (max-width: $break-medium) {
     padding-top: $header-height-medium;
   }
