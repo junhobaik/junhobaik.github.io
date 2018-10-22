@@ -85,7 +85,7 @@ html {
             margin-bottom: 0;
           }
           img {
-            opacity: 0.7;
+            opacity: $header-logo-opacity;
             margin: 0;
             padding: 2px;
             border: 1px solid $header-font-color;

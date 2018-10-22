@@ -1,5 +1,5 @@
 /** theme (default: basic) */
-$theme: white;
+$theme: ocean;
 /////////////////////////////
 
 // media query (max-width)
@@ -26,6 +26,7 @@ $header-color: rgb(45, 48, 55);
 $header-font-color: #fdfffc;
 $header-border-bottom: 0;
 $header-title-border: 0;
+$header-logo-opacity: 0.7;
 
 /** THEME */
 @if $theme == white {
@@ -38,6 +39,7 @@ $header-title-border: 0;
   $header-color: #269ebf;
   $header-font-color: white;
   $article-background-color: #fff6ed;
+  $header-logo-opacity: 0.9;
 }
 
 @if $theme == modern {
