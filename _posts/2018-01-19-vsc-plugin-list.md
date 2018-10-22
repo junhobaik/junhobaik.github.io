@@ -11,8 +11,8 @@ keywords:
 
 ---
 
-Atom, Brakets 을 거쳐 WebStorm, VSCode 를 병행해서 사용하였는데 무료인 VSCode 로 이제 정착해 사용하고 있다.  
-아래는 사용중인 플러그인을 정리해놓았고 ~~취소선은 설치했으나 비활성화 중인 것~~이다.
+사용중인 플러그인을 정리해놓았다.  
+~~취소선은 설치했으나 비활성화 중인 것~~이다.
 
 ## List
 
@@ -54,7 +54,7 @@ ECMAScript Linter
 
 ### - gitignore
 
-.gitignore 를 사용할 언어에 맞춰 만들어주는 확장.
+.gitignore 를 사용할 환경에 맞춰 만들어주는 확장.
 
 ### - highlight-matching-tag
 
