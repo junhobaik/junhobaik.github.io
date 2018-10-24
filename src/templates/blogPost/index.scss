@@ -18,7 +18,7 @@
         color: $font-color-1;
       }
       & > :nth-child(3) {
-        border-left: 1px solid $font-color-2;
+        border-left: 1px solid $line-color;
       }
       .date,
       .tags {
@@ -27,8 +27,9 @@
         color: $font-color-2;
       }
       .tags {
-        span {
+        a {
           margin-right: 0.5rem;
+          color: $font-color-2;
         }
       }
     }
@@ -95,8 +96,8 @@
             font-weight: bold;
           }
 
-          &:hover{
-            color:$font-color-0;
+          &:hover {
+            color: $font-color-0;
           }
         }
       }
