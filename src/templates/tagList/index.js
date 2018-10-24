@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
+import _ from 'lodash';
 
 import './index.scss';
 import Layout from '../../components/layout';
@@ -10,7 +11,7 @@ class tagListTemplate extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      selectedTag: null,
+      selectedTag: this.props.pageContext.tag || null,
       tagShowCnt: 15,
     };
   }
@@ -71,6 +72,13 @@ class tagListTemplate extends Component {
         });
       }
     }
+
+    // Link 이동 후 tagShowCnt 유지를 위함
+    if (this.props.location.state.tagShowCnt) {
+      this.setState({
+        tagShowCnt: this.props.location.state.tagShowCnt,
+      });
+    }
   }
 
   render() {
@@ -80,16 +88,19 @@ class tagListTemplate extends Component {
 
     let tagList = tags.map(v => {
       return (
-        <li
+        <Link
+          to={`/tags/${_.kebabCase(v.fieldValue)}`}
+          state={{
+            tagShowCnt: this.state.tagShowCnt,
+          }}
           key={`tag-${v.fieldValue}`}
           className="tag"
-          onClick={tagName => this.changeSelectedTag(v.fieldValue)}
           totalcount={v.totalCount}
           style={{ display: 'none' }}
         >
           <span className="tag-name">{v.fieldValue}</span>
           <span className="tag-count">({v.totalCount})</span>
-        </li>
+        </Link>
       );
     });
     tagList = tagList.sort((a, b) => {

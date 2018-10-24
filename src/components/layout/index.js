@@ -111,7 +111,7 @@ const Layout = ({ children, data, location }) => (
                 </div>
 
                 <div className="tags">
-                  <Link to="/taglist">
+                  <Link to="/tags">
                     <Fa icon={faTags} fixedWidth transform="down-1" />
                     <span>Tags</span>
                   </Link>

@@ -8,9 +8,6 @@ exports.createPages = ({ graphql, actions }) => {
 
   return new Promise((resolve, reject) => {
     const blogPostTemplate = path.resolve('./src/templates/blogPost/index.js');
-    const postListByTagTemplate = path.resolve(
-      './src/templates/postListByTag/index.js'
-    );
     const tagListTemplate = path.resolve('./src/templates/tagList/index.js');
     const archiveTemplate = path.resolve('./src/templates/archive/index.js');
 
@@ -76,24 +73,24 @@ exports.createPages = ({ graphql, actions }) => {
 
         tags = _.uniq(tags);
 
-        // tagsTemplate
-        tags.forEach(tag => {
-          createPage({
-            path: `/tags/${_.kebabCase(tag)}/`,
-            component: postListByTagTemplate,
-            context: {
-              tag,
-            },
-          });
-        });
-
         createPage({
-          path: `/taglist`,
+          path: `/tags`,
           component: tagListTemplate,
           context: {
             tags,
             result,
           },
+        });
+
+        tags.forEach(tag => {
+          createPage({
+            path: `/tags/${_.kebabCase(tag)}/`,
+            component: tagListTemplate,
+            context: {
+              tag,
+              result,
+            },
+          });
         });
 
         createPage({
