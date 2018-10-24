@@ -9,6 +9,7 @@ import {
   faCaretLeft as faLeft,
   faCaretRight as faRight,
 } from '@fortawesome/free-solid-svg-icons';
+import _ from 'lodash';
 
 import './index.scss';
 import Layout from '../../components/layout';
@@ -34,7 +35,11 @@ class BlogTemplate extends React.Component {
     // TODO: 차후에 이 태그를 클릭시 Postbylist를 출력할 것인지 고민
     // TODO: Empty Tag에 대해서 출력 감추기
     const tagList = tags.map((v, i) => {
-      return <span key={`tag-${i}`}>#{v}</span>;
+      return (
+        <Link to={`/tags/${_.kebabCase(v)}`} key={`tag-${i}`}>
+          #{v}
+        </Link>
+      );
     });
 
     return (
