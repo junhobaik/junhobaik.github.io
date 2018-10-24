@@ -71,17 +71,21 @@ class tagListTemplate extends Component {
     const tags = this.props.data.allMarkdownRemark.group;
     const selectedTag = this.state.selectedTag;
 
-    const tagList = tags.map(v => {
+    let tagList = tags.map(v => {
       return (
         <li
           key={`tag-${v.fieldValue}`}
           className="tag"
           onClick={tagName => this.changeSelectedTag(v.fieldValue)}
+          totalcount={v.totalCount}
         >
           <span className="tag-name">{v.fieldValue}</span>
           <span className="tag-count">({v.totalCount})</span>
         </li>
       );
+    });
+    tagList = tagList.sort((a, b)=>{
+      return b.props.totalcount - a.props.totalcount
     });
 
     const postList = (tags, targetTagName) => {
