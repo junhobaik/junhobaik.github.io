@@ -11,8 +11,15 @@ class tagListTemplate extends Component {
     super(props);
     this.state = {
       selectedTag: null,
+      tagShowCnt: 15,
     };
   }
+
+  handleClick = () => {
+    this.setState({
+      tagShowCnt: this.state.tagShowCnt + 10,
+    });
+  };
 
   changeSelectedTag = tagName => {
     this.setState({
@@ -78,15 +85,20 @@ class tagListTemplate extends Component {
           className="tag"
           onClick={tagName => this.changeSelectedTag(v.fieldValue)}
           totalcount={v.totalCount}
+          style={{ display: 'none' }}
         >
           <span className="tag-name">{v.fieldValue}</span>
           <span className="tag-count">({v.totalCount})</span>
         </li>
       );
     });
-    tagList = tagList.sort((a, b)=>{
-      return b.props.totalcount - a.props.totalcount
+    tagList = tagList.sort((a, b) => {
+      return b.props.totalcount - a.props.totalcount;
     });
+    for (let i = 0; i < this.state.tagShowCnt; i++) {
+      if (i === tagList.length - 1) break;
+      tagList[i].props.style.display = 'inline';
+    }
 
     const postList = (tags, targetTagName) => {
       const tagsArray = Array.from(tags);
@@ -104,7 +116,14 @@ class tagListTemplate extends Component {
 
     return (
       <Layout location={location}>
-        <div className="tag-list">{tagList}</div>
+        <div className="tag-wrap">
+          <div className="tag-list">{tagList}</div>
+          {tagList.length > this.state.tagShowCnt ? (
+            <div className="tag-load" onClick={this.handleClick}>
+              + 더 보기
+            </div>
+          ) : null}
+        </div>
         {selectedTag ? postList(tags, selectedTag) : null}
       </Layout>
     );
