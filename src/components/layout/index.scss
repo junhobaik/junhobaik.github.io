@@ -40,6 +40,8 @@ html {
   padding: 0 10%;
   align-items: center;
   border-bottom: $header-border-bottom;
+  border-top: $header-border-top;
+  box-shadow: $header-box-shadow;
 
   @media screen and (max-width: $break-medium) {
     padding: 0 5%;
