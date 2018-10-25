@@ -16,6 +16,14 @@ import Layout from '../../components/layout';
 import config from '../../../config';
 
 class BlogTemplate extends React.Component {
+  
+  componentDidMount() {
+    const aTags = document.querySelectorAll('.blog-post-content a');
+    for (let v of aTags) {
+      v.target = '_blank';
+    }
+  }
+
   render() {
     const { data, location, pageContext } = this.props;
     const { id, frontmatter, html, excerpt } = data.markdownRemark;
