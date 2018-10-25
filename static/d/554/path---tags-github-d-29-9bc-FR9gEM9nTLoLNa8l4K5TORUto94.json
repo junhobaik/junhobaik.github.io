@@ -1,1 +1,0 @@
-{"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"excerpt":"몇시간 전부터 github 가 이상하다, 5시간 전에는 로그인 부분이 이상이 있었다, 지금은 이부분은 해결되고 github page 를 업데이트해도 반영이 되지 않고 있다. 올해들어 세번정도 github…","fields":{"slug":"/github-system-status/"},"frontmatter":{"date":"23 October, 2018","title":"GitHub 서버 오류, 시스템 이상할 때 상태를 확인하기","tags":["git","github"]}}}]}},"pageContext":{"tag":"github"}}
