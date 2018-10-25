@@ -80,6 +80,8 @@ html {
           margin-right: 0.5rem;
           padding: 0.1rem;
           margin-bottom: 0.1rem;
+          border: 1px solid $header-font-color;
+          border-radius: 100%;
           @media screen and (max-width: $break-small) {
             height: 1.5rem;
             width: 1.5rem;
@@ -90,8 +92,6 @@ html {
             opacity: $header-logo-opacity;
             margin: 0;
             padding: 2px;
-            border: 1px solid $header-font-color;
-            border-radius: 100%;
             transition: 0.3s;
             @media screen and (max-width: $break-small) {
               padding: 1px;
