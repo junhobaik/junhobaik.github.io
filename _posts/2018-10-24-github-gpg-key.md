@@ -1,6 +1,6 @@
 ---
 title: GitHub에 GPG 서명 등록하기 (macOS)
-date: 2018-10-25
+date: 2018-10-24
 tags:
   - github
 keywords:
