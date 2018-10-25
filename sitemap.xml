@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url> <loc>https://junhobaik.github.io/git-command-language/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://junhobaik.github.io/github-gpg-key/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://junhobaik.github.io/git-command-language/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://junhobaik.github.io/github-system-status/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://junhobaik.github.io/radio-style-change/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://junhobaik.github.io/new-blog-notice/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -26,8 +26,8 @@
 <url> <loc>https://junhobaik.github.io/jekyll-apply-theme/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://junhobaik.github.io/start-jekyll-blog/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://junhobaik.github.io/js-functions/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://junhobaik.github.io/js-hoisting/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://junhobaik.github.io/git-alias/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://junhobaik.github.io/js-hoisting/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://junhobaik.github.io/js-react-apply-sass/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://junhobaik.github.io/js-semicolon-asi/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://junhobaik.github.io/js-number-type/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -37,8 +37,8 @@
 <url> <loc>https://junhobaik.github.io/js-es6-proxy/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://junhobaik.github.io/js-es6-module/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://junhobaik.github.io/js-es6-setprototypeof/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://junhobaik.github.io/js-es6-object-assign/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://junhobaik.github.io/js-es6-class/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://junhobaik.github.io/js-es6-object-assign/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://junhobaik.github.io/js-es6-arrow-function/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://junhobaik.github.io/js-es6-from/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://junhobaik.github.io/js-es6-spread-operator/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -52,8 +52,8 @@
 <url> <loc>https://junhobaik.github.io/js-clouser/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://junhobaik.github.io/js-prototype/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://junhobaik.github.io/tags</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://junhobaik.github.io/tags/git/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://junhobaik.github.io/tags/github/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://junhobaik.github.io/tags/git/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://junhobaik.github.io/tags/css/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://junhobaik.github.io/tags/gatsby/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://junhobaik.github.io/tags/blog/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
