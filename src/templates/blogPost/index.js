@@ -16,7 +16,6 @@ import Layout from '../../components/layout';
 import config from '../../../config';
 
 class BlogTemplate extends React.Component {
-  
   componentDidMount() {
     const aTags = document.querySelectorAll('.blog-post-content a');
     for (let v of aTags) {
@@ -40,8 +39,6 @@ class BlogTemplate extends React.Component {
       title: siteTitle,
     };
 
-    // TODO: 차후에 이 태그를 클릭시 Postbylist를 출력할 것인지 고민
-    // TODO: Empty Tag에 대해서 출력 감추기
     const tagList = tags.map((v, i) => {
       return (
         <Link to={`/tags/${_.kebabCase(v)}`} key={`tag-${i}`}>
