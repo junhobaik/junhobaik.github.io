@@ -66,9 +66,10 @@
         margin: 1rem 0;
       }
       pre[class*="language-"]>code {
-        border: 2px solid $line-color;
+        border: 1px solid $line-color;
         border-radius: 3px;
         box-shadow: none;
+        padding: 1rem;
       }
     }
   }

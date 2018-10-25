@@ -6,7 +6,7 @@ $header-height-small: 3rem;
 
 // global style
 html {
-  background-color: $header-color;
+  background-color: $header-background-color;
   line-height: 1.666 !important;
   a {
     text-decoration: none;
@@ -36,7 +36,7 @@ html {
   height: $header-height;
   box-sizing: border-box;
   flex-direction: row;
-  background-color: $header-color;
+  background-color: $header-background-color;
   padding: 0 10%;
   align-items: center;
   border-bottom: $header-border-bottom;

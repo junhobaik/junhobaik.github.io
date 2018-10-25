@@ -1,5 +1,5 @@
 /** theme (default: basic) */
-$theme: white;
+$theme: mint;
 /////////////////////////////
 
 // media query (max-width)
@@ -22,7 +22,7 @@ $article-background-color: white;
 $article-font-color: $font-color-1;
 
 // header
-$header-color: rgb(45, 48, 55);
+$header-background-color: rgb(45, 48, 55);
 $header-font-color: #fdfffc;
 $header-border-bottom: 0;
 $header-title-border: 0;
@@ -30,22 +30,26 @@ $header-logo-opacity: 0.7;
 
 /** THEME */
 @if $theme == white {
-  $header-color: white;
+  $header-background-color: white;
   $header-font-color: $font-color-2;
   $header-border-bottom: 1px solid $line-color;
 }
 
 @if $theme == ocean {
-  $header-color: #269ebf;
+  $header-background-color: #269ebf;
   $header-font-color: white;
   $article-background-color: #fff6ed;
   $header-logo-opacity: 0.9;
 }
 
 @if $theme == modern {
-  $header-color: #11131e;
+  $header-background-color: #11131e;
   $font-color-0: #11131e;
   $font-color-1: #242840;
   $article-background-color: #edf2f4;
   $tag-background-color: #242840;
+}
+
+@if $theme == mint {
+
 }
