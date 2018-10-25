@@ -18,7 +18,8 @@ Gatsby 정적 페이지 제작 프레임워크를 사용해 제작한 블로그.
 - React
 - Webpack
 - SASS (SCSS)
-- typography.js & Google Fonts
+- typography.js, Google Fonts
+- Google Analytics
 
 ---
 
