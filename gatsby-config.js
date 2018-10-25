@@ -26,6 +26,12 @@ module.exports = {
       options: {
         plugins: [
           {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 590,
+            },
+          },
+          {
             resolve: `gatsby-remark-prismjs`,
             options: {
               classPrefix: 'language-',
@@ -37,12 +43,7 @@ module.exports = {
         ],
       },
     },
-    {
-      resolve: 'gatsby-plugin-react-svg',
-      options: {
-        include: /svg-icons/,
-      },
-    },
+    'gatsby-plugin-sharp',
     'gatsby-plugin-robots-txt',
     `gatsby-plugin-sitemap`,
     {
