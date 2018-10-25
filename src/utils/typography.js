@@ -2,20 +2,19 @@ import Typography from 'typography';
 
 const googleFont = [
   {
-    name: 'Nanum Gothic Coding',
-    bold: [400, 700],
-  },
-  {
     name: 'Nanum Gothic',
     bold: [400, 700],
   },
+  {
+    name: 'Noto Sans KR'
+  }
 ];
 
 const typography = new Typography({
   baseFontSize: '16px',
   baseLineHeight: 1.666,
   headerFontFamily: ['Nanum Gothic'],
-  bodyFontFamily: ['Nanum Gothic Coding'],
+  bodyFontFamily: ['Noto Sans KR'],
 });
 
 const googleFontString = googleFont
