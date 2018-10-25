@@ -1,5 +1,5 @@
 ---
-title: GitHub에 GPG 서명 등록하기
+title: GitHub에 GPG 서명 등록하기 (macOS)
 date: 2018-10-25
 tags:
   - github
@@ -104,7 +104,7 @@ GitHub - Settings - [SSH and GPG keys](https://github.com/settings/keys)
 
 아래 명령어를 통해 `~/.gitconfig`에 gpg 정보를 입력한다.
 
-여기서 `ABCDE12345678900`에 해당하는 것은 위에서 확인 Secret Key 부분이며, 본인의 것을 입력한다.
+여기서 `ABCDE12345678900`에 해당하는 것은 위에서 확인한 Key 부분이며, 본인의 것을 입력한다.
 
 ```shell
 $ git config --global user.signingkey ABCDE12345678900
@@ -121,6 +121,11 @@ $ git commit -S
 ```shell
 $ git config --global commit.gpgsign true
 ```
+
+## Mac에서 Commit이 안될때
+
+1. pinentry-mac 설치 `$ brew install pinentry-mac`
+2. 1이 안될 시 GPG Suite 설치 [GPG Suite](https://gpgtools.org)
 
 ---
 
