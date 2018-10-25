@@ -7,11 +7,12 @@
   }
 
   .search-bar-wrap {
-    // max-width: 720px;
     margin: 1rem auto;
     margin-bottom: 3rem;
+    width: 100%;
 
     .search-bar {
+      width: inherit;
       display: flex;
       font-size: 1rem;
       align-items: center;
@@ -22,6 +23,9 @@
       }
 
       #searchInput {
+        width: 80%;
+        appearance: none;
+        padding: 0;
         background-color: transparent;
         border: 0;
         border-bottom: 1px solid $line-color;
@@ -36,7 +40,7 @@
       font-size: 0.9rem;
       text-align: right;
 
-      &>div{
+      & > div {
         display: inline-flex;
         align-items: center;
       }
@@ -47,19 +51,20 @@
       input:hover {
         cursor: pointer;
       }
-      
-      input[type="radio"], input[type="radio"]:checked {
+
+      input[type='radio'],
+      input[type='radio']:checked {
         appearance: none;
         width: 0.9rem;
         height: 0.9rem;
         border-radius: 100%;
         margin-right: 0.1rem;
       }
-      input[type="radio"]{
+      input[type='radio'] {
         background-color: transparent;
         border: 2px solid $line-color;
       }
-      input[type="radio"]:checked{
+      input[type='radio']:checked {
         background-color: $font-color-2;
       }
     }
