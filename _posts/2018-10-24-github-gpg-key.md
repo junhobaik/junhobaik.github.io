@@ -124,8 +124,12 @@ $ git config --global commit.gpgsign true
 
 ## Mac에서 Commit이 안될때
 
-1. pinentry-mac 설치 `$ brew install pinentry-mac`
-2. 1이 안될 시 GPG Suite 설치 [GPG Suite](https://gpgtools.org)
+```shell
+$ brew install pinentry-mac
+$ export GPG_TTY=$(tty)
+```
+
+그래도 안된다면 GPG Suite 설치 [GPG Suite](https://gpgtools.org)
 
 ---
 
