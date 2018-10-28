@@ -11,7 +11,7 @@ class tagListTemplate extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      selectedTag: this.props.pageContext.tag || null,
+      selectedTag: this.props.pageContext.tag || undefined,
       tagShowCnt: 15,
     };
   }
@@ -59,18 +59,9 @@ class tagListTemplate extends Component {
     /* eslint-enable */
 
     if (mobileDetect()) {
-      const tags = document.querySelectorAll('.tag');
-      const tagListRect = document
-        .querySelector('.tag-list')
-        .getBoundingClientRect();
-      const scrollPoint = tagListRect.bottom - window.innerHeight / 10;
-      document.querySelector('#article').style.height =
-        document.querySelector('#article').clientHeight * 2 + 'px';
-      for (let v of tags) {
-        v.addEventListener('click', () => {
-          window.scroll(0, scrollPoint);
-        });
-      }
+      this.setState({
+        tagShowCnt: 6
+      })
     }
 
     // Link 이동 후 tagShowCnt 유지를 위함
