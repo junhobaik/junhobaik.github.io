@@ -129,7 +129,8 @@ $ brew install pinentry-mac
 $ export GPG_TTY=$(tty)
 ```
 
-그래도 안된다면 GPG Suite 설치 [GPG Suite](https://gpgtools.org)
+추가로 키 생성 및 관리에는 GPG Suite를 쓰시면 편리합니다.
+설치 링크: [GPG Suite](https://gpgtools.org)
 
 ---
 
