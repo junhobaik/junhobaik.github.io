@@ -21,7 +21,7 @@ Portals은 루트 리액트 컴포넌트가 아닌 외부의 DOM에 접근하여
 <div id="root"/>
 ```
 
-```react
+```javascript
 // index.js
 
 ReactDOM.render(<App />, document.getElementById("root"))
@@ -39,7 +39,7 @@ React Scope안에 위치하지 않는 `h1#title` 엘리먼트를 만들어두고
 
 아래와 같이 리액트 코드를 작성한다.
 
-```react
+```javascript
 // App.js
 
 import { createPortal } from 'react-dom'
@@ -66,7 +66,7 @@ class App extends Component {
 
 위를 보면 `react-dom`의 `createPortal` 메소드를 사용했다.
 
-```react
+```javascript react
 ReactDOM.createPortal(child, container)
 ```
 

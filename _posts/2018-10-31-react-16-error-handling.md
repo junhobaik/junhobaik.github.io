@@ -21,7 +21,7 @@ keywords:
 
 ## 기본적인 사용법
 
-```react
+```javascript react
 class BoundaryError extends React.Component {
   constructor(props) {
     super(props);
@@ -41,7 +41,7 @@ class BoundaryError extends React.Component {
 }
 ```
 
-```react
+```javascript react
 <BoundaryError>
     <Component1 />
 </BoundaryError>
@@ -60,7 +60,7 @@ HOC는 Higher-Order Components로 간단히 설명하면 컴포넌트를 감싸�
 
 HOC에 대한 자세한 설명은 생략하고 Error Handling을 하는데 어떻게 사용하는지를 살펴보겠다.
 
-```react
+```javascript
 const withErrorBoundary = WrappedComponent =>
   class extends Component {
     state = {
@@ -78,13 +78,13 @@ const withErrorBoundary = WrappedComponent =>
 
 위와 같이 클래스를 만드는 함수로 `withErrorBoundary`를 작성했다.
 
-```react
+```javascript
 const Component1WithErrorBoundary = withErrorBoundary(Component1);
 const Component2WithErrorBoundary = withErrorBoundary(Component2);
 const Component3WithErrorBoundary = withErrorBoundary(Component3);
 ```
 
-```react
+```javascript
 render(){
     return (
     	<>

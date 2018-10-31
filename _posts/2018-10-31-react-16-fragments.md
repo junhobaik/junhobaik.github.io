@@ -16,7 +16,7 @@ React 16 이전에서는 return 시 하나의 컴포넌트 또는 null만 가능
 
 하지만 16 부터는 fragment를 활용하여 여러 엘리먼트를 return 할 수 있다.
 
-```react
+```javascript
 class ReturnStringType extends Component {
     render(){
         return 'Hello World'
