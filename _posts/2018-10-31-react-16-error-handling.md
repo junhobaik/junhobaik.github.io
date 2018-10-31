@@ -21,7 +21,7 @@ keywords:
 
 ## 기본적인 사용법
 
-```javascript react
+```javascript
 class BoundaryError extends React.Component {
   constructor(props) {
     super(props);
@@ -41,7 +41,7 @@ class BoundaryError extends React.Component {
 }
 ```
 
-```javascript react
+```javascript
 <BoundaryError>
     <Component1 />
 </BoundaryError>
