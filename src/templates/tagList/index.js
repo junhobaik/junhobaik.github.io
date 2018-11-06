@@ -65,7 +65,7 @@ class tagListTemplate extends Component {
     }
 
     // Link 이동 후 tagShowCnt 유지를 위함
-    if (this.props.location.state.tagShowCnt) {
+    if (Object.keys(this.props.location.state).indexOf('tagShowCnt') !== -1) {
       this.setState({
         tagShowCnt: this.props.location.state.tagShowCnt,
       });
@@ -97,8 +97,14 @@ class tagListTemplate extends Component {
     tagList = tagList.sort((a, b) => {
       return b.props.totalcount - a.props.totalcount;
     });
-    for (let i = 0; i < this.state.tagShowCnt; i++) {
-      if (i === tagList.length - 1) break;
+
+    let tagShowCnt = this.state.tagShowCnt;
+    if(tagShowCnt >= tagList.length) tagShowCnt = tagList.length;
+    
+    for (let i = 0; i < tagShowCnt; i++) {
+      if (i !== 0 && i === tagList.length - 1){
+        break;
+      }
       tagList[i].props.style.display = 'inline';
     }
 

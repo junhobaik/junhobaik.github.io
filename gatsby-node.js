@@ -2,6 +2,7 @@ const _ = require('lodash');
 const Promise = require('bluebird');
 const path = require('path');
 const { createFilePath } = require('gatsby-source-filesystem');
+const config = require('./config');
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
@@ -121,7 +122,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     const rewriteNode = node => {
       // 마크다운 파일 내 keywords 필드가 비어있을 시 오류가 나지 않도록 하기 위함
       if (!node.frontmatter.keywords) {
-        node.frontmatter.keywords = [];
+        node.frontmatter.keywords = [config.title];
       }
 
       // 마크다운 파일 내 퍼블리쉬 필드가 비어있을 시 오류가 나지 않도록 하기 위함
