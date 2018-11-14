@@ -28,17 +28,12 @@ Gatsby 정적 페이지 제작 프레임워크를 사용해 제작한 블로그.
 <br/>
 <br/>
 
-## Get Started (미완성)
+## Get Started
 
 ### Install
 
-현재 배포 전용 버전으로 릴리즈되지 않아 사용하고 싶으시다면 해당 리포지토리 fork 후 `npm install`,  
-그리고 `_posts` 폴더를 비워주시고 (이후 하나의 게시물을 작성하여야 정상 작동합니다.)  
-아래 Basic Setting을 참고하여 설정을 바꾼 후 사용하시면 됩니다.  
-자세한 사용법은 wiki의 documents를 확인해 주세요.
-
 ```shell
-# $ git clone ''
+$ git clone -b develop https://github.com/junhobaik/junhobaik.github.io.git [SITE_DIRECTORY]
 $ npm install
 ```
 
@@ -80,6 +75,8 @@ module.exports = {
 ---
 title: First Post
 date: 2018-01-01
+tags:
+  - life
 ---
 
 Hello World!
