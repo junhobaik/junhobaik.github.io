@@ -58,7 +58,7 @@ $ gatsby new [SITE_DIRECTORY] [URL_OF_STARTER_GITHUB_REPO]
 
 1번의 오피셜 스타터보다는 2번의 다른 사람이 제작한 것을 사용하는 것을 추천한다.
 
-로컬 개발 서버는 `$ gatsby start` 를 통해 열 수 있다.
+로컬 개발 서버는 `$ gatsby develop` 를 통해 열 수 있다.
 
 Github Page를 이용해 배포하는데는 여러가지 방법이 있고 스타터마다 권장하는 방식이 다를 수 있으니 해당 스타터 깃헙 페이지의 사용법을 확인하자.
 
