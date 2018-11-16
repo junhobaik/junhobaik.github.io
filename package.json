@@ -20,6 +20,7 @@
     "gatsby-plugin-sharp": "^2.0.8",
     "gatsby-plugin-sitemap": "^2.0.1",
     "gatsby-plugin-typography": "^2.2.0",
+    "gatsby-remark-emojis": "^0.2.3",
     "gatsby-remark-images": "^2.0.4",
     "gatsby-remark-prismjs": "^2.0.5",
     "gatsby-source-filesystem": "^2.0.5",
