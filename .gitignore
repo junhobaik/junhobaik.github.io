@@ -1,3 +1,7 @@
+.cache
+.vscode
+public/
+
 ### Jekyll ###
 _site
 .sass-cache
