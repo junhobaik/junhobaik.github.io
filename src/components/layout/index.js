@@ -61,7 +61,9 @@ const Layout = ({ children, data, location }) => (
               { name: 'og:image', content: config.titleLogo() },
               { name: 'og:url', content: siteUrl },
             ]}
-          >
+          > 
+            {/* html lang set */}
+            <html lang="ko" />
             {/* load google font */}
             <link
               href={`https://fonts.googleapis.com/css?family=${googleFontString}`}
