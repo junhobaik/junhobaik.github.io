@@ -66,6 +66,9 @@
         border-bottom: 1px solid $line-color;
         margin: 1rem 0;
       }
+      pre>code a {
+        color: $code-block-link-color;
+      }
     }
   }
   .blog-post-nav {
