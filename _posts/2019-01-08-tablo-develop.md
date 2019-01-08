@@ -1,6 +1,6 @@
 ---
 title: 크롬 확장프로그램 "Tablo" 소개 및 개발기
-date: 2018-01-08
+date: 2019-01-08
 ---
 
 ## Tablo - Bookmark and manage tabs
