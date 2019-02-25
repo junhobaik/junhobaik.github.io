@@ -77,6 +77,9 @@ Last Update : 2019-02-21
 - [**ES7 React/Redux/GraphQL/React-Native snippets**](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)  
   React Snippets
 
+- [**ESLint**](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)  
+  설명이 필요없는 필수 Linter.
+
 ## G
 
 - [**gitignore**](https://marketplace.visualstudio.com/items?itemName=codezombiech.gitignore)  
