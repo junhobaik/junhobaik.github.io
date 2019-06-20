@@ -60,12 +60,16 @@ class tagListTemplate extends Component {
 
     if (mobileDetect()) {
       this.setState({
-        tagShowCnt: 6
-      })
+        tagShowCnt: 6,
+      });
     }
 
     // Link 이동 후 tagShowCnt 유지를 위함
-    if (Object.keys(this.props.location.state).indexOf('tagShowCnt') !== -1) {
+    if (
+      Object.keys(this.props.location.state || this.state.tagShowCnt).indexOf(
+        'tagShowCnt'
+      ) !== -1
+    ) {
       this.setState({
         tagShowCnt: this.props.location.state.tagShowCnt,
       });
@@ -99,10 +103,10 @@ class tagListTemplate extends Component {
     });
 
     let tagShowCnt = this.state.tagShowCnt;
-    if(tagShowCnt >= tagList.length) tagShowCnt = tagList.length;
-    
+    if (tagShowCnt >= tagList.length) tagShowCnt = tagList.length;
+
     for (let i = 0; i < tagShowCnt; i++) {
-      if (i !== 0 && i === tagList.length - 1){
+      if (i !== 0 && i === tagList.length - 1) {
         break;
       }
       tagList[i].props.style.display = 'inline';
