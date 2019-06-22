@@ -13,6 +13,10 @@ html {
   }
 }
 
+.pointer-event-disable {
+  pointer-events: none !important;
+}
+
 #wrap {
   display: flex;
   flex-direction: column;
