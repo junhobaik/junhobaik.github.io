@@ -16,10 +16,30 @@
 
 .page-list {
   margin: 0;
-  padding: 0 2rem;
+  padding: 1rem 2rem;
   border-top: 1px solid $line-color;
+  width: 100%;
+  display: flex;
+
+  .page-nav {
+    all: unset;
+    cursor: pointer;
+    font-size: 1.5rem;
+    width: 2rem;
+    display: flex;
+    color: $font-color-3;
+
+    &:hover {
+      transition: 0.3s all;
+      color: $font-color-0 !important;
+    }
+
+    & > * {
+      margin: 0 auto;
+    }
+  }
   .page-number {
-    color: $font-color-1;
+    color: $font-color-2;
     border: 0;
     background-color: transparent;
     text-align: center;
@@ -35,5 +55,12 @@
   .page-number:hover {
     cursor: pointer;
     color: $font-color-0;
+  }
+  .page-dummy {
+    pointer-events: none;
+  }
+  .page-number.select-number {
+    color: $font-color-0;
+    font-weight: bold;
   }
 }
