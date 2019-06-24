@@ -7,6 +7,9 @@ tags:
 ---
 
 기존 Jekyll을 이용한 블로그는 현재(2018.09) Gatsby를 이용한 블로그로 개편되었습니다.  
+
+**["Gatsby를 이용한 블로그 만들기"](https://junhobaik.github.io/create-gatsby-blog/) 바로가기**
+
 Jekyll의 minimal-mistakes테마를 이용한 블로그를 만들고 싶다면 아래 게시물은 아직 유효합니다.
 
 ---
