@@ -1,13 +1,19 @@
 @import '../../utils/variables.scss';
 
 .post-link {
-  border-bottom: 1px solid $line-color;
-  padding: 4rem 0;
+  margin: 1.5rem 0;
+  padding: 1rem;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2), 1px 1px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+
   @media screen and (max-width: $break-medium) {
-    padding: 3rem 0;
+    padding: 0.75rem;
+    margin: 1.25rem 0;
   }
+
   @media screen and (max-width: $break-small) {
-    padding: 2rem 0;
+    padding: 0.5rem;
+    margin: 1rem 0;
   }
   a {
     color: $font-color-1;
@@ -19,17 +25,21 @@
 
   .title {
     display: inline-block;
-    margin-bottom: 0.8rem;
-    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
   }
 
   .sub {
     display: flex;
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
     align-items: center;
     color: $font-color-2;
-    a{
+
+    a {
       color: $font-color-2;
     }
+
     .date {
       margin-right: 0.5rem;
       span {
@@ -41,6 +51,7 @@
       display: flex;
       flex-direction: row;
       border-left: 1px solid $line-color;
+
       .tag {
         margin: 0 0.5rem;
       }
@@ -50,13 +61,13 @@
     display: block;
     color: #4d5256;
     word-break: break-all;
-    margin: 1.5rem 0;
   }
 }
 
 .hover {
   transition: 0.3s;
 }
+
 .hover:hover {
   color: $font-color-0;
 }

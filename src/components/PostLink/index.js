@@ -41,7 +41,7 @@ class PostLink extends Component {
           <h2 className="title hover">{title}</h2>
         </Link>
 
-        <span className="excerpt">{excerpt}</span>
+        
 
         <div className="sub">
           <div className="date">
@@ -50,6 +50,8 @@ class PostLink extends Component {
           </div>
           <div className="tags-list">{tagsObj}</div>
         </div>
+
+        <span className="excerpt">{excerpt}</span>
       </div>
     );
   }
