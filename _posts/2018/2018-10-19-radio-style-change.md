@@ -57,10 +57,12 @@ input[type='radio']:checked {
 
 ### 정리
 
-`input[type='radio'], input[type='radio']:checked`에 `appearance: none`을 함으로 모든 스타일이 제거된다.
+`input[type='radio']`, `input[type='radio']:checked`에  
+`appearance: none`을 함으로 모든 스타일이 제거된다.
 
-그렇게 되면 세로를 기준으로 가운데 정렬되어 텍스트와 나란히 있던 것이 무너지게 되고 그를 위해서
-div 로 감싸서 css 부분의 `div.radio-wrap{...}` 스타일 적용으로 가운데 정렬을 할 수 있다.
+그렇게 되면 세로를 기준으로 가운데 정렬되어 텍스트와 나란히 있던 것이 무너지게 된다.  
+이를 해결하기 위해 div로 감싸고 해당 div에 스타일을 추가한다.  
+위 css 코드의 `div.radio-wrap{...}` Flex Diplay 스타일 적용으로 가운데 정렬을 할 수 있다.
 
-`input[type='radio'], input[type='radio']:checked`에 라디오 버튼의 크기 및 `border-radius` 등 주고싶은 공통 스타일을 주고
-이제 각각의 `input[type='radio']`, `input[type='radio']:checked`에 원하는 색상, 테두리 등의 스타일을 적용해주면 된다.
+`input[type='radio']`, `input[type='radio']:checked`에  
+라디오 버튼의 크기 및 `border-radius` 등 주고싶은 공통 스타일을 주고 이제 각각의 `input[type='radio']`, `input[type='radio']:checked`에 원하는 색상, 테두리 등의 스타일을 적용해주면 된다.
