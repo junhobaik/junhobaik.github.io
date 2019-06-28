@@ -16,10 +16,14 @@
 
 .page-list {
   margin: 0;
-  padding: 1rem 2rem;
   border-top: 1px solid $line-color;
   width: 100%;
   display: flex;
+  padding: 1rem 2rem;
+
+  @media screen and (max-width: $break-small) {
+    padding: 0.5rem 0;
+  }
 
   .page-nav {
     all: unset;
