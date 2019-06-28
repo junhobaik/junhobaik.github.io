@@ -174,13 +174,14 @@ html {
 
 #footer {
   display: flex;
-  height: 2rem;
+  min-height: 2rem;
+  max-height: 4rem;
   align-items: center;
   border-top: $header-border-bottom;
   padding: 0 2rem;
 
   @media screen and (max-width: $break-small) {
-    padding: 0 0.5rem;
+    text-align: center;
   }
   .copyright {
     font-size: 1rem;
