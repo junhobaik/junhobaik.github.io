@@ -31,17 +31,11 @@ class PostLink extends Component {
       <div
         className="post-link"
         key={slug}
-        style={
-          this.props.showCnt - 1 >= this.props.index
-            ? { display: 'inline-block' }
-            : { display: 'none' }
-        }
+        style={this.props.showCnt - 1 >= this.props.index ? { display: 'inline-block' } : { display: 'none' }}
       >
         <Link to={slug}>
           <h2 className="title hover">{title}</h2>
         </Link>
-
-        
 
         <div className="sub">
           <div className="date">
@@ -50,8 +44,9 @@ class PostLink extends Component {
           </div>
           <div className="tags-list">{tagsObj}</div>
         </div>
-
-        <span className="excerpt">{excerpt}</span>
+        <Link to={slug}>
+          <span className="excerpt">{excerpt}</span>
+        </Link>
       </div>
     );
   }
