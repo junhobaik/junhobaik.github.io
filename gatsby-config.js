@@ -74,5 +74,6 @@ module.exports = {
         trackingId: config.googleAnalyticsTrackingId,
       },
     },
+    'gatsby-plugin-no-sourcemaps',
   ],
 };
