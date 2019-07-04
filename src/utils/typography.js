@@ -6,13 +6,17 @@ const googleFont = [
     bold: [400, 700],
   },
   {
-    name: 'Noto Sans KR'
+    name: 'Noto Sans KR',
+    bold: [300, 500]
   }
 ];
 
 const typography = new Typography({
   baseFontSize: '16px',
-  baseLineHeight: 1.666,
+  baseLineHeight: '1.5',
+  bodyWeight: '300',
+  headerWeight: '700',
+  boldWeight: '500 !important',
   headerFontFamily: ['Nanum Gothic'],
   bodyFontFamily: ['Noto Sans KR'],
 });
