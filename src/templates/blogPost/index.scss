@@ -36,7 +36,9 @@
     }
 
     .blog-post-content {
-      h1,h2,h3{
+      h1,
+      h2,
+      h3 {
         margin-bottom: 1rem;
       }
       h1,
@@ -66,8 +68,12 @@
         border-bottom: 1px solid $line-color;
         margin: 1rem 0;
       }
-      pre>code a {
-        color: $code-block-link-color;
+      pre {
+        font-size: 0.9rem;
+        
+        & > code a {
+          color: $code-block-link-color;
+        }
       }
     }
   }
