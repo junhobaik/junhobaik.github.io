@@ -11,6 +11,9 @@ html {
   a {
     text-decoration: none;
   }
+  @media screen and (max-width: $break-small) {
+    font-size: 0.9rem;
+  }
 }
 
 .pointer-event-disable {
