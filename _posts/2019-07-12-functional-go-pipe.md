@@ -81,7 +81,6 @@ pipe = (...funcs) => {};
 
 pipe = (...funcs) => () => {};
 // 함수를 리턴하게 될 것이다.
-// pipe = (...fns) => arg => reduce((acc, fn) => fn(acc), arg, fns);
 
 pipe = (...funcs) => argument => {};
 // 여기서 argument는 pipe 함수가 실행되어 함축된 함수, 그 함수의 매개 변수이다.
