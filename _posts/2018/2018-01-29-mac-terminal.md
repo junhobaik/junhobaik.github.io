@@ -5,6 +5,9 @@ date: 2018-01-29 23:00:00 +0900
 
 MacOS 재설치 후 기본적인 설정을 하면서 **간단히** 정리해본 Mac 터미널 세팅 과정
 
+mac Catalina에서는 zsh가 기본 쉘으로 나오기 때문에 zsh 설치 과정이 불필요합니다.  
+oh my zsh 설치부터 시작하면 됩니다.
+
 ## zsh, Oh My Zsh
 우선 기본 Terminal에서 zsh와 Oh My Zsh를 설치합니다. 
 
@@ -41,6 +44,10 @@ $ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools
 ### iTerm 설치
 이제 기본 터미널을 대체해서 사용할 iTerm을 설치합니다.
 
-[다운로드 페이지](https://www.iterm2.com/downloads.html){: .btn .btn--info}
+[다운로드 페이지](https://www.iterm2.com/downloads.html)
+
+또는 brew를 이용해 설치할 수 있습니다. (cask 설치 필요)
+
+`brew cask install iterm2`
 
 \+ 원래는 테마 변경을 해서 썼지만 이번에는 기본 테마에 색상만 가독성 좋은 색상 스키마로 변경하여 사용해 볼 예정이다.
