@@ -1,6 +1,14 @@
 ---
 title: 사용중인 mac App 목록 및 앱 추천
 date: 2019-07-15
+tags:
+  - mac
+keywords:
+  - 맥 앱
+  - mac app
+  - 맥 앱 추천
+  - 맥북 앱 추천
+  - mac 앱 추천
 ---
 
 현재 mac Catalina developer beta의 환경으로 사용하고 있었는데,
