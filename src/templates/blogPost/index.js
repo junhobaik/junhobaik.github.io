@@ -7,6 +7,7 @@ import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome';
 import { faCalendarAlt } from '@fortawesome/free-regular-svg-icons';
 import { faCaretLeft as faLeft, faCaretRight as faRight } from '@fortawesome/free-solid-svg-icons';
 import _ from 'lodash';
+import AdSense from 'react-adsense';
 
 import './index.scss';
 import Layout from '../../components/layout';
@@ -110,6 +111,15 @@ class BlogTemplate extends React.Component {
               </div>
             )}
           </div>
+        </div>
+        <div className="ad">
+          <AdSense.Google
+            client="ca-pub-5001380215831339"
+            slot="5214956675"
+            style={{ display: 'block' }}
+            format="auto"
+            responsive="true"
+          />
         </div>
         {config.disqusShortname ? (
           <div className="comments">
