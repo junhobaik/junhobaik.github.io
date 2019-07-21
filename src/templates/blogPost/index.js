@@ -5,10 +5,7 @@ import Helmet from 'react-helmet';
 import { DiscussionEmbed } from 'disqus-react';
 import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome';
 import { faCalendarAlt } from '@fortawesome/free-regular-svg-icons';
-import {
-  faCaretLeft as faLeft,
-  faCaretRight as faRight,
-} from '@fortawesome/free-solid-svg-icons';
+import { faCaretLeft as faLeft, faCaretRight as faRight } from '@fortawesome/free-solid-svg-icons';
 import _ from 'lodash';
 
 import './index.scss';
@@ -56,7 +53,17 @@ class BlogTemplate extends React.Component {
             { name: 'og:title', content: postTitle },
             { name: 'og:description', content: excerpt },
           ]}
-        />
+        >
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" />
+          <script>
+            {`
+              (adsbygoogle = window.adsbygoogle || []).push({
+                    google_ad_client: "ca-pub-5001380215831339",
+                    enable_page_level_ads: true
+              });
+            `}
+          </script>
+        </Helmet>
         <div className="blog-post-container">
           <div className="blog-post">
             <div className="post-header">
@@ -68,10 +75,7 @@ class BlogTemplate extends React.Component {
               <div className="tags">{tagList}</div>
             </div>
 
-            <div
-              className="blog-post-content"
-              dangerouslySetInnerHTML={{ __html: html }}
-            />
+            <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: html }} />
           </div>
 
           <div className="blog-post-nav">
@@ -109,10 +113,7 @@ class BlogTemplate extends React.Component {
         </div>
         {config.disqusShortname ? (
           <div className="comments">
-            <DiscussionEmbed
-              shortname={disqusShortname}
-              config={disqusConfig}
-            />
+            <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
           </div>
         ) : null}
       </Layout>
