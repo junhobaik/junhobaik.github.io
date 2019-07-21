@@ -85,7 +85,7 @@ const Layout = ({ children, data, location }) => (
               `}
             </script>
             
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            {/* <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
             <script>
               {`
               (adsbygoogle = window.adsbygoogle || []).push({
@@ -93,7 +93,7 @@ const Layout = ({ children, data, location }) => (
                 enable_page_level_ads: true
               });
               `}
-            </script>
+            </script> */}
 
 
 
