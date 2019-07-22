@@ -5,11 +5,9 @@ import Helmet from 'react-helmet';
 import { DiscussionEmbed } from 'disqus-react';
 import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome';
 import { faCalendarAlt } from '@fortawesome/free-regular-svg-icons';
-import {
-  faCaretLeft as faLeft,
-  faCaretRight as faRight,
-} from '@fortawesome/free-solid-svg-icons';
+import { faCaretLeft as faLeft, faCaretRight as faRight } from '@fortawesome/free-solid-svg-icons';
 import _ from 'lodash';
+import AdSense from 'react-adsense';
 
 import './index.scss';
 import Layout from '../../components/layout';
@@ -56,7 +54,7 @@ class BlogTemplate extends React.Component {
             { name: 'og:title', content: postTitle },
             { name: 'og:description', content: excerpt },
           ]}
-        />
+        ></Helmet>
         <div className="blog-post-container">
           <div className="blog-post">
             <div className="post-header">
@@ -68,10 +66,7 @@ class BlogTemplate extends React.Component {
               <div className="tags">{tagList}</div>
             </div>
 
-            <div
-              className="blog-post-content"
-              dangerouslySetInnerHTML={{ __html: html }}
-            />
+            <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: html }} />
           </div>
 
           <div className="blog-post-nav">
@@ -107,12 +102,20 @@ class BlogTemplate extends React.Component {
             )}
           </div>
         </div>
+        {config.googleAdsense ? (
+          <div className="ad">
+            <AdSense.Google
+              client={config.adsenseClient}
+              slot={config.adsenseSlot}
+              style={{ display: 'block' }}
+              format="auto"
+              responsive="true"
+            />
+          </div>
+        ) : null}
         {config.disqusShortname ? (
           <div className="comments">
-            <DiscussionEmbed
-              shortname={disqusShortname}
-              config={disqusConfig}
-            />
+            <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
           </div>
         ) : null}
       </Layout>
