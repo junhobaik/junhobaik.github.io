@@ -61,21 +61,13 @@ const Layout = ({ children, data, location }) => (
               { name: 'og:image', content: config.titleLogo() },
               { name: 'og:url', content: siteUrl },
             ]}
-          > 
+          >
             {/* html lang set */}
             <html lang="ko" />
             {/* load google font */}
-            <link
-              href={`https://fonts.googleapis.com/css?family=${googleFontString}`}
-              rel="stylesheet"
-            />
+            <link href={`https://fonts.googleapis.com/css?family=${googleFontString}`} rel="stylesheet" />
             {/* Global Site Tag (gtag.js) - Google Analytics */}
-            <script
-              async
-              src={`https://www.googletagmanager.com/gtag/js?id=${
-                config.googleAnalyticsTrackingId
-              }`}
-            />
+            <script async src={`https://www.googletagmanager.com/gtag/js?id=${config.googleAnalyticsTrackingId}`} />
             <script>
               {`
                 window.dataLayer = window.dataLayer || [];
@@ -84,19 +76,8 @@ const Layout = ({ children, data, location }) => (
                 gtag('config', '${config.googleAnalyticsTrackingId}');
               `}
             </script>
-            
-            {/* <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-            <script>
-              {`
-              (adsbygoogle = window.adsbygoogle || []).push({
-                google_ad_client: "ca-pub-5001380215831339",
-                enable_page_level_ads: true
-              });
-              `}
-            </script> */}
-
-
-
+            {/* google adsense */}
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
           </Helmet>
 
           <div id="wrap">
