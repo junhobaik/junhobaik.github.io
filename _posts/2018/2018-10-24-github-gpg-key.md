@@ -164,6 +164,7 @@ max-cache-ttl 31536000
 ---
 
 추가로 키 생성 및 관리에는 GPG Suite를 쓰시면 편리합니다.
+
 설치 링크: [GPG Suite](https://gpgtools.org)
 
 ---
