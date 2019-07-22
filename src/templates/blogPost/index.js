@@ -55,8 +55,8 @@ class BlogTemplate extends React.Component {
             { name: 'og:description', content: excerpt },
           ]}
         >
-          {/* <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" />
-          <script>
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" />
+          {/*<script>
             {`
               (adsbygoogle = window.adsbygoogle || []).push({
                     google_ad_client: "ca-pub-5001380215831339",
