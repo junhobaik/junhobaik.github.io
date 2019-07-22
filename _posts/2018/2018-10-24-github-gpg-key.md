@@ -10,10 +10,11 @@ keywords:
 
 ## GPG 키 생성하기
 
-우선 Homebrew 를 통해 gpg 패키지를 설치한다
+우선 Homebrew 를 통해 gpg 패키지를 설치한다,  
+추가적으로 pinentry-mac 패키지도 설치한다.
 
 ```shell
-$ brew install gpg
+$ brew install gpg pinentry-mac
 ```
 
 설치가 완료되면 아래 명령어를 통해 GPG Key 를 생성한다.
@@ -122,21 +123,45 @@ $ git commit -S
 $ git config --global commit.gpgsign true
 ```
 
-## Mac에서 Commit이 안될때
+## 추가 설정
 
-글쓴이는 아래와 같은 방법으로 해결했다.
+여기까지 하고 git commit을 시도하면 일반적으로 아래와 같은 오류가 발생할 것이다.
+
+`error: gpg failed to sign the data`
+
+오류를 해결하기 위해 사용자 shell 환경이 bash, zsh 어느것인가에 따라 환경 설정 파일을 수정할 필요가 있다.
+아래 코드 중 사용자 환경에 맞는 것을 하나 골라 수정하자. (둘 다 수정해도 무방하다)
 
 ```shell
-$ brew install pinentry-mac
-```
-
-pinentry-mac 설치
-
-```shell
+$ vi ~/.zshrc
 $ vi ~/.bashrc
 ```
 
-.bashrc에 `export GPG_TTY=$(tty)`를 추가한다.
+`.bashrc` 또는 `.zshrc`에 `export GPG_TTY=$(tty)`를 추가한다.
+
+여기까지 하면 이제 사용할 준비가 된 것이다.
+
+이제 commit시 키 비밀번호를 물어볼 것이다.
+
+그런데 비밀번호를 자주 물어보는 것이 싫다면 아래와 같은 과정으로 설정을 수정한다.
+
+`gpg-agent.conf` 파일의 수정이 필요하다.
+
+```
+vi ~/.gnupg/gpg-agent.conf
+```
+
+아래의 두 설정을 수정할 것이다.
+더 궁금한 점은 설정의 자세한 [문서](https://www.gnupg.org/documentation/manuals/gnupg-devel/Agent-Options.html)를 참고하자.
+
+```
+default-cache-ttl 31536000
+max-cache-ttl 31536000
+```
+
+여기서는 31536000초(1년)으로 비밀번호 입력 주기를 수정하였다.
+
+---
 
 추가로 키 생성 및 관리에는 GPG Suite를 쓰시면 편리합니다.
 설치 링크: [GPG Suite](https://gpgtools.org)
