@@ -102,15 +102,17 @@ class BlogTemplate extends React.Component {
             )}
           </div>
         </div>
-        <div className="ad">
-          <AdSense.Google
-            client="ca-pub-5001380215831339"
-            slot="5214956675"
-            style={{ display: 'block' }}
-            format="auto"
-            responsive="true"
-          />
-        </div>
+        {config.googleAdsense ? (
+          <div className="ad">
+            <AdSense.Google
+              client={config.adsenseClient}
+              slot={config.adsenseSlot}
+              style={{ display: 'block' }}
+              format="auto"
+              responsive="true"
+            />
+          </div>
+        ) : null}
         {config.disqusShortname ? (
           <div className="comments">
             <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
