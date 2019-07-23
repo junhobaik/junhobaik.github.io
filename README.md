@@ -10,6 +10,7 @@ Gatsby 정적 페이지 제작 프레임워크를 사용해 제작한 블로그.
 - SEO 적용으로 구글 및 네이버 검색이 가능합니다.
 - 웹 표준 준수로 Safari 브라우저의 Reader Mode가 사용 가능합니다.
 - 반응형 웹으로 모바일에서도 쾌적하게 볼 수 있도록 제작하였습니다.
+- Google Analytics, Adsense를 사용할 수 있습니다.
 
 ## 개발 현황
 
@@ -23,6 +24,7 @@ Gatsby 정적 페이지 제작 프레임워크를 사용해 제작한 블로그.
 - SASS (SCSS)
 - typography.js, Google Fonts
 - Google Analytics
+- Google AdSense
 
 ---
 
