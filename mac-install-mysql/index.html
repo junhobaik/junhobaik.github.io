@@ -30,7 +30,7 @@
 <li>익명 사용자 삭제 (y)</li>
 <li>원격 접속 허용 (n)</li>
 <li>test DB 삭제 (n)</li>
-<li>수정할 것이 있는가? (y or n)</li>
+<li>previlege 테이블을 다시 로드할 것인지 (y or n)</li>
 </ol>
 <p>아래는 위에 나타낸 과정의 자세한 내용입니다.</p>
 <div class="gatsby-highlight" data-language="text">
@@ -90,12 +90,16 @@ Remove test database and access to it? (Press y|Y for Yes, any other key for No)
 <div class="gatsby-highlight" data-language="text">
       <pre class="language-text"><code class="language-text">Reload privilege tables now? (Press y|Y for Yes, any other key for No) :</code></pre>
       </div>
-<p>수정할 것이 있다면 위의 설정 과정을 다시 거칠 수 있습니다.<br>
-<strong>No</strong>를 입력하였습니다.</p>
+<p>previlege 테이블을 다시 로드할 것인지 묻습니다.</p>
+<p><strong>yes</strong>를 입력, 과정을 마칩니다.</p>
 <div class="gatsby-highlight" data-language="text">
       <pre class="language-text"><code class="language-text">All done!</code></pre>
       </div>
 <p>위의 메세지와 함께 설정이 종료됩니다.</p>
+<p>추가적으로 mysql server가 재부팅과 상관없이 켜져있을 수 있도록 brew services를 이용하여 서버를 켜두겠습니다.</p>
+<div class="gatsby-highlight" data-language="text">
+      <pre class="language-text"><code class="language-text">$ brew services start mysql</code></pre>
+      </div>
 <h2>MySQL 사용</h2>
 <div class="gatsby-highlight" data-language="text">
       <pre class="language-text"><code class="language-text">$ mysql -u root -p</code></pre>

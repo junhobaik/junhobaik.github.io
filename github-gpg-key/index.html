@@ -102,6 +102,10 @@ $ <span class="token function">git</span> config --global gpg.program <span clas
 <div class="gatsby-highlight" data-language="shell">
       <pre class="language-shell"><code class="language-shell">$ <span class="token function">git</span> config --global commit.gpgsign <span class="token boolean">true</span></code></pre>
       </div>
+<p>추가로 commit 시 오류가 발생한다면, 아래 내용을 <code class="language-text">~/.zshrc</code> 또는 <code class="language-text">~/.bashrc</code>에 추가해준다.</p>
+<div class="gatsby-highlight" data-language="text">
+      <pre class="language-text"><code class="language-text">export GPG_TTY=$(tty)</code></pre>
+      </div>
 <hr>
 <h3>References</h3>
 <ul>
