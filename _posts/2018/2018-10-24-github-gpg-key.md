@@ -11,16 +11,33 @@ keywords:
   - gpg 서명
 ---
 
-## GPG 키 생성하기
+## 설치
 
 우선 Homebrew 를 통해 gpg 패키지를 설치한다,  
-추가적으로 pinentry-mac 패키지도 설치한다.
 
 ```shell
-$ brew install gpg pinentry-mac
+$ brew install gpg
 ```
 
-설치가 완료되면 아래 명령어를 통해 GPG Key 를 생성한다.
+추가로 gpg 키 관리 프로그램인 GPG-SUITE를 설치한다.
+
+```shell
+$ brew cask install gpg-suite
+```
+
+## key 생성
+
+키 생성 방법은 두가지가 있다.
+
+1. gpg-suite를 통한 설치
+2. 터미널내에서 설치
+
+1번의 경우 시스템 환경설정에서 확인 할 수 있는 GPG KeyChain을 통해 생성하는 방법이다.  
+본 글에서는 터미널에서 생성하는 방법을 소개하고 있기 때문에 1번의 방법은 [링크](https://medium.com/@star_zero/github%E3%81%AEgpg-key%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B-70e22874e533)를 확인해 보시기를 바란다.
+
+아래는 터미널에서 키를 생성하는 과정이다.
+
+우선 아래 명령어를 이용 키 생성 과정에 들어간다.
 
 ```shell
 $ gpg --full-generate-key
@@ -69,7 +86,7 @@ Change (N)ame, (C)omment, (E)mail or (O)kay/(Q)uit? O
 
 위의 과정을 마치고 나면 키가 생성되었고,
 
-이제 아래 명령어(`gpg --list-secret-keys --keyid-format LONG`)를 이용하여 생성한 Public Key, Secret Key 를 확인한다.
+이제 아래 명령어(`gpg --list-secret-keys --keyid-format LONG`)를 이용하여 생성한 키를 확인한다.
 
 ```shell
 $ gpg --list-secret-keys --keyid-format LONG
@@ -81,22 +98,14 @@ uid                 [ultimate] Junho Baik <junhobaik@gmail.com>
 ssb   rsa4096/AGRJIWGJWRGJIRWG 2018-10-24 [E]
 ```
 
-위의 예제에서 `ABCDE12345678900` 부분을 복사하고 아래 명령어에 넣는다.
+위의 예제에서 `ABCDE12345678900`에 해당하는 부분을 복사하고 아래 명령어에 넣는다.
 
 ```shell
 $ gpg --armor --export ABCDE12345678900
 ```
 
-위 명령어를 입력한 후 나오는 키를 복사한다,  
+위 명령어를 입력한 후 출력되는 키를 복사한다,  
 `-----BEGIN PGP PUBLIC KEY BLOCK-----`부터 `-----END PGP PUBLIC KEY BLOCK——.`를 포함해서 모두 복사하여야 한다.
-
-```shell
- -----BEGIN PGP PUBLIC KEY BLOCK-----
-
- // Key Code...
-
- -----END PGP PUBLIC KEY BLOCK-----.
-```
 
 ## GitHub 에 GPG Key 등록
 
@@ -112,6 +121,7 @@ GitHub - Settings - [SSH and GPG keys](https://github.com/settings/keys)
 
 ```shell
 $ git config --global user.signingkey ABCDE12345678900
+$ git config --global gpg.program $(which gpg)
 ```
 
 이제 등록이 되었고, 이후 commit 부터는 `-S` 플래그를 넣음으로 서명을 적용한 Commit 을 보낼 수 있다.
@@ -126,52 +136,9 @@ $ git commit -S
 $ git config --global commit.gpgsign true
 ```
 
-## 추가 설정
-
-여기까지 하고 git commit을 시도하면 일반적으로 아래와 같은 오류가 발생할 것이다.
-
-`error: gpg failed to sign the data`
-
-오류를 해결하기 위해 사용자 shell 환경이 bash, zsh 어느것인가에 따라 환경 설정 파일을 수정할 필요가 있다.
-아래 코드 중 사용자 환경에 맞는 것을 하나 골라 수정하자. (둘 다 수정해도 무방하다)
-
-```shell
-$ vi ~/.zshrc
-$ vi ~/.bashrc
-```
-
-`.bashrc` 또는 `.zshrc`에 `export GPG_TTY=$(tty)`를 추가한다.
-
-여기까지 하면 이제 사용할 준비가 된 것이다.
-
-이제 commit시 키 비밀번호를 물어볼 것이다.
-
-그런데 비밀번호를 자주 물어보는 것이 싫다면 아래와 같은 과정으로 설정을 수정한다.
-
-`gpg-agent.conf` 파일의 수정이 필요하다.
-
-```
-vi ~/.gnupg/gpg-agent.conf
-```
-
-아래의 두 설정을 수정할 것이다.
-더 궁금한 점은 설정의 자세한 [문서](https://www.gnupg.org/documentation/manuals/gnupg-devel/Agent-Options.html)를 참고하자.
-
-```
-default-cache-ttl 31536000
-max-cache-ttl 31536000
-```
-
-여기서는 31536000초(1년)으로 비밀번호 입력 주기를 수정하였다.
-
----
-
-추가로 키 생성 및 관리에는 GPG Suite를 쓰시면 편리합니다.
-
-설치 링크: [GPG Suite](https://gpgtools.org)
-
 ---
 
 ### References
 
 - [Generating a new GPG key](https://help.github.com/articles/generating-a-new-gpg-key/)
+- [KenjiAbe|GitHubのGPG Keyを設定する](https://medium.com/@star_zero/github%E3%81%AEgpg-key%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B-70e22874e533)
