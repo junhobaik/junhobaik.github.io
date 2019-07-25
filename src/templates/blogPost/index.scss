@@ -75,6 +75,12 @@
           color: $code-block-link-color;
         }
       }
+      blockquote {
+        margin: 0;
+        padding-left: 0.5rem;
+        margin-bottom: 1rem;
+        border-left: 0.25rem solid $line-color;
+      }
     }
   }
   .blog-post-nav {
