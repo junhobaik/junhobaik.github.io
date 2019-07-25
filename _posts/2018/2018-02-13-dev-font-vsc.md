@@ -7,6 +7,7 @@ keywords:
   - 개발자 폰트
   - 개발자 글꼴
   - vscode 폰트
+  - vscode font
   - vscode 글꼴
 ---
 
@@ -40,14 +41,19 @@ Hack은 이러한 조건들을 만족하는 글꼴이다.
 
 ### Visual Studio Code
 
-**'Code - 기본 설정'**에서 아래 설정을 추가한다.
-```json
-{
-  "editor.fontFamily": "Hack"
-}
-```
-아래와 같이 여러 글꼴을 설정할 수도 있다,  
+**'Code - 기본 설정 - 설정'**에 진입한다.
+
+최신 버전의 VSCode에서는 GUI 방식 설정창이 뜨게 된다.
+
+여기서 `Editor: Font Family` 항목을 찾아 입력칸의 첫번째에 Hack을 추가해주면 된다.
+
+`Hack, Menlo, Monaco, 'Courier New', monospace`와 같이 말이다.
+
+위와 같이 글꼴을 여러개 나열 할 경우,  
 만약 첫번째로 설정한 글꼴가 어떠한 이유로 적용되지 않는 경우 그 다음 글꼴이 적용된다.
+
+혹시나 GUI 방식의 설정창이 뜨지 않고 `settings.json` 파일이 뜨거나 설정창에서 우측 상단의 `{}` 버튼을 누를 경우 진입한 설정 파일에서는 아래와 같이 설정을 추가하거나 수정해주면 된다.
+
 ```json
 {
   "editor.fontFamily": "Hack, Menlo, Monaco, 'Courier New', monospace"
