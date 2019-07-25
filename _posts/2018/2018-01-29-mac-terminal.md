@@ -3,10 +3,14 @@ title: Mac Terminal 설정 (zsh, oh my zsh, plugin)
 date: 2018-01-29 23:00:00 +0900
 ---
 
+
+새로운 포스트로 업데이트 되었습니다. 아래 링크를 통해 확인할 수 있습니다.  
+> [mac 터미널 환경 구성하기 (zsh, oh my zsh, zplug, hyper)](https://junhobaik.github.io/mac-terminal-setting/)
+
+----
+
 MacOS 재설치 후 기본적인 설정을 하면서 **간단히** 정리해본 Mac 터미널 세팅 과정
 
-mac Catalina에서는 zsh가 기본 쉘으로 나오기 때문에 zsh 설치 과정이 불필요합니다.  
-mac Catalina를 사용하신다면 oh my zsh 설치부터 시작하면 됩니다.
 
 ## zsh 설치
 
