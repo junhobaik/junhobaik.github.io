@@ -4,8 +4,11 @@ date: 2018-10-24
 tags:
   - github
 keywords:
-  - Github gpg
+  - github gpg
   - github gpg key
+  - gpg 키 생성
+  - gpg 키
+  - gpg 서명
 ---
 
 ## GPG 키 생성하기
@@ -172,4 +175,3 @@ max-cache-ttl 31536000
 ### References
 
 - [Generating a new GPG key](https://help.github.com/articles/generating-a-new-gpg-key/)
-- [GitHub 에서 GPG 서명하기 (for OS X)](https://medium.com/@Makart/github%EC%97%90%EC%84%9C-gpg-%EC%84%9C%EB%AA%85%ED%95%98%EA%B8%B0-for-os-x-4f45ad8f1a49)
