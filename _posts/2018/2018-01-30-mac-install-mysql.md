@@ -21,7 +21,9 @@ brew 명령어를 위한 HomeBrew 패키지 관리자 미설치시 아래 명령
 
 
 ## MySQL 설정
+
 아래 명령어로 mysql을 시작합니다.
+
 ```
 $ mysql.server start
 ```
@@ -39,7 +41,7 @@ $ mysql_secure_installation
 3. 익명 사용자 삭제 (y)
 4. 원격 접속 허용 (n)
 5. test DB 삭제 (n)
-6. 수정할 것이 있는가? (y or n)
+6. previlege 테이블을 다시 로드할 것인지 (y or n)
 
 아래는 위에 나타낸 과정의 자세한 내용입니다.
 
@@ -105,13 +107,20 @@ test 데이터베이스 삭제를 묻고 있습니다.
 ```
 Reload privilege tables now? (Press y|Y for Yes, any other key for No) :
 ```
-수정할 것이 있다면 위의 설정 과정을 다시 거칠 수 있습니다.  
-**No**를 입력하였습니다.
+previlege 테이블을 다시 로드할 것인지 묻습니다.
+
+**yes**를 입력, 과정을 마칩니다.
 
 ```
 All done!
 ```
 위의 메세지와 함께 설정이 종료됩니다.
+
+추가적으로 mysql server가 재부팅과 상관없이 켜져있을 수 있도록 brew services를 이용하여 서버를 켜두겠습니다.
+
+```
+$ brew services start mysql
+```
 
 ## MySQL 사용
 ```
