@@ -136,6 +136,12 @@ $ git commit -S
 $ git config --global commit.gpgsign true
 ```
 
+추가로 commit 시 오류가 발생한다면, 아래 내용을 `~/.zshrc` 또는 `~/.bashrc`에 추가해준다.
+
+```
+export GPG_TTY=$(tty)
+```
+
 ---
 
 ### References
