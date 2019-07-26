@@ -75,5 +75,6 @@ module.exports = {
       },
     },
     'gatsby-plugin-no-sourcemaps',
+    'gatsby-plugin-feed'
   ],
 };
