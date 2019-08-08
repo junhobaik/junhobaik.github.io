@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[HUNDRED]]></title><description><![CDATA[Junho Baik's blog]]></description><link>https://junhobaik.github.io</link><generator>RSS for Node</generator><lastBuildDate>Thu, 08 Aug 2019 14:35:47 GMT</lastBuildDate><item><title><![CDATA[NVM, Node 설치 및 관리하기]]></title><description><![CDATA[해당 포스트는 macOS 환경을 기준으로 작성되었습니다NVM(Node Version Manager)Node 버전을 쉽게 관리 할 수 있다.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[HUNDRED]]></title><description><![CDATA[Junho Baik's blog]]></description><link>https://junhobaik.github.io</link><generator>RSS for Node</generator><lastBuildDate>Thu, 08 Aug 2019 14:39:51 GMT</lastBuildDate><item><title><![CDATA[NVM, Node 설치 및 관리하기]]></title><description><![CDATA[해당 포스트는 macOS 환경을 기준으로 작성되었습니다NVM(Node Version Manager)Node 버전을 쉽게 관리 할 수 있다.
 예로 사용하던 패키지가 Node 버전이 업데이트를 함에 따라 호환이 되지 않을 경우가 생길 때 NVM…]]></description><link>https://junhobaik.github.io/nvm-install/</link><guid isPermaLink="false">https://junhobaik.github.io/nvm-install/</guid><pubDate>Thu, 08 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;em&gt;해당 포스트는 macOS 환경을 기준으로 작성되었습니다&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/nvm-sh/nvm&quot;&gt;&lt;strong&gt;NVM&lt;/strong&gt;(Node Version Manager)&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Node 버전을 쉽게 관리 할 수 있다.
@@ -31,7 +31,7 @@
 &lt;p&gt;처음 설치한 Node 버전은 자동으로 사용하게 설정이 되어있습니다.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;이렇게 간단하게 버전을 설치하고 사용을 설정하면 됩니다.
-이제 설치된 리스트를 확인해보면 아래와 같은 출력을 볼 수 있습니다.&lt;/p&gt;
+설치된 리스트를 확인해보면 아래와 유사한 출력을 볼 수 있습니다.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;
       &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; nvm list
        
