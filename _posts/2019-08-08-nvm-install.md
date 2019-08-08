@@ -50,7 +50,7 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
 > 처음 설치한 Node 버전은 자동으로 사용하게 설정이 되어있습니다.
 
 이렇게 간단하게 버전을 설치하고 사용을 설정하면 됩니다.
-이제 설치된 리스트를 확인해보면 아래와 같은 출력을 볼 수 있습니다.
+설치된 리스트를 확인해보면 아래와 유사한 출력을 볼 수 있습니다.
 
 ```bash
 > nvm list
