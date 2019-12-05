@@ -1,4 +1,80 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[HUNDRED]]></title><description><![CDATA[Junho Baik's blog]]></description><link>https://junhobaik.github.io</link><generator>RSS for Node</generator><lastBuildDate>Thu, 08 Aug 2019 14:39:51 GMT</lastBuildDate><item><title><![CDATA[NVM, Node 설치 및 관리하기]]></title><description><![CDATA[해당 포스트는 macOS 환경을 기준으로 작성되었습니다NVM(Node Version Manager)Node 버전을 쉽게 관리 할 수 있다.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[HUNDRED]]></title><description><![CDATA[Junho Baik's blog]]></description><link>https://junhobaik.github.io</link><generator>RSS for Node</generator><lastBuildDate>Thu, 05 Dec 2019 12:40:12 GMT</lastBuildDate><item><title><![CDATA[WhatSubs 앱 개발기 (React-Native, Expo)]]></title><description><![CDATA[Google Play StoreApple App StoreWhatSubs라는 iOS, Android 플랫폼의 React Native…]]></description><link>https://junhobaik.github.io/whatsubs-dev-story/</link><guid isPermaLink="false">https://junhobaik.github.io/whatsubs-dev-story/</guid><pubDate>Thu, 05 Dec 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/1ed478487cdfaa54d6391ed6b4c91308/3b243/a1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 48.828125%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsSAAALEgHS3X78AAACPElEQVQoz3WS3UsUURiH9w+qsCK9qYtQc9OCws+loCii/IB0oy7C77XU3CQKKsWoC7tNoboKqotCCiqoFFJLXdbV/ZqzMzszO7sz69OZUUOKBl7OmYv3Oc/vPcd3oX2QS81tlJWW0dHRwfTUNElFw3GKCJFBpONcDA5T2vqdmpBGZXea8s60t+6sqp40/l4FX3JtiUQiSSwWY/vbyMxj5XR+LS17/2PjE+xuekb1gMnJm2nO3MnIVaHxlqBuSFA7KDyYC/VFlhf5sfATu1DAsvJoqkCJfpOHJP4c8PnjO/ZWd1LerXEqrHB5XKVtTKX1oUrLA5XgI5XjAwpHXODb16+IrMbQDYONDbAtk9l1h9mojJ03kcnRtTQ1je0cCi7QOKIRGFFoGhEEwoLTo8IzrenfMgzfvQ/rq2RWVpC9OLaNpmXl/ASGrpNMpjzLntBtSs6+oSFs0jCsUD8sow5twty1um8L2HTuGqZIEZcz1LIa+YLtgSwrR0HCVVXFdhxevnhOSf1j/P0GlV2p/1/Kfv9VFhfmUI2CjJ5AqFlvfrpueGZWPo8pjePL8xysC1HRpXC0123eBOwsz3DXiTEmJ59imhaRSNSDaZqGLe0caZaXQEURWLqg+Yp8Pi1fvefjNm/XTqhv3/kZgv33YOY99twcBWlVkBAX5hSLnqUhL8zdjU88YU9gimM3TAlK/QPzgIevx6kIhLxIa9IwEo3KGW7GLUqga5rL5choBl8+feBA7ShVfVn8W8C/ob8B0Xp4n2F10xsAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;a1&quot;
+        title=&quot;&quot;
+        src=&quot;/static/1ed478487cdfaa54d6391ed6b4c91308/b9e4f/a1.png&quot;
+        srcset=&quot;/static/1ed478487cdfaa54d6391ed6b4c91308/cf440/a1.png 148w,
+/static/1ed478487cdfaa54d6391ed6b4c91308/d2d38/a1.png 295w,
+/static/1ed478487cdfaa54d6391ed6b4c91308/b9e4f/a1.png 590w,
+/static/1ed478487cdfaa54d6391ed6b4c91308/f9b6a/a1.png 885w,
+/static/1ed478487cdfaa54d6391ed6b4c91308/3b243/a1.png 1024w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://play.google.com/store/apps/details?id=com.junhobaik.whatsubs&quot;&gt;Google Play Store&lt;/a&gt;&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;&lt;a href=&quot;https://apps.apple.com/kr/app/whatsubs/id1489637056&quot;&gt;Apple App Store&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;WhatSubs라는 iOS, Android 플랫폼의 React Native 앱을 최근에 만들게 되었습니다.
+지금은 두 플랫폼에서 모두 심사가 끝나고 출시가 되었습니다.
+아무래도 개인적인 필요에 의해 만들기 시작하였고 수요가 많은 앱이 될거라고 생각하진 않지만 이번에는 배포까지 전반적인 과정을 체험해보고자 이렇게 출시하게 되었습니다.&lt;/p&gt;
+&lt;p&gt;앱을 간단히 소개하면 자신이 구독한 구독 서비스를 등록하고 리스트를 통해 확인할 수 있는 구독 관리에 도움을 주는 앱이라고 할 수 있습니다.&lt;/p&gt;
+&lt;p&gt;다양한 구독 서비스를 사용하면서 구독 후 사용하지 않는데 깜박하고 해지를 안하거나, 결제 수단이 다양하다보니 각 결제 수단별로 구독한 항목을 확인하는데 어려움을 느껴 만들게 된 앱입니다.&lt;/p&gt;
+&lt;p&gt;기존에는 웹과 크롬 확장 프로그램을 주로 개발해왔는데 이번에는 제대로 React Native앱을 만들어보고자 리액트 네이티브 문서를 보면서 기초부터 공부하며 만들게 되었습니다. 또 백엔드는 없는 독립형 앱을 만들고자 했습니다.&lt;/p&gt;
+&lt;h3&gt;리액트 네이티브&lt;/h3&gt;
+&lt;p&gt;리액트 네이티브를 사용하면서 어려웠던 점이나 느낀 점&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;생각보다 React와 달리 제약이 많다&lt;br&gt;
+Angular와 Vue보다 React를 선호하는 이유가 좀 더 자유롭다는 것이었습니다. 그런데 React Native는 다양한 플랫폼에서 동작하게 하려는 이유 등으로 이해는 가지만 생각보다 구현 할 방법에 제약이 있었습니다.&lt;/li&gt;
+&lt;li&gt;노치, 펀치홀 대응&lt;br&gt;
+노치와 펀치홀을 대응하는데 있어 쉽지가 않았습니다. 매끄러운 UI를 대응하기 위해서는 라이브러리 사용이 필요했고, 사용하더라도 완전히 android와 ios를 동시에 편하게 대응하기는 어려웠습니다.&lt;/li&gt;
+&lt;li&gt;해상도 대응?&lt;br&gt;
+다양한 기기, 다양한 화면비, 다양한 해상도가 있다보니 앱에서 표시되는 컨텐츠 내용의 양이 차이가 생겨 여기에 대응하는 것이 힘들었습니다. 처음에는 화면비로 대응을 했더니 화면비가 높으나 해상도가 낮은 기기로 좀 연식이 있는 기기와 같은 예외가 생겨 다시 해상도를 기준으로 컨텐츠의 크기를 조절해야했습니다. 이 부분에 대해서는 차후에도 디테일한 수정이 필요하다고 생각하고 있습니다.&lt;/li&gt;
+&lt;li&gt;Expo&lt;br&gt;
+이번에는 Expo를 통해 개발하고, 번들링을 하게 되었는데 만약 Expo가 없으면 많이 불편하겠다는 생각을 했습니다. create-react-app 없이 개발할 수 있듯 React-Native도 그럴 수 있게 공부가 더 필요하겠다는 생각했습니다.&lt;/li&gt;
+&lt;li&gt;UI / UX&lt;br&gt;
+RN에만 해당하는 것은 아니지만 모바일 앱으로 개발하면서 더욱 UI에 고민이 많았습니다. 게다가 한 화면에서 모든 정보를 보여주기를 원했기때문에 어떻게 할까 고민을 많이 했습니다. 지금의 화면에 만족하고는 있지만 본인이 화면비가 긴타입의 핸드폰을 사용하고 있고 본인을 기준으로 개발하다보니 저해상도의 예전 폰들에서는 내용이 덜 표시되는 문제는 뒤늦게 알게 되어 컨텐츠의 크기 등을 조절했지만 완전 만족스럽지는 못합니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;앱 출시&lt;/h3&gt;
+&lt;p&gt;앱 출시를 하면서 느낀 점&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;저작권, 라이선스&lt;br&gt;
+항상 개발을 하면서 저작권을 중요하게 생각했습니다. 다양한 회사와 서비스의 로고가 들어가다보니 저작권에는 문제가 없는지 알아보게 되었고, 알아보면서 다시 한번 저작권은 어렵다는 생각을 또 한번 했습니다. 그리고 이번에는 앱 출시에 있어서 앱 내부에 ‘오픈소스 라이선스’라는 것을 넣어서 앱 내에서 사용한 패키지, 라이브러리에 대한 라이선스 내용을 첨부했습니다.&lt;/li&gt;
+&lt;li&gt;영어 공부를 해야겠다?&lt;br&gt;
+개발하는데 있어 라이브러리 등등 도큐먼트에 가서 사용법을 익히는 정도는 괜찮았지만 출시에 있어 가이드 문서를 보는건 역시 힘들었습니다. 어서 영어 공부를 더 해야겠다는 생각이 들었습니다... 또한 다국어 처리를 하는데 있어서도 번역기로는 한계가 있었고 전에 만든 Tablo 웹앱은 다국어 처리를 했으나 일단은 이 WhatSubs앱은 한국을 대상으로 출시했고 차후에 다국어 처리가 가능하도록 개발을 진행했으니 나중에 몇가지만 더 구현하고 내용을 채우면 될 것 같습니다.&lt;/li&gt;
+&lt;li&gt;개인정보&lt;br&gt;
+앱스토어에서는 개인정보처리방침을 마련하지 않으면 앱을 올리지 못합니다. 일상 그냥 넘기던 그 긴 문서를 직접 만들어야한다니 막막했는데 개인정보처리방침을 쉽게 만들 수 있게 된 공공사이트가 있어 만들 수 있었습니다. 허나 지금 앱은 독립형앱이고 서버가 없어 따로 수집하는 개인정보가 없기 때문에 이렇게 쉬웠던 것이지 만약에 개인정보를 수집하는 앱이라면 더 알아봐야 할 것이 많고 작성하는데도 어려울뿐더러 개인정보처리방침을 따라 개인정보 처리를 하고 폐기를 하고 관리를 해야한다면 앱을 운영하는 것이 그리 쉽지만은 않겠다는 생각이 들었습니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;아이폰의 왼쪽 사이드를 슬라이드하여 뒤로가기, 안드로이드폰의 뒤로가기 버튼(하드웨어, 소프트웨어)의 기능과 그에 따른 화면의 스택, 그리고 노치 영역을 고려한 View인 SafeAreaView를 사용하기 위해 사용한 모듈은 &lt;code class=&quot;language-text&quot;&gt;react-native-gesture-handler&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;개인정보처리방침을 만들때 이용한 사이트는 &lt;a href=&quot;https://www.privacy.go.kr/&quot; title=&quot;개인정보보호 종합포털&quot;&gt;개인정보보호 종합포털&lt;/a&gt;이며 ‘개인정보처리방침 만들기’ 메뉴를 이용하면 된다.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[NVM, Node 설치 및 관리하기]]></title><description><![CDATA[해당 포스트는 macOS 환경을 기준으로 작성되었습니다NVM(Node Version Manager)Node 버전을 쉽게 관리 할 수 있다.
 예로 사용하던 패키지가 Node 버전이 업데이트를 함에 따라 호환이 되지 않을 경우가 생길 때 NVM…]]></description><link>https://junhobaik.github.io/nvm-install/</link><guid isPermaLink="false">https://junhobaik.github.io/nvm-install/</guid><pubDate>Thu, 08 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;em&gt;해당 포스트는 macOS 환경을 기준으로 작성되었습니다&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/nvm-sh/nvm&quot;&gt;&lt;strong&gt;NVM&lt;/strong&gt;(Node Version Manager)&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Node 버전을 쉽게 관리 할 수 있다.
@@ -1278,43 +1354,4 @@ Fetch는 반환값으로 Promise를 가집니다. 이 또한 ES6에 등장한 �
       &lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;vi&lt;/span&gt; ~/.zshrc&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;위 명령어로 &lt;code class=&quot;language-text&quot;&gt;.zshrc&lt;/code&gt; 의 하단에 &lt;code class=&quot;language-text&quot;&gt;eval &amp;quot;$(pyenv init -)&amp;quot;&lt;/code&gt; 를 추가해주자.&lt;/p&gt;
-&lt;p&gt;이제 터미널을 재실행하고 아래 명령어를 통해 원하는 버전이 적용된 것을 확인 할 수 있다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[크롬 확장프로그램 "Tablo" 소개 및 개발기]]></title><description><![CDATA[Tablo - Bookmark and manage tabs다운로드 링크 : Chrome WebStore - Tablo우선 Tablo…]]></description><link>https://junhobaik.github.io/tablo-develop/</link><guid isPermaLink="false">https://junhobaik.github.io/tablo-develop/</guid><pubDate>Tue, 08 Jan 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Tablo - Bookmark and manage tabs&lt;/h2&gt;
-&lt;p&gt;다운로드 링크 : &lt;a href=&quot;https://chrome.google.com/webstore/detail/tablo-bookmark-and-manage/aoccnljcdmmbihgabpoljghfcmbflkhc&quot;&gt;Chrome WebStore - Tablo&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;우선 Tablo 앱을 만들게 된 것은 나만의 링크들을 담아두는 즐겨찾기를 만들고자 시작했고,&lt;/p&gt;
-&lt;p&gt;그 방식은 현재 열려있는 탭들을 나만의 리스트에 옮겨 관리할 수 있게 되는 방식을 원했다.&lt;/p&gt;
-&lt;p&gt;그래서 만들어진 것이 Tablo이고 아래는 기능에 대한 간략한 설명이다.&lt;/p&gt;
-&lt;h3&gt;열려있는 탭을 기준으로 나만의 북마크 리스트 만들기&lt;/h3&gt;
-&lt;p&gt;우측에 현재 열려있는 탭의 리스트가 있다,  &lt;/p&gt;
-&lt;p&gt;좌측에는 &apos;trello&apos; 혹은 &apos;Github projects&apos;와 비슷한 인터페이스의 칸반 보드가 위치한다.&lt;/p&gt;
-&lt;p&gt;우측의 열려있는 탭 리스트에서 링크를 드래그하여 좌측의 원하는 칸안에 드랍하면 된다.&lt;/p&gt;
-&lt;h3&gt;웹 서핑 중 페이지 링크를 담기&lt;/h3&gt;
-&lt;p&gt;Cart 기능이라고 불린다. 웹 서핑중 이 페이지를 Tablo에 저장하고 싶다면,&lt;/p&gt;
-&lt;p&gt;우측 상단에 크롬 확장 프로그램 툴바에 위치한 Tablo 아이콘을 클릭하면 &apos;카트에 담기&apos;가 보이게 되고 해당 기능을 이용하면&lt;/p&gt;
-&lt;p&gt;Tablo에서 우측에 Cart 부분에 담기게 된다. 이제 링크를 Cart에서 드래그하여 원하는 곳에 분류하면 된다.&lt;/p&gt;
-&lt;h2&gt;개발&lt;/h2&gt;
-&lt;p&gt;전반적인 개발 스택은 아래와 같다&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;React&lt;/li&gt;
-&lt;li&gt;Redux&lt;/li&gt;
-&lt;li&gt;Webpack&lt;/li&gt;
-&lt;li&gt;SASS(SCSS)&lt;/li&gt;
-&lt;li&gt;Chrome Extension&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;우선 React + Webpack으로 개발을 시작했다. 개발을 시작하자마자 바로 문제점을 만났는데 크롬 확장프로그램을 개발 중 계속해서 빌드하고 새로고침하는 방법을 쓰기는 너무나도 불편했다. 해결점을 찾다가 한 레포지토리(&lt;a href=&quot;https://github.com/samuelsimoes/chrome-extension-webpack-boilerplate&quot;&gt;link&lt;/a&gt;)를 발견해서 개발 중에도 계속해서 build 폴더가 변경되면서 핫로더 기능이 작동할 수 있게 되었다. 이 레포지토리를 클론하고 이 프로젝트에 맞게 Webpack을 수정하고 개발하기 시작했다.&lt;/p&gt;
-&lt;p&gt;여러 컴포넌트가 있고 각 컴포넌트간에 드래그 앤 드랍이 왔다갔다 하면서 데이터를 관리하기가 어렵다는 것을 느끼게 되어 Redux를 쓰기 시작했다. Redux를 기본만 익혀두고 안쓴지 오래되었기 때문에 다시 익히는데 시간이 조금 오래 걸렸다. 지금 reducer 코드도 정리 안 된 것이 많지만 일단은 나중에 리팩토링하기로 했다.&lt;/p&gt;
-&lt;p&gt;기본적으로 Redux를 써서 데이터를 관리하지만 데스크탑, 노트북이든 어디서든 똑같은 데이터가 공유되기를 원했다. 로그인 기능을 활용하기엔 정적 사이트인 크롬 확장프로그램은 어려웠고 그래서 Chrome Extension의 기능을 가져다쓴 Sync Storage를 활용해 어디서든 크롬 브라우저에 로그인만 되어있다면 데이터가 공유 될 수 있도록 했다.&lt;/p&gt;
-&lt;p&gt;드래그 앤 드랍 부분이 이 프로젝트에서 상당히 많은 부분을 차지하는데 일단 라이브러리 없이 개발하고 싶었다. 그렇게 개발하였고 지금은 동작 부분에서는 문제가 없지만 코드 측면에서 많아진 드래그 앤 드랍 관련 함수들을 어떻게 정리할지가 고민이다. 또한 브라우저에서 마우스를 따라오는 드래그하는 개채가 기본적으로 opacity가 정해져있어 그것을 어떻게 해결할지도 고민이다. 윈도우 환경에서는 특히나 더 심해 드래그하는 개체가 잘 보이지 않는다.&lt;/p&gt;
-&lt;p&gt;주절주절 말이 많았지만 지금까지 개발 후 다음으로 해야할 것들을 정리해보면&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Redux 스터디 및 Redux 코드 리팩토링&lt;/li&gt;
-&lt;li&gt;DnD 관련 함수 정리&lt;/li&gt;
-&lt;li&gt;드래그 개체의 opacity 조절 방법 찾기&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;추가적인 기능 구현&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;칸반 보드의 색상 커스터마이징이 가능&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;개선할 것이 많긴하지만 일단 어느정도 원하는 기능이 다 담길만큼 개발했다.&lt;/p&gt;
-&lt;p&gt;백로그없이 기존에 생각하고 있는 것대로 구현하고 개발을 어느정도 마쳤더니 정리가 안된 느낌이 있지만 일단 지금은 이 프로젝트에 계속해서 시간을 투자할 수 없어 여기까지하고 차후에 리팩토링을 통해 해결해야겠다.&lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;p&gt;이제 터미널을 재실행하고 아래 명령어를 통해 원하는 버전이 적용된 것을 확인 할 수 있다.&lt;/p&gt;</content:encoded></item></channel></rss>
