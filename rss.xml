@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[HUNDRED]]></title><description><![CDATA[Junho Baik's blog]]></description><link>https://junhobaik.github.io</link><generator>RSS for Node</generator><lastBuildDate>Thu, 05 Dec 2019 12:40:12 GMT</lastBuildDate><item><title><![CDATA[WhatSubs 앱 개발기 (React-Native, Expo)]]></title><description><![CDATA[Google Play StoreApple App StoreWhatSubs라는 iOS, Android 플랫폼의 React Native…]]></description><link>https://junhobaik.github.io/whatsubs-dev-story/</link><guid isPermaLink="false">https://junhobaik.github.io/whatsubs-dev-story/</guid><pubDate>Thu, 05 Dec 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[HUNDRED]]></title><description><![CDATA[Junho Baik's blog]]></description><link>https://junhobaik.github.io</link><generator>RSS for Node</generator><lastBuildDate>Thu, 05 Dec 2019 15:53:00 GMT</lastBuildDate><item><title><![CDATA[WhatSubs 앱 개발기 (React-Native, Expo)]]></title><description><![CDATA[Google Play StoreApple App StoreWhatSubs라는 iOS, Android 플랫폼의 React Native…]]></description><link>https://junhobaik.github.io/whatsubs-dev-story/</link><guid isPermaLink="false">https://junhobaik.github.io/whatsubs-dev-story/</guid><pubDate>Thu, 05 Dec 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/1ed478487cdfaa54d6391ed6b4c91308/3b243/a1.png&quot;
@@ -74,6 +74,183 @@ RN에만 해당하는 것은 아니지만 모바일 앱으로 개발하면서 �
 &lt;li&gt;
 &lt;p&gt;개인정보처리방침을 만들때 이용한 사이트는 &lt;a href=&quot;https://www.privacy.go.kr/&quot; title=&quot;개인정보보호 종합포털&quot;&gt;개인정보보호 종합포털&lt;/a&gt;이며 ‘개인정보처리방침 만들기’ 메뉴를 이용하면 된다.&lt;/p&gt;
 &lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[CSS 방법론 - BEM]]></title><description><![CDATA[CSS 방법론은 스타일을 정의하는데 있어 엘리먼트의 class와 id를 어떻게 다루는지, 네이밍을 어떻게 하는지의 방법을 정의해 더 직관적인 스타일 코드를 작성하고 팀 단위의 개발을 원할하게 하는데 사용된다.대표적으로는 BEM, OOCSS, SMASS…]]></description><link>https://junhobaik.github.io/css-bem/</link><guid isPermaLink="false">https://junhobaik.github.io/css-bem/</guid><pubDate>Tue, 12 Nov 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;CSS 방법론은 스타일을 정의하는데 있어 엘리먼트의 class와 id를 어떻게 다루는지, 네이밍을 어떻게 하는지의 방법을 정의해 더 직관적인 스타일 코드를 작성하고 팀 단위의 개발을 원할하게 하는데 사용된다.&lt;br&gt;
+대표적으로는 BEM, OOCSS, SMASS가 있으며 여기서는 BEM에 대해 간단히 알아보겠다.&lt;/p&gt;
+&lt;p&gt;BEM의 공식 가이드 홈페이지는 &lt;a href=&quot;https://en.bem.info/&quot; title=&quot;bem&quot;&gt;https://en.bem.info&lt;/a&gt;로 영어와 러시아어가 지원된다.&lt;/p&gt;
+&lt;h2&gt;BEM?&lt;/h2&gt;
+&lt;p&gt;BEM은 &lt;strong&gt;Block&lt;/strong&gt;, &lt;strong&gt;Element&lt;/strong&gt;, &lt;strong&gt;Modifier&lt;/strong&gt; 세개 단어의 약자이다.&lt;br&gt;
+크게 세가지를 통해서 네이밍을 하게 된다.&lt;/p&gt;
+&lt;p&gt;BEM은 기본적으로 id가 아닌 class만 사용하는 것을 지향하며, CSS tag도 쓰지 않는다.&lt;br&gt;
+세개(B,E,M)의 요소를 기준으로 클래스명을 작명하게 된다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;css&quot;&gt;
+      &lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;.error #test&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; ... &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token selector&quot;&gt;❌ id 사용
+.info h1&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; ... &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token selector&quot;&gt;❌ tag 사용
+
+.info__text&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; ... &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; 👍&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;h2&gt;Block&lt;/h2&gt;
+&lt;p&gt;Block을 기준으로 네이밍을 시작하게 되며 블록의 이름 뒤에 &lt;code class=&quot;language-text&quot;&gt;__&lt;/code&gt;로 연결하여 Element 이름을 작성하게 된다.&lt;/p&gt;
+&lt;p&gt;블록은 &lt;strong&gt;독립적으로 기능&lt;/strong&gt;하는 단위이다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;
+      &lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;big-text&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;/&gt;&lt;/span&gt;&lt;/span&gt; ❌
+
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;error&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;/&gt;&lt;/span&gt;&lt;/span&gt; 👍&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;큰 텍스트(big-text)를 정의한 것은 텍스트라는 &lt;strong&gt;목적&lt;/strong&gt; 또는 크다는 &lt;strong&gt;모양&lt;/strong&gt;을 기술하였으므로 하나의 독립적 기능을 하는 단위라 볼 수 없다.&lt;br&gt;
+오류(error)라 정의한 것은 무엇을 하는가, &lt;strong&gt;기능&lt;/strong&gt;. 즉 오류라는 기능을 수행한다는 독립적인 단위가 될 수 있다.&lt;/p&gt;
+&lt;p&gt;블록에는 position, margin과 같이 외부적인 위치를 조정하는 스타일을 지정할 수 없다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;=&gt; 독립성과 재사용성의 보장&lt;/strong&gt;&lt;br&gt;
+무엇을 하는지 정의하고 외부적인 위치를 조정하는 position, margin과 같은 스타일을 넣지 않으므로 블록이 움직이거나 다른 곳에서 이 블록을 또 사용하더라도 독립성을 유지할 수 있게 되는 것이다.&lt;/p&gt;
+&lt;p&gt;블록은 중첩될 수 있으며, 여러 중첩을 거칠 수 있다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;
+      &lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- header 블록 --&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;header&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;header&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- 중첩된 logo 블록 --&gt;&lt;/span&gt;
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;logo&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;/&gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- 중첩된 serch-from 블록 --&gt;&lt;/span&gt;
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;search-form&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;/&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;header&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;h2&gt;Element&lt;/h2&gt;
+&lt;p&gt;Element는 블록을 구성하는 단위로 블록과 분리될 수 없는 블록의 하위 요소이다.&lt;br&gt;
+따라서 블록 이름 없이 사용할 수 없으며,&lt;br&gt;
+블록 이름 뒤에 언더바 2개&lt;code class=&quot;language-text&quot;&gt;__&lt;/code&gt;로 연결하여 작성한다.&lt;/p&gt;
+&lt;p&gt;엘리먼트는 위에서 예를 든 &lt;code class=&quot;language-text&quot;&gt;big-text&lt;/code&gt;를 통해서 살펴보면,&lt;br&gt;
+big과 같은 모양을 나타내는 것은 옳지 않다.&lt;br&gt;
+text와 같은 목적을 나타내는 것은 사용할 수 있다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;
+      &lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;search-form&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;h1&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;search-from__big&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;h1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt; ❌ 
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;span&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;search-from__text&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;span&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt; 👍 
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;input&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;search-from__input&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;/&gt;&lt;/span&gt;&lt;/span&gt; 👍
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;div&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;엘리먼트 또한 블록과 같이 중첩될 수 있으며, 여러 중첩을 거칠 수 있다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;
+      &lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;form&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;search-form&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;search-form__content&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;input&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;?&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;/&gt;&lt;/span&gt;&lt;/span&gt; 👈
+    &lt;span class=&quot;token comment&quot;&gt;&amp;lt;!--
+			&quot;search-form__content__input&quot; ?
+			&quot;search-form__input&quot; ?
+    --&gt;&lt;/span&gt;
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;div&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;form&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;위에서 input 태그를 보면 계층이 블록&gt;엘리먼트&gt;엘리먼트이다.
+그렇다고해서 Block &lt;code class=&quot;language-text&quot;&gt;search_form&lt;/code&gt;안의 Element &lt;code class=&quot;language-text&quot;&gt;content&lt;/code&gt;안의 &lt;code class=&quot;language-text&quot;&gt;input&lt;/code&gt;이라고 해서 &lt;code class=&quot;language-text&quot;&gt;search-form__content__input&lt;/code&gt;라고 네이밍을 하는 것은 옳지 않다.&lt;/p&gt;
+&lt;p&gt;엘리먼트의 이름은 이어서 계층구조를 가지게 작성되어서는 안된다.&lt;br&gt;
+따라서 &lt;code class=&quot;language-text&quot;&gt;search-form__input&lt;/code&gt;으로 작성되어야 맞다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;css&quot;&gt;
+      &lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;.block&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token selector&quot;&gt;.block__elem1&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token selector&quot;&gt;.block__elem2&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token selector&quot;&gt;.block__elem3&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;
+      &lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;block&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;block__elem1&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;block__elem2&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;div&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;block__elem3&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;div&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;div&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;div&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- Change --&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;block&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;block__elem1&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;block__elem2&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;div&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;div&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;block__elem3&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;div&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;div&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;이러한 구조를 따르면 위의 코드를 통해 알 수 있듯 블록의 구조가 변경되더라도 해당 엘리먼트들의 규칙을 유지할 수 있게 된다.&lt;/p&gt;
+&lt;p&gt;여기까지 살펴보면 아래 코드를 보면 옳지 않다는 생각이 든다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;
+      &lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;search-form&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;input&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;input&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;/&gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;button&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;button&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;Search&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;button&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;div&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;하지만 input, button을 엘리먼트가 아닌 하나하나의 블록으로 살펴 볼 수 있기 때문에 틀린 코드라고 할 수 없다. 따라서 꼭 블록 안에 엘리먼트가 있어야 하는 것은 아니라고 할 수 있다.&lt;/p&gt;
+&lt;h2&gt;Modifier&lt;/h2&gt;
+&lt;p&gt;Modifier는 블록이나 엘리먼트의 모양이나 상태, 또는 행동을 정의합니다.&lt;br&gt;
+블록, 엘리먼트 뒤에 하나의 언더바&lt;code class=&quot;language-text&quot;&gt;_&lt;/code&gt;로 이어 기술합니다.&lt;/p&gt;
+&lt;p&gt;예를 들어 어떤 사이즈인지 &lt;code class=&quot;language-text&quot;&gt;size_m&lt;/code&gt;, 어떤 상태인지 &lt;code class=&quot;language-text&quot;&gt;disabled&lt;/code&gt; &lt;code class=&quot;language-text&quot;&gt;focused&lt;/code&gt;, 어떤 동작인지 &lt;code class=&quot;language-text&quot;&gt;directions_left-top&lt;/code&gt;를 적으면 된다.&lt;/p&gt;
+&lt;h3&gt;Types of modifiers&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Boolean&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;block-name_modifier-name&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;block-name__element-name_modifier-name&lt;/code&gt;
+위와 같은 패턴으로 작성하는 것으로,&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;focused&lt;/code&gt;와 &lt;code class=&quot;language-text&quot;&gt;disabled&lt;/code&gt;와 같이 상태를 나타내는 것은 보통 boolean 값을 가질 것을 생각하는데 이럴때는 &lt;strong&gt;true&lt;/strong&gt;라고 가정하고 작성하는 것을 원칙으로 한다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;
+      &lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;form&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;search-form search-form_focused&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;form&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;search-form_focused&lt;/code&gt;의 &lt;code class=&quot;language-text&quot;&gt;_focused&lt;/code&gt; 부분이 true라고 가정, 포커스가 된 상태의 검색폼이라고 할 수 있다&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key-value&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;block-name_modifier-name_modifier-value&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;block-name__element-name_modifier-name_modifier-value&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;테마: 아일랜드&lt;/code&gt; 와 같이 키-벨류를 나타내는 듯한 이름을 말한다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;
+      &lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;form&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;search-form search-form_theme_islands&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;form&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;theme_islands&lt;/code&gt;와 같이 키와 벨류를 하나의 언더바로 분리한 모양으로 작성하면 된다.&lt;/p&gt;
+&lt;h2&gt;Mix&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;
+      &lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;header&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;search-form header__search-form&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;/&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;div&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;클래스를 나눠보면 아래와 같다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;header&lt;/code&gt; Block&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;header__search-from&lt;/code&gt; Element&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;search-form&lt;/code&gt; Block&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;정리하면,&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;header&lt;/code&gt; Block에 &lt;code class=&quot;language-text&quot;&gt;search-from&lt;/code&gt; Block의 스타일과 동작을 Mix해 header 블록의 search-from이라는 &lt;code class=&quot;language-text&quot;&gt;header__search-from&lt;/code&gt;을 만들었다.&lt;/p&gt;
+&lt;p&gt;이는&lt;code class=&quot;language-text&quot;&gt;header__search-from&lt;/code&gt;를 이용해 &lt;code class=&quot;language-text&quot;&gt;header&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;search-from&lt;/code&gt; 각각의 Block의 독립성을 유지하면서 &lt;code class=&quot;language-text&quot;&gt;search-form&lt;/code&gt; 블록에 margin이나 position을 조정할 수 있게 된다.&lt;/p&gt;
+&lt;h2&gt;File structure&lt;/h2&gt;
+&lt;p&gt;BEM 방법론은 파일 구조에도 쓰일 수 있다. 프로젝트 구조를 작성할 때 폴더, 파일명에 규칙을 적용해 아래와 같이 작성할 수도 있다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;
+      &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;search-form/ #Block
+
+    __input/ #Element
+        search-form__input.css
+        search-form__input.js
+
+    __button/ #Element
+        search-form__button.css
+        search-form__button.js
+
+    _theme/ #Modifier
+        search-form_theme_islands.css
+        search-form_theme_lite.css
+
+    search-form.css
+    search-form.js&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;파일 구조를 작성하기위한 규칙은 아래와 같다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;하나의 Block은 하나의 디랙토리에 해당한다.&lt;/li&gt;
+&lt;li&gt;Block과 디렉토리의 이름은 동일해야한다.&lt;/li&gt;
+&lt;li&gt;Block의 구현은 별도의 파일로 나눈다. (&lt;code class=&quot;language-text&quot;&gt;header.js&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;header.css&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Block 디렉토리가 루트 디렉토리가 되며 아래에 해당 블록의 Element, Modifier 디렉토리가 있는다.&lt;/li&gt;
+&lt;li&gt;Element 디렉토리의 이름은 두개의 언더바 (&lt;code class=&quot;language-text&quot;&gt;__&lt;/code&gt;)로 시작한다 (&lt;code class=&quot;language-text&quot;&gt;header/__logo/&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;menu/__item/&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Modifier 디렉토리의 이름은 하나의 언더바 (&lt;code class=&quot;language-text&quot;&gt;_&lt;/code&gt;)로 시작한다.(&lt;code class=&quot;language-text&quot;&gt;header/_fixed/&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;menu/_theme_islands/&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Element와 Modifier의 구현은 별도의 파일로 나눈다. (&lt;code class=&quot;language-text&quot;&gt;header__input.js&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;header_theme_islands.css&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;References - &lt;a href=&quot;https://en.bem.info/methodology/quick-start&quot; title=&quot;bem quick start&quot;&gt;BEM Quick-start&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[NVM, Node 설치 및 관리하기]]></title><description><![CDATA[해당 포스트는 macOS 환경을 기준으로 작성되었습니다NVM(Node Version Manager)Node 버전을 쉽게 관리 할 수 있다.
 예로 사용하던 패키지가 Node 버전이 업데이트를 함에 따라 호환이 되지 않을 경우가 생길 때 NVM…]]></description><link>https://junhobaik.github.io/nvm-install/</link><guid isPermaLink="false">https://junhobaik.github.io/nvm-install/</guid><pubDate>Thu, 08 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;em&gt;해당 포스트는 macOS 환경을 기준으로 작성되었습니다&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/nvm-sh/nvm&quot;&gt;&lt;strong&gt;NVM&lt;/strong&gt;(Node Version Manager)&lt;/a&gt;&lt;/p&gt;
@@ -1312,46 +1489,4 @@ Fetch는 반환값으로 Promise를 가집니다. 이 또한 ES6에 등장한 �
 &lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/ko/docs/Web/API/XMLHttpRequest&quot;&gt;MDN - XMLHttpRequest&lt;/a&gt; &lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch&quot;&gt;WindowOrWorkerGlobalScope.fetch() - Web APIs | MDN&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://hacks.mozilla.or.kr/2015/05/this-api-is-so-fetching/&quot;&gt;정말 멋진 Fetch API! | Mozilla 웹 기술 블로그&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[pyenv를 이용해 Python 설치하기 (macOS)]]></title><description><![CDATA[(macOS Mojave 환경에서의 포스팅입니다)pyenv는 nvm(Node Version Manager…]]></description><link>https://junhobaik.github.io/install-python-use-pyenv/</link><guid isPermaLink="false">https://junhobaik.github.io/install-python-use-pyenv/</guid><pubDate>Wed, 20 Feb 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;(macOS Mojave 환경에서의 포스팅입니다)&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;pyenv는 nvm(Node Version Manager)과 비슷하게 필요에 따라 다양한 파이썬 버전으로 실행할 수 있는 환경을 제공하는 버전 매니저이다.&lt;/p&gt;
-&lt;p&gt;프로젝트별 버전을 달리 사용하는 용도가 아니더라도 macOS에서 Python을 설치하고 디폴트 버전을 바꾸는 등 설정을 하는 과정보다 pyenv를 사용하는 것이 훨씬 간편하다.&lt;/p&gt;
-&lt;h2&gt;pyenv 설치&lt;/h2&gt;
-&lt;p&gt;우선 pyenv를 설치하기 위해 패키지 관리자인 HomeBrew가 설치되어있어야 한다. HomeBrew가 설치되지 않았다면 터미널에서 아래 명령어를 통해 설치한다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;
-      &lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;$ ruby -e &quot;&lt;span class=&quot;token variable&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;$(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;curl&lt;/span&gt; -fsSL https://raw.github.com/Homebrew/homebrew/go/install&lt;span class=&quot;token variable&quot;&gt;)&lt;/span&gt;&lt;/span&gt;”&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;p&gt;HomeBrew가 준비되었다면 아래 명령어로 pyenv를 설치한다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;
-      &lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;$ brew &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; pyenv&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;h2&gt;Python 설치&lt;/h2&gt;
-&lt;p&gt;pyenv 설치 후 아래 명령어를 통해 pyenv를 통해 설치할 수 있는 리스트를 확인 할 수 있다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;
-      &lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;$ pyenv &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; --list&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;p&gt;확인된 리스트에서 원하는 버전을 선택해 설치한다. 예로 3.7.2 버전을 아래 명령어를 통해 설치한다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;
-      &lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;$ pyenv &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; 3.7.2&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;p&gt;macOS 버전이 Mojave라면 인스톨 단계에서 에러가 발생할 수 있는데 에러가 발생했다면 아래 명령어를 실행 후 다시 인스톨하면 된다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;
-      &lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;sudo&lt;/span&gt; installer -pkg /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg -target /&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;p&gt;설치 후에는 아래 명령어를 통해 확인해 볼 수 있다. 아래 명령어는 pyenv를 통해 설치된 리스트를 확인 할 수 있다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;
-      &lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;$ pyenv versions&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;p&gt;이제 설치한 버전을 글로벌 환경에서 디폴트로 사용할 수 있도록 지정해준다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;
-      &lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;$ pyenv global 3.7.2&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;p&gt;지정 후에 적용하려면 아래 명령어가 필요하다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;
-      &lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;eval&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;&lt;span class=&quot;token variable&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;$(&lt;/span&gt;pyenv init -&lt;span class=&quot;token variable&quot;&gt;)&lt;/span&gt;&lt;/span&gt;&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;p&gt;차후에 이 명령어가 필요없도록 &lt;code class=&quot;language-text&quot;&gt;.zshrc&lt;/code&gt; 또는 &lt;code class=&quot;language-text&quot;&gt;.bashrc&lt;/code&gt; 에 해당 명령어를 추가하여 간단하게 터미널을 재시작하면 적용되도록 할 수 있다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;
-      &lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;vi&lt;/span&gt; ~/.zshrc&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;p&gt;위 명령어로 &lt;code class=&quot;language-text&quot;&gt;.zshrc&lt;/code&gt; 의 하단에 &lt;code class=&quot;language-text&quot;&gt;eval &amp;quot;$(pyenv init -)&amp;quot;&lt;/code&gt; 를 추가해주자.&lt;/p&gt;
-&lt;p&gt;이제 터미널을 재실행하고 아래 명령어를 통해 원하는 버전이 적용된 것을 확인 할 수 있다.&lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;/ul&gt;</content:encoded></item></channel></rss>
