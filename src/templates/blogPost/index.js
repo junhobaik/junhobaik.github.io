@@ -55,7 +55,7 @@ class BlogTemplate extends React.Component {
             { name: 'og:description', content: excerpt },
           ]}
         ></Helmet>
-        <div className="blog-post-container">
+        <article className="blog-post-container">
           <div className="blog-post">
             <div className="post-header">
               <h1 className="title">{`${postTitle}`}</h1>
@@ -101,9 +101,10 @@ class BlogTemplate extends React.Component {
               </div>
             )}
           </div>
-        </div>
+        </article>
+
         {config.googleAdsense ? (
-          <div className="ad">
+          <aside className="ad">
             <AdSense.Google
               client={config.adsenseClient}
               slot={config.adsenseSlot}
@@ -111,8 +112,9 @@ class BlogTemplate extends React.Component {
               format="auto"
               responsive="true"
             />
-          </div>
+          </aside>
         ) : null}
+
         {config.disqusShortname ? (
           <div className="comments">
             <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />

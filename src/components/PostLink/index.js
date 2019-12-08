@@ -28,7 +28,7 @@ class PostLink extends Component {
     });
 
     return (
-      <div
+      <article
         className="post-link"
         key={slug}
         style={this.props.showCnt - 1 >= this.props.index ? { display: 'inline-block' } : { display: 'none' }}
@@ -50,7 +50,7 @@ class PostLink extends Component {
             <div className="tags-list">{tagsObj}</div>
           </div>
         </div>
-      </div>
+      </article>
     );
   }
 }

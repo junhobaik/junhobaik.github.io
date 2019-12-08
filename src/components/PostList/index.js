@@ -69,7 +69,7 @@ class PostList extends Component {
     return (
       <div id="PostList">
         {title ? <h1 className="list-title">{title}</h1> : null}
-        <div className="list">{Posts}</div>
+        <ul className="list">{Posts}</ul>
         <div className="load">
           <div className="loading">
             <div

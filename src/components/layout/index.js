@@ -98,7 +98,7 @@ const Layout = ({ children, data, location }) => (
                 </div>
               </div>
 
-              <div className="menu">
+              <nav className="menu">
                 <div className="home">
                   <Link to="/">
                     <Fa icon={faHome} fixedWidth transform="down-1" />
@@ -119,10 +119,10 @@ const Layout = ({ children, data, location }) => (
                     <span>Search</span>
                   </Link>
                 </div>
-              </div>
+              </nav>
             </header>
 
-            <article id="article">{children}</article>
+            <div id="content">{children}</div>
           </div>
           <Footer />
         </>
