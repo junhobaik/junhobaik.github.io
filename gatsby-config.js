@@ -1,7 +1,9 @@
 require('dotenv').config();
 const config = require('./config');
 
-module.exports = {
+console.log(process.env.NODE_ENV);
+
+const configs = {
   siteMetadata: {
     title: config.title,
     author: config.author,
@@ -130,3 +132,15 @@ module.exports = {
     },
   ],
 };
+
+if (process.env.NODE_ENV === 'development') {
+  configs.plugins.push({
+    resolve: `gatsby-source-filesystem`,
+    options: {
+      path: `${__dirname}/_posts`,
+      name: 'markdown-pages',
+    },
+  });
+}
+
+module.exports = configs;
