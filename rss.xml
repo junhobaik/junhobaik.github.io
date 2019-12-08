@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[HUNDRED]]></title><description><![CDATA[Junho Baik's blog]]></description><link>https://junhobaik.github.io</link><generator>RSS for Node</generator><lastBuildDate>Sun, 08 Dec 2019 18:21:30 GMT</lastBuildDate><item><title><![CDATA[App Store Connect에 입력한 내용이 App Store에 어떻게 보일까?]]></title><description><![CDATA[App Store Connect에서 앱 정보를 입력하고 실제로 출시한다면App Store에서 입력한 항목들은 어디에 어떻게 위치하게 될 지 정리해보았습니다.아래는 App Store Connect에서 입력하고App Store…]]></description><link>https://junhobaik.github.io/app-store-connect-form/</link><guid isPermaLink="false">https://junhobaik.github.io/app-store-connect-form/</guid><pubDate>Fri, 06 Dec 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;App Store Connect에서 앱 정보를 입력하고 실제로 출시한다면&lt;br&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[HUNDRED - rss]]></title><description><![CDATA[Junho Baik's blog]]></description><link>https://junhobaik.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 08 Dec 2019 19:11:05 GMT</lastBuildDate><item><title><![CDATA[App Store Connect에 입력한 내용이 App Store에 어떻게 보일까?]]></title><description><![CDATA[App Store Connect에서 앱 정보를 입력하고 실제로 출시한다면 App Store에서 입력한 항목들은 어디에 어떻게 위치하게 될 지 정리해보았습니다. 아래는 App Store Connect에서 입력하고 App Store…]]></description><link>https://junhobaik.github.io/app-store-connect-form/</link><guid isPermaLink="false">https://junhobaik.github.io/app-store-connect-form/</guid><pubDate>Fri, 06 Dec 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;App Store Connect에서 앱 정보를 입력하고 실제로 출시한다면&lt;br&gt;
 App Store에서 입력한 항목들은 어디에 어떻게 위치하게 될 지 정리해보았습니다.&lt;/p&gt;
 &lt;p&gt;아래는 App Store Connect에서 입력하고&lt;br&gt;
 App Store에 직접적으로 표시될 내용들입니다.
@@ -22,7 +22,7 @@ App Store에 직접적으로 표시될 내용들입니다.
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/36827845640c56418f0939fe873c3c3a/e4620/DraggedImage.png&quot;
+    href=&quot;/static/36827845640c56418f0939fe873c3c3a/e0305/DraggedImage.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -41,13 +41,13 @@ App Store에 직접적으로 표시될 내용들입니다.
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;DraggedImage&quot;
         title=&quot;&quot;
-        src=&quot;/static/36827845640c56418f0939fe873c3c3a/b9e4f/DraggedImage.png&quot;
-        srcset=&quot;/static/36827845640c56418f0939fe873c3c3a/cf440/DraggedImage.png 148w,
-/static/36827845640c56418f0939fe873c3c3a/d2d38/DraggedImage.png 295w,
-/static/36827845640c56418f0939fe873c3c3a/b9e4f/DraggedImage.png 590w,
-/static/36827845640c56418f0939fe873c3c3a/f9b6a/DraggedImage.png 885w,
-/static/36827845640c56418f0939fe873c3c3a/2d849/DraggedImage.png 1180w,
-/static/36827845640c56418f0939fe873c3c3a/e4620/DraggedImage.png 1602w&quot;
+        src=&quot;/static/36827845640c56418f0939fe873c3c3a/799d3/DraggedImage.png&quot;
+        srcset=&quot;/static/36827845640c56418f0939fe873c3c3a/00d96/DraggedImage.png 148w,
+/static/36827845640c56418f0939fe873c3c3a/0b23c/DraggedImage.png 295w,
+/static/36827845640c56418f0939fe873c3c3a/799d3/DraggedImage.png 590w,
+/static/36827845640c56418f0939fe873c3c3a/2a3d6/DraggedImage.png 885w,
+/static/36827845640c56418f0939fe873c3c3a/ae92f/DraggedImage.png 1180w,
+/static/36827845640c56418f0939fe873c3c3a/e0305/DraggedImage.png 1602w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
     &lt;/span&gt;
@@ -61,7 +61,7 @@ App Store에 직접적으로 표시될 내용들입니다.
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/02268ebc93f3b1feed971185f87ed7f3/e4620/DraggedImage-1.png&quot;
+    href=&quot;/static/02268ebc93f3b1feed971185f87ed7f3/e0305/DraggedImage-1.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -80,13 +80,13 @@ App Store에 직접적으로 표시될 내용들입니다.
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;DraggedImage 1&quot;
         title=&quot;&quot;
-        src=&quot;/static/02268ebc93f3b1feed971185f87ed7f3/b9e4f/DraggedImage-1.png&quot;
-        srcset=&quot;/static/02268ebc93f3b1feed971185f87ed7f3/cf440/DraggedImage-1.png 148w,
-/static/02268ebc93f3b1feed971185f87ed7f3/d2d38/DraggedImage-1.png 295w,
-/static/02268ebc93f3b1feed971185f87ed7f3/b9e4f/DraggedImage-1.png 590w,
-/static/02268ebc93f3b1feed971185f87ed7f3/f9b6a/DraggedImage-1.png 885w,
-/static/02268ebc93f3b1feed971185f87ed7f3/2d849/DraggedImage-1.png 1180w,
-/static/02268ebc93f3b1feed971185f87ed7f3/e4620/DraggedImage-1.png 1602w&quot;
+        src=&quot;/static/02268ebc93f3b1feed971185f87ed7f3/799d3/DraggedImage-1.png&quot;
+        srcset=&quot;/static/02268ebc93f3b1feed971185f87ed7f3/00d96/DraggedImage-1.png 148w,
+/static/02268ebc93f3b1feed971185f87ed7f3/0b23c/DraggedImage-1.png 295w,
+/static/02268ebc93f3b1feed971185f87ed7f3/799d3/DraggedImage-1.png 590w,
+/static/02268ebc93f3b1feed971185f87ed7f3/2a3d6/DraggedImage-1.png 885w,
+/static/02268ebc93f3b1feed971185f87ed7f3/ae92f/DraggedImage-1.png 1180w,
+/static/02268ebc93f3b1feed971185f87ed7f3/e0305/DraggedImage-1.png 1602w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
     &lt;/span&gt;
@@ -98,7 +98,7 @@ App Store에 직접적으로 표시될 내용들입니다.
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/752da110741bad23b9885f159eff6fba/e4620/DraggedImage-2.png&quot;
+    href=&quot;/static/752da110741bad23b9885f159eff6fba/e0305/DraggedImage-2.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -117,13 +117,13 @@ App Store에 직접적으로 표시될 내용들입니다.
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;DraggedImage 2&quot;
         title=&quot;&quot;
-        src=&quot;/static/752da110741bad23b9885f159eff6fba/b9e4f/DraggedImage-2.png&quot;
-        srcset=&quot;/static/752da110741bad23b9885f159eff6fba/cf440/DraggedImage-2.png 148w,
-/static/752da110741bad23b9885f159eff6fba/d2d38/DraggedImage-2.png 295w,
-/static/752da110741bad23b9885f159eff6fba/b9e4f/DraggedImage-2.png 590w,
-/static/752da110741bad23b9885f159eff6fba/f9b6a/DraggedImage-2.png 885w,
-/static/752da110741bad23b9885f159eff6fba/2d849/DraggedImage-2.png 1180w,
-/static/752da110741bad23b9885f159eff6fba/e4620/DraggedImage-2.png 1602w&quot;
+        src=&quot;/static/752da110741bad23b9885f159eff6fba/799d3/DraggedImage-2.png&quot;
+        srcset=&quot;/static/752da110741bad23b9885f159eff6fba/00d96/DraggedImage-2.png 148w,
+/static/752da110741bad23b9885f159eff6fba/0b23c/DraggedImage-2.png 295w,
+/static/752da110741bad23b9885f159eff6fba/799d3/DraggedImage-2.png 590w,
+/static/752da110741bad23b9885f159eff6fba/2a3d6/DraggedImage-2.png 885w,
+/static/752da110741bad23b9885f159eff6fba/ae92f/DraggedImage-2.png 1180w,
+/static/752da110741bad23b9885f159eff6fba/e0305/DraggedImage-2.png 1602w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
     &lt;/span&gt;
@@ -135,7 +135,7 @@ App Store에 직접적으로 표시될 내용들입니다.
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/8fcf5b1b7014ed78a4987caecadeeec6/e4620/DraggedImage-3.png&quot;
+    href=&quot;/static/8fcf5b1b7014ed78a4987caecadeeec6/e0305/DraggedImage-3.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -154,13 +154,13 @@ App Store에 직접적으로 표시될 내용들입니다.
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;DraggedImage 3&quot;
         title=&quot;&quot;
-        src=&quot;/static/8fcf5b1b7014ed78a4987caecadeeec6/b9e4f/DraggedImage-3.png&quot;
-        srcset=&quot;/static/8fcf5b1b7014ed78a4987caecadeeec6/cf440/DraggedImage-3.png 148w,
-/static/8fcf5b1b7014ed78a4987caecadeeec6/d2d38/DraggedImage-3.png 295w,
-/static/8fcf5b1b7014ed78a4987caecadeeec6/b9e4f/DraggedImage-3.png 590w,
-/static/8fcf5b1b7014ed78a4987caecadeeec6/f9b6a/DraggedImage-3.png 885w,
-/static/8fcf5b1b7014ed78a4987caecadeeec6/2d849/DraggedImage-3.png 1180w,
-/static/8fcf5b1b7014ed78a4987caecadeeec6/e4620/DraggedImage-3.png 1602w&quot;
+        src=&quot;/static/8fcf5b1b7014ed78a4987caecadeeec6/799d3/DraggedImage-3.png&quot;
+        srcset=&quot;/static/8fcf5b1b7014ed78a4987caecadeeec6/00d96/DraggedImage-3.png 148w,
+/static/8fcf5b1b7014ed78a4987caecadeeec6/0b23c/DraggedImage-3.png 295w,
+/static/8fcf5b1b7014ed78a4987caecadeeec6/799d3/DraggedImage-3.png 590w,
+/static/8fcf5b1b7014ed78a4987caecadeeec6/2a3d6/DraggedImage-3.png 885w,
+/static/8fcf5b1b7014ed78a4987caecadeeec6/ae92f/DraggedImage-3.png 1180w,
+/static/8fcf5b1b7014ed78a4987caecadeeec6/e0305/DraggedImage-3.png 1602w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
     &lt;/span&gt;
@@ -184,10 +184,10 @@ App Store에 직접적으로 표시될 내용들입니다.
 &lt;/ul&gt;
 &lt;h3&gt;개인정보 처리방침 만들기&lt;/h3&gt;
 &lt;p&gt;개인정보 처리방침이 없으면 심사에 올릴 수 없습니다.
-&lt;a href=&quot;https://www.privacy.go.kr/&quot; title=&quot;개인정보보호 종합포털&quot;&gt;개인정보보호 종합포털&lt;/a&gt;의 개인정보처리방침 만들기 메뉴를 들어가서 절차에 따라 만들 수 있습니다. 절차에 따라 완성된 내용이더라도 추가적인 검토와 수정은 필수입니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[WhatSubs 앱 개발기 (React-Native, Expo)]]></title><description><![CDATA[Google Play StoreApple App StoreWhatSubs라는 iOS, Android 플랫폼의 React Native…]]></description><link>https://junhobaik.github.io/whatsubs-dev-story/</link><guid isPermaLink="false">https://junhobaik.github.io/whatsubs-dev-story/</guid><pubDate>Thu, 05 Dec 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+&lt;a href=&quot;https://www.privacy.go.kr/&quot; title=&quot;개인정보보호 종합포털&quot;&gt;개인정보보호 종합포털&lt;/a&gt;의 개인정보처리방침 만들기 메뉴를 들어가서 절차에 따라 만들 수 있습니다. 절차에 따라 완성된 내용이더라도 추가적인 검토와 수정은 필수입니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[WhatSubs 앱 개발기 (React-Native, Expo)]]></title><description><![CDATA[Google Play Store Apple App Store WhatSubs라는 iOS, Android 플랫폼의 React Native…]]></description><link>https://junhobaik.github.io/whatsubs-dev-story/</link><guid isPermaLink="false">https://junhobaik.github.io/whatsubs-dev-story/</guid><pubDate>Thu, 05 Dec 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/1ed478487cdfaa54d6391ed6b4c91308/3b243/a1.png&quot;
+    href=&quot;/static/1ed478487cdfaa54d6391ed6b4c91308/26df7/a1.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -206,12 +206,12 @@ App Store에 직접적으로 표시될 내용들입니다.
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;a1&quot;
         title=&quot;&quot;
-        src=&quot;/static/1ed478487cdfaa54d6391ed6b4c91308/b9e4f/a1.png&quot;
-        srcset=&quot;/static/1ed478487cdfaa54d6391ed6b4c91308/cf440/a1.png 148w,
-/static/1ed478487cdfaa54d6391ed6b4c91308/d2d38/a1.png 295w,
-/static/1ed478487cdfaa54d6391ed6b4c91308/b9e4f/a1.png 590w,
-/static/1ed478487cdfaa54d6391ed6b4c91308/f9b6a/a1.png 885w,
-/static/1ed478487cdfaa54d6391ed6b4c91308/3b243/a1.png 1024w&quot;
+        src=&quot;/static/1ed478487cdfaa54d6391ed6b4c91308/799d3/a1.png&quot;
+        srcset=&quot;/static/1ed478487cdfaa54d6391ed6b4c91308/00d96/a1.png 148w,
+/static/1ed478487cdfaa54d6391ed6b4c91308/0b23c/a1.png 295w,
+/static/1ed478487cdfaa54d6391ed6b4c91308/799d3/a1.png 590w,
+/static/1ed478487cdfaa54d6391ed6b4c91308/2a3d6/a1.png 885w,
+/static/1ed478487cdfaa54d6391ed6b4c91308/26df7/a1.png 1024w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
     &lt;/span&gt;
@@ -254,13 +254,9 @@ RN에만 해당하는 것은 아니지만 모바일 앱으로 개발하면서 �
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;아이폰의 왼쪽 사이드를 슬라이드하여 뒤로가기, 안드로이드폰의 뒤로가기 버튼(하드웨어, 소프트웨어)의 기능과 그에 따른 화면의 스택, 그리고 노치 영역을 고려한 View인 SafeAreaView를 사용하기 위해 사용한 모듈은 &lt;code class=&quot;language-text&quot;&gt;react-native-gesture-handler&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;개인정보처리방침을 만들때 이용한 사이트는 &lt;a href=&quot;https://www.privacy.go.kr/&quot; title=&quot;개인정보보호 종합포털&quot;&gt;개인정보보호 종합포털&lt;/a&gt;이며 ‘개인정보처리방침 만들기’ 메뉴를 이용하면 된다.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[CSS 방법론 - BEM]]></title><description><![CDATA[CSS 방법론은 스타일을 정의하는데 있어 엘리먼트의 class와 id를 어떻게 다루는지, 네이밍을 어떻게 하는지의 방법을 정의해 더 직관적인 스타일 코드를 작성하고 팀 단위의 개발을 원할하게 하는데 사용된다.대표적으로는 BEM, OOCSS, SMASS…]]></description><link>https://junhobaik.github.io/css-bem/</link><guid isPermaLink="false">https://junhobaik.github.io/css-bem/</guid><pubDate>Tue, 12 Nov 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;CSS 방법론은 스타일을 정의하는데 있어 엘리먼트의 class와 id를 어떻게 다루는지, 네이밍을 어떻게 하는지의 방법을 정의해 더 직관적인 스타일 코드를 작성하고 팀 단위의 개발을 원할하게 하는데 사용된다.&lt;br&gt;
+&lt;li&gt;아이폰의 왼쪽 사이드를 슬라이드하여 뒤로가기, 안드로이드폰의 뒤로가기 버튼(하드웨어, 소프트웨어)의 기능과 그에 따른 화면의 스택, 그리고 노치 영역을 고려한 View인 SafeAreaView를 사용하기 위해 사용한 모듈은 &lt;code class=&quot;language-text&quot;&gt;react-native-gesture-handler&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;개인정보처리방침을 만들때 이용한 사이트는 &lt;a href=&quot;https://www.privacy.go.kr/&quot; title=&quot;개인정보보호 종합포털&quot;&gt;개인정보보호 종합포털&lt;/a&gt;이며 ‘개인정보처리방침 만들기’ 메뉴를 이용하면 된다.&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[CSS 방법론 - BEM]]></title><description><![CDATA[CSS 방법론은 스타일을 정의하는데 있어 엘리먼트의 class와 id를 어떻게 다루는지, 네이밍을 어떻게 하는지의 방법을 정의해 더 직관적인 스타일 코드를 작성하고 팀 단위의 개발을 원할하게 하는데 사용된다. 대표적으로는 BEM, OOCSS…]]></description><link>https://junhobaik.github.io/css-bem/</link><guid isPermaLink="false">https://junhobaik.github.io/css-bem/</guid><pubDate>Tue, 12 Nov 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;CSS 방법론은 스타일을 정의하는데 있어 엘리먼트의 class와 id를 어떻게 다루는지, 네이밍을 어떻게 하는지의 방법을 정의해 더 직관적인 스타일 코드를 작성하고 팀 단위의 개발을 원할하게 하는데 사용된다.&lt;br&gt;
 대표적으로는 BEM, OOCSS, SMASS가 있으며 여기서는 BEM에 대해 간단히 알아보겠다.&lt;/p&gt;
 &lt;p&gt;BEM의 공식 가이드 홈페이지는 &lt;a href=&quot;https://en.bem.info/&quot; title=&quot;bem&quot;&gt;https://en.bem.info&lt;/a&gt;로 영어와 러시아어가 지원된다.&lt;/p&gt;
 &lt;h2&gt;BEM?&lt;/h2&gt;
@@ -437,7 +433,7 @@ text와 같은 목적을 나타내는 것은 사용할 수 있다.&lt;/p&gt;
 &lt;hr&gt;
 &lt;ul&gt;
 &lt;li&gt;References - &lt;a href=&quot;https://en.bem.info/methodology/quick-start&quot; title=&quot;bem quick start&quot;&gt;BEM Quick-start&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[NVM, Node 설치 및 관리하기]]></title><description><![CDATA[해당 포스트는 macOS 환경을 기준으로 작성되었습니다NVM(Node Version Manager)Node 버전을 쉽게 관리 할 수 있다.
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[NVM, Node 설치 및 관리하기]]></title><description><![CDATA[해당 포스트는 macOS 환경을 기준으로 작성되었습니다 NVM(Node Version Manager) Node 버전을 쉽게 관리 할 수 있다.
 예로 사용하던 패키지가 Node 버전이 업데이트를 함에 따라 호환이 되지 않을 경우가 생길 때 NVM…]]></description><link>https://junhobaik.github.io/nvm-install/</link><guid isPermaLink="false">https://junhobaik.github.io/nvm-install/</guid><pubDate>Thu, 08 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;em&gt;해당 포스트는 macOS 환경을 기준으로 작성되었습니다&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/nvm-sh/nvm&quot;&gt;&lt;strong&gt;NVM&lt;/strong&gt;(Node Version Manager)&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Node 버전을 쉽게 관리 할 수 있다.
@@ -478,7 +474,7 @@ text와 같은 목적을 나타내는 것은 사용할 수 있다.&lt;/p&gt;
 -&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;     v10.16.2
 default -&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; lts/* &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;-&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; v10.16.2&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 node -&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; stable &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;-&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; v10.16.2&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;default&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-stable -&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; 10.16 &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;-&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; v10.16.2&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;default&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+stable -&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;10.16&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;-&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; v10.16.2&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;default&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 iojs -&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; N/A &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;default&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 unstable -&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; N/A &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;default&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 lts/* -&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; lts/dubnium &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;-&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; v10.16.2&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
@@ -506,7 +502,7 @@ lts/dubnium -&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; v10.
       &lt;/div&gt;
 &lt;p&gt;예를 들면 아래와 같습니다.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;
-      &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; nvm &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; 11.11.1 --reinstall-packages-from&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;10.16.2&lt;/code&gt;&lt;/pre&gt;
+      &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; nvm &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;11.11&lt;/span&gt;.1 --reinstall-packages-from&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;10.16&lt;/span&gt;.2&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;위 명령어를 통해 새로운 &lt;code class=&quot;language-text&quot;&gt;11.11.1&lt;/code&gt; 버전을 설치하고 기존에 사용하던 버전 &lt;code class=&quot;language-text&quot;&gt;10.16.2&lt;/code&gt;의 패키지를 설치할 Node 버전(&lt;code class=&quot;language-text&quot;&gt;11.11.1&lt;/code&gt;)에 reinstall하는 과정을 거치게 됩니다.&lt;/p&gt;
 &lt;hr&gt;
@@ -514,7 +510,7 @@ lts/dubnium -&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; v10.
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://github.com/nvm-sh/nvm&quot;&gt;github | nvm-sh/nvm&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[MongoDB 기초, CRUD 명령어]]></title><description><![CDATA[MongoDB 문서를 참고해,
-CheatSheet 개념으로 정리해본 기초 Mongo Shell CRUD 명령어.이 포스트에서는 기초적인 것만 다루며  Option, Evaluation Query 등은 다루지 않습니다.DatabaseDatabase…]]></description><link>https://junhobaik.github.io/mongodb-basic-crud/</link><guid isPermaLink="false">https://junhobaik.github.io/mongodb-basic-crud/</guid><pubDate>Tue, 30 Jul 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;MongoDB 문서를 참고해,
+CheatSheet 개념으로 정리해본 기초 Mongo Shell CRUD 명령어. 이 포스트에서는 기초적인 것만 다루며  Option, Evaluation Query 등은 다루지 않습니다. Database Database…]]></description><link>https://junhobaik.github.io/mongodb-basic-crud/</link><guid isPermaLink="false">https://junhobaik.github.io/mongodb-basic-crud/</guid><pubDate>Tue, 30 Jul 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;MongoDB 문서를 참고해,
 CheatSheet 개념으로 정리해본 기초 Mongo Shell CRUD 명령어.&lt;/p&gt;
 &lt;p&gt;이 포스트에서는 기초적인 것만 다루며 &lt;code class=&quot;language-text&quot;&gt;writeConcern&lt;/code&gt; Option, Evaluation Query 등은 다루지 않습니다.&lt;/p&gt;
 &lt;h2&gt;Database&lt;/h2&gt;
@@ -559,7 +555,7 @@ CheatSheet 개념으로 정리해본 기초 Mongo Shell CRUD 명령어.&lt;/p&gt
 &lt;p&gt;&lt;a href=&quot;https://docs.mongodb.com/manual/reference/method/db.collection.insertOne/#db.collection.insertOne&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;db.collection.insertOne(document, [options])&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;
       &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; db.collection_name.insertOne&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
-  &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; name: &lt;span class=&quot;token string&quot;&gt;&quot;Jhon&quot;&lt;/span&gt;, age: 24 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; name: &lt;span class=&quot;token string&quot;&gt;&quot;Jhon&quot;&lt;/span&gt;, age: &lt;span class=&quot;token number&quot;&gt;24&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;h3&gt;여러 Document 삽입&lt;/h3&gt;
@@ -567,9 +563,9 @@ CheatSheet 개념으로 정리해본 기초 Mongo Shell CRUD 명령어.&lt;/p&gt
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;
       &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; db.collection_name.insertMany&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
   &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
-    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; name: &lt;span class=&quot;token string&quot;&gt;&quot;Jhon&quot;&lt;/span&gt;, age: 24 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;,
-    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; name: &lt;span class=&quot;token string&quot;&gt;&quot;Darcy&quot;&lt;/span&gt;, age: 26 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;,
-    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; name: &lt;span class=&quot;token string&quot;&gt;&quot;Ted&quot;&lt;/span&gt;, age: 22 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; name: &lt;span class=&quot;token string&quot;&gt;&quot;Jhon&quot;&lt;/span&gt;, age: &lt;span class=&quot;token number&quot;&gt;24&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;,
+    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; name: &lt;span class=&quot;token string&quot;&gt;&quot;Darcy&quot;&lt;/span&gt;, age: &lt;span class=&quot;token number&quot;&gt;26&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;,
+    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; name: &lt;span class=&quot;token string&quot;&gt;&quot;Ted&quot;&lt;/span&gt;, age: &lt;span class=&quot;token number&quot;&gt;22&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
   &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
@@ -577,9 +573,9 @@ CheatSheet 개념으로 정리해본 기초 Mongo Shell CRUD 명령어.&lt;/p&gt
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;
       &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; db.collection_name.insertMany&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
   &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
-    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; name: &lt;span class=&quot;token string&quot;&gt;&quot;Jhon&quot;&lt;/span&gt;, age: 24 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;,
-    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; name: &lt;span class=&quot;token string&quot;&gt;&quot;Darcy&quot;&lt;/span&gt;, age: 26 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;,
-    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; name: &lt;span class=&quot;token string&quot;&gt;&quot;Ted&quot;&lt;/span&gt;, age: 22 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; name: &lt;span class=&quot;token string&quot;&gt;&quot;Jhon&quot;&lt;/span&gt;, age: &lt;span class=&quot;token number&quot;&gt;24&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;,
+    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; name: &lt;span class=&quot;token string&quot;&gt;&quot;Darcy&quot;&lt;/span&gt;, age: &lt;span class=&quot;token number&quot;&gt;26&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;,
+    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; name: &lt;span class=&quot;token string&quot;&gt;&quot;Ted&quot;&lt;/span&gt;, age: &lt;span class=&quot;token number&quot;&gt;22&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
   &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;,
   &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; ordered: &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
@@ -612,7 +608,7 @@ CheatSheet 개념으로 정리해본 기초 Mongo Shell CRUD 명령어.&lt;/p&gt
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;
       &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;db.user.find&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
   &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-    level: &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$gte&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;:&lt;/span&gt; 3 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    level: &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$gte&lt;/span&gt;&lt;span class=&quot;token builtin class-name&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
@@ -620,7 +616,7 @@ CheatSheet 개념으로 정리해본 기초 Mongo Shell CRUD 명령어.&lt;/p&gt
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;
       &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; db.user.find&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
   &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-    level: &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$in&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;2, 5&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    level: &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$in&lt;/span&gt;&lt;span class=&quot;token builtin class-name&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;, &lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
@@ -635,9 +631,9 @@ CheatSheet 개념으로 정리해본 기초 Mongo Shell CRUD 명령어.&lt;/p&gt
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;
       &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; db.inventory.find&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt; 
   &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;token variable&quot;&gt;$and&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+    &lt;span class=&quot;token variable&quot;&gt;$and&lt;/span&gt;&lt;span class=&quot;token builtin class-name&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
       &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; status: &lt;span class=&quot;token string&quot;&gt;&quot;A&quot;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;,
-      &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; qty: &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$lt&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;:&lt;/span&gt; 30 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; qty: &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$lt&lt;/span&gt;&lt;span class=&quot;token builtin class-name&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;30&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
     &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
@@ -645,7 +641,7 @@ CheatSheet 개념으로 정리해본 기초 Mongo Shell CRUD 명령어.&lt;/p&gt
 &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; db.inventory.find&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt; 
   &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; 
     status: &lt;span class=&quot;token string&quot;&gt;&quot;A&quot;&lt;/span&gt;, 
-    qty: &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$lt&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;:&lt;/span&gt; 30 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; 
+    qty: &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$lt&lt;/span&gt;&lt;span class=&quot;token builtin class-name&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;30&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; 
   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; 
 &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
@@ -654,13 +650,13 @@ CheatSheet 개념으로 정리해본 기초 Mongo Shell CRUD 명령어.&lt;/p&gt
 &lt;/blockquote&gt;
 &lt;p&gt;Collection에서 status가 ‘A’이거나 qty가 30 이상인 Document 선택&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;
-      &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;db.inventory.find&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$or&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; status: &lt;span class=&quot;token string&quot;&gt;&quot;A&quot;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;, &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; qty: &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$lt&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;:&lt;/span&gt; 30 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+      &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;db.inventory.find&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$or&lt;/span&gt;&lt;span class=&quot;token builtin class-name&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; status: &lt;span class=&quot;token string&quot;&gt;&quot;A&quot;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;, &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; qty: &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$lt&lt;/span&gt;&lt;span class=&quot;token builtin class-name&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;30&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;$and와 $or의 혼합 사용&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;
       &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;db.inventory.find&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
      status: &lt;span class=&quot;token string&quot;&gt;&quot;A&quot;&lt;/span&gt;,
-     &lt;span class=&quot;token variable&quot;&gt;$or&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; qty: &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$lt&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;:&lt;/span&gt; 30 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;, &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; item: /^p/ &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+     &lt;span class=&quot;token variable&quot;&gt;$or&lt;/span&gt;&lt;span class=&quot;token builtin class-name&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; qty: &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$lt&lt;/span&gt;&lt;span class=&quot;token builtin class-name&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;30&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;, &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; item: /^p/ &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;h3&gt;Match an Embedded/Nested Document&lt;/h3&gt;
@@ -676,7 +672,7 @@ CheatSheet 개념으로 정리해본 기초 Mongo Shell CRUD 명령어.&lt;/p&gt
 &lt;h3&gt;Query on Nested Field&lt;/h3&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;{ size: { w: 20, h: 40 } }&lt;/code&gt;와 같은 형식의 Document들이 있을 때 size 필드 안의 h 가 15 이상인 도큐먼트 선택&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;
-      &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;db.inventory.find&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;size.h&quot;&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$lt&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;:&lt;/span&gt; 15 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+      &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;db.inventory.find&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;size.h&quot;&lt;/span&gt;&lt;span class=&quot;token builtin class-name&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$lt&lt;/span&gt;&lt;span class=&quot;token builtin class-name&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;15&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;h3&gt;Query an Array&lt;/h3&gt;
 &lt;h4&gt;Match an Array&lt;/h4&gt;
@@ -691,7 +687,7 @@ CheatSheet 개념으로 정리해본 기초 Mongo Shell CRUD 명령어.&lt;/p&gt
 &lt;h4&gt;$all&lt;/h4&gt;
 &lt;p&gt;tags가 ‘red’, ‘blank’ 두가지를 가지고 있는 Dcouments&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;
-      &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;db.inventory.find&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; tags: &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$all&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;red&quot;&lt;/span&gt;, &lt;span class=&quot;token string&quot;&gt;&quot;blank&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+      &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;db.inventory.find&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; tags: &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$all&lt;/span&gt;&lt;span class=&quot;token builtin class-name&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;red&quot;&lt;/span&gt;, &lt;span class=&quot;token string&quot;&gt;&quot;blank&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;blockquote&gt;
 &lt;p&gt;순서와 상관없고, 정확히 일치하는게 아닌 포함하고 있으면 된다.&lt;/p&gt;
@@ -700,17 +696,17 @@ CheatSheet 개념으로 정리해본 기초 Mongo Shell CRUD 명령어.&lt;/p&gt
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;dim_cm: [12, 16]&lt;/code&gt;와 같은 형식이 있다.
 &lt;code class=&quot;language-text&quot;&gt;dim_cm&lt;/code&gt; 배열 안에 22초과, 30미만의 값을 포함하고 있는 Document를 선택&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;
-      &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;db.inventory.find&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; dim_cm: &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$elemMatch&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$gt&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;:&lt;/span&gt; 22, &lt;span class=&quot;token variable&quot;&gt;$lt&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;:&lt;/span&gt; 30 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+      &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;db.inventory.find&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; dim_cm: &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$elemMatch&lt;/span&gt;&lt;span class=&quot;token builtin class-name&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$gt&lt;/span&gt;&lt;span class=&quot;token builtin class-name&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;22&lt;/span&gt;, &lt;span class=&quot;token variable&quot;&gt;$lt&lt;/span&gt;&lt;span class=&quot;token builtin class-name&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;30&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;h4&gt;Query for an Element by the Array Index Position&lt;/h4&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;dim_cm&lt;/code&gt; 배열의 1번째 index 요소가 25 초과인 Document 선택&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;
-      &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;db.inventory.find&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;dim_cm.1&quot;&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$gt&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;:&lt;/span&gt; 25 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+      &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;db.inventory.find&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;dim_cm.1&quot;&lt;/span&gt;&lt;span class=&quot;token builtin class-name&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$gt&lt;/span&gt;&lt;span class=&quot;token builtin class-name&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;25&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;h4&gt;Query an Array by Array Length&lt;/h4&gt;
 &lt;p&gt;tags 배열의 길이가 3인 Document 선택&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;
-      &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;db.inventory.find&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;tags&quot;&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$size&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;:&lt;/span&gt; 3 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+      &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;db.inventory.find&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;tags&quot;&lt;/span&gt;&lt;span class=&quot;token builtin class-name&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$size&lt;/span&gt;&lt;span class=&quot;token builtin class-name&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;h3&gt;Query for Null or Missing Fields&lt;/h3&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;{ _id: 1, item: null }, { _id: 2 }&lt;/code&gt; 두개의 Document가 있다.
@@ -723,14 +719,14 @@ CheatSheet 개념으로 정리해본 기초 Mongo Shell CRUD 명령어.&lt;/p&gt
 아래와 같이 하면 첫번째 document만 정상적으로 선택할 수 있다.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;
-      &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;db.inventory.find&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; item &lt;span class=&quot;token keyword&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$type&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;:&lt;/span&gt; 10 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+      &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;db.inventory.find&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; item &lt;span class=&quot;token builtin class-name&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$type&lt;/span&gt;&lt;span class=&quot;token builtin class-name&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;a href=&quot;https://docs.mongodb.com/manual/reference/bson-types/&quot;&gt;BSON types&lt;/a&gt;
 item이 존재하지 않는 Document를 선택한다.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;
-      &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;db.inventory.find&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; item &lt;span class=&quot;token keyword&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$exists&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+      &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;db.inventory.find&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; item &lt;span class=&quot;token builtin class-name&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$exists&lt;/span&gt;&lt;span class=&quot;token builtin class-name&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;h2&gt;Update&lt;/h2&gt;
 &lt;h3&gt;&lt;a href=&quot;https://docs.mongodb.com/manual/reference/method/db.collection.updateOne/#db.collection.updateOne&quot;&gt;db.collection.updateOne(filter, update, options)&lt;/a&gt;&lt;/h3&gt;
@@ -738,14 +734,14 @@ item이 존재하지 않는 Document를 선택한다.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;
       &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;db.user.updateOne&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
   &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; name: &lt;span class=&quot;token string&quot;&gt;&quot;Jhon&quot;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;,
-  &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$set&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; age: 25 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$set&lt;/span&gt;&lt;span class=&quot;token builtin class-name&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; age: &lt;span class=&quot;token number&quot;&gt;25&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;options의 upsert 속성을 사용하면 만약 Kay가 존재하지 않을 시 Document를 새로 만들며 업데이트 된다.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;
       &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; db.user.updateOne&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
   &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;name:&lt;span class=&quot;token string&quot;&gt;&quot;Kay&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;,
-  &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$set&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; age: 25 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;,
+  &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$set&lt;/span&gt;&lt;span class=&quot;token builtin class-name&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; age: &lt;span class=&quot;token number&quot;&gt;25&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;,
   &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;upsert: true&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
@@ -753,7 +749,7 @@ item이 존재하지 않는 Document를 선택한다.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;
       &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; db.user.updateOne&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
   &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;name:&lt;span class=&quot;token string&quot;&gt;&quot;Jhon&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;,
-  &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$push&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;skills: &lt;span class=&quot;token string&quot;&gt;&apos;react&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$push&lt;/span&gt;&lt;span class=&quot;token builtin class-name&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;skills: &lt;span class=&quot;token string&quot;&gt;&apos;react&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;배열 field에 값 추가하기 + 정렬&lt;/p&gt;
@@ -763,10 +759,10 @@ item이 존재하지 않는 Document를 선택한다.&lt;/p&gt;
 
 &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; db.user.updateOne&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
   &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;name:&lt;span class=&quot;token string&quot;&gt;&quot;Jhon&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;,
-  &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$push&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;:&lt;/span&gt; 
+  &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$push&lt;/span&gt;&lt;span class=&quot;token builtin class-name&quot;&gt;:&lt;/span&gt; 
     skills: &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;token variable&quot;&gt;$each&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;vue&apos;&lt;/span&gt;, &lt;span class=&quot;token string&quot;&gt;&apos;angular&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;,
-      &lt;span class=&quot;token variable&quot;&gt;$sort&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;:&lt;/span&gt; 1
+      &lt;span class=&quot;token variable&quot;&gt;$each&lt;/span&gt;&lt;span class=&quot;token builtin class-name&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;vue&apos;&lt;/span&gt;, &lt;span class=&quot;token string&quot;&gt;&apos;angular&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;,
+      &lt;span class=&quot;token variable&quot;&gt;$sort&lt;/span&gt;&lt;span class=&quot;token builtin class-name&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;
     &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
@@ -775,22 +771,22 @@ item이 존재하지 않는 Document를 선택한다.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;
       &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; db.user.updateOne&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
   &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;name:&lt;span class=&quot;token string&quot;&gt;&quot;Jhon&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;,
-  &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$pull&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;skills: &lt;span class=&quot;token string&quot;&gt;&apos;react&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$pull&lt;/span&gt;&lt;span class=&quot;token builtin class-name&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;skills: &lt;span class=&quot;token string&quot;&gt;&apos;react&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;배열 field에서 여러값 제거하기&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;
       &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; db.user.updateOne&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
   &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;name:&lt;span class=&quot;token string&quot;&gt;&quot;Jhon&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;,
-  &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$pull&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;skills: &lt;span class=&quot;token variable&quot;&gt;$in&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;angular&apos;&lt;/span&gt;, &lt;span class=&quot;token string&quot;&gt;&apos;vue&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$pull&lt;/span&gt;&lt;span class=&quot;token builtin class-name&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;skills: &lt;span class=&quot;token variable&quot;&gt;$in&lt;/span&gt;&lt;span class=&quot;token builtin class-name&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;angular&apos;&lt;/span&gt;, &lt;span class=&quot;token string&quot;&gt;&apos;vue&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;h3&gt;&lt;a href=&quot;https://docs.mongodb.com/manual/reference/method/db.collection.updateMany/#db.collection.updateMany&quot;&gt;db.collection.updateMany(filter, update, options)&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;level이 3이상인 document의 admin을 true로 변경&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;
       &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;db.user.updateMany&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
-  &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; level: &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$gte&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;:&lt;/span&gt; 3&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;,
-  &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$set&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;admin: true&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; level: &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$gte&lt;/span&gt;&lt;span class=&quot;token builtin class-name&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;,
+  &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$set&lt;/span&gt;&lt;span class=&quot;token builtin class-name&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;admin: true&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;h3&gt;&lt;a href=&quot;https://docs.mongodb.com/manual/reference/method/db.collection.replaceOne/#db.collection.replaceOne&quot;&gt;db.collection.replaceOne(filter, replacement, options)&lt;/a&gt;&lt;/h3&gt;
@@ -798,7 +794,7 @@ item이 존재하지 않는 Document를 선택한다.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;
       &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; db.user.replaceOne&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
   &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;name:&lt;span class=&quot;token string&quot;&gt;&quot;Kay&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;,
-  &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;name:&lt;span class=&quot;token string&quot;&gt;&quot;Kai&quot;&lt;/span&gt;, age: 21&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;name:&lt;span class=&quot;token string&quot;&gt;&quot;Kai&quot;&lt;/span&gt;, age: &lt;span class=&quot;token number&quot;&gt;21&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;blockquote&gt;
@@ -810,14 +806,14 @@ item이 존재하지 않는 Document를 선택한다.&lt;/p&gt;
       &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;# 이름이 Jhon인 도큐먼트를 name Jun, age 21으로 교체&lt;/span&gt;
 
 &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; db.user.update&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
-  &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;name:&lt;span class=&quot;token string&quot;&gt;&quot;Jhon&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;, &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;name: &lt;span class=&quot;token string&quot;&gt;&quot;Jun&quot;&lt;/span&gt;, age: 21&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;name:&lt;span class=&quot;token string&quot;&gt;&quot;Jhon&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;, &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;name: &lt;span class=&quot;token string&quot;&gt;&quot;Jun&quot;&lt;/span&gt;, age: &lt;span class=&quot;token number&quot;&gt;21&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;여러 Document Update, options의 multi 속성이 필요하다, 또는 insertMany를 사용하는 방법도 있다.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;
       &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; db.user.update&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
   &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;level: &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$lte&lt;/span&gt;:3&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;,
-  &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$set&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;admin: false&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;,
+  &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$set&lt;/span&gt;&lt;span class=&quot;token builtin class-name&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;admin: false&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;,
   &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;multi: true&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
@@ -828,7 +824,7 @@ item이 존재하지 않는 Document를 선택한다.&lt;/p&gt;
       &lt;/div&gt;
 &lt;p&gt;Collection안의 status가 A인 Dcoument가 모두 삭제된다.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;
-      &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;db.inventory.deleteMany&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; status &lt;span class=&quot;token keyword&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;A&quot;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+      &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;db.inventory.deleteMany&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; status &lt;span class=&quot;token builtin class-name&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;A&quot;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;Collection안의 status가 D인 Dcoument가 하나 삭제된다.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;
@@ -838,10 +834,10 @@ item이 존재하지 않는 Document를 선택한다.&lt;/p&gt;
 &lt;p&gt;References&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://docs.mongodb.com/manual/&quot;&gt;MongoDB | Documentation&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[mac 터미널 환경 구성하기 (zsh, oh my zsh, zplug, hyper)]]></title><description><![CDATA[개발환경 구성에 앞서 제일 먼저 필요하다고 할 수 있는 터미널 환경 세팅.여기서는 zsh 쉘을 사용하며, oh my zsh 설치 후zsh 플러그인 매니저인 zplug를 설치하여 플러그인을 관리합니다.또한 터미널 앱으로는 hyper…]]></description><link>https://junhobaik.github.io/mac-terminal-setting/</link><guid isPermaLink="false">https://junhobaik.github.io/mac-terminal-setting/</guid><pubDate>Wed, 24 Jul 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[mac 터미널 환경 구성하기 (zsh, oh my zsh, zplug, hyper)]]></title><description><![CDATA[개발환경 구성에 앞서 제일 먼저 필요하다고 할 수 있는 터미널 환경 세팅. 여기서는 zsh 쉘을 사용하며, oh my zsh 설치 후 zsh 플러그인 매니저인 zplug를 설치하여 플러그인을 관리합니다. 또한 터미널 앱으로는 hyper…]]></description><link>https://junhobaik.github.io/mac-terminal-setting/</link><guid isPermaLink="false">https://junhobaik.github.io/mac-terminal-setting/</guid><pubDate>Wed, 24 Jul 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/483b2386e38636bd5d9e7357b4c6796b/ca44b/screenshot.png&quot;
+    href=&quot;/static/483b2386e38636bd5d9e7357b4c6796b/67270/screenshot.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -860,13 +856,13 @@ item이 존재하지 않는 Document를 선택한다.&lt;/p&gt;
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;screenshot&quot;
         title=&quot;&quot;
-        src=&quot;/static/483b2386e38636bd5d9e7357b4c6796b/b9e4f/screenshot.png&quot;
-        srcset=&quot;/static/483b2386e38636bd5d9e7357b4c6796b/cf440/screenshot.png 148w,
-/static/483b2386e38636bd5d9e7357b4c6796b/d2d38/screenshot.png 295w,
-/static/483b2386e38636bd5d9e7357b4c6796b/b9e4f/screenshot.png 590w,
-/static/483b2386e38636bd5d9e7357b4c6796b/f9b6a/screenshot.png 885w,
-/static/483b2386e38636bd5d9e7357b4c6796b/2d849/screenshot.png 1180w,
-/static/483b2386e38636bd5d9e7357b4c6796b/ca44b/screenshot.png 1544w&quot;
+        src=&quot;/static/483b2386e38636bd5d9e7357b4c6796b/799d3/screenshot.png&quot;
+        srcset=&quot;/static/483b2386e38636bd5d9e7357b4c6796b/00d96/screenshot.png 148w,
+/static/483b2386e38636bd5d9e7357b4c6796b/0b23c/screenshot.png 295w,
+/static/483b2386e38636bd5d9e7357b4c6796b/799d3/screenshot.png 590w,
+/static/483b2386e38636bd5d9e7357b4c6796b/2a3d6/screenshot.png 885w,
+/static/483b2386e38636bd5d9e7357b4c6796b/ae92f/screenshot.png 1180w,
+/static/483b2386e38636bd5d9e7357b4c6796b/67270/screenshot.png 1544w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
     &lt;/span&gt;
@@ -896,15 +892,15 @@ zsh 플러그인 매니저인 &lt;strong&gt;zplug&lt;/strong&gt;를 설치하여
       &lt;/div&gt;
 &lt;p&gt;&lt;em&gt;zsh 설치&lt;/em&gt;&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;
-      &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;brew &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; zsh&lt;/code&gt;&lt;/pre&gt;
+      &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;brew &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;zsh&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;&lt;em&gt;oh-my-zsh 설치&lt;/em&gt;&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;
-      &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;sh -c &lt;span class=&quot;token string&quot;&gt;&quot;&lt;span class=&quot;token variable&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;$(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;curl&lt;/span&gt; -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh&lt;span class=&quot;token variable&quot;&gt;)&lt;/span&gt;&lt;/span&gt;&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+      &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;sh&lt;/span&gt; -c &lt;span class=&quot;token string&quot;&gt;&quot;&lt;span class=&quot;token variable&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;$(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;curl&lt;/span&gt; -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh&lt;span class=&quot;token variable&quot;&gt;)&lt;/span&gt;&lt;/span&gt;&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;&lt;em&gt;기본 쉘 변경 (bash -&gt; zsh)&lt;/em&gt;&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;
-      &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;chsh -s &lt;span class=&quot;token variable&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;which&lt;/span&gt; zsh&lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+      &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;chsh -s &lt;span class=&quot;token variable&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;which&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;zsh&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;blockquote&gt;
 &lt;p&gt;non-standard shell 오류 발생 시
@@ -930,7 +926,7 @@ vi, open, code 등 맘에 드는 방법으로 수정하시면 됩니다.&lt;/p&g
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;
       &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;# .zshrc (use zplug)&lt;/span&gt;
 
-&lt;span class=&quot;token function&quot;&gt;source&lt;/span&gt; ~/.zplug/init.zsh
+&lt;span class=&quot;token builtin class-name&quot;&gt;source&lt;/span&gt; ~/.zplug/init.zsh
 
 &lt;span class=&quot;token comment&quot;&gt;# Plugins&lt;/span&gt;
 zplug &lt;span class=&quot;token string&quot;&gt;&quot;plugins/git&quot;&lt;/span&gt;,   from:oh-my-zsh
@@ -945,9 +941,9 @@ zplug &lt;span class=&quot;token string&quot;&gt;&apos;dracula/zsh&apos;&lt;/spa
 
 &lt;span class=&quot;token comment&quot;&gt;# Install plugins if there are plugins that have not been installed&lt;/span&gt;
 &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt; zplug check --verbose&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;then&lt;/span&gt;
-    &lt;span class=&quot;token function&quot;&gt;printf&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Install? [y/N]: &quot;&lt;/span&gt;
-    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;read&lt;/span&gt; -q&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;then&lt;/span&gt;
-        &lt;span class=&quot;token keyword&quot;&gt;echo&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; zplug &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt;
+    &lt;span class=&quot;token builtin class-name&quot;&gt;printf&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Install? [y/N]: &quot;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token builtin class-name&quot;&gt;read&lt;/span&gt; -q&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;then&lt;/span&gt;
+        &lt;span class=&quot;token builtin class-name&quot;&gt;echo&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; zplug &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt;
     &lt;span class=&quot;token keyword&quot;&gt;fi&lt;/span&gt;
 &lt;span class=&quot;token keyword&quot;&gt;fi&lt;/span&gt;
 
@@ -1059,7 +1055,7 @@ $ zplug load --verbose&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;다양한 플러그인은 &lt;a href=&quot;https://github.com/bnb/awesome-hyper&quot;&gt;awesome-hyper&lt;/a&gt; 문서에서 확인할 수 있습니다.&lt;/p&gt;
 &lt;p&gt;여기까지 본인과 같은 설정을 했다면 최상단의 이미지와 같은 터미널을 보실 수 있습니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[MongoDB 설치하기 (mac, homebrew)]]></title><description><![CDATA[MongoDB를 본격적으로 사용하기 앞서,
-설치와 실행 그리고 추가적인 툴의 설치와 사용까지 기본적으로 알아보겠습니다.macOS / HomeBrew의 설치 환경에서 진행됩니다.Install MongoDBTap the MongoDB Homebrew…]]></description><link>https://junhobaik.github.io/mongodb-install/</link><guid isPermaLink="false">https://junhobaik.github.io/mongodb-install/</guid><pubDate>Sat, 20 Jul 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;MongoDB를 본격적으로 사용하기 앞서,
+설치와 실행 그리고 추가적인 툴의 설치와 사용까지 기본적으로 알아보겠습니다. macOS / HomeBrew의 설치 환경에서 진행됩니다. Install MongoDB Tap the MongoDB Homebrew…]]></description><link>https://junhobaik.github.io/mongodb-install/</link><guid isPermaLink="false">https://junhobaik.github.io/mongodb-install/</guid><pubDate>Sat, 20 Jul 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;MongoDB를 본격적으로 사용하기 앞서,
 설치와 실행 그리고 추가적인 툴의 설치와 사용까지 기본적으로 알아보겠습니다.&lt;/p&gt;
 &lt;p&gt;macOS / HomeBrew의 설치 환경에서 진행됩니다.&lt;/p&gt;
 &lt;h2&gt;Install MongoDB&lt;/h2&gt;
@@ -1087,7 +1083,7 @@ $ brew services start mongodb-community@4.0&lt;/code&gt;&lt;/pre&gt;
 &lt;h2&gt;설치 없이 실습하기&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://mws.mongodb.com/&quot;&gt;https://mws.mongodb.com/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;위 주소로 접속하여 스터디 용도로 MongoDB 가상환경 내에서 사용해 볼 수 있다.
-reset 버튼을 누르거나 오랜 시간 작업이 없거나, 웹페이지를 새로고침하면 데이터가 날아가니 주의할 것.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[사용중인 mac App 목록 및 앱 추천]]></title><description><![CDATA[현재 mac Catalina developer beta의 환경으로 사용하고 있었는데,지금까지 설치한 앱들이 너무 많고 메뉴바 또한 넘처나기 직전이다.bartender, dozer와 같은 메뉴바 정리 앱으로 정리를 했는데도 말이다.그래서 macOS…]]></description><link>https://junhobaik.github.io/my-mac-apps/</link><guid isPermaLink="false">https://junhobaik.github.io/my-mac-apps/</guid><pubDate>Mon, 15 Jul 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;현재 mac Catalina developer beta의 환경으로 사용하고 있었는데,&lt;/p&gt;
+reset 버튼을 누르거나 오랜 시간 작업이 없거나, 웹페이지를 새로고침하면 데이터가 날아가니 주의할 것.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[사용중인 mac App 목록 및 앱 추천]]></title><description><![CDATA[현재 mac Catalina developer beta의 환경으로 사용하고 있었는데, 지금까지 설치한 앱들이 너무 많고 메뉴바 또한 넘처나기 직전이다. bartender, dozer와 같은 메뉴바 정리 앱으로 정리를 했는데도 말이다. 그래서 macOS…]]></description><link>https://junhobaik.github.io/my-mac-apps/</link><guid isPermaLink="false">https://junhobaik.github.io/my-mac-apps/</guid><pubDate>Mon, 15 Jul 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;현재 mac Catalina developer beta의 환경으로 사용하고 있었는데,&lt;/p&gt;
 &lt;p&gt;지금까지 설치한 앱들이 너무 많고 메뉴바 또한 넘처나기 직전이다.&lt;br&gt;
 bartender, dozer와 같은 메뉴바 정리 앱으로 정리를 했는데도 말이다.&lt;/p&gt;
 &lt;p&gt;그래서 macOS를 Catalina public beta로 클린 설치하여 다시 한번 앱들을 설치하며 새로운 환경을 구성할 예정이다.&lt;/p&gt;
@@ -1185,8 +1181,8 @@ BetterTouchTool에서도 가능하게 할 수 있는 기능이라 BTT앱으로 �
 필수 앱으로 넣을까 고민이 되었는데, 아마도 필요에 의해 금방 설치하게 될 것 같다.&lt;/p&gt;
 &lt;h3&gt;Timing &lt;img class=&quot;emoji-icon&quot; alt=&quot;emoji-small_blue_diamond&quot; data-icon=&quot;emoji-small_blue_diamond&quot; style=&quot;display: inline; margin: 0; margin-top: 1px; position: relative; top: 5px; width: 25px&quot; src=&quot;data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAG4ElEQVR4Xu3Xa2xUeRnH8e//XGY6vVB6mRa2XNqlhdJhuZWbJe6FTQSVZUEk+05dNZssxqyb+MJVykJKjbugL9RgVt2wL7zEuAlETVhMWIkGdWHdRVHALtCW0spwUeh0Zs7MOef/ODPHpCb7wphsL8D5JL/8p8158/yenHNmmEyhUCgUCoVCoVAoFAqFVGLDi4Mdj3Yf4X40e+3LA11P/ViWbzkkDZ29P2eKGEyBeOeB848/tnr+T/Zv4mDPRhJLHvpk7bLeV++LAmYs2T+4YUNn+3e+sgaHSubNque7u7toaW3/bHWi9/V7uoCqxfsvL12RmPfVzy+n/7rF6T6Pk+ddouVVfG3nahrntm6vbA9KuNcKULFFLw8uWtrR0vv8Shwd5e33PATI5OB3f/FZsjBO9xfXUd/Uuj3Wuu/1e6uABS9dWZjomLf3uRVEo1Wc6vPwffBcEA1pRzjxZ48Vi+O8sHMVtYUSaO79GZNAMaF2mDSvOt31SOeKLz+dwLQq+Gu/KpxCNAoRU4GGvBYyDlgmdLbBxYFbHPjBO1w8e+57DHfvvFsLUDTtH0ysTczt+dIqbo9G+NtViEagPGpgGmAqSnwB1xecHPg+rGlXJJM32f3Nt7h55dJhRnZ94m4rwOCB/QNNHYvmPv+ZZVjl1fz9iqY8YmDbwaZNQxVCia+LkdLwWRd8F5a1+Zw9l+S1n57hztVLR0h2b7tLngGPWsx+abCxrW3u09sTYFfybp8GAU9rXI9S8q6Q9yA3/rkU8TW5Qk6dUyxua2DHtmVUPrBgKw29h++OAuo3DcQXLJrz1JYEdqyad/pAofFFB4O6Prm8JucVzyDFz/ni/9zC6QlojeNq3roACx9sYPNHE8QaWrZS2/PaNC7gGZu6r/+xadlDTU9+bAlizuDMRR/X1/gaXDfYdC4PTvHMgZMv/v3fn4NrXA/Ehztjwtt9MKepkY9vXkJ1c+unqdlzcBoWsMOkprl/ZuvitY89vIgclVy8KmgfRMB1ixsupLh1VwfbzjOe0uC6lOCaYnE+hoKsozk3AHX19ax/pAOr4cFnmbn3F3xArA9m+NWDFS1tTStXL8bxqvnXbYNoVIFh4GtQCkSDCYhSiIBhjLevNeMRggdi6Qyu80RzeRhqqxpYvmYpZ07ZT3j+vl+S2vXEFBfwTD3Vbecqmtvjy1d3UDOzjlHHpqwMLFOhAKUUAFoRFEEAAUVAC2jAA1BBVDEmGEqwFCjgjhOludkir03O/0ltdi/0HIPujVNYwOxXuDM3blU2cztbGP5qGTOqTGJlCmUqTFPAMDEtjWWBQTCYbYOhggQFBHFdkGDzuBrEN9DKx/cVjidk0jCUVngyCys6hsvtj0zxLZB+lrjZ4jjGiqErHrEKzWjGCN7zpolSGtMuxDBQBiiCRGwQRUAABb4XlCACBCUUotGuQiP4nuC6gpP2yaY9PCzAPjTFBRy4zg1W5iqOnUSZXZGKOIpyDNMCywueAcEw4IEQSOcBYZwCxTgFYOjgtAXlF2L54Pl4Oo2Tuo53a/gb8LkXps83wQVvnCyfNb+ruqGRWKwMK2phFTdvBtMp9f+8cDQiIID4Gs8T3JxHOpVmNDlM7tpAL0Nbd02/r8ILj52smrOga0ZNPWWVESzbxooolCoGwPjflYtGADSIp3F9yOfzZFNZUjeSZK707WNoW/c0eg2Oo2/j+pT95piyVAVWDTFloGwTywIMhRJN8DDg/WR88yVK8FzB9T2y2Qyp2zfIJAd+NT789CsgcPNq46j2j4tuXiv1UG6WYZo2GGBYKri35f0lIBpRpQM8ja+FnOeRSaUYu54kMzxwkMtbvgAwvQtIfipNknUp3vitaP1hGuMoS2ErK1g+CkyNAhCDEhVsXmtAa3xfyDkemdEUqeQ1ssMDPfQ/uZsJYDJRbv7oUN7e/LiY9nzLjgIWKIUBCIoSkVIEkOCex8tDLuuSKd7zIyNkh/v3MrD1RSaIxUTq2/TwmPz6Dwp7XVWdgXgRiNpYEcBQaMaJr3HzkHfyZMeypG5eJzvU38PQtj1MIIuJ9t7v16fESIlHudTVQAwkZmOZAqYCHyD4mexmNZn0f4Yfvni8MPxuJphiUhwqY/7sN2ONLR+qqo0Tq4phR0wMgxLta3KOS3o0Q+pWEvfa5W/zj63PMQkUk6nx6G+is+c/WlnXSHl5DNMyEATP04ylRrmTTELy0h7+uX0vk0Qx2RqOHo80Nm+oqI0TiUYRERwnw+iNazByaTej23u45zUcO0PHBYl1jkjZyhGh/axQdaSX+8e3YlQeTTHvXWHOaSF6+AT3n1fK4dUT8MPvM4lCoVAoFAqFQqFQKBQKhf4Nayw+64oTuJcAAAAASUVORK5CYII=&quot; title=&quot;emoji-small_blue_diamond&quot;&gt;&lt;/h3&gt;
 &lt;p&gt;  컴퓨터 사용량 기록 앱, 어떤 앱을 어떤 사이트를 얼마나 사용했는지 기록해준다.&lt;br&gt;
-그를 바탕으로 생산성이 몇프로인지 계산해준다. 이번에 mac catalina에서 스크린 타임이 있어 불필요해진 앱이라는 소리를 듣고 있다. 그런데 스크린 타임은 우리가 기대하는 방식으로 동작하지 않아 timing 앱이 필요하긴 한 것 같은데 고민을 좀 해봐야겠다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[JavaScript 함수형 프로그래밍, go / pipe]]></title><description><![CDATA[a, b, c.. 라는 함수가 있다고 가정하자.위와 같이 함수가 중첩되고 연속된다면 가독성도 좋지않고 작성하는데도 어려움이 있다.
-함수들을 연속적으로 사용하는 함수, 함수들을 함축하는 함수인 go/pipe에 대해 알아보자gogo…]]></description><link>https://junhobaik.github.io/functional-go-pipe/</link><guid isPermaLink="false">https://junhobaik.github.io/functional-go-pipe/</guid><pubDate>Fri, 12 Jul 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;a, b, c.. 라는 함수가 있다고 가정하자.&lt;/p&gt;
+그를 바탕으로 생산성이 몇프로인지 계산해준다. 이번에 mac catalina에서 스크린 타임이 있어 불필요해진 앱이라는 소리를 듣고 있다. 그런데 스크린 타임은 우리가 기대하는 방식으로 동작하지 않아 timing 앱이 필요하긴 한 것 같은데 고민을 좀 해봐야겠다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[JavaScript 함수형 프로그래밍, go / pipe]]></title><description><![CDATA[a, b, c.. 라는 함수가 있다고 가정하자. 위와 같이 함수가 중첩되고 연속된다면 가독성도 좋지않고 작성하는데도 어려움이 있다.
+함수들을 연속적으로 사용하는 함수, 함수들을 함축하는 함수인 go/pipe에 대해 알아보자 go go…]]></description><link>https://junhobaik.github.io/functional-go-pipe/</link><guid isPermaLink="false">https://junhobaik.github.io/functional-go-pipe/</guid><pubDate>Fri, 12 Jul 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;a, b, c.. 라는 함수가 있다고 가정하자.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;
       &lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token function&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;b&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;d&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
@@ -1273,7 +1269,7 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.inflearn.com/course/functional-es6&quot;&gt;inflearn | 함수형 프로그래밍과 JavaScript ES6+&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[이터러블 프로토콜, 이터러블/이터레이터]]></title><description><![CDATA[이터러블 프로토콜은 ES6에서 도입된 것으로 간단히 말하면 
-이터러블 프로토콜은 순회(반복) 가능한 객체를 나타내는 프로토콜이라 할 수 있다. 반복문,  전개 연산자(Spread Operator…]]></description><link>https://junhobaik.github.io/iterable-protocol/</link><guid isPermaLink="false">https://junhobaik.github.io/iterable-protocol/</guid><pubDate>Wed, 10 Jul 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;이터러블 프로토콜은 ES6에서 도입된 것으로 간단히 말하면
+이터러블 프로토콜은 순회(반복) 가능한 객체를 나타내는 프로토콜이라 할 수 있다.  반복문,  전개 연산자(Spread Operator…]]></description><link>https://junhobaik.github.io/iterable-protocol/</link><guid isPermaLink="false">https://junhobaik.github.io/iterable-protocol/</guid><pubDate>Wed, 10 Jul 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;이터러블 프로토콜은 ES6에서 도입된 것으로 간단히 말하면
 &lt;strong&gt;이터러블 프로토콜은 순회(반복) 가능한 객체를 나타내는 프로토콜&lt;/strong&gt;이라 할 수 있다.&lt;/p&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;for...of&lt;/code&gt; 반복문, &lt;code class=&quot;language-text&quot;&gt;...&lt;/code&gt; 전개 연산자(Spread Operator), 구조 분해 등과 함께 동작 할 수 있도록 한 프로토콜이다. 이 말은 이터러블이여야만 이러한 동작이 가능하다는 것을 뜻하기도 한다.&lt;/p&gt;
 &lt;h2&gt;iterable/iterator&lt;/h2&gt;
@@ -1485,21 +1481,11 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
       &lt;/div&gt;
 &lt;h2&gt;정리&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;이터러블 프로토콜: 순회(반복) 가능한 객체를 나타내는 프로토콜, 이터러블이면 순회가 가능하다.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;이터러블: 이터레이터를 반환하는 &lt;code class=&quot;language-text&quot;&gt;Symbol.iterator&lt;/code&gt;라는 키값의 메소드를 가진 객체&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;이터레이터: &lt;code class=&quot;language-text&quot;&gt;{ value, done }&lt;/code&gt; 객체를 반환하는 &lt;code class=&quot;language-text&quot;&gt;next()&lt;/code&gt; 메소드를 가진 객체&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;이터러블 프로토콜을 사용자 정의 할 수 있음에 따라 원하는 객체를 지정한 동작에 따라 순회할 수 있게 되어 원하는 값을 추출해내고 다양한 객체에 이를 적용해 결과를 얻을 수 있게 되었다.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;기본적으로 반복이 가능한 것으로는 (iterable이 내장되어있다) String, Array, TypedArray, Map, Set가 있다.&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;이터러블 프로토콜: 순회(반복) 가능한 객체를 나타내는 프로토콜, 이터러블이면 순회가 가능하다.&lt;/li&gt;
+&lt;li&gt;이터러블: 이터레이터를 반환하는 &lt;code class=&quot;language-text&quot;&gt;Symbol.iterator&lt;/code&gt;라는 키값의 메소드를 가진 객체&lt;/li&gt;
+&lt;li&gt;이터레이터: &lt;code class=&quot;language-text&quot;&gt;{ value, done }&lt;/code&gt; 객체를 반환하는 &lt;code class=&quot;language-text&quot;&gt;next()&lt;/code&gt; 메소드를 가진 객체&lt;/li&gt;
+&lt;li&gt;이터러블 프로토콜을 사용자 정의 할 수 있음에 따라 원하는 객체를 지정한 동작에 따라 순회할 수 있게 되어 원하는 값을 추출해내고 다양한 객체에 이를 적용해 결과를 얻을 수 있게 되었다.&lt;/li&gt;
+&lt;li&gt;기본적으로 반복이 가능한 것으로는 (iterable이 내장되어있다) String, Array, TypedArray, Map, Set가 있다.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;p&gt;References&lt;/p&gt;
