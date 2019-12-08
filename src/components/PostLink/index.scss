@@ -1,64 +1,81 @@
 @import '../../utils/variables.scss';
 
 .post-link {
-  padding: 4rem 0;
-  border-bottom: 1px solid $line-color;
+  padding: 1.5rem 0;
 
   @media screen and (max-width: $break-medium) {
-    padding: 3rem 0;
+    padding: 1rem 0;
   }
 
   @media screen and (max-width: $break-small) {
-    padding: 2rem 0;
-  }
-  a {
-    color: $font-color-1;
-    text-decoration: none;
-  }
-  a:hover {
-    color: $font-color-0;
+    padding: 0.75rem 0;
   }
 
-  .title {
-    display: inline-block;
-    margin-bottom: 0.5rem;
-    font-size: 1.2rem;
-  }
+  .post-link-inner {
+    position: relative;
+    top: 0;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 1px 1px 0 rgba(35, 35, 35, 0.15);
+    background-color: $post-link-background-color;
+    transition: 0.3s;
 
-  .sub {
-    display: flex;
-    font-size: 0.9rem;
-    margin-bottom: 0.75rem;
-    align-items: center;
-    color: $font-color-2;
+    &:hover {
+      top: -3px;
+      box-shadow: 0 10px 20px 1px rgba(35, 35, 35, 0.15);
+    }
 
     a {
-      color: $font-color-2;
+      color: $font-color-1;
+      text-decoration: none;
     }
 
-    .date {
-      user-select: none;
-      margin-right: 0.5rem;
-
-      span {
-        margin-left: 0.2rem;
-      }
+    a:hover {
+      color: $font-color-0;
     }
 
-    .tags-list {
+    h2.title {
+      display: inline-block;
+      font-size: 1.3rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .sub {
       display: flex;
-      flex-direction: row;
-      border-left: 1px solid $line-color;
+      font-size: 0.9rem;
+      align-items: center;
+      color: $font-color-2;
 
-      .tag {
-        margin: 0 0.5rem;
+      a {
+        color: $font-color-2;
+      }
+
+      .date {
+        user-select: none;
+        margin-right: 0.5rem;
+
+        span {
+          margin-left: 0.2rem;
+        }
+      }
+
+      .tags-list {
+        display: flex;
+        flex-direction: row;
+        border-left: 1px solid $line-color;
+
+        .tag {
+          margin: 0 0.5rem;
+        }
       }
     }
-  }
-  .excerpt {
-    display: block;
-    color: #4d5256;
-    word-break: break-all;
+    .excerpt {
+      display: block;
+      color: #4d5256;
+      word-break: break-all;
+      font-size: 0.9rem;
+      margin-bottom: 1.2rem;
+    }
   }
 }
 
