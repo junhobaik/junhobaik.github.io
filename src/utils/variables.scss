@@ -36,8 +36,8 @@ $header-box-shadow: 0 0.5rem 0.5rem -0.5rem $line-color;
 @if $theme == white {
   $header-background-color: white;
   $header-font-color: $font-color-2;
-  $header-border-bottom: 1px solid $line-color;
   $article-background-color: #fff;
+  $header-box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.1), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
 @if $theme == ocean {
