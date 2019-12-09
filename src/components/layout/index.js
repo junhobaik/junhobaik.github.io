@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql, Link } from 'gatsby';
 import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome';
-import { faHome, faTags, faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faTags, faSearch, faFileAlt } from '@fortawesome/free-solid-svg-icons';
 
 import './index.scss';
 import Footer from './Footer';
@@ -101,8 +101,8 @@ const Layout = ({ children, data, location }) => (
               <nav className="menu">
                 <div className="home">
                   <Link to="/">
-                    <Fa icon={faHome} fixedWidth transform="down-1" />
-                    <span>Home</span>
+                    <Fa icon={faFileAlt} fixedWidth transform="down-1" />
+                    <span>Posts</span>
                   </Link>
                 </div>
 

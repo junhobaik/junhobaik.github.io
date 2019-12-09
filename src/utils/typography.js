@@ -7,8 +7,9 @@ const googleFont = [
   },
   {
     name: 'Noto Sans KR',
-    bold: [300, 500]
-  }
+    bold: [300, 400, 500],
+  },
+  { name: 'Josefin Sans' },
 ];
 
 const typography = new Typography({

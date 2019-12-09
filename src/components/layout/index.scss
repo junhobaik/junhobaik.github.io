@@ -8,11 +8,11 @@ $header-height-small: 3rem;
 html {
   background-color: $header-background-color;
   line-height: 1.666 !important;
-  a {
-    text-decoration: none;
-  }
   @media screen and (max-width: $break-small) {
     font-size: 0.9rem;
+  }
+  a {
+    text-decoration: none;
   }
 }
 
@@ -127,6 +127,7 @@ html {
       }
     }
   }
+
   .menu {
     display: flex;
     flex-grow: 1;
@@ -134,9 +135,11 @@ html {
     font-size: 1.1rem;
     justify-content: flex-end;
     margin-top: 1rem;
+
     @media screen and (max-width: $break-small) {
       margin-top: 0;
     }
+
     & > div {
       margin-left: 1.5rem;
       transition: all 0.1s ease-in-out;
@@ -146,12 +149,25 @@ html {
           display: none;
         }
       }
-      &:hover {
-        transform: scale(1.1);
-      }
 
-      span {
-        margin-left: 0.1rem;
+      & > a {
+        display: flex;
+        align-items: center;
+        margin: 2px 0;
+        border-bottom: 2px solid transparent;
+        opacity: 0.85;
+        transition: 0.3s;
+
+        &:hover {
+          opacity: 1;
+          transform: scale(1.1);
+        }
+
+        & > span {
+          margin-left: 0.1rem;
+          padding-top: 5px;
+          font-family: 'Josefin Sans';
+        }
       }
     }
   }
