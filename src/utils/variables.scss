@@ -32,6 +32,9 @@ $header-title-border: 0;
 $header-logo-opacity: 0.7;
 $header-box-shadow: 0 0.5rem 0.5rem -0.5rem $line-color;
 
+// footer
+$footer-border-top: 1px solid $line-color;
+
 /** THEME */
 @if $theme == white {
   $header-background-color: white;

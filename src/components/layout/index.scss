@@ -196,7 +196,7 @@ html {
   min-height: 2rem;
   max-height: 4rem;
   align-items: center;
-  border-top: $header-border-bottom;
+  border-top: $footer-border-top;
   padding: 0 2rem;
 
   @media screen and (max-width: $break-small) {
