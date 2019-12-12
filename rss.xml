@@ -1,4 +1,51 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[HUNDRED - rss]]></title><description><![CDATA[Junho Baik's blog]]></description><link>https://junhobaik.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 09 Dec 2019 13:51:18 GMT</lastBuildDate><item><title><![CDATA[App Store Connect에 입력한 내용이 App Store에 어떻게 보일까?]]></title><description><![CDATA[App Store Connect에서 앱 정보를 입력하고 실제로 출시한다면 App Store에서 입력한 항목들은 어디에 어떻게 위치하게 될 지 정리해보았습니다. 아래는 App Store Connect에서 입력하고 App Store…]]></description><link>https://junhobaik.github.io/app-store-connect-form/</link><guid isPermaLink="false">https://junhobaik.github.io/app-store-connect-form/</guid><pubDate>Fri, 06 Dec 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;App Store Connect에서 앱 정보를 입력하고 실제로 출시한다면&lt;br&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[HUNDRED - rss]]></title><description><![CDATA[Junho Baik's blog]]></description><link>https://junhobaik.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 12 Dec 2019 07:16:47 GMT</lastBuildDate><item><title><![CDATA[현재까지 개발한 결과물에 대한 이야기 2019]]></title><description><![CDATA[이 글은 개발해서 운영하고 있는 서비스에 대한 잡담과 같은 후기이다. 현재까지 개발해서 지속적으로 운영하고 있는 결과물은 5개 정도이다. 블로그 Netflix AutoSkip Tablo Tablo (version 2) WhatSubs…]]></description><link>https://junhobaik.github.io/dev-log-2019/</link><guid isPermaLink="false">https://junhobaik.github.io/dev-log-2019/</guid><pubDate>Thu, 12 Dec 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;이 글은 개발해서 운영하고 있는 서비스에 대한 잡담과 같은 후기이다.&lt;/p&gt;
+&lt;p&gt;현재까지 개발해서 지속적으로 운영하고 있는 결과물은 5개 정도이다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;블로그&lt;/li&gt;
+&lt;li&gt;Netflix AutoSkip&lt;/li&gt;
+&lt;li&gt;Tablo&lt;/li&gt;
+&lt;li&gt;Tablo (version 2)&lt;/li&gt;
+&lt;li&gt;WhatSubs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a href=&quot;https://junhobaik.github.io/&quot;&gt;블로그&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;업데이트는 자주 못했지만 개인적으로 저장하기 위해 시작했고 블로그를 개발하는 것도 스터디에 한부분이었던 블로그인데 조회수를 보면 조금 더 신경써야되나 싶다.&lt;/p&gt;
+&lt;p&gt;Google Analytics를 통해 살펴보면 올해 총 페이지뷰가 대략 11만이 넘었다.&lt;br&gt;
+애널리틱스를 자세히 살펴보다보면 재밌는 부분이 많다. 다른 사이트에서 내 블로그를 링크를 통해 들어오면 그 링크된 사이트가 어디인지 알 수 있는데 거길 들어가서 살펴보면 내 글도 누군가에게 도움이 되고 있구나라는 생각이 든다.
+생활코딩의 강의 댓글에 내 블로그 글을 보면 도움이 될거라는 댓글을 보고 굉장히 뿌듯했던 기억이 난다.&lt;/p&gt;
+&lt;p&gt;그리고 몇달전인가 도입한 에드센스를 살펴보면 조회된 애드센스 광고 단위수가 2만이 넘었다.&lt;br&gt;
+이것도 수익보다는 에드센스 도입을 한번 해보자라고 스터디 차원에서 한 것이었다.
+지금까지 총 수익은 7달러이다. 광고 차단 프로그램 탓도 있을 수 있겠다. 광고 차단 프로그램을 막을 수 있겠지만 수익을 생각하고 구현했던 것도 아니고 또한 광고 노출이 아닌 직접 클릭을 해야 수익이 나오는 것 같다.&lt;/p&gt;
+&lt;p&gt;그리고 블로그를 남들도 쓸 수 있도록 구현했는데 (이것도 스터디 차원에서 해본..) fork해서 블로그로 잘 운영하고 있는 분도 계시는 걸 보니 또 뿌듯했다. 업데이트를 제대로 한번 해야겠다는 생각도 든다. 지금은 게시물만 종종 올리고 블로그 자체는 만족하고 그냥 쓰고 있으니 말이다.&lt;/p&gt;
+&lt;h2&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/netflix-autoskip-intro-ne/pfcombngcgnehkbdoafkhdcfdmklboai&quot;&gt;Netflix AutoSkip&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;간단하고 간략한 코드로 구현된 크롬 확장프로그램이다.&lt;/p&gt;
+&lt;p&gt;넷플릭스를 크롬 브라우저로 보는데 키보드와 마우스에서 멀리 떨어져서 볼 경우 인트로 스킵이나 다음 동영상을 넘기는 버튼을 누르러 다시 컴퓨터나 TV 앞으로 가는 것이 귀찮아 만들었는데 생각보다 많은 사람들이 쓰고 있다. 현재 3000명 정도가 전세계에서 쓰고 있고 이것도 애널리틱스에서 실시간 접속자로 전세계에서 접속하고 있는 위치 모습을 보면 재미있다.&lt;/p&gt;
+&lt;p&gt;만드는 것들이 모두 내가 필요해서 만들기 시작한 것들이 대부분인데 이 앱은 쓰는 사람들이 좀 있고 버그가 있었을 적엔 메일로 피드백이 몇번 오기도 했다. 그런데 이 웹앱을 사겠다는 메일이 몇군데서, 그것도 다른 나라에서 왔었는데 이게 뭔가 싶다. 엄청 많은 사람이 쓰고 있는 것도 아니고 간단한 코드로 구현되었고 코드도 다 공개되어있는데...&lt;/p&gt;
+&lt;p&gt;DOM 트리가 변경되는 것을 기준으로 기능이 동작하는데 이번에 넷플릭스 UI가 조금 변경되면서 최근에 새로 업데이트를 했다.&lt;/p&gt;
+&lt;p&gt;얼마 전 수정하면서 기능이 유사한 다른 앱들을 살펴보니 아직 대응들을 안한 것인지 인트로 스킵과 다음 에피소드 재생 대기를 스킵하는 것이 모두 잘되는 것은 내 앱 뿐이었다.&lt;/p&gt;
+&lt;h2&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/tablo-bookmark-and-manage/aoccnljcdmmbihgabpoljghfcmbflkhc&quot;&gt;Tablo&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;trello와 비슷한 UI로 task가 아닌 link를 저장해 즐겨찾기와 같이 이용하는 크롬 확장프로그램으로 크롬의 새탭을 열면 열리는 웹앱이다. 크롬 시작화면 웹앱이라고도 할 수 있다.&lt;/p&gt;
+&lt;p&gt;현재 열려있는 탭 목록을 표시하고 거기서 드래그해서 자신만의 즐겨찾기 목록을 만드는게 주요 컨셉이었고 확장 프로그램 아이콘을 통해 웹 서핑 중 즐겨찾기 목록에 추가하는 것도 가능하다.&lt;/p&gt;
+&lt;p&gt;개발을 하고 따로 계속해서 발전시키지는 않았다. UI가 가로 스크롤이 필요한 UI이다보니 가로 스크롤에 대한 고민을 계속하긴 했었고 그에 대해 몇가지 변경이 이뤄지긴 했다.&lt;/p&gt;
+&lt;p&gt;개인적으로 필요해서 만들었고 잘 쓰고 있긴 했지만 계속해서 발전시키지 않은 이유는 새로운 기능을 포함해 새롭게 다시 만들 생각을 하고 있었기 때문이었고 그로 인해 Tablo version2를 만들게 되었다.&lt;/p&gt;
+&lt;h2&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/tablo/aflhcldanmopecmjjinnenkcddghjnkn&quot;&gt;Tablo (version 2)&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;이번에는 세로 형식의 trello 형식이 아닌 가로 형식으로 바꾸었고, 기존의 현재 열린 탭들 목록에서 자신의 즐겨찾기 목록으로 드래그하는 것, 확장 프로그램 아이콘을 통해 웹 서핑중 해당 사이트를 자신의 즐겨찾기 목록에 추가하는 것은 그대로 유지되었다.&lt;/p&gt;
+&lt;p&gt;추가된 주요 기능은 간단하게 말하면 rss 구독 기능이다. rss 구독 주소를 등록할 수 있고 구독한 사이트들의 게시물이 화면에 보이게 된다.&lt;/p&gt;
+&lt;p&gt;내가 브라우저를 켰을때 어디로 이동할 지 즐겨찾기와 같은 목록이 보였으면 좋겠고,&lt;br&gt;
+내가 관심있는 기술 블로그들의 최신 게시물을 쉽게 한곳에서 확인하고 싶었고,&lt;br&gt;
+웹 서핑이나 서치중에 나중에 보기위해 저장할 곳이 필요했다.&lt;/p&gt;
+&lt;p&gt;위와 같은 이유를 모두 만족하는 내게 필요한 웹앱을 만들었다.
+원하는 기능은 거의 구현했으며 크롬 웹스토어에 출시했다 이제 디테일한 수정과 개선을 계속해나가면 된다.&lt;/p&gt;
+&lt;h2&gt;&lt;a href=&quot;https://junhobaik.github.io/whatsubs-dev-story/&quot;&gt;WhatSubs&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;최근에 만들었고 어제 앱스토어 심사를 통과했다.&lt;br&gt;
+&lt;a href=&quot;https://junhobaik.github.io/whatsubs-dev-story/&quot;&gt;개발기&lt;/a&gt;도 간단히 써놓은 것이 있다.&lt;/p&gt;
+&lt;p&gt;What(무엇) + Subscription(구독)을 합친 이름으로 큰 고민 없이 만들었는데 생각보다 맘에 든다.&lt;/p&gt;
+&lt;p&gt;WhatSubs는 구독 관리에 도움을 주는 앱으로, 자신이 구독하는 항목을 쉽게 목록에 추가하고 그 목록을 한눈에 쉽게 확인해 구독을 관리하는데 도움을 줄 수 있는 앱이다.&lt;/p&gt;
+&lt;p&gt;구독하는 서비스가 많아지다보니 어디서 어떤 결제수단으로 구독을 해 두었는지 까먹기도하고 확인하기에도 불편해서 한눈에 확인하고자 만든 앱이다. 또, 어디서든 쉽게 확인하려면 핸드폰이 낫겠다 싶어 이참에 React Native앱을 만들어보고자 제작하기 시작했다.&lt;/p&gt;
+&lt;p&gt;UI/UX에 많은 시간을 들였고 개인적으로는 만족스럽게 결과를 만들어냈지만 내 기준으로 만들다보니 최신 갤럭시 노트와 최신 아이폰과 같이 화면비가 긴 화면에 적합하게 만들어져 UI/UX로 아쉬운 점이 남았다. 해상도와 화면비를 고려해서 컨텐츠의 크기를 수정하기도 했지만 여전히 아쉬운 점이 많다.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;P.S.&lt;/h2&gt;
+&lt;p&gt;지속적으로 운영을 할거라면 개발 외에도 내 앱을 소개하는 페이지에도 신경을 좀 더 써야하나 싶다. 홍보까진 아니더라도 말이다.&lt;br&gt;
+이번에 출시한 WhatSubs는 소개 페이지를 그나마 포토샵을 오랜만에 사용해 만들었다. 아무래도 앱스토어와 플레이스토어에 올라가다보니 조금은 신경을 썼다. 그에 비해 다른 웹앱인 크롬 확장 프로그램들은 구글 프레젠트에서 대강 만들어 올리다보니 조금은 부실해보이는데 나중에라도 더 신경을 써서 만들어야겠다는 생각이 든다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[App Store Connect에 입력한 내용이 App Store에 어떻게 보일까?]]></title><description><![CDATA[App Store Connect에서 앱 정보를 입력하고 실제로 출시한다면 App Store에서 입력한 항목들은 어디에 어떻게 위치하게 될 지 정리해보았습니다. 아래는 App Store Connect에서 입력하고 App Store…]]></description><link>https://junhobaik.github.io/app-store-connect-form/</link><guid isPermaLink="false">https://junhobaik.github.io/app-store-connect-form/</guid><pubDate>Fri, 06 Dec 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;App Store Connect에서 앱 정보를 입력하고 실제로 출시한다면&lt;br&gt;
 App Store에서 입력한 항목들은 어디에 어떻게 위치하게 될 지 정리해보았습니다.&lt;/p&gt;
 &lt;p&gt;아래는 App Store Connect에서 입력하고&lt;br&gt;
 App Store에 직접적으로 표시될 내용들입니다.
@@ -1268,228 +1315,4 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
 &lt;p&gt;References&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.inflearn.com/course/functional-es6&quot;&gt;inflearn | 함수형 프로그래밍과 JavaScript ES6+&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[이터러블 프로토콜, 이터러블/이터레이터]]></title><description><![CDATA[이터러블 프로토콜은 ES6에서 도입된 것으로 간단히 말하면 
-이터러블 프로토콜은 순회(반복) 가능한 객체를 나타내는 프로토콜이라 할 수 있다.  반복문,  전개 연산자(Spread Operator…]]></description><link>https://junhobaik.github.io/iterable-protocol/</link><guid isPermaLink="false">https://junhobaik.github.io/iterable-protocol/</guid><pubDate>Wed, 10 Jul 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;이터러블 프로토콜은 ES6에서 도입된 것으로 간단히 말하면
-&lt;strong&gt;이터러블 프로토콜은 순회(반복) 가능한 객체를 나타내는 프로토콜&lt;/strong&gt;이라 할 수 있다.&lt;/p&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;for...of&lt;/code&gt; 반복문, &lt;code class=&quot;language-text&quot;&gt;...&lt;/code&gt; 전개 연산자(Spread Operator), 구조 분해 등과 함께 동작 할 수 있도록 한 프로토콜이다. 이 말은 이터러블이여야만 이러한 동작이 가능하다는 것을 뜻하기도 한다.&lt;/p&gt;
-&lt;h2&gt;iterable/iterator&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;이터러블: 이터레이터를 반환하는 &lt;code class=&quot;language-text&quot;&gt;Symbol.iterator&lt;/code&gt;라는 키값의 메소드를 가진 객체&lt;/li&gt;
-&lt;li&gt;이터레이터: &lt;code class=&quot;language-text&quot;&gt;{ value, done }&lt;/code&gt; 객체를 반환하는 &lt;code class=&quot;language-text&quot;&gt;next()&lt;/code&gt; 메소드를 가진 객체&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;이제 예제를 통해 살펴보자.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;
-      &lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; arr &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; n &lt;span class=&quot;token keyword&quot;&gt;of&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-  console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;// 1 2 3&lt;/span&gt;
-
-console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;...&lt;/span&gt;arr&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;// 1 2 3&lt;/span&gt;
-
-&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;first&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;...&lt;/span&gt;remain&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;first&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; remain&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// 1, [2, 3]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;p&gt;위는 일반적인 배열의 값들을 for...of 반복문으로 출력한 것이다.
-(예를 든 Array 외에도 이터러블이 가능한 반복가능한 객체로는 Map, Set, String, TypedArray, arguments 객체 등이 있다)
-앞서 말했듯 for...of 순회가 가능한 이유는 이터러블이기 때문인데 그것을 아래에서 확인해보자&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;
-      &lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;dir&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arr&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;token comment&quot;&gt;/*
-&gt; Array(3)
-  &gt; __proto__ : Array(0)
-     ...
-     &gt; Symbol(Symbol.iterator): ƒ values()
-     ...
-*/&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;p&gt;우선 Array의 내부(프로토타입 체인 내)에서 &lt;code class=&quot;language-text&quot;&gt;Symbol(Symbol.iterator): ƒ values()&lt;/code&gt;를 확인 할 수 있다.
-Array에는 &lt;code class=&quot;language-text&quot;&gt;Symbol(Symbol.iterator)&lt;/code&gt;라는 key를 가진 함수가 존재한다는 것을 알 수 있고 앞서 설명한 &lt;strong&gt;이터레이터를 반환하는 &lt;code class=&quot;language-text&quot;&gt;Symbol.iterator&lt;/code&gt;라는 키값의 메소드를 가진 객체&lt;/strong&gt;에 부합하는 것을 볼 수 있다.&lt;/p&gt;
-&lt;p&gt;만약 위의 코드를 아래와 같이 하면 어떻게 될까&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;
-      &lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; arr &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-
-arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;Symbol&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;iterator&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; n &lt;span class=&quot;token keyword&quot;&gt;of&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// Uncaught TypeError: arr is not iterable&lt;/span&gt;
-  console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;...&lt;/span&gt;arr&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;arr[Symbol.iterator] = null;&lt;/code&gt;을 통해 이제 더이상 배열 arr은 이터러블이 아니게 되었다.
-그래서 for...of에서 arr은 이터러블이 아니라는 오류를 만나게 된다. 전개 연산자도 마찬가지다.&lt;/p&gt;
-&lt;p&gt;여기까지 이터러블의 모습까지 확인해보았고 다음으로는 이터레이터를 확인해보자.&lt;/p&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;arr[Symbol.iterator]&lt;/code&gt;는 함수이다. 그렇다면 &lt;code class=&quot;language-text&quot;&gt;arr[Symbol.iterator]()&lt;/code&gt;를 한다면 반환되는 것은 이터레이터가 될 것이다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;
-      &lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; arrIter &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;Symbol&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;iterator&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-
-console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arrIter&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// Array Iterator {}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;p&gt;위 코드를 통해 반환된 것이 이터레이터 객체인 것을 확인했다.&lt;/p&gt;
-&lt;p&gt;이터레이터는 &lt;strong&gt;&lt;code class=&quot;language-text&quot;&gt;{ value, done }&lt;/code&gt; 객체를 반환하는 &lt;code class=&quot;language-text&quot;&gt;next()&lt;/code&gt; 메소드를 가진 객체&lt;/strong&gt;라고 했었는데 &lt;code class=&quot;language-text&quot;&gt;next()&lt;/code&gt; 메소드를 확인해보자.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;
-      &lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arrIter&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// {value: 1, done: false}&lt;/span&gt;
-console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arrIter&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// {value: 2, done: false}&lt;/span&gt;
-console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arrIter&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// {value: 3, done: false}&lt;/span&gt;
-console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arrIter&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// {value: undefined, done: true}&lt;/span&gt;
-console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arrIter&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// {value: undefined, done: true}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;p&gt;보는 것과 같이 &lt;code class=&quot;language-text&quot;&gt;{ value, done }&lt;/code&gt; 객체가 반환 된 것을 볼 수 있다.
-value값이 있을 때는 done이 false를 가지고, 이제 순회할 것이 없는 상황에는 done이 true를 가진다.&lt;/p&gt;
-&lt;p&gt;또 다른 예제를 살펴보자.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;
-      &lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; arrIter2 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;iterator&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-
-arrIter2&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; v &lt;span class=&quot;token keyword&quot;&gt;of&lt;/span&gt; arrIter2&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-	console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;v&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;// 2 3&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;p&gt;반복문 전에 &lt;code class=&quot;language-text&quot;&gt;next()&lt;/code&gt;를 한번 해서 첫번째 값은 출력이 안된 모습을 확인 할 수 있다.&lt;/p&gt;
-&lt;h2&gt;사용자 정의 iterable protocol&lt;/h2&gt;
-&lt;p&gt;이터러블 프로토콜을 따라서 또한 순회 동작을 사용자 정의할 수 있다는 점이 이터러블을 활용하는데 있어 중요한 의의를 가진다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;
-      &lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;reverseIterable&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;Symbol&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;iterator&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; a&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-
-      &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;token function&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-          &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; value&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;undefined&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; done&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; value&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; done&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;Symbol&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;iterator&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-          &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; reverseArr &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;reverseIterable&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arr&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; v &lt;span class=&quot;token keyword&quot;&gt;of&lt;/span&gt; reverseArr&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;v&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// 3 2 1&lt;/span&gt;
-
-&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; reverseArrIter &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; reverseArr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;Symbol&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;iterator&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;reverseArrIter&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// {value: 3, done: false}&lt;/span&gt;
-&lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; v &lt;span class=&quot;token keyword&quot;&gt;of&lt;/span&gt; reverseArrIter&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;v&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// 2 1&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;p&gt;위 코드는 일반적인 이터러블 순회를 반대 순서로 순회가 되도록 바꿔 본 커스텀 이터러블이다.&lt;/p&gt;
-&lt;p&gt;부분적으로 자세히 살펴보자.&lt;/p&gt;
-&lt;p&gt;이터러블은 &lt;strong&gt;이터레이터를 반환 &lt;code class=&quot;language-text&quot;&gt;Symbol.iterator&lt;/code&gt;의 키값의 메소드를 가진 객체&lt;/strong&gt;라 했었으니
-아래와 같이 &lt;code class=&quot;language-text&quot;&gt;return { [Symbol.iterator](){...} }&lt;/code&gt; 와 같이 시작할 것이다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;
-      &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const reverseIterable = (a) =&amp;gt; {
-  return {
-    [Symbol.iterator]() {
-      // ... 
-    }
-  };
-};&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;p&gt;또한 이터레이터는 &lt;strong&gt;&lt;code class=&quot;language-text&quot;&gt;{ value, done }&lt;/code&gt; 객체를 반환하는 &lt;code class=&quot;language-text&quot;&gt;next()&lt;/code&gt; 메소드를 가진 객체&lt;/strong&gt;라 했었으니 아래와 같은 구조여야한다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;
-      &lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;reverseIterable&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;Symbol&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;iterator&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;token function&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; value&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;...&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; done&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;...&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;p&gt;이렇게 여기까지 작성한 코드는 아래와 같다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;
-      &lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;reverseIterable&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;Symbol&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;iterator&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; a&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-
-      &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;token function&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-          &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; value&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;undefined&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; done&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; value&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; done&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;p&gt;이터러블/이터레이터 프로토콜의 조건을 모두 갖춘 것 같다.
-맨 위의 완성된 코드가 아닌 바로 위의 코드로 한번 아래 코드를 실행해보자&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;
-      &lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; reverseArr &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;reverseIterable&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arr&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; v &lt;span class=&quot;token keyword&quot;&gt;of&lt;/span&gt; reverseArr&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;v&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// 3 2 1&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;p&gt;정상적으로 원하는 동작이 된 것 같다.
-하지만 아래의 방법으로 실행해보면 에러가 발생한다&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;
-      &lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; reverseArrIter &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; reverseArr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;Symbol&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;iterator&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-
-console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;reverseArrIter&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// {value: 3, done: false}&lt;/span&gt;
-
-&lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; v &lt;span class=&quot;token keyword&quot;&gt;of&lt;/span&gt; reverseArrIter&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;v&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;// Uncaught TypeError: reverseArrIter is not iterable&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;p&gt;그 이유는 &lt;code class=&quot;language-text&quot;&gt;reverseArr&lt;/code&gt;의 경우에는 사용자가 정의한  &lt;code class=&quot;language-text&quot;&gt;[Symbol.iterator]()&lt;/code&gt;를 가지고 있어 이터러블하지만 &lt;code class=&quot;language-text&quot;&gt;reverseArr[Symbol.iterator]()&lt;/code&gt;를 통해 만든 이터레이터&lt;code class=&quot;language-text&quot;&gt;reverseArrIter&lt;/code&gt;는 이터레이터의 조건인 &lt;strong&gt;&lt;code class=&quot;language-text&quot;&gt;{ value, done }&lt;/code&gt; 객체를 반환하는 &lt;code class=&quot;language-text&quot;&gt;next()&lt;/code&gt; 메소드를 가진 객체&lt;/strong&gt;는 만족하지만 내부(프로토타입 체인)에 &lt;code class=&quot;language-text&quot;&gt;[Symbol.iterator]()&lt;/code&gt;를 가지고 있지 않아 이터러블 하지 않기 때문이다.&lt;/p&gt;
-&lt;p&gt;console.dir을 이용해 위에서 사용한 &lt;code class=&quot;language-text&quot;&gt;arrIter&lt;/code&gt;를 살펴보면 내부에 &lt;code class=&quot;language-text&quot;&gt;[Symbol.iterator]()&lt;/code&gt;를 가지고 있고 &lt;code class=&quot;language-text&quot;&gt;reverseArrIter&lt;/code&gt;는 그렇지 않은 것을 확인 할 수 있다.&lt;/p&gt;
-&lt;p&gt;따라서 코드에서 &lt;code class=&quot;language-text&quot;&gt;next()&lt;/code&gt;와 함께 &lt;code class=&quot;language-text&quot;&gt;[Symbol.iterator]() { return this }&lt;/code&gt;를 리턴해 이터러블하게 해준 것이라 할 수 있다.&lt;/p&gt;
-&lt;p&gt;이러하게 이터러블 프로토콜을 사용자 정의해서 사용할 수 있다면 순회 동작에 사용자가 원하는 동작을 넣을 수도 있고 더 나아가 원래 이터러블하지 않는 것조차 순회가 가능하게 이터러블하게 만들어 순회할 수 있게 될 수 있다.&lt;/p&gt;
-&lt;h3&gt;제너레이터&lt;/h3&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;
-      &lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;gen&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;token keyword&quot;&gt;yield&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;yield&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;token keyword&quot;&gt;yield&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; gIter &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;gen&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-
-console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;gIter&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; 
-&lt;span class=&quot;token comment&quot;&gt;// {value: 1, done: false}&lt;/span&gt;
-
-console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;gIter&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;Symbol&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;iterator&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;// ƒ [Symbol.iterator]() { [native code] }&lt;/span&gt;
-
-&lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; v &lt;span class=&quot;token keyword&quot;&gt;of&lt;/span&gt; gIter&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;v&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;p&gt;제너레이터의 실행 결과인 제너레이터 객체는 이터레이터 객체이다.
-위 코드에서 &lt;code class=&quot;language-text&quot;&gt;gIter.next()&lt;/code&gt;가 가능한 것을 보면 알 수 있다.
-또한 &lt;code class=&quot;language-text&quot;&gt;[Symbol.iterator]()&lt;/code&gt;를 가지는 이터러블이기도 하다.&lt;/p&gt;
-&lt;p&gt;제너레이터 객체는 이터레이터이자 이터러블이기 때문에 역시 순회가 가능하다.
-또한 제너레이터에는 마지막에 리턴 값을 만들 수 있다. 하지만 &lt;code class=&quot;language-text&quot;&gt;done&lt;/code&gt; 또한 &lt;code class=&quot;language-text&quot;&gt;ture&lt;/code&gt;가 되기 때문에 &lt;strong&gt;순회의 대상이 되진 않는다.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;이러한 제너레이터를 이용하면 위에서 사용자 정의 이터러블을 해본 것을 더 간단하게 바꿀 수 있다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;
-      &lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;gen2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; a&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-
-  &lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;i&lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;token keyword&quot;&gt;yield&lt;/span&gt; a&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; g2Iter &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;gen2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;g2Iter&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// {value: 3, done: false} &lt;/span&gt;
-console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;g2Iter&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// {value: 2, done: false}&lt;/span&gt;
-console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;g2Iter&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// {value: 1, done: false}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;h2&gt;정리&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;이터러블 프로토콜: 순회(반복) 가능한 객체를 나타내는 프로토콜, 이터러블이면 순회가 가능하다.&lt;/li&gt;
-&lt;li&gt;이터러블: 이터레이터를 반환하는 &lt;code class=&quot;language-text&quot;&gt;Symbol.iterator&lt;/code&gt;라는 키값의 메소드를 가진 객체&lt;/li&gt;
-&lt;li&gt;이터레이터: &lt;code class=&quot;language-text&quot;&gt;{ value, done }&lt;/code&gt; 객체를 반환하는 &lt;code class=&quot;language-text&quot;&gt;next()&lt;/code&gt; 메소드를 가진 객체&lt;/li&gt;
-&lt;li&gt;이터러블 프로토콜을 사용자 정의 할 수 있음에 따라 원하는 객체를 지정한 동작에 따라 순회할 수 있게 되어 원하는 값을 추출해내고 다양한 객체에 이를 적용해 결과를 얻을 수 있게 되었다.&lt;/li&gt;
-&lt;li&gt;기본적으로 반복이 가능한 것으로는 (iterable이 내장되어있다) String, Array, TypedArray, Map, Set가 있다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;p&gt;References&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Iteration_protocols#iterable&quot; title=&quot;MDN | The iterable protocol&quot;&gt;MDN | The iterable protocol&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://ahnheejong.gitbook.io/ts-for-jsdev/02-ecmascript/element-enumeration/iterable-protocol&quot;&gt;https://ahnheejong.gitbook.io/ts-for-jsdev/02-ecmascript/element-enumeration/iterable-protocol&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item></channel></rss>
