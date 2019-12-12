@@ -4,7 +4,7 @@ import Helmet from 'react-helmet';
 import { StaticQuery, graphql, Link } from 'gatsby';
 import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome';
 import { faTags, faSearch, faFileAlt, faRssSquare } from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faInstagram, faLinkedin, faFacebook } from '@fortawesome/free-brands-svg-icons';
 
 import './index.scss';
 import Footer from './Footer';
@@ -37,14 +37,15 @@ const Layout = ({ children, data, location }) => (
             display: 'none',
           };
         }
-        if (!bioShow) {
-          logoStyle = {
-            ...logoStyle,
-            width: '1.5rem',
-            height: '1.5rem',
-            marginRight: '0.1rem',
-          };
-        }
+        /** 가로 헤더 구현 중 임시 비활성화 */
+        // if (!bioShow) {
+        //   logoStyle = {
+        //     ...logoStyle,
+        //     width: '1.5rem',
+        //     height: '1.5rem',
+        //     marginRight: '0.1rem',
+        //   };
+        // }
         return logoStyle;
       };
       const logoStyle = setLogoStyle(config.titleLogoShow, config.bioShow);
@@ -123,17 +124,31 @@ const Layout = ({ children, data, location }) => (
               </nav>
 
               <div className="social">
-                <a href="http://" target="_blank" rel="noopener noreferrer">
-                  <Fa icon={faGithub} />
-                </a>
-
-                <a href="http://" target="_blank" rel="noopener noreferrer">
-                  <Fa icon={faInstagram} />
-                </a>
-
-                <a href="http://" target="_blank" rel="noopener noreferrer">
-                  <Fa icon={faRssSquare} />
-                </a>
+                {!config.github ? null : (
+                  <a href={config.github} target="_blank" rel="noopener noreferrer">
+                    <Fa icon={faGithub} />
+                  </a>
+                )}
+                {!config.linkedin ? null : (
+                  <a href={config.linkedin} target="_blank" rel="noopener noreferrer">
+                    <Fa icon={faLinkedin} />
+                  </a>
+                )}
+                {!config.facebook ? null : (
+                  <a href={config.facebook} target="_blank" rel="noopener noreferrer">
+                    <Fa icon={faFacebook} />
+                  </a>
+                )}
+                {!config.instagram ? null : (
+                  <a href={config.instagram} target="_blank" rel="noopener noreferrer">
+                    <Fa icon={faInstagram} />
+                  </a>
+                )}
+                {!config.instagram ? null : (
+                  <a href={`${config.siteUrl}/rss`} target="_blank" rel="noopener noreferrer">
+                    <Fa icon={faRssSquare} />
+                  </a>
+                )}
               </div>
             </header>
 

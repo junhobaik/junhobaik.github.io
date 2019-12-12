@@ -11,6 +11,11 @@ let config = {
   titleLogoShow: true,
   bio: 'Jr. FRONT-END DEVELOPER',
   bioShow: true,
+  // social URL
+  github: 'https://github.com/junhobaik',
+  linkedin: '',
+  facebook: '',
+  instagram: 'https://www.instagram.com/junhobaik/',
 
   // # Addtional
   googleAnalyticsTrackingId: 'UA-103592668-4',
