@@ -6,6 +6,7 @@ $header-height-small: 3rem;
 
 // global style
 html {
+  overscroll-behavior-y: none;
   background-color: $header-background-color;
   line-height: 1.666 !important;
   @media screen and (max-width: $break-small) {
@@ -23,7 +24,6 @@ html {
 #wrap {
   display: flex;
   flex-direction: column;
-  padding-top: $header-height;
   min-height: 100vh;
   background-color: $article-background-color;
   @media screen and (max-width: $break-medium) {
@@ -39,21 +39,25 @@ html {
   position: fixed;
   top: 0;
   z-index: 99;
-  min-width: 100%;
-  height: $header-height;
   box-sizing: border-box;
   flex-direction: row;
   background-color: $header-background-color;
-  padding: 0 10%;
-  align-items: center;
   border-bottom: $header-border-bottom;
   border-top: $header-border-top;
   box-shadow: $header-box-shadow;
+  flex-direction: column;
+  height: 100vh;
+  width: 15rem;
+  padding-top: 3rem;
 
   @media screen and (max-width: $break-medium) {
+    align-items: center;
+    flex-direction: row;
+    width: 100vw;
     padding: 0 5%;
     height: $header-height-medium;
   }
+
   @media screen and (max-width: $break-small) {
     padding: 0 1rem;
     height: $header-height-small;
@@ -67,26 +71,42 @@ html {
     display: flex;
     padding: 0;
     margin: 0;
+
     .title-wrap {
       max-height: inherit;
       height: inherit;
+
       & > a {
         display: flex;
         height: inherit;
         max-height: inherit;
         min-height: 100%;
         flex-grow: 1;
-        flex-direction: row;
+        flex-direction: column;
         border-bottom: $header-title-border;
         border-top: $header-title-border;
-        align-items: center;
+        margin-left: 1.5rem;
+
+        @media screen and (max-width: $break-medium) {
+          margin-left: 0;
+          align-items: center;
+          flex-direction: row;
+        }
 
         .logo-img {
-          height: 3rem;
-          width: 3rem;
-          margin-right: 0.5rem;
+          height: 7rem;
+          width: 7rem;
           padding: 0.1rem;
-          margin-bottom: 0.1rem;
+          margin-bottom: 1rem;
+          align-self: center;
+
+          @media screen and (max-width: $break-medium) {
+            align-self: flex-start;
+            margin-right: 0.5rem;
+            margin-bottom: 0.1rem;
+            height: 3rem;
+            width: 3rem;
+          }
           @media screen and (max-width: $break-small) {
             height: 1.5rem;
             width: 1.5rem;
@@ -119,9 +139,16 @@ html {
           h1,
           p {
             margin: 0;
+            font-size: 0.9rem;
+            @media screen and (max-width: $break-medium) {
+              font-size: 1rem;
+            }
           }
           h1 {
-            font-size: 1.2rem;
+            font-size: 1rem;
+            @media screen and (max-width: $break-medium) {
+              font-size: 1.2rem;
+            }
           }
         }
       }
@@ -131,18 +158,29 @@ html {
   .menu {
     display: flex;
     flex-grow: 1;
-    flex-direction: row;
+    flex-direction: column;
     font-size: 1.1rem;
-    justify-content: flex-end;
-    margin-top: 1rem;
+    // justify-content: center;
+    margin-top: 3rem;
+
+    @media screen and (max-width: $break-medium) {
+      margin-top: 1rem;
+      justify-content: flex-end;
+      flex-direction: row;
+    }
 
     @media screen and (max-width: $break-small) {
       margin-top: 0;
     }
 
     & > div {
+      display: inline-flex;
       margin-left: 1.5rem;
       transition: all 0.1s ease-in-out;
+
+      @media screen and (max-width: $break-medium) {
+        display: block;
+      }
 
       @media screen and (max-width: $break-small) {
         span {
@@ -171,13 +209,30 @@ html {
       }
     }
   }
+
+  .social {
+    display: flex;
+    margin-bottom: 3rem;
+    justify-content: center;
+
+    a {
+      margin: 0.5rem;
+      svg {
+        font-size: 1.5rem;
+      }
+    }
+
+    @media screen and (max-width: $break-medium) {
+      display: none;
+    }
+  }
 }
 
 #content {
   color: $article-font-color;
-  width: 70vw;
-  margin: 0 15vw;
-  padding: 2rem;
+  width: calc(100vw - 15rem);
+  margin-left: 15rem;
+  padding: 2rem 10% 2rem 5%;
 
   @media screen and (max-width: $break-medium) {
     width: 90vw;
@@ -192,16 +247,22 @@ html {
 }
 
 #footer {
-  display: flex;
-  min-height: 2rem;
-  max-height: 4rem;
-  align-items: center;
-  border-top: $footer-border-top;
-  padding: 0 2rem;
+  display: none;
 
+  @media screen and (max-width: $break-medium) {
+    display: flex;
+    height: 2.2rem;
+    align-items: center;
+    border-top: $footer-border-top;
+    padding: 0 2rem;
+    margin-left: 15rem;
+    z-index: 5;
+    margin-left: 0;
+  }
   @media screen and (max-width: $break-small) {
     text-align: center;
   }
+
   .copyright {
     font-size: 1rem;
     color: $header-font-color;

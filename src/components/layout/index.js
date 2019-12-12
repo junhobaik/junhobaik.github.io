@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql, Link } from 'gatsby';
 import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome';
-import { faTags, faSearch, faFileAlt } from '@fortawesome/free-solid-svg-icons';
+import { faTags, faSearch, faFileAlt, faRssSquare } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 import './index.scss';
 import Footer from './Footer';
@@ -120,6 +121,20 @@ const Layout = ({ children, data, location }) => (
                   </Link>
                 </div>
               </nav>
+
+              <div className="social">
+                <a href="http://" target="_blank" rel="noopener noreferrer">
+                  <Fa icon={faGithub} />
+                </a>
+
+                <a href="http://" target="_blank" rel="noopener noreferrer">
+                  <Fa icon={faInstagram} />
+                </a>
+
+                <a href="http://" target="_blank" rel="noopener noreferrer">
+                  <Fa icon={faRssSquare} />
+                </a>
+              </div>
             </header>
 
             <div id="content">{children}</div>

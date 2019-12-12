@@ -9,7 +9,7 @@ let config = {
     return require('./src/images/profile.png');
   },
   titleLogoShow: true,
-  bio: 'Jr. FRONT END DEVELOPER',
+  bio: 'Jr. FRONT-END DEVELOPER',
   bioShow: true,
 
   // # Addtional
