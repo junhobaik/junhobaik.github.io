@@ -137,7 +137,7 @@ if (process.env.NODE_ENV === 'development') {
   configs.plugins.push({
     resolve: `gatsby-source-filesystem`,
     options: {
-      path: `${__dirname}/_posts`,
+      path: `${__dirname}/_drafts`,
       name: 'markdown-pages',
     },
   });
