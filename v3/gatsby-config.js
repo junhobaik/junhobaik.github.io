@@ -1,9 +1,12 @@
+const config = require('./config');
+const { title, titleTemplate, description, author } = config;
+
 module.exports = {
   siteMetadata: {
-    title: `JB Blog`,
-    titleTemplate: "%s · JB",
-    description: `Junho Baik's Development Blog`,
-    author: `Junho Baik`,
+    title,
+    titleTemplate,
+    description,
+    author,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -39,4 +42,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
+};
