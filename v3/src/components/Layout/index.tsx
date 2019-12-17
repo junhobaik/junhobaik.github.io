@@ -6,7 +6,6 @@
  */
 
 import * as React from 'react';
-import { useState, useEffect } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Helmet from 'react-helmet';
 
@@ -20,7 +19,6 @@ export interface LayoutPropsType {
 
 const Layout = (props: LayoutPropsType) => {
   const { children } = props;
-  const [currentPath, setCurrentPath] = useState('');
 
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -32,10 +30,6 @@ const Layout = (props: LayoutPropsType) => {
     }
   `);
 
-  useEffect(() => {
-    setCurrentPath(window.location.pathname);
-  }, [window.location.pathname]);
-
   return (
     <>
       <Helmet>
@@ -45,7 +39,7 @@ const Layout = (props: LayoutPropsType) => {
         />
       </Helmet>
 
-      <Header siteTitle={data.site.siteMetadata.title} path={currentPath} />
+      <Header siteTitle={data.site.siteMetadata.title} />
       <div id="content">
         <main>{children}</main>
         <footer>

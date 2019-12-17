@@ -10,13 +10,25 @@ const config = require('../../config');
 
 export interface headerPropsType {
   siteTitle: String;
-  path: String;
 }
 
 const Header = (props: headerPropsType) => {
-  const { siteTitle, path } = props;
+  const { siteTitle } = props;
   const [, setYPos] = useState(0);
   const [isHide, setIsHide] = useState(false);
+
+  useEffect(() => {
+    const profile: HTMLImageElement | null = document.querySelector(
+      '.header-profile-image-wrap>img'
+    );
+
+    if (profile) {
+      profile.style.width = window.location.pathname !== '/' ? '25px' : '50px';
+      profile.style.height = window.location.pathname !== '/' ? '25px' : '50px';
+      profile.style.transition =
+        window.location.pathname !== '/' ? 'all 1s' : 'all 0.5s';
+    }
+  }, [window.location.pathname]);
 
   useEffect(() => {
     document.addEventListener('scroll', () => {
@@ -43,14 +55,13 @@ const Header = (props: headerPropsType) => {
     <header id="Header" className={isHide ? 'hide' : 'show'}>
       <div className="header-title">
         <Link to="/">
-          <div
-            className={`header-profile-image-wrap ${
-              path !== '/' ? 'normal' : 'big'
-            }`}
-          >
+          <div className="header-profile-image-wrap">
             <img
               src={require(`../../images/${config.profileImageFileName}`)}
               alt="title profile picture"
+              // "25px"로 고정하면 "/"로 갈때만 transition이 작동
+              width={window.location.pathname === '/' ? '25px' : '50px'}
+              height={window.location.pathname === '/' ? '25px' : '50px'}
             />
           </div>
         </Link>
