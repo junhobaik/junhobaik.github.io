@@ -1,11 +1,11 @@
 @import '../../utils/variables.scss';
 
 #Header {
+  display: flex;
   position: fixed;
+  top: 0;
   z-index: 2;
   width: 100%;
-  top: 0;
-  display: flex;
   align-items: flex-end;
   justify-content: space-between;
   padding: 0.5rem 2rem 1rem 2rem;
@@ -35,20 +35,33 @@
       display: flex;
       align-items: center;
       border: 1px solid #aaa;
-      padding: 1px;
+      padding: 2px;
+
       border-radius: 100%;
       margin-right: 0.25rem;
 
       img {
         border-radius: 100%;
         margin: 0;
-        width: 25px;
-        height: 25px;
         opacity: 0.8;
-        transition: 0.2s;
+        transition: all 0.5s ease-in-out;
 
         &:hover {
           opacity: 1;
+        }
+      }
+
+      &.big {
+        img {
+          width: 50px;
+          height: 50px;
+        }
+      }
+
+      &.normal {
+        img {
+          width: 25px;
+          height: 25px;
         }
       }
     }

@@ -10,10 +10,11 @@ const config = require('../../config');
 
 export interface headerPropsType {
   siteTitle: String;
+  path: String;
 }
 
 const Header = (props: headerPropsType) => {
-  const { siteTitle } = props;
+  const { siteTitle, path } = props;
   const [, setYPos] = useState(0);
   const [isHide, setIsHide] = useState(false);
 
@@ -42,7 +43,11 @@ const Header = (props: headerPropsType) => {
     <header id="Header" className={isHide ? 'hide' : 'show'}>
       <div className="header-title">
         <Link to="/">
-          <div className="header-profile-image-wrap">
+          <div
+            className={`header-profile-image-wrap ${
+              path !== '/' ? 'normal' : 'big'
+            }`}
+          >
             <img
               src={require(`../../images/${config.profileImageFileName}`)}
               alt="title profile picture"
@@ -60,7 +65,7 @@ const Header = (props: headerPropsType) => {
           <li>
             <div className="tag-wrap">
               <span>TAG</span>
-              <Link to="/">
+              <Link to="/page-2">
                 <Fa
                   icon={faTags}
                   onMouseEnter={() => {
