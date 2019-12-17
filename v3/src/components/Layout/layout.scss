@@ -1,11 +1,15 @@
-#Header {
-  border: 1px solid red;
+@import '../../utils/variables.scss';
+
+html,
+body {
+  color: $font-color-0;
 }
 
-#content {
-  border: 1px solid red;
-}
+a {
+  color: $font-color-0;
+  text-decoration: none;
 
-footer {
-  border: 1px solid red;
+  &:active {
+    color: $font-color-0;
+  }
 }

@@ -16,7 +16,7 @@ const googleFont = [
     name: 'Noto Serif KR',
     bold: [300, 400, 700],
   },
-  { name: 'Roboto mono' },
+  { name: 'Raleway' },
 ]
   .map(v => {
     if (v.bold) {

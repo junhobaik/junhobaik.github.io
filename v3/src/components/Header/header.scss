@@ -3,23 +3,66 @@
 #Header {
   display: flex;
   align-items: flex-end;
-  height: $header-height;
-  max-height: $header-height;
-  padding: 0.5rem 1rem 1rem 1rem;
+  justify-content: space-between;
+  padding: 0.5rem 2rem 1rem 2rem;
 
-  a {
-    color: black;
-    text-decoration: none;
+  .header-title {
+    display: flex;
+    align-items: flex-end;
+    height: $header-height;
+    max-height: $header-height;
 
-    &:active {
-      color: black;
+    .header-title {
+      display: flex;
+      align-items: center;
+    }
+
+    .header-profile-image-wrap {
+      display: flex;
+      align-items: center;
+      border: 1px solid #aaa;
+      padding: 1px;
+      border-radius: 100%;
+      margin-right: 0.25rem;
+
+      img {
+        border-radius: 100%;
+        margin: 0;
+        width: 25px;
+        height: 25px;
+        opacity: 0.8;
+        transition: 0.2s;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+
+    .header-title-text {
+      margin: 0;
+      font-size: 1.6rem;
+      font-weight: normal;
+      font-family: 'Raleway', 'Nanum Gothic';
+      opacity: 0.9;
+      transition: 0.3s;
+
+      &:hover {
+        opacity: 1;
+      }
     }
   }
+}
 
-  .header__title-text {
+#nav {
+  ul {
+    display: flex;
     margin: 0;
-    font-size: 1.6rem;
-    font-weight: normal;
-    font-family: 'Roboto mono';
+
+    li {
+      list-style: none;
+      margin: 0;
+      margin-right: 0.5rem;
+    }
   }
 }

@@ -1,8 +1,8 @@
-const config = require('./config');
-const { title, titleTemplate, description, author } = config;
+const config = require('./src/config');
+const { title, description, author } = config;
 
 module.exports = {
-  siteMetadata: { title, titleTemplate, description, author },
+  siteMetadata: { title, description, author },
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
