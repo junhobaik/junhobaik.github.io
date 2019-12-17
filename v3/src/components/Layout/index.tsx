@@ -8,10 +8,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
+import Helmet from 'react-helmet';
 
 import Header from '../Header';
-import './layout_default.scss';
 import './layout.scss';
+import { googleFont } from '../../utils/typography';
 
 export interface LayoutPropsType {
   children: Object;
@@ -32,6 +33,13 @@ const Layout = (props: LayoutPropsType) => {
 
   return (
     <>
+      <Helmet>
+        <link
+          href={`https://fonts.googleapis.com/css?family=${googleFont}`}
+          rel="stylesheet"
+        />
+      </Helmet>
+
       <Header siteTitle={data.site.siteMetadata.title} />
       <div id="content">
         <main>{children}</main>

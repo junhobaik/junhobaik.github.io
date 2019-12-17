@@ -1,17 +1,31 @@
 import Typography from 'typography';
 
 const typography = new Typography({
-  baseFontSize: '18px',
+  baseFontSize: '16px',
   baseLineHeight: 1.666,
-  headerFontFamily: [
-    'Avenir Next',
-    'Helvetica Neue',
-    'Segoe UI',
-    'Helvetica',
-    'Arial',
-    'sans-serif',
-  ],
-  bodyFontFamily: ['Georgia', 'serif'],
+  headerFontFamily: ['Nanum Gothic'],
+  bodyFontFamily: ['Noto Serif KR'],
 });
 
-export default typography;
+const googleFont = [
+  {
+    name: 'Nanum Gothic',
+    bold: [400, 700],
+  },
+  {
+    name: 'Noto Serif KR',
+    bold: [300, 400, 700],
+  },
+  { name: 'Roboto mono' },
+]
+  .map(v => {
+    if (v.bold) {
+      return `${v.name.replace(/ /gi, '+')}:${v.bold.toString()}`;
+    } else {
+      return `${v.name.replace(/ /gi, '+')}`;
+    }
+  })
+  .join('|')
+  .toString();
+
+export { googleFont, typography as default };
