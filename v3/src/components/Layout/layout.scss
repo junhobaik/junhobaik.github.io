@@ -2,6 +2,7 @@
 
 html,
 body {
+  overscroll-behavior-y: none;
   color: $font-color-0;
 }
 
@@ -11,5 +12,21 @@ a {
 
   &:active {
     color: $font-color-0;
+  }
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  padding-top: $header-height;
+  min-height: 100vh;
+
+  main {
+    flex-grow: 1;
+  }
+
+  footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.25rem 2rem 0.25rem 2rem;
   }
 }
