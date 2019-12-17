@@ -1,6 +1,7 @@
+import * as React from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
-import * as React from 'react';
 import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome';
 import { faTags, faSearch } from '@fortawesome/free-solid-svg-icons';
 
@@ -13,6 +14,20 @@ export interface headerPropsType {
 
 const Header = (props: headerPropsType) => {
   const { siteTitle } = props;
+  const [, setYPos] = useState(0);
+  const [isHide, setIsHide] = useState(false);
+
+  useEffect(() => {
+    document.addEventListener('scroll', () => {
+      setYPos(prevYPos => {
+        const currentYPos = window.pageYOffset;
+
+        setIsHide(prevYPos < currentYPos);
+
+        return currentYPos;
+      });
+    });
+  }, []);
 
   const tagSpanVisibleToggle = (isVisible: boolean) => {
     const tag: HTMLSpanElement | null = document.querySelector(
@@ -24,7 +39,7 @@ const Header = (props: headerPropsType) => {
   };
 
   return (
-    <header id="Header">
+    <header id="Header" className={isHide ? 'hide' : 'show'}>
       <div className="header-title">
         <Link to="/">
           <div className="header-profile-image-wrap">
