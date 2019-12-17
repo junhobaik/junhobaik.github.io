@@ -62,7 +62,50 @@
     li {
       list-style: none;
       margin: 0;
-      margin-right: 0.5rem;
+      margin-left: 1rem;
+
+      svg {
+        margin: 0;
+        font-size: 1.2rem;
+        color: #666;
+        transition: 0.3s;
+        opacity: 0.5;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+
+      span {
+        font-family: 'Raleway', 'Nanum Gothic';
+      }
+
+      .search-wrap,
+      .tag-wrap {
+        display: flex;
+        align-items: center;
+        height: 1.5rem;
+
+        svg {
+          margin-top: 3px;
+        }
+      }
+
+      .tag-wrap {
+        position: relative;
+
+        span {
+          position: absolute;
+          left: -2.7rem;
+          color: #ababab;
+          // border: 1px solid #dfdfdf;
+          border-radius: 10px;
+          padding-right: 2rem;
+          padding-left: 0.5rem;
+          opacity: 0;
+          transition: 0.5s;
+          user-select: none;
+        }
+      }
     }
   }
 }
