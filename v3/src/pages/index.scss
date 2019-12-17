@@ -1,0 +1,61 @@
+.bio {
+  max-width: 20rem;
+  padding-left: 2rem;
+
+  .comment {
+    // text-align: right;
+    margin-bottom: 1rem;
+  }
+
+  p,
+  span {
+    display: block;
+    margin: 0;
+    font-size: 0.9rem;
+
+    svg {
+      width: 1.5rem !important;
+      color: #6a737d;
+    }
+  }
+
+  .social {
+    margin-left: 0.2rem;
+    margin-top: 2rem;
+
+    svg {
+      font-size: 1.3rem;
+    }
+
+    a {
+      margin-right: 0.5rem;
+
+      .linkedin,
+      .facebook,
+      .instagram,
+      .github,
+      .rss {
+        color: #6a737d;
+        transition: color 0.3s;
+      }
+
+      &:hover {
+        .rss {
+          color: rgb(226, 143, 72);
+        }
+        .linkedin {
+          color: #0077b5;
+        }
+        .facebook {
+          color: #1877f2;
+        }
+        .instagram {
+          color: #e4405f;
+        }
+        .github {
+          color: #181717;
+        }
+      }
+    }
+  }
+}
