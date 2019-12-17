@@ -2,12 +2,7 @@ const config = require('./config');
 const { title, titleTemplate, description, author } = config;
 
 module.exports = {
-  siteMetadata: {
-    title,
-    titleTemplate,
-    description,
-    author,
-  },
+  siteMetadata: { title, titleTemplate, description, author },
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
@@ -38,6 +33,8 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+    `gatsby-plugin-typescript`,
+
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
