@@ -21,7 +21,7 @@ const IndexPage = (props: IndexPageProps) => {
       <div className="index-wrap">
         <Bio />
         <div className="index-post-list-wrap">
-        <PostList posts={posts} />
+          <PostList posts={posts} />
         </div>
       </div>
     </Layout>
@@ -42,7 +42,7 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-            date(formatString: "YYYY.MM.DD")
+            date(formatString: "MMM DD, YYYY")
             title
             tags
             published
