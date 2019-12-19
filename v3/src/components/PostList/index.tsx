@@ -33,9 +33,10 @@ const PostList = (props: PostListProps) => {
         </h2>
         <div className="info">
           <span className="date">{date}</span>
+          <span>·</span>
           <ul className="tag-list">{mapTag}</ul>
         </div>
-        <span>{excerpt}</span>
+        <span className="excerpt">{excerpt}</span>
       </li>
     );
   });
