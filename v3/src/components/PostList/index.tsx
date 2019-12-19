@@ -16,13 +16,18 @@ const PostList = (props: PostListProps) => {
     const { slug } = fields;
     const { date, title, tags } = frontmatter;
 
-    const mapTag = tags.map((tag: String) => {
+    const mapTag = tags.map((tag: String, i: number) => {
+      if (tag === 'Empty Tag') return;
+
       return (
-        <li key={`${slug}-${tag}`} className="tag">
-          <span>
-            <Link to={`/tag/${tag}`}>{`#${tag}`}</Link>
-          </span>
-        </li>
+        <>
+          {i === 0 ? <span>·</span> : null}
+          <li key={`${slug}-${tag}`} className="tag">
+            <span>
+              <Link to={`/tag/${tag}`}>{`#${tag}`}</Link>
+            </span>
+          </li>
+        </>
       );
     });
 
@@ -33,7 +38,6 @@ const PostList = (props: PostListProps) => {
         </h2>
         <div className="info">
           <span className="date">{date}</span>
-          <span>·</span>
           <ul className="tag-list">{mapTag}</ul>
         </div>
         <span className="excerpt">{excerpt}</span>

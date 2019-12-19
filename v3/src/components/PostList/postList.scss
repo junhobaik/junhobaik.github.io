@@ -27,10 +27,10 @@
     }
 
     & > :nth-child(1) {
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.4rem;
     }
     & > :nth-child(2) {
-      margin-bottom: 0.75rem;
+      margin-bottom: 0.5rem;
     }
 
     .title {
@@ -42,12 +42,12 @@
       color: rgba(0, 0, 0, 0.54);
       font-size: 0.9rem;
 
-      & > :nth-child(2) {
-        margin: 0 0.25rem;
-      }
-
       .tag-list {
         display: flex;
+
+        & > span {
+          margin: 0 0.25rem;
+        }
 
         .tag {
           margin-right: 0.5rem;
@@ -60,7 +60,7 @@
 
     .excerpt {
       display: -webkit-box;
-      color: rgba(0, 0, 0, 0.84);
+      color: rgba(0, 0, 0, 0.74);
       width: calc(640px - 2rem);
       overflow: hidden;
       -webkit-line-clamp: 2;
