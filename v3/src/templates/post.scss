@@ -5,8 +5,14 @@
   & > div {
     max-width: 720px;
   }
+
   .blog-post {
     padding-top: 1rem;
+
+    a {
+      text-decoration-line: underline;
+    }
+
     .blog-post-title {
       font-size: 1.5rem;
       margin: 0;
