@@ -13,6 +13,10 @@ const googleFont = [
     bold: [400, 700],
   },
   {
+    name: 'Nanum Gothic Coding',
+    bold: [400, 700],
+  },
+  {
     name: 'Noto Serif KR',
     bold: [300, 400, 700],
   },
