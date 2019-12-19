@@ -9,13 +9,14 @@
   align-items: flex-end;
   justify-content: space-between;
   padding: 0.5rem 2rem 1rem 2rem;
-  background-color: #fff;
   height: $header-height;
   max-height: $header-height;
   transition: top 0.3s;
   transition-delay: 0.2s;
+  background-color: transparent;
 
   @media screen and (max-width: $break-l) {
+    background-color: #fff;
     padding: 0.5rem 1.25rem 1rem 1rem;
   }
   @media screen and (max-width: $break-m) {
