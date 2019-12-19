@@ -1,4 +1,5 @@
 import React from 'react';
+import { Fragment } from 'react';
 import { Link } from 'gatsby';
 
 import './postList.scss';
@@ -20,14 +21,14 @@ const PostList = (props: PostListProps) => {
       if (tag === 'Empty Tag') return;
 
       return (
-        <>
+        <Fragment key={`${slug}-${tag}-fragment`}>
           {i === 0 ? <span>·</span> : null}
-          <li key={`${slug}-${tag}`} className="tag">
+          <li className="tag">
             <span>
               <Link to={`/tag/${tag}`}>{`#${tag}`}</Link>
             </span>
           </li>
-        </>
+        </Fragment>
       );
     });
 
