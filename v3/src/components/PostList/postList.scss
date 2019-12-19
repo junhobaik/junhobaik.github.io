@@ -1,3 +1,5 @@
+@import '../../utils/variables.scss';
+
 .post-list {
   max-width: 640px;
 
@@ -14,12 +16,13 @@
   .post {
     display: flex;
     flex-direction: column;
+    max-width: inherit;
 
     padding: 3rem 1rem;
-    // box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 4px;
-    // border-radius: 5px;
-    // border: 1px solid rgba(0, 0, 0, 0.1);
-    // border-top: 1px solid rgba(0, 0, 0, 0.05);
+
+    @media screen and (max-width: $break-m) {
+      padding: 2rem 1rem;
+    }
 
     &:nth-child(1) {
       padding-top: 0;
@@ -28,13 +31,25 @@
 
     & > :nth-child(1) {
       margin-bottom: 0.4rem;
+
+      @media screen and (max-width: $break-m) {
+        margin-bottom: 0.2rem;
+      }
     }
     & > :nth-child(2) {
       margin-bottom: 0.5rem;
+
+      @media screen and (max-width: $break-m) {
+        margin-bottom: 0.25rem;
+      }
     }
 
     .title {
       font-size: 1.3rem;
+
+      @media screen and (max-width: $break-m) {
+        font-size: 1.1rem;
+      }
     }
 
     .info {
@@ -60,12 +75,16 @@
 
     .excerpt {
       display: -webkit-box;
-      color: rgba(0, 0, 0, 0.74);
-      width: calc(640px - 2rem);
       overflow: hidden;
+      color: rgba(0, 0, 0, 0.74);
+      max-width: calc(640px - 2rem);
       -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
       font-size: 0.95rem;
+
+      @media screen and (max-width: $break-m) {
+        font-size: 0.82rem;
+      }
     }
   }
 }

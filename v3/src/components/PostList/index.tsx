@@ -33,14 +33,16 @@ const PostList = (props: PostListProps) => {
 
     return (
       <li key={slug} className="post">
-        <h2 className="title">
-          <Link to={slug}>{title}</Link>
-        </h2>
-        <div className="info">
-          <span className="date">{date}</span>
-          <ul className="tag-list">{mapTag}</ul>
-        </div>
-        <span className="excerpt">{excerpt}</span>
+        <article>
+          <h2 className="title">
+            <Link to={slug}>{title}</Link>
+          </h2>
+          <div className="info">
+            <span className="date">{date}</span>
+            <ul className="tag-list">{mapTag}</ul>
+          </div>
+          <span className="excerpt">{excerpt}</span>
+        </article>
       </li>
     );
   });
