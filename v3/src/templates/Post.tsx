@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
-
+import './post.scss';
 export interface postProps {
   data: any;
 }
@@ -16,8 +16,8 @@ const Post = (props: postProps) => {
     <Layout>
       <div className="blog-post-container">
         <div className="blog-post">
-          <h1>{frontmatter.title}</h1>
-          <h2>{frontmatter.date}</h2>
+          <h1 className="blog-post-title">{frontmatter.title}</h1>
+          <p className="blog-post-info">{frontmatter.date}</p>
           <div
             className="blog-post-content"
             dangerouslySetInnerHTML={{ __html: html }}
@@ -36,7 +36,7 @@ export const pageQuery = graphql`
       excerpt
       frontmatter {
         title
-        date(formatString: "YYYY-MM-DD")
+        date(formatString: "MMM DD, YYYY")
       }
     }
   }

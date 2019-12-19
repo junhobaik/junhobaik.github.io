@@ -1,0 +1,22 @@
+.blog-post-container {
+  display: flex;
+  justify-content: center;
+
+  & > div {
+    max-width: 720px;
+  }
+  .blog-post {
+    padding-top: 1rem;
+    .blog-post-title {
+      font-size: 1.5rem;
+      margin: 0;
+    }
+    .blog-post-info {
+      margin-top: 0.5rem;
+      color: rgba(0, 0, 0, 0.64);
+    }
+    .blog-post-content {
+      margin-top: 5rem;
+    }
+  }
+}
