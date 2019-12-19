@@ -10,6 +10,10 @@
     transition: all 0.2s;
     transition-timing-function: ease-in-out;
     transition-delay: 0.1s;
+
+    @media screen and (max-width: $break-l) {
+      display: none;
+    }
   }
 
   .index-post-list-wrap {
