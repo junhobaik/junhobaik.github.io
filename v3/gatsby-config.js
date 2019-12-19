@@ -15,6 +15,9 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
+        tableOfContents: {
+          maxDepth: 4,
+        },
         plugins: [
           {
             resolve: `gatsby-remark-images`,
