@@ -1,0 +1,30 @@
+.post-list {
+  max-width: 640px;
+  
+  ul,
+  li,
+  h2 {
+    margin: 0;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  .post {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+
+    .title {
+      font-size: 1.3rem;
+    }
+    .info {
+      display: flex;
+
+      .tag {
+        margin-left: 0.5rem;
+      }
+    }
+  }
+}

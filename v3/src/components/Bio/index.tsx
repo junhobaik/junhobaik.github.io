@@ -15,6 +15,7 @@ import {
   faGithub,
 } from '@fortawesome/free-brands-svg-icons';
 
+import './bio.scss';
 const config = require('../../config');
 
 const Bio = () => {
