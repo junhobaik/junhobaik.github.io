@@ -20,6 +20,7 @@
     "gatsby-plugin-tslint": "0.0.2",
     "gatsby-plugin-typescript": "^2.1.23",
     "gatsby-plugin-typography": "^2.3.20",
+    "gatsby-remark-autolink-headers": "^2.1.21",
     "gatsby-remark-emojis": "^0.4.2",
     "gatsby-remark-images": "^3.1.38",
     "gatsby-remark-prismjs": "^3.3.27",

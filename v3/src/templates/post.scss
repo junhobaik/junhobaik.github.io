@@ -1,7 +1,9 @@
+@import '../utils/variables.scss';
+
 .blog-post-container {
   display: flex;
   justify-content: center;
-
+  position: relative;
   & > div {
     max-width: 720px;
   }
@@ -28,5 +30,26 @@
     code {
       font-family: 'Nanum Gothic Coding';
     }
+  }
+}
+
+.toc {
+  // position: sticky;
+  // top: $header-height;
+  // margin-top: $sticky-space;
+  // opacity: 0.3;
+  // transition: 0.3s;
+
+  // &:hover {
+  //   opacity: 0.5;
+  // }
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin-top: $header-height;
+
+  @media screen and (max-width: 1160px) {
+    display: none;
   }
 }
