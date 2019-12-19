@@ -38,3 +38,32 @@ a {
     padding: 0.25rem 2rem 0.25rem 2rem;
   }
 }
+
+#top {
+  display: flex;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  user-select: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  border-radius: 100%;
+  margin-right: 2rem;
+  margin-bottom: 1.25rem;
+  transition: 0.5s;
+  background-color: rgba(255, 255, 255, 0.75);
+  cursor: pointer;
+
+  @media screen and (max-width: $break-s) {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  svg {
+    color: #6a737d;
+    margin: 0;
+  }
+}

@@ -6,8 +6,11 @@
  */
 
 import * as React from 'react';
+import { useState, useEffect } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Helmet from 'react-helmet';
+import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome';
+import { faAngleDoubleUp } from '@fortawesome/free-solid-svg-icons';
 
 import Header from '../Header';
 import './layout.scss';
@@ -19,6 +22,7 @@ export interface LayoutPropsType {
 
 const Layout = (props: LayoutPropsType) => {
   const { children } = props;
+  const [isTop, setIsTop] = useState(true);
 
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -29,6 +33,16 @@ const Layout = (props: LayoutPropsType) => {
       }
     }
   `);
+
+  useEffect(() => {
+    document.addEventListener('scroll', () => {
+      if (window.pageYOffset < window.innerHeight) {
+        setIsTop(true);
+      } else {
+        setIsTop(false);
+      }
+    });
+  }, []);
 
   return (
     <>
@@ -47,6 +61,19 @@ const Layout = (props: LayoutPropsType) => {
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
         </footer>
+      </div>
+
+      <div
+        id="top"
+        style={{
+          opacity: isTop ? '0' : '1',
+          pointerEvents: isTop ? 'none' : 'all',
+        }}
+        onClick={() => {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }}
+      >
+        <Fa icon={faAngleDoubleUp} />
       </div>
     </>
   );
