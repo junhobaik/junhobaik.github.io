@@ -31,6 +31,19 @@ const Header = (props: headerPropsType) => {
   }, [window.location.pathname]);
 
   useEffect(() => {
+    const bio: HTMLDivElement | null = document.querySelector('.bio');
+    if (bio) {
+      if (isHide === true) {
+        bio.style.opacity = '0';
+        bio.style.pointerEvents = 'none';
+      } else {
+        bio.style.opacity = '1';
+        bio.style.pointerEvents = 'all';
+      }
+    }
+  }, [isHide]);
+
+  useEffect(() => {
     document.addEventListener('scroll', () => {
       setYPos(prevYPos => {
         const currentYPos = window.pageYOffset;
