@@ -21,6 +21,9 @@ a {
   padding-top: $header-height;
   min-height: 100vh;
 
+  @media screen and (max-width: $break-l) {
+    margin-top: 1rem;
+  }
   @media screen and (max-width: $break-m) {
     padding-top: $header-height-m;
     margin-top: 1rem;

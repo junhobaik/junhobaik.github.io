@@ -29,18 +29,13 @@
       border-top: 0;
     }
 
-    & > :nth-child(1) {
-      margin-bottom: 0.4rem;
-
+    & > * > * {
+      margin-bottom: 0.25rem;
       @media screen and (max-width: $break-m) {
         margin-bottom: 0.2rem;
       }
-    }
-    & > :nth-child(2) {
-      margin-bottom: 0.5rem;
-
-      @media screen and (max-width: $break-m) {
-        margin-bottom: 0.25rem;
+      @media screen and (max-width: $break-s) {
+        margin-bottom: 0.1rem;
       }
     }
 
