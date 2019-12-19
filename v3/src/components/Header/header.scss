@@ -15,6 +15,17 @@
   transition: top 0.3s;
   transition-delay: 0.2s;
 
+  @media screen and (max-width: $break-l) {
+    padding: 0.5rem 1.25rem 1rem 1rem;
+  }
+  @media screen and (max-width: $break-m) {
+    height: $header-height-m;
+  }
+  @media screen and (max-width: $break-s) {
+    height: $header-height-s;
+    padding: 0 1.25rem 0.25rem 1rem;
+  }
+
   &.show {
     top: 0;
   }
@@ -47,24 +58,15 @@
         transition: all 0.5s;
         transition-timing-function: ease-in-out;
 
+        @media screen and (max-width: $break-l) {
+          width: 25px !important;
+          height: 25px !important;
+        }
+
         &:hover {
           opacity: 1;
         }
       }
-
-      // &.big {
-      //   img {
-      //     width: 50px;
-      //     height: 50px;
-      //   }
-      // }
-
-      // &.normal {
-      //   img {
-      //     width: 25px;
-      //     height: 25px;
-      //   }
-      // }
     }
 
     .header-title-text {
