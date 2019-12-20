@@ -73,7 +73,11 @@ const Header = (props: headerPropsType) => {
         <Link to="/">
           <div className="header-profile-image-wrap">
             <img
-              src={require(`../../images/${config.profileImageFileName}`)}
+              src={
+                config.profileImageFileName
+                  ? require(`../../images/${config.profileImageFileName}`)
+                  : 'https://source.unsplash.com/random/100x100'
+              }
               alt="title profile picture"
               // "25px"로 고정하면 "/"로 갈때만 transition이 작동
               width={window.location.pathname === '/' ? '25px' : '50px'}
