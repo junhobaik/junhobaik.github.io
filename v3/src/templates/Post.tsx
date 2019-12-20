@@ -74,7 +74,7 @@ const Post = (props: postProps) => {
             <h1 className="blog-post-title">{title}</h1>
             <div className="blog-post-info">
               <span className="blog-post-date">{date}</span>
-              {tags.length ? (
+              {tags.length && tags[0] !== 'Empty Tag' ? (
                 <>
                   <span>·</span>
                   <ul className="blog-post-tag-list">{mapTags}</ul>
