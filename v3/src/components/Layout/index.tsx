@@ -36,7 +36,7 @@ const Layout = (props: LayoutPropsType) => {
 
   useEffect(() => {
     const setTop = () => {
-      if (window.pageYOffset < window.innerHeight) {
+      if (window.pageYOffset < window.innerHeight / 2) {
         setIsTop(true);
       } else {
         setIsTop(false);
