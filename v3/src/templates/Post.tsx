@@ -83,33 +83,39 @@ const Post = (props: postProps) => {
                   <ul className="blog-post-tag-list">{mapTags}</ul>
                 </>
               ) : null}
-              <div className="blog-post-inside-toc">
-                <div
-                  className="toc-button"
-                  role="button"
-                  onClick={() => {
-                    setIsInsideToc((prev: boolean) => {
-                      return !prev;
-                    });
-                  }}
-                >
-                  <Fa icon={faListUl} />
+              {tableOfContents === '' ? null : (
+                <div className="blog-post-inside-toc">
+                  <div
+                    className="toc-button"
+                    role="button"
+                    onClick={() => {
+                      setIsInsideToc((prev: boolean) => {
+                        return !prev;
+                      });
+                    }}
+                  >
+                    <Fa icon={faListUl} />
+                  </div>
                 </div>
+              )}
+            </div>
+            {tableOfContents === '' ? null : (
+              <div
+                className="inside-toc-wrap"
+                style={{ display: isInsideToc ? 'flex' : 'none' }}
+              >
+                <Toc isOutside={false} toc={tableOfContents} />
               </div>
-            </div>
-            <div
-              className="inside-toc-wrap"
-              style={{ display: isInsideToc ? 'flex' : 'none' }}
-            >
-              <Toc isOutside={false} toc={tableOfContents} />
-            </div>
+            )}
             <div
               className="blog-post-content"
               dangerouslySetInnerHTML={{ __html: html }}
             />
           </div>
         </div>
-        <Toc isOutside={true} toc={tableOfContents} />
+        {tableOfContents === '' ? null : (
+          <Toc isOutside={true} toc={tableOfContents} />
+        )}
       </Layout>
     </>
   );
