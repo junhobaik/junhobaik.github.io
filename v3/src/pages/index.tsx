@@ -45,7 +45,6 @@ export const pageQuery = graphql`
             date(formatString: "MMM DD, YYYY")
             title
             tags
-            published
           }
         }
       }
