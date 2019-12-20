@@ -92,7 +92,7 @@ const Header = (props: headerPropsType) => {
           <li>
             <div className="tag-wrap">
               <span>TAG</span>
-              <Link to="/page-2">
+              <Link to="/tags">
                 <Fa
                   icon={faTags}
                   onMouseEnter={() => {

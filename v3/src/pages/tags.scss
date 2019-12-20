@@ -1,0 +1,22 @@
+#tags {
+  max-width: 840px;
+  margin: 1rem auto;
+
+  .tag-list-wrap {
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0;
+      li {
+        display: flex;
+        align-items: center;
+        margin: 0.25rem 0.5rem;
+        list-style: none;
+
+        span {
+          font-family: 'Nanum Gothic';
+        }
+      }
+    }
+  }
+}
