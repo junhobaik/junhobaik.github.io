@@ -3,6 +3,10 @@
 .index-wrap {
   display: flex;
 
+  @media screen and (max-width: $break-m) {
+    margin-top: 1.5rem;
+  }
+
   .bio {
     position: fixed;
     top: $header-height;
