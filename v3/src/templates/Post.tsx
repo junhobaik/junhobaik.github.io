@@ -1,12 +1,16 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
 import { graphql, Link } from 'gatsby';
+import { DiscussionEmbed } from 'disqus-react';
+// import { Disqus } from 'gatsby-plugin-disqus';
 import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome';
 import { faListUl } from '@fortawesome/free-solid-svg-icons';
 
 import Layout from '../components/Layout';
 import './post.scss';
 import Toc from '../components/Toc';
+const config = require('../config');
+
 export interface postProps {
   data: any;
 }
@@ -14,8 +18,9 @@ export interface postProps {
 const Post = (props: postProps) => {
   const { data } = props;
   const { markdownRemark } = data; // data.markdownRemark holds your post data
-  const { frontmatter, html, tableOfContents } = markdownRemark;
+  const { frontmatter, html, tableOfContents, fields } = markdownRemark;
   const { title, date, tags } = frontmatter;
+  const { slug } = fields;
   const [yList, setYList] = useState();
   const [isInsideToc, setIsInsideToc] = useState(false);
 
@@ -69,6 +74,16 @@ const Post = (props: postProps) => {
     );
   });
 
+  //disqus
+  const disqusConfig = {
+    shortname: config.disqusShortname,
+    config: {
+      url: `${config.siteUrl + location.pathname}`,
+      identifier: slug,
+      title,
+    },
+  };
+
   return (
     <>
       <Layout>
@@ -112,6 +127,11 @@ const Post = (props: postProps) => {
               dangerouslySetInnerHTML={{ __html: html }}
             />
           </div>
+          {config.disqusShortname ? (
+            <div className="comments">
+              <DiscussionEmbed {...disqusConfig} />
+            </div>
+          ) : null}
         </div>
         {tableOfContents === '' ? null : (
           <Toc isOutside={true} toc={tableOfContents} />
@@ -124,10 +144,12 @@ const Post = (props: postProps) => {
 export const pageQuery = graphql`
   query($slug: String) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
-      id
       html
       excerpt
       tableOfContents
+      fields {
+        slug
+      }
       frontmatter {
         title
         date(formatString: "MMM DD, YYYY")

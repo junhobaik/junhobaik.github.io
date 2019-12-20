@@ -3,6 +3,7 @@ module.exports = {
   title: `Dev.White`,
   description: `Junho Baik's Development Blog`,
   author: `Junho Baik`,
+  siteUrl: 'https://junhobaik.github.io',
 
   // Header Prifle image file name "./images/*"
   profileImageFileName: 'profile.png',
@@ -18,4 +19,7 @@ module.exports = {
   facebook: '',
   instagram: 'https://www.instagram.com/junhobaik',
   github: 'https://github.com/junhobaik',
+
+  // disqus
+  disqusShortname: 'junhobaik',
 };
