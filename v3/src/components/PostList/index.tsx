@@ -36,7 +36,9 @@ const PostList = (props: PostListProps) => {
           </h2>
           <div className="info">
             <span className="date">{date}</span>
-            {tags.length ? <span className="info-dot">·</span> : null}
+            {tags.length && tags[0] !== 'Empty Tag' ? (
+              <span className="info-dot">·</span>
+            ) : null}
             <ul className="tag-list">{mapTag}</ul>
           </div>
           <span className="excerpt">{excerpt}</span>
