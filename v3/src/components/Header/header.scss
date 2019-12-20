@@ -14,6 +14,7 @@
   transition: top 0.3s;
   transition-delay: 0.2s;
   background-color: transparent;
+  user-select: none;
 
   @media screen and (max-width: $break-l) {
     background-color: #fff;
@@ -37,11 +38,6 @@
   .header-title {
     display: flex;
     align-items: flex-end;
-
-    .header-title {
-      display: flex;
-      align-items: center;
-    }
 
     .header-profile-image-wrap {
       display: flex;
