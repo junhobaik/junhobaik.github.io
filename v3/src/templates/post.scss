@@ -84,10 +84,35 @@
 
     .blog-post-content {
       margin-top: 3rem;
-    }
 
-    code {
-      font-family: 'Nanum Gothic Coding';
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: 'Noto Serif KR';
+      }
+      h1 {
+        margin-top: 4rem;
+      }
+      h2 {
+        margin-top: 3rem;
+      }
+      h3 {
+        margin-top: 2rem;
+      }
+
+      li {
+        margin-bottom: 0.25rem;
+
+        ul {
+          margin-top: 0.25rem;
+        }
+      }
+      code {
+        font-family: 'Nanum Gothic Coding';
+      }
     }
   }
 }
