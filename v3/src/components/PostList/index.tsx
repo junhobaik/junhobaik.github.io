@@ -1,5 +1,4 @@
 import React from 'react';
-import { Fragment } from 'react';
 import { Link } from 'gatsby';
 
 import './postList.scss';
@@ -17,18 +16,15 @@ const PostList = (props: PostListProps) => {
     const { slug } = fields;
     const { date, title, tags } = frontmatter;
 
-    const mapTag = tags.map((tag: String, i: number) => {
+    const mapTag = tags.map((tag: String) => {
       if (tag === 'Empty Tag') return;
 
       return (
-        <Fragment key={`${slug}-${tag}-fragment`}>
-          {i === 0 ? <span>·</span> : null}
-          <li className="tag">
-            <span>
-              <Link to={`/tag/${tag}`}>{`#${tag}`}</Link>
-            </span>
-          </li>
-        </Fragment>
+        <li key={`${slug}-${tag}`} className="tag">
+          <span>
+            <Link to={`/tag/${tag}`}>{`#${tag}`}</Link>
+          </span>
+        </li>
       );
     });
 
@@ -40,6 +36,7 @@ const PostList = (props: PostListProps) => {
           </h2>
           <div className="info">
             <span className="date">{date}</span>
+            {tags.length ? <span className="info-dot">·</span> : null}
             <ul className="tag-list">{mapTag}</ul>
           </div>
           <span className="excerpt">{excerpt}</span>

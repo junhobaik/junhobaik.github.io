@@ -52,14 +52,21 @@
       color: rgba(0, 0, 0, 0.54);
       font-size: 0.9rem;
 
+      .date {
+        display: block;
+        white-space: nowrap;
+      }
+
+      .info-dot {
+        margin: 0 0.25rem;
+      }
+
       .tag-list {
         display: flex;
-
-        & > span {
-          margin: 0 0.25rem;
-        }
+        flex-wrap: wrap;
 
         .tag {
+          margin: 0;
           margin-right: 0.5rem;
           span > a {
             color: rgba(0, 0, 0, 0.54);

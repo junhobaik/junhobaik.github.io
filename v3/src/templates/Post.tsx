@@ -1,6 +1,6 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 
 import Layout from '../components/Layout';
 import './post.scss';
@@ -13,6 +13,7 @@ const Post = (props: postProps) => {
   const { data } = props;
   const { markdownRemark } = data; // data.markdownRemark holds your post data
   const { frontmatter, html, tableOfContents } = markdownRemark;
+  const { title, date, tags } = frontmatter;
   const [yList, setYList] = useState();
 
   useEffect(() => {
@@ -57,13 +58,29 @@ const Post = (props: postProps) => {
     };
   }, [window.pageYOffset, yList]);
 
+  const mapTags = tags.map((tag: string) => {
+    return (
+      <li key={tag} className="blog-post-tag">
+        <Link to={`/tag/${tag}`}>{`#${tag}`}</Link>
+      </li>
+    );
+  });
+
   return (
     <>
       <Layout>
         <div className="blog-post-container">
           <div className="blog-post">
-            <h1 className="blog-post-title">{frontmatter.title}</h1>
-            <p className="blog-post-info">{frontmatter.date}</p>
+            <h1 className="blog-post-title">{title}</h1>
+            <div className="blog-post-info">
+              <span className="blog-post-date">{date}</span>
+              {tags.length ? (
+                <>
+                  <span>·</span>
+                  <ul className="blog-post-tag-list">{mapTags}</ul>
+                </>
+              ) : null}
+            </div>
             <div
               className="blog-post-content"
               dangerouslySetInnerHTML={{ __html: html }}
@@ -86,6 +103,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMM DD, YYYY")
+        tags
       }
     }
   }
