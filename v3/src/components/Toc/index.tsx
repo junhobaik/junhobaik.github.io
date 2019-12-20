@@ -4,11 +4,17 @@ import './toc.scss';
 
 export interface TocProps {
   toc: string;
+  isOutside: boolean;
 }
 const Toc = (props: TocProps) => {
-  const { toc } = props;
+  const { toc, isOutside } = props;
 
-  return <div className="toc" dangerouslySetInnerHTML={{ __html: toc }}></div>;
+  return (
+    <div
+      className={`toc ${isOutside ? 'outside' : 'inside'}`}
+      dangerouslySetInnerHTML={{ __html: toc }}
+    ></div>
+  );
 };
 
 export default Toc;

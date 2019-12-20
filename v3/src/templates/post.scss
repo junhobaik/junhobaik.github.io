@@ -28,6 +28,7 @@
       font-family: 'Nanum Gothic';
       font-size: 0.84rem;
       align-items: center;
+      justify-content: space-between;
 
       & > span:nth-child(2) {
         margin: 0 0.5rem;
@@ -37,6 +38,7 @@
         margin: 0;
         display: flex;
         flex-wrap: wrap;
+        flex-grow: 1;
 
         .blog-post-tag {
           list-style: none;
@@ -54,24 +56,38 @@
           }
         }
       }
+
+      .blog-post-inside-toc {
+        align-self: flex-end;
+        display: none;
+
+        @media screen and (max-width: $break-toc) {
+          display: inline-block;
+        }
+
+        .toc-button {
+          cursor: pointer;
+          color: #6a737d;
+          opacity: 0.5;
+
+          &:hover {
+            opacity: 0.9;
+          }
+        }
+      }
     }
+
+    .inside-toc-wrap {
+      display: flex;
+      justify-content: flex-end;
+    }
+
     .blog-post-content {
-      margin-top: 5rem;
+      margin-top: 3rem;
     }
 
     code {
       font-family: 'Nanum Gothic Coding';
     }
-  }
-}
-
-.toc {
-  position: fixed;
-  top: 0;
-  right: 0;
-  margin-top: $header-height;
-
-  @media screen and (max-width: 1160px) {
-    display: none;
   }
 }

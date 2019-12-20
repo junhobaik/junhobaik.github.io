@@ -1,6 +1,8 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
 import { graphql, Link } from 'gatsby';
+import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome';
+import { faListUl } from '@fortawesome/free-solid-svg-icons';
 
 import Layout from '../components/Layout';
 import './post.scss';
@@ -15,6 +17,7 @@ const Post = (props: postProps) => {
   const { frontmatter, html, tableOfContents } = markdownRemark;
   const { title, date, tags } = frontmatter;
   const [yList, setYList] = useState();
+  const [isInsideToc, setIsInsideToc] = useState(false);
 
   useEffect(() => {
     const hs = Array.from(document.querySelectorAll('h2, h3')) as Array<
@@ -38,9 +41,9 @@ const Post = (props: postProps) => {
             return v < window.pageYOffset;
           }).length - 1;
 
-        const aList = document.querySelectorAll('.toc li a') as NodeListOf<
-          HTMLAnchorElement
-        >;
+        const aList = document.querySelectorAll(
+          '.toc.outside li a'
+        ) as NodeListOf<HTMLAnchorElement>;
 
         for (const i in Array.from(aList)) {
           if (parseInt(i, 10) === index) {
@@ -80,6 +83,25 @@ const Post = (props: postProps) => {
                   <ul className="blog-post-tag-list">{mapTags}</ul>
                 </>
               ) : null}
+              <div className="blog-post-inside-toc">
+                <div
+                  className="toc-button"
+                  role="button"
+                  onClick={() => {
+                    setIsInsideToc((prev: boolean) => {
+                      return !prev;
+                    });
+                  }}
+                >
+                  <Fa icon={faListUl} />
+                </div>
+              </div>
+            </div>
+            <div
+              className="inside-toc-wrap"
+              style={{ display: isInsideToc ? 'flex' : 'none' }}
+            >
+              <Toc isOutside={false} toc={tableOfContents} />
             </div>
             <div
               className="blog-post-content"
@@ -87,7 +109,7 @@ const Post = (props: postProps) => {
             />
           </div>
         </div>
-        <Toc toc={tableOfContents} />
+        <Toc isOutside={true} toc={tableOfContents} />
       </Layout>
     </>
   );

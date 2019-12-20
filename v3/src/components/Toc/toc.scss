@@ -1,3 +1,5 @@
+@import '../../utils/variables.scss';
+
 .toc {
   font-family: 'Nanum Gothic';
   font-size: 0.8rem;
@@ -5,12 +7,11 @@
   min-width: 220px;
   max-height: calc(100vh - 6rem);
   overflow: auto;
-  opacity: 0.5;
   transition: 0.3s;
   padding-right: 0.5rem;
 
-  &:hover {
-    opacity: 0.8;
+  &::-webkit-scrollbar {
+    display: none;
   }
 
   ul {
@@ -28,10 +29,11 @@
   a {
     opacity: 0.4;
     transition: 0.2s;
+    max-width: calc(220px - 1.5rem);
+    display: block;
     white-space: nowrap;
-    max-width: calc(220px - 1rem);
     text-overflow: ellipsis;
-    // border: 1px solid red;
+    overflow: hidden;
 
     &:hover {
       opacity: 1 !important;
@@ -40,5 +42,27 @@
     img {
       display: none !important;
     }
+  }
+}
+
+.toc.outside {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin-top: $header-height;
+  opacity: 0.4;
+
+  @media screen and (max-width: $break-toc) {
+    display: none;
+  }
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.toc.inside {
+  a {
+    text-decoration: none;
   }
 }
