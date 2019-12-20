@@ -3,9 +3,19 @@
   font-size: 0.8rem;
   max-width: 220px;
   min-width: 220px;
+  max-height: calc(100vh - 6rem);
+  overflow: auto;
+  opacity: 0.5;
+  transition: 0.3s;
+  padding-right: 0.5rem;
+
+  &:hover {
+    opacity: 0.8;
+  }
 
   ul {
     margin-top: 0;
+    margin-left: 0.5rem;
     li {
       list-style: none;
       margin: 0;
@@ -13,5 +23,22 @@
   }
   p {
     margin: 0;
+  }
+
+  a {
+    opacity: 0.4;
+    transition: 0.2s;
+    white-space: nowrap;
+    max-width: calc(220px - 1rem);
+    text-overflow: ellipsis;
+    // border: 1px solid red;
+
+    &:hover {
+      opacity: 1 !important;
+    }
+
+    img {
+      display: none !important;
+    }
   }
 }

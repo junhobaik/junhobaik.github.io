@@ -28,6 +28,7 @@ const Header = (props: headerPropsType) => {
       profile.style.transition =
         window.location.pathname !== '/' ? 'all 1s' : 'all 0.5s';
     }
+    return () => {};
   }, [window.location.pathname]);
 
   useEffect(() => {
@@ -44,7 +45,7 @@ const Header = (props: headerPropsType) => {
   }, [isHide]);
 
   useEffect(() => {
-    document.addEventListener('scroll', () => {
+    const setVisible = () => {
       setYPos(prevYPos => {
         const currentYPos = window.pageYOffset;
 
@@ -52,7 +53,9 @@ const Header = (props: headerPropsType) => {
 
         return currentYPos;
       });
-    });
+    };
+    document.addEventListener('scroll', setVisible);
+    return () => document.removeEventListener('scroll', setVisible);
   }, []);
 
   const tagSpanVisibleToggle = (isVisible: boolean) => {

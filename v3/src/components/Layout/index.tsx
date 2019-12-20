@@ -35,13 +35,15 @@ const Layout = (props: LayoutPropsType) => {
   `);
 
   useEffect(() => {
-    document.addEventListener('scroll', () => {
+    const setTop = () => {
       if (window.pageYOffset < window.innerHeight) {
         setIsTop(true);
       } else {
         setIsTop(false);
       }
-    });
+    };
+    document.addEventListener('scroll', setTop);
+    return () => document.removeEventListener('scroll', setTop);
   }, []);
 
   return (

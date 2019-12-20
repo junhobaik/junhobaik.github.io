@@ -16,7 +16,7 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         tableOfContents: {
-          maxDepth: 4,
+          maxDepth: 3,
         },
         plugins: [
           {
