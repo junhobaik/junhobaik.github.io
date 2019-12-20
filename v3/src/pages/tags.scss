@@ -1,12 +1,16 @@
 #tags {
-  max-width: 840px;
+  max-width: 720px;
   margin: 1rem auto;
 
   .tag-list-wrap {
+    margin-bottom: 5rem;
+
     ul {
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
       margin: 0;
+
       li {
         display: flex;
         align-items: center;
@@ -15,8 +19,17 @@
 
         span {
           font-family: 'Nanum Gothic';
+          cursor: pointer;
+          opacity: 0.5;
+          &:hover {
+            opacity: 0.9 !important;
+          }
         }
       }
     }
+  }
+
+  .post-list {
+    margin: 0 auto;
   }
 }

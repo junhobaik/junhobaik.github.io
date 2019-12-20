@@ -5,6 +5,7 @@ import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import SEO from '../components/seo';
 import './tags.scss';
+import PostList from '../components/PostList';
 
 export interface TagsPageProps {
   data: any;
@@ -13,6 +14,7 @@ export interface TagsPageProps {
 const Tags = (props: TagsPageProps) => {
   const { group } = props.data.allMarkdownRemark;
   const [largeCount, setLargeCount] = useState(0);
+  const [targetTag, setTargetTag] = useState('Empty Tag');
 
   interface groupItem {
     fieldValue: string;
@@ -29,8 +31,6 @@ const Tags = (props: TagsPageProps) => {
   });
 
   const tagList = group.map((g: groupItem) => {
-    console.log(g.totalCount, largeCount);
-
     const getFontSize = () => {
       let fontSize = Math.round(50 / (largeCount / g.totalCount)).toString();
       if (fontSize.length <= 1) fontSize = `0${fontSize}`;
@@ -41,7 +41,17 @@ const Tags = (props: TagsPageProps) => {
     return (
       <li key={g.fieldValue}>
         <div>
-          <span className="tag-text" style={{ fontSize: getFontSize() }}>
+          <span
+            className="tag-text"
+            style={{
+              fontSize: getFontSize(),
+              opacity: g.fieldValue === targetTag ? '0.9' : '0.5',
+              fontWeight: g.fieldValue === targetTag ? 'bold' : 'normal',
+            }}
+            onClick={() => {
+              setTargetTag(g.fieldValue);
+            }}
+          >
             {g.fieldValue}
           </span>
         </div>
@@ -64,8 +74,32 @@ const Tags = (props: TagsPageProps) => {
       <SEO title="Tags" />
       <div id="tags">
         <div className="tag-list-wrap">
-          <ul>{tagList}</ul>
+          <ul>
+            <li key="Empty Tag">
+              <div>
+                <span
+                  className="tag-text"
+                  style={{
+                    fontSize: '1rem',
+                    opacity: 'Empty Tag' === targetTag ? '0.9' : '0.5',
+                    fontWeight: 'Empty Tag' === targetTag ? 'bold' : 'normal',
+                  }}
+                  onClick={() => {
+                    setTargetTag('Empty Tag');
+                  }}
+                >
+                  Empty Tag
+                </span>
+              </div>
+            </li>
+            {tagList}
+          </ul>
         </div>
+        <PostList
+          posts={
+            group.filter((g: groupItem) => g.fieldValue === targetTag)[0].edges
+          }
+        />
       </div>
     </Layout>
   );
@@ -79,12 +113,12 @@ export const pageQuery = graphql`
         totalCount
         edges {
           node {
-            excerpt
+            excerpt(format: PLAIN)
             fields {
               slug
             }
             frontmatter {
-              date(formatString: "YYYY년 MM월 DD일")
+              date(formatString: "MMM DD, YYYY")
               title
               tags
             }
