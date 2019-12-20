@@ -9,6 +9,7 @@ import { faListUl } from '@fortawesome/free-solid-svg-icons';
 import Layout from '../components/Layout';
 import './post.scss';
 import Toc from '../components/Toc';
+import SEO from '../components/seo';
 const config = require('../config');
 
 export interface postProps {
@@ -18,8 +19,14 @@ export interface postProps {
 const Post = (props: postProps) => {
   const { data } = props;
   const { markdownRemark } = data; // data.markdownRemark holds your post data
-  const { frontmatter, html, tableOfContents, fields } = markdownRemark;
-  const { title, date, tags } = frontmatter;
+  const {
+    frontmatter,
+    html,
+    tableOfContents,
+    fields,
+    excerpt,
+  } = markdownRemark;
+  const { title, date, tags, keywords } = frontmatter;
   const { slug } = fields;
   const [yList, setYList] = useState();
   const [isInsideToc, setIsInsideToc] = useState(false);
@@ -84,8 +91,23 @@ const Post = (props: postProps) => {
     },
   };
 
+  const metaKeywords = (keywordList: Array<string>, tagList: Array<string>) => {
+    const resultKeywords = new Set();
+
+    for (const v of [...keywordList, ...tagList]) {
+      resultKeywords.add(v);
+    }
+
+    return Array.from(resultKeywords);
+  };
+
   return (
     <>
+      <SEO
+        title={title}
+        description={excerpt}
+        keywords={metaKeywords(keywords, tags)}
+      />
       <Layout>
         <div className="blog-post-container">
           <div className="blog-post">
@@ -154,6 +176,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMM DD, YYYY")
         tags
+        keywords
       }
     }
   }
