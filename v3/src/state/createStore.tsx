@@ -10,7 +10,7 @@ const reducer = (state: any, action: any) => {
   return state;
 };
 
-const initialState = { path: location.pathname, size: '25px' };
+const initialState = { path: '', size: '25px' };
 
 const createStore = () => reduxCreateStore(reducer, initialState);
 export default createStore;
