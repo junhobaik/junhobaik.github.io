@@ -20,6 +20,7 @@ module.exports = {
   instagram: 'https://www.instagram.com/junhobaik',
   github: 'https://github.com/junhobaik',
 
-  // disqus
-  disqusShortname: 'junhobaik',
+  // Post
+  enablePostOfContents: true, // TableOfContents
+  disqusShortname: 'junhobaik', // comments (Disqus sort-name)
 };

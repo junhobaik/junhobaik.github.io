@@ -31,6 +31,10 @@ const Post = (props: postProps) => {
   const [yList, setYList] = useState();
   const [isInsideToc, setIsInsideToc] = useState(false);
 
+  const isTableOfContents =
+    config.enablePostOfContents && tableOfContents !== '';
+  const isDisqus = config.disqusShortname;
+
   useEffect(() => {
     const hs = Array.from(document.querySelectorAll('h2, h3')) as Array<
       HTMLHeadingElement
@@ -67,9 +71,9 @@ const Post = (props: postProps) => {
       }
     };
 
-    document.addEventListener('scroll', setYPos);
+    if (isTableOfContents) document.addEventListener('scroll', setYPos);
     return () => {
-      document.removeEventListener('scroll', setYPos);
+      if (isTableOfContents) document.removeEventListener('scroll', setYPos);
     };
   }, [window.pageYOffset, yList]);
 
@@ -120,7 +124,7 @@ const Post = (props: postProps) => {
                   <ul className="blog-post-tag-list">{mapTags}</ul>
                 </>
               ) : null}
-              {tableOfContents === '' ? null : (
+              {!isTableOfContents ? null : (
                 <div className="blog-post-inside-toc">
                   <div
                     className="toc-button"
@@ -136,7 +140,7 @@ const Post = (props: postProps) => {
                 </div>
               )}
             </div>
-            {tableOfContents === '' ? null : (
+            {!isTableOfContents ? null : (
               <div
                 className="inside-toc-wrap"
                 style={{ display: isInsideToc ? 'flex' : 'none' }}
@@ -149,13 +153,13 @@ const Post = (props: postProps) => {
               dangerouslySetInnerHTML={{ __html: html }}
             />
           </div>
-          {config.disqusShortname ? (
+          {isDisqus ? (
             <div className="comments">
               <DiscussionEmbed {...disqusConfig} />
             </div>
           ) : null}
         </div>
-        {tableOfContents === '' ? null : (
+        {!isTableOfContents ? null : (
           <Toc isOutside={true} toc={tableOfContents} />
         )}
       </Layout>
