@@ -37,7 +37,6 @@ const Tags = (props: TagsPageProps) => {
       return `1.${fontSize}rem`;
     };
 
-    if (g.fieldValue === 'Empty Tag') return;
     return (
       <li key={g.fieldValue}>
         <div>
@@ -52,12 +51,29 @@ const Tags = (props: TagsPageProps) => {
               setTargetTag(g.fieldValue);
             }}
           >
-            {g.fieldValue}
+            <a href={`#${g.fieldValue}`}>{g.fieldValue}</a>
           </span>
         </div>
       </li>
     );
   });
+
+  tagList.sort((a: React.ReactElement) => {
+    if (a.key === 'Empty Tag') return -1;
+    return 0;
+  });
+
+  const getPostList = () => {
+    if (group.filter((g: groupItem) => g.fieldValue === targetTag).length) {
+      return group.filter((g: groupItem) => g.fieldValue === targetTag)[0]
+        .edges;
+    }
+    if (group.filter((g: groupItem) => g.fieldValue === 'Empty Tag').length) {
+      return group.filter((g: groupItem) => g.fieldValue === 'Empty Tag')[0]
+        .edges;
+    }
+    return [];
+  };
 
   useEffect(() => {
     let large = 0;
@@ -69,37 +85,20 @@ const Tags = (props: TagsPageProps) => {
     return () => {};
   }, [group]);
 
+  useEffect(() => {
+    if (location.hash) setTargetTag(location.hash.split('#')[1]);
+    return () => {};
+  }, []);
+
   return (
     <Layout>
       <SEO title="Tags" />
       <div id="tags">
         <div className="tag-list-wrap">
-          <ul>
-            <li key="Empty Tag">
-              <div>
-                <span
-                  className="tag-text"
-                  style={{
-                    fontSize: '1rem',
-                    opacity: 'Empty Tag' === targetTag ? '0.9' : '0.5',
-                    fontWeight: 'Empty Tag' === targetTag ? 'bold' : 'normal',
-                  }}
-                  onClick={() => {
-                    setTargetTag('Empty Tag');
-                  }}
-                >
-                  Empty Tag
-                </span>
-              </div>
-            </li>
-            {tagList}
-          </ul>
+          <ul>{tagList}</ul>
         </div>
-        <PostList
-          posts={
-            group.filter((g: groupItem) => g.fieldValue === targetTag)[0].edges
-          }
-        />
+
+        <PostList posts={getPostList()} />
       </div>
     </Layout>
   );
