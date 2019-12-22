@@ -4,7 +4,7 @@ import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import SEO from '../components/seo';
 import Bio from '../components/Bio';
-import './index.scss';
+import './styles/index.scss';
 import PostList from '../components/PostList';
 
 export interface IndexPageProps {

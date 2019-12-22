@@ -4,7 +4,7 @@ import { graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
 import SEO from '../components/seo';
-import './tags.scss';
+import './styles/tags.scss';
 import PostList from '../components/PostList';
 
 export interface TagsPageProps {
