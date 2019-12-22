@@ -1,19 +1,22 @@
 import * as React from 'react';
 import { useEffect, useState } from 'react';
 import { Link } from 'gatsby';
-import PropTypes from 'prop-types';
 import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome';
 import { faTags, faSearch } from '@fortawesome/free-solid-svg-icons';
+import { connect } from 'react-redux';
 
 import './header.scss';
 const config = require('../../config');
 
 export interface headerPropsType {
   siteTitle: String;
+  path: any;
+  setPath: any;
+  size: string;
 }
 
 const Header = (props: headerPropsType) => {
-  const { siteTitle } = props;
+  const { siteTitle, path, setPath, size } = props;
   const [, setYPos] = useState(0);
   const [isHide, setIsHide] = useState(false);
 
@@ -22,14 +25,31 @@ const Header = (props: headerPropsType) => {
       '.header-profile-image-wrap>img'
     );
 
+    const prevPath = path;
+    const currPath = location.pathname;
+
     if (profile) {
-      profile.style.width = window.location.pathname !== '/' ? '25px' : '50px';
-      profile.style.height = window.location.pathname !== '/' ? '25px' : '50px';
-      profile.style.transition =
-        window.location.pathname !== '/' ? 'all 1s' : 'all 0.5s';
+      if (currPath === prevPath) {
+        setPath(location.pathname, currPath !== '/' ? '25px' : '50px');
+      }
+
+      if (prevPath !== '/' && currPath === '/') {
+        setPath(location.pathname, '50px');
+      }
+
+      if (prevPath === '/' && currPath !== '/') {
+        setPath(location.pathname, '25px');
+      }
+
+      if (prevPath !== '/' && currPath !== '/') {
+        setPath(location.pathname);
+      }
+    } else {
+      setPath(location.pathname);
     }
+
     return () => {};
-  }, [window.location.pathname]);
+  }, [location.pathname]);
 
   useEffect(() => {
     const bio: HTMLDivElement | null = document.querySelector('.bio');
@@ -79,9 +99,8 @@ const Header = (props: headerPropsType) => {
                   : 'https://source.unsplash.com/random/100x100'
               }
               alt="title profile picture"
-              // "25px"로 고정하면 "/"로 갈때만 transition이 작동
-              width={window.location.pathname === '/' ? '25px' : '50px'}
-              height={window.location.pathname === '/' ? '25px' : '50px'}
+              width={size || '25px'}
+              height={size || '25px'}
             />
           </div>
         </Link>
@@ -123,12 +142,15 @@ const Header = (props: headerPropsType) => {
   );
 };
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
+const mapStateToProps = ({ path, size }: { path: string; size: string }) => {
+  return { path, size };
 };
 
-Header.defaultProps = {
-  siteTitle: ``,
+const mapDispatchToProps = (dispatch: any) => {
+  return {
+    setPath: (path: string, size: string) =>
+      dispatch({ type: `SET_PATH`, path, size }),
+  };
 };
 
-export default Header;
+export default connect(mapStateToProps, mapDispatchToProps)(Header);
