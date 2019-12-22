@@ -131,7 +131,7 @@ const Header = (props: headerPropsType) => {
 
           <li>
             <div className="search-wrap">
-              <Link to="/" className="search">
+              <Link to="/search" className="search">
                 <Fa icon={faSearch} />
               </Link>
             </div>

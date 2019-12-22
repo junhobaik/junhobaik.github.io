@@ -1,0 +1,34 @@
+#Search {
+  max-width: 720px;
+  margin: 0 auto;
+  font-family: 'Nanum Gothic';
+
+  .search-inner-wrap {
+    .input-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 4rem;
+
+      input {
+        all: unset;
+        margin: 0 1rem;
+        margin-top: 0.1rem;
+      }
+
+      .search-toggle {
+        font-size: 0.8rem;
+
+        span {
+          cursor: pointer;
+          user-select: none;
+          transition: 0.2s;
+        }
+
+        span:nth-child(1) {
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+}
