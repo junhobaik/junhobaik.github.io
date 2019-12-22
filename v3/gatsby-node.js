@@ -20,7 +20,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
             frontmatter {
               title
               tags
-              published
             }
           }
         }
@@ -75,12 +74,12 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
       // 마크다운 파일 내 퍼블리쉬 필드가 비어있을 시 오류가 나지 않도록 하기 위함
       // development 환경일 시 published 필드가 모두 true이도록 하기 위함
-      if (
-        node.frontmatter.published === undefined ||
-        process.env.NODE_ENV === 'development'
-      ) {
-        node.frontmatter.published = true;
-      }
+      // if (
+      //   node.frontmatter.published === undefined ||
+      //   process.env.NODE_ENV === 'development'
+      // ) {
+      //   node.frontmatter.published = true;
+      // }
 
       // 마크다운 파일 내 태그 필드가 비어있을 시 오류가 나지 않도록 하기 위함
       if (!node.frontmatter.tags || node.frontmatter.tags === '') {
