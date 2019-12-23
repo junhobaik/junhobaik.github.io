@@ -3,8 +3,19 @@ const { title, description, author } = config;
 
 module.exports = {
   siteMetadata: { title, description, author },
+
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: config.googleAnalyticsTrackingId,
+      },
+    },
+
     `gatsby-plugin-react-helmet`,
+
+    `gatsby-plugin-typescript`,
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -12,6 +23,7 @@ module.exports = {
         path: `${__dirname}/_posts`,
       },
     },
+
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -54,6 +66,7 @@ module.exports = {
         ],
       },
     },
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -61,8 +74,11 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+
     `gatsby-transformer-sharp`,
+
     `gatsby-plugin-sharp`,
+
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -74,23 +90,14 @@ module.exports = {
         display: `standalone`,
       },
     },
+
     `gatsby-plugin-sass`,
+
     {
       resolve: `gatsby-plugin-typography`,
       options: {
         pathToConfigModule: `src/utils/typography.ts`,
       },
     },
-    `gatsby-plugin-typescript`,
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: config.googleAnalyticsTrackingId,
-      },
-    },
-
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 };
