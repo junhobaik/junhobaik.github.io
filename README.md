@@ -57,7 +57,8 @@ module.exports = {
 
   // header config
   titleLogo: () => {
-    return require('./src/images/profile.png'); // 로고 이미지의 경로
+    // return require(''); // 이미지 파일 사용시 활성화하세요. ex.require('./src/images/profile.png')
+    return 'https://source.unsplash.com/random/100x100'; // 랜덤 이미지, 윗줄의 프로필 이미지를 사용시 주석 처리
   },
   titleLogoShow: true, // 타이틀 로고의 출력 유무, boolean, default=false
   bio: 'Hello World!', // 타이틀 제목 아래의 부제목

@@ -1,25 +1,26 @@
 let config = {
-  title: `Dev.White`,
-  author: 'Junho Baik',
-  description: 'Dev.White Development Blog',
-  siteUrl: 'https://junhobaik.github.io',
+  title: `Title`,
+  author: 'Author',
+  description: 'Description',
+  siteUrl: 'https://?.github.io',
 
   // # Header config
   titleLogo: () => {
-    return require('./src/images/profile.png');
+    // return require(''); // profile image file. ex.require('./src/images/profile.png')
+    return 'https://source.unsplash.com/random/100x100'; // random image
   },
   titleLogoShow: true,
-  bio: 'Jr. FRONT-END DEVELOPER',
+  bio: 'Bio comments',
   bioShow: true,
   // social URL
-  github: 'https://github.com/junhobaik',
-  linkedin: '',
+  github: '#', // ex.https://github.com/junhobaik
+  linkedin: '#',
   facebook: '',
-  instagram: 'https://www.instagram.com/junhobaik/',
+  instagram: '',
 
   // # Addtional
-  googleAnalyticsTrackingId: 'UA-103592668-4',
-  disqusShortname: 'dev-hundred-blog',
+  googleAnalyticsTrackingId: '', //ex. UA-123123123-0
+  disqusShortname: '',
 
   // ## google AdSense
   // In addition, client-id in '/static/ads.txt' file needs to be modified
