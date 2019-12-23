@@ -21,9 +21,20 @@ const Header = (props: headerPropsType) => {
   const [isHide, setIsHide] = useState(false);
 
   useEffect(() => {
-    const profile: HTMLImageElement | null = document.querySelector(
-      '.header-profile-image-wrap>img'
-    );
+    const bio: HTMLDivElement | null = document.querySelector('.bio');
+    if (bio) {
+      if (isHide === true) {
+        bio.style.opacity = '0';
+        bio.style.pointerEvents = 'none';
+      } else {
+        bio.style.opacity = '1';
+        bio.style.pointerEvents = 'all';
+      }
+    }
+  }, [isHide]);
+
+  useEffect(() => {
+    const profile: HTMLImageElement | null = document.querySelector('.header-profile-image-wrap>img');
 
     const prevPath = path;
     const currPath = location.pathname;
@@ -48,23 +59,6 @@ const Header = (props: headerPropsType) => {
       setPath(location.pathname);
     }
 
-    return () => {};
-  }, [location.pathname]);
-
-  useEffect(() => {
-    const bio: HTMLDivElement | null = document.querySelector('.bio');
-    if (bio) {
-      if (isHide === true) {
-        bio.style.opacity = '0';
-        bio.style.pointerEvents = 'none';
-      } else {
-        bio.style.opacity = '1';
-        bio.style.pointerEvents = 'all';
-      }
-    }
-  }, [isHide]);
-
-  useEffect(() => {
     const setVisible = () => {
       setYPos(prevYPos => {
         const currentYPos = window.pageYOffset;
@@ -79,9 +73,7 @@ const Header = (props: headerPropsType) => {
   }, []);
 
   const tagSpanVisibleToggle = (isVisible: boolean) => {
-    const tag: HTMLSpanElement | null = document.querySelector(
-      '.tag-wrap>span'
-    );
+    const tag: HTMLSpanElement | null = document.querySelector('.tag-wrap>span');
 
     if (tag && isVisible) tag.style.opacity = '1';
     if (tag && !isVisible) tag.style.opacity = '0';
@@ -148,8 +140,7 @@ const mapStateToProps = ({ path, size }: { path: string; size: string }) => {
 
 const mapDispatchToProps = (dispatch: any) => {
   return {
-    setPath: (path: string, size: string) =>
-      dispatch({ type: `SET_PATH`, path, size }),
+    setPath: (path: string, size: string) => dispatch({ type: `SET_PATH`, path, size }),
   };
 };
 

@@ -20,26 +20,17 @@ export interface postProps {
 const Post = (props: postProps) => {
   const { data } = props;
   const { markdownRemark } = data; // data.markdownRemark holds your post data
-  const {
-    frontmatter,
-    html,
-    tableOfContents,
-    fields,
-    excerpt,
-  } = markdownRemark;
+  const { frontmatter, html, tableOfContents, fields, excerpt } = markdownRemark;
   const { title, date, tags, keywords } = frontmatter;
   const { slug } = fields;
   const [yList, setYList] = useState();
   const [isInsideToc, setIsInsideToc] = useState(false);
 
-  const isTableOfContents =
-    config.enablePostOfContents && tableOfContents !== '';
+  const isTableOfContents = config.enablePostOfContents && tableOfContents !== '';
   const isDisqus = config.disqusShortname;
 
   useEffect(() => {
-    const hs = Array.from(document.querySelectorAll('h2, h3')) as Array<
-      HTMLHeadingElement
-    >;
+    const hs = Array.from(document.querySelectorAll('h2, h3')) as Array<HTMLHeadingElement>;
 
     const foo = hs.map(h => {
       return h.offsetTop;
@@ -58,9 +49,7 @@ const Post = (props: postProps) => {
             return v < window.pageYOffset;
           }).length - 1;
 
-        const aList = document.querySelectorAll(
-          '.toc.outside li a'
-        ) as NodeListOf<HTMLAnchorElement>;
+        const aList = document.querySelectorAll('.toc.outside li a') as NodeListOf<HTMLAnchorElement>;
 
         for (const i in Array.from(aList)) {
           if (parseInt(i, 10) === index) {
@@ -76,7 +65,7 @@ const Post = (props: postProps) => {
     return () => {
       if (isTableOfContents) document.removeEventListener('scroll', setYPos);
     };
-  }, [window.pageYOffset, yList]);
+  }, [yList]);
 
   const mapTags = tags.map((tag: string) => {
     return (
@@ -90,7 +79,7 @@ const Post = (props: postProps) => {
   const disqusConfig = {
     shortname: config.disqusShortname,
     config: {
-      url: `${config.siteUrl + location.pathname}`,
+      url: `${config.siteUrl + slug}`,
       identifier: slug,
       title,
     },
@@ -109,17 +98,10 @@ const Post = (props: postProps) => {
   return (
     <>
       <Helmet>
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-        ></script>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
       </Helmet>
 
-      <SEO
-        title={title}
-        description={excerpt}
-        keywords={metaKeywords(keywords, tags)}
-      />
+      <SEO title={title} description={excerpt} keywords={metaKeywords(keywords, tags)} />
 
       <Layout>
         <div className="blog-post-container">
@@ -150,17 +132,11 @@ const Post = (props: postProps) => {
               )}
             </div>
             {!isTableOfContents ? null : (
-              <div
-                className="inside-toc-wrap"
-                style={{ display: isInsideToc ? 'flex' : 'none' }}
-              >
+              <div className="inside-toc-wrap" style={{ display: isInsideToc ? 'flex' : 'none' }}>
                 <Toc isOutside={false} toc={tableOfContents} />
               </div>
             )}
-            <div
-              className="blog-post-content"
-              dangerouslySetInnerHTML={{ __html: html }}
-            />
+            <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: html }} />
           </div>
 
           {config.googleAdsense ? (
@@ -181,9 +157,7 @@ const Post = (props: postProps) => {
             </div>
           ) : null}
         </div>
-        {!isTableOfContents ? null : (
-          <Toc isOutside={true} toc={tableOfContents} />
-        )}
+        {!isTableOfContents ? null : <Toc isOutside={true} toc={tableOfContents} />}
       </Layout>
     </>
   );

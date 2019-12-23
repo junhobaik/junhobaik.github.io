@@ -50,6 +50,7 @@
     "@types/react-helmet": "^5.0.14",
     "@types/react-redux": "^7.1.5",
     "@types/typography": "^0.16.3",
+    "gh-pages": "^2.1.1",
     "prettier": "^1.19.1",
     "tslint": "^5.20.1",
     "tslint-config-prettier": "^1.18.0",
@@ -72,7 +73,8 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "tsc": "tsc",
     "type-check": "tsc --noEmit",
-    "lint": "tslint --project ."
+    "lint": "tslint --project .",
+    "deploy": "rm -rf .cache/ && rm -rf public/ && gatsby build && gh-pages -b master -d public"
   },
   "repository": {
     "type": "git",
