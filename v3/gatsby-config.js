@@ -159,7 +159,7 @@ const gatsbyConfig = {
 };
 
 if (process.env.NODE_ENV === 'development') {
-  configs.plugins.push({
+  gatsbyConfig.plugins.push({
     resolve: `gatsby-source-filesystem`,
     options: {
       path: `${__dirname}/_drafts`,
