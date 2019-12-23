@@ -1,4 +1,4 @@
-const config = require('./src/config');
+const config = require('./config');
 const { title, description, author, googleAnalytics, siteUrl } = config;
 
 const gatsbyConfig = {

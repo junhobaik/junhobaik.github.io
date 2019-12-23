@@ -11,7 +11,7 @@ import './post.scss';
 import Toc from '../components/Toc';
 import SEO from '../components/seo';
 import Helmet from 'react-helmet';
-const config = require('../config');
+const config = require('../../config');
 
 export interface postProps {
   data: any;

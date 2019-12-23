@@ -6,7 +6,7 @@ import { faTags, faSearch } from '@fortawesome/free-solid-svg-icons';
 import { connect } from 'react-redux';
 
 import './header.scss';
-const config = require('../../config');
+const config = require('../../../config');
 
 export interface headerPropsType {
   siteTitle: String;
