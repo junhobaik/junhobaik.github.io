@@ -47,6 +47,7 @@ const Search = (props: SearchProps) => {
               id="searchInput"
               value={value}
               placeholder="Search"
+              autoComplete="off"
               onChange={(e: React.FormEvent<HTMLInputElement>) => {
                 setValue(e.currentTarget.value);
               }}
@@ -69,12 +70,6 @@ const Search = (props: SearchProps) => {
                 in Title+Content
               </span>
             </div>
-          </div>
-          <div className="toggle-search-method">
-            <div className="title-only">
-              <span></span>
-            </div>
-            <div className="excerpt-include"></div>
           </div>
 
           <PostList posts={value === '' ? posts : filteredPosts} />
