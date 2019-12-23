@@ -22,7 +22,6 @@ export const pageQuery = graphql`
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
       limit: 1000
-      filter: { frontmatter: { published: { ne: false } } }
     ) {
       edges {
         node {
@@ -34,7 +33,6 @@ export const pageQuery = graphql`
             date(formatString: "YYYY년 MM월 DD일")
             title
             tags
-            published
           }
         }
       }

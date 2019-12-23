@@ -14,7 +14,6 @@ const ResultList = ({ data, keyword, type }) => {
     let isReturn = false;
 
     if (keyword === '') return true;
-    if (node.frontmatter.published === false) return false;
     if (lowerTitle.indexOf(lowerkeyword) > -1) isReturn = true;
     if (type === 'all' && lowerContent.indexOf(lowerkeyword) > -1) isReturn = true;
 

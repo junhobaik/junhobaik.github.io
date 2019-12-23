@@ -15,10 +15,7 @@ exports.createPages = ({ graphql, actions }) => {
       graphql(
         `
           {
-            allMarkdownRemark(
-              sort: { fields: [frontmatter___date], order: DESC }
-              limit: 1000
-            ) {
+            allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, limit: 1000) {
               edges {
                 node {
                   fields {
@@ -27,7 +24,6 @@ exports.createPages = ({ graphql, actions }) => {
                   frontmatter {
                     title
                     tags
-                    published
                   }
                 }
               }
@@ -39,16 +35,10 @@ exports.createPages = ({ graphql, actions }) => {
           reject(result.errors);
         }
 
-        const allPosts = result.data.allMarkdownRemark.edges;
-        const posts = allPosts.filter(
-          post =>
-            process.env.NODE_ENV === 'development' ||
-            post.node.frontmatter.published
-        );
+        const posts = result.data.allMarkdownRemark.edges;
 
         _.each(posts, (post, index) => {
-          const previous =
-            index === posts.length - 1 ? null : posts[index + 1].node;
+          const previous = index === posts.length - 1 ? null : posts[index + 1].node;
           const next = index === 0 ? null : posts[index - 1].node;
 
           createPage({
@@ -123,15 +113,6 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       // 마크다운 파일 내 keywords 필드가 비어있을 시 오류가 나지 않도록 하기 위함
       if (!node.frontmatter.keywords) {
         node.frontmatter.keywords = [config.title];
-      }
-
-      // 마크다운 파일 내 퍼블리쉬 필드가 비어있을 시 오류가 나지 않도록 하기 위함
-      // development 환경일 시 published 필드가 모두 true이도록 하기 위함
-      if (
-        node.frontmatter.published === undefined ||
-        process.env.NODE_ENV === 'development'
-      ) {
-        node.frontmatter.published = true;
       }
 
       // 마크다운 파일 내 태그 필드가 비어있을 시 오류가 나지 않도록 하기 위함

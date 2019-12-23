@@ -85,7 +85,6 @@ export const pageQuery = graphql`
   query {
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { published: { ne: false } } }
     ) {
       edges {
         node {
@@ -95,7 +94,6 @@ export const pageQuery = graphql`
           }
           frontmatter {
             title
-            published
           }
         }
       }
