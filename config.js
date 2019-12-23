@@ -1,7 +1,7 @@
 let config = {
-  title: `HUNDRED`,
+  title: `Dev.White`,
   author: 'Junho Baik',
-  description: "Junho Baik's blog",
+  description: 'Dev.White Development Blog',
   siteUrl: 'https://junhobaik.github.io',
 
   // # Header config
