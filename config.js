@@ -13,8 +13,8 @@ let config = {
   bio: 'Bio comments',
   bioShow: true,
   // social URL
-  github: '#', // ex.https://github.com/junhobaik
-  linkedin: '#',
+  github: '', // ex.https://github.com/junhobaik
+  linkedin: '',
   facebook: '',
   instagram: '',
 
