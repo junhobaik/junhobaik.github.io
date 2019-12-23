@@ -20,9 +20,12 @@ module.exports = {
   linkedin: '',                                     // ex.'https://www.linkedin.com/in/junho-baik-16073a19ab'
   facebook: '',                                     // ex.'https://www.facebook.com/zuck' or 'https://www.facebook.com/profile.php?id=000000000000000'
   instagram: 'https://www.instagram.com/junhobaik', // ex.'https://www.instagram.com/junhobaik'
-  github: 'https://github.com/junhobaik',           //ex.'https://github.com/junhobaik'
+  github: 'https://github.com/junhobaik',           // ex.'https://github.com/junhobaik'
 
   /** Post */
   enablePostOfContents: true,     // TableOfContents enable (Type of Value: Boolean. Not String)
   disqusShortname: 'junhobaik',   // comments (Disqus sort-name)
+
+  /** Optional */
+  googleAnalyticsTrackingId: 'UA-103592668-4', // Google Analytics TrackingID. ex.'UA-123456789-0'
 };
