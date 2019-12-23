@@ -1,5 +1,5 @@
 const config = require('./src/config');
-const { title, description, author } = config;
+const { title, description, author, googleAnalytics } = config;
 
 module.exports = {
   siteMetadata: { title, description, author },
@@ -8,7 +8,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: config.googleAnalyticsTrackingId,
+        trackingId: googleAnalytics,
       },
     },
 
@@ -82,8 +82,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: config.title,
-        short_name: config.title,
+        name: title,
+        short_name: title,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#fff`,
@@ -99,5 +99,7 @@ module.exports = {
         pathToConfigModule: `src/utils/typography.ts`,
       },
     },
+
+    `gatsby-plugin-sitemap`,
   ],
 };

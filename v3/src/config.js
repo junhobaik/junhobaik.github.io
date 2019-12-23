@@ -23,9 +23,12 @@ module.exports = {
   github: 'https://github.com/junhobaik',           // ex.'https://github.com/junhobaik'
 
   /** Post */
-  enablePostOfContents: true,     // TableOfContents enable (Type of Value: Boolean. Not String)
+  enablePostOfContents: true,     // TableOfContents activation (Type of Value: Boolean. Not String)
   disqusShortname: 'junhobaik',   // comments (Disqus sort-name)
 
   /** Optional */
-  googleAnalyticsTrackingId: 'UA-103592668-4', // Google Analytics TrackingID. ex.'UA-123456789-0'
+  googleAnalytics: 'UA-103592668-4',    // Google Analytics TrackingID. ex.'UA-123456789-0'
+  googleAdsense: true,                            // Google Adsense Activation. (Type of Value: Boolean)
+  googleAdsenseClient: 'ca-pub-5001380215831339', // Google Adsense Client. ex.'ca-pub-5001380215831339'
+  googleAdsenseSlot: '5214956675',                // Google Adsense Slot. ex.'5214956675'
 };

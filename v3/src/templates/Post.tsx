@@ -2,14 +2,15 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import { graphql, Link } from 'gatsby';
 import { DiscussionEmbed } from 'disqus-react';
-// import { Disqus } from 'gatsby-plugin-disqus';
 import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome';
 import { faListUl } from '@fortawesome/free-solid-svg-icons';
+import AdSense from 'react-adsense';
 
 import Layout from '../components/Layout';
 import './post.scss';
 import Toc from '../components/Toc';
 import SEO from '../components/seo';
+import Helmet from 'react-helmet';
 const config = require('../config');
 
 export interface postProps {
@@ -107,11 +108,19 @@ const Post = (props: postProps) => {
 
   return (
     <>
+      <Helmet>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+        ></script>
+      </Helmet>
+
       <SEO
         title={title}
         description={excerpt}
         keywords={metaKeywords(keywords, tags)}
       />
+
       <Layout>
         <div className="blog-post-container">
           <div className="blog-post">
@@ -153,6 +162,19 @@ const Post = (props: postProps) => {
               dangerouslySetInnerHTML={{ __html: html }}
             />
           </div>
+
+          {config.googleAdsense ? (
+            <aside className="ad">
+              <AdSense.Google
+                client={config.googleAdsenseClient}
+                slot={config.googleAdsenseSlot}
+                style={{ display: 'block' }}
+                format="auto"
+                responsive="true"
+              />
+            </aside>
+          ) : null}
+
           {isDisqus ? (
             <div className="comments">
               <DiscussionEmbed {...disqusConfig} />
