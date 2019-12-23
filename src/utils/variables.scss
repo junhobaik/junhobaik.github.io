@@ -1,76 +1,13 @@
-/** theme (default: basic) */
-$theme: white;
-/////////////////////////////
-
-// media query (max-width)
-$break-small: 50em;
-$break-medium: 70em;
-
 // global
-$font-color-0: #000;
-$font-color-1: #424242;
-$font-color-2: #666666;
-$font-color-3: lightgray;
-$code-block-link-color: #ccc;
-$line-color: lightgray;
-
-// tag
-$tag-background-color: $font-color-2;
-$tag-font-color: #fff;
-
-// article(layout's children)
-$article-background-color: #fbfbfb;
-$article-font-color: $font-color-1;
-$post-link-background-color: #fff;
+$font-color-0: #24292e;
 
 // header
-$header-background-color: rgb(45, 48, 55);
-$header-font-color: #fdfffc;
-$header-border-bottom: 0;
-$header-border-top: 0;
-$header-title-border: 0;
-$header-logo-opacity: 0.7;
-$header-box-shadow: 0 0.5rem 0.5rem -0.5rem $line-color;
+$header-height: 6rem;
+$header-height-m: 4rem;
+$header-height-s: 3rem;
 
-// footer
-$footer-border-top: 1px solid $line-color;
-
-/** THEME */
-@if $theme == white {
-  $header-background-color: white;
-  $header-font-color: $font-color-2;
-  $article-background-color: #fff;
-  $header-box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.1), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
-}
-
-@if $theme == ocean {
-  $header-background-color: #269ebf;
-  $header-font-color: white;
-  $article-background-color: #fff6ed;
-  $header-logo-opacity: 0.9;
-  $post-link-background-color: #fdfdfd;
-}
-
-@if $theme == modern {
-  $header-background-color: #11131e;
-  $font-color-0: #11131e;
-  $font-color-1: #242840;
-  $article-background-color: #edf2f4;
-  $tag-background-color: #242840;
-}
-
-@if $theme == greenMint {
-  $font-color-0: #00ce9f;
-  $header-background-color: white;
-  $header-font-color: $font-color-1;
-  $header-border-bottom: 1px solid $font-color-0;
-  $tag-background-color: $font-color-0;
-  $line-color: $font-color-0;
-}
-
-@if $theme == mint {
-  $header-background-color: #23c8d1;
-  $header-logo-opacity: 0.8;
-  $line-color: $header-background-color;
-  $tag-background-color: $header-background-color;
-}
+// media query
+$break-l: 1119px;
+$break-m: 839px;
+$break-s: 559px;
+$break-toc: 1160px;

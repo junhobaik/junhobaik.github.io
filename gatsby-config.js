@@ -1,31 +1,35 @@
-require('dotenv').config();
-const config = require('./config');
+const config = require('./src/config');
+const { title, description, author, googleAnalytics } = config;
 
-console.log(process.env.NODE_ENV);
+const gatsbyConfig = {
+  siteMetadata: { title, description, author },
 
-const configs = {
-  siteMetadata: {
-    title: config.title,
-    author: config.author,
-    description: config.description,
-    siteUrl: config.siteUrl,
-  },
   plugins: [
-    'gatsby-plugin-react-helmet',
     {
-      resolve: `gatsby-plugin-sass`,
-      options: {},
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: googleAnalytics,
+      },
     },
+
+    `gatsby-plugin-react-helmet`,
+
+    `gatsby-plugin-typescript`,
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `markdown-pages`,
         path: `${__dirname}/_posts`,
-        name: 'markdown-pages',
       },
     },
+
     {
       resolve: `gatsby-transformer-remark`,
       options: {
+        tableOfContents: {
+          maxDepth: 3,
+        },
         plugins: [
           {
             resolve: `gatsby-remark-images`,
@@ -58,25 +62,46 @@ const configs = {
               },
             },
           },
+          `gatsby-remark-autolink-headers`,
         ],
       },
     },
-    'gatsby-plugin-sharp',
-    'gatsby-plugin-robots-txt',
-    `gatsby-plugin-sitemap`,
+
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
+    },
+
+    `gatsby-transformer-sharp`,
+
+    `gatsby-plugin-sharp`,
+
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: title,
+        short_name: title,
+        start_url: `/`,
+        background_color: `#fff`,
+        theme_color: `#fff`,
+        display: `standalone`,
+      },
+    },
+
+    `gatsby-plugin-sass`,
+
     {
       resolve: `gatsby-plugin-typography`,
       options: {
-        pathToConfigModule: `src/utils/typography`,
+        pathToConfigModule: `src/utils/typography.ts`,
       },
     },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: config.googleAnalyticsTrackingId,
-      },
-    },
-    'gatsby-plugin-no-sourcemaps',
+
+    `gatsby-plugin-sitemap`,
+
     {
       resolve: `gatsby-plugin-feed`,
       options: {
@@ -125,7 +150,7 @@ const configs = {
               }
             `,
             output: '/rss.xml',
-            title: `${config.title} - rss`,
+            title: `${title} | Feed`,
           },
         ],
       },
@@ -134,13 +159,13 @@ const configs = {
 };
 
 if (process.env.NODE_ENV === 'development') {
-  configs.plugins.push({
+  gatsbyConfig.plugins.push({
     resolve: `gatsby-source-filesystem`,
     options: {
-      path: `${__dirname}/_posts`,
+      path: `${__dirname}/_drafts`,
       name: 'markdown-pages',
     },
   });
 }
 
-module.exports = configs;
+module.exports = gatsbyConfig;

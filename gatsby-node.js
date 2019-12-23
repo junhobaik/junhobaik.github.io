@@ -1,102 +1,49 @@
-const _ = require('lodash');
-const Promise = require('bluebird');
-const path = require('path');
+const path = require(`path`);
 const { createFilePath } = require('gatsby-source-filesystem');
-const config = require('./config');
+const config = require('./src/config');
 
-exports.createPages = ({ graphql, actions }) => {
+// Create Pages
+exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
-
-  return new Promise((resolve, reject) => {
-    const blogPostTemplate = path.resolve('./src/templates/blogPost/index.js');
-    const tagListTemplate = path.resolve('./src/templates/tagList/index.js');
-
-    resolve(
-      graphql(
-        `
-          {
-            allMarkdownRemark(
-              sort: { fields: [frontmatter___date], order: DESC }
-              limit: 1000
-            ) {
-              edges {
-                node {
-                  fields {
-                    slug
-                  }
-                  frontmatter {
-                    title
-                    tags
-                    published
-                  }
-                }
-              }
+  const blogPostTemplate = path.resolve(`src/templates/Post.tsx`);
+  const result = await graphql(`
+    {
+      allMarkdownRemark(
+        sort: { fields: [frontmatter___date], order: DESC }
+        limit: 1000
+      ) {
+        edges {
+          node {
+            fields {
+              slug
+            }
+            frontmatter {
+              title
+              tags
             }
           }
-        `
-      ).then(result => {
-        if (result.errors) {
-          reject(result.errors);
         }
+      }
+    }
+  `);
 
-        const allPosts = result.data.allMarkdownRemark.edges;
-        const posts = allPosts.filter(
-          post =>
-            process.env.NODE_ENV === 'development' ||
-            post.node.frontmatter.published
-        );
+  if (result.errors) {
+    reporter.panicOnBuild(`Error while running GraphQL query.`);
+    return;
+  }
 
-        _.each(posts, (post, index) => {
-          const previous =
-            index === posts.length - 1 ? null : posts[index + 1].node;
-          const next = index === 0 ? null : posts[index - 1].node;
-
-          createPage({
-            path: post.node.fields.slug,
-            component: blogPostTemplate,
-            context: {
-              slug: post.node.fields.slug,
-              previous,
-              next,
-            },
-          });
-        });
-
-        // Tag pages
-        let tags = [];
-
-        _.each(posts, edge => {
-          if (_.get(edge, 'node.frontmatter.tags')) {
-            tags = tags.concat(edge.node.frontmatter.tags);
-          }
-        });
-
-        tags = _.uniq(tags);
-
-        createPage({
-          path: `/tags`,
-          component: tagListTemplate,
-          context: {
-            tags,
-            result,
-          },
-        });
-
-        tags.forEach(tag => {
-          createPage({
-            path: `/tags/${_.kebabCase(tag)}/`,
-            component: tagListTemplate,
-            context: {
-              tag,
-              result,
-            },
-          });
-        });
-      })
-    );
+  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    createPage({
+      path: node.fields.slug,
+      component: blogPostTemplate,
+      context: {
+        slug: node.fields.slug,
+      },
+    });
   });
 };
 
+// Create Nodes
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
 
@@ -122,17 +69,17 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     const rewriteNode = node => {
       // 마크다운 파일 내 keywords 필드가 비어있을 시 오류가 나지 않도록 하기 위함
       if (!node.frontmatter.keywords) {
-        node.frontmatter.keywords = [config.title];
+        node.frontmatter.keywords = [config.title, config.author];
       }
 
       // 마크다운 파일 내 퍼블리쉬 필드가 비어있을 시 오류가 나지 않도록 하기 위함
       // development 환경일 시 published 필드가 모두 true이도록 하기 위함
-      if (
-        node.frontmatter.published === undefined ||
-        process.env.NODE_ENV === 'development'
-      ) {
-        node.frontmatter.published = true;
-      }
+      // if (
+      //   node.frontmatter.published === undefined ||
+      //   process.env.NODE_ENV === 'development'
+      // ) {
+      //   node.frontmatter.published = true;
+      // }
 
       // 마크다운 파일 내 태그 필드가 비어있을 시 오류가 나지 않도록 하기 위함
       if (!node.frontmatter.tags || node.frontmatter.tags === '') {

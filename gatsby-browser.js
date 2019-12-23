@@ -1,4 +1,4 @@
-require('prismjs/themes/prism-tomorrow.css');
-// themes prism- coy, dark, funky, okadia, solarizedlight, tomorrow, twilight
-require('normalize.css/normalize.css');
-require('@fortawesome/fontawesome-svg-core/styles.css');
+import wrapWithProvider from './wrap-with-provider.tsx';
+export const wrapRootElement = wrapWithProvider;
+
+require('prism-themes/themes/prism-ghcolors.css');
