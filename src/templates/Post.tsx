@@ -139,17 +139,15 @@ const Post = (props: postProps) => {
             <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: html }} />
           </div>
 
-          {config.googleAdsense ? (
-            <aside className="ad">
-              <AdSense.Google
-                client={config.googleAdsenseClient}
-                slot={config.googleAdsenseSlot}
-                style={{ display: 'block' }}
-                format="auto"
-                responsive="true"
-              />
-            </aside>
-          ) : null}
+          <aside className="ad">
+            <AdSense.Google
+              client={config.googleAdsenseClient || 'ca-pub-5001380215831339'}
+              slot={config.googleAdsenseSlot || '5214956675'}
+              style={{ display: 'block' }}
+              format="auto"
+              responsive="true"
+            />
+          </aside>
 
           {isDisqus ? (
             <div className="comments">
