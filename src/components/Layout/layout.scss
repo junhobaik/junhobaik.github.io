@@ -33,8 +33,11 @@ a {
   }
 
   footer {
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 0.25rem 2rem 0.25rem 2rem;
+    padding-top: 1rem;
+    padding-bottom: 0.25rem;
+    text-align: center;
+    font-size: 0.9rem;
+    opacity: 0.8;
   }
 }
 
@@ -53,7 +56,6 @@ a {
   margin-right: 2rem;
   margin-bottom: 2.2rem;
   transition: 0.5s;
-  background-color: rgba(255, 255, 255, 0.75);
   cursor: pointer;
 
   @media screen and (max-width: $break-s) {
@@ -64,5 +66,11 @@ a {
   svg {
     color: #6a737d;
     margin: 0;
+    opacity: 0.5;
+    transition: all 0.2s;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 }
