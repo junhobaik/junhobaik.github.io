@@ -140,21 +140,24 @@ const Post = (props: postProps) => {
             <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: html }} />
           </div>
 
-          <aside className="ad">
-            <AdSense.Google
-              client={config.googleAdsenseClient || 'ca-pub-5001380215831339'}
-              slot={config.googleAdsenseSlot || '5214956675'}
-              style={{ display: 'block' }}
-              format="auto"
-              responsive="true"
-            />
-          </aside>
-
-          {isDisqus ? (
-            <div className="comments">
-              <DiscussionEmbed {...disqusConfig} />
-            </div>
-          ) : null}
+          {process.env.NODE_ENV === 'development' ? null : (
+            <>
+              <aside className="ad">
+                <AdSense.Google
+                  client={config.googleAdsenseClient || 'ca-pub-5001380215831339'}
+                  slot={config.googleAdsenseSlot || '5214956675'}
+                  style={{ display: 'block' }}
+                  format="auto"
+                  responsive="true"
+                />
+              </aside>
+              {isDisqus ? (
+                <div className="comments">
+                  <DiscussionEmbed {...disqusConfig} />
+                </div>
+              ) : null}
+            </>
+          )}
         </div>
         {!isTableOfContents ? null : <Toc isOutside={true} toc={tableOfContents} />}
       </Layout>
