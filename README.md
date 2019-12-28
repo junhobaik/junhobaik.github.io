@@ -42,6 +42,12 @@ Gatsby로 제작한 블로그 테마 "Borderless" 입니다.
 
 ---
 
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
 # "Borderless" Documents (ko)
 
 - [Install](#install)
@@ -54,6 +60,8 @@ Gatsby로 제작한 블로그 테마 "Borderless" 입니다.
 
 Gatsby로 제작된 정적 웹사이트,  
 블로그 Borderless 테마입니다.
+
+이 문서에서는 기본적으로 Github Pages로 배포하는 것을 기준으로 작성하였습니다.
 
 **[Borderless DEMO WebSite](https://junhobaik.github.io)**
 
