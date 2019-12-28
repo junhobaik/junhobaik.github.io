@@ -1,3 +1,5 @@
+@import '../../utils/variables.scss';
+
 #Search {
   max-width: 720px;
   margin: 0 auto;
@@ -9,6 +11,11 @@
       align-items: center;
       justify-content: center;
       margin-bottom: 4rem;
+      padding: 1rem;
+
+      @media screen and (max-width: $break-s) {
+        margin-bottom: 2rem;
+      }
 
       input {
         all: unset;
@@ -17,12 +24,19 @@
       }
 
       .search-toggle {
+        display: flex;
+        flex-direction: row;
         font-size: 0.8rem;
+
+        @media screen and (max-width: $break-s) {
+          flex-direction: column;
+        }
 
         span {
           cursor: pointer;
           user-select: none;
           transition: 0.2s;
+          opacity: 0.8;
         }
 
         span:nth-child(1) {
