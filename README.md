@@ -45,7 +45,7 @@ Gatsby로 제작한 블로그 테마 "Borderless" 입니다.
 # "Borderless" Documents (ko)
 
 - [Install](#install)
-- [Basic Setting](#basic-setting)
+- [Basic Settings](#basic-settings)
 - [Writing posts](#writing-posts)
   - [Markdown YAML Front matter](#markdown-yaml-front-matter)
 - [Deploy](#deploy)
@@ -188,6 +188,9 @@ Jekyll 의 포스트 파일 제목 형식처럼 날짜가 들어갈 경우 날�
 ```
 
 ### Markdown YAML Front matter
+
+마크다운 게시물의 최상단에는 해당 게시물의 정보를 입력합니다.
+두개의 `---` 안에 정보를 입력하며 아래 예시와 같이 입력합니다.
 
 ```
 ---
