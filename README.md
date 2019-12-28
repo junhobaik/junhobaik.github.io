@@ -70,13 +70,31 @@ Gatsby로 제작된 정적 웹사이트,
 해당 블로그로 시작하기 위한 방법은 두가지가 있습니다.
 
 1. 해당 Repository Fork 후 사용
-2. 해당 Repository Clone 후 사용
-
-1번 방법을 추천합니다.
+1. 해당 Repository Clone 후 사용
 
 ### **Fork**로 시작하기
 
-//
+- 해당 Repository를 Fork 한 후,
+
+1. `Setting > Option - Repository name`  
+   Repository의 이름을 "**username**.github.io"로 변경합니다.
+1. `Setting > Branches - Default branch`  
+   기본 Branch를 변경합니다. **develop**를 선택하고 Update 버튼을 눌러 진행하세요.
+1. 이제 본인의 Repository를 Clone 합니다.
+1. `$ npm i` 명령어로 패키지 설치
+1. `$ npm start` 명령어로 개발 서버 시작  
+   "localhost:8000"에서 확인할 수 있습니다.
+
+#### ! 중요
+
+**master 브랜치에서 작업하지마세요.**
+
+위의 과정을 거치게 되면 작업 중인 브랜치는 develop입니다.  
+이 develop 브랜치에서 수정 또는 게시물 작성 등의 작업을 하시면 됩니다.
+
+master 브랜치는 차후 배포에 쓰일 브랜치로 배포될 파일들이 위치하게 됩니다.  
+develop 브랜치에서 작업을 하시고, 배포 명령어를 통해 배포하면 됩니다.  
+배포 명령어를 통해 자동으로 master 브랜치로 배포되며 master 브랜치는 직접 접근할 일이 없습니다.
 
 ### **Clone**으로 시작하기
 
@@ -85,13 +103,28 @@ $ git clone -b develop https://github.com/junhobaik/junhobaik.github.io.git [SIT
 $ npm install
 ```
 
+위의 과정을 통해 develop 브랜치를 기본으로 해당 저장소를 클론하고 필요한 패키지를 설치합니다.
+
 ```shell
 $ npm start
 ```
 
-//
+개발 서버를 실행하며 localhost:8000에서 확인할 수 있습니다.
+
+#### ! 중요
+
+**master 브랜치에서 작업하지마세요.**
+
+위의 과정을 거치게 되면 작업 중인 브랜치는 develop입니다.  
+이 develop 브랜치에서 수정 또는 게시물 작성 등의 작업을 하시면 됩니다.
+
+master 브랜치는 차후 배포에 쓰일 브랜치로 배포될 파일들이 위치하게 됩니다.  
+develop 브랜치에서 작업을 하시고, 배포 명령어를 통해 배포하면 됩니다.  
+배포 명령어를 통해 자동으로 master 브랜치로 배포되며 master 브랜치는 직접 접근할 일이 없습니다.
 
 ## Basic Settings
+
+본인에 맞게 기본 설정을 수정합니다.
 
 ### Modify `./config.js`
 
@@ -184,7 +217,7 @@ Jekyll 의 포스트 파일 제목 형식처럼 날짜가 들어갈 경우 날�
       image-file-1.png
       image-file-2.jpg
       ...
-  
+
 ```
 
 ### Markdown YAML Front matter
@@ -258,7 +291,7 @@ tags:
 1. 혹시나 작업중인 브랜치가 master 브랜치가 아닌지 확인하세요. (해당 관련 설명은 Install 항목을 참고하세요)
 
 ```
-npm run deploy
+$ npm run deploy
 ```
 
 위의 명령어로 배포가 시작됩니다.
@@ -266,5 +299,3 @@ master 브랜치로 commit이 자동으로 이루어지며,
 반영되기까지는 수십초 정도, 때로는 최대 수분의 시간이 소요됩니다.
 
 이제 본인의 주소로 들어가 확인할 수 있습니다.
-
-##
