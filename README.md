@@ -113,6 +113,6 @@ module.exports = {
 | linkedin, facebook, instagram, github            | String                | Home(index)페이지에서 좌측의 개인정보 아래 표시될 소셜 아이콘 링크들입니다. 아이콘 클릭시 해당 링크로 이동하게 됩니다. ID가 아닌 전체 링크를 입력하세요.          |
 | enablePostOfContents                             | Boolean (true, false) | 포스트(게시물)에 목차를 표시할지 설정합니다.                                                                                                                      |
 | disqusShortname                                  | String                | 댓글 기능을 활성화 할 수 있습니다. disqus에서 site생성 후 해당 site의 shortname을 여기 입력합니다. 값을 비우면 댓글 기능이 비활성화됩니다.                        |
-| googleAnalytics                                  |                       | 구글 애널리틱스를 활성화 할 수 있습니다. 본인의 TrackingID를 입력합니다.                                                                                          |
-| googleAdsenseClient                              |                       | GoogleAdsense를 활성화시 구글 애드센스의 Client 입력.                                                                                                             |
-| googleAdsenseSlot                                |                       | GoogleAdsense를 활성화시 구글 애드센스의 Slot 입력.                                                                                                               |
+| googleAnalytics                                  | String                | 구글 애널리틱스를 활성화 할 수 있습니다. 본인의 TrackingID를 입력합니다.                                                                                          |
+| googleAdsenseClient                              | String                | GoogleAdsense를 활성화시 구글 애드센스의 Client 입력.                                                                                                             |
+| googleAdsenseSlot                                | String                | GoogleAdsense를 활성화시 구글 애드센스의 Slot 입력.                                                                                                               |
