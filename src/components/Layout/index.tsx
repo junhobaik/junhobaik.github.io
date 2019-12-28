@@ -42,6 +42,7 @@ const Layout = (props: LayoutPropsType) => {
   return (
     <>
       <Helmet>
+        <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
         <link href={`https://fonts.googleapis.com/css?family=${googleFont}`} rel="stylesheet" />
       </Helmet>
 

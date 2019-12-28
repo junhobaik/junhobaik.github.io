@@ -91,6 +91,9 @@ const gatsbyConfig = {
         background_color: `#fff`,
         theme_color: `#fff`,
         display: `standalone`,
+        icon: 'src/images/icon.png',
+        legacy: false,
+        include_favicon: false,
       },
     },
 
