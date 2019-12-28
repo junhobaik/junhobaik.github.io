@@ -84,7 +84,9 @@ const gatsbyConfig = {
       options: {
         name: title,
         short_name: title,
+        description: description,
         start_url: `/`,
+        lang: 'ko',
         background_color: `#fff`,
         theme_color: `#fff`,
         display: `standalone`,
