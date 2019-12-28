@@ -1,5 +1,6 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
+import Helmet from 'react-helmet';
 import { graphql, Link } from 'gatsby';
 import { DiscussionEmbed } from 'disqus-react';
 import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome';
@@ -7,10 +8,10 @@ import { faListUl } from '@fortawesome/free-solid-svg-icons';
 import AdSense from 'react-adsense';
 
 import Layout from '../components/Layout';
-import './post.scss';
 import Toc from '../components/Toc';
 import SEO from '../components/seo';
-import Helmet from 'react-helmet';
+import './post.scss';
+import 'katex/dist/katex.min.css';
 const config = require('../../config');
 
 export interface postProps {

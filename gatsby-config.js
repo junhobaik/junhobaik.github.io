@@ -63,6 +63,7 @@ const gatsbyConfig = {
             },
           },
           `gatsby-remark-autolink-headers`,
+          `gatsby-remark-katex`,
         ],
       },
     },
