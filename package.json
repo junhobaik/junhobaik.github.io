@@ -31,6 +31,7 @@
     "gatsby-source-filesystem": "^2.1.43",
     "gatsby-transformer-remark": "^2.6.45",
     "gatsby-transformer-sharp": "^2.3.7",
+    "mobile-detect": "^1.4.4",
     "node-sass": "^4.13.0",
     "prism-themes": "^1.3.0",
     "prismjs": "^1.17.1",

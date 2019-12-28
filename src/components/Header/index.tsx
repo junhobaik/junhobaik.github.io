@@ -4,6 +4,7 @@ import { Link } from 'gatsby';
 import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome';
 import { faTags, faSearch } from '@fortawesome/free-solid-svg-icons';
 import { connect } from 'react-redux';
+import MobileDetect from 'mobile-detect';
 
 import './header.scss';
 const config = require('../../../config');
@@ -19,6 +20,7 @@ const Header = (props: headerPropsType) => {
   const { siteTitle, path, setPath, size } = props;
   const [, setYPos] = useState(0);
   const [isHide, setIsHide] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const bio: HTMLDivElement | null = document.querySelector('.bio');
@@ -34,6 +36,11 @@ const Header = (props: headerPropsType) => {
   }, [isHide]);
 
   useEffect(() => {
+    const md = new MobileDetect(window.navigator.userAgent);
+    if (md.mobile()) {
+      setIsMobile(true);
+    }
+
     const profile: HTMLImageElement | null = document.querySelector('.header-profile-image-wrap>img');
 
     const prevPath = path;
@@ -80,7 +87,7 @@ const Header = (props: headerPropsType) => {
   };
 
   return (
-    <header id="Header" className={isHide ? 'hide' : 'show'}>
+    <header id="Header" className={`${isHide ? 'hide' : 'show'} ${isMobile ? 'mobile' : ''}`}>
       <div className="header-title">
         <Link to="/">
           <div className="header-profile-image-wrap">

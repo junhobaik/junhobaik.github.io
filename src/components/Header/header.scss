@@ -8,7 +8,7 @@
   width: 100%;
   align-items: flex-end;
   justify-content: space-between;
-  padding: 0.5rem 2rem 1rem 2rem;
+  padding: 0 2rem 1rem 2rem;
   height: $header-height;
   max-height: $header-height;
   transition: top 0.3s;
@@ -18,14 +18,19 @@
 
   @media screen and (max-width: $break-l) {
     background-color: #fff;
-    padding: 0.5rem 1.25rem 1rem 1rem;
+    padding: 0 1.5rem 1rem 1.5rem;
   }
   @media screen and (max-width: $break-m) {
+    padding: 0 1rem 0.5rem 1rem;
     height: $header-height-m;
   }
   @media screen and (max-width: $break-s) {
     height: $header-height-s;
-    padding: 0 1.25rem 0.25rem 1rem;
+    padding: 0 1rem 0.25rem 1rem;
+  }
+
+  &.mobile {
+    top: 0 !important;
   }
 
   &.show {
@@ -39,14 +44,21 @@
     display: flex;
     align-items: flex-end;
 
+    @media screen and (max-width: $break-s) {
+      align-items: center;
+    }
+
     .header-profile-image-wrap {
       display: flex;
       align-items: center;
       border: 1px solid #aaa;
       padding: 2px;
-
       border-radius: 100%;
       margin-right: 0.25rem;
+
+      @media screen and (max-width: $break-s) {
+        padding: 1px;
+      }
 
       img {
         border-radius: 100%;
@@ -58,6 +70,11 @@
         @media screen and (max-width: $break-l) {
           width: 25px !important;
           height: 25px !important;
+        }
+
+        @media screen and (max-width: $break-s) {
+          width: 15px !important;
+          height: 15px !important;
         }
 
         &:hover {
@@ -87,6 +104,10 @@
       &:hover {
         opacity: 1;
       }
+
+      @media screen and (max-width: $break-s) {
+        font-size: 1.1rem;
+      }
     }
   }
 }
@@ -109,6 +130,10 @@
         opacity: 0.5;
         &:hover {
           opacity: 0.8;
+        }
+
+        @media screen and (max-width: $break-s) {
+          font-size: 1rem;
         }
       }
 
