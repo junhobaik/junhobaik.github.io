@@ -39,21 +39,19 @@ const Tags = (props: TagsPageProps) => {
 
     return (
       <li key={g.fieldValue}>
-        <div>
-          <span
-            className="tag-text"
-            style={{
-              fontSize: getFontSize(),
-              opacity: g.fieldValue === targetTag ? '0.9' : '0.5',
-              fontWeight: g.fieldValue === targetTag ? 'bold' : 'normal',
-            }}
-            onClick={() => {
-              setTargetTag(g.fieldValue);
-            }}
-          >
-            <a href={`#${g.fieldValue}`}>{g.fieldValue}</a>
-          </span>
-        </div>
+        <span
+          className="tag-text"
+          style={{
+            fontSize: getFontSize(),
+            opacity: g.fieldValue === targetTag ? '0.9' : '0.5',
+            fontWeight: g.fieldValue === targetTag ? 'bold' : 'normal',
+          }}
+          onClick={() => {
+            setTargetTag(g.fieldValue);
+          }}
+        >
+          <a href={`#${g.fieldValue}`}>{g.fieldValue}</a>
+        </span>
       </li>
     );
   });
@@ -65,12 +63,10 @@ const Tags = (props: TagsPageProps) => {
 
   const getPostList = () => {
     if (group.filter((g: groupItem) => g.fieldValue === targetTag).length) {
-      return group.filter((g: groupItem) => g.fieldValue === targetTag)[0]
-        .edges;
+      return group.filter((g: groupItem) => g.fieldValue === targetTag)[0].edges;
     }
     if (group.filter((g: groupItem) => g.fieldValue === 'Empty Tag').length) {
-      return group.filter((g: groupItem) => g.fieldValue === 'Empty Tag')[0]
-        .edges;
+      return group.filter((g: groupItem) => g.fieldValue === 'Empty Tag')[0].edges;
     }
     return [];
   };
