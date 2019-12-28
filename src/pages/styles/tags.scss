@@ -1,9 +1,15 @@
+@import '../../utils/variables.scss';
+
 #tags {
   max-width: 720px;
   margin: 1rem auto;
 
   .tag-list-wrap {
     margin-bottom: 5rem;
+
+    @media screen and (max-width: $break-s) {
+      margin-bottom: 3rem;
+    }
 
     ul {
       display: flex;
@@ -16,6 +22,10 @@
         align-items: center;
         margin: 0.25rem 0.5rem;
         list-style: none;
+
+        @media screen and (max-width: $break-s) {
+          margin: 0 0.4rem;
+        }
 
         span {
           font-family: 'Nanum Gothic';
