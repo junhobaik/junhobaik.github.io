@@ -44,6 +44,12 @@ Gatsby로 제작한 블로그 테마 "Borderless" 입니다.
 
 # "Borderless" Documents (ko)
 
+- [Install](#install)
+- [Basic Setting](#basic-setting)
+- [Writing posts](#writing-posts)
+  - [Markdown YAML Front matter](#markdown-yaml-front-matter)
+- [Deploy](#deploy)
+
 ## "Borderless", Gatsby Blog Starter(Theme)
 
 Gatsby로 제작된 정적 웹사이트,  
@@ -157,10 +163,10 @@ module.exports = {
 Jekyll 의 포스트 파일 제목 형식처럼 날짜가 들어갈 경우 날짜는 주소에서 제외됩니다.
 
 예시 1. `./_posts/first-post.md`  
-주소: https://junhobaik.github.io/**first-post**
+주소: https://junhobaik.github.io/first-post
 
 예시 2. `./_posts/2019-12-31-first-post.md`
-주소: https://junhobaik.github.io/**first-post**
+주소: https://junhobaik.github.io/first-post
 
 **이미지 포함 게시물 작성**
 
@@ -171,8 +177,15 @@ Jekyll 의 포스트 파일 제목 형식처럼 날짜가 들어갈 경우 날�
 마크다운 파일은 `index.md` 로 제목을 작성,  
 이미지 파일들은 해당 폴더 안에 위치시키면 됩니다.
 
-`./_posts/first-post/index.md`  
-`./_posts/first-post/image-file-1.png`
+```
+  _posts/
+    first-post/
+      index.md
+      image-file-1.png
+      image-file-2.jpg
+      ...
+  
+```
 
 ### Markdown YAML Front matter
 
