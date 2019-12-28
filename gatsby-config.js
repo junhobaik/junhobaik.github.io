@@ -157,6 +157,14 @@ const gatsbyConfig = {
         ],
       },
     },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: siteUrl,
+        sitemap: `${siteUrl}${siteUrl[siteUrl.length - 1] !== '/' ? '/' : ''}sitemap.xml`,
+        policy: [{ userAgent: '*', allow: '/' }],
+      },
+    },
   ],
 };
 
