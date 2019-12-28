@@ -102,17 +102,17 @@ module.exports = {
 };
 ```
 
-| 설정                                             | 타입                  | 설명                                                                                                                                                              |
-| ------------------------------------------------ | --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| title                                            | (필수) String         | 사이트의 제목이며, 각 페이지들의 제목에 들어갈 수 있고 Header에서의 Title입니다.                                                                                  |
-| description                                      | (필수) String         | 사이트의 설명                                                                                                                                                     |
-| author                                           | (필수) String         | 사이트의 저자                                                                                                                                                     |
-| siteUrl                                          | (필수) String         | 해당 웹사이트의 주소를 입력. 배포 시에 해당 주소가 없으면 많은 오류가 발생할 수 있습니다. (예, 'https://junhobaik.github.io')                                     |
-| profileImageFileName                             | String                | `./src/images`경로에 프로필 사진을 위치한 후 해당 이미지의 파일명을 입력합니다. Header의 Title 옆 이미지에 들어가며 입력값이 없을때는 랜덤한 이미지를 보여줍니다. |
-| comment, name, company, location, email, website | String                | Home(index)페이지에서 좌측에 보일 개인정보입니다. 입력하지 않을 시 해당 항목을 출력되지 않으며 모든 값은 문자열로 입력합니다.                                     |
-| linkedin, facebook, instagram, github            | String                | Home(index)페이지에서 좌측의 개인정보 아래 표시될 소셜 아이콘 링크들입니다. 아이콘 클릭시 해당 링크로 이동하게 됩니다. ID가 아닌 전체 링크를 입력하세요.          |
-| enablePostOfContents                             | Boolean (true, false) | 포스트(게시물)에 목차를 표시할지 설정합니다.                                                                                                                      |
-| disqusShortname                                  | String                | 댓글 기능을 활성화 할 수 있습니다. disqus에서 site생성 후 해당 site의 shortname을 여기 입력합니다. 값을 비우면 댓글 기능이 비활성화됩니다.                        |
-| googleAnalytics                                  | String                | 구글 애널리틱스를 활성화 할 수 있습니다. 본인의 TrackingID를 입력합니다.                                                                                          |
-| googleAdsenseClient                              | String                | GoogleAdsense를 활성화시 구글 애드센스의 Client 입력.                                                                                                             |
-| googleAdsenseSlot                                | String                | GoogleAdsense를 활성화시 구글 애드센스의 Slot 입력.                                                                                                               |
+| 설정                                             | 타입                         | 설명                                                                                                                                                              |
+| ------------------------------------------------ | ---------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| title                                            | (필수) String                | 사이트의 제목이며, 각 페이지들의 제목에 들어갈 수 있고 Header에서의 Title입니다.                                                                                  |
+| description                                      | (필수) String                | 사이트의 설명                                                                                                                                                     |
+| author                                           | (필수) String                | 사이트의 저자                                                                                                                                                     |
+| siteUrl                                          | (필수) String                | 해당 웹사이트의 주소를 입력. 배포 시에 해당 주소가 없으면 많은 오류가 발생할 수 있습니다. (예, 'https://junhobaik.github.io')                                     |
+| profileImageFileName                             | String                       | `./src/images`경로에 프로필 사진을 위치한 후 해당 이미지의 파일명을 입력합니다. Header의 Title 옆 이미지에 들어가며 입력값이 없을때는 랜덤한 이미지를 보여줍니다. |
+| comment, name, company, location, email, website | String                       | Home(index)페이지에서 좌측에 보일 개인정보입니다. 입력하지 않을 시 해당 항목을 출력되지 않으며 모든 값은 문자열로 입력합니다.                                     |
+| linkedin, facebook, instagram, github            | String                       | Home(index)페이지에서 좌측의 개인정보 아래 표시될 소셜 아이콘 링크들입니다. 아이콘 클릭시 해당 링크로 이동하게 됩니다. ID가 아닌 전체 링크를 입력하세요.          |
+| enablePostOfContents                             | (필수) Boolean (true, false) | 포스트(게시물)에 목차를 표시할지 설정합니다.                                                                                                                      |
+| disqusShortname                                  | String                       | 댓글 기능을 활성화 할 수 있습니다. disqus에서 site생성 후 해당 site의 shortname을 여기 입력합니다. 값을 비우면 댓글 기능이 비활성화됩니다.                        |
+| googleAnalytics                                  | String                       | 구글 애널리틱스를 활성화 할 수 있습니다. 본인의 TrackingID를 입력합니다.                                                                                          |
+| googleAdsenseClient                              | String                       | GoogleAdsense를 활성화시 구글 애드센스의 Client 입력.                                                                                                             |
+| googleAdsenseSlot                                | String                       | GoogleAdsense를 활성화시 구글 애드센스의 Slot 입력.                                                                                                               |
