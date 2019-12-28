@@ -1,10 +1,3 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import * as React from 'react';
 import { useState, useEffect } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
@@ -49,10 +42,7 @@ const Layout = (props: LayoutPropsType) => {
   return (
     <>
       <Helmet>
-        <link
-          href={`https://fonts.googleapis.com/css?family=${googleFont}`}
-          rel="stylesheet"
-        />
+        <link href={`https://fonts.googleapis.com/css?family=${googleFont}`} rel="stylesheet" />
       </Helmet>
 
       <Header siteTitle={data.site.siteMetadata.title} />
