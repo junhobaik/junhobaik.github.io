@@ -29,7 +29,7 @@ const googleFont = [
       return `${v.name.replace(/ /gi, '+')}`;
     }
   })
-  .join('|')
+  .join('%7C')
   .toString();
 
 export { googleFont, typography as default };
