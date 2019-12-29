@@ -3,7 +3,8 @@ title: Borderless 블로그 - 소개
 date: 2019-12-30 00:00:01
 ---
 
-정적 사이트 제작 프레임워크 Gatsby를 이용해 만든 블로그, “Borderless” 테마입니다.
+정적 사이트 제작 프레임워크 Gatsby를 이용해 만든 블로그,  
+“Borderless” 테마입니다.
 
 - 심플한 디자인
 - 마크다운 지원
@@ -78,3 +79,9 @@ date: 2019-12-30 00:00:01
 - 임시 게시물(draft)을 작성할 수 있습니다. 개발 환경에서는 표시되며 배포시 표시되지 않습니다.
 
 ## Borderless 블로그로 자신의 블로그 시작하기
+
+지금 보고있는 이 블로그를 자신의 블로그로 커스터마이징하여 사용할 수 있습니다.
+
+아래 링크를 통해 Get Started, Document를 확인 할 수 있습니다.
+
+[Documents](<https://github.com/junhobaik/junhobaik.github.io/wiki/Document-(Borderless)>)
