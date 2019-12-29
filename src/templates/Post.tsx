@@ -79,12 +79,9 @@ const Post = (props: postProps) => {
   });
 
   const mapSeries = series.map((s: any) => {
-    // const { slug, title, num } = s;
-
     return (
-      <li className={`series-item ${slug === s.slug ? 'current-series' : ''}`}>
+      <li key={`${s.slug}-series-${s.num}`} className={`series-item ${slug === s.slug ? 'current-series' : ''}`}>
         <Link to={s.slug}>
-          {/* <span>{num}</span> */}
           <span>{s.title}</span>
         </Link>
       </li>
