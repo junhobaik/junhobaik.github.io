@@ -45,6 +45,7 @@ const Search = (props: SearchProps) => {
               value={value}
               placeholder="Search"
               autoComplete="off"
+              autoFocus
               onChange={(e: React.FormEvent<HTMLInputElement>) => {
                 setValue(e.currentTarget.value);
               }}
