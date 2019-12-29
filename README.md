@@ -12,13 +12,13 @@ Gatsby로 제작한 블로그 테마 "Borderless" 입니다.
 
 커스터마이징하여 자신의 블로그로 사용할 수 있습니다.
 
-~~[Document (Version 3, Borderless)](#)를 참고하세요.~~
+~~[Document (Version 3, Borderless)](https://github.com/junhobaik/junhobaik.github.io/wiki/Document-(Borderless))를 참고하세요.~~
 
 <br/>
 <br/>
 
 이전에 운영하던 Version 2를 사용하고 싶다면,  
-[Document (Version 2)](<https://github.com/junhobaik/junhobaik.github.io/wiki/Document-(Version-2)>)를 참고하세요.
+[Document (Version 2)](<https://github.com/junhobaik/junhobaik.github.io/wiki/Document-(Version-2,-OLD)>)를 참고하세요.
 
 [Blog Version 2 DEMO WebSite](https://priceless-darwin-0a5ad6.netlify.com/)
 
