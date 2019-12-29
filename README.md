@@ -56,6 +56,8 @@ Gatsby로 제작한 블로그 테마 "Borderless" 입니다.
   - [Markdown YAML Front matter](#markdown-yaml-front-matter)
 - [Deploy](#deploy)
 
+<br/>
+
 ## "Borderless", Gatsby Blog Starter(Theme)
 
 Gatsby로 제작된 정적 웹사이트,  
@@ -72,6 +74,8 @@ Gatsby로 제작된 정적 웹사이트,
 - Google Analytics 지원
 - Google Adsense 지원
 - Disqus 댓글 기능 지원
+
+<br/>
 
 ## Install
 
@@ -118,6 +122,8 @@ $ npm start
 ```
 
 개발 서버를 실행하며 localhost:8000에서 확인할 수 있습니다.
+
+<br/>
 
 ## Basic Settings
 
@@ -179,6 +185,10 @@ module.exports = {
 필수가 아닌 String(문자열) 값은 ''로 비워둘 수 있습니다.  
 비워둔 값은 연결된 기능에 따라서 표시를 생략하거나, 기능이 비활성화될 수 있습니다.
 
+로컬 개발 중에는 Disqus Comments, Google Analytics, Google Adsense 기능은 비활성화되어 있습니다. 배포 후에 해당 기능을 확인 및 사용할 수 있습니다.
+
+<br/>
+
 ## Writing posts
 
 게시물(포스트)는 마크다운으로 작성합니다.
@@ -187,7 +197,9 @@ module.exports = {
 - emoji 지원
 - ktex 수학 표기법 지원
 
-`./_posts` 폴더 내에 게시물이 위치합니다.
+`./_posts` 폴더 내에 게시물이 위치합니다.  
+`./_drafts` 폴더 내에 임시 게시물이 위치합니다. (임시 게시물은 로컬 개발 중에서는 보이나, 배포된 웹에서는 보이지 않습니다)  
+`_posts` 폴더와 `_drafts` 폴더는 반드시 존재해야합니다. **두 폴더를 삭제하지 마세요.**
 
 파일의 제목이 포스트 게시물의 주소가 됩니다.
 Jekyll 의 포스트 파일 제목 형식처럼 날짜가 들어갈 경우 날짜는 주소에서 제외됩니다.
@@ -298,6 +310,8 @@ tags:
   - tag1
   - tag2
 ```
+
+<br/>
 
 ## Deploy
 
