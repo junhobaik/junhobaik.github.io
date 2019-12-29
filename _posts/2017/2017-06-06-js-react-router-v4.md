@@ -32,7 +32,7 @@ React-router-dom을 설치하면 react-router도 같이 설치된다.
 
 - src/App.js
 
-```react
+```javascript
 //..
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 
@@ -63,7 +63,7 @@ class App extends Component {
 
 - src/components/Header.js
 
-```react
+```javascript
 //..
   return (
     <div>
@@ -83,7 +83,7 @@ class App extends Component {
 
 - src/App.js
 
-```react
+```javascript
 //..
 <Route path="/user/:username" component={User}/>
 //..
@@ -93,7 +93,7 @@ class App extends Component {
 
 - src/routes/User.js
 
-```react
+```javascript
 //..
 const User = ({match}) => {
   return (
@@ -114,7 +114,7 @@ const User = ({match}) => {
 
 - src/routes/Posts.js
 
-```react
+```javascript
 //..
 
 import { Route, Link } from 'react-router-dom';
@@ -162,7 +162,7 @@ exports default Posts;
 
 - src/components/Header.js
 
-```react
+```javascript
 // <Link to ...></Link> => <NavLink to...></NavLink>
 
 <NavLink exact to="/" className="item" activeClassName="active">Home</NavLink>
@@ -178,7 +178,7 @@ exports default Posts;
 
 ### Redirect
 
-```react
+```javascript
 import { Redirect } from 'react-router-dom';
 
 const isLogin = false
@@ -194,7 +194,7 @@ return (
 
 
 
-```react
+```javascript
 const Main = ({history}) => {
   return (
   	<div>
@@ -212,7 +212,7 @@ const Main = ({history}) => {
 
 ### Query Parameter
 
-```react
+```javascript
 //..
 const Main = ({location}) => {
   return (
@@ -233,7 +233,7 @@ const Main = ({location}) => {
 
 - src/App.js
 
-```react
+```javascript
 //..
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
