@@ -1,4 +1,95 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Dev.White | Feed]]></title><description><![CDATA[Junho Baik's Development Blog]]></description><link>https://junhobaik.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 29 Dec 2019 20:57:35 GMT</lastBuildDate><item><title><![CDATA[Borderless 블로그 - 소개]]></title><description><![CDATA[정적 사이트 제작 프레임워크 Gatsby를 이용해 만든 블로그, “Borderless” 테마입니다. 심플한 디자인 마크다운 지원 게시물 태그 기능 게시물 검색 기능 시리즈 게시물 기능 Google Analytics Google Adsense…]]></description><link>https://junhobaik.github.io/develop-blog-v3_2/</link><guid isPermaLink="false">https://junhobaik.github.io/develop-blog-v3_2/</guid><pubDate>Mon, 30 Dec 2019 00:00:01 GMT</pubDate><content:encoded>&lt;p&gt;정적 사이트 제작 프레임워크 Gatsby를 이용해 만든 블로그,&lt;br&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Dev.White | Feed]]></title><description><![CDATA[Junho Baik's Development Blog]]></description><link>https://junhobaik.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 29 Dec 2019 21:38:14 GMT</lastBuildDate><item><title><![CDATA[Borderless 테마로 Gatsby 블로그 만들기]]></title><description><![CDATA[지금 이 글을 보고 있는 블로그는 Borderless 테마를 사용하고 있는 블로그입니다. Gatsby를 이용해 제작되었으며 Gatsby에 대한 간략한 설명은 이전 글(Gatsby로 블로그 만들기)에서 확인 할 수 있습니다. Borderless…]]></description><link>https://junhobaik.github.io/develop-blog-v3_3/</link><guid isPermaLink="false">https://junhobaik.github.io/develop-blog-v3_3/</guid><pubDate>Mon, 30 Dec 2019 06:02:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;지금 이 글을 보고 있는 블로그는 Borderless 테마를 사용하고 있는 블로그입니다.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Gatsby를 이용해 제작되었으며 Gatsby에 대한 간략한 설명은 이전 글(&lt;a href=&quot;/create-gatsby-blog&quot;&gt;Gatsby로 블로그 만들기&lt;/a&gt;)에서 확인 할 수 있습니다.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;/develop-blog-v3_2&quot;&gt;Borderless 블로그 - 소개&lt;/a&gt;&lt;/strong&gt;에서 borderless 테마의 기능과 특징을 확인하세요.&lt;/p&gt;
+&lt;p&gt;이 블로그와 같은 블로그를 만들고 싶다면 이 글을 간략하게 참고하시고,&lt;br&gt;
+&lt;strong&gt;&lt;a href=&quot;https://github.com/junhobaik/junhobaik.github.io/wiki/Document-(Borderless)&quot;&gt;Documents&lt;/a&gt;&lt;/strong&gt;에서 자세한 방법을 참고하세요.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;* 아래 설명과 문서는 Github Pages에 배포되는 것을 기준으로 설명합니다.&lt;/em&gt;&lt;br&gt;
+&lt;em&gt;* 이 글에서는 매우 간략하게 방법을 기술하고 있습니다. 자세한 것은 문서에서 확인하세요&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&quot;install&quot;&gt;&lt;a href=&quot;#install&quot; aria-label=&quot;install permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Install&lt;/h2&gt;
+&lt;p&gt;해당 블로그로 시작하기 위한 방법은 두가지가 있습니다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;테마 Repository Fork 후 사용&lt;/li&gt;
+&lt;li&gt;테마 Repository Clone 후 사용&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;1-fork로-시작하기&quot;&gt;&lt;a href=&quot;#1-fork%EB%A1%9C-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0&quot; aria-label=&quot;1 fork로 시작하기 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. &lt;strong&gt;Fork&lt;/strong&gt;로 시작하기&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;해당 Repository를 Fork 한 후,&lt;/li&gt;
+&lt;li&gt;Repository의 이름을 &quot;&lt;strong&gt;username&lt;/strong&gt;.github.io&quot;로 변경합니다.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;Setting &amp;gt; Branches - Default branch&lt;/code&gt;에서 기본 Branch를 변경합니다. &lt;strong&gt;develop&lt;/strong&gt;를 선택하고 Update 버튼을 눌러 진행하세요.&lt;/li&gt;
+&lt;li&gt;이제 본인의 Repository를 Clone 합니다.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;$ npm i&lt;/code&gt; 명령어로 패키지 설치&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;$ npm start&lt;/code&gt; 명령어로 개발 서버 시작&lt;br&gt;
+&quot;localhost:8000&quot;에서 확인할 수 있습니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;2-clone으로-시작하기&quot;&gt;&lt;a href=&quot;#2-clone%EC%9C%BC%EB%A1%9C-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0&quot; aria-label=&quot;2 clone으로 시작하기 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. &lt;strong&gt;Clone&lt;/strong&gt;으로 시작하기&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; clone -b develop https://github.com/junhobaik/junhobaik.github.io.git &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;SITE_DIRECTORY&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+$ &lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;위의 과정을 통해 develop 브랜치를 기본으로 해당 저장소를 클론하고 필요한 패키지를 설치합니다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; start&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;개발 서버를 실행하며 localhost:8000에서 확인할 수 있습니다.&lt;/p&gt;
+&lt;h2 id=&quot;basic-settings&quot;&gt;&lt;a href=&quot;#basic-settings&quot; aria-label=&quot;basic settings permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Basic Settings&lt;/h2&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;./config.js&lt;/code&gt; 파일을 개인에 맞춰 수정합니다.&lt;br&gt;
+문자열은 &apos;&apos;로 비워두어 해당 기능을 비활성화 할 수 있습니다. (Site MetaData는 필수로 작성)&lt;/p&gt;
+&lt;p&gt;아래는 예제입니다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;exports &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token comment&quot;&gt;/** Site MetaData (Required all)*/&lt;/span&gt;
+  title&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;Dev.White&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  description&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;Junho Baik&apos;s Development Blog&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  author&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;Junho Baik&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  siteUrl&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;https://junhobaik.github.io&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+
+  &lt;span class=&quot;token comment&quot;&gt;/** Header */&lt;/span&gt;
+  profileImageFileName&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;profile.png&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+
+  &lt;span class=&quot;token comment&quot;&gt;/** Home &gt; Bio information*/&lt;/span&gt;
+  comment&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Jr. Web Front-end Developer. / javascript, react ...&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  name&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Junho Baik&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  company&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  location&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Korea&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  email&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;junhobaik@gmail.com&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  website&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;https://junhobaik.github.io&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  linkedin&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  facebook&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  instagram&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;https://www.instagram.com/junhobaik&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  github&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;https://github.com/junhobaik&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+
+  &lt;span class=&quot;token comment&quot;&gt;/** Post */&lt;/span&gt;
+  enablePostOfContents&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  disqusShortname&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;junhobaik&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+
+  &lt;span class=&quot;token comment&quot;&gt;/** Optional */&lt;/span&gt;
+  googleAnalytics&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;UA-123123123-0&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  googleAdsenseClient&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;ca-pub-5001380215831339&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  googleAdsenseSlot&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;5214956675&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;writing-posts&quot;&gt;&lt;a href=&quot;#writing-posts&quot; aria-label=&quot;writing posts permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Writing Posts&lt;/h2&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;./posts&lt;/code&gt;에 마크다운 파일을 위치시켜 게시물을 만들 수 있습니다.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;./drafts&lt;/code&gt;에 마크다운 파일을 위치시켜 임시 게시물을 만들 수 있습니다.&lt;br&gt;
+(개발 환경에서만 표시, 배포시 표시되지 않는 게시물)&lt;/p&gt;
+&lt;h3 id=&quot;markdown-yaml-front-matter&quot;&gt;&lt;a href=&quot;#markdown-yaml-front-matter&quot; aria-label=&quot;markdown yaml front matter permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Markdown YAML Front matter&lt;/h3&gt;
+&lt;p&gt;마크다운 상단에 아래와 같은 형식으로 게시물 정보를 입력합니다. 여기는 제목과 날짜가 필수로 들어가며 추가적으로 태그와 키워드를 넣을 수 있습니다.&lt;br&gt;
+그 후 하단에는 게시물의 내용을 입력합니다.
+자세한 작성법은 문서의 Markdown YAML Front matter란을 확인하세요.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;---
+title: title here...
+date: 2018-01-01
+tags:
+  - javascript
+  - ES6
+keywords:
+  - keyword1
+  - keyword2
+---
+
+... Content here ...&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;deploy&quot;&gt;&lt;a href=&quot;#deploy&quot; aria-label=&quot;deploy permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Deploy&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;$ npm run deploy&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;위의 명령어로 배포가 시작됩니다. master 브랜치로 commit이 자동으로 이루어지며,
+반영되기까지는 수십초 정도, 때로는 최대 수분의 시간이 소요됩니다.&lt;/p&gt;
+&lt;p&gt;이제 본인의 주소로 들어가 확인할 수 있습니다.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;더 자세한 Borderless 테마 사용법은 &lt;a href=&quot;https://github.com/junhobaik/junhobaik.github.io/wiki/Document-(Borderless)&quot;&gt;Documents&lt;/a&gt;를 참고하세요.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Borderless 블로그 - 소개]]></title><description><![CDATA[정적 사이트 제작 프레임워크 Gatsby를 이용해 만든 블로그, “Borderless” 테마입니다. 심플한 디자인 마크다운 지원 게시물 태그 기능 게시물 검색 기능 시리즈 게시물 기능 Google Analytics Google Adsense…]]></description><link>https://junhobaik.github.io/develop-blog-v3_2/</link><guid isPermaLink="false">https://junhobaik.github.io/develop-blog-v3_2/</guid><pubDate>Mon, 30 Dec 2019 00:00:01 GMT</pubDate><content:encoded>&lt;p&gt;정적 사이트 제작 프레임워크 Gatsby를 이용해 만든 블로그,&lt;br&gt;
 “Borderless” 테마입니다.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;심플한 디자인&lt;/li&gt;
@@ -1332,25 +1423,4 @@ $ zplug load --verbose&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 // ...&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;다양한 플러그인은 &lt;a href=&quot;https://github.com/bnb/awesome-hyper&quot;&gt;awesome-hyper&lt;/a&gt; 문서에서 확인할 수 있습니다.&lt;/p&gt;
-&lt;p&gt;여기까지 본인과 같은 설정을 했다면 최상단의 이미지와 같은 터미널을 보실 수 있습니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[MongoDB 설치하기 (mac, homebrew)]]></title><description><![CDATA[MongoDB를 본격적으로 사용하기 앞서,
-설치와 실행 그리고 추가적인 툴의 설치와 사용까지 기본적으로 알아보겠습니다. macOS / HomeBrew의 설치 환경에서 진행됩니다. Install MongoDB Tap the MongoDB Homebrew…]]></description><link>https://junhobaik.github.io/mongodb-install/</link><guid isPermaLink="false">https://junhobaik.github.io/mongodb-install/</guid><pubDate>Sat, 20 Jul 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;MongoDB를 본격적으로 사용하기 앞서,
-설치와 실행 그리고 추가적인 툴의 설치와 사용까지 기본적으로 알아보겠습니다.&lt;/p&gt;
-&lt;p&gt;macOS / HomeBrew의 설치 환경에서 진행됩니다.&lt;/p&gt;
-&lt;h2 id=&quot;install-mongodb&quot;&gt;&lt;a href=&quot;#install-mongodb&quot; aria-label=&quot;install mongodb permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Install MongoDB&lt;/h2&gt;
-&lt;p&gt;Tap the MongoDB Homebrew Tap&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ brew tap mongodb/brew&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Install MongoDB&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ brew &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; mongodb-community@4.0&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Run MongoDB&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ mongod --config /usr/local/etc/mongod.conf
-
-$ brew services start mongodb-community@4.0&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;brew services start mongodb-community@4.0&lt;/code&gt;의 과정을 거치지 않는다면 mongo shell을 이용하기 전 &lt;code class=&quot;language-text&quot;&gt;mongod&lt;/code&gt;명령을 통해 mongo 서버를 키는 과정이 필요하다.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Connect and Use MongoDB&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ mongo&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2 id=&quot;설치-없이-실습하기&quot;&gt;&lt;a href=&quot;#%EC%84%A4%EC%B9%98-%EC%97%86%EC%9D%B4-%EC%8B%A4%EC%8A%B5%ED%95%98%EA%B8%B0&quot; aria-label=&quot;설치 없이 실습하기 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;설치 없이 실습하기&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://mws.mongodb.com/&quot;&gt;https://mws.mongodb.com/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;위 주소로 접속하여 스터디 용도로 MongoDB 가상환경 내에서 사용해 볼 수 있다.
-reset 버튼을 누르거나 오랜 시간 작업이 없거나, 웹페이지를 새로고침하면 데이터가 날아가니 주의할 것.&lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;p&gt;여기까지 본인과 같은 설정을 했다면 최상단의 이미지와 같은 터미널을 보실 수 있습니다.&lt;/p&gt;</content:encoded></item></channel></rss>
