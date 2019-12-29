@@ -3,7 +3,9 @@ module.exports = {
   title: `Dev.White`,                           // (* Required)
   description: `Junho Baik's Development Blog`, // (* Required)
   author: `Junho Baik`,                         // (* Required)
-  siteUrl: 'https://junhobaik.github.io',       // (* Required) ex.'https://junhobaik.github.io'
+  siteUrl: 'https://junhobaik.github.io',       // (* Required) 
+    // ex.'https://junhobaik.github.io'
+    // ex.'https://junhobaik.github.io/' << X, Do not enter "/" at the end.
 
   /** Header */
   profileImageFileName: 'profile.png', // include filename extension ex.'profile.jpg'
