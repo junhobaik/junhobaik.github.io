@@ -2,12 +2,15 @@ import * as React from 'react';
 import { useState, useEffect } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Helmet from 'react-helmet';
+import { config as FaConfig, dom as FaDom } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome';
 import { faAngleDoubleUp } from '@fortawesome/free-solid-svg-icons';
 
 import Header from '../Header';
 import './layout.scss';
 import { googleFont } from '../../utils/typography';
+
+FaConfig.autoAddCss = false;
 
 export interface LayoutPropsType {
   children: Object;
@@ -44,6 +47,7 @@ const Layout = (props: LayoutPropsType) => {
       <Helmet>
         <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
         <link href={`https://fonts.googleapis.com/css?family=${googleFont}`} rel="stylesheet" />
+        <style>{FaDom.css()}</style>
       </Helmet>
 
       <Header siteTitle={data.site.siteMetadata.title} />
