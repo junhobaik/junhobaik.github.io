@@ -14,7 +14,7 @@ export interface TagsPageProps {
 const Tags = (props: TagsPageProps) => {
   const { group } = props.data.allMarkdownRemark;
   const [largeCount, setLargeCount] = useState(0);
-  const [targetTag, setTargetTag] = useState('Empty Tag');
+  const [targetTag, setTargetTag] = useState('undefined');
 
   interface groupItem {
     fieldValue: string;
@@ -42,7 +42,7 @@ const Tags = (props: TagsPageProps) => {
         <span
           className="tag-text"
           style={{
-            fontSize: getFontSize(),
+            fontSize: g.fieldValue !== 'undefined' ? getFontSize() : '1rem',
             opacity: g.fieldValue === targetTag ? '0.9' : '0.5',
             fontWeight: g.fieldValue === targetTag ? 'bold' : 'normal',
           }}
@@ -57,7 +57,7 @@ const Tags = (props: TagsPageProps) => {
   });
 
   tagList.sort((a: React.ReactElement) => {
-    if (a.key === 'Empty Tag') return -1;
+    if (a.key === 'undefined') return -1;
     return 0;
   });
 
@@ -65,8 +65,8 @@ const Tags = (props: TagsPageProps) => {
     if (group.filter((g: groupItem) => g.fieldValue === targetTag).length) {
       return group.filter((g: groupItem) => g.fieldValue === targetTag)[0].edges;
     }
-    if (group.filter((g: groupItem) => g.fieldValue === 'Empty Tag').length) {
-      return group.filter((g: groupItem) => g.fieldValue === 'Empty Tag')[0].edges;
+    if (group.filter((g: groupItem) => g.fieldValue === 'undefined').length) {
+      return group.filter((g: groupItem) => g.fieldValue === 'undefined')[0].edges;
     }
     return [];
   };
@@ -74,7 +74,7 @@ const Tags = (props: TagsPageProps) => {
   useEffect(() => {
     let large = 0;
     for (const g of group) {
-      if (g.totalCount > large) large = g.totalCount;
+      if (g.fieldValue !== 'undefined' && g.totalCount > large) large = g.totalCount;
     }
     setLargeCount(large);
 

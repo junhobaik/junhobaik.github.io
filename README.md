@@ -195,7 +195,7 @@ Jekyll 의 포스트 파일 제목 형식처럼 날짜가 들어갈 경우 날�
 예시 1. `./_posts/first-post.md`  
 주소: https://junhobaik.github.io/first-post
 
-예시 2. `./_posts/2019-12-31-first-post.md`
+예시 2. `./_posts/2019-12-31-first-post.md`  
 주소: https://junhobaik.github.io/first-post
 
 **이미지 포함 게시물 작성**
@@ -232,10 +232,10 @@ Jekyll 의 포스트 파일 제목 형식처럼 날짜가 들어갈 경우 날�
 - `development-blog_2.md`
 - `development-blog_3.md`
 
-언더바(_) 뒤의 숫자로 시리즈의 번호를 기제합니다.  
-언더바(_) 이전의 파일명은 **동일**해야합니다.  
-언더바(_)는 파일명에서 **하나만** 존재해야합니다.
-언더바(_) 뒤에 숫자와 문자를 혼용해서는 안됩니다.
+언더바(\_) 뒤의 숫자로 시리즈의 번호를 기제합니다.  
+언더바(\_) 이전의 파일명은 **동일**해야합니다.  
+언더바(\_)는 파일명에서 **하나만** 존재해야합니다.
+언더바(\_) 뒤에 숫자와 문자를 혼용해서는 안됩니다.
 
 ### Markdown YAML Front matter
 

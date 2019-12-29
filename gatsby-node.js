@@ -127,7 +127,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
       // 마크다운 파일 내 태그 필드가 비어있을 시 오류가 나지 않도록 하기 위함
       if (!node.frontmatter.tags || node.frontmatter.tags === '') {
-        node.frontmatter.tags = ['Empty Tag'];
+        node.frontmatter.tags = ['undefined'];
       }
       // 태그 필드가 배열이 아닌 문자열 하나일때 배열로 덮음
       else if (typeof node.frontmatter.tags === 'string') {
