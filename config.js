@@ -3,7 +3,9 @@ module.exports = {
   title: `Title`,                           // (* Required)
   description: `Blog Description`,          // (* Required)
   author: `Author`,                         // (* Required)
-  siteUrl: 'https://',                      // (* Required) ex.'https://junhobaik.github.io'
+  siteUrl: 'https://',                      // (* Required)
+    // ex.'https://junhobaik.github.io'
+    // ex.'https://junhobaik.github.io/' << X, Do not enter "/" at the end.
 
   /** Header */
   profileImageFileName: '', // include filename extension ex.'profile.jpg'
