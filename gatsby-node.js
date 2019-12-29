@@ -8,10 +8,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const blogPostTemplate = path.resolve(`src/templates/Post.tsx`);
   const result = await graphql(`
     {
-      allMarkdownRemark(
-        sort: { fields: [frontmatter___date], order: DESC }
-        limit: 1000
-      ) {
+      allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, limit: 1000) {
         edges {
           node {
             fields {
@@ -32,13 +29,60 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     return;
   }
 
-  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+  const getSeries = target => {
+    const splitedSlug = target.split('_');
+    if (splitedSlug.length >= 3) return 0;
+
+    const seriesNum = splitedSlug[splitedSlug.length - 1].split('/').join('');
+    const isNum = !/[^0-9]/g.test(seriesNum);
+
+    if (isNum) return parseInt(seriesNum, 10);
+    return 0;
+  };
+
+  const { edges } = result.data.allMarkdownRemark;
+
+  edges.forEach(({ node }, index) => {
+    const { slug } = node.fields;
+
+    // series
+    let filteredEdges = [];
+    const series = [];
+
+    if (getSeries(slug)) {
+      filteredEdges = edges.filter(e => {
+        const fSlug = e.node.fields.slug;
+        const splitedFSlug = fSlug.split('_');
+        if (splitedFSlug.length >= 3) return false;
+
+        if (slug.split('_').length > 1 && slug.split('_')[0] === splitedFSlug[0]) {
+          return true;
+        }
+      });
+
+      if (filteredEdges.length) {
+        for (const e of filteredEdges) {
+          const seriesNum = getSeries(e.node.fields.slug);
+
+          if (seriesNum) {
+            series.push({
+              slug: e.node.fields.slug,
+              title: e.node.frontmatter.title,
+              num: seriesNum,
+            });
+          }
+        }
+
+        series.sort((a, b) => {
+          return a.num - b.num;
+        });
+      }
+    }
+
     createPage({
-      path: node.fields.slug,
+      path: slug,
       component: blogPostTemplate,
-      context: {
-        slug: node.fields.slug,
-      },
+      context: { slug, series },
     });
   });
 };
