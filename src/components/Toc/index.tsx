@@ -9,12 +9,7 @@ export interface TocProps {
 const Toc = (props: TocProps) => {
   const { toc, isOutside } = props;
 
-  return (
-    <div
-      className={`toc ${isOutside ? 'outside' : 'inside'}`}
-      dangerouslySetInnerHTML={{ __html: toc }}
-    ></div>
-  );
+  return <div className={`toc ${isOutside ? 'outside' : 'inside'}`} dangerouslySetInnerHTML={{ __html: toc }}></div>;
 };
 
 export default Toc;

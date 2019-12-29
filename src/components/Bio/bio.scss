@@ -31,7 +31,9 @@
       overflow: hidden;
     }
 
-    &.name, &.company, &.location {
+    &.name,
+    &.company,
+    &.location {
       cursor: default;
     }
   }

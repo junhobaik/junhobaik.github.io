@@ -24,10 +24,7 @@ const Search = (props: SearchProps) => {
     const { title } = frontmatter;
     const lowerValue = value.toLocaleLowerCase();
 
-    if (
-      !isTitleOnly &&
-      rawMarkdownBody.toLocaleLowerCase().indexOf(lowerValue) > -1
-    ) {
+    if (!isTitleOnly && rawMarkdownBody.toLocaleLowerCase().indexOf(lowerValue) > -1) {
       return true;
     }
 
@@ -72,9 +69,7 @@ const Search = (props: SearchProps) => {
             </div>
           </div>
 
-          {value !== '' && !filteredPosts.length ? (
-            <span className="no-result">No search results</span>
-          ) : null}
+          {value !== '' && !filteredPosts.length ? <span className="no-result">No search results</span> : null}
           <PostList posts={value === '' ? posts : filteredPosts} />
         </div>
       </div>
