@@ -1,77 +1,54 @@
 import React from 'react';
 import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome';
-import {
-  faUserCircle,
-  faAt,
-  faMapMarkerAlt,
-  faLink,
-  faAddressCard,
-  faRss,
-} from '@fortawesome/free-solid-svg-icons';
-import {
-  faFacebook,
-  faInstagram,
-  faLinkedin,
-  faGithub,
-} from '@fortawesome/free-brands-svg-icons';
+import { faUserCircle, faAt, faMapMarkerAlt, faLink, faAddressCard, faRss } from '@fortawesome/free-solid-svg-icons';
+import { faFacebook, faInstagram, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 import './bio.scss';
 const config = require('../../../config');
 
 const Bio = () => {
-  const {
-    comment,
-    name,
-    company,
-    location,
-    email,
-    website,
-    linkedin,
-    facebook,
-    instagram,
-    github,
-  } = config;
+  const { comment, name, company, location, email, website, linkedin, facebook, instagram, github } = config;
 
   return (
     <div className="bio">
       {!comment ? null : <span className="comment">{comment}</span>}
 
       {!name ? null : (
-        <p className="name">
+        <div className="bio-item name">
           <Fa icon={faUserCircle} />
-          {name}
-        </p>
+          <span>{name}</span>
+        </div>
       )}
 
       {!company ? null : (
-        <p className="company">
+        <div className="bio-item company">
           <Fa icon={faAddressCard} />
-          {company}
-        </p>
+          <span>{company}</span>
+        </div>
       )}
 
       {!location ? null : (
-        <p className="location">
+        <div className="bio-item location">
           <Fa icon={faMapMarkerAlt} />
-          {location}
-        </p>
+          <span>{location}</span>
+        </div>
       )}
 
       {!email ? null : (
-        <p className="email">
+        <div className="bio-item email">
           <Fa icon={faAt} />
           <a href={`mailto:${email}`}>{email}</a>
-        </p>
+        </div>
       )}
 
       {!website ? null : (
-        <p className="website">
+        <div className="bio-item website">
           <Fa icon={faLink} />
 
           <a href={website} target="_blank" rel="noopener noreferrer">
             {website}
           </a>
-        </p>
+        </div>
       )}
 
       <div className="social">
@@ -81,7 +58,7 @@ const Bio = () => {
 
         {!linkedin ? null : (
           <a href="http://" target="_blank" rel="noopener noreferrer">
-            <Fa icon={faLinkedin} className="linkedin" />z
+            <Fa icon={faLinkedin} className="linkedin" />
           </a>
         )}
 
