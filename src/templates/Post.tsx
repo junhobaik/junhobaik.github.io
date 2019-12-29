@@ -150,7 +150,7 @@ const Post = (props: postProps) => {
               </div>
             )}
 
-            {series.length ? <ul className="series-list">{mapSeries}</ul> : null}
+            {series.length > 1 ? <ul className="series-list">{mapSeries}</ul> : null}
 
             <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: html }} />
           </div>
