@@ -16,14 +16,16 @@ const config = require('../../config');
 
 export interface postProps {
   data: any;
+  pageContext: any;
 }
 
 const Post = (props: postProps) => {
-  const { data } = props;
+  const { data, pageContext } = props;
   const { markdownRemark } = data; // data.markdownRemark holds your post data
   const { frontmatter, html, tableOfContents, fields, excerpt } = markdownRemark;
   const { title, date, tags, keywords } = frontmatter;
   const { slug } = fields;
+  const { series } = pageContext;
   const [yList, setYList] = useState();
   const [isInsideToc, setIsInsideToc] = useState(false);
 
@@ -72,6 +74,19 @@ const Post = (props: postProps) => {
     return (
       <li key={tag} className="blog-post-tag">
         <Link to={`/tag/${tag}`}>{`#${tag}`}</Link>
+      </li>
+    );
+  });
+
+  const mapSeries = series.map((s: any) => {
+    // const { slug, title, num } = s;
+
+    return (
+      <li className={`series-item ${slug === s.slug ? 'current-series' : ''}`}>
+        <Link to={s.slug}>
+          {/* <span>{num}</span> */}
+          <span>{s.title}</span>
+        </Link>
       </li>
     );
   });
@@ -137,6 +152,9 @@ const Post = (props: postProps) => {
                 <Toc isOutside={false} toc={tableOfContents} />
               </div>
             )}
+
+            {series.length ? <ul className="series-list">{mapSeries}</ul> : null}
+
             <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: html }} />
           </div>
 
