@@ -15,35 +15,45 @@ const Bio = () => {
 
       {!name ? null : (
         <div className="bio-item name">
-          <Fa icon={faUserCircle} />
+          <div className="icon-wrap">
+            <Fa icon={faUserCircle} />
+          </div>
           <span>{name}</span>
         </div>
       )}
 
       {!company ? null : (
         <div className="bio-item company">
-          <Fa icon={faAddressCard} />
+          <div className="icon-wrap">
+            <Fa icon={faAddressCard} />
+          </div>
           <span>{company}</span>
         </div>
       )}
 
       {!location ? null : (
         <div className="bio-item location">
-          <Fa icon={faMapMarkerAlt} />
+          <div className="icon-wrap">
+            <Fa icon={faMapMarkerAlt} />
+          </div>
           <span>{location}</span>
         </div>
       )}
 
       {!email ? null : (
         <div className="bio-item email">
-          <Fa icon={faAt} />
+          <div className="icon-wrap">
+            <Fa icon={faAt} />
+          </div>
           <a href={`mailto:${email}`}>{email}</a>
         </div>
       )}
 
       {!website ? null : (
         <div className="bio-item website">
-          <Fa icon={faLink} />
+          <div className="icon-wrap">
+            <Fa icon={faLink} />
+          </div>
 
           <a href={website} target="_blank" rel="noopener noreferrer">
             {website}

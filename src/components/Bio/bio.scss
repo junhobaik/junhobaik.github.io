@@ -14,15 +14,21 @@
   .bio-item {
     margin-bottom: 0.8rem;
     display: flex;
-    // align-items: center;
     font-size: 0.9rem;
 
-    svg {
-      margin-top: 1px;
-      width: 1.2rem !important;
-      color: #6a737d;
+    .icon-wrap {
+      display: inline-flex;
+      font-size: 0.9rem;
       margin-right: 0.4rem;
-      opacity: 0.9;
+      min-width: 1.1rem;
+      width: 1.1rem;
+      justify-content: center;
+
+      svg {
+        margin-top: 1px;
+        color: #6a737d;
+        opacity: 0.9;
+      }
     }
 
     & > :nth-child(2) {
