@@ -1,6 +1,7 @@
 @import '../utils/variables.scss';
 
 .blog-post-container {
+  margin-bottom: 2rem;
   & > div,
   .ad {
     max-width: 720px;
@@ -145,6 +146,64 @@
     }
   }
 
+  .social-share {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    ul {
+      margin: 0;
+      display: flex;
+
+      li.social-share-item {
+        margin: 0;
+        list-style: none;
+        margin: 0 0.25rem;
+
+        & > div {
+          cursor: pointer;
+
+          circle {
+            fill: #6a737d;
+            transition: 0.3s;
+          }
+        }
+        &:hover {
+          &.email {
+            & > div circle {
+              fill: #7f7f7f;
+            }
+          }
+          &.facebook {
+            & > div circle {
+              fill: #3b5998;
+            }
+          }
+          &.twitter {
+            & > div circle {
+              fill: #00aced;
+            }
+          }
+          &.linkedin {
+            & > div circle {
+              fill: #007fb1;
+            }
+          }
+          &.reddit {
+            & > div circle {
+              fill: #5f99cf;
+            }
+          }
+          &.pocket {
+            & > div circle {
+              fill: #ef3f56;
+            }
+          }
+        }
+      }
+    }
+  }
   .ad {
     margin-top: 3rem;
   }
