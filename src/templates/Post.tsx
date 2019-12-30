@@ -209,7 +209,20 @@ const Post = (props: postProps) => {
             </ul>
           </div>
 
-          {isDevelopment ? null : (
+          {isDevelopment ? (
+            <>
+              <aside className="ad ad-dev">
+                <span>Ads</span>
+                <span>displayed when you deploy</span>
+              </aside>
+              {isDisqus ? (
+                <div className="comments comments-dev">
+                  <span>Comments</span>
+                  <span>displayed when you deploy</span>
+                </div>
+              ) : null}
+            </>
+          ) : (
             <>
               <aside className="ad">
                 <AdSense.Google
