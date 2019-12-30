@@ -34,7 +34,7 @@ function SEO(props: SEOpropsType) {
         lang,
       }}
       title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      titleTemplate={title === 'Home' ? site.siteMetadata.title : `%s | ${site.siteMetadata.title}`}
       meta={[
         {
           name: `description`,
