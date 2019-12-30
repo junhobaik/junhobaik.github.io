@@ -6,6 +6,20 @@ import { DiscussionEmbed } from 'disqus-react';
 import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome';
 import { faListUl } from '@fortawesome/free-solid-svg-icons';
 import AdSense from 'react-adsense';
+import {
+  FacebookShareButton,
+  LinkedinShareButton,
+  TwitterShareButton,
+  RedditShareButton,
+  PocketShareButton,
+  EmailShareButton,
+  FacebookIcon,
+  TwitterIcon,
+  LinkedinIcon,
+  RedditIcon,
+  PocketIcon,
+  EmailIcon,
+} from 'react-share';
 
 import Layout from '../components/Layout';
 import Toc from '../components/Toc';
@@ -30,7 +44,9 @@ const Post = (props: postProps) => {
   const [isInsideToc, setIsInsideToc] = useState(false);
 
   const isTableOfContents = config.enablePostOfContents && tableOfContents !== '';
+  const isDevelopment = process.env.NODE_ENV === 'development';
   const isDisqus = config.disqusShortname;
+  const isSocialShare = config.enableSocialShare;
 
   useEffect(() => {
     const hs = Array.from(document.querySelectorAll('h2, h3')) as Array<HTMLHeadingElement>;
@@ -120,14 +136,17 @@ const Post = (props: postProps) => {
         <div className="blog-post-container">
           <div className="blog-post">
             <h1 className="blog-post-title">{title}</h1>
+
             <div className="blog-post-info">
               <span className="blog-post-date">{date}</span>
+
               {tags.length && tags[0] !== 'undefined' ? (
                 <>
                   <span>·</span>
                   <ul className="blog-post-tag-list">{mapTags}</ul>
                 </>
               ) : null}
+
               {!isTableOfContents ? null : (
                 <div className="blog-post-inside-toc">
                   <div
@@ -144,6 +163,7 @@ const Post = (props: postProps) => {
                 </div>
               )}
             </div>
+
             {!isTableOfContents ? null : (
               <div className="inside-toc-wrap" style={{ display: isInsideToc ? 'flex' : 'none' }}>
                 <Toc isOutside={false} toc={tableOfContents} />
@@ -155,7 +175,57 @@ const Post = (props: postProps) => {
             <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: html }} />
           </div>
 
-          {process.env.NODE_ENV === 'development' ? null : (
+          {isSocialShare ? (
+            <div className="social-share">
+              <ul>
+                <li className="social-share-item email">
+                  <EmailShareButton url={config.siteUrl + slug}>
+                    <EmailIcon size={24} round={true} />
+                  </EmailShareButton>
+                </li>
+                <li className="social-share-item facebook">
+                  <FacebookShareButton url={config.siteUrl + slug}>
+                    <FacebookIcon size={24} round={true} />
+                  </FacebookShareButton>
+                </li>
+                <li className="social-share-item twitter">
+                  <TwitterShareButton url={config.siteUrl + slug}>
+                    <TwitterIcon size={24} round={true} />
+                  </TwitterShareButton>
+                </li>
+                <li className="social-share-item linkedin">
+                  <LinkedinShareButton url={config.siteUrl + slug}>
+                    <LinkedinIcon size={24} round={true} />
+                  </LinkedinShareButton>
+                </li>
+                <li className="social-share-item reddit">
+                  <RedditShareButton url={config.siteUrl + slug}>
+                    <RedditIcon size={24} round={true} />
+                  </RedditShareButton>
+                </li>
+                <li className="social-share-item pocket">
+                  <PocketShareButton url={config.siteUrl + slug}>
+                    <PocketIcon size={24} round={true} />
+                  </PocketShareButton>
+                </li>
+              </ul>
+            </div>
+          ) : null}
+
+          {isDevelopment ? (
+            <>
+              <aside className="ad ad-dev">
+                <span>Ads</span>
+                <span>displayed when you deploy</span>
+              </aside>
+              {isDisqus ? (
+                <div className="comments comments-dev">
+                  <span>Comments</span>
+                  <span>displayed when you deploy</span>
+                </div>
+              ) : null}
+            </>
+          ) : (
             <>
               <aside className="ad">
                 <AdSense.Google
@@ -166,6 +236,7 @@ const Post = (props: postProps) => {
                   responsive="true"
                 />
               </aside>
+
               {isDisqus ? (
                 <div className="comments">
                   <DiscussionEmbed {...disqusConfig} />
@@ -174,6 +245,7 @@ const Post = (props: postProps) => {
             </>
           )}
         </div>
+
         {!isTableOfContents ? null : <Toc isOutside={true} toc={tableOfContents} />}
       </Layout>
     </>
