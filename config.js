@@ -27,6 +27,7 @@ module.exports = {
   /** Post */
   enablePostOfContents: true,     // TableOfContents activation (Type of Value: Boolean. Not String)
   disqusShortname: 'junhobaik',   // comments (Disqus sort-name)
+  enableSocialShare: true,        // Social share icon activation (Type of Value: Boolean. Not String)
 
   /** Optional */
   googleAnalytics: 'UA-103592668-4',    // Google Analytics TrackingID. ex.'UA-123456789-0'
