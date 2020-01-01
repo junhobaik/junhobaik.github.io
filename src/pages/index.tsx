@@ -1,5 +1,7 @@
 import * as React from 'react';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
+import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 import Layout from '../components/Layout';
 import SEO from '../components/seo';
@@ -15,6 +17,7 @@ export interface IndexPageProps {
 
 const IndexPage = (props: IndexPageProps) => {
   const posts = props.data.allMarkdownRemark.edges;
+
   return (
     <Layout>
       <SEO title="Home" />
@@ -22,6 +25,16 @@ const IndexPage = (props: IndexPageProps) => {
         <Bio />
         <div className="index-post-list-wrap">
           <PostList posts={posts} />
+          {posts.length < 100 ? null : (
+            <div className="show-more-posts">
+              <div className="show-more-btn">
+                <Link to="/search">
+                  <Fa icon={faSearch} />
+                  <span>SHOW MORE POSTS</span>
+                </Link>
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </Layout>
@@ -30,7 +43,7 @@ const IndexPage = (props: IndexPageProps) => {
 
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, limit: 100) {
       edges {
         node {
           excerpt(format: PLAIN)

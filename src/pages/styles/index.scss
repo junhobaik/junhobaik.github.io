@@ -29,5 +29,28 @@
     & > div {
       margin: 0 auto;
     }
+
+    .show-more-posts {
+      display: flex;
+      justify-content: center;
+      font-family: 'Nanum Gothic';
+      margin-top: 1rem;
+      margin-bottom: 5rem;
+
+      .show-more-btn {
+        cursor: pointer;
+        opacity: 0.5;
+        font-size: 0.9rem;
+        transition: all 0.2s;
+
+        &:hover {
+          opacity: 0.9;
+        }
+
+        span {
+          margin-left: 0.25rem;
+        }
+      }
+    }
   }
 }
