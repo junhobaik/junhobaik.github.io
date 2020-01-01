@@ -70,7 +70,7 @@ const Header = (props: headerPropsType) => {
       setYPos(prevYPos => {
         const currentYPos = window.pageYOffset;
 
-        setIsHide(prevYPos < currentYPos);
+        if (currentYPos > 0) setIsHide(prevYPos < currentYPos);
 
         return currentYPos;
       });
