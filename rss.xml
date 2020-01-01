@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Dev.White | Feed]]></title><description><![CDATA[Junho Baik's Development Blog]]></description><link>https://junhobaik.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 30 Dec 2019 15:20:34 GMT</lastBuildDate><item><title><![CDATA[Borderless 테마로 Gatsby 블로그 만들기]]></title><description><![CDATA[지금 이 글을 보고 있는 블로그는 Borderless 테마를 사용하고 있는 블로그입니다. Gatsby를 이용해 제작되었으며 Gatsby에 대한 간략한 설명은 이전 글(Gatsby로 블로그 만들기)에서 확인 할 수 있습니다. Borderless…]]></description><link>https://junhobaik.github.io/develop-blog-v3_3/</link><guid isPermaLink="false">https://junhobaik.github.io/develop-blog-v3_3/</guid><pubDate>Mon, 30 Dec 2019 06:02:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;지금 이 글을 보고 있는 블로그는 Borderless 테마를 사용하고 있는 블로그입니다.&lt;/strong&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Dev.White | Feed]]></title><description><![CDATA[Junho Baik's Development Blog]]></description><link>https://junhobaik.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 01 Jan 2020 11:29:30 GMT</lastBuildDate><item><title><![CDATA[Borderless 테마로 Gatsby 블로그 만들기]]></title><description><![CDATA[지금 이 글을 보고 있는 블로그는 Borderless 테마를 사용하고 있는 블로그입니다. Gatsby를 이용해 제작되었으며 Gatsby에 대한 간략한 설명은 이전 글(Gatsby로 블로그 만들기)에서 확인 할 수 있습니다. Borderless…]]></description><link>https://junhobaik.github.io/develop-blog-v3_3/</link><guid isPermaLink="false">https://junhobaik.github.io/develop-blog-v3_3/</guid><pubDate>Mon, 30 Dec 2019 06:02:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;지금 이 글을 보고 있는 블로그는 Borderless 테마를 사용하고 있는 블로그입니다.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Gatsby를 이용해 제작되었으며 Gatsby에 대한 간략한 설명은 이전 글(&lt;a href=&quot;/create-gatsby-blog&quot;&gt;Gatsby로 블로그 만들기&lt;/a&gt;)에서 확인 할 수 있습니다.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;/develop-blog-v3_2&quot;&gt;Borderless 블로그 - 소개&lt;/a&gt;&lt;/strong&gt;에서 borderless 테마의 기능과 특징을 확인하세요.&lt;/p&gt;
 &lt;p&gt;이 블로그와 같은 블로그를 만들고 싶다면 이 글을 간략하게 참고하시고,&lt;br&gt;
@@ -216,33 +216,34 @@ keywords:
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/c5050ccb89f0f70dd664821b7fbf1caa/bfecb/DraggedImage-3.png&quot;
+    href=&quot;/static/6776865ab0b7d061dcd4ae27919db0a4/c72b4/screenshot.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 64.15963161933999%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAABYlAAAWJQFJUiTwAAACN0lEQVQ4y5VSO2/TUBT2QCC1QXRAmJEfgJgoHWBhYeJHMLBVCRKiwAL8ARbEgoRYQIqYmBBDgxRBgYQUKFCF5lGaFDttSkkcx/Hr2tcf5zopSlWFiE/+fO499zzvudKHlwvHlpffza1rWlrTmim9uZXaav1KrVbrqcraRqpca5BsxPvvlfVxnCPOL31eOSW9fbM4y5gPgSAM4bge0YfZs2GT9FgI1w/Awgj0IeQjpL1PP8/2Yv9ytXZdyhcKM5xHDOI8igLGWGAYRtA1uoHZNWlN0jQDz/MCkROIhnIPXRFQ1/W0VCgUzoahyEemBCEmUYB8opAq4URSsmHAq3sCCuOfGzqePsyg/OITlp4v4snjZ6jXG6hWqyiVStA0DbsQLUcD7A84KA7RwqvXuKieR+fSfXy8cBdnTp7Dl68r+L2zg1arBcdxQO0jl8vF62HF4yssr9Ywf+UGMnce4NGte7iZuk1VNdHrmehb/djItm1kMhnS9SYHpKHA8/34pneVQmdZFsgOw07+YmzLowFpynAdFz3Lgev5o86x7NsOTNOiRMH+CvP5/ExAoPkJ69B1Pb7d2ua66fD3m33+rbLJGYvvmPN4pBEnc271bdIzUYjQxVlpYGmpWCzOjrYg7kfTB5NkHP+FZrN5Tcpms6fb7fYParPR6XTqhqDRqXcNo252jVgK/QSuUYwOPavLUiKROKAoynHiCUWRVVk5rMryEfVQMqkeJCaTUyqd/ZOyLKvT00fJX5n6AzckbVoe03zEAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 75.40208136234627%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAABYlAAAWJQFJUiTwAAABz0lEQVQ4y42UW0/bQBCF+f8P5Zf0tYjnSog+VEIICioSNMUhkDiJvd6LvRcfZia2ZaMksNKJY3v22zOzsz4BjbZt+YIYI1RVQWtD0lBK7e6NwXhw/Ef1z0/GQL4yrCKYMWYAVwQtCV4UJbz3EpdS+hqQJzRNI9ex2H0P2ed2AhxDPw52OXuei96WOS3m98b18ycO2UEIQdzsnrVyb6yFJRljB7e9nKf4dCBlnuyck0lcx1JVVD891LUfvDCL43ihSP8PAusOmL0s8D+bi55mz5RyRs/pfRMQItWtN2CdwI865FR4d8uyJIe8u4U4aUNN9iw3mMTzAp8CeSL3X57nWK/XAi1ITpf4+Wjx7dLj9LLB9xuLxlQUfwTIzqR+1HcrAuYEZHdbklYFbucKP+40zu4Nfj1VlI2RFjsI5Be2qyFSoBXCqC3kd6LkaslqeLPP4eviFZvNFg/bGtfZBrNsDR92bcTtETpxp9h8Q7tvJg0+AdZ1g/nijVKp8afw+P2i8PdxKUDJoDtyiYEkJ6fKox019wRoCfQvW2C1pbNbVohGI0VuFU/N7dAQgIExJum9tgMfPXpc3osHhfPbFZZX99D0QdC0EAM91WsAjjQGvgPA+JSG45zZ6wAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;DraggedImage 3&quot;
-        title=&quot;DraggedImage 3&quot;
-        src=&quot;/static/c5050ccb89f0f70dd664821b7fbf1caa/799d3/DraggedImage-3.png&quot;
-        srcset=&quot;/static/c5050ccb89f0f70dd664821b7fbf1caa/00d96/DraggedImage-3.png 148w,
-/static/c5050ccb89f0f70dd664821b7fbf1caa/0b23c/DraggedImage-3.png 295w,
-/static/c5050ccb89f0f70dd664821b7fbf1caa/799d3/DraggedImage-3.png 590w,
-/static/c5050ccb89f0f70dd664821b7fbf1caa/2a3d6/DraggedImage-3.png 885w,
-/static/c5050ccb89f0f70dd664821b7fbf1caa/ae92f/DraggedImage-3.png 1180w,
-/static/c5050ccb89f0f70dd664821b7fbf1caa/bfecb/DraggedImage-3.png 2606w&quot;
+        alt=&quot;screenshot&quot;
+        title=&quot;screenshot&quot;
+        src=&quot;/static/6776865ab0b7d061dcd4ae27919db0a4/799d3/screenshot.png&quot;
+        srcset=&quot;/static/6776865ab0b7d061dcd4ae27919db0a4/00d96/screenshot.png 148w,
+/static/6776865ab0b7d061dcd4ae27919db0a4/0b23c/screenshot.png 295w,
+/static/6776865ab0b7d061dcd4ae27919db0a4/799d3/screenshot.png 590w,
+/static/6776865ab0b7d061dcd4ae27919db0a4/2a3d6/screenshot.png 885w,
+/static/6776865ab0b7d061dcd4ae27919db0a4/ae92f/screenshot.png 1180w,
+/static/6776865ab0b7d061dcd4ae27919db0a4/c72b4/screenshot.png 2114w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
       /&gt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;하단에는 광고와 댓글이 위치합니다.&lt;/p&gt;
+&lt;p&gt;게시물에 하단에는 게시물을 소셜 공유 할 수 있는 버튼들이 위치합니다.&lt;br&gt;
+그 아래로는 광고와 댓글이 위치합니다.&lt;/p&gt;
 &lt;h4 id=&quot;시리즈-게시물&quot;&gt;&lt;a href=&quot;#%EC%8B%9C%EB%A6%AC%EC%A6%88-%EA%B2%8C%EC%8B%9C%EB%AC%BC&quot; aria-label=&quot;시리즈 게시물 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;시리즈 게시물&lt;/h4&gt;
 &lt;p&gt;만약 시리즈 게시물이라면 위와 같이 게시물 상단에 시리즈 목록이 표시됩니다.&lt;/p&gt;
 &lt;p&gt;&lt;span
