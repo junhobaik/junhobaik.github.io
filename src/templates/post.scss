@@ -18,16 +18,15 @@
     .blog-post-title {
       font-size: 1.8rem;
       margin: 0;
-      font-family: 'Noto Serif KR';
       line-height: 1.5;
       word-break: keep-all;
+      font-family: 'Noto Serif KR';
     }
 
     .blog-post-info {
       display: flex;
       margin-top: 1rem;
       color: rgba(0, 0, 0, 0.64);
-      font-family: 'Nanum Gothic';
       font-size: 0.84rem;
       align-items: center;
       justify-content: space-between;
@@ -108,7 +107,6 @@
         margin-top: 0.25rem;
         flex-direction: column;
         align-items: flex-end;
-        font-family: 'Nanum Gothic';
         font-size: 0.8rem;
         line-height: 1.3;
 
@@ -147,6 +145,7 @@
 
     .blog-post-content {
       margin-top: 3rem;
+      font-family: 'Noto Serif KR';
 
       h1,
       h2,
@@ -251,7 +250,6 @@
     align-items: center;
     justify-content: center;
     user-select: none;
-    font-family: 'Nanum Gothic';
 
     & > :nth-child(1) {
       opacity: 0.8;
