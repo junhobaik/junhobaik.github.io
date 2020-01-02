@@ -17,16 +17,20 @@
     display: flex;
     flex-direction: column;
     max-width: inherit;
-
-    padding: 3rem 1rem;
+    margin: 6rem 1rem;
+    opacity: 0.87;
+    transition: 0.3s;
 
     @media screen and (max-width: $break-m) {
-      padding: 2rem 1rem;
+      margin: 4rem 1rem;
+    }
+
+    &:hover {
+      opacity: 1;
     }
 
     &:nth-child(1) {
-      padding-top: 0;
-      border-top: 0;
+      margin-top: 0;
     }
 
     & > * > * {
@@ -70,6 +74,10 @@
           margin-right: 0.5rem;
           span > a {
             color: rgba(0, 0, 0, 0.54);
+            transition: 0.2s;
+            &:hover {
+              color: rgba(0, 0, 0, 0.74);
+            }
           }
         }
       }
