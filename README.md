@@ -1,5 +1,10 @@
 # "Borderless" Theme, Built with Gatsby
 
+- **[Documents (Korean)](<https://github.com/junhobaik/junhobaik.github.io/wiki/Document-(Borderless)>)**  
+- **[Documents (English)](<https://github.com/junhobaik/junhobaik.github.io/wiki/Document-(Borderless,-en)>)**
+
+---
+
 Gatsby로 제작된 정적 웹사이트,  
 블로그 Borderless 테마입니다.
 
