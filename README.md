@@ -5,7 +5,8 @@
 <br/>
 
 [Junho Baik](https://github.com/junhobaik)의 개인 블로그이자,  
-Gatsby로 제작한 블로그 테마 "**Borderless**" 입니다.
+Gatsby로 제작한 블로그 테마 "**Borderless**" 입니다. ([Gatsby Showcase | Borderless](https://www.gatsbyjs.org/showcase/junhobaik.github.io))
+
 
 커스터마이징하여 자신의 블로그로 사용할 수 있습니다.
 
