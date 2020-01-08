@@ -179,8 +179,8 @@
 
       blockquote {
         font-size: 0.9rem;
-        color: rgba(0,0,0,0.64);
-        border-left: 4px solid rgba(0,0,0,0.2);
+        color: rgba(0, 0, 0, 0.64);
+        border-left: 4px solid rgba(0, 0, 0, 0.2);
         margin: 0;
         margin-bottom: 1rem;
         padding: 0 1rem 0 1rem;
@@ -203,42 +203,39 @@
         list-style: none;
         margin: 0 0.25rem;
 
-        & > div {
-          cursor: pointer;
-
-          circle {
-            fill: #6a737d;
-            transition: 0.3s;
-          }
+        circle {
+          fill: #6a737d;
+          transition: all 0.3s;
         }
+
         &:hover {
           &.email {
-            & > div circle {
-              fill: #7f7f7f;
+            circle {
+              fill: #b8b8b8;
             }
           }
           &.facebook {
-            & > div circle {
+            circle {
               fill: #3b5998;
             }
           }
           &.twitter {
-            & > div circle {
+            circle {
               fill: #00aced;
             }
           }
           &.linkedin {
-            & > div circle {
+            circle {
               fill: #007fb1;
             }
           }
           &.reddit {
-            & > div circle {
+            circle {
               fill: #5f99cf;
             }
           }
           &.pocket {
-            & > div circle {
+            circle {
               fill: #ef3f56;
             }
           }
