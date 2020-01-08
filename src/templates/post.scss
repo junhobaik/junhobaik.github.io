@@ -176,6 +176,15 @@
       code {
         font-family: 'Nanum Gothic Coding';
       }
+
+      blockquote {
+        font-size: 0.9rem;
+        color: rgba(0,0,0,0.64);
+        border-left: 4px solid rgba(0,0,0,0.2);
+        margin: 0;
+        margin-bottom: 1rem;
+        padding: 0 1rem 0 1rem;
+      }
     }
   }
 
