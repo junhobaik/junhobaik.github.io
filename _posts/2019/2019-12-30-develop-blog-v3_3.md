@@ -3,8 +3,8 @@ title: Borderless 테마로 Gatsby 블로그 만들기
 date: 2019-12-30 06:02:00
 tag:
   - blog
-keywords:
   - gatsby
+keywords:
   - gatsby blog
   - gatsby 블로그 만들기
   - gatsby 블로그 댓글
