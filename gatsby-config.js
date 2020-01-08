@@ -64,6 +64,12 @@ const gatsbyConfig = {
           },
           `gatsby-remark-autolink-headers`,
           `gatsby-remark-katex`,
+          {
+            resolve: 'gatsby-remark-external-links',
+            options: {
+              target: '_blank',
+            },
+          },
         ],
       },
     },
