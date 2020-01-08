@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Dev.White | Feed]]></title><description><![CDATA[Junho Baik's Development Blog]]></description><link>https://junhobaik.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 08 Jan 2020 15:47:16 GMT</lastBuildDate><item><title><![CDATA[React Hooks: useState, useEffect 알아보기]]></title><description><![CDATA[뒤늦은 Hooks 포스팅입니다. Hooks 기본을 정리해보고, 사용해오면서 알게 된 점도 정리해봅니다. 간단히 useState에 대해 설명하고, useEffect에 대해서는 조금 더 자세하게 알아봅니다. Hooks는 React 16.…]]></description><link>https://junhobaik.github.io/react-hooks/</link><guid isPermaLink="false">https://junhobaik.github.io/react-hooks/</guid><pubDate>Wed, 08 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;뒤늦은 Hooks 포스팅입니다. Hooks 기본을 정리해보고, 사용해오면서 알게 된 점도 정리해봅니다.&lt;br&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Dev.White | Feed]]></title><description><![CDATA[Junho Baik's Development Blog]]></description><link>https://junhobaik.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 08 Jan 2020 15:53:31 GMT</lastBuildDate><item><title><![CDATA[React Hooks: useState, useEffect 알아보기]]></title><description><![CDATA[뒤늦은 Hooks 포스팅입니다. Hooks 기본을 정리해보고, 사용해오면서 알게 된 점도 정리해봅니다. 간단히 useState에 대해 설명하고, useEffect에 대해서는 조금 더 자세하게 알아봅니다. Hooks는 React 16.…]]></description><link>https://junhobaik.github.io/react-hooks/</link><guid isPermaLink="false">https://junhobaik.github.io/react-hooks/</guid><pubDate>Wed, 08 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;뒤늦은 Hooks 포스팅입니다. Hooks 기본을 정리해보고, 사용해오면서 알게 된 점도 정리해봅니다.&lt;br&gt;
 간단히 useState에 대해 설명하고, useEffect에 대해서는 조금 더 자세하게 알아봅니다.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Hooks는 React 16.8부터 등장한 새로운 기능입니다.&lt;br&gt;
@@ -313,7 +313,7 @@ keywords:
 &lt;p&gt;게시물 목록을 볼 수 있는 홈 화면으로,&lt;br&gt;
 타이틀 이미지가 크게 표시되며 프로필 정보가 함께 표시됩니다.&lt;br&gt;
 게시물 목록에는 게시물의 제목, 날짜, 태그, 요약이 표시됩니다.&lt;br&gt;
-프로필 정보에는 소개 문구, 이름, 회사, 위치, 메일, 웹사이트, RSS, 소셜(페이스북, 링크드인, 인스타그램, 깃허브)를 표시할 수 있습니다.  &lt;/p&gt;
+프로필 정보에는 소개 문구, 이름, 회사, 위치, 메일, 웹사이트, RSS, 소셜(페이스북, 링크드인, 인스타그램, 깃허브)를 표시할 수 있습니다.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
@@ -383,7 +383,7 @@ keywords:
 &lt;p&gt;게시물 화면입니다.&lt;br&gt;
 헤더는 스크롤 다운시 감춰지며 게시물의 내용에 집중할 수 있습니다.&lt;br&gt;
 화면의 크기가 충분히 넓을 경우 목차가 우측에 표시되며, 그렇지 않을 경우 게시물의 상단에 목차 버튼으로 목차를 볼 수 있습니다.&lt;br&gt;
-목차는 클릭하여 해당 위치로 이동할 수 있고, 스크롤 위치에 따라 보고있는 목차 부분이 강조되어 보고있는 위치를 알 수 있습니다.  &lt;/p&gt;
+목차는 클릭하여 해당 위치로 이동할 수 있고, 스크롤 위치에 따라 보고있는 목차 부분이 강조되어 보고있는 위치를 알 수 있습니다.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
@@ -488,7 +488,7 @@ keywords:
 &lt;p&gt;태그 화면에서는 모든 태그가 표시되며,&lt;br&gt;
 게시물 수가 많은 태그는 텍스트 크기가 크게 표시됩니다.&lt;br&gt;
 현재 보고있는 태그는 텍스트가 진하게 표시됩니다.&lt;br&gt;
-아래는 태그에 해당하는 게시물 목록이 표시됩니다.  &lt;/p&gt;
+아래는 태그에 해당하는 게시물 목록이 표시됩니다.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
@@ -656,7 +656,7 @@ keywords:
     &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;뭔가를 살펴볼땐 그것에만 집중 할 수 있어야한다.&lt;/strong&gt;&lt;br&gt;
 기본적으로 헤더를 항상 표시가 아닌 스크롤에 따라 숨기고 나타나도록 구현했다.&lt;br&gt;
-그래서 게시물을 읽을땐 온전히 게시물에만 집중 할 수 있고, 그 외로 표시되는 것은 TableOfContents 즉, 목차 뿐이다. 이것도 투명도를 낮춰 게시물을 읽는데 집중할 수 있도록 했다.  &lt;/p&gt;
+그래서 게시물을 읽을땐 온전히 게시물에만 집중 할 수 있고, 그 외로 표시되는 것은 TableOfContents 즉, 목차 뿐이다. 이것도 투명도를 낮춰 게시물을 읽는데 집중할 수 있도록 했다.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
@@ -704,7 +704,7 @@ UX를 고려해서 어느 곳에서도 부드럽게 전환이 가능하도록 �
 대표적으로 Google Analytics, Disqus 가 있다. 애널리틱스는 웹 운영에 필수고, 댓글 또한 블로그에 없어서는 안될 기능이다.&lt;br&gt;
 구현 중에 본인의 Disqus를 새로 설정하면서 기존 댓글이 지워진 아쉬움이 있긴하다.&lt;/p&gt;
 &lt;p&gt;글을 쓰는 현재 아직 몇가지 해야할 것이 남았다.&lt;br&gt;
-몇가지 수정할 게 남았고, 그 다음으로 해야할 것이 다른 사람들이 이용할 수 있게 만들어두는 것이다. 기본적인 정보만 수정하면 자신의 블로그로 만들어 사용할 수 있게 처음부터 고려해서 만들어졌다. 이전 블로그도 이와 비슷하게 배포했는데 메일이나 댓글로 질문이 몇번와서 이번에는 문서를 조금 더 정성들여 적어봐야겠다.  &lt;/p&gt;
+몇가지 수정할 게 남았고, 그 다음으로 해야할 것이 다른 사람들이 이용할 수 있게 만들어두는 것이다. 기본적인 정보만 수정하면 자신의 블로그로 만들어 사용할 수 있게 처음부터 고려해서 만들어졌다. 이전 블로그도 이와 비슷하게 배포했는데 메일이나 댓글로 질문이 몇번와서 이번에는 문서를 조금 더 정성들여 적어봐야겠다.&lt;/p&gt;
 &lt;p&gt;다음으로는 간단하게 블로그를 소개하고, 그 다음에는 이 블로그를 자신의 블로그로 만드는 방법을 자세하게 적어볼 수 있도록 하려 한다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[현재까지 개발한 결과물에 대한 이야기 2019]]></title><description><![CDATA[이 글은 개발해서 운영하고 있는 서비스에 대한 잡담과 같은 후기이다. 현재까지 개발해서 지속적으로 운영하고 있는 결과물은 5개 정도이다. Blog Netflix AutoSkip Tablo Tablo (version 2) WhatSubs Blog…]]></description><link>https://junhobaik.github.io/dev-log-2019/</link><guid isPermaLink="false">https://junhobaik.github.io/dev-log-2019/</guid><pubDate>Sun, 29 Dec 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;이 글은 개발해서 운영하고 있는 서비스에 대한 잡담과 같은 후기이다.&lt;/p&gt;
 &lt;p&gt;현재까지 개발해서 지속적으로 운영하고 있는 결과물은 5개 정도이다.&lt;/p&gt;
 &lt;ul&gt;
