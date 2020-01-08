@@ -39,7 +39,9 @@ const PostList = (props: PostListProps) => {
             {tags.length && tags[0] !== 'undefined' ? <span className="info-dot">·</span> : null}
             <ul className="tag-list">{mapTag}</ul>
           </div>
-          <span className="excerpt">{excerpt}</span>
+          <span className="excerpt">
+            <Link to={slug}>{excerpt}</Link>
+          </span>
         </article>
       </li>
     );

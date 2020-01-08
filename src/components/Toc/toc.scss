@@ -1,12 +1,10 @@
 @import '../../utils/variables.scss';
 
 .toc {
-  font-family: 'Nanum Gothic';
   font-size: 0.8rem;
   max-width: 220px;
   min-width: 220px;
   max-height: calc(100vh - 6rem);
-  overflow: auto;
   transition: 0.3s;
   padding-right: 0.5rem;
 
@@ -27,10 +25,10 @@
   }
 
   a {
+    display: block;
     opacity: 0.4;
     transition: 0.2s;
     max-width: calc(220px - 1.5rem);
-    display: block;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -49,8 +47,10 @@
   position: fixed;
   top: 0;
   right: 0;
+  overflow: auto;
   margin-top: $header-height;
   opacity: 0.4;
+  max-height: 85%;
 
   @media screen and (max-width: $break-toc) {
     display: none;

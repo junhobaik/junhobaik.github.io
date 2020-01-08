@@ -18,16 +18,15 @@
     .blog-post-title {
       font-size: 1.8rem;
       margin: 0;
-      font-family: 'Noto Serif KR';
       line-height: 1.5;
       word-break: keep-all;
+      font-family: 'Noto Serif KR';
     }
 
     .blog-post-info {
+      display: flex;
       margin-top: 1rem;
       color: rgba(0, 0, 0, 0.64);
-      display: flex;
-      font-family: 'Nanum Gothic';
       font-size: 0.84rem;
       align-items: center;
       justify-content: space-between;
@@ -37,8 +36,8 @@
       }
 
       .blog-post-tag-list {
-        margin: 0;
         display: flex;
+        margin: 0;
         flex-wrap: wrap;
         flex-grow: 1;
 
@@ -60,8 +59,8 @@
       }
 
       .blog-post-inside-toc {
-        align-self: flex-end;
         display: none;
+        align-self: flex-end;
 
         @media screen and (max-width: $break-toc) {
           display: inline-block;
@@ -78,31 +77,64 @@
         }
       }
     }
-    .series-list {
-      margin: 0;
-      margin-top: 2rem;
+
+    .series {
       display: flex;
       flex-direction: column;
-      align-items: flex-end;
-      font-family: 'Nanum Gothic';
-      font-size: 0.9rem;
+      justify-content: flex-end;
+      margin-top: 2rem;
 
-      .series-item {
-        list-style: none;
+      .series-head {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        color: rgba(0, 0, 0, 0.74);
+
+        .head {
+          font-weight: bold;
+          user-select: none;
+        }
+
+        .icon-wrap {
+          text-align: center;
+          width: 1.5rem;
+          font-size: 0.8rem;
+        }
+      }
+
+      .series-list {
+        display: flex;
         margin: 0;
-        opacity: 0.4;
-        transition: all 0.2s;
+        margin-top: 0.25rem;
+        flex-direction: column;
+        align-items: flex-end;
+        font-size: 0.8rem;
+        line-height: 1.3;
 
-        &:hover {
-          opacity: 0.9;
-        }
+        .series-item {
+          list-style: none;
+          margin: 0;
+          opacity: 0.4;
+          transition: all 0.2s;
 
-        a {
-          text-decoration: none;
-        }
+          &:hover {
+            opacity: 0.9;
+          }
 
-        &.current-series {
-          opacity: 0.7;
+          & > a {
+            text-decoration: none;
+            display: flex;
+
+            .icon-wrap {
+              min-width: 1.5rem;
+              width: 1.5rem;
+              text-align: center;
+            }
+          }
+
+          &.current-series {
+            opacity: 0.7;
+          }
         }
       }
     }
@@ -114,6 +146,7 @@
 
     .blog-post-content {
       margin-top: 3rem;
+      font-family: 'Noto Serif KR';
 
       h1,
       h2,
@@ -143,18 +176,27 @@
       code {
         font-family: 'Nanum Gothic Coding';
       }
+
+      blockquote {
+        font-size: 0.9rem;
+        color: rgba(0,0,0,0.64);
+        border-left: 4px solid rgba(0,0,0,0.2);
+        margin: 0;
+        margin-bottom: 1rem;
+        padding: 0 1rem 0 1rem;
+      }
     }
   }
 
   .social-share {
-    margin-top: 2rem;
     display: flex;
+    margin-top: 2rem;
     flex-direction: column;
     align-items: center;
 
     ul {
-      margin: 0;
       display: flex;
+      margin: 0;
 
       li.social-share-item {
         margin: 0;
@@ -211,14 +253,13 @@
 
   .ad-dev,
   .comments-dev {
+    display: flex;
     border: 1px dotted gray;
     min-height: 15rem;
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     user-select: none;
-    font-family: 'Nanum Gothic';
 
     & > :nth-child(1) {
       opacity: 0.8;

@@ -4,7 +4,7 @@ import Helmet from 'react-helmet';
 import { graphql, Link } from 'gatsby';
 import { DiscussionEmbed } from 'disqus-react';
 import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome';
-import { faListUl } from '@fortawesome/free-solid-svg-icons';
+import { faListUl, faLayerGroup, faAngleLeft } from '@fortawesome/free-solid-svg-icons';
 import AdSense from 'react-adsense';
 import {
   FacebookShareButton,
@@ -99,6 +99,7 @@ const Post = (props: postProps) => {
       <li key={`${s.slug}-series-${s.num}`} className={`series-item ${slug === s.slug ? 'current-series' : ''}`}>
         <Link to={s.slug}>
           <span>{s.title}</span>
+          <div className="icon-wrap">{slug === s.slug ? <Fa icon={faAngleLeft} /> : null}</div>
         </Link>
       </li>
     );
@@ -170,7 +171,19 @@ const Post = (props: postProps) => {
               </div>
             )}
 
-            {series.length > 1 ? <ul className="series-list">{mapSeries}</ul> : null}
+            {series.length > 1 ? (
+              <>
+                <div className="series">
+                  <div className="series-head">
+                    <span className="head">Post Series</span>
+                    <div className="icon-wrap">
+                      <Fa icon={faLayerGroup} />
+                    </div>
+                  </div>
+                  <ul className="series-list">{mapSeries}</ul>
+                </div>
+              </>
+            ) : null}
 
             <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: html }} />
           </div>

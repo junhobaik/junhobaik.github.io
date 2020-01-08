@@ -4,7 +4,7 @@ const typography = new Typography({
   baseFontSize: '16px',
   baseLineHeight: 1.666,
   headerFontFamily: ['Nanum Gothic'],
-  bodyFontFamily: ['Noto Serif KR'],
+  bodyFontFamily: ['Nanum Gothic'],
 });
 
 const googleFont = [
