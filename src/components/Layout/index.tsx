@@ -55,6 +55,7 @@ const Layout = (props: LayoutPropsType) => {
       <Helmet>
         <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
         <link href={`https://fonts.googleapis.com/css?family=${googleFont}`} rel="stylesheet" />
+        <meta name="google-site-verification" content={require('../../../config').googleSearchConsole ?? ''} />
         <style>{FaDom.css()}</style>
       </Helmet>
 
