@@ -37,7 +37,7 @@ export interface postProps {
 
 const Post = (props: postProps) => {
   const { data, pageContext, isMobile } = props;
-  const { markdownRemark } = data; // data.markdownRemark holds your post data
+  const { markdownRemark } = data;
   const { frontmatter, html, tableOfContents, fields, excerpt } = markdownRemark;
   const { title, date, tags, keywords } = frontmatter;
   const { slug } = fields;
@@ -53,8 +53,10 @@ const Post = (props: postProps) => {
   useEffect(() => {
     const hs = Array.from(document.querySelectorAll('h2, h3')) as Array<HTMLHeadingElement>;
 
+    const minusValue = window.innerHeight < 500 ? 100 : Math.floor(window.innerHeight / 5);
+
     const foo = hs.map(h => {
-      return h.offsetTop;
+      return h.offsetTop - minusValue;
     });
 
     setYList(foo);
@@ -65,7 +67,7 @@ const Post = (props: postProps) => {
   useEffect(() => {
     if (isMobile) {
       const adDiv = document.querySelector('.ad') as HTMLDivElement;
-      
+
       if (adDiv) {
         const maxWidth = window.innerHeight > window.innerWidth ? window.innerWidth : window.innerHeight;
         adDiv.style.maxWidth = `${maxWidth}px`;
