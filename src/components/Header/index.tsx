@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 import { Link } from 'gatsby';
 import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome';
 import { faTags, faSearch } from '@fortawesome/free-solid-svg-icons';
@@ -79,12 +79,12 @@ const Header = (props: headerPropsType) => {
     return () => document.removeEventListener('scroll', setVisible);
   }, []);
 
-  const tagSpanVisibleToggle = (isVisible: boolean) => {
+  const tagSpanVisibleToggle = useCallback((isVisible: boolean) => {
     const tag: HTMLSpanElement | null = document.querySelector('.tag-wrap>span');
 
     if (tag && isVisible) tag.style.opacity = '1';
     if (tag && !isVisible) tag.style.opacity = '0';
-  };
+  }, []);
 
   return (
     <header id="Header" className={`${isHide ? 'hide' : 'show'} ${isMobile ? 'mobile' : ''}`}>
