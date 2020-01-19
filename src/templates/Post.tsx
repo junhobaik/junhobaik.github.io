@@ -53,8 +53,10 @@ const Post = (props: postProps) => {
   useEffect(() => {
     const hs = Array.from(document.querySelectorAll('h2, h3')) as Array<HTMLHeadingElement>;
 
+    const minusValue = window.innerHeight < 500 ? 100 : Math.floor(window.innerHeight / 5);
+
     const foo = hs.map(h => {
-      return h.offsetTop;
+      return h.offsetTop - minusValue;
     });
 
     setYList(foo);
