@@ -1,7 +1,7 @@
 module.exports = {
   /** Site MetaData (Required all)*/
   title: `Dev.White`,                           // (* Required)
-  description: `Junho Baik's Development Blog`, // (* Required)
+  description: `Dev.White의 웹 개발 블로그입니다. 프론트엔드 스킬을 주로 다루며 백엔드와 그 외 기술에도 지속적으로 관심을 기울이고 있습니다.`, // (* Required)
   author: `Junho Baik`,                         // (* Required)
   siteUrl: 'https://junhobaik.github.io',       // (* Required) 
     // ex.'https://junhobaik.github.io'
