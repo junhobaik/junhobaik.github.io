@@ -1,4 +1,5 @@
 import React from 'react';
+import { memo } from 'react';
 import { Link } from 'gatsby';
 
 import './postList.scss';
@@ -7,7 +8,7 @@ export interface PostListProps {
   posts: any;
 }
 
-const PostList = (props: PostListProps) => {
+const PostList = memo((props: PostListProps) => {
   const { posts } = props;
 
   const mapPost = posts.map((post: any) => {
@@ -51,6 +52,6 @@ const PostList = (props: PostListProps) => {
       <ul>{mapPost}</ul>
     </div>
   );
-};
+});
 
 export default PostList;

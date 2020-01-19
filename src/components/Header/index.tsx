@@ -1,10 +1,9 @@
 import * as React from 'react';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 import { Link } from 'gatsby';
 import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome';
 import { faTags, faSearch } from '@fortawesome/free-solid-svg-icons';
 import { connect } from 'react-redux';
-import MobileDetect from 'mobile-detect';
 
 import './header.scss';
 const config = require('../../../config');
@@ -14,13 +13,13 @@ export interface headerPropsType {
   path: any;
   setPath: any;
   size: string;
+  isMobile: boolean;
 }
 
 const Header = (props: headerPropsType) => {
-  const { siteTitle, path, setPath, size } = props;
+  const { siteTitle, path, setPath, size, isMobile } = props;
   const [, setYPos] = useState(0);
   const [isHide, setIsHide] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const bio: HTMLDivElement | null = document.querySelector('.bio');
@@ -36,11 +35,6 @@ const Header = (props: headerPropsType) => {
   }, [isHide]);
 
   useEffect(() => {
-    const md = new MobileDetect(window.navigator.userAgent);
-    if (md.mobile()) {
-      setIsMobile(true);
-    }
-
     const profile: HTMLImageElement | null = document.querySelector('.header-profile-image-wrap>img');
 
     const prevPath = path;
@@ -79,12 +73,12 @@ const Header = (props: headerPropsType) => {
     return () => document.removeEventListener('scroll', setVisible);
   }, []);
 
-  const tagSpanVisibleToggle = (isVisible: boolean) => {
+  const tagSpanVisibleToggle = useCallback((isVisible: boolean) => {
     const tag: HTMLSpanElement | null = document.querySelector('.tag-wrap>span');
 
     if (tag && isVisible) tag.style.opacity = '1';
     if (tag && !isVisible) tag.style.opacity = '0';
-  };
+  }, []);
 
   return (
     <header id="Header" className={`${isHide ? 'hide' : 'show'} ${isMobile ? 'mobile' : ''}`}>
@@ -141,8 +135,8 @@ const Header = (props: headerPropsType) => {
   );
 };
 
-const mapStateToProps = ({ path, size }: { path: string; size: string }) => {
-  return { path, size };
+const mapStateToProps = ({ path, size, isMobile }: { path: string; size: string; isMobile: boolean }) => {
+  return { path, size, isMobile };
 };
 
 const mapDispatchToProps = (dispatch: any) => {

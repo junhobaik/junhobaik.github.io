@@ -1,7 +1,9 @@
 import * as React from 'react';
 import { useState, useEffect } from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
 import Helmet from 'react-helmet';
+import { connect } from 'react-redux';
+import { useStaticQuery, graphql } from 'gatsby';
+import MobileDetect from 'mobile-detect';
 import { config as FaConfig, dom as FaDom } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome';
 import { faAngleDoubleUp } from '@fortawesome/free-solid-svg-icons';
@@ -14,10 +16,11 @@ FaConfig.autoAddCss = false;
 
 export interface LayoutPropsType {
   children: Object;
+  setIsMobile: Function;
 }
 
 const Layout = (props: LayoutPropsType) => {
-  const { children } = props;
+  const { children, setIsMobile } = props;
   const [isTop, setIsTop] = useState(true);
 
   const data = useStaticQuery(graphql`
@@ -31,6 +34,11 @@ const Layout = (props: LayoutPropsType) => {
   `);
 
   useEffect(() => {
+    const md = new MobileDetect(window.navigator.userAgent);
+    if (md.mobile()) {
+      setIsMobile(true);
+    }
+
     const setTop = () => {
       if (window.pageYOffset < window.innerHeight / 2) {
         setIsTop(true);
@@ -76,4 +84,10 @@ const Layout = (props: LayoutPropsType) => {
   );
 };
 
-export default Layout;
+const mapDispatchToProps = (dispatch: any) => {
+  return {
+    setIsMobile: (isMobile: boolean) => dispatch({ type: `SET_IS_MOBILE`, isMobile }),
+  };
+};
+
+export default connect(null, mapDispatchToProps)(Layout);
