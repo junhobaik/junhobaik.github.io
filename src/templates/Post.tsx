@@ -1,6 +1,7 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
 import Helmet from 'react-helmet';
+import { connect } from 'react-redux';
 import { graphql, Link } from 'gatsby';
 import { DiscussionEmbed } from 'disqus-react';
 import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome';
@@ -31,10 +32,11 @@ const config = require('../../config');
 export interface postProps {
   data: any;
   pageContext: any;
+  isMobile: boolean;
 }
 
 const Post = (props: postProps) => {
-  const { data, pageContext } = props;
+  const { data, pageContext, isMobile } = props;
   const { markdownRemark } = data; // data.markdownRemark holds your post data
   const { frontmatter, html, tableOfContents, fields, excerpt } = markdownRemark;
   const { title, date, tags, keywords } = frontmatter;
@@ -59,6 +61,19 @@ const Post = (props: postProps) => {
 
     return () => {};
   }, []);
+
+  useEffect(() => {
+    if (isMobile) {
+      const adDiv = document.querySelector('.ad') as HTMLDivElement;
+      
+      if (adDiv) {
+        const maxWidth = window.innerHeight > window.innerWidth ? window.innerWidth : window.innerHeight;
+        adDiv.style.maxWidth = `${maxWidth}px`;
+        adDiv.style.display = 'flex';
+        adDiv.style.justifyContent = 'flex-end';
+      }
+    }
+  }, [isMobile]);
 
   useEffect(() => {
     const setYPos = () => {
@@ -284,4 +299,8 @@ export const pageQuery = graphql`
   }
 `;
 
-export default Post;
+const mapStateToProps = ({ isMobile }: { isMobile: boolean }) => {
+  return { isMobile };
+};
+
+export default connect(mapStateToProps)(Post);
