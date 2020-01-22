@@ -81,7 +81,7 @@
     "tsc": "tsc",
     "type-check": "tsc --noEmit",
     "lint": "tslint --project .",
-    "deploy": "rm -rf .cache/ && rm -rf public/ && gatsby build && gh-pages -b master -d public"
+    "deploy": "gatsby clean && gatsby build && gh-pages -b master -d public"
   },
   "repository": {
     "type": "git",
