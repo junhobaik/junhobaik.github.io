@@ -67,7 +67,7 @@ const Bio = () => {
         </a>
 
         {!linkedin ? null : (
-          <a href="http://" target="_blank" rel="noopener noreferrer">
+          <a href={linkedin} target="_blank" rel="noopener noreferrer">
             <Fa icon={faLinkedin} className="linkedin" />
           </a>
         )}
