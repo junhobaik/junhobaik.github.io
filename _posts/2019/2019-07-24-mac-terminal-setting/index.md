@@ -1,7 +1,7 @@
 ---
 title: mac 터미널 환경 구성하기 (zsh, oh my zsh, zplug, hyper)
 date: 2019-07-24
-tags: 
+tags:
   - mac
 keywords:
   - mac terminal
@@ -14,7 +14,6 @@ keywords:
   - zplug
   - hyper
   - itrem
-
 ---
 
 ![](screenshot.png)
@@ -29,6 +28,7 @@ macOS를 처음 설치해 깨끗한 상태에서 환경을 구성하는 과정�
 
 HomeBrew가 설치되어있다면 Brew 설치 부분은 건너뛰면 됩니다.  
 또한 mac Catalina를 사용중이라면 zsh 설치 및 설정 부분은 건너뛰면 됩니다.
+
 > catalina 버전부터는 기본 쉘이 zsh로 설정되어 있어 설치 및 설정이 불필요
 
 ## Brew 설치
@@ -36,30 +36,36 @@ HomeBrew가 설치되어있다면 Brew 설치 부분은 건너뛰면 됩니다.
 Brew 설치에 앞서 xcode command line tools의 설치가 필요합니다.
 
 _Xcode command line tools 설치_
+
 ```bash
 xcode-select --install
 ```
 
 _HomeBrew 설치_
+
 ```bash
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
 _zsh 설치_
+
 ```bash
 brew install zsh
 ```
 
 _oh-my-zsh 설치_
+
 ```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
 _기본 쉘 변경 (bash -\> zsh)_
+
 ```bash
 chsh -s `which zsh`
 ```
-> non-standard shell 오류 발생 시 
+
+> non-standard shell 오류 발생 시
 > /etc/shells 파일에 `which zsh`를 통해서 확인한 경로를 최하단에 추가합니다.
 > 위 명령어를 다시 실행한 후 재부팅을 합니다.
 
@@ -72,6 +78,7 @@ chsh -s `which zsh`
 zplug는 zsh 플러그인을 쉽게 설치 및 관리 할 수 있는 플러그인 매니저입니다.
 
 ### zplug 설치
+
 ```bash
 $ curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh`
 ```
@@ -118,7 +125,7 @@ zplug load
 ```
 
 기본적인 oh-my-zsh의 플러그인과,
-`zsh-syntax-highlighting`, `zsh-autosuggestions ` 플러그인이 포함된 내용입니다.
+`zsh-syntax-highlighting`, `zsh-autosuggestions` 플러그인이 포함된 내용입니다.
 또한 테마는 `dracula` 를 사용하고 있습니다.
 
 기본적인 사용 방법은 아래서 설명할 것이고,
@@ -149,9 +156,12 @@ zplug "djui/alias-tips"
 ```
 
 위에서 autojump 플러그인 사용을 위해서는 아래와 같이 설치가 필요합니다.
+
 ```bash
 $ brew install autojump
 ```
+
+또한 위에서 spaceship-prompt 테마를 사용하기 위해서는 powerline font 설치가 필요합니다.
 
 다양한 zsh 플러그인은 [awesome-zsh-plugin](https://github.com/unixorn/awesome-zsh-plugins) 문서에서 확인 할 수 있습니다.
 
@@ -161,15 +171,17 @@ $ brew install autojump
 
 기본적으로는 `.zshrc`를 수정하여 사용하는 것을 권장합니다.
 
-`zplug "djui/alias-tips"`와 같이 
+`zplug "djui/alias-tips"`와 같이
 `zplug "[username]/[repository name]"`의 형식으로 쉽게 플러그인을 추가할 수 있습니다.
 
 ```
 zplug "[username]/[repository name]", [tag]:[value]
 ```
+
 또한 위와 같이 태그를 추가할 수 있습니다.
 
 위에서 테마를 아래와 같이 표시한 것을 보면 알 수 있습니다.
+
 ```
 zplug 'dracula/zsh', as:theme
 ```
@@ -222,6 +234,7 @@ Hyper는 iTerm 보다 성능면에서는 떨어질 수 있으나 디자인면에
 ### 설치
 
 공식 사이트에서 [다운로드](https://hyper.is/#installation)하거나 brew를 이용해 설치합니다
+
 ```bash
 $ brew cask install hyper
 ```
@@ -232,13 +245,16 @@ $ brew cask install hyper
 폰트, 스타일 및 기타 설정 그리고 플러그인을 관리합니다.
 
 아래는 본인이 사용중인 플러그인 목록입니다.
+
 ```
 module.exports = {
   config: {
   opacity: 0.95,
 
+  fontFamily: 'Hack, Menlo, "DejaVu Sans Mono", "DejaVu Sans Mono for Powerline", Consolas, "Lucida Console", monospace',
+
   // ...
-  
+
   plugins: [
     `hypercwd`,
     `hyper-search`,
@@ -251,6 +267,8 @@ module.exports = {
 
 // ...
 ```
+
+위 설정을 그대로 사용할 경우 미리 'Hack', 'Powerline' 폰트 설치가 필요합니다.
 
 다양한 플러그인은 [awesome-hyper](https://github.com/bnb/awesome-hyper) 문서에서 확인할 수 있습니다.
 
