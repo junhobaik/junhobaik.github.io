@@ -4,16 +4,6 @@ date: 2018-01-19 22:59 +0900
 update: 2020-01-30
 tags:
   - VSCode
-  - visual studio code extension
-  - 비주얼 스튜디오 코드 확장
-  - vscode 확장
-  - vscode 확장 추천
-  - vscode extension
-  - vscode extension 추천
-  - visual studio code 확장
-  - visual studio code 확장 추천
-  - vscode 플러그인
-  - vscode 플러그인 추천
 keywords:
   - visual studio code extension
   - 비주얼 스튜디오 코드 확장
