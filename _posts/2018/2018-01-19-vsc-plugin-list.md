@@ -23,10 +23,6 @@ Front-End 개발 환경에 맞게 되어있습니다.
 
 :star: 는 강력 추천!
 
-# VSCode Extension List
-
-Last Update : 2020-01-30
-
 ## VSCode 기본 플러그인 및 테마
 
 - [Korean Language Pack for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-ko)  
