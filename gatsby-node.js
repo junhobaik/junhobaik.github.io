@@ -17,6 +17,8 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
             frontmatter {
               title
               tags
+              update(formatString: "YYYY-MM-DD")
+              date(formatString: "YYYY-MM-DD")
             }
           }
         }
@@ -43,7 +45,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const { edges } = result.data.allMarkdownRemark;
 
   edges.forEach(({ node }, index) => {
-    const { slug } = node.fields;
+    const { fields, frontmatter } = node;
+    const { slug } = fields;
+    const { date, update } = frontmatter;
 
     // series
     let filteredEdges = [];
@@ -82,7 +86,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     createPage({
       path: slug,
       component: blogPostTemplate,
-      context: { slug, series },
+      context: { slug, series, lastmod: update ? update : date },
     });
   });
 };
