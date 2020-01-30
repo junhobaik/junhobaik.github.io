@@ -1,6 +1,7 @@
 ---
 title: GitHub에 GPG 서명 등록하기 (macOS)
 date: 2018-10-24
+update: 2020-01-31
 tags:
   - github
 keywords:
@@ -13,7 +14,7 @@ keywords:
 
 ## 설치
 
-우선 Homebrew 를 통해 gpg 패키지를 설치한다,  
+우선 Homebrew 를 통해 gpg 패키지를 설치한다,
 
 ```shell
 $ brew install gpg
@@ -142,9 +143,21 @@ $ git config --global commit.gpgsign true
 export GPG_TTY=$(tty)
 ```
 
+추가로 가끔씩 물어보는 GPG 패스워드를 묻지 않길 원하면 `~/.gnupg/gpg-agent.conf` 파일을 수정한다.
+
+```
+default-cache-ttl 31536000
+maximum-cache-ttl 31536000
+```
+
+GPG2.1 이후에서는 `maximum-cache-ttl`이 `max-cache-ttl`로 바뀌었으니 버전에 따라 다르게 입력해주어야 한다.  
+보통 처음 gpg-agent.conf 파일을 열었을때 두 값이 있으므로 어떤 값으로 써야할 지 알 수 있다. 하지만 알 수 없을 경우 버전을 확인하여 올바른 값을 입력해야한다.  
+31536000는 1년에 해당하는 초(sec)값이다.
+
 ---
 
 ### References
 
 - [Generating a new GPG key](https://help.github.com/articles/generating-a-new-gpg-key/)
-- [KenjiAbe|GitHubのGPG Keyを設定する](https://medium.com/@star_zero/github%E3%81%AEgpg-key%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B-70e22874e533)
+- [KenjiAbe|GitHub の GPG Key を設定する](https://medium.com/@star_zero/github%E3%81%AEgpg-key%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B-70e22874e533)
+- [Keep GnuPG credentials cached for entire user session](https://superuser.com/questions/624343/keep-gnupg-credentials-cached-for-entire-user-session)
