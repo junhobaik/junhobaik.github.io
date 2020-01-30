@@ -28,7 +28,7 @@
       margin-top: 1rem;
       color: rgba(0, 0, 0, 0.64);
       font-size: 0.84rem;
-      align-items: center;
+      align-items: flex-start;
       justify-content: space-between;
 
       & > .dot {
@@ -40,6 +40,11 @@
         flex-direction: row-reverse;
         align-items: center;
 
+        .write-date,
+        .update-date {
+          display: block;
+          white-space: nowrap;
+        }
         .update-date {
           color: rgba(0, 0, 0, 0.44);
         }
