@@ -29,6 +29,10 @@
       opacity: 1;
     }
 
+    &.hide {
+      display: none;
+    }
+
     &:nth-child(1) {
       margin-top: 0;
     }
