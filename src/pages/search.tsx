@@ -24,11 +24,9 @@ const Search = (props: SearchProps) => {
     const { title } = frontmatter;
     const lowerValue = value.toLocaleLowerCase();
 
-    if (!isTitleOnly && rawMarkdownBody.toLocaleLowerCase().indexOf(lowerValue) > -1) {
-      return true;
-    }
+    if (!isTitleOnly && rawMarkdownBody.toLocaleLowerCase().includes(lowerValue)) return true;
 
-    return title.toLocaleLowerCase().indexOf(lowerValue) > -1;
+    return title.toLocaleLowerCase().includes(lowerValue);
   });
 
   return (
@@ -92,6 +90,7 @@ export const pageQuery = graphql`
             date(formatString: "MMM DD, YYYY")
             title
             tags
+            update
           }
         }
       }
