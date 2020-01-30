@@ -1,6 +1,7 @@
 ---
-title: 사용중인 VSCode(Visual Studio Code) 확장 플러그인 목록
+title: '사용중인 VSCode(Visual Studio Code) 확장 플러그인 목록'
 date: 2018-01-19 22:59 +0900
+update: 2020-01-30
 tags:
   - VSCode
 keywords:

@@ -11,11 +11,20 @@ export interface PostListProps {
 const PostList = memo((props: PostListProps) => {
   const { posts } = props;
 
+  posts.sort((a: any, b: any) => {
+    const aDate = new Date(a.node.frontmatter.update ?? a.node.frontmatter.date);
+    const bDate = new Date(b.node.frontmatter.update ?? b.node.frontmatter.date);
+
+    if (aDate < bDate) return 1;
+    if (aDate > bDate) return -1;
+    return 0;
+  });
+
   const mapPost = posts.map((post: any) => {
     const { node } = post;
     const { excerpt, fields, frontmatter } = node;
     const { slug } = fields;
-    const { date, title, tags } = frontmatter;
+    const { date, title, tags, update } = frontmatter;
 
     const mapTag = tags.map((tag: String) => {
       if (tag === 'undefined') return;
@@ -36,7 +45,10 @@ const PostList = memo((props: PostListProps) => {
             <Link to={slug}>{title}</Link>
           </h2>
           <div className="info">
-            <span className="date">{date}</span>
+            <div className="date-wrap">
+              <span className="date">{date}</span>
+              {update ? <span className="update">&nbsp;{`(Updated: ${update})`}</span> : null}
+            </div>
             {tags.length && tags[0] !== 'undefined' ? <span className="info-dot">·</span> : null}
             <ul className="tag-list">{mapTag}</ul>
           </div>

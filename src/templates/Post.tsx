@@ -39,7 +39,7 @@ const Post = (props: postProps) => {
   const { data, pageContext, isMobile } = props;
   const { markdownRemark } = data;
   const { frontmatter, html, tableOfContents, fields, excerpt } = markdownRemark;
-  const { title, date, tags, keywords } = frontmatter;
+  const { title, date, tags, keywords, update } = frontmatter;
   const { slug } = fields;
   const { series } = pageContext;
   const [yList, setYList] = useState();
@@ -156,11 +156,14 @@ const Post = (props: postProps) => {
             <h1 className="blog-post-title">{title}</h1>
 
             <div className="blog-post-info">
-              <span className="blog-post-date">{date}</span>
+              <div className="date-wrap">
+                {update ? <span className="update-date">&nbsp;{`(Last Updated: ${update})`}</span> : null}
+                <span className="write-date">{date}</span>
+              </div>
 
               {tags.length && tags[0] !== 'undefined' ? (
                 <>
-                  <span>·</span>
+                  <span className="dot">·</span>
                   <ul className="blog-post-tag-list">{mapTags}</ul>
                 </>
               ) : null}
@@ -296,6 +299,7 @@ export const pageQuery = graphql`
         date(formatString: "MMM DD, YYYY")
         tags
         keywords
+        update(formatString: "MMM DD, YYYY")
       }
     }
   }

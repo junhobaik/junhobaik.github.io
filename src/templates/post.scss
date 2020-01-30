@@ -31,8 +31,19 @@
       align-items: center;
       justify-content: space-between;
 
-      & > span:nth-child(2) {
+      & > .dot {
         margin: 0 0.5rem;
+      }
+
+      .date-wrap {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+
+        .update-date {
+          font-size: 0.74rem;
+          color: rgba(0, 0, 0, 0.44);
+        }
       }
 
       .blog-post-tag-list {

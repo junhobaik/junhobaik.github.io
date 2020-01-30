@@ -54,11 +54,18 @@
     .info {
       display: flex;
       color: rgba(0, 0, 0, 0.54);
-      font-size: 0.9rem;
+      font-size: 0.84rem;
+      align-items: flex-start;
 
-      .date {
-        display: block;
-        white-space: nowrap;
+      .date-wrap {
+        display: flex;
+        align-items: center;
+
+        .date,
+        .update {
+          display: block;
+          white-space: nowrap;
+        }
       }
 
       .info-dot {
