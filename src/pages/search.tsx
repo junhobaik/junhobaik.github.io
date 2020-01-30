@@ -90,7 +90,7 @@ export const pageQuery = graphql`
             date(formatString: "MMM DD, YYYY")
             title
             tags
-            update
+            update(formatString: "MMM DD, YYYY")
           }
         }
       }
