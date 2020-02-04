@@ -4,6 +4,7 @@ import Helmet from 'react-helmet';
 import { connect } from 'react-redux';
 import { graphql, Link } from 'gatsby';
 import { DiscussionEmbed } from 'disqus-react';
+import moment from 'moment';
 import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome';
 import { faListUl, faLayerGroup, faAngleLeft } from '@fortawesome/free-solid-svg-icons';
 import AdSense from 'react-adsense';
@@ -146,6 +147,14 @@ const Post = (props: postProps) => {
     <>
       <Helmet>
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <script type="application/ld+json">
+          {`
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "datePublished" : "${moment(update ?? date).format('YYYY-MM-DD')}"
+}`}
+        </script>
       </Helmet>
 
       <SEO title={title} description={excerpt} keywords={metaKeywords(keywords, tags)} />
