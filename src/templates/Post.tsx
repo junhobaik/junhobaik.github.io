@@ -152,7 +152,9 @@ const Post = (props: postProps) => {
 {
   "@context": "http://schema.org",
   "@type": "Article",
-  "datePublished" : "${moment(update ?? date).format('YYYY-MM-DD')}"
+  "datePublished" : "${
+    update ? moment(new Date(update)).format('YYYY-MM-DD') : moment(new Date(date)).format('YYYY-MM-DD')
+  }"
 }`}
         </script>
       </Helmet>
