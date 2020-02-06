@@ -26,8 +26,11 @@ import {
 import Layout from '../components/Layout';
 import Toc from '../components/Toc';
 import SEO from '../components/seo';
-import './post.scss';
+
 import 'katex/dist/katex.min.css';
+import './theme.scss';
+import './post.scss';
+
 const config = require('../../config');
 
 export interface postProps {
@@ -104,10 +107,21 @@ const Post = (props: postProps) => {
     };
   }, [yList]);
 
+  // useEffect(() => {
+  //   if (theme === 'dark') {
+  //     console.log(theme);
+  //     require('prism-themes/themes/prism-cb.css');
+  //   }
+  //   if (theme === 'light') {
+  //     console.log(theme);
+  //     require('prism-themes/themes/prism-ghcolors.css');
+  //   }
+  // }, [theme]);
+
   const mapTags = tags.map((tag: string) => {
     return (
       <li key={tag} className="blog-post-tag">
-        <Link to={`/tag/${tag}`}>{`#${tag}`}</Link>
+        <Link to={`/tags#${tag}`}>{`#${tag}`}</Link>
       </li>
     );
   });

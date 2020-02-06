@@ -1,8 +1,14 @@
 import * as React from 'react';
-import { useEffect, useState, useCallback } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'gatsby';
 import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome';
-import { faTags, faSearch } from '@fortawesome/free-solid-svg-icons';
+import {
+  faTags,
+  faSearch,
+  faMoon,
+  faSun,
+  faChevronRight,
+} from '@fortawesome/free-solid-svg-icons';
 import { connect } from 'react-redux';
 
 import './header.scss';
@@ -14,10 +20,12 @@ export interface headerPropsType {
   setPath: any;
   size: string;
   isMobile: boolean;
+  theme: string;
+  toggleTheme: any;
 }
 
 const Header = (props: headerPropsType) => {
-  const { siteTitle, path, setPath, size, isMobile } = props;
+  const { siteTitle, path, setPath, size, isMobile, theme, toggleTheme } = props;
   const [, setYPos] = useState(0);
   const [isHide, setIsHide] = useState(false);
 
@@ -73,13 +81,6 @@ const Header = (props: headerPropsType) => {
     return () => document.removeEventListener('scroll', setVisible);
   }, []);
 
-  const tagSpanVisibleToggle = useCallback((isVisible: boolean) => {
-    const tag: HTMLSpanElement | null = document.querySelector('.tag-wrap>span');
-
-    if (tag && isVisible) tag.style.opacity = '1';
-    if (tag && !isVisible) tag.style.opacity = '0';
-  }, []);
-
   return (
     <header id="Header" className={`${isHide ? 'hide' : 'show'} ${isMobile ? 'mobile' : ''}`}>
       <div className="header-title">
@@ -104,20 +105,39 @@ const Header = (props: headerPropsType) => {
       </div>
 
       <nav id="nav">
+        {isMobile ? null : (
+          <div className="theme-toggle">
+            <div className="theme-toggle-description">
+              <Fa
+                icon={theme !== 'dark' ? faSun : faMoon}
+                style={{ fontSize: theme !== 'dark' ? '1.2rem' : '1.1rem' }}
+              />
+              <Fa icon={faChevronRight} style={{ fontSize: '0.9rem' }} />
+            </div>
+
+            <Fa
+              icon={theme === 'dark' ? faSun : faMoon}
+              style={{ fontSize: theme === 'dark' ? '1.2rem' : '1.1rem' }}
+              onMouseEnter={() => {
+                const toggle: HTMLDivElement | null = document.querySelector('.theme-toggle-description');
+                if (toggle) toggle.style.opacity = '0.5';
+              }}
+              onMouseLeave={() => {
+                const toggle: HTMLDivElement | null = document.querySelector('.theme-toggle-description');
+                if (toggle) toggle.style.opacity = '0';
+              }}
+              onClick={() => {
+                toggleTheme();
+              }}
+            />
+          </div>
+        )}
+
         <ul>
           <li>
             <div className="tag-wrap">
-              <span>TAG</span>
               <Link to="/tags">
-                <Fa
-                  icon={faTags}
-                  onMouseEnter={() => {
-                    tagSpanVisibleToggle(true);
-                  }}
-                  onMouseLeave={() => {
-                    tagSpanVisibleToggle(false);
-                  }}
-                />
+                <Fa icon={faTags} />
               </Link>
             </div>
           </li>
@@ -135,13 +155,24 @@ const Header = (props: headerPropsType) => {
   );
 };
 
-const mapStateToProps = ({ path, size, isMobile }: { path: string; size: string; isMobile: boolean }) => {
-  return { path, size, isMobile };
+const mapStateToProps = ({
+  path,
+  size,
+  isMobile,
+  theme,
+}: {
+  path: string;
+  size: string;
+  isMobile: boolean;
+  theme: string;
+}) => {
+  return { path, size, isMobile, theme };
 };
 
 const mapDispatchToProps = (dispatch: any) => {
   return {
     setPath: (path: string, size: string) => dispatch({ type: `SET_PATH`, path, size }),
+    toggleTheme: () => dispatch({ type: `TOGGLE_THEME` }),
   };
 };
 

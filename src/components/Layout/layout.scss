@@ -1,17 +1,54 @@
+@use "sass:selector";
 @import '../../utils/variables.scss';
 
-html,
-body {
-  color: $font-color-0;
+// html {
+//   background-color: $background-color;
+
+//   @media (prefers-color-scheme: dark) {
+//     background-color: $background-color-d;
+//   }
+// }
+
+#layout {
+  &.light {
+    background-color: $background-color;
+    color: $font-color-0;
+
+    a {
+      color: $font-color-0;
+    }
+
+    svg {
+      color: #6a737d;
+    }
+
+    @media screen and (max-width: $break-l) {
+      #Header {
+        background-color: $background-color;
+      }
+    }
+  }
+
+  &.dark {
+    background-color: $background-color-d;
+    color: $font-color-0-d;
+
+    a {
+      color: $font-color-0-d;
+    }
+    svg {
+      color: #a3aab3;
+    }
+    @media screen and (max-width: $break-l) {
+      #Header {
+        background-color: $background-color-d;
+      }
+    }
+  }
 }
 
 a {
-  color: $font-color-0;
   text-decoration: none;
-
-  &:active {
-    color: $font-color-0;
-  }
 }
 
 #content {
@@ -63,7 +100,7 @@ a {
   }
 
   svg {
-    color: #6a737d;
+    // color: #6a737d;
     margin: 0;
     opacity: 0.5;
     transition: all 0.2s;

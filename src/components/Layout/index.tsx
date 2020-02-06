@@ -17,10 +17,12 @@ FaConfig.autoAddCss = false;
 export interface LayoutPropsType {
   children: Object;
   setIsMobile: Function;
+  isMobile: boolean;
+  theme: string;
 }
 
 const Layout = (props: LayoutPropsType) => {
-  const { children, setIsMobile } = props;
+  const { children, setIsMobile, theme } = props;
   const [isTop, setIsTop] = useState(true);
 
   const data = useStaticQuery(graphql`
@@ -50,6 +52,14 @@ const Layout = (props: LayoutPropsType) => {
     return () => document.removeEventListener('scroll', setTop);
   }, []);
 
+  useEffect(() => {
+    if (theme === 'dark') {
+      document.body.style.backgroundColor = '#141414';
+    } else {
+      document.body.style.backgroundColor = '#fff';
+    }
+  }, [theme]);
+
   return (
     <>
       <Helmet>
@@ -59,30 +69,36 @@ const Layout = (props: LayoutPropsType) => {
         <style>{FaDom.css()}</style>
       </Helmet>
 
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div id="content">
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()} JunhoBaik, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
-      </div>
+      <div id="layout" className={theme}>
+        <Header siteTitle={data.site.siteMetadata.title} />
+        <div id="content">
+          <main>{children}</main>
+          <footer>
+            © {new Date().getFullYear()} JunhoBaik, Built with
+            {` `}
+            <a href="https://www.gatsbyjs.org">Gatsby</a>
+          </footer>
+        </div>
 
-      <div
-        id="top"
-        style={{
-          opacity: isTop ? '0' : '1',
-          pointerEvents: isTop ? 'none' : 'all',
-        }}
-        onClick={() => {
-          window.scrollTo({ top: 0, behavior: 'smooth' });
-        }}
-      >
-        <Fa icon={faAngleDoubleUp} />
+        <div
+          id="top"
+          style={{
+            opacity: isTop ? '0' : '1',
+            pointerEvents: isTop ? 'none' : 'all',
+          }}
+          onClick={() => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }}
+        >
+          <Fa icon={faAngleDoubleUp} />
+        </div>
       </div>
     </>
   );
+};
+
+const mapStateToProps = ({ isMobile, theme }: { isMobile: boolean; theme: string }) => {
+  return { isMobile, theme };
 };
 
 const mapDispatchToProps = (dispatch: any) => {
@@ -91,4 +107,4 @@ const mapDispatchToProps = (dispatch: any) => {
   };
 };
 
-export default connect(null, mapDispatchToProps)(Layout);
+export default connect(mapStateToProps, mapDispatchToProps)(Layout);

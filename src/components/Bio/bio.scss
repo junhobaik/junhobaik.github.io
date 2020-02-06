@@ -25,7 +25,7 @@
 
       svg {
         margin-top: 1px;
-        color: #6a737d;
+        // color: #6a737d;
         opacity: 0.9;
       }
     }
@@ -61,25 +61,25 @@
       .instagram,
       .github,
       .rss {
-        color: #6a737d;
         transition: color 0.3s;
       }
 
       &:hover {
         .rss {
-          color: rgb(226, 143, 72);
+          color: rgb(226, 143, 72) !important;
         }
         .linkedin {
-          color: #0077b5;
+          color: #0077b5 !important;
         }
         .facebook {
-          color: #1877f2;
+          color: #1877f2 !important;
         }
         .instagram {
-          color: #e4405f;
+          color: #e4405f !important;
         }
         .github {
-          color: #181717;
+          // color: #181717 !important;
+          color: #666666 !important;
         }
       }
     }
