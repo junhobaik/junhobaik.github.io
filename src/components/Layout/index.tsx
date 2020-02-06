@@ -69,7 +69,7 @@ const Layout = (props: LayoutPropsType) => {
         <style>{FaDom.css()}</style>
       </Helmet>
 
-      <div id="layout" className={theme}>
+      <div id="layout" className={theme ?? 'light'}>
         <Header siteTitle={data.site.siteMetadata.title} />
         <div id="content">
           <main>{children}</main>

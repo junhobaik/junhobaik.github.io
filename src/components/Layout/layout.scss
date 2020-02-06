@@ -10,22 +10,20 @@
 // }
 
 #layout {
-  &.light {
-    background-color: $background-color;
+  background-color: $background-color;
+  color: $font-color-0;
+
+  a {
     color: $font-color-0;
+  }
 
-    a {
-      color: $font-color-0;
-    }
+  svg {
+    color: #6a737d;
+  }
 
-    svg {
-      color: #6a737d;
-    }
-
-    @media screen and (max-width: $break-l) {
-      #Header {
-        background-color: $background-color;
-      }
+  @media screen and (max-width: $break-l) {
+    #Header {
+      background-color: $background-color;
     }
   }
 

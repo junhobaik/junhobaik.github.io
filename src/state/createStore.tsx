@@ -1,5 +1,4 @@
 import { createStore as reduxCreateStore } from 'redux';
-const config = require('../../config.js');
 
 const reducer = (state: any, action: any) => {
   if (action.type === `SET_PATH`) {
@@ -15,7 +14,15 @@ const reducer = (state: any, action: any) => {
   }
   if (action.type === `TOGGLE_THEME`) {
     const theme = state.theme === 'dark' ? 'light' : 'dark';
-    localStorage.setItem('borderless-theme', theme);
+    globalThis.localStorage.setItem('borderless-theme', theme);
+
+    return Object.assign({}, state, {
+      theme,
+    });
+  }
+  if (action.type === `SET_THEME`) {
+    const theme = action.theme;
+    globalThis.localStorage.setItem('borderless-theme', theme);
 
     return Object.assign({}, state, {
       theme,
@@ -25,13 +32,12 @@ const reducer = (state: any, action: any) => {
   return state;
 };
 
-let mode = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-if (config.theme === 'light' || config.theme === 'dark') mode = config.theme;
-
-let theme = localStorage.getItem('borderless-theme') ?? mode;
-if (config.theme === 'dark-fix' || config.theme === 'light-fix') theme = config.theme.split('-')[0];
-
-const initialState = { path: '', size: '25px', isMobile: false, theme };
+const initialState = {
+  path: '',
+  size: '25px',
+  isMobile: false,
+  theme: undefined,
+};
 
 const createStore = () => reduxCreateStore(reducer, initialState);
 export default createStore;

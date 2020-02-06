@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 import { Link } from 'gatsby';
 import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome';
 import { faTags, faSearch, faMoon, faSun, faChevronRight } from '@fortawesome/free-solid-svg-icons';
@@ -16,12 +16,26 @@ export interface headerPropsType {
   isMobile: boolean;
   theme: string;
   toggleTheme: any;
+  setTheme: any;
 }
 
 const Header = (props: headerPropsType) => {
-  const { siteTitle, path, setPath, size, isMobile, theme, toggleTheme } = props;
+  const { siteTitle, path, setPath, size, isMobile, theme, toggleTheme, setTheme } = props;
   const [, setYPos] = useState(0);
   const [isHide, setIsHide] = useState(false);
+
+  const firstThemeLoad = useCallback(() => {
+    let mode = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    if (config.theme === 'light' || config.theme === 'dark') mode = config.theme;
+
+    let theme = localStorage.getItem('borderless-theme') ?? mode;
+    if (config.theme === 'dark-fix' || config.theme === 'light-fix') {
+      theme = config.theme.split('-')[0];
+      localStorage.setItem('borderless-theme', theme);
+    }
+
+    setTheme(theme);
+  }, []);
 
   useEffect(() => {
     const bio: HTMLDivElement | null = document.querySelector('.bio');
@@ -37,6 +51,8 @@ const Header = (props: headerPropsType) => {
   }, [isHide]);
 
   useEffect(() => {
+    firstThemeLoad();
+
     const profile: HTMLImageElement | null = document.querySelector('.header-profile-image-wrap>img');
 
     const prevPath = path;
@@ -166,6 +182,7 @@ const mapStateToProps = ({
 const mapDispatchToProps = (dispatch: any) => {
   return {
     setPath: (path: string, size: string) => dispatch({ type: `SET_PATH`, path, size }),
+    setTheme: (theme: string) => dispatch({ type: `SET_THEME`, theme }),
     toggleTheme: () => dispatch({ type: `TOGGLE_THEME` }),
   };
 };
