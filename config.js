@@ -35,4 +35,10 @@ module.exports = {
   googleAdsenseSlot: '5214956675',                                    // Google Adsense Slot. ex.'5214956675'
   googleAdsenseClient: 'ca-pub-5001380215831339',                     // Google Adsense Client. ex.'ca-pub-5001380215831339'
     // Please correct the adsense client number(ex.5001380215831339) in the './static/ads.txt' file.
+  
+  /** theme */
+  theme: 'light' // auto, light, dark, light-fix, dark-fix
+    // auto: On first visit, Enabling Dark Mode If you are a user, start in dark mode.
+    // light: On first visit, start in light mode
+    // light-fix: Disable the change theme feature and fix the theme to 'light'.
 };

@@ -1,4 +1,5 @@
 import { createStore as reduxCreateStore } from 'redux';
+const config = require('../../config.js');
 
 const reducer = (state: any, action: any) => {
   if (action.type === `SET_PATH`) {
@@ -24,8 +25,11 @@ const reducer = (state: any, action: any) => {
   return state;
 };
 
-const mode = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-const theme = localStorage.getItem('borderless-theme') ?? mode;
+let mode = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+if (config.theme === 'light' || config.theme === 'dark') mode = config.theme;
+
+let theme = localStorage.getItem('borderless-theme') ?? mode;
+if (config.theme === 'dark-fix' || config.theme === 'light-fix') theme = config.theme.split('-')[0];
 
 const initialState = { path: '', size: '25px', isMobile: false, theme };
 

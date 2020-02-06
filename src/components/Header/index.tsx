@@ -2,13 +2,7 @@ import * as React from 'react';
 import { useEffect, useState } from 'react';
 import { Link } from 'gatsby';
 import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome';
-import {
-  faTags,
-  faSearch,
-  faMoon,
-  faSun,
-  faChevronRight,
-} from '@fortawesome/free-solid-svg-icons';
+import { faTags, faSearch, faMoon, faSun, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { connect } from 'react-redux';
 
 import './header.scss';
@@ -105,7 +99,7 @@ const Header = (props: headerPropsType) => {
       </div>
 
       <nav id="nav">
-        {isMobile ? null : (
+        {isMobile || config.theme.split('-')[1] === 'fix' ? null : (
           <div className="theme-toggle">
             <div className="theme-toggle-description">
               <Fa
