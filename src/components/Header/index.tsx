@@ -9,14 +9,14 @@ import './header.scss';
 const config = require('../../../config');
 
 export interface headerPropsType {
-  siteTitle: String;
-  path: any;
-  setPath: any;
+  siteTitle: string;
+  path: string;
+  setPath: Function;
   size: string;
   isMobile: boolean;
   theme: string;
-  toggleTheme: any;
-  setTheme: any;
+  toggleTheme: Function;
+  setTheme: Function;
 }
 
 const Header = (props: headerPropsType) => {
@@ -115,7 +115,7 @@ const Header = (props: headerPropsType) => {
       </div>
 
       <nav id="nav">
-        {isMobile || config.theme.split('-')[1] === 'fix' ? null : (
+        {config.theme.split('-')[1] === 'fix' ? null : (
           <div className="theme-toggle">
             <div className="theme-toggle-description">
               <Fa

@@ -9,9 +9,14 @@
 //   }
 // }
 
+body {
+  transition: background-color 0.3s;
+}
+
 #layout {
-  background-color: $background-color;
   color: $font-color-0;
+  opacity: 0;
+  transition: background-color 0.3s;
 
   a {
     color: $font-color-0;
@@ -27,8 +32,12 @@
     }
   }
 
+  &.light {
+    // background-color: $background-color;
+  }
+
   &.dark {
-    background-color: $background-color-d;
+    // background-color: $background-color-d;
     color: $font-color-0-d;
 
     a {
@@ -98,10 +107,9 @@ a {
   }
 
   svg {
-    // color: #6a737d;
     margin: 0;
     opacity: 0.5;
-    transition: all 0.2s;
+    transition: opacity 0.2s;
 
     &:hover {
       opacity: 1;

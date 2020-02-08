@@ -98,7 +98,7 @@
       font-weight: normal;
       font-family: 'Raleway', 'Nanum Gothic';
       opacity: 0.9;
-      transition: 0.3s;
+      transition: opacity 0.3s;
 
       &:hover {
         opacity: 1;
@@ -121,7 +121,7 @@
     opacity: 0.5;
     margin-right: 1.2rem;
     margin-bottom: 2px;
-    transition: 0.3s;
+    transition: opacity 0.3s;
     align-items: center;
 
     &:hover {
@@ -132,7 +132,7 @@
       display: flex;
       align-items: center;
       opacity: 0;
-      transition: 0.3s;
+      transition: opacity 0.3s;
 
       & > *:last-child {
         margin: 0 5px;
@@ -163,7 +163,7 @@
       svg {
         margin: 0;
         font-size: 1.2rem;
-        transition: 0.3s;
+        transition: opacity 0.3s;
         opacity: 0.7;
 
         &:hover {

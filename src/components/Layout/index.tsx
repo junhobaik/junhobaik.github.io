@@ -19,10 +19,11 @@ export interface LayoutPropsType {
   setIsMobile: Function;
   isMobile: boolean;
   theme: string;
+  isThemeLoaded: boolean;
 }
 
 const Layout = (props: LayoutPropsType) => {
-  const { children, setIsMobile, theme } = props;
+  const { children, setIsMobile, theme, isThemeLoaded } = props;
   const [isTop, setIsTop] = useState(true);
 
   const data = useStaticQuery(graphql`
@@ -60,6 +61,13 @@ const Layout = (props: LayoutPropsType) => {
     }
   }, [theme]);
 
+  useEffect(() => {
+    if (isThemeLoaded) {
+      const layout: HTMLDivElement | null = document.querySelector('#layout');
+      if (layout) layout.style.opacity = '1';
+    }
+  }, [isThemeLoaded]);
+
   return (
     <>
       <Helmet>
@@ -69,7 +77,7 @@ const Layout = (props: LayoutPropsType) => {
         <style>{FaDom.css()}</style>
       </Helmet>
 
-      <div id="layout" className={theme ?? 'light'}>
+      <div id="layout" className={theme}>
         <Header siteTitle={data.site.siteMetadata.title} />
         <div id="content">
           <main>{children}</main>
@@ -97,8 +105,16 @@ const Layout = (props: LayoutPropsType) => {
   );
 };
 
-const mapStateToProps = ({ isMobile, theme }: { isMobile: boolean; theme: string }) => {
-  return { isMobile, theme };
+const mapStateToProps = ({
+  isMobile,
+  theme,
+  isThemeLoaded,
+}: {
+  isMobile: boolean;
+  theme: string;
+  isThemeLoaded: boolean;
+}) => {
+  return { isMobile, theme, isThemeLoaded };
 };
 
 const mapDispatchToProps = (dispatch: any) => {
