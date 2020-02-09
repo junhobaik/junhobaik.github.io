@@ -18,12 +18,11 @@ export interface LayoutPropsType {
   children: Object;
   theme: string;
   isMobile: boolean;
-  isThemeLoaded: boolean;
   setIsMobile: Function;
 }
 
 const Layout = (props: LayoutPropsType) => {
-  const { children, setIsMobile, theme, isThemeLoaded } = props;
+  const { children, setIsMobile, theme } = props;
   const [isTop, setIsTop] = useState(true);
 
   const data = useStaticQuery(graphql`
@@ -60,13 +59,6 @@ const Layout = (props: LayoutPropsType) => {
       document.body.style.backgroundColor = '#fff';
     }
   }, [theme]);
-
-  useEffect(() => {
-    if (isThemeLoaded) {
-      const layout: HTMLDivElement | null = document.querySelector('#layout');
-      if (layout) layout.style.opacity = '1';
-    }
-  }, [isThemeLoaded]);
 
   return (
     <>
@@ -105,16 +97,8 @@ const Layout = (props: LayoutPropsType) => {
   );
 };
 
-const mapStateToProps = ({
-  isMobile,
-  theme,
-  isThemeLoaded,
-}: {
-  isMobile: boolean;
-  theme: string;
-  isThemeLoaded: boolean;
-}) => {
-  return { isMobile, theme, isThemeLoaded };
+const mapStateToProps = ({ isMobile, theme }: { isMobile: boolean; theme: string }) => {
+  return { isMobile, theme };
 };
 
 const mapDispatchToProps = (dispatch: any) => {

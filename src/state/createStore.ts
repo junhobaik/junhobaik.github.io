@@ -26,7 +26,6 @@ const reducer = (state: any, action: any) => {
 
     return Object.assign({}, state, {
       theme,
-      isThemeLoaded: true,
     });
   }
 
@@ -38,7 +37,6 @@ const initialState = {
   size: '25px',
   isMobile: false,
   theme: undefined,
-  isThemeLoaded: false,
 };
 
 const createStore = () => reduxCreateStore(reducer, initialState);
