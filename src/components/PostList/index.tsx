@@ -6,7 +6,7 @@ import { throttle } from 'lodash';
 import './postList.scss';
 
 export interface PostListProps {
-  posts: any;
+  posts: any[];
 }
 
 const PostList = memo((props: PostListProps) => {
@@ -50,7 +50,7 @@ const PostList = memo((props: PostListProps) => {
     const { slug } = fields;
     const { date, title, tags, update } = frontmatter;
 
-    const mapTag = tags.map((tag: String) => {
+    const mapTag = tags.map((tag: string) => {
       if (tag === 'undefined') return;
 
       return (

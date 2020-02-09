@@ -16,10 +16,10 @@ FaConfig.autoAddCss = false;
 
 export interface LayoutPropsType {
   children: Object;
-  setIsMobile: Function;
-  isMobile: boolean;
   theme: string;
+  isMobile: boolean;
   isThemeLoaded: boolean;
+  setIsMobile: Function;
 }
 
 const Layout = (props: LayoutPropsType) => {

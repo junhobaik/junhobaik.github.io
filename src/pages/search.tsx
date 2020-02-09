@@ -14,11 +14,13 @@ export interface SearchProps {
 }
 
 const Search = (props: SearchProps) => {
-  const posts = props.data.allMarkdownRemark.edges;
+  const { data } = props;
+  const posts = data.allMarkdownRemark.edges;
+
   const [value, setValue] = useState('');
   const [isTitleOnly, setIsTitleOnly] = useState(true);
 
-  const filteredPosts = posts.filter((post: any) => {
+  const filteredPosts: any[] = posts.filter((post: any) => {
     const { node } = post;
     const { frontmatter, rawMarkdownBody } = node;
     const { title } = frontmatter;

@@ -35,7 +35,7 @@ const config = require('../../config');
 
 export interface postProps {
   data: any;
-  pageContext: any;
+  pageContext: { slug: string; series: any[]; lastmod: string };
   isMobile: boolean;
 }
 
@@ -46,16 +46,23 @@ const Post = (props: postProps) => {
   const { title, date, tags, keywords, update } = frontmatter;
   const { slug } = fields;
   const { series } = pageContext;
+  interface iConfig {
+    enablePostOfContents: boolean;
+    enableSocialShare: boolean;
+    disqusShortname?: string;
+  }
+  const { enablePostOfContents, disqusShortname, enableSocialShare }: iConfig = config;
+
   const [yList, setYList] = useState();
   const [isInsideToc, setIsInsideToc] = useState(false);
 
-  const isTableOfContents = config.enablePostOfContents && tableOfContents !== '';
+  const isTableOfContents = enablePostOfContents && tableOfContents !== '';
   const isDevelopment = process.env.NODE_ENV === 'development';
-  const isDisqus = config.disqusShortname;
-  const isSocialShare = config.enableSocialShare;
+  const isDisqus: boolean = disqusShortname ? true : false;
+  const isSocialShare = enableSocialShare;
 
   useEffect(() => {
-    const hs = Array.from(document.querySelectorAll('h2, h3')) as Array<HTMLHeadingElement>;
+    const hs = Array.from(document.querySelectorAll('h2, h3')) as HTMLHeadingElement[];
 
     const minusValue = window.innerHeight < 500 ? 100 : Math.floor(window.innerHeight / 5);
 
@@ -147,14 +154,17 @@ const Post = (props: postProps) => {
     },
   };
 
-  const metaKeywords = (keywordList: Array<string>, tagList: Array<string>) => {
+  const metaKeywords: (keywordList: string[], tagList: string[]) => string[] = (
+    keywordList: string[],
+    tagList: string[]
+  ) => {
     const resultKeywords = new Set();
 
     for (const v of [...keywordList, ...tagList]) {
       resultKeywords.add(v);
     }
 
-    return Array.from(resultKeywords);
+    return Array.from(resultKeywords) as string[];
   };
 
   return (

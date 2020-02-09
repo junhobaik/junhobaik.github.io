@@ -12,7 +12,9 @@ export interface TagsPageProps {
 }
 
 const Tags = (props: TagsPageProps) => {
-  const { group } = props.data.allMarkdownRemark;
+  const { data } = props;
+  const { group } = data.allMarkdownRemark;
+
   const [largeCount, setLargeCount] = useState(0);
   const [targetTag, setTargetTag] = useState('undefined');
 
@@ -30,7 +32,7 @@ const Tags = (props: TagsPageProps) => {
     return 0;
   });
 
-  const tagList = group.map((g: groupItem) => {
+  const tagList: any[] = group.map((g: groupItem) => {
     const getFontSize = () => {
       let fontSize = Math.round(50 / (largeCount / g.totalCount)).toString();
       if (fontSize.length <= 1) fontSize = `0${fontSize}`;
@@ -61,7 +63,7 @@ const Tags = (props: TagsPageProps) => {
     return 0;
   });
 
-  const getPostList = () => {
+  const getPostList: () => any[] = () => {
     if (group.filter((g: groupItem) => g.fieldValue === targetTag).length) {
       return group.filter((g: groupItem) => g.fieldValue === targetTag)[0].edges;
     }

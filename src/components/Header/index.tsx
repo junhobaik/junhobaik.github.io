@@ -11,10 +11,10 @@ const config = require('../../../config');
 export interface headerPropsType {
   siteTitle: string;
   path: string;
-  setPath: Function;
   size: string;
-  isMobile: boolean;
   theme: string;
+  isMobile: boolean;
+  setPath: Function;
   toggleTheme: Function;
   setTheme: Function;
 }
@@ -24,8 +24,8 @@ const Header = (props: headerPropsType) => {
   const [, setYPos] = useState(0);
   const [isHide, setIsHide] = useState(false);
 
-  const firstThemeLoad = useCallback(() => {
-    let mode = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  const firstThemeLoad: () => void = useCallback((): void => {
+    let mode: string = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
     if (config.theme === 'light' || config.theme === 'dark') mode = config.theme;
 
     let theme = localStorage.getItem('borderless-theme') ?? mode;
@@ -55,8 +55,8 @@ const Header = (props: headerPropsType) => {
 
     const profile: HTMLImageElement | null = document.querySelector('.header-profile-image-wrap>img');
 
-    const prevPath = path;
-    const currPath = location.pathname;
+    const prevPath: string = path;
+    const currPath: string = location.pathname;
 
     if (profile) {
       if (currPath === prevPath) {
@@ -78,7 +78,7 @@ const Header = (props: headerPropsType) => {
       setPath(location.pathname);
     }
 
-    const setVisible = () => {
+    const setVisible: () => void = () => {
       setYPos(prevYPos => {
         const currentYPos = window.pageYOffset;
 
@@ -179,7 +179,7 @@ const mapStateToProps = ({
   return { path, size, isMobile, theme };
 };
 
-const mapDispatchToProps = (dispatch: any) => {
+const mapDispatchToProps = (dispatch: Function) => {
   return {
     setPath: (path: string, size: string) => dispatch({ type: `SET_PATH`, path, size }),
     setTheme: (theme: string) => dispatch({ type: `SET_THEME`, theme }),

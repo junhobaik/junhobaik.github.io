@@ -10,13 +10,14 @@ import './styles/index.scss';
 import PostList from '../components/PostList';
 
 export interface IndexPageProps {
-  path: String;
-  location: Object;
-  data: any; //
+  path: string;
+  location: any;
+  data: any;
 }
 
 const IndexPage = (props: IndexPageProps) => {
-  const posts = props.data.allMarkdownRemark.edges;
+  const { data } = props;
+  const posts = data.allMarkdownRemark.edges;
 
   return (
     <Layout>

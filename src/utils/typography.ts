@@ -7,7 +7,7 @@ const typography = new Typography({
   bodyFontFamily: ['Nanum Gothic'],
 });
 
-const googleFont = [
+const googleFonts: { name: string; bold?: number[] }[] = [
   {
     name: 'Nanum Gothic',
     bold: [400, 700],
@@ -21,7 +21,9 @@ const googleFont = [
     bold: [300, 400, 700],
   },
   { name: 'Raleway' },
-]
+];
+
+const googleFont = googleFonts
   .map(v => {
     if (v.bold) {
       return `${v.name.replace(/ /gi, '+')}:${v.bold.toString()}`;
