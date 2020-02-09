@@ -28,7 +28,7 @@ import Toc from '../components/Toc';
 import SEO from '../components/seo';
 
 import 'katex/dist/katex.min.css';
-import './theme.scss';
+import './code-theme.scss';
 import './post.scss';
 
 const config = require('../../config');
@@ -46,6 +46,7 @@ const Post = (props: postProps) => {
   const { title, date, tags, keywords, update } = frontmatter;
   const { slug } = fields;
   const { series } = pageContext;
+
   interface iConfig {
     enablePostOfContents: boolean;
     enableSocialShare: boolean;
@@ -113,17 +114,6 @@ const Post = (props: postProps) => {
       if (isTableOfContents) document.removeEventListener('scroll', setYPos);
     };
   }, [yList]);
-
-  // useEffect(() => {
-  //   if (theme === 'dark') {
-  //     console.log(theme);
-  //     require('prism-themes/themes/prism-cb.css');
-  //   }
-  //   if (theme === 'light') {
-  //     console.log(theme);
-  //     require('prism-themes/themes/prism-ghcolors.css');
-  //   }
-  // }, [theme]);
 
   const mapTags = tags.map((tag: string) => {
     return (

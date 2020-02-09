@@ -4,6 +4,7 @@ import { Link } from 'gatsby';
 import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome';
 import { faTags, faSearch, faMoon, faSun, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { connect } from 'react-redux';
+import { useColorMode } from 'theme-ui';
 
 import './header.scss';
 const config = require('../../../config');
@@ -12,30 +13,34 @@ export interface headerPropsType {
   siteTitle: string;
   path: string;
   size: string;
-  theme: string;
   isMobile: boolean;
   setPath: Function;
-  toggleTheme: Function;
-  setTheme: Function;
 }
 
 const Header = (props: headerPropsType) => {
-  const { siteTitle, path, setPath, size, isMobile, theme, toggleTheme, setTheme } = props;
+  const { siteTitle, path, setPath, size, isMobile } = props;
   const [, setYPos] = useState(0);
   const [isHide, setIsHide] = useState(false);
+  const [colorMode, setColorMode] = useColorMode();
 
-  const firstThemeLoad: () => void = useCallback((): void => {
-    let mode: string = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-    if (config.theme === 'light' || config.theme === 'dark') mode = config.theme;
+  const toggleTheme = useCallback(() => {
+    const ms: number = 300;
+    const header: HTMLElement | null = document.getElementById('Header');
 
-    let theme = localStorage.getItem('borderless-theme') ?? mode;
-    if (config.theme === 'dark-fix' || config.theme === 'light-fix') {
-      theme = config.theme.split('-')[0];
-      localStorage.setItem('borderless-theme', theme);
+    document.body.style.transition = `background-color ${ms}ms`;
+    if (header) header.style.transition = `background-color ${ms}ms`;
+
+    if (colorMode === 'dark') {
+      setColorMode('default');
+    } else {
+      setColorMode('dark');
     }
 
-    setTheme(theme);
-  }, []);
+    setTimeout(() => {
+      document.body.style.transition = 'none';
+      if (header) header.style.transition = `background-color ${ms}ms`;
+    }, ms + 100);
+  }, [colorMode]);
 
   useEffect(() => {
     const bio: HTMLDivElement | null = document.querySelector('.bio');
@@ -51,8 +56,6 @@ const Header = (props: headerPropsType) => {
   }, [isHide]);
 
   useEffect(() => {
-    firstThemeLoad();
-
     const profile: HTMLImageElement | null = document.querySelector('.header-profile-image-wrap>img');
 
     const prevPath: string = path;
@@ -115,33 +118,31 @@ const Header = (props: headerPropsType) => {
       </div>
 
       <nav id="nav">
-        {config.theme.split('-')[1] === 'fix' ? null : (
-          <div className="theme-toggle">
-            <div className="theme-toggle-description">
-              <Fa
-                icon={theme !== 'dark' ? faSun : faMoon}
-                style={{ fontSize: theme !== 'dark' ? '1.2rem' : '1.1rem' }}
-              />
-              <Fa icon={faChevronRight} style={{ fontSize: '0.9rem' }} />
-            </div>
-
+        <div className="theme-toggle">
+          <div className="theme-toggle-description">
             <Fa
-              icon={theme === 'dark' ? faSun : faMoon}
-              style={{ fontSize: theme === 'dark' ? '1.2rem' : '1.1rem' }}
-              onMouseEnter={() => {
-                const toggle: HTMLDivElement | null = document.querySelector('.theme-toggle-description');
-                if (toggle) toggle.style.opacity = '0.5';
-              }}
-              onMouseLeave={() => {
-                const toggle: HTMLDivElement | null = document.querySelector('.theme-toggle-description');
-                if (toggle) toggle.style.opacity = '0';
-              }}
-              onClick={() => {
-                toggleTheme();
-              }}
+              icon={colorMode === 'dark' ? faMoon : faSun}
+              style={{ fontSize: colorMode === 'dark' ? '1.1rem' : '1.2rem' }}
             />
+            <Fa icon={faChevronRight} style={{ fontSize: '0.9rem' }} />
           </div>
-        )}
+
+          <Fa
+            icon={colorMode === 'dark' ? faSun : faMoon}
+            style={{ fontSize: colorMode === 'dark' ? '1.2rem' : '1.1rem' }}
+            onMouseEnter={() => {
+              const toggle: HTMLDivElement | null = document.querySelector('.theme-toggle-description');
+              if (toggle) toggle.style.opacity = '0.5';
+            }}
+            onMouseLeave={() => {
+              const toggle: HTMLDivElement | null = document.querySelector('.theme-toggle-description');
+              if (toggle) toggle.style.opacity = '0';
+            }}
+            onClick={() => {
+              toggleTheme();
+            }}
+          />
+        </div>
 
         <ul>
           <li>
@@ -165,25 +166,13 @@ const Header = (props: headerPropsType) => {
   );
 };
 
-const mapStateToProps = ({
-  path,
-  size,
-  isMobile,
-  theme,
-}: {
-  path: string;
-  size: string;
-  isMobile: boolean;
-  theme: string;
-}) => {
-  return { path, size, isMobile, theme };
+const mapStateToProps = ({ path, size, isMobile }: { path: string; size: string; isMobile: boolean }) => {
+  return { path, size, isMobile };
 };
 
 const mapDispatchToProps = (dispatch: Function) => {
   return {
     setPath: (path: string, size: string) => dispatch({ type: `SET_PATH`, path, size }),
-    setTheme: (theme: string) => dispatch({ type: `SET_THEME`, theme }),
-    toggleTheme: () => dispatch({ type: `TOGGLE_THEME` }),
   };
 };
 

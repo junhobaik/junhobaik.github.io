@@ -1,36 +1,29 @@
 @import '../../utils/variables.scss';
 
-body {
-  transition: background-color 0.3s;
+a {
+  all: unset;
+  cursor: pointer;
 }
 
 #layout {
-  color: $font-color-0;
-  transition: background-color 0.3s;
-
-  a {
-    color: $font-color-0;
-  }
-
   svg {
     color: #6a737d;
+    transition: color 0.8s;
   }
 
-  @media screen and (max-width: $break-l) {
-    #Header {
-      background-color: $background-color;
+  &.light {
+    @media screen and (max-width: $break-l) {
+      #Header {
+        background-color: $background-color;
+      }
     }
   }
 
   &.dark {
-    color: $font-color-0-d;
-
-    a {
-      color: $font-color-0-d;
-    }
     svg {
       color: #a3aab3;
     }
+
     @media screen and (max-width: $break-l) {
       #Header {
         background-color: $background-color-d;

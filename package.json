@@ -10,6 +10,7 @@
     "@fortawesome/free-regular-svg-icons": "^5.12.0",
     "@fortawesome/free-solid-svg-icons": "^5.12.0",
     "@fortawesome/react-fontawesome": "^0.1.8",
+    "@types/theme-ui": "^0.3.0",
     "disqus-react": "^1.0.7",
     "gatsby": "^2.18.17",
     "gatsby-image": "^2.2.34",
@@ -22,6 +23,7 @@
     "gatsby-plugin-sass": "^2.1.26",
     "gatsby-plugin-sharp": "^2.3.5",
     "gatsby-plugin-sitemap": "^2.2.24",
+    "gatsby-plugin-theme-ui": "^0.3.0",
     "gatsby-plugin-tslint": "0.0.2",
     "gatsby-plugin-typescript": "^2.1.23",
     "gatsby-plugin-typography": "^2.3.20",
@@ -50,6 +52,7 @@
     "react-share": "^4.0.1",
     "react-typography": "^0.16.19",
     "redux": "^4.0.4",
+    "theme-ui": "^0.3.1",
     "typography": "^0.16.19"
   },
   "devDependencies": {

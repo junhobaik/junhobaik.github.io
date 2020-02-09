@@ -7,6 +7,7 @@ import MobileDetect from 'mobile-detect';
 import { config as FaConfig, dom as FaDom } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome';
 import { faAngleDoubleUp } from '@fortawesome/free-solid-svg-icons';
+import { useColorMode } from 'theme-ui';
 
 import Header from '../Header';
 import './layout.scss';
@@ -16,14 +17,15 @@ FaConfig.autoAddCss = false;
 
 export interface LayoutPropsType {
   children: Object;
-  theme: string;
   isMobile: boolean;
   setIsMobile: Function;
 }
 
 const Layout = (props: LayoutPropsType) => {
-  const { children, setIsMobile, theme } = props;
+  const { children, setIsMobile } = props;
   const [isTop, setIsTop] = useState(true);
+  const [colorMode] = useColorMode();
+  const isDark = colorMode === 'dark';
 
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -52,14 +54,6 @@ const Layout = (props: LayoutPropsType) => {
     return () => document.removeEventListener('scroll', setTop);
   }, []);
 
-  useEffect(() => {
-    if (theme === 'dark') {
-      document.body.style.backgroundColor = '#141414';
-    } else {
-      document.body.style.backgroundColor = '#fff';
-    }
-  }, [theme]);
-
   return (
     <>
       <Helmet>
@@ -69,7 +63,7 @@ const Layout = (props: LayoutPropsType) => {
         <style>{FaDom.css()}</style>
       </Helmet>
 
-      <div id="layout" className={theme}>
+      <div id="layout" className={isDark ? 'dark' : 'light'}>
         <Header siteTitle={data.site.siteMetadata.title} />
         <div id="content">
           <main>{children}</main>
@@ -97,8 +91,8 @@ const Layout = (props: LayoutPropsType) => {
   );
 };
 
-const mapStateToProps = ({ isMobile, theme }: { isMobile: boolean; theme: string }) => {
-  return { isMobile, theme };
+const mapStateToProps = ({ isMobile }: { isMobile: boolean }) => {
+  return { isMobile };
 };
 
 const mapDispatchToProps = (dispatch: any) => {

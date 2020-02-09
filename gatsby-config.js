@@ -16,6 +16,8 @@ const gatsbyConfig = {
 
     `gatsby-plugin-typescript`,
 
+    `gatsby-plugin-theme-ui`,
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
