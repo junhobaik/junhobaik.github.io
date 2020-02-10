@@ -119,7 +119,7 @@ const Header = (props: headerPropsType) => {
 
       <nav id="nav">
         <div className="theme-toggle">
-          <div className="theme-toggle-description" style={{ display: isMobile ? 'none' : 'inline' }}>
+          <div className="theme-toggle-description" style={{ display: isMobile ? 'none' : 'flex' }}>
             <Fa
               icon={colorMode === 'dark' ? faMoon : faSun}
               style={{ fontSize: colorMode === 'dark' ? '1.1rem' : '1.2rem' }}
