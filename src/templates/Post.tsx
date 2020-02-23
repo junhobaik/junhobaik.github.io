@@ -164,12 +164,38 @@ const Post = (props: postProps) => {
         <script type="application/ld+json">
           {`
 {
-  "@context": "http://schema.org",
+  "@context": "https://schema.org",
   "@type": "Article",
-  "datePublished" : "${
-    update ? moment(new Date(update)).format('YYYY-MM-DD') : moment(new Date(date)).format('YYYY-MM-DD')
-  }"
-}`}
+  "datePublished": "${moment(new Date(date)).toISOString()}",
+  ${update ? `"dateModified": "${moment(new Date(update)).toISOString()}",` : ''}
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "${config.siteUrl}"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "${config.name}"
+  },
+  "headline": "${title}",
+  ${
+    config.profileImageFileName
+      ? `"publisher": {
+    "@type" : "organization",
+    "name" : "${config.name}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "${config.siteUrl}${require(`../images/${config.profileImageFileName}`)}"
+    }
+  },
+  "image": ["${config.siteUrl}${require(`../images/${config.profileImageFileName}`)}"]`
+      : `"publisher": {
+    "@type" : "organization",
+    "name" : "${config.name}"
+  },
+  "image": []`
+  }
+}
+`}
         </script>
       </Helmet>
 
