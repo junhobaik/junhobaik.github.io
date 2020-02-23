@@ -9,7 +9,7 @@ Gatsby로 제작한 블로그 테마 "**Borderless**" 입니다. ([Gatsby Showca
 
 커스터마이징하여 자신의 블로그로 사용할 수 있습니다.
 
-[Document (Version 3, Borderless)](<https://github.com/junhobaik/junhobaik.github.io/wiki/Document-(Borderless)>)를 참고하세요.
+[Document (Borderless)](<https://github.com/junhobaik/junhobaik.github.io/wiki/Document-(Borderless)>)를 참고하세요.
 
 <br/>
 
