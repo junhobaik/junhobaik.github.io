@@ -17,6 +17,8 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
             frontmatter {
               title
               tags
+              update(formatString: "YYYY-MM-DD")
+              date(formatString: "YYYY-MM-DD")
             }
           }
         }
@@ -43,7 +45,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const { edges } = result.data.allMarkdownRemark;
 
   edges.forEach(({ node }, index) => {
-    const { slug } = node.fields;
+    const { fields, frontmatter } = node;
+    const { slug } = fields;
+    const { date, update } = frontmatter;
 
     // series
     let filteredEdges = [];
@@ -82,7 +86,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     createPage({
       path: slug,
       component: blogPostTemplate,
-      context: { slug, series },
+      context: { slug, series, lastmod: update ? update : date },
     });
   });
 };
@@ -116,15 +120,6 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
         node.frontmatter.keywords = [config.title, config.author];
       }
 
-      // 마크다운 파일 내 퍼블리쉬 필드가 비어있을 시 오류가 나지 않도록 하기 위함
-      // development 환경일 시 published 필드가 모두 true이도록 하기 위함
-      // if (
-      //   node.frontmatter.published === undefined ||
-      //   process.env.NODE_ENV === 'development'
-      // ) {
-      //   node.frontmatter.published = true;
-      // }
-
       // 마크다운 파일 내 태그 필드가 비어있을 시 오류가 나지 않도록 하기 위함
       if (!node.frontmatter.tags || node.frontmatter.tags === '') {
         node.frontmatter.tags = ['undefined'];
@@ -135,11 +130,15 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       }
 
       // markdown 내 date의 timezone 제거
-      if (node.frontmatter.date.indexOf('+') !== -1) {
+      if (node.frontmatter.date.includes('+')) {
         date = new Date(node.frontmatter.date.split('+')[0]);
         node.frontmatter.date = date;
       } else {
         node.frontmatter.date = new Date(node.frontmatter.date);
+      }
+
+      if (!node.frontmatter.update) {
+        node.frontmatter.update = '0001-01-01T00:00:00.000Z';
       }
 
       return node;

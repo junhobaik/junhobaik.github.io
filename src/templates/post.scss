@@ -26,13 +26,26 @@
     .blog-post-info {
       display: flex;
       margin-top: 1rem;
-      color: rgba(0, 0, 0, 0.64);
       font-size: 0.84rem;
-      align-items: center;
+      align-items: flex-start;
       justify-content: space-between;
 
-      & > span:nth-child(2) {
+      & > .dot {
         margin: 0 0.5rem;
+        opacity: 0.7;
+      }
+
+      .date-wrap {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        opacity: 0.7;
+
+        .write-date,
+        .update-date {
+          display: block;
+          white-space: nowrap;
+        }
       }
 
       .blog-post-tag-list {
@@ -47,12 +60,12 @@
           margin-right: 0.3rem;
 
           a {
-            color: rgba(0, 0, 0, 0.64);
+            opacity: 0.7;
             text-decoration: none;
-            transition: 0.3s;
+            transition: opacity 0.3s;
 
             &:hover {
-              color: rgba(0, 0, 0, 0.84);
+              opacity: 1;
             }
           }
         }
@@ -68,7 +81,7 @@
 
         .toc-button {
           cursor: pointer;
-          color: #6a737d;
+          // color: #6a737d;
           opacity: 0.5;
 
           &:hover {
@@ -88,7 +101,7 @@
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        color: rgba(0, 0, 0, 0.74);
+        // color: rgba(0, 0, 0, 0.74);
 
         .head {
           font-weight: bold;
@@ -115,7 +128,7 @@
           list-style: none;
           margin: 0;
           opacity: 0.4;
-          transition: all 0.2s;
+          transition: opacity all 0.2s;
 
           &:hover {
             opacity: 0.9;
@@ -174,16 +187,16 @@
         }
       }
       code {
-        font-family: 'Nanum Gothic Coding';
+        font-family: 'Nanum Gothic Coding' !important;
       }
 
       blockquote {
         font-size: 0.9rem;
-        color: rgba(0, 0, 0, 0.64);
-        border-left: 4px solid rgba(0, 0, 0, 0.2);
+        border-left: 4px solid #6a737d;
         margin: 0;
         margin-bottom: 1rem;
         padding: 0 1rem 0 1rem;
+        opacity: 0.8;
       }
     }
   }
@@ -205,7 +218,7 @@
 
         circle {
           fill: #6a737d;
-          transition: all 0.3s;
+          transition: fill 0.3s;
         }
 
         &:hover {

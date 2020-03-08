@@ -1,9 +1,10 @@
-import React from 'react';
+import * as React from 'react';
 import { useEffect, useState } from 'react';
 import Helmet from 'react-helmet';
 import { connect } from 'react-redux';
 import { graphql, Link } from 'gatsby';
 import { DiscussionEmbed } from 'disqus-react';
+import moment from 'moment';
 import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome';
 import { faListUl, faLayerGroup, faAngleLeft } from '@fortawesome/free-solid-svg-icons';
 import AdSense from 'react-adsense';
@@ -25,13 +26,16 @@ import {
 import Layout from '../components/Layout';
 import Toc from '../components/Toc';
 import SEO from '../components/seo';
-import './post.scss';
+
 import 'katex/dist/katex.min.css';
+import './code-theme.scss';
+import './post.scss';
+
 const config = require('../../config');
 
 export interface postProps {
   data: any;
-  pageContext: any;
+  pageContext: { slug: string; series: any[]; lastmod: string };
   isMobile: boolean;
 }
 
@@ -40,18 +44,28 @@ const Post = (props: postProps) => {
   const { markdownRemark } = data;
   const { frontmatter, html, tableOfContents, fields, excerpt } = markdownRemark;
   const { title, date, tags, keywords } = frontmatter;
+  let update = frontmatter.update;
+  if (Number(update?.split(',')[1]) === 1) update = null;
   const { slug } = fields;
   const { series } = pageContext;
+
+  interface iConfig {
+    enablePostOfContents: boolean;
+    enableSocialShare: boolean;
+    disqusShortname?: string;
+  }
+  const { enablePostOfContents, disqusShortname, enableSocialShare }: iConfig = config;
+
   const [yList, setYList] = useState();
   const [isInsideToc, setIsInsideToc] = useState(false);
 
-  const isTableOfContents = config.enablePostOfContents && tableOfContents !== '';
+  const isTableOfContents = enablePostOfContents && tableOfContents !== '';
   const isDevelopment = process.env.NODE_ENV === 'development';
-  const isDisqus = config.disqusShortname;
-  const isSocialShare = config.enableSocialShare;
+  const isDisqus: boolean = disqusShortname ? true : false;
+  const isSocialShare = enableSocialShare;
 
   useEffect(() => {
-    const hs = Array.from(document.querySelectorAll('h2, h3')) as Array<HTMLHeadingElement>;
+    const hs = Array.from(document.querySelectorAll('h2, h3')) as HTMLHeadingElement[];
 
     const minusValue = window.innerHeight < 500 ? 100 : Math.floor(window.innerHeight / 5);
 
@@ -106,7 +120,7 @@ const Post = (props: postProps) => {
   const mapTags = tags.map((tag: string) => {
     return (
       <li key={tag} className="blog-post-tag">
-        <Link to={`/tag/${tag}`}>{`#${tag}`}</Link>
+        <Link to={`/tags#${tag}`}>{`#${tag}`}</Link>
       </li>
     );
   });
@@ -132,20 +146,59 @@ const Post = (props: postProps) => {
     },
   };
 
-  const metaKeywords = (keywordList: Array<string>, tagList: Array<string>) => {
+  const metaKeywords: (keywordList: string[], tagList: string[]) => string[] = (
+    keywordList: string[],
+    tagList: string[]
+  ) => {
     const resultKeywords = new Set();
 
     for (const v of [...keywordList, ...tagList]) {
       resultKeywords.add(v);
     }
 
-    return Array.from(resultKeywords);
+    return Array.from(resultKeywords) as string[];
   };
 
   return (
     <>
       <Helmet>
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <script type="application/ld+json">
+          {`
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "datePublished": "${moment(new Date(date)).toISOString()}",
+  ${update ? `"dateModified": "${moment(new Date(update)).toISOString()}",` : ''}
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "${config.siteUrl}"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "${config.name}"
+  },
+  "headline": "${title}",
+  ${
+    config.profileImageFileName
+      ? `"publisher": {
+    "@type" : "organization",
+    "name" : "${config.name}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "${config.siteUrl}${require(`../images/${config.profileImageFileName}`)}"
+    }
+  },
+  "image": ["${config.siteUrl}${require(`../images/${config.profileImageFileName}`)}"]`
+      : `"publisher": {
+    "@type" : "organization",
+    "name" : "${config.name}"
+  },
+  "image": []`
+  }
+}
+`}
+        </script>
       </Helmet>
 
       <SEO title={title} description={excerpt} keywords={metaKeywords(keywords, tags)} />
@@ -156,11 +209,14 @@ const Post = (props: postProps) => {
             <h1 className="blog-post-title">{title}</h1>
 
             <div className="blog-post-info">
-              <span className="blog-post-date">{date}</span>
+              <div className="date-wrap">
+                {update ? <span className="update-date">&nbsp;{`(Last Updated: ${update})`}</span> : null}
+                <span className="write-date">{date}</span>
+              </div>
 
               {tags.length && tags[0] !== 'undefined' ? (
                 <>
-                  <span>·</span>
+                  <span className="dot">·</span>
                   <ul className="blog-post-tag-list">{mapTags}</ul>
                 </>
               ) : null}
@@ -296,6 +352,7 @@ export const pageQuery = graphql`
         date(formatString: "MMM DD, YYYY")
         tags
         keywords
+        update(formatString: "MMM DD, YYYY")
       }
     }
   }

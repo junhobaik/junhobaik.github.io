@@ -2,24 +2,45 @@ import * as React from 'react';
 import { useEffect, useState, useCallback } from 'react';
 import { Link } from 'gatsby';
 import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome';
-import { faTags, faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faTags, faSearch, faMoon, faSun, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { connect } from 'react-redux';
+import { useColorMode } from 'theme-ui';
 
 import './header.scss';
 const config = require('../../../config');
 
 export interface headerPropsType {
-  siteTitle: String;
-  path: any;
-  setPath: any;
+  siteTitle: string;
+  path: string;
   size: string;
   isMobile: boolean;
+  setPath: Function;
 }
 
 const Header = (props: headerPropsType) => {
   const { siteTitle, path, setPath, size, isMobile } = props;
   const [, setYPos] = useState(0);
   const [isHide, setIsHide] = useState(false);
+  const [colorMode, setColorMode] = useColorMode();
+
+  const toggleTheme = useCallback(() => {
+    const ms: number = 300;
+    const header: HTMLElement | null = document.getElementById('Header');
+
+    document.body.style.transition = `background-color ${ms}ms`;
+    if (header) header.style.transition = `background-color ${ms}ms`;
+
+    if (colorMode === 'dark') {
+      setColorMode('default');
+    } else {
+      setColorMode('dark');
+    }
+
+    setTimeout(() => {
+      document.body.style.transition = 'none';
+      if (header) header.style.transition = `background-color ${ms}ms`;
+    }, ms + 100);
+  }, [colorMode]);
 
   useEffect(() => {
     const bio: HTMLDivElement | null = document.querySelector('.bio');
@@ -37,8 +58,8 @@ const Header = (props: headerPropsType) => {
   useEffect(() => {
     const profile: HTMLImageElement | null = document.querySelector('.header-profile-image-wrap>img');
 
-    const prevPath = path;
-    const currPath = location.pathname;
+    const prevPath: string = path;
+    const currPath: string = location.pathname;
 
     if (profile) {
       if (currPath === prevPath) {
@@ -60,7 +81,7 @@ const Header = (props: headerPropsType) => {
       setPath(location.pathname);
     }
 
-    const setVisible = () => {
+    const setVisible: () => void = () => {
       setYPos(prevYPos => {
         const currentYPos = window.pageYOffset;
 
@@ -71,13 +92,6 @@ const Header = (props: headerPropsType) => {
     };
     document.addEventListener('scroll', setVisible);
     return () => document.removeEventListener('scroll', setVisible);
-  }, []);
-
-  const tagSpanVisibleToggle = useCallback((isVisible: boolean) => {
-    const tag: HTMLSpanElement | null = document.querySelector('.tag-wrap>span');
-
-    if (tag && isVisible) tag.style.opacity = '1';
-    if (tag && !isVisible) tag.style.opacity = '0';
   }, []);
 
   return (
@@ -104,20 +118,37 @@ const Header = (props: headerPropsType) => {
       </div>
 
       <nav id="nav">
+        <div className="theme-toggle">
+          <div className="theme-toggle-description" style={{ display: isMobile ? 'none' : 'flex' }}>
+            <Fa
+              icon={colorMode === 'dark' ? faMoon : faSun}
+              style={{ fontSize: colorMode === 'dark' ? '1.1rem' : '1.2rem' }}
+            />
+            <Fa icon={faChevronRight} style={{ fontSize: '0.9rem' }} />
+          </div>
+
+          <Fa
+            icon={colorMode === 'dark' ? faSun : faMoon}
+            style={{ fontSize: colorMode === 'dark' ? '1.2rem' : '1.1rem' }}
+            onMouseEnter={() => {
+              const toggle: HTMLDivElement | null = document.querySelector('.theme-toggle-description');
+              if (toggle) toggle.style.opacity = '0.5';
+            }}
+            onMouseLeave={() => {
+              const toggle: HTMLDivElement | null = document.querySelector('.theme-toggle-description');
+              if (toggle) toggle.style.opacity = '0';
+            }}
+            onClick={() => {
+              toggleTheme();
+            }}
+          />
+        </div>
+
         <ul>
           <li>
             <div className="tag-wrap">
-              <span>TAG</span>
               <Link to="/tags">
-                <Fa
-                  icon={faTags}
-                  onMouseEnter={() => {
-                    tagSpanVisibleToggle(true);
-                  }}
-                  onMouseLeave={() => {
-                    tagSpanVisibleToggle(false);
-                  }}
-                />
+                <Fa icon={faTags} />
               </Link>
             </div>
           </li>
@@ -139,7 +170,7 @@ const mapStateToProps = ({ path, size, isMobile }: { path: string; size: string;
   return { path, size, isMobile };
 };
 
-const mapDispatchToProps = (dispatch: any) => {
+const mapDispatchToProps = (dispatch: Function) => {
   return {
     setPath: (path: string, size: string) => dispatch({ type: `SET_PATH`, path, size }),
   };

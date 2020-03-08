@@ -1,17 +1,39 @@
 @import '../../utils/variables.scss';
 
-html,
-body {
-  color: $font-color-0;
+a {
+  all: unset;
+  cursor: pointer;
+}
+
+#layout {
+  svg {
+    color: #6a737d;
+    transition: color 0.8s;
+  }
+
+  &.light {
+    @media screen and (max-width: $break-l) {
+      #Header {
+        background-color: $background-color;
+      }
+    }
+  }
+
+  &.dark {
+    svg {
+      color: #a3aab3;
+    }
+
+    @media screen and (max-width: $break-l) {
+      #Header {
+        background-color: $background-color-d;
+      }
+    }
+  }
 }
 
 a {
-  color: $font-color-0;
   text-decoration: none;
-
-  &:active {
-    color: $font-color-0;
-  }
 }
 
 #content {
@@ -63,10 +85,9 @@ a {
   }
 
   svg {
-    color: #6a737d;
     margin: 0;
     opacity: 0.5;
-    transition: all 0.2s;
+    transition: opacity 0.2s;
 
     &:hover {
       opacity: 1;

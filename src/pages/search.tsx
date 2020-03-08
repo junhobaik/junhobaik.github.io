@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import { useState } from 'react';
 import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
@@ -14,21 +14,21 @@ export interface SearchProps {
 }
 
 const Search = (props: SearchProps) => {
-  const posts = props.data.allMarkdownRemark.edges;
+  const { data } = props;
+  const posts = data.allMarkdownRemark.edges;
+
   const [value, setValue] = useState('');
   const [isTitleOnly, setIsTitleOnly] = useState(true);
 
-  const filteredPosts = posts.filter((post: any) => {
+  const filteredPosts: any[] = posts.filter((post: any) => {
     const { node } = post;
     const { frontmatter, rawMarkdownBody } = node;
     const { title } = frontmatter;
     const lowerValue = value.toLocaleLowerCase();
 
-    if (!isTitleOnly && rawMarkdownBody.toLocaleLowerCase().indexOf(lowerValue) > -1) {
-      return true;
-    }
+    if (!isTitleOnly && rawMarkdownBody.toLocaleLowerCase().includes(lowerValue)) return true;
 
-    return title.toLocaleLowerCase().indexOf(lowerValue) > -1;
+    return title.toLocaleLowerCase().includes(lowerValue);
   });
 
   return (
@@ -92,6 +92,7 @@ export const pageQuery = graphql`
             date(formatString: "MMM DD, YYYY")
             title
             tags
+            update(formatString: "MMM DD, YYYY")
           }
         }
       }
