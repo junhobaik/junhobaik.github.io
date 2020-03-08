@@ -43,7 +43,9 @@ const Post = (props: postProps) => {
   const { data, pageContext, isMobile } = props;
   const { markdownRemark } = data;
   const { frontmatter, html, tableOfContents, fields, excerpt } = markdownRemark;
-  const { title, date, tags, keywords, update } = frontmatter;
+  const { title, date, tags, keywords } = frontmatter;
+  let update = frontmatter.update;
+  if (Number(update?.split(',')[1]) === 1) update = null;
   const { slug } = fields;
   const { series } = pageContext;
 

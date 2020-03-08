@@ -137,6 +137,10 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
         node.frontmatter.date = new Date(node.frontmatter.date);
       }
 
+      if (!node.frontmatter.update) {
+        node.frontmatter.update = '0001-01-01T00:00:00.000Z';
+      }
+
       return node;
     };
 

@@ -48,7 +48,9 @@ const PostList = memo((props: PostListProps) => {
     const { node } = post;
     const { excerpt, fields, frontmatter } = node;
     const { slug } = fields;
-    const { date, title, tags, update } = frontmatter;
+    const { date, title, tags } = frontmatter;
+    let update = frontmatter.update;
+    if (Number(update.split(',')[1]) === 1) update = null;
 
     const mapTag = tags.map((tag: string) => {
       if (tag === 'undefined') return;
