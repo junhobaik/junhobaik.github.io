@@ -56,7 +56,7 @@ const Post = (props: postProps) => {
   }
   const { enablePostOfContents, disqusShortname, enableSocialShare }: iConfig = config;
 
-  const [yList, setYList] = useState();
+  const [yList, setYList] = useState([] as number[]);
   const [isInsideToc, setIsInsideToc] = useState(false);
 
   const isTableOfContents = enablePostOfContents && tableOfContents !== '';
@@ -66,14 +66,9 @@ const Post = (props: postProps) => {
 
   useEffect(() => {
     const hs = Array.from(document.querySelectorAll('h2, h3')) as HTMLHeadingElement[];
-
     const minusValue = window.innerHeight < 500 ? 100 : Math.floor(window.innerHeight / 5);
-
-    const foo = hs.map(h => {
-      return h.offsetTop - minusValue;
-    });
-
-    setYList(foo);
+    const yPositions = hs.map(h => h.offsetTop - minusValue);
+    setYList(yPositions);
 
     return () => {};
   }, []);
@@ -210,8 +205,14 @@ const Post = (props: postProps) => {
 
             <div className="blog-post-info">
               <div className="date-wrap">
-                {update ? <span className="update-date">&nbsp;{`(Last Updated: ${update})`}</span> : null}
                 <span className="write-date">{date}</span>
+                {update ? (
+                  <>
+                    <span>(</span>
+                    <span className="update-date">{`Last updated: ${update}`}</span>
+                    <span>)</span>
+                  </>
+                ) : null}
               </div>
 
               {tags.length && tags[0] !== 'undefined' ? (
