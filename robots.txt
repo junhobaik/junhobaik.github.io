@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /disallow.css
 Sitemap: https://junhobaik.github.io/sitemap.xml
 Host: https://junhobaik.github.io
