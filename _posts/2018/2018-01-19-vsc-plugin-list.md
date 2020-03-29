@@ -1,7 +1,7 @@
 ---
 title: '사용중인 VSCode(Visual Studio Code) 확장 플러그인 목록'
 date: 2018-01-19 22:59 +0900
-update: 2020-01-30
+update: 2020-03-30
 tags:
   - VSCode
 keywords:
@@ -44,10 +44,6 @@ Front-End 개발 환경에 맞게 되어있습니다.
 
 ## B
 
-- [Blank Line at the End of File](https://marketplace.visualstudio.com/items?itemName=riccardoNovaglia.missinglineendoffile)  
-  파일 저장시 맨 하단에 빈줄 하나를 추가해 저장해준다.  
-  Prettier 확장을 이용해 자동으로 저장 시 정렬을 활성화 해 두었다면 해당 확장은 필요 없을 것입니다.
-
 - [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer) :star:  
   `{((({})))}` 브라켓의 단계에 따라 색상을 다르게 해주고, 들여쓰기 단계를 쉽게 구분할 수 있게 하는 가이드 라인이 추가된다.  
   버전2가 개발중이고 사용 가능하나, 아직은 이슈가 많아 해당 버전1을 사용하는 것이 좋다.
@@ -85,13 +81,16 @@ Front-End 개발 환경에 맞게 되어있습니다.
   `.gitignore` 파일을 프로젝트 환경에 맞게 자동으로 생성해준다. 또한 작업중인 파일을 바로 `.gitignore`에 추가할 수 있다.
 
 - ~~[Git History](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory)~~  
-  현재는 따로 GitKraken App을 사용하고 있기에 해당 앱은 사용중이지 않다.  
   ~~Git 로그를 시각적으로 보기 좋은 확장이다. 로그 보기뿐만 아니라 다양한 기능을 제공한다. 주로 로그를 보기 위해 사용하고 Git 에 관한 다양한 기능은 아래에서 소개할 GitLens 에서 주로 사용한다. 팁으로 본인의 경우 메뉴바에 GitLens 와 Git History 의 아이콘이 비슷한게 있어 햇갈려 Git History 의 설정에서 메뉴바 아이콘을 숨기고 명령 팔레트를 통해서만 사용한다.~~
+  현재는 따로 GitKraken App을 사용하고 있기에 해당 앱은 사용중이지 않다.  
 
 - [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) :star:  
   Git 을 사용함에 있어서 시각적이고 고급화된 기능을 제공한다. 워낙 다양한 기능을 제공하기에 위 링크에서 확인해보길 바란다.
 
 ## I
+
+- [Visual Studio IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)  
+  자동 완성 추천 기능으로 자동 완성 목록에서 추천하는 자동 완성에는 별표가 표시되어 나온다.
 
 - [IntelliSense for CSS class names in HTML](https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion)  
   현재 작업중인 HTML 파일 또는 연결된 파일에서 class 를 참조하여 자동으로 css class 자동완성을 추천해준다.
@@ -128,8 +127,10 @@ Front-End 개발 환경에 맞게 되어있습니다.
 
 ## S
 
-- [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync)  
-  VSCode 설정(확장 플러그인 포함) 동기화 도구
+- ~~[Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync)~~  
+  ~~VSCode 설정(확장 플러그인 포함) 동기화 도구~~  
+  VSCode v1.440 부터 공식적으로 설정 동기화 기능을 제공한다.  
+  현재(200330)는 정식 버전은 아직 업데이트가 되지 않았고 VSCode insider에서 사용할 수 있다.
 
 ## T
 
@@ -150,7 +151,6 @@ Front-End 개발 환경에 맞게 되어있습니다.
 - [Visual Studio Live Share](https://visualstudio.microsoft.com/ko/services/live-share/)
 - [LintLens — ESLint rules made easier](https://marketplace.visualstudio.com/items?itemName=ghmcadams.lintlens)
 - [Quokka.js](https://marketplace.visualstudio.com/items?itemName=WallabyJs.quokka-vscode)
-- [Visual Studio IntelliCode - Preview](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
 
 <br/><br/>
 
