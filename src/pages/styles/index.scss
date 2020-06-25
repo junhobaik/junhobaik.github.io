@@ -1,5 +1,9 @@
 @import '../../utils/variables.scss';
 
+a:visited {
+  color: inherit;
+}
+
 .index-wrap {
   display: flex;
 
