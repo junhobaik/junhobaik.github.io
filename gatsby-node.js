@@ -86,7 +86,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     createPage({
       path: slug,
       component: blogPostTemplate,
-      context: { slug, series, lastmod: update ? update : date },
+      context: { slug, series, lastmod: update.includes('0001') ? date : update },
     });
   });
 };
