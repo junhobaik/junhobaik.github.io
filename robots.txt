@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://junhobaik.github.io/sitemap.xml
-Host: https://junhobaik.github.io
+Sitemap: https://chaelinson.github.io/sitemap.xml
+Host: https://chaelinson.github.io
