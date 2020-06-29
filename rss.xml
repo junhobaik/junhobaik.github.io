@@ -1,4 +1,52 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Dev.White | Feed]]></title><description><![CDATA[Dev.White의 웹 개발 블로그입니다. 프론트엔드 스킬을 주로 다루며 백엔드와 그 외 기술에도 지속적으로 관심을 기울이고 있습니다.]]></description><link>https://junhobaik.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 25 Jun 2020 13:36:52 GMT</lastBuildDate><item><title><![CDATA[ECMAScript ES2016~ES2020 정리]]></title><description><![CDATA[2020년을 맞아 이미 많이 알고 있는 ES2015(ES6) 다음부터인 ES2016부터 ES202…]]></description><link>https://junhobaik.github.io/es2016-es2020/</link><guid isPermaLink="false">https://junhobaik.github.io/es2016-es2020/</guid><pubDate>Wed, 22 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;2020년을 맞아 이미 많이 알고 있는 ES2015(ES6) 다음부터인 ES2016부터 ES2020까지 새로 나온 자바스크립트 기능들을 살펴보려고 합니다. &lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Dev.White | Feed]]></title><description><![CDATA[Dev.White의 웹 개발 블로그입니다. 프론트엔드 스킬을 주로 다루며 백엔드와 그 외 기술에도 지속적으로 관심을 기울이고 있습니다.]]></description><link>https://junhobaik.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 29 Jun 2020 13:23:24 GMT</lastBuildDate><item><title><![CDATA[한댓: 유튜브 한글 댓글만 보기 (크롬 확장 프로그램)]]></title><description><![CDATA[유튜브 영상에서 한글 댓글만을 볼 수 있는 크롬 확장 프로그램 "한댓" 쉽게 댓글 화면의 우측 상단에 위치한 버튼으로 한글 댓글만 보기를 활성화할 수 있습니다. 유튜브의 한국어 차별, 더이상 못 참겠어서 폭로합니다. by…]]></description><link>https://junhobaik.github.io/yt-ohc/</link><guid isPermaLink="false">https://junhobaik.github.io/yt-ohc/</guid><pubDate>Fri, 26 Jun 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/8b2f89af5ce79788ab37b59be5e82c12/88820/Untitled.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 73.64864864864865%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsSAAALEgHS3X78AAADxUlEQVQ4y21T3U8cVRydSF8QQrGh60MlVaOx4j7Y1Vcf/BdMfBI/YkwoGaOBklLYbCGmKWIVsanYF+tLfTCuVdpabFxZWLZbkMrHsszCzLBfsx+z7C5bYNmZnbtzj3cWg9X0l5zc3Hvnd+4555fhZm7ffWJh3n8qFpU/jMeTfCye4OOJJL8YDPPBVfEfrPNLoTV+aWWND21u8YJOeKFc4QWN8GFCeaG427kuJ7oXloWXuUmv7xVKCB5VJgP9/1loHeRXD4w7Xui3PSj/dAu73ru1O1HaGOTmgsuO0OKyfn3sivmD200mJibIzRs3icfjIVNTk8Q/M03mZgPkz7lZMuufIbk33yGks4vA+QnB2UFC3+sk2hvteimXQyQR7+ckecPR3eskx44/i7YTbfQlu50ePnKENjQ10mNPPUlbWg7Tkyft9MUTz9O240/Tvz7gaSqZpOqDIi1qGjWqVVr5csywrChZ1cnNzc87rl37ngwPf47R0Uv0wtAQ+gcG8VH3afSdG0Cfy4ULw59h5NJlOHt6kTzjws7ODpR8HjtGBZVKhepDXxBUDEaYdXJer9eRy+dJNptFLpejxWKx1lAsPkCpVIJhGDAqrJGtJkPh4iiEsStIuH/B7h9TyP18g+Y+HakNIZFKOblAIOAQhDDJZDJQVZUWCgXrVRA2qL29PYYStks68oUt7LJ96P48Ol5/Dd/19CC1sgrh3j0qhcM1QkVR9hVubm6SWCyG1dVVGg6HIcsyotEoIpEINjY2sCbKYI8ioShQohFcPHcWfb09mPb7EU8laSQa/ZdwcnLSwWwRy6qlkAGWfUtxOp2uQVUztX1Z0yAJK/h6oBftb7XjR7cbSUWhmXR633Iisa9QVbM1wnK5TDXWZNm1UK1W2VplK4GuGyhqFJGFEK6ePo+vPu6C77dbkCNRypzVCFNWhjM+n0OWJbK1tQWtrFErfGsQVo66rh9AK5ehVU3khTV82+/C2HkX/J47SKUVGo/HH7LMFLKcDHZIWWZVWZJMdmFub2+bjOgATLlpVqtmRImbl0dHTBf/tjkXmDZZribrrZimuU/o8/leZVYhSRIWFpcgR5NgZDWFjypFkPGNsxdX+89g2ReAyv4Qa6BWsbwHuPHx8TbmXQgGg9JKSFhXUlmRTV3MqKrIPjhAKpkSC4W86P19Rux6/12xp6NDvO6eEGOxiMjEhNk3KuM4xbGqa2hoaGlpOWp74blnbEebH7fVHTpkq6+vtzU2Nv4HTU1Ntsc4zsY9BLvdbmttbbU1Nzfb6urq6v8GhryjBlAl/ywAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Untitled%2096a200fb805647d29f1cf6f0413fcf28/Untitled.png&quot;
+        title=&quot;Untitled%2096a200fb805647d29f1cf6f0413fcf28/Untitled.png&quot;
+        src=&quot;/static/8b2f89af5ce79788ab37b59be5e82c12/fcda8/Untitled.png&quot;
+        srcset=&quot;/static/8b2f89af5ce79788ab37b59be5e82c12/12f09/Untitled.png 148w,
+/static/8b2f89af5ce79788ab37b59be5e82c12/e4a3f/Untitled.png 295w,
+/static/8b2f89af5ce79788ab37b59be5e82c12/fcda8/Untitled.png 590w,
+/static/8b2f89af5ce79788ab37b59be5e82c12/efc66/Untitled.png 885w,
+/static/8b2f89af5ce79788ab37b59be5e82c12/c83ae/Untitled.png 1180w,
+/static/8b2f89af5ce79788ab37b59be5e82c12/88820/Untitled.png 2564w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;유튜브 영상에서 한글 댓글만을 볼 수 있는 크롬 확장 프로그램 &quot;한댓&quot;&lt;/strong&gt;&lt;br&gt;
+쉽게 댓글 화면의 우측 상단에 위치한 버튼으로 한글 댓글만 보기를 활성화할 수 있습니다.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://youtu.be/DoOD8LBwjqI&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;유튜브의 한국어 차별, 더이상 못 참겠어서 폭로합니다. by 영국남자&lt;/a&gt; 영상을 보고 간단하게 만들어봤습니다.&lt;/p&gt;
+&lt;h3 id=&quot;-한댓-유튜브-한글-댓글만-보기-다운로드-크롬-웹-스토어-바로가기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#-%ED%95%9C%EB%8C%93-%EC%9C%A0%ED%8A%9C%EB%B8%8C-%ED%95%9C%EA%B8%80-%EB%8C%93%EA%B8%80%EB%A7%8C-%EB%B3%B4%EA%B8%B0-%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C-%ED%81%AC%EB%A1%AC-%EC%9B%B9-%EC%8A%A4%ED%86%A0%EC%96%B4-%EB%B0%94%EB%A1%9C%EA%B0%80%EA%B8%B0&quot; aria-label=&quot; 한댓 유튜브 한글 댓글만 보기 다운로드 크롬 웹 스토어 바로가기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;🇰🇷 &lt;a href=&quot;https://chrome.google.com/webstore/detail/%ED%95%9C%EB%8C%93-%EC%9C%A0%ED%8A%9C%EB%B8%8C-%ED%95%9C%EA%B8%80-%EB%8C%93%EA%B8%80%EB%A7%8C-%EB%B3%B4%EA%B8%B0/ljbjgmahddhnccggldafiaemkgacmmld?hl=ko&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&quot;한댓: 유튜브 한글 댓글만 보기&quot; &lt;strong&gt;다운로드 (크롬 웹 스토어 바로가기)&lt;/strong&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;댓글창의 우측 상단에 위치한 &quot;한국어 댓글만&quot; 체크박스를 체크하면 한글 댓글만 보여지게 됩니다.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;확장 프로그램 아이콘을 클릭하여 &apos;항상 활성화&apos;, &apos;고사양 모드&apos; 설정을 활성/비활성 할 수 있습니다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;고사양 모드와 일반 모드의 차이&lt;/li&gt;
+&lt;li&gt;일반 모드: 외국어 댓글이 잠깐 노출된 후 바로 사라집니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;고사양 모드: 외국어 댓글이 전혀 노출되지 않습니다.&lt;/li&gt;
+&lt;li&gt;한글 댓글의 기준은 댓글의 시작과 끝의 각 여섯 글자 안에 한글이 있어야 합니다.&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[ECMAScript ES2016~ES2020 정리]]></title><description><![CDATA[2020년을 맞아 이미 많이 알고 있는 ES2015(ES6) 다음부터인 ES2016부터 ES202…]]></description><link>https://junhobaik.github.io/es2016-es2020/</link><guid isPermaLink="false">https://junhobaik.github.io/es2016-es2020/</guid><pubDate>Wed, 22 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;2020년을 맞아 이미 많이 알고 있는 ES2015(ES6) 다음부터인 ES2016부터 ES2020까지 새로 나온 자바스크립트 기능들을 살펴보려고 합니다. &lt;/p&gt;
 &lt;p&gt;모두 소개하는 건 아니고 비교적 도움이 되는, 대표적인 것들을 추려 소개합니다.&lt;br&gt;
 또한 기초적인 사전 지식의 설명은 생략될 수 있습니다.&lt;/p&gt;
 &lt;br/&gt;
@@ -1423,64 +1471,4 @@ text와 같은 목적을 나타내는 것은 사용할 수 있다.&lt;/p&gt;
 &lt;hr&gt;
 &lt;ul&gt;
 &lt;li&gt;References - &lt;a href=&quot;https://en.bem.info/methodology/quick-start&quot; title=&quot;bem quick start&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;BEM Quick-start&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[NVM, Node 설치 및 관리하기]]></title><description><![CDATA[해당 포스트는 macOS 환경을 기준으로 작성되었습니다 NVM(Node Version Manager) Node 버전을 쉽게 관리 할 수 있다.
-예로 사용하던 패키지가 Node 버전이 업데이트를 함에 따라 호환이 되지 않을 경우가 생길 때 NVM…]]></description><link>https://junhobaik.github.io/nvm-install/</link><guid isPermaLink="false">https://junhobaik.github.io/nvm-install/</guid><pubDate>Thu, 08 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;em&gt;해당 포스트는 macOS 환경을 기준으로 작성되었습니다&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/nvm-sh/nvm&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;strong&gt;NVM&lt;/strong&gt;(Node Version Manager)&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Node 버전을 쉽게 관리 할 수 있다.
-예로 사용하던 패키지가 Node 버전이 업데이트를 함에 따라 호환이 되지 않을 경우가 생길 때 NVM없이 Node 버전을 되돌리기는 간단한 작업은 아니다. 이런 경우 NVM이 요긴하게 사용될 것이고 이 외에도 팀규모의 개발 등 많은 곳에서 Node 버전 관리가 필요할 수 있다.&lt;/p&gt;
-&lt;h2 id=&quot;설치&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%84%A4%EC%B9%98&quot; aria-label=&quot;설치 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;설치&lt;/h2&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;curl&lt;/span&gt; -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;bash&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/nvm-sh/nvm#installation-and-update&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;NVM | Installation&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;사용&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%82%AC%EC%9A%A9&quot; aria-label=&quot;사용 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;사용&lt;/h2&gt;
-&lt;p&gt;현재 사용 가능한 Node Version List를 보여준다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; nvm ls-remote&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;특정 버전의 Node를 설치합니다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; nvm &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;version&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;또는 LTS Version으로 설치&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; nvm &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; --lts&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;사용할 Node 버전 설정&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; nvm use &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;version&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;blockquote&gt;
-&lt;p&gt;처음 설치한 Node 버전은 자동으로 사용하게 설정이 되어있습니다.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;이렇게 간단하게 버전을 설치하고 사용을 설정하면 됩니다.
-설치된 리스트를 확인해보면 아래와 유사한 출력을 볼 수 있습니다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; nvm list
-       
-       v10.16.0
--&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;     v10.16.2
-default -&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; lts/* &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;-&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; v10.16.2&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-node -&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; stable &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;-&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; v10.16.2&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;default&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-stable -&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;10.16&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;-&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; v10.16.2&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;default&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-iojs -&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; N/A &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;default&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-unstable -&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; N/A &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;default&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-lts/* -&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; lts/dubnium &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;-&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; v10.16.2&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-lts/argon -&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; v4.9.1 &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;-&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; N/A&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-lts/boron -&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; v6.17.1 &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;-&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; N/A&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-lts/carbon -&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; v8.16.0 &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;-&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; N/A&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-lts/dubnium -&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; v10.16.2&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;설치되어있는 버전은 &lt;code class=&quot;language-text&quot;&gt;10.16.0&lt;/code&gt;과 &lt;code class=&quot;language-text&quot;&gt;10.16.2&lt;/code&gt;가 있고,
-현재 사용중인 버전이 &lt;code class=&quot;language-text&quot;&gt;10.16.2&lt;/code&gt;인 것을 확인 할 수 있습니다.&lt;/p&gt;
-&lt;p&gt;만약 여기서 새로운 최신 LTS 버전의 Node가 나왔고 사용하자고 한다면 두가지 경우가 있을 것입니다.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;새 LTS 버전을 설치하고 새로운 환경(설치된 패키지가 없는 깨끗한 상태)에서 사용을 시작하겠다.&lt;/li&gt;
-&lt;li&gt;새 LTS 버전을 설치하지만 기존에 사용하던 패키지는 그대로 가져가서 새로운 버전에 기존의 환경을 유지하고 싶다.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;1번의 경우에는 간단하게 버전을 설치하고 설치한 버전을 사용하기로 설정하면 됩니다.
-2번의 경우는 새 버전을 설치하고 기존의 패키지를 가져오는 과정이 필요합니다.
-아래서 설명하겠습니다.&lt;/p&gt;
-&lt;h2 id=&quot;사용하던-node-version을-업데이트하기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%82%AC%EC%9A%A9%ED%95%98%EB%8D%98-node-version%EC%9D%84-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8%ED%95%98%EA%B8%B0&quot; aria-label=&quot;사용하던 node version을 업데이트하기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;사용하던 Node Version을 업데이트하기&lt;/h2&gt;
-&lt;p&gt;이 경우는 새로운 버전으로 업데이트하지만 기존의 패키지는 가져옵니다.
-사용하던 환경(패키지) 그대로 사용하면서 버전만 업데이트하고 싶은 경우입니다.&lt;/p&gt;
-&lt;p&gt;그때 사용하는 명령은 아래와 같습니다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; nvm &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;version&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; --reinstall-packages-from&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;version&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;예를 들면 아래와 같습니다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; nvm &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;11.11&lt;/span&gt;.1 --reinstall-packages-from&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;10.16&lt;/span&gt;.2&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;위 명령어를 통해 새로운 &lt;code class=&quot;language-text&quot;&gt;11.11.1&lt;/code&gt; 버전을 설치하고 기존에 사용하던 버전 &lt;code class=&quot;language-text&quot;&gt;10.16.2&lt;/code&gt;의 패키지를 설치할 Node 버전(&lt;code class=&quot;language-text&quot;&gt;11.11.1&lt;/code&gt;)에 reinstall하는 과정을 거치게 됩니다.&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;References&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/nvm-sh/nvm&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;github | nvm-sh/nvm&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item></channel></rss>
