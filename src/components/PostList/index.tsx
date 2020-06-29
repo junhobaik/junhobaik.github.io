@@ -36,8 +36,11 @@ const PostList = memo((props: PostListProps) => {
   }, []);
 
   posts.sort((a: any, b: any) => {
-    const aDate = new Date(a.node.frontmatter.update ?? a.node.frontmatter.date);
-    const bDate = new Date(b.node.frontmatter.update ?? b.node.frontmatter.date);
+    const af = a.node.frontmatter;
+    const bf = b.node.frontmatter;
+
+    const aDate = new Date(af.update.includes('0001') ? af.date : af.update);
+    const bDate = new Date(bf.update.includes('0001') ? bf.date : bf.update);
 
     if (aDate < bDate) return 1;
     if (aDate > bDate) return -1;
