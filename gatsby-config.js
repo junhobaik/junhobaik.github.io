@@ -18,6 +18,12 @@ const gatsbyConfig = {
 
     `gatsby-plugin-theme-ui`,
 
+    `gatsby-plugin-sass`,
+
+    `gatsby-transformer-sharp`,
+
+    `gatsby-plugin-sharp`,
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -72,6 +78,7 @@ const gatsbyConfig = {
               target: '_blank',
             },
           },
+          `gatsby-remark-copy-linked-files`,
         ],
       },
     },
@@ -83,10 +90,6 @@ const gatsbyConfig = {
         path: `${__dirname}/src/images`,
       },
     },
-
-    `gatsby-transformer-sharp`,
-
-    `gatsby-plugin-sharp`,
 
     {
       resolve: `gatsby-plugin-manifest`,
@@ -104,8 +107,6 @@ const gatsbyConfig = {
         include_favicon: false,
       },
     },
-
-    `gatsby-plugin-sass`,
 
     {
       resolve: `gatsby-plugin-typography`,
