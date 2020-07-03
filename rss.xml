@@ -1,29 +1,97 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Dev.White | Feed]]></title><description><![CDATA[Dev.White의 웹 개발 블로그입니다. 프론트엔드 스킬을 주로 다루며 백엔드와 그 외 기술에도 지속적으로 관심을 기울이고 있습니다.]]></description><link>https://junhobaik.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 29 Jun 2020 13:35:43 GMT</lastBuildDate><item><title><![CDATA[한댓: 유튜브 한글 댓글만 보기 (크롬 확장 프로그램)]]></title><description><![CDATA[유튜브 영상에서 한글 댓글만을 볼 수 있는 크롬 확장 프로그램 "한댓" 쉽게 댓글 화면의 우측 상단에 위치한 버튼으로 한글 댓글만 보기를 활성화할 수 있습니다. 유튜브의 한국어 차별, 더이상 못 참겠어서 폭로합니다. by…]]></description><link>https://junhobaik.github.io/yt-ohc/</link><guid isPermaLink="false">https://junhobaik.github.io/yt-ohc/</guid><pubDate>Fri, 26 Jun 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Dev.White | Feed]]></title><description><![CDATA[Dev.White의 웹 개발 블로그입니다. 프론트엔드 스킬을 주로 다루며 백엔드와 그 외 기술에도 지속적으로 관심을 기울이고 있습니다.]]></description><link>https://junhobaik.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 03 Jul 2020 08:57:45 GMT</lastBuildDate><item><title><![CDATA[image test]]></title><description><![CDATA[image Test jpg  png  gif]]></description><link>https://junhobaik.github.io/image-post-example.md/</link><guid isPermaLink="false">https://junhobaik.github.io/image-post-example.md/</guid><pubDate>Fri, 03 Jul 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;image-test&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#image-test&quot; aria-label=&quot;image test permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;image Test&lt;/h2&gt;
+&lt;h3 id=&quot;jpg&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#jpg&quot; aria-label=&quot;jpg permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;jpg&lt;/h3&gt;
+&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/8b2f89af5ce79788ab37b59be5e82c12/88820/Untitled.png&quot;
+    href=&quot;/static/2536f84989a3f7e6df2ca11e83444125/b36a5/test.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 73.64864864864865%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsSAAALEgHS3X78AAADxUlEQVQ4y21T3U8cVRydSF8QQrGh60MlVaOx4j7Y1Vcf/BdMfBI/YkwoGaOBklLYbCGmKWIVsanYF+tLfTCuVdpabFxZWLZbkMrHsszCzLBfsx+z7C5bYNmZnbtzj3cWg9X0l5zc3Hvnd+4555fhZm7ffWJh3n8qFpU/jMeTfCye4OOJJL8YDPPBVfEfrPNLoTV+aWWND21u8YJOeKFc4QWN8GFCeaG427kuJ7oXloWXuUmv7xVKCB5VJgP9/1loHeRXD4w7Xui3PSj/dAu73ru1O1HaGOTmgsuO0OKyfn3sivmD200mJibIzRs3icfjIVNTk8Q/M03mZgPkz7lZMuufIbk33yGks4vA+QnB2UFC3+sk2hvteimXQyQR7+ckecPR3eskx44/i7YTbfQlu50ePnKENjQ10mNPPUlbWg7Tkyft9MUTz9O240/Tvz7gaSqZpOqDIi1qGjWqVVr5csywrChZ1cnNzc87rl37ngwPf47R0Uv0wtAQ+gcG8VH3afSdG0Cfy4ULw59h5NJlOHt6kTzjws7ODpR8HjtGBZVKhepDXxBUDEaYdXJer9eRy+dJNptFLpejxWKx1lAsPkCpVIJhGDAqrJGtJkPh4iiEsStIuH/B7h9TyP18g+Y+HakNIZFKOblAIOAQhDDJZDJQVZUWCgXrVRA2qL29PYYStks68oUt7LJ96P48Ol5/Dd/19CC1sgrh3j0qhcM1QkVR9hVubm6SWCyG1dVVGg6HIcsyotEoIpEINjY2sCbKYI8ioShQohFcPHcWfb09mPb7EU8laSQa/ZdwcnLSwWwRy6qlkAGWfUtxOp2uQVUztX1Z0yAJK/h6oBftb7XjR7cbSUWhmXR633Iisa9QVbM1wnK5TDXWZNm1UK1W2VplK4GuGyhqFJGFEK6ePo+vPu6C77dbkCNRypzVCFNWhjM+n0OWJbK1tQWtrFErfGsQVo66rh9AK5ehVU3khTV82+/C2HkX/J47SKUVGo/HH7LMFLKcDHZIWWZVWZJMdmFub2+bjOgATLlpVqtmRImbl0dHTBf/tjkXmDZZribrrZimuU/o8/leZVYhSRIWFpcgR5NgZDWFjypFkPGNsxdX+89g2ReAyv4Qa6BWsbwHuPHx8TbmXQgGg9JKSFhXUlmRTV3MqKrIPjhAKpkSC4W86P19Rux6/12xp6NDvO6eEGOxiMjEhNk3KuM4xbGqa2hoaGlpOWp74blnbEebH7fVHTpkq6+vtzU2Nv4HTU1Ntsc4zsY9BLvdbmttbbU1Nzfb6urq6v8GhryjBlAl/ywAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 74.9935283458452%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQAD/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQL/2gAMAwEAAhADEAAAAV8yZlCPk//EABoQAAICAwAAAAAAAAAAAAAAAAADARMCEBH/2gAIAQEAAQUC6TqMnFjSxh//xAAWEQEBAQAAAAAAAAAAAAAAAAAAARH/2gAIAQMBAT8BZX//xAAXEQADAQAAAAAAAAAAAAAAAAAAARES/9oACAECAQE/AajSP//EABcQAQEBAQAAAAAAAAAAAAAAAAAyEEH/2gAIAQEABj8C2lOP/8QAGxAAAgMAAwAAAAAAAAAAAAAAAAERMVFxkaH/2gAIAQEAAT8hqaGIZ9IXXiB69T//2gAMAwEAAgADAAAAEDgf/8QAFxEBAAMAAAAAAAAAAAAAAAAAARARQf/aAAgBAwEBPxClyL//xAAVEQEBAAAAAAAAAAAAAAAAAAAQEf/aAAgBAgEBPxCRf//EABsQAQADAQADAAAAAAAAAAAAAAEAETEhUWGx/9oACAEBAAE/EFqV44QqNuTWwpWvwwUAvNBPkStV+5//2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;test&quot;
+        title=&quot;test&quot;
+        src=&quot;/static/2536f84989a3f7e6df2ca11e83444125/88218/test.jpg&quot;
+        srcset=&quot;/static/2536f84989a3f7e6df2ca11e83444125/7237a/test.jpg 148w,
+/static/2536f84989a3f7e6df2ca11e83444125/0cfdf/test.jpg 295w,
+/static/2536f84989a3f7e6df2ca11e83444125/88218/test.jpg 590w,
+/static/2536f84989a3f7e6df2ca11e83444125/77d57/test.jpg 885w,
+/static/2536f84989a3f7e6df2ca11e83444125/5a917/test.jpg 1180w,
+/static/2536f84989a3f7e6df2ca11e83444125/b36a5/test.jpg 3863w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&quot;png&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#png&quot; aria-label=&quot;png permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;png&lt;/h3&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/8b2f89af5ce79788ab37b59be5e82c12/410eb/test.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 73.79095163806552%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsSAAALEgHS3X78AAADxUlEQVQ4y21T3U8cVRydSF8QQrGh60MlVaOx4j7Y1Vcf/BdMfBI/YkwoGaOBklLYbCGmKWIVsanYF+tLfTCuVdpabFxZWLZbkMrHsszCzLBfsx+z7C5bYNmZnbtzj3cWg9X0l5zc3Hvnd+4555fhZm7ffWJh3n8qFpU/jMeTfCye4OOJJL8YDPPBVfEfrPNLoTV+aWWND21u8YJOeKFc4QWN8GFCeaG427kuJ7oXloWXuUmv7xVKCB5VJgP9/1loHeRXD4w7Xui3PSj/dAu73ru1O1HaGOTmgsuO0OKyfn3sivmD200mJibIzRs3icfjIVNTk8Q/M03mZgPkz7lZMuufIbk33yGks4vA+QnB2UFC3+sk2hvteimXQyQR7+ckecPR3eskx44/i7YTbfQlu50ePnKENjQ10mNPPUlbWg7Tkyft9MUTz9O240/Tvz7gaSqZpOqDIi1qGjWqVVr5csywrChZ1cnNzc87rl37ngwPf47R0Uv0wtAQ+gcG8VH3afSdG0Cfy4ULw59h5NJlOHt6kTzjws7ODpR8HjtGBZVKhepDXxBUDEaYdXJer9eRy+dJNptFLpejxWKx1lAsPkCpVIJhGDAqrJGtJkPh4iiEsStIuH/B7h9TyP18g+Y+HakNIZFKOblAIOAQhDDJZDJQVZUWCgXrVRA2qL29PYYStks68oUt7LJ96P48Ol5/Dd/19CC1sgrh3j0qhcM1QkVR9hVubm6SWCyG1dVVGg6HIcsyotEoIpEINjY2sCbKYI8ioShQohFcPHcWfb09mPb7EU8laSQa/ZdwcnLSwWwRy6qlkAGWfUtxOp2uQVUztX1Z0yAJK/h6oBftb7XjR7cbSUWhmXR633Iisa9QVbM1wnK5TDXWZNm1UK1W2VplK4GuGyhqFJGFEK6ePo+vPu6C77dbkCNRypzVCFNWhjM+n0OWJbK1tQWtrFErfGsQVo66rh9AK5ehVU3khTV82+/C2HkX/J47SKUVGo/HH7LMFLKcDHZIWWZVWZJMdmFub2+bjOgATLlpVqtmRImbl0dHTBf/tjkXmDZZribrrZimuU/o8/leZVYhSRIWFpcgR5NgZDWFjypFkPGNsxdX+89g2ReAyv4Qa6BWsbwHuPHx8TbmXQgGg9JKSFhXUlmRTV3MqKrIPjhAKpkSC4W86P19Rux6/12xp6NDvO6eEGOxiMjEhNk3KuM4xbGqa2hoaGlpOWp74blnbEebH7fVHTpkq6+vtzU2Nv4HTU1Ntsc4zsY9BLvdbmttbbU1Nzfb6urq6v8GhryjBlAl/ywAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;test&quot;
+        title=&quot;test&quot;
+        src=&quot;/static/8b2f89af5ce79788ab37b59be5e82c12/799d3/test.png&quot;
+        srcset=&quot;/static/8b2f89af5ce79788ab37b59be5e82c12/00d96/test.png 148w,
+/static/8b2f89af5ce79788ab37b59be5e82c12/0b23c/test.png 295w,
+/static/8b2f89af5ce79788ab37b59be5e82c12/799d3/test.png 590w,
+/static/8b2f89af5ce79788ab37b59be5e82c12/2a3d6/test.png 885w,
+/static/8b2f89af5ce79788ab37b59be5e82c12/ae92f/test.png 1180w,
+/static/8b2f89af5ce79788ab37b59be5e82c12/410eb/test.png 2564w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&quot;gif&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#gif&quot; aria-label=&quot;gif permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;gif&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;test.gif&quot;&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[한댓: 유튜브 한글 댓글만 보기 (크롬 확장 프로그램)]]></title><description><![CDATA[유튜브 영상에서 한글 댓글만을 볼 수 있는 크롬 확장 프로그램 "한댓" 쉽게 댓글 화면의 우측 상단에 위치한 버튼으로 한글 댓글만 보기를 활성화할 수 있습니다. 유튜브의 한국어 차별, 더이상 못 참겠어서 폭로합니다. by…]]></description><link>https://junhobaik.github.io/yt-ohc/</link><guid isPermaLink="false">https://junhobaik.github.io/yt-ohc/</guid><pubDate>Fri, 26 Jun 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/8b2f89af5ce79788ab37b59be5e82c12/410eb/Untitled.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 73.79095163806552%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsSAAALEgHS3X78AAADxUlEQVQ4y21T3U8cVRydSF8QQrGh60MlVaOx4j7Y1Vcf/BdMfBI/YkwoGaOBklLYbCGmKWIVsanYF+tLfTCuVdpabFxZWLZbkMrHsszCzLBfsx+z7C5bYNmZnbtzj3cWg9X0l5zc3Hvnd+4555fhZm7ffWJh3n8qFpU/jMeTfCye4OOJJL8YDPPBVfEfrPNLoTV+aWWND21u8YJOeKFc4QWN8GFCeaG427kuJ7oXloWXuUmv7xVKCB5VJgP9/1loHeRXD4w7Xui3PSj/dAu73ru1O1HaGOTmgsuO0OKyfn3sivmD200mJibIzRs3icfjIVNTk8Q/M03mZgPkz7lZMuufIbk33yGks4vA+QnB2UFC3+sk2hvteimXQyQR7+ckecPR3eskx44/i7YTbfQlu50ePnKENjQ10mNPPUlbWg7Tkyft9MUTz9O240/Tvz7gaSqZpOqDIi1qGjWqVVr5csywrChZ1cnNzc87rl37ngwPf47R0Uv0wtAQ+gcG8VH3afSdG0Cfy4ULw59h5NJlOHt6kTzjws7ODpR8HjtGBZVKhepDXxBUDEaYdXJer9eRy+dJNptFLpejxWKx1lAsPkCpVIJhGDAqrJGtJkPh4iiEsStIuH/B7h9TyP18g+Y+HakNIZFKOblAIOAQhDDJZDJQVZUWCgXrVRA2qL29PYYStks68oUt7LJ96P48Ol5/Dd/19CC1sgrh3j0qhcM1QkVR9hVubm6SWCyG1dVVGg6HIcsyotEoIpEINjY2sCbKYI8ioShQohFcPHcWfb09mPb7EU8laSQa/ZdwcnLSwWwRy6qlkAGWfUtxOp2uQVUztX1Z0yAJK/h6oBftb7XjR7cbSUWhmXR633Iisa9QVbM1wnK5TDXWZNm1UK1W2VplK4GuGyhqFJGFEK6ePo+vPu6C77dbkCNRypzVCFNWhjM+n0OWJbK1tQWtrFErfGsQVo66rh9AK5ehVU3khTV82+/C2HkX/J47SKUVGo/HH7LMFLKcDHZIWWZVWZJMdmFub2+bjOgATLlpVqtmRImbl0dHTBf/tjkXmDZZribrrZimuU/o8/leZVYhSRIWFpcgR5NgZDWFjypFkPGNsxdX+89g2ReAyv4Qa6BWsbwHuPHx8TbmXQgGg9JKSFhXUlmRTV3MqKrIPjhAKpkSC4W86P19Rux6/12xp6NDvO6eEGOxiMjEhNk3KuM4xbGqa2hoaGlpOWp74blnbEebH7fVHTpkq6+vtzU2Nv4HTU1Ntsc4zsY9BLvdbmttbbU1Nzfb6urq6v8GhryjBlAl/ywAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;Untitled%2096a200fb805647d29f1cf6f0413fcf28/Untitled.png&quot;
         title=&quot;Untitled%2096a200fb805647d29f1cf6f0413fcf28/Untitled.png&quot;
-        src=&quot;/static/8b2f89af5ce79788ab37b59be5e82c12/fcda8/Untitled.png&quot;
-        srcset=&quot;/static/8b2f89af5ce79788ab37b59be5e82c12/12f09/Untitled.png 148w,
-/static/8b2f89af5ce79788ab37b59be5e82c12/e4a3f/Untitled.png 295w,
-/static/8b2f89af5ce79788ab37b59be5e82c12/fcda8/Untitled.png 590w,
-/static/8b2f89af5ce79788ab37b59be5e82c12/efc66/Untitled.png 885w,
-/static/8b2f89af5ce79788ab37b59be5e82c12/c83ae/Untitled.png 1180w,
-/static/8b2f89af5ce79788ab37b59be5e82c12/88820/Untitled.png 2564w&quot;
+        src=&quot;/static/8b2f89af5ce79788ab37b59be5e82c12/799d3/Untitled.png&quot;
+        srcset=&quot;/static/8b2f89af5ce79788ab37b59be5e82c12/00d96/Untitled.png 148w,
+/static/8b2f89af5ce79788ab37b59be5e82c12/0b23c/Untitled.png 295w,
+/static/8b2f89af5ce79788ab37b59be5e82c12/799d3/Untitled.png 590w,
+/static/8b2f89af5ce79788ab37b59be5e82c12/2a3d6/Untitled.png 885w,
+/static/8b2f89af5ce79788ab37b59be5e82c12/ae92f/Untitled.png 1180w,
+/static/8b2f89af5ce79788ab37b59be5e82c12/410eb/Untitled.png 2564w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -642,30 +710,30 @@ keywords:
 프로필 정보에는 소개 문구, 이름, 회사, 위치, 메일, 웹사이트, RSS, 소셜(페이스북, 링크드인, 인스타그램, 깃허브)를 표시할 수 있습니다.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/bb3b091908f06ce471e84b2d0ed52441/9d53e/DraggedImage.png&quot;
+    href=&quot;/static/bb3b091908f06ce471e84b2d0ed52441/26011/DraggedImage.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 65.54054054054055%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAABYlAAAWJQFJUiTwAAACEElEQVQ4y41S2W7TUBD1I+IRia+osJBcIRX+IQ/5ihI7UT6ONxSVRomVpagPgQBCRQLhJl6v9/UuzFw7AaqCOtLx3DvrmblWzDdvn1xfz17f/PhuWNZeJ2GkO66vb7Zf9e2Xb/pHwPY/+NRq48Pnm/OLS/Opcnnx7rSsSoFCGRNlVQsO55pyieYP1HeAtqIWooFPFCXCXKxeKZvNRrvd7SrbcViSpE1Zlg3nvIGaDwajlJVFUaxWqzPl6uq95vte47iuIGHIq6rijuPyn5bFLetWAppx8PO8KJA8Z4xJoAjOGU4HefVyuTxTFouFFoYRDaNIdEEiCAKx2++FC01aeFL7vi99nucJmESuSSYgzaZpC67Xay0ghNq2I/wgQIbiodISvFMQGcZJSrMsF5RSHEUAY2ATCEJCYTuuwGYesGvvjtjbtkjT7H6G8/lcq+uaHpriB0fDEQ/jIQ7jIvCcJMn9BWezmQbM6MGJfnDikiWgGeyrkGd4SIk8z6X9nwUbrNA68VVYnhcsTVMGry413qEIQ4GwIw7xXcFKFjRN87RrchTcl9PtzscxCYFRiWSHvbv+fwk2g//wpTKZTJ7DPkiWZSkgBiSEkASYJWBKMqkzCZQ4jiXS33bMScEWTKfTF0qv13s0HA5PBoOBquv6M4A6Ho9VwzDwfsRgoKvGcKiORiMV4jtbm4Ma4k/6/f7jX4BkkA20OmsfAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 65.77498033044847%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAABYlAAAWJQFJUiTwAAACEElEQVQ4y41S2W7TUBD1I+IRia+osJBcIRX+IQ/5ihI7UT6ONxSVRomVpagPgQBCRQLhJl6v9/UuzFw7AaqCOtLx3DvrmblWzDdvn1xfz17f/PhuWNZeJ2GkO66vb7Zf9e2Xb/pHwPY/+NRq48Pnm/OLS/Opcnnx7rSsSoFCGRNlVQsO55pyieYP1HeAtqIWooFPFCXCXKxeKZvNRrvd7SrbcViSpE1Zlg3nvIGaDwajlJVFUaxWqzPl6uq95vte47iuIGHIq6rijuPyn5bFLetWAppx8PO8KJA8Z4xJoAjOGU4HefVyuTxTFouFFoYRDaNIdEEiCAKx2++FC01aeFL7vi99nucJmESuSSYgzaZpC67Xay0ghNq2I/wgQIbiodISvFMQGcZJSrMsF5RSHEUAY2ATCEJCYTuuwGYesGvvjtjbtkjT7H6G8/lcq+uaHpriB0fDEQ/jIQ7jIvCcJMn9BWezmQbM6MGJfnDikiWgGeyrkGd4SIk8z6X9nwUbrNA68VVYnhcsTVMGry413qEIQ4GwIw7xXcFKFjRN87RrchTcl9PtzscxCYFRiWSHvbv+fwk2g//wpTKZTJ7DPkiWZSkgBiSEkASYJWBKMqkzCZQ4jiXS33bMScEWTKfTF0qv13s0HA5PBoOBquv6M4A6Ho9VwzDwfsRgoKvGcKiORiMV4jtbm4Ma4k/6/f7jX4BkkA20OmsfAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;DraggedImage&quot;
         title=&quot;DraggedImage&quot;
-        src=&quot;/static/bb3b091908f06ce471e84b2d0ed52441/fcda8/DraggedImage.png&quot;
-        srcset=&quot;/static/bb3b091908f06ce471e84b2d0ed52441/12f09/DraggedImage.png 148w,
-/static/bb3b091908f06ce471e84b2d0ed52441/e4a3f/DraggedImage.png 295w,
-/static/bb3b091908f06ce471e84b2d0ed52441/fcda8/DraggedImage.png 590w,
-/static/bb3b091908f06ce471e84b2d0ed52441/efc66/DraggedImage.png 885w,
-/static/bb3b091908f06ce471e84b2d0ed52441/c83ae/DraggedImage.png 1180w,
-/static/bb3b091908f06ce471e84b2d0ed52441/9d53e/DraggedImage.png 2542w&quot;
+        src=&quot;/static/bb3b091908f06ce471e84b2d0ed52441/799d3/DraggedImage.png&quot;
+        srcset=&quot;/static/bb3b091908f06ce471e84b2d0ed52441/00d96/DraggedImage.png 148w,
+/static/bb3b091908f06ce471e84b2d0ed52441/0b23c/DraggedImage.png 295w,
+/static/bb3b091908f06ce471e84b2d0ed52441/799d3/DraggedImage.png 590w,
+/static/bb3b091908f06ce471e84b2d0ed52441/2a3d6/DraggedImage.png 885w,
+/static/bb3b091908f06ce471e84b2d0ed52441/ae92f/DraggedImage.png 1180w,
+/static/bb3b091908f06ce471e84b2d0ed52441/26011/DraggedImage.png 2542w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -675,30 +743,30 @@ keywords:
 &lt;p&gt;스크롤 다운시 헤더와 프로필 정보가 숨겨져 게시물 목록에 집중할 수 있습니다.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/199c85460d31fb1530b890efe0ed443c/9d53e/DraggedImage-1.png&quot;
+    href=&quot;/static/199c85460d31fb1530b890efe0ed443c/26011/DraggedImage-1.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 65.54054054054055%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAABYlAAAWJQFJUiTwAAAB30lEQVQ4y51SzWrbQBDWMfRYyFOEmkJDoe07+OBniKH2ym+XU8CEGEfEvuTSVm7axC76ceoUKfrf1Wo1ndlIOoSQhn7wMTu7M9/M7K5hHZ+8vrw8H60dx/T9WxbeR+zuT8C+2D/Z6seG2Vdr9u37Tcevq+uO5NvEq7WJ/ufTM2vfmJ2eHXJeAEHKCrgQICsFvKwgK0oohIRS1iCkgrKqQdUAaABdjKsBQ0DmAu6jGKyL5SdjPp+/U6oWqKcQkhCGoQyCQEZRJJMkkXEca6Zpqknrsiwl9dBQVVIWi8XigxYkEXhATUS3LopCk3OuSes8z7t9LK5jEephOll2ghUCmlMEcC4Ak7TFDiFG5o98IQS0Of8U3G5vwXFdtFvwPA9cXHuer33f97WP1/JyQbwfEJxjR1x3Qo9GlrpuSTEvF8QrpYRWUBdA2+R2IP9Zwbbg790OXBx1s/mlx9/t7vRemmWUqAu04k8Ktq9ML0bEr6GwI4WJmu0aO1ZZlikcmb6YauMbQaEFLcs6fDzK/4AKLJfLj8Z0On2LXyHEyjhRFiMTx3ET214lrusl2O2TpLiGlJPiZw9ms9l7o9/v700mk4PxeNxjjL0hOxwOkUe90WhEez3ae4Y6xzTNg8Fg8OovbVmSIUS+kqoAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 65.77498033044847%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAABYlAAAWJQFJUiTwAAAB30lEQVQ4y51SzWrbQBDWMfRYyFOEmkJDoe07+OBniKH2ym+XU8CEGEfEvuTSVm7axC76ceoUKfrf1Wo1ndlIOoSQhn7wMTu7M9/M7K5hHZ+8vrw8H60dx/T9WxbeR+zuT8C+2D/Z6seG2Vdr9u37Tcevq+uO5NvEq7WJ/ufTM2vfmJ2eHXJeAEHKCrgQICsFvKwgK0oohIRS1iCkgrKqQdUAaABdjKsBQ0DmAu6jGKyL5SdjPp+/U6oWqKcQkhCGoQyCQEZRJJMkkXEca6Zpqknrsiwl9dBQVVIWi8XigxYkEXhATUS3LopCk3OuSes8z7t9LK5jEephOll2ghUCmlMEcC4Ak7TFDiFG5o98IQS0Of8U3G5vwXFdtFvwPA9cXHuer33f97WP1/JyQbwfEJxjR1x3Qo9GlrpuSTEvF8QrpYRWUBdA2+R2IP9Zwbbg790OXBx1s/mlx9/t7vRemmWUqAu04k8Ktq9ML0bEr6GwI4WJmu0aO1ZZlikcmb6YauMbQaEFLcs6fDzK/4AKLJfLj8Z0On2LXyHEyjhRFiMTx3ET214lrusl2O2TpLiGlJPiZw9ms9l7o9/v700mk4PxeNxjjL0hOxwOkUe90WhEez3ae4Y6xzTNg8Fg8OovbVmSIUS+kqoAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;DraggedImage 1&quot;
         title=&quot;DraggedImage 1&quot;
-        src=&quot;/static/199c85460d31fb1530b890efe0ed443c/fcda8/DraggedImage-1.png&quot;
-        srcset=&quot;/static/199c85460d31fb1530b890efe0ed443c/12f09/DraggedImage-1.png 148w,
-/static/199c85460d31fb1530b890efe0ed443c/e4a3f/DraggedImage-1.png 295w,
-/static/199c85460d31fb1530b890efe0ed443c/fcda8/DraggedImage-1.png 590w,
-/static/199c85460d31fb1530b890efe0ed443c/efc66/DraggedImage-1.png 885w,
-/static/199c85460d31fb1530b890efe0ed443c/c83ae/DraggedImage-1.png 1180w,
-/static/199c85460d31fb1530b890efe0ed443c/9d53e/DraggedImage-1.png 2542w&quot;
+        src=&quot;/static/199c85460d31fb1530b890efe0ed443c/799d3/DraggedImage-1.png&quot;
+        srcset=&quot;/static/199c85460d31fb1530b890efe0ed443c/00d96/DraggedImage-1.png 148w,
+/static/199c85460d31fb1530b890efe0ed443c/0b23c/DraggedImage-1.png 295w,
+/static/199c85460d31fb1530b890efe0ed443c/799d3/DraggedImage-1.png 590w,
+/static/199c85460d31fb1530b890efe0ed443c/2a3d6/DraggedImage-1.png 885w,
+/static/199c85460d31fb1530b890efe0ed443c/ae92f/DraggedImage-1.png 1180w,
+/static/199c85460d31fb1530b890efe0ed443c/26011/DraggedImage-1.png 2542w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -712,30 +780,30 @@ keywords:
 목차는 클릭하여 해당 위치로 이동할 수 있고, 스크롤 위치에 따라 보고있는 목차 부분이 강조되어 보고있는 위치를 알 수 있습니다.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/a73e69c49558583defee7bcfe86a6fb4/e872c/DraggedImage-2.png&quot;
+    href=&quot;/static/a73e69c49558583defee7bcfe86a6fb4/bfecb/DraggedImage-2.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 64.1891891891892%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAABYlAAAWJQFJUiTwAAAB8ElEQVQ4y52Sy27aUBCGD+FSCtuqzkNU3YW8TvcRRKraV+uGVS8SlzbNopVtghvTYmyCAd8wvh5PZxxDaBRVaUf6PT5jz+d/zjEbvOs+u7z8dDaeTDqTn9P2r6nWnunz9ndJaYuj68dJvj7D/Pbz128v2Mf3H06TJAEKzjPYBiHESQp+EEHC4UGlO2UAEV5CP8z75avxG/bl4uLE9bzYsuwUc8I5J/o/KeM8IOBspnXYYDBshWHIySXCsjiOM103soVp5vlmsch0Y57N5zd5zVwusyAM0RtkFNSDigmoado56/V6LSxwuA0Cwmq1gs1mA47jgut6uWi93QaAU8Bui5BH93vgdDo9Z/1+v5Wm6R5IbHQAQRBAFEVAH8AJctF6FwQrRHHn8D6QAI5bOPPInZuL3Hq4xnf3wDv2X4A0Do3s4YjFvv6hHejRDsmBaS7Bdpy9m8M4AD0MxEM5SW53mR6kBMcD4Lhf9BFOB3mYD0W1QlFxKB02HA5P7zvwfR/+J3Rdf8263e5L3LMf6/V6YlmWahiGKkoySlIlWVYVRVGvxuNcEtbl0UiV5VH+DP9NlXqwV7Ftey2K4itWrVYrzWbzOeoYJdTrdaFWqwlYF1ipJJTLZaFSqQiMMeHoqCyUsEbvUO0JZuppNBqUj59i/AbPNX8jSIgNKgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 64.15963161933999%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAABYlAAAWJQFJUiTwAAAB8ElEQVQ4y52Sy27aUBCGD+FSCtuqzkNU3YW8TvcRRKraV+uGVS8SlzbNopVtghvTYmyCAd8wvh5PZxxDaBRVaUf6PT5jz+d/zjEbvOs+u7z8dDaeTDqTn9P2r6nWnunz9ndJaYuj68dJvj7D/Pbz128v2Mf3H06TJAEKzjPYBiHESQp+EEHC4UGlO2UAEV5CP8z75avxG/bl4uLE9bzYsuwUc8I5J/o/KeM8IOBspnXYYDBshWHIySXCsjiOM103soVp5vlmsch0Y57N5zd5zVwusyAM0RtkFNSDigmoado56/V6LSxwuA0Cwmq1gs1mA47jgut6uWi93QaAU8Bui5BH93vgdDo9Z/1+v5Wm6R5IbHQAQRBAFEVAH8AJctF6FwQrRHHn8D6QAI5bOPPInZuL3Hq4xnf3wDv2X4A0Do3s4YjFvv6hHejRDsmBaS7Bdpy9m8M4AD0MxEM5SW53mR6kBMcD4Lhf9BFOB3mYD0W1QlFxKB02HA5P7zvwfR/+J3Rdf8263e5L3LMf6/V6YlmWahiGKkoySlIlWVYVRVGvxuNcEtbl0UiV5VH+DP9NlXqwV7Ftey2K4itWrVYrzWbzOeoYJdTrdaFWqwlYF1ipJJTLZaFSqQiMMeHoqCyUsEbvUO0JZuppNBqUj59i/AbPNX8jSIgNKgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;DraggedImage 2&quot;
         title=&quot;DraggedImage 2&quot;
-        src=&quot;/static/a73e69c49558583defee7bcfe86a6fb4/fcda8/DraggedImage-2.png&quot;
-        srcset=&quot;/static/a73e69c49558583defee7bcfe86a6fb4/12f09/DraggedImage-2.png 148w,
-/static/a73e69c49558583defee7bcfe86a6fb4/e4a3f/DraggedImage-2.png 295w,
-/static/a73e69c49558583defee7bcfe86a6fb4/fcda8/DraggedImage-2.png 590w,
-/static/a73e69c49558583defee7bcfe86a6fb4/efc66/DraggedImage-2.png 885w,
-/static/a73e69c49558583defee7bcfe86a6fb4/c83ae/DraggedImage-2.png 1180w,
-/static/a73e69c49558583defee7bcfe86a6fb4/e872c/DraggedImage-2.png 2606w&quot;
+        src=&quot;/static/a73e69c49558583defee7bcfe86a6fb4/799d3/DraggedImage-2.png&quot;
+        srcset=&quot;/static/a73e69c49558583defee7bcfe86a6fb4/00d96/DraggedImage-2.png 148w,
+/static/a73e69c49558583defee7bcfe86a6fb4/0b23c/DraggedImage-2.png 295w,
+/static/a73e69c49558583defee7bcfe86a6fb4/799d3/DraggedImage-2.png 590w,
+/static/a73e69c49558583defee7bcfe86a6fb4/2a3d6/DraggedImage-2.png 885w,
+/static/a73e69c49558583defee7bcfe86a6fb4/ae92f/DraggedImage-2.png 1180w,
+/static/a73e69c49558583defee7bcfe86a6fb4/bfecb/DraggedImage-2.png 2606w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -744,30 +812,30 @@ keywords:
     &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/6776865ab0b7d061dcd4ae27919db0a4/ab986/screenshot.png&quot;
+    href=&quot;/static/6776865ab0b7d061dcd4ae27919db0a4/c72b4/screenshot.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 75.67567567567568%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAABYlAAAWJQFJUiTwAAABz0lEQVQ4y42UW0/bQBCF+f8P5Zf0tYjnSog+VEIICioSNMUhkDiJvd6LvRcfZia2ZaMksNKJY3v22zOzsz4BjbZt+YIYI1RVQWtD0lBK7e6NwXhw/Ef1z0/GQL4yrCKYMWYAVwQtCV4UJbz3EpdS+hqQJzRNI9ex2H0P2ed2AhxDPw52OXuei96WOS3m98b18ycO2UEIQdzsnrVyb6yFJRljB7e9nKf4dCBlnuyck0lcx1JVVD891LUfvDCL43ihSP8PAusOmL0s8D+bi55mz5RyRs/pfRMQItWtN2CdwI865FR4d8uyJIe8u4U4aUNN9iw3mMTzAp8CeSL3X57nWK/XAi1ITpf4+Wjx7dLj9LLB9xuLxlQUfwTIzqR+1HcrAuYEZHdbklYFbucKP+40zu4Nfj1VlI2RFjsI5Be2qyFSoBXCqC3kd6LkaslqeLPP4eviFZvNFg/bGtfZBrNsDR92bcTtETpxp9h8Q7tvJg0+AdZ1g/nijVKp8afw+P2i8PdxKUDJoDtyiYEkJ6fKox019wRoCfQvW2C1pbNbVohGI0VuFU/N7dAQgIExJum9tgMfPXpc3osHhfPbFZZX99D0QdC0EAM91WsAjjQGvgPA+JSG45zZ6wAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 75.40208136234627%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAABYlAAAWJQFJUiTwAAABz0lEQVQ4y42UW0/bQBCF+f8P5Zf0tYjnSog+VEIICioSNMUhkDiJvd6LvRcfZia2ZaMksNKJY3v22zOzsz4BjbZt+YIYI1RVQWtD0lBK7e6NwXhw/Ef1z0/GQL4yrCKYMWYAVwQtCV4UJbz3EpdS+hqQJzRNI9ex2H0P2ed2AhxDPw52OXuei96WOS3m98b18ycO2UEIQdzsnrVyb6yFJRljB7e9nKf4dCBlnuyck0lcx1JVVD891LUfvDCL43ihSP8PAusOmL0s8D+bi55mz5RyRs/pfRMQItWtN2CdwI865FR4d8uyJIe8u4U4aUNN9iw3mMTzAp8CeSL3X57nWK/XAi1ITpf4+Wjx7dLj9LLB9xuLxlQUfwTIzqR+1HcrAuYEZHdbklYFbucKP+40zu4Nfj1VlI2RFjsI5Be2qyFSoBXCqC3kd6LkaslqeLPP4eviFZvNFg/bGtfZBrNsDR92bcTtETpxp9h8Q7tvJg0+AdZ1g/nijVKp8afw+P2i8PdxKUDJoDtyiYEkJ6fKox019wRoCfQvW2C1pbNbVohGI0VuFU/N7dAQgIExJum9tgMfPXpc3osHhfPbFZZX99D0QdC0EAM91WsAjjQGvgPA+JSG45zZ6wAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;screenshot&quot;
         title=&quot;screenshot&quot;
-        src=&quot;/static/6776865ab0b7d061dcd4ae27919db0a4/fcda8/screenshot.png&quot;
-        srcset=&quot;/static/6776865ab0b7d061dcd4ae27919db0a4/12f09/screenshot.png 148w,
-/static/6776865ab0b7d061dcd4ae27919db0a4/e4a3f/screenshot.png 295w,
-/static/6776865ab0b7d061dcd4ae27919db0a4/fcda8/screenshot.png 590w,
-/static/6776865ab0b7d061dcd4ae27919db0a4/efc66/screenshot.png 885w,
-/static/6776865ab0b7d061dcd4ae27919db0a4/c83ae/screenshot.png 1180w,
-/static/6776865ab0b7d061dcd4ae27919db0a4/ab986/screenshot.png 2114w&quot;
+        src=&quot;/static/6776865ab0b7d061dcd4ae27919db0a4/799d3/screenshot.png&quot;
+        srcset=&quot;/static/6776865ab0b7d061dcd4ae27919db0a4/00d96/screenshot.png 148w,
+/static/6776865ab0b7d061dcd4ae27919db0a4/0b23c/screenshot.png 295w,
+/static/6776865ab0b7d061dcd4ae27919db0a4/799d3/screenshot.png 590w,
+/static/6776865ab0b7d061dcd4ae27919db0a4/2a3d6/screenshot.png 885w,
+/static/6776865ab0b7d061dcd4ae27919db0a4/ae92f/screenshot.png 1180w,
+/static/6776865ab0b7d061dcd4ae27919db0a4/c72b4/screenshot.png 2114w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -780,30 +848,30 @@ keywords:
 &lt;p&gt;만약 시리즈 게시물이라면 위와 같이 게시물 상단에 시리즈 목록이 표시됩니다.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/c476d2829cc06a41a5486bda04fcf1df/60ab9/DraggedImage-4.png&quot;
+    href=&quot;/static/c476d2829cc06a41a5486bda04fcf1df/c4d01/DraggedImage-4.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 68.24324324324324%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAABYlAAAWJQFJUiTwAAABtklEQVQ4y6WT3XLTMBCFc8sFA8/EgzBTc8Hj8CzAFU/Q3lBDhxIysadO68hWSPBfLEuyosNKrlvaScJ0ema+kX9WZ3e19iQ8P30bLa7esYwHfLUO1ps/wSxKgouf8+DHNCaig1z+ioPLWXwyjRbvv11M30ycimINJ9FJFGXlVyE1tkKh7TShHqHvaCimrlpYbZDcLL94QyE6oZSyUsrekCxg8BSsVa6goig+esOqqmRd12iaxmqtbdd1tm1bj6DrziPpXvhnQ06yIfkV6J3hZrP55A13u53EIFsUJa6ShWdxfY2cc3C+wmr1G8slw5IxUCcY5TwJVynKsvzsDfu+lxhTDgGgJNgn9073PagTKKXHuMOG+wwemJERtQw6AtRNA3PM0O0ZgjuP2zxCQ/uH+/ujLTtDGgxu0hR5zuEGtd1uaW1Aw4AkA/oi7hK6s3QtHzV0FY7ZBwOBhkwpBoe0z1Dcnp+hCg1N0jCWGZqq2Q3Bxm06gn7wHT7OqHXvUVrjKaIjGv4UxthZnuffiTBN0zCO43A+n4dJkoT0Lsyy7H985ZzPoij6MLnVS+I18eoZuP0vqNDJX168rR8wWWI4AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 67.91836734693878%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAABYlAAAWJQFJUiTwAAABtklEQVQ4y6WT3XLTMBCFc8sFA8/EgzBTc8Hj8CzAFU/Q3lBDhxIysadO68hWSPBfLEuyosNKrlvaScJ0ema+kX9WZ3e19iQ8P30bLa7esYwHfLUO1ps/wSxKgouf8+DHNCaig1z+ioPLWXwyjRbvv11M30ycimINJ9FJFGXlVyE1tkKh7TShHqHvaCimrlpYbZDcLL94QyE6oZSyUsrekCxg8BSsVa6goig+esOqqmRd12iaxmqtbdd1tm1bj6DrziPpXvhnQ06yIfkV6J3hZrP55A13u53EIFsUJa6ShWdxfY2cc3C+wmr1G8slw5IxUCcY5TwJVynKsvzsDfu+lxhTDgGgJNgn9073PagTKKXHuMOG+wwemJERtQw6AtRNA3PM0O0ZgjuP2zxCQ/uH+/ujLTtDGgxu0hR5zuEGtd1uaW1Aw4AkA/oi7hK6s3QtHzV0FY7ZBwOBhkwpBoe0z1Dcnp+hCg1N0jCWGZqq2Q3Bxm06gn7wHT7OqHXvUVrjKaIjGv4UxthZnuffiTBN0zCO43A+n4dJkoT0Lsyy7H985ZzPoij6MLnVS+I18eoZuP0vqNDJX168rR8wWWI4AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;DraggedImage 4&quot;
         title=&quot;DraggedImage 4&quot;
-        src=&quot;/static/c476d2829cc06a41a5486bda04fcf1df/fcda8/DraggedImage-4.png&quot;
-        srcset=&quot;/static/c476d2829cc06a41a5486bda04fcf1df/12f09/DraggedImage-4.png 148w,
-/static/c476d2829cc06a41a5486bda04fcf1df/e4a3f/DraggedImage-4.png 295w,
-/static/c476d2829cc06a41a5486bda04fcf1df/fcda8/DraggedImage-4.png 590w,
-/static/c476d2829cc06a41a5486bda04fcf1df/efc66/DraggedImage-4.png 885w,
-/static/c476d2829cc06a41a5486bda04fcf1df/c83ae/DraggedImage-4.png 1180w,
-/static/c476d2829cc06a41a5486bda04fcf1df/60ab9/DraggedImage-4.png 2450w&quot;
+        src=&quot;/static/c476d2829cc06a41a5486bda04fcf1df/799d3/DraggedImage-4.png&quot;
+        srcset=&quot;/static/c476d2829cc06a41a5486bda04fcf1df/00d96/DraggedImage-4.png 148w,
+/static/c476d2829cc06a41a5486bda04fcf1df/0b23c/DraggedImage-4.png 295w,
+/static/c476d2829cc06a41a5486bda04fcf1df/799d3/DraggedImage-4.png 590w,
+/static/c476d2829cc06a41a5486bda04fcf1df/2a3d6/DraggedImage-4.png 885w,
+/static/c476d2829cc06a41a5486bda04fcf1df/ae92f/DraggedImage-4.png 1180w,
+/static/c476d2829cc06a41a5486bda04fcf1df/c4d01/DraggedImage-4.png 2450w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -817,30 +885,30 @@ keywords:
 아래는 태그에 해당하는 게시물 목록이 표시됩니다.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/b14e941231347954b04f4e7ab64a05d1/e872c/DraggedImage-5.png&quot;
+    href=&quot;/static/b14e941231347954b04f4e7ab64a05d1/bfecb/DraggedImage-5.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 64.1891891891892%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAABYlAAAWJQFJUiTwAAAB+0lEQVQ4y41STW/TQBD1gRySXFGcSiFRckbcmv4d7pWDhOC3ccipgJTU0HKoZJW21HG+5XzY2PHn7nqYWZsqQFQ60vPb1e68mTdrRf/Qf/7t8vPpnWX1ZrOF5v70tKW91q6MW824MTXj+/3/cX1/ivz+y+XVS+XT2ccTxhlQiCwDxjmkjEOUMOAZABMAvMD+WgLPE/zEQSzzr29u3ylfLy6OPd9PHcflyKjHmRCCKjwZmRARCc5m055yfq534zgWjGFHnGpCRoz7PfAsRQ7D8I8zCrqPkZLgdDp9owwGgy52JCCPjCwHYQhRFAEW2uMYUBDiJIFEIqUG4B/B4XDYxYMHQSGL5kF1KImYkKapFCI31Fze4COChQXw/R2s1mvYbreAs83XjgOHIsvjcUHXdWE8mcAEsVgswLZtsFcrLOTDbrcDz/Ok/ScLkiWaG1kkToq5hUEgBQm0PyiIj3LMSCE/4whBBfBVBQoimFzTn0BnNNrfoH0BqY6Oeoqu6yd/zyXAThbLpbQ7R6zQLlnes3lwnvP5/K3S7/dfbTabH47jjPARTGQThUzLsszxePzAaMfEDszRaCRBd+gu5SDucO5bwzBeK6VS6Vm1Wq0h6gi1XC6rtVpNbbVaarPZVJvIL5DrR0dqo9FQO52O2m635Z1KpaJSToE65pZ/Ad78gsk2jOulAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 64.15963161933999%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAABYlAAAWJQFJUiTwAAAB+0lEQVQ4y41STW/TQBD1gRySXFGcSiFRckbcmv4d7pWDhOC3ccipgJTU0HKoZJW21HG+5XzY2PHn7nqYWZsqQFQ60vPb1e68mTdrRf/Qf/7t8vPpnWX1ZrOF5v70tKW91q6MW824MTXj+/3/cX1/ivz+y+XVS+XT2ccTxhlQiCwDxjmkjEOUMOAZABMAvMD+WgLPE/zEQSzzr29u3ylfLy6OPd9PHcflyKjHmRCCKjwZmRARCc5m055yfq534zgWjGFHnGpCRoz7PfAsRQ7D8I8zCrqPkZLgdDp9owwGgy52JCCPjCwHYQhRFAEW2uMYUBDiJIFEIqUG4B/B4XDYxYMHQSGL5kF1KImYkKapFCI31Fze4COChQXw/R2s1mvYbreAs83XjgOHIsvjcUHXdWE8mcAEsVgswLZtsFcrLOTDbrcDz/Ok/ScLkiWaG1kkToq5hUEgBQm0PyiIj3LMSCE/4whBBfBVBQoimFzTn0BnNNrfoH0BqY6Oeoqu6yd/zyXAThbLpbQ7R6zQLlnes3lwnvP5/K3S7/dfbTabH47jjPARTGQThUzLsszxePzAaMfEDszRaCRBd+gu5SDucO5bwzBeK6VS6Vm1Wq0h6gi1XC6rtVpNbbVaarPZVJvIL5DrR0dqo9FQO52O2m635Z1KpaJSToE65pZ/Ad78gsk2jOulAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;DraggedImage 5&quot;
         title=&quot;DraggedImage 5&quot;
-        src=&quot;/static/b14e941231347954b04f4e7ab64a05d1/fcda8/DraggedImage-5.png&quot;
-        srcset=&quot;/static/b14e941231347954b04f4e7ab64a05d1/12f09/DraggedImage-5.png 148w,
-/static/b14e941231347954b04f4e7ab64a05d1/e4a3f/DraggedImage-5.png 295w,
-/static/b14e941231347954b04f4e7ab64a05d1/fcda8/DraggedImage-5.png 590w,
-/static/b14e941231347954b04f4e7ab64a05d1/efc66/DraggedImage-5.png 885w,
-/static/b14e941231347954b04f4e7ab64a05d1/c83ae/DraggedImage-5.png 1180w,
-/static/b14e941231347954b04f4e7ab64a05d1/e872c/DraggedImage-5.png 2606w&quot;
+        src=&quot;/static/b14e941231347954b04f4e7ab64a05d1/799d3/DraggedImage-5.png&quot;
+        srcset=&quot;/static/b14e941231347954b04f4e7ab64a05d1/00d96/DraggedImage-5.png 148w,
+/static/b14e941231347954b04f4e7ab64a05d1/0b23c/DraggedImage-5.png 295w,
+/static/b14e941231347954b04f4e7ab64a05d1/799d3/DraggedImage-5.png 590w,
+/static/b14e941231347954b04f4e7ab64a05d1/2a3d6/DraggedImage-5.png 885w,
+/static/b14e941231347954b04f4e7ab64a05d1/ae92f/DraggedImage-5.png 1180w,
+/static/b14e941231347954b04f4e7ab64a05d1/bfecb/DraggedImage-5.png 2606w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -852,30 +920,30 @@ keywords:
 검색 결과에 따른 게시물 목록이 아래 표시됩니다.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/8158179eb51084501d2c9b56a94258ae/e872c/DraggedImage-6.png&quot;
+    href=&quot;/static/8158179eb51084501d2c9b56a94258ae/bfecb/DraggedImage-6.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 64.1891891891892%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAABYlAAAWJQFJUiTwAAABz0lEQVQ4y61SS2/aQBDeQzkA4haV/Iiqt5C/03tkKkXtb+uBUx8SjzbpIZKVgs02xviN7RKq2GuvpzOLCVGUKBw68ufZnZn95tux2fjT4Ojn5bcz4+amb9uOFiep5geRdqXPNH3KNf3X/GVcz8/Qf/x+efWGff385bQoCyCTVQWiKKAoJYiyAnwAl3v/GBjP8ZX9zdT56+nsA/txcXGyvr0VSZKW6IuyLBUwfzAqKe+IcLm0+2w8nvSyLJMFKkMi7An3EEJUuxgZrR9bnRNEaNv2ezYcDnsSDbZGBUQMSAZ5nivQWgjVEB4a8dW8e8LRaNTDQlkXKMIoisCyFrB0HLyGA57vQxCEsNlsFAkR7zQcREgHwzBUxHEcQ5IksFqtlKc9xanmIMKa8yDbj/AFhX/WawhJHSry/QBcz0PFEUSo0g9w73qq5kmF+FFOCvrE2xxNXa7iWGJSep4nHceROEvpui7ufYmzVDG8vtz+uhUhJ8LFYtFnk8nkFP6TYaNzNhgM3uLATez4GwfO0XPLsrhhmnw6nXHDMBXM+ZzjVXmapnxXR76GgfFY1/V3rNFovGq3268Rx61Wq9vpdLqMsWdB+Waz2aVaPPMQxxhv/gP71X5/v6sNXgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 64.15963161933999%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAABYlAAAWJQFJUiTwAAABz0lEQVQ4y61SS2/aQBDeQzkA4haV/Iiqt5C/03tkKkXtb+uBUx8SjzbpIZKVgs02xviN7RKq2GuvpzOLCVGUKBw68ufZnZn95tux2fjT4Ojn5bcz4+amb9uOFiep5geRdqXPNH3KNf3X/GVcz8/Qf/x+efWGff385bQoCyCTVQWiKKAoJYiyAnwAl3v/GBjP8ZX9zdT56+nsA/txcXGyvr0VSZKW6IuyLBUwfzAqKe+IcLm0+2w8nvSyLJMFKkMi7An3EEJUuxgZrR9bnRNEaNv2ezYcDnsSDbZGBUQMSAZ5nivQWgjVEB4a8dW8e8LRaNTDQlkXKMIoisCyFrB0HLyGA57vQxCEsNlsFAkR7zQcREgHwzBUxHEcQ5IksFqtlKc9xanmIMKa8yDbj/AFhX/WawhJHSry/QBcz0PFEUSo0g9w73qq5kmF+FFOCvrE2xxNXa7iWGJSep4nHceROEvpui7ufYmzVDG8vtz+uhUhJ8LFYtFnk8nkFP6TYaNzNhgM3uLATez4GwfO0XPLsrhhmnw6nXHDMBXM+ZzjVXmapnxXR76GgfFY1/V3rNFovGq3268Rx61Wq9vpdLqMsWdB+Waz2aVaPPMQxxhv/gP71X5/v6sNXgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;DraggedImage 6&quot;
         title=&quot;DraggedImage 6&quot;
-        src=&quot;/static/8158179eb51084501d2c9b56a94258ae/fcda8/DraggedImage-6.png&quot;
-        srcset=&quot;/static/8158179eb51084501d2c9b56a94258ae/12f09/DraggedImage-6.png 148w,
-/static/8158179eb51084501d2c9b56a94258ae/e4a3f/DraggedImage-6.png 295w,
-/static/8158179eb51084501d2c9b56a94258ae/fcda8/DraggedImage-6.png 590w,
-/static/8158179eb51084501d2c9b56a94258ae/efc66/DraggedImage-6.png 885w,
-/static/8158179eb51084501d2c9b56a94258ae/c83ae/DraggedImage-6.png 1180w,
-/static/8158179eb51084501d2c9b56a94258ae/e872c/DraggedImage-6.png 2606w&quot;
+        src=&quot;/static/8158179eb51084501d2c9b56a94258ae/799d3/DraggedImage-6.png&quot;
+        srcset=&quot;/static/8158179eb51084501d2c9b56a94258ae/00d96/DraggedImage-6.png 148w,
+/static/8158179eb51084501d2c9b56a94258ae/0b23c/DraggedImage-6.png 295w,
+/static/8158179eb51084501d2c9b56a94258ae/799d3/DraggedImage-6.png 590w,
+/static/8158179eb51084501d2c9b56a94258ae/2a3d6/DraggedImage-6.png 885w,
+/static/8158179eb51084501d2c9b56a94258ae/ae92f/DraggedImage-6.png 1180w,
+/static/8158179eb51084501d2c9b56a94258ae/bfecb/DraggedImage-6.png 2606w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -898,30 +966,30 @@ keywords:
 &lt;p&gt;아래 링크를 통해 Get Started, Document를 확인 할 수 있습니다.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/junhobaik/junhobaik.github.io/wiki/Document-(Borderless)&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;Documents&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Borderless 블로그 - 개발기]]></title><description><![CDATA[기존 블로그에서 새로 블로그를 구현했다. 테마 이름은 “Borderless”이다. 말그대로 블로그 디자인 요소에 선이 없어서 이렇게 지었다. 이번에도 동일하게 Gatsby…]]></description><link>https://junhobaik.github.io/develop-blog-v3_1/</link><guid isPermaLink="false">https://junhobaik.github.io/develop-blog-v3_1/</guid><pubDate>Mon, 30 Dec 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/932937f9f19d299e2dab376f62749e1b/8579d/DraggedImage.png&quot;
+    href=&quot;/static/932937f9f19d299e2dab376f62749e1b/2e7fc/DraggedImage.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 52.70270270270271%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABYlAAAWJQFJUiTwAAABK0lEQVQoz5VSiW7DIAzl//9xldbcQA5ykKuJ5+c1Fc2qrbNk2Rj8eD6UNoZutxut60r7vtNZENu27U9FPnDUx+VCSZpRWVUCUDcNGWPlbKylZVnoHZnnWUAVEuEcbAwzjuNYrNaaKr7vuo7atn0oztM0PXLCypTWRh7NdyZgNI6jJMD6YaCB1XtPfd8LGNigzBDwUGVtSY1z/HiQAPpwKJiv8O99etXfs6iefw8fJGlK1yiiKIrp88qWyy8KTbYshT2A8VnI8AnwTLuRoRgqGQD9g8K3PKDD2mBYPwBDsP/Ky5LDC1jvRxkCBuJ4WNgC9BgxDKSqa2Zd08SD+bXkw2ZZRkmSUMErIz73NMtz9nPK80LiKccA/hYgmDhm5FzztH/wv+NOzuEehvIFjKBawWUkhFIAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 52.81923714759535%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABYlAAAWJQFJUiTwAAABK0lEQVQoz5VSiW7DIAzl//9xldbcQA5ykKuJ5+c1Fc2qrbNk2Rj8eD6UNoZutxut60r7vtNZENu27U9FPnDUx+VCSZpRWVUCUDcNGWPlbKylZVnoHZnnWUAVEuEcbAwzjuNYrNaaKr7vuo7atn0oztM0PXLCypTWRh7NdyZgNI6jJMD6YaCB1XtPfd8LGNigzBDwUGVtSY1z/HiQAPpwKJiv8O99etXfs6iefw8fJGlK1yiiKIrp88qWyy8KTbYshT2A8VnI8AnwTLuRoRgqGQD9g8K3PKDD2mBYPwBDsP/Ky5LDC1jvRxkCBuJ4WNgC9BgxDKSqa2Zd08SD+bXkw2ZZRkmSUMErIz73NMtz9nPK80LiKccA/hYgmDhm5FzztH/wv+NOzuEehvIFjKBawWUkhFIAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;DraggedImage&quot;
         title=&quot;DraggedImage&quot;
-        src=&quot;/static/932937f9f19d299e2dab376f62749e1b/fcda8/DraggedImage.png&quot;
-        srcset=&quot;/static/932937f9f19d299e2dab376f62749e1b/12f09/DraggedImage.png 148w,
-/static/932937f9f19d299e2dab376f62749e1b/e4a3f/DraggedImage.png 295w,
-/static/932937f9f19d299e2dab376f62749e1b/fcda8/DraggedImage.png 590w,
-/static/932937f9f19d299e2dab376f62749e1b/efc66/DraggedImage.png 885w,
-/static/932937f9f19d299e2dab376f62749e1b/c83ae/DraggedImage.png 1180w,
-/static/932937f9f19d299e2dab376f62749e1b/8579d/DraggedImage.png 2412w&quot;
+        src=&quot;/static/932937f9f19d299e2dab376f62749e1b/799d3/DraggedImage.png&quot;
+        srcset=&quot;/static/932937f9f19d299e2dab376f62749e1b/00d96/DraggedImage.png 148w,
+/static/932937f9f19d299e2dab376f62749e1b/0b23c/DraggedImage.png 295w,
+/static/932937f9f19d299e2dab376f62749e1b/799d3/DraggedImage.png 590w,
+/static/932937f9f19d299e2dab376f62749e1b/2a3d6/DraggedImage.png 885w,
+/static/932937f9f19d299e2dab376f62749e1b/ae92f/DraggedImage.png 1180w,
+/static/932937f9f19d299e2dab376f62749e1b/2e7fc/DraggedImage.png 2412w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -951,29 +1019,29 @@ keywords:
 게시물이나, 태그, 검색등의 작업을 할때는 로고와 텍스트가 작은 크기로 위치하다가 홈화면(게시물 목록 화면)으로 위치하면 로고 이미지의 크기가 커진다. 그리고 로고 이미지와 제목 아래 프로필 정보들이 나열된다. 이렇게 구현하면 마치 좌측에 프로필이 위치한 UI와 비슷하게 보인다. 하지만 홈화면에서 게시물 목록을 훑어보기 위해 스크롤하면 헤더와 프로필 정보가 감춰지면서 게시물 목록에만 집중 할 수 있게 된다.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/075a3f219d30a41bfea98afcafa64211/97bfd/DraggedImage-1.png&quot;
+    href=&quot;/static/075a3f219d30a41bfea98afcafa64211/97cdb/DraggedImage-1.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 68.24324324324324%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAABYlAAAWJQFJUiTwAAABvklEQVQ4y51T2U7CUBTs//+Mb8b44IsvSlhEoIALS/fSDekGael4zsFqIZCoN5n0nttmOjPnXKUsSxRFif1+j4pQFAX47L9QQKs/UHF7d498u+VSyBmnq6qqHzTrxl4In/ttXN9cYb7UsCS8z2aYvrxC0/Ujot8sIdxtc2RZIgqTJEFM2MQxPjYbiaAmi6I1gjCE5/tYr9ewbQez+YLOI7y+vUPTdChsbbXysKTCdhw4jgvP8+lsBdddyQ9qQlbfe+qj23vCcKRiMBzheTBEGEZyNpm+fBF6npCwAt8PzmYnTnY7pGkqyLLs+30zb6Us90T0IVZYaURWmKBuTDO/mGIwTROGYZAThyzbZFODZVmy53cKtzokZWw3jpOLneWV57nkFQQBNpQv58g17/nJEEI/iMiyJ/lxsJwdW0+S9O9dZsKAQrUsW6CTHQ7fMC2YZMUnNTUZR1B+RXEJCn98uC0FthQ6P0/xZ4WaYZEyCwvNoL9UF7vMDlrtDsaTqbh4eGzJ2KjjCdqdLjrd3mGwayXc8aPr1QAvx3UxUlXMaZgN6igPta4bEhMP9nyxOFi+pOi0lljoNnG3syw9++0n2rc39g6pZfIAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 68.08905380333951%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAABYlAAAWJQFJUiTwAAABvklEQVQ4y51T2U7CUBTs//+Mb8b44IsvSlhEoIALS/fSDekGael4zsFqIZCoN5n0nttmOjPnXKUsSxRFif1+j4pQFAX47L9QQKs/UHF7d498u+VSyBmnq6qqHzTrxl4In/ttXN9cYb7UsCS8z2aYvrxC0/Ujot8sIdxtc2RZIgqTJEFM2MQxPjYbiaAmi6I1gjCE5/tYr9ewbQez+YLOI7y+vUPTdChsbbXysKTCdhw4jgvP8+lsBdddyQ9qQlbfe+qj23vCcKRiMBzheTBEGEZyNpm+fBF6npCwAt8PzmYnTnY7pGkqyLLs+30zb6Us90T0IVZYaURWmKBuTDO/mGIwTROGYZAThyzbZFODZVmy53cKtzokZWw3jpOLneWV57nkFQQBNpQv58g17/nJEEI/iMiyJ/lxsJwdW0+S9O9dZsKAQrUsW6CTHQ7fMC2YZMUnNTUZR1B+RXEJCn98uC0FthQ6P0/xZ4WaYZEyCwvNoL9UF7vMDlrtDsaTqbh4eGzJ2KjjCdqdLjrd3mGwayXc8aPr1QAvx3UxUlXMaZgN6igPta4bEhMP9nyxOFi+pOi0lljoNnG3syw9++0n2rc39g6pZfIAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;DraggedImage 1&quot;
         title=&quot;DraggedImage 1&quot;
-        src=&quot;/static/075a3f219d30a41bfea98afcafa64211/fcda8/DraggedImage-1.png&quot;
-        srcset=&quot;/static/075a3f219d30a41bfea98afcafa64211/12f09/DraggedImage-1.png 148w,
-/static/075a3f219d30a41bfea98afcafa64211/e4a3f/DraggedImage-1.png 295w,
-/static/075a3f219d30a41bfea98afcafa64211/fcda8/DraggedImage-1.png 590w,
-/static/075a3f219d30a41bfea98afcafa64211/efc66/DraggedImage-1.png 885w,
-/static/075a3f219d30a41bfea98afcafa64211/97bfd/DraggedImage-1.png 1078w&quot;
+        src=&quot;/static/075a3f219d30a41bfea98afcafa64211/799d3/DraggedImage-1.png&quot;
+        srcset=&quot;/static/075a3f219d30a41bfea98afcafa64211/00d96/DraggedImage-1.png 148w,
+/static/075a3f219d30a41bfea98afcafa64211/0b23c/DraggedImage-1.png 295w,
+/static/075a3f219d30a41bfea98afcafa64211/799d3/DraggedImage-1.png 590w,
+/static/075a3f219d30a41bfea98afcafa64211/2a3d6/DraggedImage-1.png 885w,
+/static/075a3f219d30a41bfea98afcafa64211/97cdb/DraggedImage-1.png 1078w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -985,30 +1053,30 @@ keywords:
 그래서 게시물을 읽을땐 온전히 게시물에만 집중 할 수 있고, 그 외로 표시되는 것은 TableOfContents 즉, 목차 뿐이다. 이것도 투명도를 낮춰 게시물을 읽는데 집중할 수 있도록 했다.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/2b3266fd53de2a586e56d811a151c5f1/c68a4/DraggedImage-2.png&quot;
+    href=&quot;/static/2b3266fd53de2a586e56d811a151c5f1/e1921/DraggedImage-2.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 54.05405405405405%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABYlAAAWJQFJUiTwAAABM0lEQVQoz4VSDbNEMAz0///kO06ZV+qKOlofuW6eYpx5MpNJlV3ZbKJ5nikkoihKSoWgLM8pTQWJLKMsy+mZphQnCd/hua4bWpaFcaEiI1oDl4hfKekRJzuZJ0ZNkieVZemJaurebzrGNM0bPsIhJMKYjpSqPFhR9Xpxlf4nIJZFQVrX1DQNWWs33DAMNI4jn6PQXSDEh23bknOO/+z8hzgDMK5na91GiIDUaZp2yUdC7SX9PGLuAuC7CLgQXzNsW8PSSqV4Xv8RBcxxbF+EkNJ13QYMEp0Lci3X8+w3U86Eb++g8t2hQxgC6X3f8+CReN/7eiX7skNVVbyHQvytCpweBsukGAe2wHgFxhiutx3CFJBheUEOwmqtUhacWH7caa29s7spl4vNK7CuwdnBO6eB+QDBqVr86xxNlwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 53.78850957535387%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABYlAAAWJQFJUiTwAAABM0lEQVQoz4VSDbNEMAz0///kO06ZV+qKOlofuW6eYpx5MpNJlV3ZbKJ5nikkoihKSoWgLM8pTQWJLKMsy+mZphQnCd/hua4bWpaFcaEiI1oDl4hfKekRJzuZJ0ZNkieVZemJaurebzrGNM0bPsIhJMKYjpSqPFhR9Xpxlf4nIJZFQVrX1DQNWWs33DAMNI4jn6PQXSDEh23bknOO/+z8hzgDMK5na91GiIDUaZp2yUdC7SX9PGLuAuC7CLgQXzNsW8PSSqV4Xv8RBcxxbF+EkNJ13QYMEp0Lci3X8+w3U86Eb++g8t2hQxgC6X3f8+CReN/7eiX7skNVVbyHQvytCpweBsukGAe2wHgFxhiutx3CFJBheUEOwmqtUhacWH7caa29s7spl4vNK7CuwdnBO6eB+QDBqVr86xxNlwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;DraggedImage 2&quot;
         title=&quot;DraggedImage 2&quot;
-        src=&quot;/static/2b3266fd53de2a586e56d811a151c5f1/fcda8/DraggedImage-2.png&quot;
-        srcset=&quot;/static/2b3266fd53de2a586e56d811a151c5f1/12f09/DraggedImage-2.png 148w,
-/static/2b3266fd53de2a586e56d811a151c5f1/e4a3f/DraggedImage-2.png 295w,
-/static/2b3266fd53de2a586e56d811a151c5f1/fcda8/DraggedImage-2.png 590w,
-/static/2b3266fd53de2a586e56d811a151c5f1/efc66/DraggedImage-2.png 885w,
-/static/2b3266fd53de2a586e56d811a151c5f1/c83ae/DraggedImage-2.png 1180w,
-/static/2b3266fd53de2a586e56d811a151c5f1/c68a4/DraggedImage-2.png 2402w&quot;
+        src=&quot;/static/2b3266fd53de2a586e56d811a151c5f1/799d3/DraggedImage-2.png&quot;
+        srcset=&quot;/static/2b3266fd53de2a586e56d811a151c5f1/00d96/DraggedImage-2.png 148w,
+/static/2b3266fd53de2a586e56d811a151c5f1/0b23c/DraggedImage-2.png 295w,
+/static/2b3266fd53de2a586e56d811a151c5f1/799d3/DraggedImage-2.png 590w,
+/static/2b3266fd53de2a586e56d811a151c5f1/2a3d6/DraggedImage-2.png 885w,
+/static/2b3266fd53de2a586e56d811a151c5f1/ae92f/DraggedImage-2.png 1180w,
+/static/2b3266fd53de2a586e56d811a151c5f1/e1921/DraggedImage-2.png 2402w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -1103,30 +1171,30 @@ App Store에 직접적으로 표시될 내용들입니다.
 &lt;strong&gt;아이콘&lt;/strong&gt;, &lt;strong&gt;이름&lt;/strong&gt;, &lt;strong&gt;부제&lt;/strong&gt; 그리고 &lt;strong&gt;앱 미리보기 및 스크린샷&lt;/strong&gt;이 아래와 같이 나타납니다.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/36827845640c56418f0939fe873c3c3a/8bb81/DraggedImage.png&quot;
+    href=&quot;/static/36827845640c56418f0939fe873c3c3a/e0305/DraggedImage.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 70.27027027027026%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAABYlAAAWJQFJUiTwAAAC/ElEQVQ4y42UXUiTURjHX0iyIhUtyFpmll520UXQTULdVBcVkVgx13RGlqMPp7UyoSC8MLUP8KLwzosoQRNUypyZOrVJmLFmSWokabpU/Gi6zb37dd5TLbGCDvx5nuflnP/5Px/nVfB68Y+MEBgdhWCQ/11BsVdCVeW5X7EyO+bGWV9P74sXjA8PM+Z2S7jHx//A2PhX3BMTLCy5eHGkmE6dwnDgIMdTj6KL28TmLVtIio0lPiKCuKgo4iIjiRN+vPSjSFyzhg+vXsHsNzyDH5nq64OZGQKBAMGFBZT09HTevnmNvaWZ1atWEBu7jpjVEYQpCssEli8LY5Ww68PC0UVvRBceTl9HB0xN4XO58DidMDDARE8Pc+/eoej1enYm72P33hSi1yURvVZHQkICW5OS2JqYSKRQtkGnk3785gRiYmJw9fbK9NRFKWvqgkKlYsg4Q+LRJvZc/szea1Psz3pAf99bnE4XQ0NDVFdX4xJKOjs7mZycpKCgALvdLolkmj+bEaqh8eQ5tmX1s9s6zOHrgxw6/5jGp7XU1NTQ2tpKeXk5DQ0N1NXVSeJss1mS/+r00uYoJ0xmUi485Pa9Slo7eziQcZOW5ma5wevzUVhYiL2t7ccJ1Yf+WCpdDocM/fPzBPx+CVVAGx8l5biJsnsPfqSgBrh2o5hn9U9YEGQej4fi4mLaBGEgoOL3zmE2pNFjsxEcHORTeztfHF2MdHUx0f1adl5JMZzFlF/NzORXSfqospLntbXSn/f6KCkpCaXomZnFkJYWUqhdqopmaNCaIhUaTlrYaazlkzZPYlVVVdHQ2PST0CsVdmhjosXT06SJqXAIRbICf6th5ulctme5eNL8Xn602ZpEzVpCm8rKyuju7g6NiSkzM6RQFc8uuOjZSYVHUvWs3HGXY+fu095m48qVq1y2XuJmURG3SksxGo3k5+dTJOLSu3fYlZyM4+VvwqVLqaioIDvbTF7eRXJzLeTkWITNEzYHi0XzcyVkLGC1WhnVfiT/IPwO+mxwv8buGaoAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 70.28714107365793%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAABYlAAAWJQFJUiTwAAAC/ElEQVQ4y42UXUiTURjHX0iyIhUtyFpmll520UXQTULdVBcVkVgx13RGlqMPp7UyoSC8MLUP8KLwzosoQRNUypyZOrVJmLFmSWokabpU/Gi6zb37dd5TLbGCDvx5nuflnP/5Px/nVfB68Y+MEBgdhWCQ/11BsVdCVeW5X7EyO+bGWV9P74sXjA8PM+Z2S7jHx//A2PhX3BMTLCy5eHGkmE6dwnDgIMdTj6KL28TmLVtIio0lPiKCuKgo4iIjiRN+vPSjSFyzhg+vXsHsNzyDH5nq64OZGQKBAMGFBZT09HTevnmNvaWZ1atWEBu7jpjVEYQpCssEli8LY5Ww68PC0UVvRBceTl9HB0xN4XO58DidMDDARE8Pc+/eoej1enYm72P33hSi1yURvVZHQkICW5OS2JqYSKRQtkGnk3785gRiYmJw9fbK9NRFKWvqgkKlYsg4Q+LRJvZc/szea1Psz3pAf99bnE4XQ0NDVFdX4xJKOjs7mZycpKCgALvdLolkmj+bEaqh8eQ5tmX1s9s6zOHrgxw6/5jGp7XU1NTQ2tpKeXk5DQ0N1NXVSeJss1mS/+r00uYoJ0xmUi485Pa9Slo7eziQcZOW5ma5wevzUVhYiL2t7ccJ1Yf+WCpdDocM/fPzBPx+CVVAGx8l5biJsnsPfqSgBrh2o5hn9U9YEGQej4fi4mLaBGEgoOL3zmE2pNFjsxEcHORTeztfHF2MdHUx0f1adl5JMZzFlF/NzORXSfqospLntbXSn/f6KCkpCaXomZnFkJYWUqhdqopmaNCaIhUaTlrYaazlkzZPYlVVVdHQ2PST0CsVdmhjosXT06SJqXAIRbICf6th5ulctme5eNL8Xn602ZpEzVpCm8rKyuju7g6NiSkzM6RQFc8uuOjZSYVHUvWs3HGXY+fu095m48qVq1y2XuJmURG3SksxGo3k5+dTJOLSu3fYlZyM4+VvwqVLqaioIDvbTF7eRXJzLeTkWITNEzYHi0XzcyVkLGC1WhnVfiT/IPwO+mxwv8buGaoAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;DraggedImage&quot;
         title=&quot;DraggedImage&quot;
-        src=&quot;/static/36827845640c56418f0939fe873c3c3a/fcda8/DraggedImage.png&quot;
-        srcset=&quot;/static/36827845640c56418f0939fe873c3c3a/12f09/DraggedImage.png 148w,
-/static/36827845640c56418f0939fe873c3c3a/e4a3f/DraggedImage.png 295w,
-/static/36827845640c56418f0939fe873c3c3a/fcda8/DraggedImage.png 590w,
-/static/36827845640c56418f0939fe873c3c3a/efc66/DraggedImage.png 885w,
-/static/36827845640c56418f0939fe873c3c3a/c83ae/DraggedImage.png 1180w,
-/static/36827845640c56418f0939fe873c3c3a/8bb81/DraggedImage.png 1602w&quot;
+        src=&quot;/static/36827845640c56418f0939fe873c3c3a/799d3/DraggedImage.png&quot;
+        srcset=&quot;/static/36827845640c56418f0939fe873c3c3a/00d96/DraggedImage.png 148w,
+/static/36827845640c56418f0939fe873c3c3a/0b23c/DraggedImage.png 295w,
+/static/36827845640c56418f0939fe873c3c3a/799d3/DraggedImage.png 590w,
+/static/36827845640c56418f0939fe873c3c3a/2a3d6/DraggedImage.png 885w,
+/static/36827845640c56418f0939fe873c3c3a/ae92f/DraggedImage.png 1180w,
+/static/36827845640c56418f0939fe873c3c3a/e0305/DraggedImage.png 1602w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -1138,30 +1206,30 @@ App Store에 직접적으로 표시될 내용들입니다.
 &lt;h2 id=&quot;앱-상세-화면&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%95%B1-%EC%83%81%EC%84%B8-%ED%99%94%EB%A9%B4&quot; aria-label=&quot;앱 상세 화면 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;앱 상세 화면&lt;/h2&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/02268ebc93f3b1feed971185f87ed7f3/8bb81/DraggedImage-1.png&quot;
+    href=&quot;/static/02268ebc93f3b1feed971185f87ed7f3/e0305/DraggedImage-1.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 66.89189189189189%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAABYlAAAWJQFJUiTwAAACk0lEQVQ4y4WTX0hTcRTHf7hNnWAkc7FEMvvjS/Y/GpJsmf+2RTTqYUQvFdbLlpApBFYyfHJTphD5kIwwHzSUhEDIeuhFU/OlnFagD+UfnOsam23eurv32+/+djdHUP7g3HMul/O555zv+REJytnYgBQMYrsjiuJ/vxMZ2N/bi7aGBnidLnjcbni8Xng8npT5fD50dHQgMDPDkuLxOCSJZlJjXj7KO5HoH08Yy0AI2dae9PQkqlSqkRRjYMUTMS6g0mbH4SOnccFohN5gQH6+HrsMu5Gn1SInIwPZKhUD9vr9DLS+sAAxHE5hkzDWcjQaQ339bQQ+fsB66DucLid0O7QoOVCMvXoKzspCYW4uCihwoL0doHPmpqchfvqM0OwshLU1Vmaqwlg0CpfLhcWlJfYHJ42JvhRZBaWJVml1KrWGxU+VCmVhJJ4HT2ESFRNprRN5wFarFRXnKuFwOLCn+CC0VS3IKbvFIBm0ZY1aTeNM+J/1seTfNCf9JAVKqEwDs9nEkjPVBNmaf4vS39WVANJuglTxeCiUAiahRBTjqKisRV5ROQoP2WAoqYJuXwV0+6ug3VmE48eOwmKx4qzZjDcjI4m1iUQS7dJxpVcoeyLwEdivteLM3SBqH0ZQ3fwDNffXUd3yC+a6l+BCq1utpa9KMk5bGdkTYTOMyze9MDWFUNPMwd7K4XpnGFd9PC42vsXcbACjo6N43N2NL/MLyeuCv4a4JYrAh3Gprg3lTRwsbgE2dwS2e3M4/+AralyvMfxiCO8mJzE8OIjF91PAygq+jY1heWICq3R9lsfHU1dW2gJ6YLozD/ONQZy0NKLzkR9d/lc4daUPQ88HsMFxLEH4GaEPAZt0drxssRjzkqK6DPwDY+4N4QBr6NgAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 67.04119850187267%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAABYlAAAWJQFJUiTwAAACk0lEQVQ4y4WTX0hTcRTHf7hNnWAkc7FEMvvjS/Y/GpJsmf+2RTTqYUQvFdbLlpApBFYyfHJTphD5kIwwHzSUhEDIeuhFU/OlnFagD+UfnOsam23eurv32+/+djdHUP7g3HMul/O555zv+REJytnYgBQMYrsjiuJ/vxMZ2N/bi7aGBnidLnjcbni8Xng8npT5fD50dHQgMDPDkuLxOCSJZlJjXj7KO5HoH08Yy0AI2dae9PQkqlSqkRRjYMUTMS6g0mbH4SOnccFohN5gQH6+HrsMu5Gn1SInIwPZKhUD9vr9DLS+sAAxHE5hkzDWcjQaQ339bQQ+fsB66DucLid0O7QoOVCMvXoKzspCYW4uCihwoL0doHPmpqchfvqM0OwshLU1Vmaqwlg0CpfLhcWlJfYHJ42JvhRZBaWJVml1KrWGxU+VCmVhJJ4HT2ESFRNprRN5wFarFRXnKuFwOLCn+CC0VS3IKbvFIBm0ZY1aTeNM+J/1seTfNCf9JAVKqEwDs9nEkjPVBNmaf4vS39WVANJuglTxeCiUAiahRBTjqKisRV5ROQoP2WAoqYJuXwV0+6ug3VmE48eOwmKx4qzZjDcjI4m1iUQS7dJxpVcoeyLwEdivteLM3SBqH0ZQ3fwDNffXUd3yC+a6l+BCq1utpa9KMk5bGdkTYTOMyze9MDWFUNPMwd7K4XpnGFd9PC42vsXcbACjo6N43N2NL/MLyeuCv4a4JYrAh3Gprg3lTRwsbgE2dwS2e3M4/+AralyvMfxiCO8mJzE8OIjF91PAygq+jY1heWICq3R9lsfHU1dW2gJ6YLozD/ONQZy0NKLzkR9d/lc4daUPQ88HsMFxLEH4GaEPAZt0drxssRjzkqK6DPwDY+4N4QBr6NgAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;DraggedImage 1&quot;
         title=&quot;DraggedImage 1&quot;
-        src=&quot;/static/02268ebc93f3b1feed971185f87ed7f3/fcda8/DraggedImage-1.png&quot;
-        srcset=&quot;/static/02268ebc93f3b1feed971185f87ed7f3/12f09/DraggedImage-1.png 148w,
-/static/02268ebc93f3b1feed971185f87ed7f3/e4a3f/DraggedImage-1.png 295w,
-/static/02268ebc93f3b1feed971185f87ed7f3/fcda8/DraggedImage-1.png 590w,
-/static/02268ebc93f3b1feed971185f87ed7f3/efc66/DraggedImage-1.png 885w,
-/static/02268ebc93f3b1feed971185f87ed7f3/c83ae/DraggedImage-1.png 1180w,
-/static/02268ebc93f3b1feed971185f87ed7f3/8bb81/DraggedImage-1.png 1602w&quot;
+        src=&quot;/static/02268ebc93f3b1feed971185f87ed7f3/799d3/DraggedImage-1.png&quot;
+        srcset=&quot;/static/02268ebc93f3b1feed971185f87ed7f3/00d96/DraggedImage-1.png 148w,
+/static/02268ebc93f3b1feed971185f87ed7f3/0b23c/DraggedImage-1.png 295w,
+/static/02268ebc93f3b1feed971185f87ed7f3/799d3/DraggedImage-1.png 590w,
+/static/02268ebc93f3b1feed971185f87ed7f3/2a3d6/DraggedImage-1.png 885w,
+/static/02268ebc93f3b1feed971185f87ed7f3/ae92f/DraggedImage-1.png 1180w,
+/static/02268ebc93f3b1feed971185f87ed7f3/e0305/DraggedImage-1.png 1602w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -1171,30 +1239,30 @@ App Store에 직접적으로 표시될 내용들입니다.
 상단에는 위와 같이 &lt;strong&gt;아이콘&lt;/strong&gt;, &lt;strong&gt;이름&lt;/strong&gt;, &lt;strong&gt;부제&lt;/strong&gt;, &lt;strong&gt;등급&lt;/strong&gt;, &lt;strong&gt;앱 미리보기 및 스크린샷&lt;/strong&gt;이 위치합니다.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/752da110741bad23b9885f159eff6fba/8bb81/DraggedImage-2.png&quot;
+    href=&quot;/static/752da110741bad23b9885f159eff6fba/e0305/DraggedImage-2.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 75.67567567567568%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAABYlAAAWJQFJUiTwAAACsElEQVQ4y4WUy2sTURTGJyaZvGcmmcmreZVq06Sagosi1paAihEquK1g+xe46FL/AlfizkVpwUUb2iJKWwuiuChupAZDya4SRZBQha5SYjLJ5PPcm6RWbe2Bb848uL/5zj1nRmg1DnDvwRPMPKri7sNvePbqAxpNHSwKhQI2NzexsbGBfD6PcrnM7xuGgXa7zYVeZkFZMIwWxrPX4YpMQEpcw7nURdy8cRWTk7cwMDCATCaD0dFRJJNJrK+t8XXNVusQ2EUdQgWWJibGIQgCTCThP5qbn+eLGnWdu6EDjGYTLXoBc82ywMjZbBaizQ5VC0DTNKiqimAwiFAoBD9dB+jcScDnc3PEqEPfLWG/+BE/ikWgUmF7gF4IjJzL5RDpCyOdTpGGEY/H4fP5OFSl7A+Focoa7s/O4un6Lh7nP+HN2/fY/17B189f8G5rC6VSCdvb28yhgUuXr1BJJpL5xHKtpNtjY7CKPrr2wGQWoSgybHY7f26xWGA2mzslT0/P4OwguRs+j6GhIVIKqdRvsXsXRjK4MzWFQZ+MsEOEw+ngMJfTCY/bDSdlDmR167qOev0n9EYDjWNUq9X4/iwuLcElK0j392MkFkPY74fi9cJL28Jkdzg6Dk8Lg7rH4sXKClRyFQsE0E+gtMcDjSAquQuQS0UUOw4PZ+o4MWD3pesEdNOiAE2BSkDWOBcrm+QmsN1q7QD/iSPTb1SrOGCjQfFycRGSy4VYIoFIJAJZliFJEjzk1ENZ7Dk8FtjN+t4eKjs7oE3G64UFqLQ4SPPpI4cMqCgKvHTOst1mOwH4FxTdPVxbXYWfyu2LRvmwM1cSQWWCsebwppwGY7lJnxffQ/pBKFYboqofQWpCkNyGCMoaolFjJJrFE4E48gfpAVeWl2mIrThjtv3x3Zu6sphM+AW9ygWfYd12QQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 75.90511860174783%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAABYlAAAWJQFJUiTwAAACsElEQVQ4y4WUy2sTURTGJyaZvGcmmcmreZVq06Sagosi1paAihEquK1g+xe46FL/AlfizkVpwUUb2iJKWwuiuChupAZDya4SRZBQha5SYjLJ5PPcm6RWbe2Bb848uL/5zj1nRmg1DnDvwRPMPKri7sNvePbqAxpNHSwKhQI2NzexsbGBfD6PcrnM7xuGgXa7zYVeZkFZMIwWxrPX4YpMQEpcw7nURdy8cRWTk7cwMDCATCaD0dFRJJNJrK+t8XXNVusQ2EUdQgWWJibGIQgCTCThP5qbn+eLGnWdu6EDjGYTLXoBc82ywMjZbBaizQ5VC0DTNKiqimAwiFAoBD9dB+jcScDnc3PEqEPfLWG/+BE/ikWgUmF7gF4IjJzL5RDpCyOdTpGGEY/H4fP5OFSl7A+Focoa7s/O4un6Lh7nP+HN2/fY/17B189f8G5rC6VSCdvb28yhgUuXr1BJJpL5xHKtpNtjY7CKPrr2wGQWoSgybHY7f26xWGA2mzslT0/P4OwguRs+j6GhIVIKqdRvsXsXRjK4MzWFQZ+MsEOEw+ngMJfTCY/bDSdlDmR167qOev0n9EYDjWNUq9X4/iwuLcElK0j392MkFkPY74fi9cJL28Jkdzg6Dk8Lg7rH4sXKClRyFQsE0E+gtMcDjSAquQuQS0UUOw4PZ+o4MWD3pesEdNOiAE2BSkDWOBcrm+QmsN1q7QD/iSPTb1SrOGCjQfFycRGSy4VYIoFIJAJZliFJEjzk1ENZ7Dk8FtjN+t4eKjs7oE3G64UFqLQ4SPPpI4cMqCgKvHTOst1mOwH4FxTdPVxbXYWfyu2LRvmwM1cSQWWCsebwppwGY7lJnxffQ/pBKFYboqofQWpCkNyGCMoaolFjJJrFE4E48gfpAVeWl2mIrThjtv3x3Zu6sphM+AW9ygWfYd12QQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;DraggedImage 2&quot;
         title=&quot;DraggedImage 2&quot;
-        src=&quot;/static/752da110741bad23b9885f159eff6fba/fcda8/DraggedImage-2.png&quot;
-        srcset=&quot;/static/752da110741bad23b9885f159eff6fba/12f09/DraggedImage-2.png 148w,
-/static/752da110741bad23b9885f159eff6fba/e4a3f/DraggedImage-2.png 295w,
-/static/752da110741bad23b9885f159eff6fba/fcda8/DraggedImage-2.png 590w,
-/static/752da110741bad23b9885f159eff6fba/efc66/DraggedImage-2.png 885w,
-/static/752da110741bad23b9885f159eff6fba/c83ae/DraggedImage-2.png 1180w,
-/static/752da110741bad23b9885f159eff6fba/8bb81/DraggedImage-2.png 1602w&quot;
+        src=&quot;/static/752da110741bad23b9885f159eff6fba/799d3/DraggedImage-2.png&quot;
+        srcset=&quot;/static/752da110741bad23b9885f159eff6fba/00d96/DraggedImage-2.png 148w,
+/static/752da110741bad23b9885f159eff6fba/0b23c/DraggedImage-2.png 295w,
+/static/752da110741bad23b9885f159eff6fba/799d3/DraggedImage-2.png 590w,
+/static/752da110741bad23b9885f159eff6fba/2a3d6/DraggedImage-2.png 885w,
+/static/752da110741bad23b9885f159eff6fba/ae92f/DraggedImage-2.png 1180w,
+/static/752da110741bad23b9885f159eff6fba/e0305/DraggedImage-2.png 1602w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -1204,30 +1272,30 @@ App Store에 직접적으로 표시될 내용들입니다.
 스크린샷 아래로는 우선 &lt;strong&gt;프로모션 텍스트&lt;/strong&gt;가 위치하며 &lt;em&gt;더보기&lt;/em&gt;를 누를 경우에 이어서 &lt;strong&gt;설명&lt;/strong&gt;이 추가적으로 노출되게 됩니다.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/8fcf5b1b7014ed78a4987caecadeeec6/8bb81/DraggedImage-3.png&quot;
+    href=&quot;/static/8fcf5b1b7014ed78a4987caecadeeec6/e0305/DraggedImage-3.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 75.67567567567568%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAABYlAAAWJQFJUiTwAAACNklEQVQ4y42US08aURTH5+kMzPCwSRdNF0VM6ka6btLII+3OfoD6uVpDYxQxqUkfuuhnMFrTJhJwYRMeC2oJJhUjMECGmfn3PgYqcUyd5M+5Fzi/+z/3HBBAnuFwiH6/D8uyMBgMuKz+DVksOuMx/To8z4Pnukyga/89+gh0sbb2BovJBaRSy0iS+GRhEYmlZ0g8XWZKLqXw8HECn/b3WdLYT2ZwfsJ0T4Aunr9IQxAECEqIRyaZSORRe8DWu/n3LMluX+DP2Rl69UaQQxcr2ZcsUdbCECUJkigSCVxkr4Sj7JCPGxsceEGBP9Gt1W4DHcfB69VVmEb4hrtZiX4sFIv3KzmXy/FEUQwERqPcYXF7mwNtGy4x4hEFNiWd5ndIy5tx5h8QMSPQdB2FnZ37OPwHlGU50GEsFoOuqtjL5zmw1UL79BTX1epdDjOBDnXiyjRMxOfn2X53c5MDOx1063UMm81gYCYTDNQ0DYZhwDRNtt/yS7aB/5XsA+8oeaIPhQJ32O3BvryEc3UF0F+MD/UmwGw2y2ZPIUDaiInonWpzc6whEgF+XV8HaGdJqe3vP3BdqUyBrGQiBlzxHQqSMuOIAqORKGLxOGRRwpe371jSqNFA6/gYnZMTuKPRzPgIdJHOvSKwMPT4I6haCKqiQCVdVUikUEUmdyuG8HmLDHavh+bBAX4ffcOvw0OiI7jn59P7FOhLrVZFqVRCuVy+pQopi4p+3qF3RhPpUNNS/eFm/zp+2X8BiAsZXfpjlLQAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 75.90511860174783%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAABYlAAAWJQFJUiTwAAACNklEQVQ4y42US08aURTH5+kMzPCwSRdNF0VM6ka6btLII+3OfoD6uVpDYxQxqUkfuuhnMFrTJhJwYRMeC2oJJhUjMECGmfn3PgYqcUyd5M+5Fzi/+z/3HBBAnuFwiH6/D8uyMBgMuKz+DVksOuMx/To8z4Pnukyga/89+gh0sbb2BovJBaRSy0iS+GRhEYmlZ0g8XWZKLqXw8HECn/b3WdLYT2ZwfsJ0T4Aunr9IQxAECEqIRyaZSORRe8DWu/n3LMluX+DP2Rl69UaQQxcr2ZcsUdbCECUJkigSCVxkr4Sj7JCPGxsceEGBP9Gt1W4DHcfB69VVmEb4hrtZiX4sFIv3KzmXy/FEUQwERqPcYXF7mwNtGy4x4hEFNiWd5ndIy5tx5h8QMSPQdB2FnZ37OPwHlGU50GEsFoOuqtjL5zmw1UL79BTX1epdDjOBDnXiyjRMxOfn2X53c5MDOx1063UMm81gYCYTDNQ0DYZhwDRNtt/yS7aB/5XsA+8oeaIPhQJ32O3BvryEc3UF0F+MD/UmwGw2y2ZPIUDaiInonWpzc6whEgF+XV8HaGdJqe3vP3BdqUyBrGQiBlzxHQqSMuOIAqORKGLxOGRRwpe371jSqNFA6/gYnZMTuKPRzPgIdJHOvSKwMPT4I6haCKqiQCVdVUikUEUmdyuG8HmLDHavh+bBAX4ffcOvw0OiI7jn59P7FOhLrVZFqVRCuVy+pQopi4p+3qF3RhPpUNNS/eFm/zp+2X8BiAsZXfpjlLQAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;DraggedImage 3&quot;
         title=&quot;DraggedImage 3&quot;
-        src=&quot;/static/8fcf5b1b7014ed78a4987caecadeeec6/fcda8/DraggedImage-3.png&quot;
-        srcset=&quot;/static/8fcf5b1b7014ed78a4987caecadeeec6/12f09/DraggedImage-3.png 148w,
-/static/8fcf5b1b7014ed78a4987caecadeeec6/e4a3f/DraggedImage-3.png 295w,
-/static/8fcf5b1b7014ed78a4987caecadeeec6/fcda8/DraggedImage-3.png 590w,
-/static/8fcf5b1b7014ed78a4987caecadeeec6/efc66/DraggedImage-3.png 885w,
-/static/8fcf5b1b7014ed78a4987caecadeeec6/c83ae/DraggedImage-3.png 1180w,
-/static/8fcf5b1b7014ed78a4987caecadeeec6/8bb81/DraggedImage-3.png 1602w&quot;
+        src=&quot;/static/8fcf5b1b7014ed78a4987caecadeeec6/799d3/DraggedImage-3.png&quot;
+        srcset=&quot;/static/8fcf5b1b7014ed78a4987caecadeeec6/00d96/DraggedImage-3.png 148w,
+/static/8fcf5b1b7014ed78a4987caecadeeec6/0b23c/DraggedImage-3.png 295w,
+/static/8fcf5b1b7014ed78a4987caecadeeec6/799d3/DraggedImage-3.png 590w,
+/static/8fcf5b1b7014ed78a4987caecadeeec6/2a3d6/DraggedImage-3.png 885w,
+/static/8fcf5b1b7014ed78a4987caecadeeec6/ae92f/DraggedImage-3.png 1180w,
+/static/8fcf5b1b7014ed78a4987caecadeeec6/e0305/DraggedImage-3.png 1602w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -1252,29 +1320,29 @@ App Store에 직접적으로 표시될 내용들입니다.
 &lt;p&gt;개인정보 처리방침이 없으면 심사에 올릴 수 없습니다.
 &lt;a href=&quot;https://www.privacy.go.kr/&quot; title=&quot;개인정보보호 종합포털&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;개인정보보호 종합포털&lt;/a&gt;의 개인정보처리방침 만들기 메뉴를 들어가서 절차에 따라 만들 수 있습니다. 절차에 따라 완성된 내용이더라도 추가적인 검토와 수정은 필수입니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[WhatSubs 앱 개발기 (React-Native, Expo)]]></title><description><![CDATA[Google Play Store Apple App Store WhatSubs라는 iOS, Android 플랫폼의 React Native…]]></description><link>https://junhobaik.github.io/whatsubs-dev-story/</link><guid isPermaLink="false">https://junhobaik.github.io/whatsubs-dev-story/</guid><pubDate>Thu, 05 Dec 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/1ed478487cdfaa54d6391ed6b4c91308/2bef9/a1.png&quot;
+    href=&quot;/static/1ed478487cdfaa54d6391ed6b4c91308/26df7/a1.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 48.64864864864865%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsSAAALEgHS3X78AAACPElEQVQoz3WS3UsUURiH9w+qsCK9qYtQc9OCws+loCii/IB0oy7C77XU3CQKKsWoC7tNoboKqotCCiqoFFJLXdbV/ZqzMzszO7sz69OZUUOKBl7OmYv3Oc/vPcd3oX2QS81tlJWW0dHRwfTUNElFw3GKCJFBpONcDA5T2vqdmpBGZXea8s60t+6sqp40/l4FX3JtiUQiSSwWY/vbyMxj5XR+LS17/2PjE+xuekb1gMnJm2nO3MnIVaHxlqBuSFA7KDyYC/VFlhf5sfATu1DAsvJoqkCJfpOHJP4c8PnjO/ZWd1LerXEqrHB5XKVtTKX1oUrLA5XgI5XjAwpHXODb16+IrMbQDYONDbAtk9l1h9mojJ03kcnRtTQ1je0cCi7QOKIRGFFoGhEEwoLTo8IzrenfMgzfvQ/rq2RWVpC9OLaNpmXl/ASGrpNMpjzLntBtSs6+oSFs0jCsUD8sow5twty1um8L2HTuGqZIEZcz1LIa+YLtgSwrR0HCVVXFdhxevnhOSf1j/P0GlV2p/1/Kfv9VFhfmUI2CjJ5AqFlvfrpueGZWPo8pjePL8xysC1HRpXC0123eBOwsz3DXiTEmJ59imhaRSNSDaZqGLe0caZaXQEURWLqg+Yp8Pi1fvefjNm/XTqhv3/kZgv33YOY99twcBWlVkBAX5hSLnqUhL8zdjU88YU9gimM3TAlK/QPzgIevx6kIhLxIa9IwEo3KGW7GLUqga5rL5choBl8+feBA7ShVfVn8W8C/ob8B0Xp4n2F10xsAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 48.828125%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsSAAALEgHS3X78AAACPElEQVQoz3WS3UsUURiH9w+qsCK9qYtQc9OCws+loCii/IB0oy7C77XU3CQKKsWoC7tNoboKqotCCiqoFFJLXdbV/ZqzMzszO7sz69OZUUOKBl7OmYv3Oc/vPcd3oX2QS81tlJWW0dHRwfTUNElFw3GKCJFBpONcDA5T2vqdmpBGZXea8s60t+6sqp40/l4FX3JtiUQiSSwWY/vbyMxj5XR+LS17/2PjE+xuekb1gMnJm2nO3MnIVaHxlqBuSFA7KDyYC/VFlhf5sfATu1DAsvJoqkCJfpOHJP4c8PnjO/ZWd1LerXEqrHB5XKVtTKX1oUrLA5XgI5XjAwpHXODb16+IrMbQDYONDbAtk9l1h9mojJ03kcnRtTQ1je0cCi7QOKIRGFFoGhEEwoLTo8IzrenfMgzfvQ/rq2RWVpC9OLaNpmXl/ASGrpNMpjzLntBtSs6+oSFs0jCsUD8sow5twty1um8L2HTuGqZIEZcz1LIa+YLtgSwrR0HCVVXFdhxevnhOSf1j/P0GlV2p/1/Kfv9VFhfmUI2CjJ5AqFlvfrpueGZWPo8pjePL8xysC1HRpXC0123eBOwsz3DXiTEmJ59imhaRSNSDaZqGLe0caZaXQEURWLqg+Yp8Pi1fvefjNm/XTqhv3/kZgv33YOY99twcBWlVkBAX5hSLnqUhL8zdjU88YU9gimM3TAlK/QPzgIevx6kIhLxIa9IwEo3KGW7GLUqga5rL5choBl8+feBA7ShVfVn8W8C/ob8B0Xp4n2F10xsAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;a1&quot;
         title=&quot;a1&quot;
-        src=&quot;/static/1ed478487cdfaa54d6391ed6b4c91308/fcda8/a1.png&quot;
-        srcset=&quot;/static/1ed478487cdfaa54d6391ed6b4c91308/12f09/a1.png 148w,
-/static/1ed478487cdfaa54d6391ed6b4c91308/e4a3f/a1.png 295w,
-/static/1ed478487cdfaa54d6391ed6b4c91308/fcda8/a1.png 590w,
-/static/1ed478487cdfaa54d6391ed6b4c91308/efc66/a1.png 885w,
-/static/1ed478487cdfaa54d6391ed6b4c91308/2bef9/a1.png 1024w&quot;
+        src=&quot;/static/1ed478487cdfaa54d6391ed6b4c91308/799d3/a1.png&quot;
+        srcset=&quot;/static/1ed478487cdfaa54d6391ed6b4c91308/00d96/a1.png 148w,
+/static/1ed478487cdfaa54d6391ed6b4c91308/0b23c/a1.png 295w,
+/static/1ed478487cdfaa54d6391ed6b4c91308/799d3/a1.png 590w,
+/static/1ed478487cdfaa54d6391ed6b4c91308/2a3d6/a1.png 885w,
+/static/1ed478487cdfaa54d6391ed6b4c91308/26df7/a1.png 1024w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -1318,157 +1386,4 @@ RN에만 해당하는 것은 아니지만 모바일 앱으로 개발하면서 �
 &lt;ul&gt;
 &lt;li&gt;아이폰의 왼쪽 사이드를 슬라이드하여 뒤로가기, 안드로이드폰의 뒤로가기 버튼(하드웨어, 소프트웨어)의 기능과 그에 따른 화면의 스택, 그리고 노치 영역을 고려한 View인 SafeAreaView를 사용하기 위해 사용한 모듈은 &lt;code class=&quot;language-text&quot;&gt;react-native-gesture-handler&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;개인정보처리방침을 만들때 이용한 사이트는 &lt;a href=&quot;https://www.privacy.go.kr/&quot; title=&quot;개인정보보호 종합포털&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;개인정보보호 종합포털&lt;/a&gt;이며 ‘개인정보처리방침 만들기’ 메뉴를 이용하면 된다.&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[CSS 방법론 - BEM]]></title><description><![CDATA[CSS 방법론은 스타일을 정의하는데 있어 엘리먼트의 class와 id를 어떻게 다루는지, 네이밍을 어떻게 하는지의 방법을 정의해 더 직관적인 스타일 코드를 작성하고 팀 단위의 개발을 원할하게 하는데 사용된다. 대표적으로는 BEM, OOCSS…]]></description><link>https://junhobaik.github.io/css-bem/</link><guid isPermaLink="false">https://junhobaik.github.io/css-bem/</guid><pubDate>Tue, 12 Nov 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;CSS 방법론은 스타일을 정의하는데 있어 엘리먼트의 class와 id를 어떻게 다루는지, 네이밍을 어떻게 하는지의 방법을 정의해 더 직관적인 스타일 코드를 작성하고 팀 단위의 개발을 원할하게 하는데 사용된다.&lt;br&gt;
-대표적으로는 BEM, OOCSS, SMASS가 있으며 여기서는 BEM에 대해 간단히 알아보겠다.&lt;/p&gt;
-&lt;p&gt;BEM의 공식 가이드 홈페이지는 &lt;a href=&quot;https://en.bem.info/&quot; title=&quot;bem&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://en.bem.info&lt;/a&gt;로 영어와 러시아어가 지원된다.&lt;/p&gt;
-&lt;h2 id=&quot;bem&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#bem&quot; aria-label=&quot;bem permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;BEM?&lt;/h2&gt;
-&lt;p&gt;BEM은 &lt;strong&gt;Block&lt;/strong&gt;, &lt;strong&gt;Element&lt;/strong&gt;, &lt;strong&gt;Modifier&lt;/strong&gt; 세개 단어의 약자이다.&lt;br&gt;
-크게 세가지를 통해서 네이밍을 하게 된다.&lt;/p&gt;
-&lt;p&gt;BEM은 기본적으로 id가 아닌 class만 사용하는 것을 지향하며, CSS tag도 쓰지 않는다.&lt;br&gt;
-세개(B,E,M)의 요소를 기준으로 클래스명을 작명하게 된다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;css&quot;&gt;&lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;.error #test&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; ... &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token selector&quot;&gt;❌ id 사용
-.info h1&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; ... &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token selector&quot;&gt;❌ tag 사용
-
-.info__text&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; ... &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; 👍&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2 id=&quot;block&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#block&quot; aria-label=&quot;block permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Block&lt;/h2&gt;
-&lt;p&gt;Block을 기준으로 네이밍을 시작하게 되며 블록의 이름 뒤에 &lt;code class=&quot;language-text&quot;&gt;__&lt;/code&gt;로 연결하여 Element 이름을 작성하게 된다.&lt;/p&gt;
-&lt;p&gt;블록은 &lt;strong&gt;독립적으로 기능&lt;/strong&gt;하는 단위이다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;big-text&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;/&gt;&lt;/span&gt;&lt;/span&gt; ❌
-
-&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;error&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;/&gt;&lt;/span&gt;&lt;/span&gt; 👍&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;큰 텍스트(big-text)를 정의한 것은 텍스트라는 &lt;strong&gt;목적&lt;/strong&gt; 또는 크다는 &lt;strong&gt;모양&lt;/strong&gt;을 기술하였으므로 하나의 독립적 기능을 하는 단위라 볼 수 없다.&lt;br&gt;
-오류(error)라 정의한 것은 무엇을 하는가, &lt;strong&gt;기능&lt;/strong&gt;. 즉 오류라는 기능을 수행한다는 독립적인 단위가 될 수 있다.&lt;/p&gt;
-&lt;p&gt;블록에는 position, margin과 같이 외부적인 위치를 조정하는 스타일을 지정할 수 없다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;=&gt; 독립성과 재사용성의 보장&lt;/strong&gt;&lt;br&gt;
-무엇을 하는지 정의하고 외부적인 위치를 조정하는 position, margin과 같은 스타일을 넣지 않으므로 블록이 움직이거나 다른 곳에서 이 블록을 또 사용하더라도 독립성을 유지할 수 있게 되는 것이다.&lt;/p&gt;
-&lt;p&gt;블록은 중첩될 수 있으며, 여러 중첩을 거칠 수 있다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- header 블록 --&gt;&lt;/span&gt;
-&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;header&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;header&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-  &lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- 중첩된 logo 블록 --&gt;&lt;/span&gt;
-  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;logo&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;/&gt;&lt;/span&gt;&lt;/span&gt;
-  &lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- 중첩된 serch-from 블록 --&gt;&lt;/span&gt;
-  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;search-form&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;/&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;header&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2 id=&quot;element&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#element&quot; aria-label=&quot;element permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Element&lt;/h2&gt;
-&lt;p&gt;Element는 블록을 구성하는 단위로 블록과 분리될 수 없는 블록의 하위 요소이다.&lt;br&gt;
-따라서 블록 이름 없이 사용할 수 없으며,&lt;br&gt;
-블록 이름 뒤에 언더바 2개&lt;code class=&quot;language-text&quot;&gt;__&lt;/code&gt;로 연결하여 작성한다.&lt;/p&gt;
-&lt;p&gt;엘리먼트는 위에서 예를 든 &lt;code class=&quot;language-text&quot;&gt;big-text&lt;/code&gt;를 통해서 살펴보면,&lt;br&gt;
-big과 같은 모양을 나타내는 것은 옳지 않다.&lt;br&gt;
-text와 같은 목적을 나타내는 것은 사용할 수 있다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;search-form&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;h1&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;search-from__big&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;h1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt; ❌ 
-  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;span&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;search-from__text&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;span&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt; 👍 
-  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;input&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;search-from__input&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;/&gt;&lt;/span&gt;&lt;/span&gt; 👍
-&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;div&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;엘리먼트 또한 블록과 같이 중첩될 수 있으며, 여러 중첩을 거칠 수 있다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;form&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;search-form&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;search-form__content&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;input&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;?&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;/&gt;&lt;/span&gt;&lt;/span&gt; 👈
-    &lt;span class=&quot;token comment&quot;&gt;&amp;lt;!--
-			&quot;search-form__content__input&quot; ?
-			&quot;search-form__input&quot; ?
-    --&gt;&lt;/span&gt;
-  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;div&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;form&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;위에서 input 태그를 보면 계층이 블록&gt;엘리먼트&gt;엘리먼트이다.
-그렇다고해서 Block &lt;code class=&quot;language-text&quot;&gt;search_form&lt;/code&gt;안의 Element &lt;code class=&quot;language-text&quot;&gt;content&lt;/code&gt;안의 &lt;code class=&quot;language-text&quot;&gt;input&lt;/code&gt;이라고 해서 &lt;code class=&quot;language-text&quot;&gt;search-form__content__input&lt;/code&gt;라고 네이밍을 하는 것은 옳지 않다.&lt;/p&gt;
-&lt;p&gt;엘리먼트의 이름은 이어서 계층구조를 가지게 작성되어서는 안된다.&lt;br&gt;
-따라서 &lt;code class=&quot;language-text&quot;&gt;search-form__input&lt;/code&gt;으로 작성되어야 맞다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;css&quot;&gt;&lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;.block&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;token selector&quot;&gt;.block__elem1&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;token selector&quot;&gt;.block__elem2&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;token selector&quot;&gt;.block__elem3&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;block&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;block__elem1&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;block__elem2&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;div&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;block__elem3&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;div&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;div&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;div&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-
-&lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- Change --&gt;&lt;/span&gt;
-&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;block&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;block__elem1&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;block__elem2&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;div&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;div&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-
-  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;block__elem3&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;div&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;div&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;이러한 구조를 따르면 위의 코드를 통해 알 수 있듯 블록의 구조가 변경되더라도 해당 엘리먼트들의 규칙을 유지할 수 있게 된다.&lt;/p&gt;
-&lt;p&gt;여기까지 살펴보면 아래 코드를 보면 옳지 않다는 생각이 든다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;search-form&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;input&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;input&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;/&gt;&lt;/span&gt;&lt;/span&gt;
-  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;button&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;button&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;Search&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;button&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;div&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;하지만 input, button을 엘리먼트가 아닌 하나하나의 블록으로 살펴 볼 수 있기 때문에 틀린 코드라고 할 수 없다. 따라서 꼭 블록 안에 엘리먼트가 있어야 하는 것은 아니라고 할 수 있다.&lt;/p&gt;
-&lt;h2 id=&quot;modifier&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#modifier&quot; aria-label=&quot;modifier permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Modifier&lt;/h2&gt;
-&lt;p&gt;Modifier는 블록이나 엘리먼트의 모양이나 상태, 또는 행동을 정의합니다.&lt;br&gt;
-블록, 엘리먼트 뒤에 하나의 언더바&lt;code class=&quot;language-text&quot;&gt;_&lt;/code&gt;로 이어 기술합니다.&lt;/p&gt;
-&lt;p&gt;예를 들어 어떤 사이즈인지 &lt;code class=&quot;language-text&quot;&gt;size_m&lt;/code&gt;, 어떤 상태인지 &lt;code class=&quot;language-text&quot;&gt;disabled&lt;/code&gt; &lt;code class=&quot;language-text&quot;&gt;focused&lt;/code&gt;, 어떤 동작인지 &lt;code class=&quot;language-text&quot;&gt;directions_left-top&lt;/code&gt;를 적으면 된다.&lt;/p&gt;
-&lt;h3 id=&quot;types-of-modifiers&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#types-of-modifiers&quot; aria-label=&quot;types of modifiers permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Types of modifiers&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Boolean&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;block-name_modifier-name&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;block-name__element-name_modifier-name&lt;/code&gt;
-위와 같은 패턴으로 작성하는 것으로,&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;focused&lt;/code&gt;와 &lt;code class=&quot;language-text&quot;&gt;disabled&lt;/code&gt;와 같이 상태를 나타내는 것은 보통 boolean 값을 가질 것을 생각하는데 이럴때는 &lt;strong&gt;true&lt;/strong&gt;라고 가정하고 작성하는 것을 원칙으로 한다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;form&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;search-form search-form_focused&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;form&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;search-form_focused&lt;/code&gt;의 &lt;code class=&quot;language-text&quot;&gt;_focused&lt;/code&gt; 부분이 true라고 가정, 포커스가 된 상태의 검색폼이라고 할 수 있다&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Key-value&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;block-name_modifier-name_modifier-value&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;block-name__element-name_modifier-name_modifier-value&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;테마: 아일랜드&lt;/code&gt; 와 같이 키-벨류를 나타내는 듯한 이름을 말한다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;form&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;search-form search-form_theme_islands&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;form&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;theme_islands&lt;/code&gt;와 같이 키와 벨류를 하나의 언더바로 분리한 모양으로 작성하면 된다.&lt;/p&gt;
-&lt;h2 id=&quot;mix&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#mix&quot; aria-label=&quot;mix permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Mix&lt;/h2&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;header&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;search-form header__search-form&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;/&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;div&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;클래스를 나눠보면 아래와 같다.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;header&lt;/code&gt; Block&lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;header__search-from&lt;/code&gt; Element&lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;search-form&lt;/code&gt; Block&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;정리하면,&lt;/p&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;header&lt;/code&gt; Block에 &lt;code class=&quot;language-text&quot;&gt;search-from&lt;/code&gt; Block의 스타일과 동작을 Mix해 header 블록의 search-from이라는 &lt;code class=&quot;language-text&quot;&gt;header__search-from&lt;/code&gt;을 만들었다.&lt;/p&gt;
-&lt;p&gt;이는&lt;code class=&quot;language-text&quot;&gt;header__search-from&lt;/code&gt;를 이용해 &lt;code class=&quot;language-text&quot;&gt;header&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;search-from&lt;/code&gt; 각각의 Block의 독립성을 유지하면서 &lt;code class=&quot;language-text&quot;&gt;search-form&lt;/code&gt; 블록에 margin이나 position을 조정할 수 있게 된다.&lt;/p&gt;
-&lt;h2 id=&quot;file-structure&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#file-structure&quot; aria-label=&quot;file structure permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;File structure&lt;/h2&gt;
-&lt;p&gt;BEM 방법론은 파일 구조에도 쓰일 수 있다. 프로젝트 구조를 작성할 때 폴더, 파일명에 규칙을 적용해 아래와 같이 작성할 수도 있다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;search-form/ #Block
-
-    __input/ #Element
-        search-form__input.css
-        search-form__input.js
-
-    __button/ #Element
-        search-form__button.css
-        search-form__button.js
-
-    _theme/ #Modifier
-        search-form_theme_islands.css
-        search-form_theme_lite.css
-
-    search-form.css
-    search-form.js&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;파일 구조를 작성하기위한 규칙은 아래와 같다.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;하나의 Block은 하나의 디랙토리에 해당한다.&lt;/li&gt;
-&lt;li&gt;Block과 디렉토리의 이름은 동일해야한다.&lt;/li&gt;
-&lt;li&gt;Block의 구현은 별도의 파일로 나눈다. (&lt;code class=&quot;language-text&quot;&gt;header.js&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;header.css&lt;/code&gt;)&lt;/li&gt;
-&lt;li&gt;Block 디렉토리가 루트 디렉토리가 되며 아래에 해당 블록의 Element, Modifier 디렉토리가 있는다.&lt;/li&gt;
-&lt;li&gt;Element 디렉토리의 이름은 두개의 언더바 (&lt;code class=&quot;language-text&quot;&gt;__&lt;/code&gt;)로 시작한다 (&lt;code class=&quot;language-text&quot;&gt;header/__logo/&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;menu/__item/&lt;/code&gt;)&lt;/li&gt;
-&lt;li&gt;Modifier 디렉토리의 이름은 하나의 언더바 (&lt;code class=&quot;language-text&quot;&gt;_&lt;/code&gt;)로 시작한다.(&lt;code class=&quot;language-text&quot;&gt;header/_fixed/&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;menu/_theme_islands/&lt;/code&gt;)&lt;/li&gt;
-&lt;li&gt;Element와 Modifier의 구현은 별도의 파일로 나눈다. (&lt;code class=&quot;language-text&quot;&gt;header__input.js&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;header_theme_islands.css&lt;/code&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;ul&gt;
-&lt;li&gt;References - &lt;a href=&quot;https://en.bem.info/methodology/quick-start&quot; title=&quot;bem quick start&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;BEM Quick-start&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item></channel></rss>
