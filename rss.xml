@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Dev.White | Feed]]></title><description><![CDATA[Dev.White의 웹 개발 블로그입니다. 프론트엔드 스킬을 주로 다루며 백엔드와 그 외 기술에도 지속적으로 관심을 기울이고 있습니다.]]></description><link>https://junhobaik.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 03 Jul 2020 09:10:14 GMT</lastBuildDate><item><title><![CDATA[image test]]></title><description><![CDATA[image Test jpg    png  gif]]></description><link>https://junhobaik.github.io/image-post-example.md/</link><guid isPermaLink="false">https://junhobaik.github.io/image-post-example.md/</guid><pubDate>Fri, 03 Jul 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;image-test&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#image-test&quot; aria-label=&quot;image test permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;image Test&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Dev.White | Feed]]></title><description><![CDATA[Dev.White의 웹 개발 블로그입니다. 프론트엔드 스킬을 주로 다루며 백엔드와 그 외 기술에도 지속적으로 관심을 기울이고 있습니다.]]></description><link>https://junhobaik.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 03 Jul 2020 09:25:55 GMT</lastBuildDate><item><title><![CDATA[image test]]></title><description><![CDATA[image Test jpg     png  gif]]></description><link>https://junhobaik.github.io/image-post-example.md/</link><guid isPermaLink="false">https://junhobaik.github.io/image-post-example.md/</guid><pubDate>Fri, 03 Jul 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;image-test&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#image-test&quot; aria-label=&quot;image test permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;image Test&lt;/h2&gt;
 &lt;h3 id=&quot;jpg&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#jpg&quot; aria-label=&quot;jpg permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;jpg&lt;/h3&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
@@ -90,6 +90,38 @@
 /static/3f58c8ab32e337fa8d5ca9a6f4be9119/a8a14/test3.jpg 885w,
 /static/3f58c8ab32e337fa8d5ca9a6f4be9119/fbd2c/test3.jpg 1180w,
 /static/3f58c8ab32e337fa8d5ca9a6f4be9119/e5bc7/test3.jpg 5184w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/6e65e4fab3be4816ce59f0d91d069809/93719/test4.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQFAv/EABUBAQEAAAAAAAAAAAAAAAAAAAIA/9oADAMBAAIQAxAAAAHDkplGkTAX/8QAGhAAAgMBAQAAAAAAAAAAAAAAAAIBAxESE//aAAgBAQABBQJnlIqY96jGsFXkmV3/xAAWEQEBAQAAAAAAAAAAAAAAAAAAEQH/2gAIAQMBAT8BmI//xAAWEQEBAQAAAAAAAAAAAAAAAAAAEgH/2gAIAQIBAT8BrVv/xAAbEAACAgMBAAAAAAAAAAAAAAAAAREhAjJBYf/aAAgBAQAGPwLjIZsKqXpLyOn/xAAbEAEAAgIDAAAAAAAAAAAAAAABABEhkUFRYf/aAAgBAQABPyEE4dS1pb8JTimmLkRHVpXqcRtP/9oADAMBAAIAAwAAABAkL//EABYRAQEBAAAAAAAAAAAAAAAAAAARAf/aAAgBAwEBPxDJIf/EABgRAAIDAAAAAAAAAAAAAAAAAAABESEx/9oACAECAQE/EHKO2n//xAAbEAEBAAIDAQAAAAAAAAAAAAABEQAhMWFx8P/aAAgBAQABPxANqylaTrFMZbHRMX0ifHGAZAgaa9xGCJNSe84FFp3z/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;test4&quot;
+        title=&quot;test4&quot;
+        src=&quot;/static/6e65e4fab3be4816ce59f0d91d069809/1c72d/test4.jpg&quot;
+        srcset=&quot;/static/6e65e4fab3be4816ce59f0d91d069809/a80bd/test4.jpg 148w,
+/static/6e65e4fab3be4816ce59f0d91d069809/1c91a/test4.jpg 295w,
+/static/6e65e4fab3be4816ce59f0d91d069809/1c72d/test4.jpg 590w,
+/static/6e65e4fab3be4816ce59f0d91d069809/a8a14/test4.jpg 885w,
+/static/6e65e4fab3be4816ce59f0d91d069809/fbd2c/test4.jpg 1180w,
+/static/6e65e4fab3be4816ce59f0d91d069809/93719/test4.jpg 4000w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
