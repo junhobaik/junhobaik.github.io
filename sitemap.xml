@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url> <loc>https://junhobaik.github.io/image-post-example.md/</loc> <lastmod>2020-07-03</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://junhobaik.github.io/exchange-student-review_1/</loc> <lastmod>2020-06-28</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://junhobaik.github.io/yt-ohc/</loc> <lastmod>2020-06-26</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://junhobaik.github.io/es2016-es2020/</loc> <lastmod>2020-02-06</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://junhobaik.github.io/react-hooks/</loc> <lastmod>2020-01-08</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -56,8 +54,8 @@
 <url> <loc>https://junhobaik.github.io/jekyll-apply-theme/</loc> <lastmod>2018-01-14</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://junhobaik.github.io/start-jekyll-blog/</loc> <lastmod>2018-01-14</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://junhobaik.github.io/js-functions/</loc> <lastmod>2018-01-02</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://junhobaik.github.io/git-alias/</loc> <lastmod>2017-12-30</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://junhobaik.github.io/js-hoisting/</loc> <lastmod>2017-12-30</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://junhobaik.github.io/git-alias/</loc> <lastmod>2017-12-30</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://junhobaik.github.io/js-react-apply-sass/</loc> <lastmod>2017-11-08</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://junhobaik.github.io/php-cookie-session/</loc> <lastmod>2017-11-06</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://junhobaik.github.io/js-semicolon-asi/</loc> <lastmod>2017-10-17</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -71,9 +69,9 @@
 <url> <loc>https://junhobaik.github.io/js-es6-class/</loc> <lastmod>2017-08-10</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://junhobaik.github.io/js-es6-object-assign/</loc> <lastmod>2017-08-10</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://junhobaik.github.io/js-es6-arrow-function/</loc> <lastmod>2017-07-21</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://junhobaik.github.io/js-es6-from/</loc> <lastmod>2017-06-29</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://junhobaik.github.io/js-es6-string-methods/</loc> <lastmod>2017-06-29</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://junhobaik.github.io/js-es6-spread-operator/</loc> <lastmod>2017-06-29</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://junhobaik.github.io/js-es6-string-methods/</loc> <lastmod>2017-06-29</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://junhobaik.github.io/js-es6-from/</loc> <lastmod>2017-06-29</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://junhobaik.github.io/js-for-loop/</loc> <lastmod>2017-06-29</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://junhobaik.github.io/js-es6-const-let/</loc> <lastmod>2017-06-28</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://junhobaik.github.io/js-react-lifecycle/</loc> <lastmod>2017-06-20</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
