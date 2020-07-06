@@ -58,7 +58,7 @@
     .info {
       display: flex;
       font-size: 0.84rem;
-      align-items: flex-start;
+      align-items: center;
 
       .date-wrap {
         display: flex;
@@ -77,10 +77,16 @@
       }
 
       .tag-list {
-        display: flex;
         flex-wrap: wrap;
+        display: -webkit-box;
+        height: 0.9rem;
+        line-height: 1;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
 
         .tag {
+          display: inline;
           margin: 0;
           margin-right: 0.5rem;
           span > a {

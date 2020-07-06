@@ -59,11 +59,11 @@ const PostList = memo((props: PostListProps) => {
       if (tag === 'undefined') return;
 
       return (
-        <li key={`${slug}-${tag}`} className="tag">
+        <div key={`${slug}-${tag}`} className="tag">
           <span>
             <Link to={`/tags#${tag}`}>{`#${tag}`}</Link>
           </span>
-        </li>
+        </div>
       );
     });
 
