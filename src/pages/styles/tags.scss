@@ -30,6 +30,8 @@
         span {
           cursor: pointer;
           opacity: 0.5;
+          line-height: 1.25;
+
           &:hover {
             opacity: 0.9 !important;
           }

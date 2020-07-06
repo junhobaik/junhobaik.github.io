@@ -36,7 +36,7 @@ const Tags = (props: TagsPageProps) => {
     const getFontSize = () => {
       let fontSize = Math.round(50 / (largeCount / g.totalCount)).toString();
       if (fontSize.length <= 1) fontSize = `0${fontSize}`;
-      return `1.${fontSize}rem`;
+      return `${Number(fontSize) / 100 + 0.9}rem`;
     };
 
     return (
@@ -44,7 +44,7 @@ const Tags = (props: TagsPageProps) => {
         <span
           className="tag-text"
           style={{
-            fontSize: g.fieldValue !== 'undefined' ? getFontSize() : '1rem',
+            fontSize: g.fieldValue !== 'undefined' ? getFontSize() : '0.9rem',
             opacity: g.fieldValue === targetTag ? '0.9' : '0.5',
             fontWeight: g.fieldValue === targetTag ? 'bold' : 'normal',
           }}
