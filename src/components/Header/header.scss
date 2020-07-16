@@ -10,8 +10,7 @@
   padding: 0 2rem 1rem 2rem;
   height: $header-height;
   max-height: $header-height;
-  transition: top 0.3s;
-  transition-delay: 0.2s;
+  transition: top 0.3s ease 0.2s; // toggleTheme();
   background-color: transparent;
   user-select: none;
   pointer-events: none;
