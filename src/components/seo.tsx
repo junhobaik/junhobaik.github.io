@@ -21,6 +21,7 @@ function SEO(props: SEOPropsType) {
             title
             description
             author
+            language
           }
         }
       }
@@ -32,7 +33,7 @@ function SEO(props: SEOPropsType) {
   return (
     <Helmet
       htmlAttributes={{
-        lang,
+        lang: site.siteMetadata.language ?? lang,
       }}
       title={title}
       titleTemplate={title === 'Home' ? site.siteMetadata.title : `%s | ${site.siteMetadata.title}`}
