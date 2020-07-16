@@ -20,6 +20,10 @@
       margin: 0;
       line-height: 1.5;
       word-break: keep-all;
+
+      @media screen and (max-width: $break-s) {
+        font-size: 1.2rem;
+      }
     }
 
     .blog-post-info {
