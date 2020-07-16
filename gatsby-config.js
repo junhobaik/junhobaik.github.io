@@ -1,8 +1,8 @@
 const config = require('./config');
-const { title, description, author, googleAnalytics, siteUrl } = config;
+const { title, description, author, googleAnalytics, siteUrl, language } = config;
 
 const gatsbyConfig = {
-  siteMetadata: { title, description, author, siteUrl },
+  siteMetadata: { title, description, author, siteUrl, language },
 
   plugins: [
     {
