@@ -3,8 +3,8 @@ import Typography from 'typography';
 const typography = new Typography({
   baseFontSize: '16px',
   baseLineHeight: 1.666,
-  headerFontFamily: ['Nanum Gothic'],
-  bodyFontFamily: ['Nanum Gothic'],
+  headerFontFamily: ['Apple SD Gothic Neo', 'Nanum Gothic'],
+  bodyFontFamily: ['Apple SD Gothic Neo', 'Nanum Gothic'],
 });
 
 const googleFonts: { name: string; bold?: number[] }[] = [
@@ -15,10 +15,6 @@ const googleFonts: { name: string; bold?: number[] }[] = [
   {
     name: 'Nanum Gothic Coding',
     bold: [400, 700],
-  },
-  {
-    name: 'Noto Serif KR',
-    bold: [300, 400, 700],
   },
   { name: 'Raleway' },
 ];
