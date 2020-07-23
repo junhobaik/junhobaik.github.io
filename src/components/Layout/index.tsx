@@ -28,6 +28,7 @@ const Layout = (props: LayoutPropsType) => {
     query SiteTitleQuery {
       site {
         siteMetadata {
+          author
           title
         }
       }
@@ -64,8 +65,9 @@ const Layout = (props: LayoutPropsType) => {
         <div id="content">
           <main>{children}</main>
           <footer>
-            © {new Date().getFullYear()} JunhoBaik, Built with
-            {` `}
+            <span>{`© ${new Date().getFullYear()} ${data.site.siteMetadata.author} | Theme by `}</span>
+            <a href="https://github.com/junhobaik">JunhoBaik</a>
+            <span>{` | Built with `}</span>
             <a href="https://www.gatsbyjs.org">Gatsby</a>
           </footer>
         </div>
