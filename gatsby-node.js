@@ -115,6 +115,16 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     };
 
     const rewriteNode = node => {
+      if (node.frontmatter.title.includes(`"`)) {
+        console.log('');
+        console.warn(`
+It is not recommended to include " in the title.
+- file: ${node.fileAbsolutePath}
+- title: ${node.frontmatter.title}
+
+        `);
+      }
+
       // 마크다운 파일 내 keywords 필드가 비어있을 시 오류가 나지 않도록 하기 위함
       if (!node.frontmatter.keywords) {
         node.frontmatter.keywords = [config.title, config.author];
