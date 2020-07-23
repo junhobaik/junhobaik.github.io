@@ -29,6 +29,7 @@ function SEO(props: SEOPropsType) {
   );
 
   const metaDescription = description ?? site.siteMetadata.description;
+  const metaTtitle = site.siteMetadata.title;
 
   return (
     <Helmet
@@ -36,7 +37,7 @@ function SEO(props: SEOPropsType) {
         lang: site.siteMetadata.language ?? lang,
       }}
       title={title}
-      titleTemplate={title === 'Home' ? site.siteMetadata.title : `%s | ${site.siteMetadata.title}`}
+      titleTemplate={title === 'Home' ? metaTtitle : `%s | ${metaTtitle}`}
       meta={[
         {
           name: `description`,
