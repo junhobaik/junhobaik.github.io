@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useEffect, useState } from 'react';
 import Helmet from 'react-helmet';
-import { connect } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { graphql, Link } from 'gatsby';
 import { DiscussionEmbed } from 'disqus-react';
 import moment from 'moment';
@@ -23,6 +23,8 @@ import {
   EmailIcon,
 } from 'react-share';
 
+import { RootState } from '../state/reducer';
+
 import Layout from '../components/Layout';
 import Toc from '../components/Toc';
 import SEO from '../components/seo';
@@ -36,11 +38,11 @@ const config = require('../../config');
 export interface postProps {
   data: any;
   pageContext: { slug: string; series: any[]; lastmod: string };
-  isMobile: boolean;
 }
 
 const Post = (props: postProps) => {
-  const { data, pageContext, isMobile } = props;
+  const { data, pageContext } = props;
+  const isMobile = useSelector((state: RootState) => state.isMobile);
   const { markdownRemark } = data;
   const { frontmatter, html, tableOfContents, fields, excerpt } = markdownRemark;
   const { title, date, tags, keywords } = frontmatter;
@@ -359,8 +361,4 @@ export const pageQuery = graphql`
   }
 `;
 
-const mapStateToProps = ({ isMobile }: { isMobile: boolean }) => {
-  return { isMobile };
-};
-
-export default connect(mapStateToProps)(Post);
+export default Post;

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useState, useEffect } from 'react';
 import Helmet from 'react-helmet';
-import { connect } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { useStaticQuery, graphql } from 'gatsby';
 import MobileDetect from 'mobile-detect';
 import { config as FaConfig, dom as FaDom } from '@fortawesome/fontawesome-svg-core';
@@ -9,21 +9,21 @@ import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome';
 import { faAngleDoubleUp } from '@fortawesome/free-solid-svg-icons';
 import { useColorMode } from 'theme-ui';
 
-import Header from '../Header';
 import './layout.scss';
+import Header from '../Header';
 import { googleFont } from '../../utils/typography';
+import { actionCreators } from '../../state/actions';
 
 FaConfig.autoAddCss = false;
 
-export interface LayoutPropsType {
+interface LayoutPropsType {
   children: Object;
-  isMobile: boolean;
-  setIsMobile: Function;
 }
 
 const Layout = (props: LayoutPropsType) => {
-  const { children, setIsMobile } = props;
+  const { children } = props;
   const [isTop, setIsTop] = useState(true);
+  const dispatch = useDispatch();
   const [colorMode] = useColorMode();
   const isDark = colorMode === 'dark';
 
@@ -40,7 +40,7 @@ const Layout = (props: LayoutPropsType) => {
   useEffect(() => {
     const md = new MobileDetect(window.navigator.userAgent);
     if (md.mobile()) {
-      setIsMobile(true);
+      dispatch(actionCreators.setIsMobile(true));
     }
 
     const setTop = () => {
@@ -91,14 +91,4 @@ const Layout = (props: LayoutPropsType) => {
   );
 };
 
-const mapStateToProps = ({ isMobile }: { isMobile: boolean }) => {
-  return { isMobile };
-};
-
-const mapDispatchToProps = (dispatch: any) => {
-  return {
-    setIsMobile: (isMobile: boolean) => dispatch({ type: `SET_IS_MOBILE`, isMobile }),
-  };
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(Layout);
+export default Layout;
