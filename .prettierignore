@@ -2,5 +2,4 @@
 package.json
 package-lock.json
 public
-config.js
-tsconfig.json
+_config.js
