@@ -1,6 +1,7 @@
 const path = require(`path`);
 const { createFilePath } = require('gatsby-source-filesystem');
-const config = require('./config');
+
+const config = require('./_config');
 
 // Create Pages
 exports.createPages = async ({ actions, graphql, reporter }) => {
@@ -44,7 +45,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
   const { edges } = result.data.allMarkdownRemark;
 
-  edges.forEach(({ node }, index) => {
+  edges.forEach(({ node }) => {
     const { fields, frontmatter } = node;
     const { slug } = fields;
     const { date, update } = frontmatter;
@@ -141,7 +142,7 @@ It is not recommended to include " in the title.
 
       // markdown 내 date의 timezone 제거
       if (node.frontmatter.date.includes('+')) {
-        date = new Date(node.frontmatter.date.split('+')[0]);
+        const date = new Date(node.frontmatter.date.split('+')[0]);
         node.frontmatter.date = date;
       } else {
         node.frontmatter.date = new Date(node.frontmatter.date);
