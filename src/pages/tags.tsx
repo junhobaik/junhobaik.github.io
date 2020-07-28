@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 import * as React from 'react';
 import { useEffect, useState } from 'react';
 import { graphql } from 'gatsby';
@@ -7,7 +9,7 @@ import SEO from '../components/seo';
 import './styles/tags.scss';
 import PostList from '../components/PostList';
 
-export interface TagsPageProps {
+interface TagsPageProps {
   data: any;
 }
 
@@ -79,13 +81,10 @@ const Tags = (props: TagsPageProps) => {
       if (g.fieldValue !== 'undefined' && g.totalCount > large) large = g.totalCount;
     }
     setLargeCount(large);
-
-    return () => {};
   }, [group]);
 
   useEffect(() => {
     if (location.hash) setTargetTag(location.hash.split('#')[1]);
-    return () => {};
   }, []);
 
   return (

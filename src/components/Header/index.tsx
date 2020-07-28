@@ -9,9 +9,9 @@ import { useColorMode } from 'theme-ui';
 import './header.scss';
 import { RootState } from '../../state/reducer';
 import { actionCreators } from '../../state/actions';
-const config = require('../../../config');
+import config from '../../../_config';
 
-export interface headerPropsType {
+interface headerPropsType {
   siteTitle: string;
 }
 
@@ -24,7 +24,7 @@ const Header = (props: headerPropsType) => {
   const [colorMode, setColorMode] = useColorMode();
 
   const toggleTheme = useCallback(() => {
-    const ms: number = 300;
+    const ms = 300;
     const header: HTMLElement | null = document.getElementById('Header');
     const transition = 'top 0.3s ease 0.2s, background-color ${ms}ms';
 

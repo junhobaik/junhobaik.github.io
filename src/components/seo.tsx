@@ -1,16 +1,18 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 import * as React from 'react';
 import Helmet from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
-export interface SEOPropsType {
-  description: string;
-  lang: string;
-  meta: any[];
-  title: string;
-  keywords: string[];
+interface SEOPropsType {
+  description?: string;
+  lang?: string;
+  meta?: any[];
+  title?: string;
+  keywords?: string[];
 }
 
-function SEO(props: SEOPropsType) {
+const SEO = (props: SEOPropsType) => {
   const { description, lang, meta, title, keywords } = props;
 
   const { site } = useStaticQuery(
@@ -75,16 +77,9 @@ function SEO(props: SEOPropsType) {
           name: `keywords`,
           content: keywords,
         },
-      ].concat(meta)}
+      ].concat(meta ?? [])}
     />
   );
-}
-
-SEO.defaultProps = {
-  lang: `en`,
-  meta: [],
-  description: ``,
-  keywords: [],
 };
 
 export default SEO;

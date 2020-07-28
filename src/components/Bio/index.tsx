@@ -4,7 +4,7 @@ import { faUserCircle, faAt, faMapMarkerAlt, faLink, faAddressCard, faRss } from
 import { faFacebook, faInstagram, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 import './bio.scss';
-const config = require('../../../config');
+import config from '../../../_config';
 
 const Bio = () => {
   const { comment, name, company, location, email, website, linkedin, facebook, instagram, github } = config;

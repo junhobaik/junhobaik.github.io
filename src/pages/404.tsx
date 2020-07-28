@@ -14,7 +14,7 @@ const NotFoundPage = () => (
         <Fa icon={faFrown} />
       </div>
       <h1>404</h1>
-      <p>That page doesn't exist or is unavailable.</p>
+      <p>{`That page doesn't exist or is unavailable.`}</p>
     </div>
   </Layout>
 );

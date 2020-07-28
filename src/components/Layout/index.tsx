@@ -12,9 +12,10 @@ import './layout.scss';
 import Header from '../Header';
 import { googleFont } from '../../utils/typography';
 import { actionCreators } from '../../state/actions';
+import config from '../../../_config';
 
 interface LayoutPropsType {
-  children: Object;
+  children: React.ReactNode;
 }
 
 const Layout = (props: LayoutPropsType) => {
@@ -57,7 +58,7 @@ const Layout = (props: LayoutPropsType) => {
       <Helmet>
         <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
         <link href={`https://fonts.googleapis.com/css?family=${googleFont}`} rel="stylesheet" />
-        <meta name="google-site-verification" content={require('../../../config').googleSearchConsole ?? ''} />
+        <meta name="google-site-verification" content={config.googleSearchConsole ?? ''} />
       </Helmet>
 
       <div id="layout" className={isDark ? 'dark' : 'light'}>

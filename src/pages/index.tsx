@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 import * as React from 'react';
 import { graphql, Link } from 'gatsby';
 import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome';
@@ -9,9 +11,8 @@ import Bio from '../components/Bio';
 import './styles/index.scss';
 import PostList from '../components/PostList';
 
-export interface IndexPageProps {
+interface IndexPageProps {
   path: string;
-  location: any;
   data: any;
 }
 

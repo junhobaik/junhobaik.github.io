@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 import * as React from 'react';
 import { useEffect, useState } from 'react';
 import Helmet from 'react-helmet';
@@ -33,9 +35,9 @@ import 'katex/dist/katex.min.css';
 import './code-theme.scss';
 import './post.scss';
 
-const config = require('../../config');
+import config from '../../_config';
 
-export interface postProps {
+interface postProps {
   data: any;
   pageContext: { slug: string; series: any[]; lastmod: string };
 }
@@ -71,8 +73,6 @@ const Post = (props: postProps) => {
     const minusValue = window.innerHeight < 500 ? 100 : Math.floor(window.innerHeight / 5);
     const yPositions = hs.map(h => h.offsetTop - minusValue);
     setYList(yPositions);
-
-    return () => {};
   }, []);
 
   useEffect(() => {
