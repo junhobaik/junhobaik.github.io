@@ -1,11 +1,11 @@
 @import '../../utils/variables.scss';
 
-a {
-  all: unset;
-  cursor: pointer;
-}
-
 #layout {
+  a {
+    all: unset;
+    cursor: pointer;
+  }
+
   svg {
     color: #6a737d;
     transition: color 0.8s;
