@@ -42,6 +42,8 @@ interface postProps {
 }
 
 const Post = (props: postProps) => {
+  const isSSR = typeof window === 'undefined';
+
   const { data, pageContext } = props;
   const isMobile = useSelector((state: RootState) => state.isMobile);
   const { markdownRemark } = data;
@@ -336,7 +338,7 @@ const Post = (props: postProps) => {
                 />
               </aside>
 
-              <Suspense fallback={<></>}>{commentEl}</Suspense>
+              {!isSSR ? <Suspense fallback={<></>}>{commentEl}</Suspense> : null}
             </>
           )}
         </div>
