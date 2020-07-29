@@ -4,6 +4,7 @@ import Helmet from 'react-helmet';
 import { useDispatch } from 'react-redux';
 import { useStaticQuery, graphql } from 'gatsby';
 import MobileDetect from 'mobile-detect';
+import { config as FaConfig, dom as FaDom } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome';
 import { faAngleDoubleUp } from '@fortawesome/free-solid-svg-icons';
 import { useColorMode } from 'theme-ui';
@@ -13,6 +14,8 @@ import Header from '../Header';
 import { googleFont } from '../../utils/typography';
 import { actionCreators } from '../../state/actions';
 import config from '../../../_config';
+
+FaConfig.autoAddCss = false;
 
 interface LayoutPropsType {
   children: React.ReactNode;
@@ -59,6 +62,7 @@ const Layout = (props: LayoutPropsType) => {
         <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
         <link href={`https://fonts.googleapis.com/css?family=${googleFont}`} rel="stylesheet" />
         <meta name="google-site-verification" content={config.googleSearchConsole ?? ''} />
+        <style>{FaDom.css()}</style>
       </Helmet>
 
       <div id="layout" className={isDark ? 'dark' : 'light'}>
