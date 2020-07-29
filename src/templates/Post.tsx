@@ -23,17 +23,17 @@ import {
   PocketIcon,
   EmailIcon,
 } from 'react-share';
-import _ from 'lodash';
+import { throttle } from 'lodash';
 
-import { RootState } from '../state/reducer';
+import './post.scss';
+import './code-theme.scss';
+import 'katex/dist/katex.min.css';
 
 import Layout from '../components/Layout';
 import Toc from '../components/Toc';
 import SEO from '../components/seo';
-import 'katex/dist/katex.min.css';
-import './code-theme.scss';
-import './post.scss';
 
+import { RootState } from '../state/reducer';
 import config from '../../_config';
 
 interface postProps {
@@ -149,7 +149,7 @@ const Post = (props: postProps) => {
       const Comment = React.lazy(() => import('../components/Comment'));
       setCommentEl(<Comment slug={slug} title={title} />);
     };
-    const scrollEvents = _.throttle(() => {
+    const scrollEvents = throttle(() => {
       const postContentHeight = document.querySelector('.blog-post')?.getBoundingClientRect().height ?? Infinity;
       if (window.scrollY + window.innerHeight - postContentOriginTop > postContentHeight) {
         renderComment();
