@@ -8,8 +8,6 @@ interface CommentProps {
 }
 
 const Comment = ({ slug, title }: CommentProps) => {
-  console.log('Comment');
-
   const disqusConfig = {
     shortname: config.disqusShortname,
     config: {

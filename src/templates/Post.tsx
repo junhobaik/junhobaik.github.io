@@ -311,7 +311,7 @@ const Post = (props: postProps) => {
             </div>
           ) : null}
 
-          {!isDevelopment ? (
+          {isDevelopment ? (
             <>
               <aside className="ad ad-dev">
                 <span>Ads</span>
