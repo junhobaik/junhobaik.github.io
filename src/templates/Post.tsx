@@ -151,7 +151,7 @@ const Post = (props: postProps) => {
     };
     const scrollEvents = throttle(() => {
       const postContentHeight = document.querySelector('.blog-post')?.getBoundingClientRect().height ?? Infinity;
-      if (window.scrollY + window.innerHeight / 2 - postContentOriginTop > postContentHeight) {
+      if (window.scrollY + window.innerHeight * 1.75 - postContentOriginTop > postContentHeight) {
         renderComment();
         removeScrollEvent();
       }
