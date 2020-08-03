@@ -90,7 +90,6 @@
     "format": "prettier --write \"**/*.{js,jsx,json,scss,tsx,ts}\"",
     "tsc": "tsc",
     "type-check": "tsc --noEmit",
-    "lint": "tslint --project .",
     "deploy": "gatsby clean && gatsby build && gh-pages -b master -d public"
   },
   "repository": {
