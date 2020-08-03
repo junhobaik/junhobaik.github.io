@@ -187,7 +187,7 @@ const gatsbyConfig = {
                 ) {
                   edges {
                     node {
-                      excerpt
+                      excerpt(truncate: true, format: PLAIN)
                       html
                       fields { slug }
                       frontmatter {

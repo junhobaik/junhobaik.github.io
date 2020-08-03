@@ -353,7 +353,7 @@ export const pageQuery = graphql`
   query($slug: String) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
-      excerpt
+      excerpt(truncate: true, format: PLAIN)
       tableOfContents
       fields {
         slug
