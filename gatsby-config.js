@@ -1,4 +1,4 @@
-const config = require('./config');
+const config = require('./_config');
 const { title, description, author, googleAnalytics, siteUrl, language } = config;
 
 const gatsbyConfig = {
@@ -43,6 +43,7 @@ const gatsbyConfig = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 590,
+              loading: 'lazy',
             },
           },
           {
@@ -186,7 +187,7 @@ const gatsbyConfig = {
                 ) {
                   edges {
                     node {
-                      excerpt
+                      excerpt(truncate: true, format: PLAIN)
                       html
                       fields { slug }
                       frontmatter {

@@ -1,0 +1,28 @@
+{
+  "env": {
+    "browser": true,
+    "node": true,
+    "commonjs": true,
+    "es2020": true
+  },
+  "extends": ["eslint:recommended", "plugin:react/recommended", "plugin:@typescript-eslint/recommended"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 11
+  },
+  "plugins": ["react", "@typescript-eslint"],
+  "rules": {
+    "@typescript-eslint/explicit-module-boundary-types": 0
+  },
+  "overrides": [
+    {
+      "files": ["*.js"],
+      "rules": {
+        "@typescript-eslint/no-var-requires": 0
+      }
+    }
+  ]
+}

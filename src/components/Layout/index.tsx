@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useState, useEffect } from 'react';
 import Helmet from 'react-helmet';
-import { connect } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { useStaticQuery, graphql } from 'gatsby';
 import MobileDetect from 'mobile-detect';
 import { config as FaConfig, dom as FaDom } from '@fortawesome/fontawesome-svg-core';
@@ -9,21 +9,22 @@ import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome';
 import { faAngleDoubleUp } from '@fortawesome/free-solid-svg-icons';
 import { useColorMode } from 'theme-ui';
 
-import Header from '../Header';
 import './layout.scss';
+import Header from '../Header';
 import { googleFont } from '../../utils/typography';
+import { actionCreators } from '../../state/actions';
+import config from '../../../_config';
 
 FaConfig.autoAddCss = false;
 
-export interface LayoutPropsType {
-  children: Object;
-  isMobile: boolean;
-  setIsMobile: Function;
+interface LayoutPropsType {
+  children: React.ReactNode;
 }
 
 const Layout = (props: LayoutPropsType) => {
-  const { children, setIsMobile } = props;
+  const { children } = props;
   const [isTop, setIsTop] = useState(true);
+  const dispatch = useDispatch();
   const [colorMode] = useColorMode();
   const isDark = colorMode === 'dark';
 
@@ -31,6 +32,7 @@ const Layout = (props: LayoutPropsType) => {
     query SiteTitleQuery {
       site {
         siteMetadata {
+          author
           title
         }
       }
@@ -40,7 +42,7 @@ const Layout = (props: LayoutPropsType) => {
   useEffect(() => {
     const md = new MobileDetect(window.navigator.userAgent);
     if (md.mobile()) {
-      setIsMobile(true);
+      dispatch(actionCreators.setIsMobile(true));
     }
 
     const setTop = () => {
@@ -59,7 +61,7 @@ const Layout = (props: LayoutPropsType) => {
       <Helmet>
         <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
         <link href={`https://fonts.googleapis.com/css?family=${googleFont}`} rel="stylesheet" />
-        <meta name="google-site-verification" content={require('../../../config').googleSearchConsole ?? ''} />
+        <meta name="google-site-verification" content={config.googleSearchConsole ?? ''} />
         <style>{FaDom.css()}</style>
       </Helmet>
 
@@ -68,8 +70,9 @@ const Layout = (props: LayoutPropsType) => {
         <div id="content">
           <main>{children}</main>
           <footer>
-            © {new Date().getFullYear()} JunhoBaik, Built with
-            {` `}
+            <span>{`© ${new Date().getFullYear()} ${data.site.siteMetadata.author} | Theme by `}</span>
+            <a href="https://github.com/junhobaik">JunhoBaik</a>
+            <span>{` | Built with `}</span>
             <a href="https://www.gatsbyjs.org">Gatsby</a>
           </footer>
         </div>
@@ -91,14 +94,4 @@ const Layout = (props: LayoutPropsType) => {
   );
 };
 
-const mapStateToProps = ({ isMobile }: { isMobile: boolean }) => {
-  return { isMobile };
-};
-
-const mapDispatchToProps = (dispatch: any) => {
-  return {
-    setIsMobile: (isMobile: boolean) => dispatch({ type: `SET_IS_MOBILE`, isMobile }),
-  };
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(Layout);
+export default Layout;

@@ -1,17 +1,20 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 import * as React from 'react';
-import { memo, useEffect, useState, useCallback } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 import { Link } from 'gatsby';
 import { throttle } from 'lodash';
 
 import './postList.scss';
 
-export interface PostListProps {
+interface PostListProps {
   posts: any[];
 }
 
-const PostList = memo((props: PostListProps) => {
+const PostList = (props: PostListProps) => {
   const { posts } = props;
-  const [showCnt, setShowCnt] = useState(10);
+  const [showCnt, setShowCnt] = useState(0);
+  const [currentPostList, setCurrentPostList] = useState<JSX.Element[]>([]);
 
   const throttleScrollHandler = useCallback(
     throttle(() => {
@@ -27,7 +30,73 @@ const PostList = memo((props: PostListProps) => {
     []
   );
 
+  const expendPostList = useCallback((list: any) => {
+    const mapToList = list.map((post: any) => {
+      const { node } = post;
+      const { excerpt, fields, frontmatter } = node;
+      const { slug } = fields;
+      const { date, title, tags } = frontmatter;
+      let update = frontmatter.update;
+      if (Number(update.split(',')[1]) === 1) update = null;
+
+      const mapTag = tags.map((tag: string) => {
+        if (tag === 'undefined') return;
+
+        return (
+          <div key={`${slug}-${tag}`} className="tag">
+            <span>
+              <Link to={`/tags#${tag}`}>{`#${tag}`}</Link>
+            </span>
+          </div>
+        );
+      });
+
+      return (
+        <li key={slug} className={`post`}>
+          <article>
+            <h2 className="title">
+              <Link to={slug}>{title}</Link>
+            </h2>
+            <div className="info">
+              <div className="date-wrap">
+                <span className="date">{date}</span>
+                {update ? <span className="update">&nbsp;{`(Updated: ${update})`}</span> : null}
+              </div>
+              {tags.length && tags[0] !== 'undefined' ? <span className="info-dot">·</span> : null}
+              <ul className="tag-list">{mapTag}</ul>
+            </div>
+            <span className="excerpt">
+              <Link to={slug}>{excerpt}</Link>
+            </span>
+          </article>
+        </li>
+      );
+    });
+
+    setCurrentPostList((prev: JSX.Element[]) => {
+      return [...prev, ...mapToList];
+    });
+  }, []);
+
   useEffect(() => {
+    expendPostList(posts.slice(currentPostList.length, showCnt));
+  }, [showCnt]);
+
+  useEffect(() => {
+    posts.sort((a: any, b: any) => {
+      const af = a.node.frontmatter;
+      const bf = b.node.frontmatter;
+
+      const aDate = new Date(af.update.includes('0001') ? af.date : af.update);
+      const bDate = new Date(bf.update.includes('0001') ? bf.date : bf.update);
+
+      if (aDate < bDate) return 1;
+      if (aDate > bDate) return -1;
+      return 0;
+    });
+
+    setShowCnt(10);
+
     window.addEventListener('scroll', throttleScrollHandler);
 
     return () => {
@@ -35,64 +104,11 @@ const PostList = memo((props: PostListProps) => {
     };
   }, []);
 
-  posts.sort((a: any, b: any) => {
-    const af = a.node.frontmatter;
-    const bf = b.node.frontmatter;
-
-    const aDate = new Date(af.update.includes('0001') ? af.date : af.update);
-    const bDate = new Date(bf.update.includes('0001') ? bf.date : bf.update);
-
-    if (aDate < bDate) return 1;
-    if (aDate > bDate) return -1;
-    return 0;
-  });
-
-  const mapPost = posts.map((post: any, i: number) => {
-    const { node } = post;
-    const { excerpt, fields, frontmatter } = node;
-    const { slug } = fields;
-    const { date, title, tags } = frontmatter;
-    let update = frontmatter.update;
-    if (Number(update.split(',')[1]) === 1) update = null;
-
-    const mapTag = tags.map((tag: string) => {
-      if (tag === 'undefined') return;
-
-      return (
-        <div key={`${slug}-${tag}`} className="tag">
-          <span>
-            <Link to={`/tags#${tag}`}>{`#${tag}`}</Link>
-          </span>
-        </div>
-      );
-    });
-
-    return (
-      <li key={slug} className={`post ${i < showCnt ? 'show' : 'hide'}`}>
-        <article>
-          <h2 className="title">
-            <Link to={slug}>{title}</Link>
-          </h2>
-          <div className="info">
-            <div className="date-wrap">
-              <span className="date">{date}</span>
-              {update ? <span className="update">&nbsp;{`(Updated: ${update})`}</span> : null}
-            </div>
-            {tags.length && tags[0] !== 'undefined' ? <span className="info-dot">·</span> : null}
-            <ul className="tag-list">{mapTag}</ul>
-          </div>
-          <span className="excerpt">
-            <Link to={slug}>{excerpt}</Link>
-          </span>
-        </article>
-      </li>
-    );
-  });
   return (
     <div className="post-list">
-      <ul>{mapPost}</ul>
+      <ul>{currentPostList}</ul>
     </div>
   );
-});
+};
 
 export default PostList;

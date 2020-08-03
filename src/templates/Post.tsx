@@ -1,9 +1,10 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 import * as React from 'react';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, Suspense } from 'react';
 import Helmet from 'react-helmet';
-import { connect } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { graphql, Link } from 'gatsby';
-import { DiscussionEmbed } from 'disqus-react';
 import moment from 'moment';
 import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome';
 import { faListUl, faLayerGroup, faAngleLeft } from '@fortawesome/free-solid-svg-icons';
@@ -22,25 +23,29 @@ import {
   PocketIcon,
   EmailIcon,
 } from 'react-share';
+import { throttle } from 'lodash';
+
+import './post.scss';
+import './code-theme.scss';
+import 'katex/dist/katex.min.css';
 
 import Layout from '../components/Layout';
 import Toc from '../components/Toc';
 import SEO from '../components/seo';
 
-import 'katex/dist/katex.min.css';
-import './code-theme.scss';
-import './post.scss';
+import { RootState } from '../state/reducer';
+import config from '../../_config';
 
-const config = require('../../config');
-
-export interface postProps {
+interface postProps {
   data: any;
   pageContext: { slug: string; series: any[]; lastmod: string };
-  isMobile: boolean;
 }
 
 const Post = (props: postProps) => {
-  const { data, pageContext, isMobile } = props;
+  const isSSR = typeof window === 'undefined';
+
+  const { data, pageContext } = props;
+  const isMobile = useSelector((state: RootState) => state.isMobile);
   const { markdownRemark } = data;
   const { frontmatter, html, tableOfContents, fields, excerpt } = markdownRemark;
   const { title, date, tags, keywords } = frontmatter;
@@ -58,20 +63,44 @@ const Post = (props: postProps) => {
 
   const [yList, setYList] = useState([] as number[]);
   const [isInsideToc, setIsInsideToc] = useState(false);
+  const [commentEl, setCommentEl] = useState<JSX.Element>();
 
   const isTableOfContents = enablePostOfContents && tableOfContents !== '';
   const isDevelopment = process.env.NODE_ENV === 'development';
   const isDisqus: boolean = disqusShortname ? true : false;
   const isSocialShare = enableSocialShare;
 
-  useEffect(() => {
-    const hs = Array.from(document.querySelectorAll('h2, h3')) as HTMLHeadingElement[];
-    const minusValue = window.innerHeight < 500 ? 100 : Math.floor(window.innerHeight / 5);
-    const yPositions = hs.map(h => h.offsetTop - minusValue);
-    setYList(yPositions);
+  const mapTags = tags.map((tag: string) => {
+    return (
+      <li key={tag} className="blog-post-tag">
+        <Link to={`/tags#${tag}`}>{`#${tag}`}</Link>
+      </li>
+    );
+  });
 
-    return () => {};
-  }, []);
+  const mapSeries = series.map((s: any) => {
+    return (
+      <li key={`${s.slug}-series-${s.num}`} className={`series-item ${slug === s.slug ? 'current-series' : ''}`}>
+        <Link to={s.slug}>
+          <span>{s.title}</span>
+          <div className="icon-wrap">{slug === s.slug ? <Fa icon={faAngleLeft} /> : null}</div>
+        </Link>
+      </li>
+    );
+  });
+
+  const metaKeywords: (keywordList: string[], tagList: string[]) => string[] = (
+    keywordList: string[],
+    tagList: string[]
+  ) => {
+    const resultKeywords = new Set();
+
+    for (const v of [...keywordList, ...tagList]) {
+      resultKeywords.add(v);
+    }
+
+    return Array.from(resultKeywords) as string[];
+  };
 
   useEffect(() => {
     if (isMobile) {
@@ -112,47 +141,32 @@ const Post = (props: postProps) => {
     };
   }, [yList]);
 
-  const mapTags = tags.map((tag: string) => {
-    return (
-      <li key={tag} className="blog-post-tag">
-        <Link to={`/tags#${tag}`}>{`#${tag}`}</Link>
-      </li>
-    );
-  });
+  useEffect(() => {
+    // scroll
+    const postContentOriginTop = document.querySelector('.blog-post')?.getBoundingClientRect().top ?? 0;
+    const removeScrollEvent = () => document.removeEventListener('scroll', scrollEvents);
+    const renderComment = () => {
+      const Comment = React.lazy(() => import('../components/Comment'));
+      setCommentEl(<Comment slug={slug} title={title} />);
+    };
+    const scrollEvents = throttle(() => {
+      const postContentHeight = document.querySelector('.blog-post')?.getBoundingClientRect().height ?? Infinity;
+      if (window.scrollY + window.innerHeight * 1.75 - postContentOriginTop > postContentHeight) {
+        renderComment();
+        removeScrollEvent();
+      }
+    }, 250);
+    scrollEvents();
+    document.addEventListener('scroll', scrollEvents);
 
-  const mapSeries = series.map((s: any) => {
-    return (
-      <li key={`${s.slug}-series-${s.num}`} className={`series-item ${slug === s.slug ? 'current-series' : ''}`}>
-        <Link to={s.slug}>
-          <span>{s.title}</span>
-          <div className="icon-wrap">{slug === s.slug ? <Fa icon={faAngleLeft} /> : null}</div>
-        </Link>
-      </li>
-    );
-  });
+    // toc
+    const hs = Array.from(document.querySelectorAll('h2, h3')) as HTMLHeadingElement[];
+    const minusValue = window.innerHeight < 500 ? 100 : Math.floor(window.innerHeight / 5);
+    const yPositions = hs.map(h => h.offsetTop - minusValue);
+    setYList(yPositions);
 
-  //disqus
-  const disqusConfig = {
-    shortname: config.disqusShortname,
-    config: {
-      url: `${config.siteUrl + slug}`,
-      identifier: slug,
-      title,
-    },
-  };
-
-  const metaKeywords: (keywordList: string[], tagList: string[]) => string[] = (
-    keywordList: string[],
-    tagList: string[]
-  ) => {
-    const resultKeywords = new Set();
-
-    for (const v of [...keywordList, ...tagList]) {
-      resultKeywords.add(v);
-    }
-
-    return Array.from(resultKeywords) as string[];
-  };
+    return () => removeScrollEvent();
+  }, []);
 
   return (
     <>
@@ -324,11 +338,7 @@ const Post = (props: postProps) => {
                 />
               </aside>
 
-              {isDisqus ? (
-                <div className="comments">
-                  <DiscussionEmbed {...disqusConfig} />
-                </div>
-              ) : null}
+              {!isSSR ? <Suspense fallback={<></>}>{commentEl}</Suspense> : null}
             </>
           )}
         </div>
@@ -343,7 +353,7 @@ export const pageQuery = graphql`
   query($slug: String) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
-      excerpt
+      excerpt(truncate: true, format: PLAIN)
       tableOfContents
       fields {
         slug
@@ -359,8 +369,4 @@ export const pageQuery = graphql`
   }
 `;
 
-const mapStateToProps = ({ isMobile }: { isMobile: boolean }) => {
-  return { isMobile };
-};
-
-export default connect(mapStateToProps)(Post);
+export default Post;

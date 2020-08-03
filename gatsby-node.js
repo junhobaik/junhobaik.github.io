@@ -1,6 +1,7 @@
 const path = require(`path`);
 const { createFilePath } = require('gatsby-source-filesystem');
-const config = require('./config');
+
+const config = require('./_config');
 
 // Create Pages
 exports.createPages = async ({ actions, graphql, reporter }) => {
@@ -44,7 +45,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
   const { edges } = result.data.allMarkdownRemark;
 
-  edges.forEach(({ node }, index) => {
+  edges.forEach(({ node }) => {
     const { fields, frontmatter } = node;
     const { slug } = fields;
     const { date, update } = frontmatter;
@@ -115,6 +116,16 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     };
 
     const rewriteNode = node => {
+      if (node.frontmatter.title.includes(`"`)) {
+        console.log('');
+        console.warn(`
+It is not recommended to include " in the title.
+- file: ${node.fileAbsolutePath}
+- title: ${node.frontmatter.title}
+
+        `);
+      }
+
       // 마크다운 파일 내 keywords 필드가 비어있을 시 오류가 나지 않도록 하기 위함
       if (!node.frontmatter.keywords) {
         node.frontmatter.keywords = [config.title, config.author];
@@ -131,7 +142,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
       // markdown 내 date의 timezone 제거
       if (node.frontmatter.date.includes('+')) {
-        date = new Date(node.frontmatter.date.split('+')[0]);
+        const date = new Date(node.frontmatter.date.split('+')[0]);
         node.frontmatter.date = date;
       } else {
         node.frontmatter.date = new Date(node.frontmatter.date);

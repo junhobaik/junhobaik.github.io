@@ -3,28 +3,28 @@ import { useEffect, useState, useCallback } from 'react';
 import { Link } from 'gatsby';
 import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome';
 import { faTags, faSearch, faMoon, faSun, faChevronRight } from '@fortawesome/free-solid-svg-icons';
-import { connect } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import { useColorMode } from 'theme-ui';
 
 import './header.scss';
-const config = require('../../../config');
+import { RootState } from '../../state/reducer';
+import { actionCreators } from '../../state/actions';
+import config from '../../../_config';
 
-export interface headerPropsType {
+interface headerPropsType {
   siteTitle: string;
-  path: string;
-  size: string;
-  isMobile: boolean;
-  setPath: Function;
 }
 
 const Header = (props: headerPropsType) => {
-  const { siteTitle, path, setPath, size, isMobile } = props;
+  const { siteTitle } = props;
+  const dispatch = useDispatch();
+  const { isMobile, path, size } = useSelector((state: RootState) => state);
   const [, setYPos] = useState(0);
   const [isHide, setIsHide] = useState(false);
   const [colorMode, setColorMode] = useColorMode();
 
   const toggleTheme = useCallback(() => {
-    const ms: number = 300;
+    const ms = 300;
     const header: HTMLElement | null = document.getElementById('Header');
     const transition = 'top 0.3s ease 0.2s, background-color ${ms}ms';
 
@@ -61,6 +61,8 @@ const Header = (props: headerPropsType) => {
 
     const prevPath: string = path;
     const currPath: string = location.pathname;
+
+    const setPath = (path: string, size?: string) => dispatch(actionCreators.setPath(path, size));
 
     if (profile) {
       if (currPath === prevPath) {
@@ -167,14 +169,4 @@ const Header = (props: headerPropsType) => {
   );
 };
 
-const mapStateToProps = ({ path, size, isMobile }: { path: string; size: string; isMobile: boolean }) => {
-  return { path, size, isMobile };
-};
-
-const mapDispatchToProps = (dispatch: Function) => {
-  return {
-    setPath: (path: string, size: string) => dispatch({ type: `SET_PATH`, path, size }),
-  };
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(Header);
+export default Header;

@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 import * as React from 'react';
 import { useState } from 'react';
 import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome';
@@ -9,7 +11,7 @@ import { graphql } from 'gatsby';
 import PostList from '../components/PostList';
 import './styles/search.scss';
 
-export interface SearchProps {
+interface SearchProps {
   data: any;
 }
 
@@ -84,7 +86,7 @@ export const pageQuery = graphql`
       edges {
         node {
           rawMarkdownBody
-          excerpt(format: PLAIN)
+          excerpt(truncate: true, format: PLAIN)
           fields {
             slug
           }

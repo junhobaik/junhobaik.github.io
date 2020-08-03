@@ -2,10 +2,11 @@ import * as React from 'react';
 
 import './toc.scss';
 
-export interface TocProps {
+interface TocProps {
   toc: string;
   isOutside: boolean;
 }
+
 const Toc = (props: TocProps) => {
   const { toc, isOutside } = props;
 
