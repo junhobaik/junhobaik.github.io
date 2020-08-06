@@ -18,7 +18,7 @@ const Tags = (props: TagsPageProps) => {
   const { group } = data.allMarkdownRemark;
 
   const [largeCount, setLargeCount] = useState(0);
-  const [targetTag, setTargetTag] = useState('undefined');
+  const [targetTag, setTargetTag] = useState<string | undefined>();
   const [currentPostList, setCurrentPostList] = useState([]);
 
   interface groupItem {
@@ -72,18 +72,18 @@ const Tags = (props: TagsPageProps) => {
   };
 
   useEffect(() => {
+    setTargetTag(location?.hash ? location.hash.split('#')[1] : 'undefined');
+
     let large = 0;
     for (const g of group) {
       if (g.fieldValue !== 'undefined' && g.totalCount > large) large = g.totalCount;
     }
     setLargeCount(large);
-    setCurrentPostList(getPostList());
   }, []);
 
   useEffect(() => {
-    if (location.hash) setTargetTag(location.hash.split('#')[1]);
-    setCurrentPostList(getPostList());
-  }, [location.hash]);
+    if (targetTag) setCurrentPostList(getPostList());
+  }, [targetTag]);
 
   return (
     <Layout>
