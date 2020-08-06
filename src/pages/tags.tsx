@@ -18,7 +18,8 @@ const Tags = (props: TagsPageProps) => {
   const { group } = data.allMarkdownRemark;
 
   const [largeCount, setLargeCount] = useState(0);
-  const [targetTag, setTargetTag] = useState('undefined');
+  const [targetTag, setTargetTag] = useState<string | undefined>();
+  const [currentPostList, setCurrentPostList] = useState([]);
 
   interface groupItem {
     fieldValue: string;
@@ -34,7 +35,7 @@ const Tags = (props: TagsPageProps) => {
     return 0;
   });
 
-  const tagList: any[] = group.map((g: groupItem) => {
+  const tagList = group.map((g: groupItem) => {
     const getFontSize = () => {
       let fontSize = Math.round(50 / (largeCount / g.totalCount)).toString();
       if (fontSize.length <= 1) fontSize = `0${fontSize}`;
@@ -60,12 +61,7 @@ const Tags = (props: TagsPageProps) => {
     );
   });
 
-  tagList.sort((a: React.ReactElement) => {
-    if (a.key === 'undefined') return -1;
-    return 0;
-  });
-
-  const getPostList: () => any[] = () => {
+  const getPostList = () => {
     if (group.filter((g: groupItem) => g.fieldValue === targetTag).length) {
       return group.filter((g: groupItem) => g.fieldValue === targetTag)[0].edges;
     }
@@ -76,16 +72,18 @@ const Tags = (props: TagsPageProps) => {
   };
 
   useEffect(() => {
+    setTargetTag(location?.hash ? location.hash.split('#')[1] : 'undefined');
+
     let large = 0;
     for (const g of group) {
       if (g.fieldValue !== 'undefined' && g.totalCount > large) large = g.totalCount;
     }
     setLargeCount(large);
-  }, [group]);
+  }, []);
 
   useEffect(() => {
-    if (location.hash) setTargetTag(location.hash.split('#')[1]);
-  }, []);
+    if (targetTag) setCurrentPostList(getPostList());
+  }, [targetTag]);
 
   return (
     <Layout>
@@ -95,7 +93,7 @@ const Tags = (props: TagsPageProps) => {
           <ul>{tagList}</ul>
         </div>
 
-        <PostList posts={getPostList()} />
+        <PostList posts={currentPostList.length ? currentPostList : []} />
       </div>
     </Layout>
   );

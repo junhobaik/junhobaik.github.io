@@ -13,8 +13,20 @@ interface PostListProps {
 
 const PostList = (props: PostListProps) => {
   const { posts } = props;
-  const [showCnt, setShowCnt] = useState(0);
+  const [showCnt, setShowCnt] = useState(10);
   const [currentPostList, setCurrentPostList] = useState<JSX.Element[]>([]);
+
+  posts.sort((a: any, b: any) => {
+    const af = a.node.frontmatter;
+    const bf = b.node.frontmatter;
+
+    const aDate = new Date(af.update.includes('0001') ? af.date : af.update);
+    const bDate = new Date(bf.update.includes('0001') ? bf.date : bf.update);
+
+    if (aDate < bDate) return 1;
+    if (aDate > bDate) return -1;
+    return 0;
+  });
 
   const throttleScrollHandler = useCallback(
     throttle(() => {
@@ -27,7 +39,7 @@ const PostList = (props: PostListProps) => {
         });
       }
     }, 250),
-    []
+    [posts]
   );
 
   const expendPostList = useCallback((list: any) => {
@@ -79,30 +91,23 @@ const PostList = (props: PostListProps) => {
   }, []);
 
   useEffect(() => {
-    expendPostList(posts.slice(currentPostList.length, showCnt));
+    if (showCnt > 0 && showCnt !== 10) expendPostList(posts.slice(currentPostList.length, showCnt));
   }, [showCnt]);
 
   useEffect(() => {
-    posts.sort((a: any, b: any) => {
-      const af = a.node.frontmatter;
-      const bf = b.node.frontmatter;
+    if (currentPostList.length) setCurrentPostList([]);
 
-      const aDate = new Date(af.update.includes('0001') ? af.date : af.update);
-      const bDate = new Date(bf.update.includes('0001') ? bf.date : bf.update);
-
-      if (aDate < bDate) return 1;
-      if (aDate > bDate) return -1;
-      return 0;
+    setShowCnt((prev: number) => {
+      if (prev === 10) expendPostList(posts.slice(0, 10));
+      return 10;
     });
-
-    setShowCnt(10);
 
     window.addEventListener('scroll', throttleScrollHandler);
 
     return () => {
       window.removeEventListener('scroll', throttleScrollHandler);
     };
-  }, []);
+  }, [posts]);
 
   return (
     <div className="post-list">
