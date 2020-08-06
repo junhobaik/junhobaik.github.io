@@ -51,8 +51,16 @@ const gatsbyConfig = {
             options: {
               classPrefix: 'language-',
               inlineCodeMarker: null,
-              aliases: {},
               showLineNumbers: false,
+              noInlineHighlight: false,
+              escapeEntities: {},
+              aliases: {
+                react: 'jsx',
+                javascriptreact: 'jsx',
+                'javascript react': 'jsx',
+                typescriptreact: 'tsx',
+                'typescript react': 'tsx',
+              },
             },
           },
           {
@@ -72,7 +80,12 @@ const gatsbyConfig = {
             },
           },
           `gatsby-remark-autolink-headers`,
-          `gatsby-remark-katex`,
+          {
+            resolve: `gatsby-remark-katex`,
+            options: {
+              strict: `ignore`,
+            },
+          },
           {
             resolve: 'gatsby-remark-external-links',
             options: {
