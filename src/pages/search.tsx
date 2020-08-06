@@ -73,7 +73,7 @@ const Search = (props: SearchProps) => {
           </div>
 
           {value !== '' && !filteredPosts.length ? <span className="no-result">No search results</span> : null}
-          <PostList posts={value === '' ? posts : filteredPosts} />
+          <PostList posts={value === '' ? [] : filteredPosts} />
         </div>
       </div>
     </Layout>
