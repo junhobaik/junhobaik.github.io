@@ -13,7 +13,6 @@ export const initialState: RootState = {
 };
 
 const reducer = (state: RootState = initialState, action: ActionTypes) => {
-  console.log(action);
   if (action.type === SET_PATH) {
     return Object.assign({}, state, {
       path: action.path ?? state.path,
