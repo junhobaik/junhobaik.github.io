@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { useState, useEffect, useMemo, useCallback } from 'react';
-import Helmet from 'react-helmet';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { useDispatch } from 'react-redux';
 import { useStaticQuery, graphql } from 'gatsby';
 import MobileDetect from 'mobile-detect';
@@ -62,7 +62,7 @@ const Layout = (props: LayoutPropsType) => {
   }, []);
 
   return (
-    <>
+    <HelmetProvider>
       <Helmet>
         <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
         <meta name="google-site-verification" content={config.googleSearchConsole ?? ''} />
@@ -94,7 +94,7 @@ const Layout = (props: LayoutPropsType) => {
           <Fa icon={faAngleDoubleUp} />
         </div>
       </div>
-    </>
+    </HelmetProvider>
   );
 };
 

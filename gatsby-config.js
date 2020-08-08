@@ -5,7 +5,7 @@ const gatsbyConfig = {
   siteMetadata: { title, description, author, siteUrl, language },
 
   plugins: [
-    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-react-helmet-async`,
 
     `gatsby-plugin-typescript`,
 
@@ -121,6 +121,7 @@ const gatsbyConfig = {
         icon: 'src/images/icon.png',
         legacy: false,
         include_favicon: false,
+        crossOrigin: `use-credentials`,
       },
     },
 

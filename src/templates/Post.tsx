@@ -2,7 +2,8 @@
 
 import * as React from 'react';
 import { useEffect, useState, useCallback, Suspense } from 'react';
-import Helmet from 'react-helmet';
+// import Helmet from 'react-helmet';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { useSelector } from 'react-redux';
 import { graphql, Link } from 'gatsby';
 import moment from 'moment';
@@ -162,7 +163,7 @@ const Post = (props: postProps) => {
   }, []);
 
   return (
-    <>
+    <HelmetProvider>
       <Helmet>
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <script type="application/ld+json">
@@ -338,7 +339,7 @@ const Post = (props: postProps) => {
 
         {!isTableOfContents ? null : <Toc isOutside={true} toc={tableOfContents} />}
       </Layout>
-    </>
+    </HelmetProvider>
   );
 };
 
