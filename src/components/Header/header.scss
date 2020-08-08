@@ -67,6 +67,8 @@
       }
 
       img {
+        min-width: 25px;
+        min-height: 25px;
         border-radius: 100%;
         margin: 0;
         opacity: 0.8;
@@ -79,6 +81,8 @@
         }
 
         @media screen and (max-width: $break-s) {
+          min-width: 15px;
+          min-height: 15px;
           width: 15px !important;
           height: 15px !important;
         }
