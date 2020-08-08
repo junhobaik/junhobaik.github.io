@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
 import * as React from 'react';
-import { useState } from 'react';
+import { useState, useCallback } from 'react';
 import { FontAwesomeIcon as Fa } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
@@ -22,16 +22,19 @@ const Search = (props: SearchProps) => {
   const [value, setValue] = useState('');
   const [isTitleOnly, setIsTitleOnly] = useState(true);
 
-  const filteredPosts: any[] = posts.filter((post: any) => {
-    const { node } = post;
-    const { frontmatter, rawMarkdownBody } = node;
-    const { title } = frontmatter;
-    const lowerValue = value.toLocaleLowerCase();
+  const filteredPosts = useCallback(
+    posts.filter((post: any) => {
+      const { node } = post;
+      const { frontmatter, rawMarkdownBody } = node;
+      const { title } = frontmatter;
+      const lowerValue = value.toLocaleLowerCase();
 
-    if (!isTitleOnly && rawMarkdownBody.toLocaleLowerCase().includes(lowerValue)) return true;
+      if (!isTitleOnly && rawMarkdownBody.toLocaleLowerCase().includes(lowerValue)) return true;
 
-    return title.toLocaleLowerCase().includes(lowerValue);
-  });
+      return title.toLocaleLowerCase().includes(lowerValue);
+    }),
+    [posts]
+  );
 
   return (
     <Layout>

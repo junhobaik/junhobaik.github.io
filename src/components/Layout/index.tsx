@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import Helmet from 'react-helmet';
 import { useDispatch } from 'react-redux';
 import { useStaticQuery, graphql } from 'gatsby';
@@ -26,7 +26,7 @@ const Layout = (props: LayoutPropsType) => {
   const [isTop, setIsTop] = useState(true);
   const dispatch = useDispatch();
   const [colorMode] = useColorMode();
-  const isDark = colorMode === 'dark';
+  const isDark = useMemo(() => colorMode === 'dark', [colorMode]);
 
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
