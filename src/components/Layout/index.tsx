@@ -10,8 +10,8 @@ import { faAngleDoubleUp } from '@fortawesome/free-solid-svg-icons';
 import { useColorMode } from 'theme-ui';
 
 import './layout.scss';
+import '../../utils/google-fonts.scss';
 import Header from '../Header';
-import { googleFont } from '../../utils/typography';
 import { actionCreators } from '../../state/actions';
 import config from '../../../_config';
 
@@ -60,7 +60,6 @@ const Layout = (props: LayoutPropsType) => {
     <>
       <Helmet>
         <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
-        <link href={`https://fonts.googleapis.com/css?family=${googleFont}`} rel="stylesheet" />
         <meta name="google-site-verification" content={config.googleSearchConsole ?? ''} />
         <style>{FaDom.css()}</style>
       </Helmet>
