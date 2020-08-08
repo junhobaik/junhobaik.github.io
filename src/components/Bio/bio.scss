@@ -24,14 +24,13 @@
       justify-content: center;
 
       svg {
+        height: 0.9rem;
         margin-top: 1px;
-        // color: #6a737d;
         opacity: 0.9;
       }
     }
 
     & > :nth-child(2) {
-      // border: 1px solid red;
       line-height: 1.1;
       overflow: hidden;
     }
@@ -48,6 +47,7 @@
   }
 
   .social {
+    display: flex;
     margin-left: 0.2rem;
     margin-top: 2rem;
 
@@ -61,6 +61,7 @@
       .instagram,
       .github,
       .rss {
+        width: 1.2rem;
         transition: color 0.3s;
       }
 
@@ -79,7 +80,7 @@
         }
         .github {
           // color: #181717 !important;
-          color: #666666 !important;
+          color: #999 !important;
         }
       }
     }

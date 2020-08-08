@@ -124,16 +124,17 @@
 
 #nav {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
+  margin-bottom: 3px;
 
   .theme-toggle {
     display: flex;
     justify-content: space-between;
     opacity: 0.5;
     margin-right: 1.2rem;
-    margin-bottom: 2px;
     transition: opacity 0.3s;
     align-items: center;
+    min-height: 1.2rem;
 
     &:hover {
       opacity: 0.9;
@@ -151,7 +152,7 @@
     }
 
     svg {
-      font-size: 1.2rem;
+      height: 1.1rem;
       margin: 0;
       color: #6a737d !important;
     }
@@ -163,17 +164,19 @@
 
   ul {
     display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
     margin: 0;
     width: 3.5rem;
-    justify-content: space-between;
 
     li {
       list-style: none;
       margin: 0;
+      height: 1.2rem;
 
       svg {
         margin: 0;
-        font-size: 1.2rem;
+        height: 1.2rem;
         transition: opacity 0.3s;
         opacity: 0.7;
 
@@ -188,17 +191,6 @@
 
       span {
         font-family: 'Raleway', 'Nanum Gothic';
-      }
-
-      .search-wrap,
-      .tag-wrap {
-        display: flex;
-        align-items: center;
-        height: 1.5rem;
-
-        svg {
-          margin-top: 3px;
-        }
       }
     }
   }
