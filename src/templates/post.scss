@@ -103,11 +103,14 @@
       justify-content: flex-end;
       margin-top: 2rem;
 
+      .icon-wrap > svg {
+        height: 0.8rem;
+      }
+
       .series-head {
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        // color: rgba(0, 0, 0, 0.74);
 
         .head {
           font-weight: bold;
@@ -117,7 +120,6 @@
         .icon-wrap {
           text-align: center;
           width: 1.5rem;
-          font-size: 0.8rem;
         }
       }
 
