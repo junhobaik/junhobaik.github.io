@@ -41,13 +41,7 @@ const Layout = (props: LayoutPropsType) => {
   `);
 
   const setTop = useCallback(
-    throttle(() => {
-      if (window.pageYOffset < window.innerHeight / 2) {
-        if (!isTop) setIsTop(true);
-      } else {
-        if (isTop) setIsTop(false);
-      }
-    }, 250),
+    throttle(() => setIsTop(window.pageYOffset < window.innerHeight / 2), 250),
     []
   );
 
