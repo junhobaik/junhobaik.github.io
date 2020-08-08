@@ -1,7 +1,8 @@
 @import '../utils/variables.scss';
 
 .blog-post-container {
-  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+
   & > div,
   .ad {
     max-width: 720px;
