@@ -20,6 +20,9 @@
         all: unset;
         margin: 0 1rem;
         margin-top: 0.1rem;
+        @media screen and (max-width: $break-s) {
+          min-width: 5rem;
+        }
       }
 
       svg {
@@ -37,6 +40,7 @@
 
         span {
           cursor: pointer;
+          white-space: nowrap;
           user-select: none;
           opacity: 0.8;
           transition: opacity 0.2s;
