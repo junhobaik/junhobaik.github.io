@@ -21,7 +21,7 @@ const NotFoundPage = () => (
       }}
     >
       <div className="icon-wrap">
-        <Fa icon={faFrown} style={{ height: '10rem' }} />
+        <Fa icon={faFrown} style={{ minHeight: '10rem', fontSize: '10rem' }} />
       </div>
       <h1 style={{ fontSize: '5rem', margin: '0.5rem 0 1rem 0' }}>404</h1>
       <p>{`That page doesn't exist or is unavailable.`}</p>
