@@ -7,7 +7,7 @@ const gatsbyConfig = {
   plugins: [
     `gatsby-plugin-typescript`,
 
-    `gatsby-plugin-react-helmet-async`,
+    `gatsby-plugin-react-helmet`,
 
     `gatsby-plugin-theme-ui`,
 
