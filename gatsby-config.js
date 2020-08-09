@@ -243,7 +243,7 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 if (process.env.NODE_ENV === 'production') {
-  // gatsbyConfig.plugins.push(`gatsby-plugin-preact`);
+  gatsbyConfig.plugins.push(`gatsby-plugin-preact`);
 }
 
 module.exports = gatsbyConfig;
