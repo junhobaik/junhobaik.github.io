@@ -14,6 +14,7 @@ const Comment = ({ slug, title }: CommentProps) => {
       url: `${config.siteUrl + slug}`,
       identifier: slug,
       title,
+      language: config.language ?? 'en',
     },
   };
 
