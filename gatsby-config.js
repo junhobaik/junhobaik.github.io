@@ -5,9 +5,9 @@ const gatsbyConfig = {
   siteMetadata: { title, description, author, siteUrl, language },
 
   plugins: [
-    `gatsby-plugin-react-helmet-async`,
-
     `gatsby-plugin-typescript`,
+
+    `gatsby-plugin-react-helmet`,
 
     `gatsby-plugin-theme-ui`,
 
@@ -112,9 +112,10 @@ const gatsbyConfig = {
         short_name: title,
         description: description,
         start_url: `/`,
-        lang: 'ko',
         background_color: `#fff`,
-        theme_color: `#fff`,
+        theme_color: `#6a737d`,
+        theme_color_in_head: false,
+        lang: language,
         display: `standalone`,
         icon: 'src/images/icon.png',
         legacy: false,
@@ -242,7 +243,7 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 if (process.env.NODE_ENV === 'production') {
-  gatsbyConfig.plugins.push(`gatsby-plugin-preact`);
+  // gatsbyConfig.plugins.push(`gatsby-plugin-preact`);
 }
 
 module.exports = gatsbyConfig;
