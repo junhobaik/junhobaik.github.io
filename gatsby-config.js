@@ -17,8 +17,6 @@ const gatsbyConfig = {
 
     `gatsby-plugin-sharp`,
 
-    `gatsby-plugin-preact`,
-
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
@@ -241,6 +239,10 @@ if (process.env.NODE_ENV === 'development') {
       name: 'markdown-pages',
     },
   });
+}
+
+if (process.env.NODE_ENV === 'production') {
+  gatsbyConfig.plugins.push(`gatsby-plugin-preact`);
 }
 
 module.exports = gatsbyConfig;
