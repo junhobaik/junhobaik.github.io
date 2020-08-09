@@ -33,7 +33,7 @@ const Search = (props: SearchProps) => {
 
       return title.toLocaleLowerCase().includes(lowerValue);
     }),
-    [posts]
+    [value]
   );
 
   return (
