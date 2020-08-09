@@ -1,8 +1,9 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
 import * as React from 'react';
-import { useEffect, useState, Suspense } from 'react';
-import Helmet from 'react-helmet';
+import { useEffect, useState, useCallback, Suspense } from 'react';
+// import Helmet from 'react-helmet';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { useSelector } from 'react-redux';
 import { graphql, Link } from 'gatsby';
 import moment from 'moment';
@@ -41,11 +42,21 @@ interface postProps {
   pageContext: { slug: string; series: any[]; lastmod: string };
 }
 
+interface iConfig {
+  enablePostOfContents: boolean;
+  enableSocialShare: boolean;
+  disqusShortname?: string;
+}
+
 const Post = (props: postProps) => {
   const isSSR = typeof window === 'undefined';
 
   const { data, pageContext } = props;
   const isMobile = useSelector((state: RootState) => state.isMobile);
+  const [yList, setYList] = useState([] as number[]);
+  const [isInsideToc, setIsInsideToc] = useState(false);
+  const [commentEl, setCommentEl] = useState<JSX.Element>();
+
   const { markdownRemark } = data;
   const { frontmatter, html, tableOfContents, fields, excerpt } = markdownRemark;
   const { title, date, tags, keywords } = frontmatter;
@@ -53,18 +64,7 @@ const Post = (props: postProps) => {
   if (Number(update?.split(',')[1]) === 1) update = null;
   const { slug } = fields;
   const { series } = pageContext;
-
-  interface iConfig {
-    enablePostOfContents: boolean;
-    enableSocialShare: boolean;
-    disqusShortname?: string;
-  }
   const { enablePostOfContents, disqusShortname, enableSocialShare }: iConfig = config;
-
-  const [yList, setYList] = useState([] as number[]);
-  const [isInsideToc, setIsInsideToc] = useState(false);
-  const [commentEl, setCommentEl] = useState<JSX.Element>();
-
   const isTableOfContents = enablePostOfContents && tableOfContents !== '';
   const isDevelopment = process.env.NODE_ENV === 'development';
   const isDisqus: boolean = disqusShortname ? true : false;
@@ -89,18 +89,12 @@ const Post = (props: postProps) => {
     );
   });
 
-  const metaKeywords: (keywordList: string[], tagList: string[]) => string[] = (
-    keywordList: string[],
-    tagList: string[]
-  ) => {
+  const metaKeywords = useCallback((keywordList: string[], tagList: string[]) => {
     const resultKeywords = new Set();
-
-    for (const v of [...keywordList, ...tagList]) {
-      resultKeywords.add(v);
-    }
+    for (const v of [...keywordList, ...tagList]) resultKeywords.add(v);
 
     return Array.from(resultKeywords) as string[];
-  };
+  }, []);
 
   useEffect(() => {
     if (isMobile) {
@@ -169,7 +163,7 @@ const Post = (props: postProps) => {
   }, []);
 
   return (
-    <>
+    <HelmetProvider>
       <Helmet>
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <script type="application/ld+json">
@@ -345,7 +339,7 @@ const Post = (props: postProps) => {
 
         {!isTableOfContents ? null : <Toc isOutside={true} toc={tableOfContents} />}
       </Layout>
-    </>
+    </HelmetProvider>
   );
 };
 

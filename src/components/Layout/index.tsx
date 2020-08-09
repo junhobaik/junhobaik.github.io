@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { useState, useEffect } from 'react';
-import Helmet from 'react-helmet';
+import { useState, useEffect, useMemo, useCallback } from 'react';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { useDispatch } from 'react-redux';
 import { useStaticQuery, graphql } from 'gatsby';
 import MobileDetect from 'mobile-detect';
@@ -10,10 +10,11 @@ import { faAngleDoubleUp } from '@fortawesome/free-solid-svg-icons';
 import { useColorMode } from 'theme-ui';
 
 import './layout.scss';
+import '../../utils/google-fonts.scss';
 import Header from '../Header';
-import { googleFont } from '../../utils/typography';
 import { actionCreators } from '../../state/actions';
 import config from '../../../_config';
+import { throttle } from 'lodash';
 
 FaConfig.autoAddCss = false;
 
@@ -26,7 +27,7 @@ const Layout = (props: LayoutPropsType) => {
   const [isTop, setIsTop] = useState(true);
   const dispatch = useDispatch();
   const [colorMode] = useColorMode();
-  const isDark = colorMode === 'dark';
+  const isDark = useMemo(() => colorMode === 'dark', [colorMode]);
 
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -39,28 +40,25 @@ const Layout = (props: LayoutPropsType) => {
     }
   `);
 
+  const setTop = useCallback(
+    throttle(() => setIsTop(window.pageYOffset < window.innerHeight / 2), 250),
+    []
+  );
+
   useEffect(() => {
     const md = new MobileDetect(window.navigator.userAgent);
     if (md.mobile()) {
       dispatch(actionCreators.setIsMobile(true));
     }
 
-    const setTop = () => {
-      if (window.pageYOffset < window.innerHeight / 2) {
-        setIsTop(true);
-      } else {
-        setIsTop(false);
-      }
-    };
     document.addEventListener('scroll', setTop);
     return () => document.removeEventListener('scroll', setTop);
   }, []);
 
   return (
-    <>
+    <HelmetProvider>
       <Helmet>
         <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
-        <link href={`https://fonts.googleapis.com/css?family=${googleFont}`} rel="stylesheet" />
         <meta name="google-site-verification" content={config.googleSearchConsole ?? ''} />
         <style>{FaDom.css()}</style>
       </Helmet>
@@ -90,7 +88,7 @@ const Layout = (props: LayoutPropsType) => {
           <Fa icon={faAngleDoubleUp} />
         </div>
       </div>
-    </>
+    </HelmetProvider>
   );
 };
 

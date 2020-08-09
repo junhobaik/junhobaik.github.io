@@ -8,7 +8,7 @@
 
   svg {
     color: #6a737d;
-    transition: color 0.8s;
+    margin: 0;
   }
 
   &.light {
@@ -73,7 +73,6 @@ a {
   height: 2.5rem;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
   border-radius: 100%;
   margin-right: 2rem;
   margin-bottom: 2.2rem;
@@ -89,6 +88,7 @@ a {
     margin: 0;
     opacity: 0.5;
     transition: opacity 0.2s;
+    height: 2rem;
 
     &:hover {
       opacity: 1;

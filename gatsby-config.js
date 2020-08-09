@@ -5,14 +5,7 @@ const gatsbyConfig = {
   siteMetadata: { title, description, author, siteUrl, language },
 
   plugins: [
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: googleAnalytics,
-      },
-    },
-
-    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-react-helmet-async`,
 
     `gatsby-plugin-typescript`,
 
@@ -23,6 +16,13 @@ const gatsbyConfig = {
     `gatsby-transformer-sharp`,
 
     `gatsby-plugin-sharp`,
+
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: googleAnalytics,
+      },
+    },
 
     {
       resolve: `gatsby-source-filesystem`,
@@ -119,6 +119,7 @@ const gatsbyConfig = {
         icon: 'src/images/icon.png',
         legacy: false,
         include_favicon: false,
+        crossOrigin: `use-credentials`,
       },
     },
 
@@ -218,6 +219,7 @@ const gatsbyConfig = {
         ],
       },
     },
+
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
@@ -237,6 +239,10 @@ if (process.env.NODE_ENV === 'development') {
       name: 'markdown-pages',
     },
   });
+}
+
+if (process.env.NODE_ENV === 'production') {
+  gatsbyConfig.plugins.push(`gatsby-plugin-preact`);
 }
 
 module.exports = gatsbyConfig;

@@ -17,11 +17,12 @@ interface headerPropsType {
 
 const Header = (props: headerPropsType) => {
   const { siteTitle } = props;
-  const dispatch = useDispatch();
   const { isMobile, path, size } = useSelector((state: RootState) => state);
   const [, setYPos] = useState(0);
   const [isHide, setIsHide] = useState(false);
+  const dispatch = useDispatch();
   const [colorMode, setColorMode] = useColorMode();
+  const imageSize = React.useMemo(() => size ?? '25px', [size]);
 
   const toggleTheme = useCallback(() => {
     const ms = 300;
@@ -43,6 +44,8 @@ const Header = (props: headerPropsType) => {
     }, ms + 100);
   }, [colorMode]);
 
+  const setPath = useCallback((path: string, size?: string) => dispatch(actionCreators.setPath(path, size)), []);
+
   useEffect(() => {
     const bio: HTMLDivElement | null = document.querySelector('.bio');
     if (bio) {
@@ -62,29 +65,16 @@ const Header = (props: headerPropsType) => {
     const prevPath: string = path;
     const currPath: string = location.pathname;
 
-    const setPath = (path: string, size?: string) => dispatch(actionCreators.setPath(path, size));
-
     if (profile) {
-      if (currPath === prevPath) {
-        setPath(location.pathname, currPath !== '/' ? '25px' : '50px');
-      }
-
-      if (prevPath !== '/' && currPath === '/') {
-        setPath(location.pathname, '50px');
-      }
-
-      if (prevPath === '/' && currPath !== '/') {
-        setPath(location.pathname, '25px');
-      }
-
-      if (prevPath !== '/' && currPath !== '/') {
-        setPath(location.pathname);
-      }
+      if (currPath === prevPath) setPath(location.pathname, currPath !== '/' ? '25px' : '50px');
+      if (prevPath !== '/' && currPath === '/') setPath(location.pathname, '50px');
+      if (prevPath === '/' && currPath !== '/') setPath(location.pathname, '25px');
+      if (prevPath !== '/' && currPath !== '/') setPath(location.pathname);
     } else {
       setPath(location.pathname);
     }
 
-    const setVisible: () => void = () => {
+    const setVisible = () => {
       setYPos(prevYPos => {
         const currentYPos = window.pageYOffset;
 
@@ -109,8 +99,10 @@ const Header = (props: headerPropsType) => {
                   : 'https://source.unsplash.com/random/100x100'
               }
               alt="title profile picture"
-              width={size || '25px'}
-              height={size || '25px'}
+              style={{
+                width: imageSize,
+                height: imageSize,
+              }}
             />
           </div>
         </Link>
