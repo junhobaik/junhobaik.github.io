@@ -19,10 +19,11 @@ interface IndexPageProps {
 const IndexPage = (props: IndexPageProps) => {
   const { data } = props;
   const posts = data.allMarkdownRemark.edges;
+  const title = data.site.siteMetadata.title;
 
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title={title} />
       <div className="index-wrap">
         <Bio />
         <div className="index-post-list-wrap">
@@ -45,6 +46,11 @@ const IndexPage = (props: IndexPageProps) => {
 
 export const pageQuery = graphql`
   query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, limit: 100) {
       edges {
         node {
