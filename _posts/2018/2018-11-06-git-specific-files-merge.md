@@ -1,6 +1,7 @@
 ---
 title: git 특정한 파일 병합(merge) 하기
 date: 2018-11-06
+update: 2020-09-23
 tags:
   - git
 keywords:
@@ -12,19 +13,19 @@ keywords:
 
 git에서 특정한 파일만 merge 하고 싶을 때가 있다.
 
-B 브랜치를 A 브랜치에 merge 하려하는데 특정 파일(./a.js)만 병합하고 싶을 상황일 때 쓸 수 있는 방법이다.
+`B` 브랜치를 `A` 브랜치에 merge 하려하는데 특정 파일(`./a.js`)만 병합하고 싶을 상황일 때 쓸 수 있는 방법이다.
 
-정확히는 merge 키워드를 사용하지 않지만 아래 방법으로 위의 케이스를 해결할 수 있다.
+## 방법 1
 
-A 브랜치로 체크아웃한 상태에서 아래 명령을 입력한다.
+merge 키워드를 사용하지 않지만 아래 방법으로 특정 파일만 합치는 것이 가능하다.
+
+`A` 브랜치로 체크아웃한 상태에서 아래 명령을 입력한다.
 
 ```shell
 $ git checkout -p B a.js
 ```
 
 위 명령으로 작업을 완료 할 수 있고 아래는 이에 대한 설명이다.
-
----
 
 `checkout -p` 여기서 p 플래그는 `-p|--patch`으로 patch 옵션을 나타낸다.
 
@@ -72,3 +73,23 @@ s - split the current hunk into smaller hunks
 e - manually edit the current hunk
 ? - print help
 ```
+
+## 방법 2
+
+두번째 방법은 merge 키워드를 사용하므로 위의 방법보다는 진정한 merge라고 할 수 있다.  
+다수의 파일을 합칠 때 유용하며,  
+모든 변경 사항을 가져오고, 특정 파일의 변경 사항을 제외시켜 특정 파일 외의 모든 변경사항을 합치고 싶을 때 사용한다.
+
+현재 작업중인 `A` 브랜치에서 `personalConfig.js` 파일과 `REAME.md` 파일만은 그대로 두고, 나머지 `B` 브랜치의 모든 변경 사항은 합치고 싶다면 `A` 브랜치로 체크아웃 후에 아래의 과정을 거치면 된다.
+
+```shell
+$ git merge --no-commit --no-ff B -X theirs
+
+$ git reset HEAD personalConfig.js README.md
+
+$ git clean -fd
+
+$ git commit
+```
+
+
