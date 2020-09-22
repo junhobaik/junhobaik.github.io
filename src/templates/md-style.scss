@@ -1,0 +1,41 @@
+.blog-post-content {
+  h1 {
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+  }
+  h2 {
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+  }
+  h3 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    p {
+      margin: 0;
+    }
+  }
+  li {
+    margin-bottom: 0;
+  }
+  & > ul {
+    margin-bottom: 1rem;
+  }
+  hr {
+    margin: 1.5rem 0;
+  }
+  code {
+    font-family: 'Nanum Gothic Coding' !important;
+  }
+  blockquote {
+    font-size: 0.9rem;
+    border-left: 4px solid #6a737d;
+    margin: 0;
+    margin-bottom: 1rem;
+    padding: 0 1rem 0 1rem;
+    opacity: 0.8;
+  }
+}
