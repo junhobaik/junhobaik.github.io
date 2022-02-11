@@ -64,7 +64,7 @@
     "lodash": "^4.17.19",
     "mobile-detect": "^1.4.4",
     "moment": "^2.29.0",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "preact": "^10.4.8",
     "preact-render-to-string": "^5.1.10",
     "prism-themes": "^1.4.0",
