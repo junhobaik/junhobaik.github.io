@@ -68,7 +68,7 @@
     "preact": "^10.4.8",
     "preact-render-to-string": "^5.1.10",
     "prism-themes": "^1.4.0",
-    "prismjs": "^1.20.0",
+    "prismjs": "^1.27.0",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-adsense": "^0.1.0",
